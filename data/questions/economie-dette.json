@@ -1,900 +1,905 @@
 {
- "_theme": "economie-dette",
- "_lot": 3,
- "_statut": "VALIDÉ le 2026-10-02 — sources à recontrôler sur textes officiels avant publication",
- "_equilibre": {
-  "actives": 20,
-  "suspendues": 0,
-  "sens_plus": 10,
-  "sens_moins": 10,
-  "axes": {
-   "economie": 20
-  }
- },
- "_note": "Sources recherchées le 2026-10-02, lues via un résumé automatique : chiffres et citations à recontrôler avant publication. Énoncés alignés sur la forme exacte des propositions documentées.",
- "questions": [
-  {
-   "id": "ECO-001",
-   "theme": "economie-dette",
-   "axe": "economie",
-   "sens": 1,
-   "enonce": "Le SMIC doit être porté à 1 600 euros net par mois.",
-   "precision": "Le SMIC est d'environ 1 478 euros net par mois depuis le 1er juin 2026.",
-   "origine": {
-    "description": "Programme commun de gauche des législatives de 2024 ; montant actuel : info.gouv.fr",
-    "source": {
-     "url": "https://www.info.gouv.fr/actualite/le-smic-revalorise-le-1er-juin-2026",
-     "titre": "Le SMIC revalorisé le 1er juin 2026",
-     "date_consultation": "2026-10-02",
-     "nature": "primaire"
+  "_theme": "economie-dette",
+  "_lot": 3,
+  "_statut": "VALIDÉ le 2026-10-02 — sources à recontrôler sur textes officiels avant publication",
+  "_equilibre": {
+    "actives": 20,
+    "suspendues": 0,
+    "sens_plus": 10,
+    "sens_moins": 10,
+    "axes": {
+      "economie": 20
     }
-   },
-   "statut": "active",
-   "alertes_neutralite": [],
-   "scrutins": [],
-   "historique": [],
-   "impact": {
-    "changement": "La hausse serait d'environ 122 euros net par mois pour un temps plein, soit un peu plus de 8 %. Elle concernerait tous les salariés rémunérés au minimum légal, dont 2,2 millions selon l'exposé des motifs d'une proposition de loi déposée à l'Assemblée nationale. Le coût du travail augmenterait mécaniquement pour les employeurs de ces salariés.",
-    "pour": "Ses partisans estiment qu'elle soutiendrait la consommation des ménages modestes et rattraperait une progression du SMIC plus faible, sur dix ans, que dans les autres pays de l'Union européenne. Ils citent des pays où l'emploi n'a pas reculé.",
-    "contre": "Ses opposants jugent qu'elle renchérirait le coût des emplois peu qualifiés et pourrait dissuader d'embaucher. Ils redoutent que des petites entreprises à faible marge, ne pouvant répercuter la hausse sur leurs prix, ne disparaissent.",
-    "sources": [
-     {
-      "url": "https://www.info.gouv.fr/actualite/le-smic-revalorise-le-1er-juin-2026",
-      "titre": "Le SMIC revalorisé le 1er juin 2026",
-      "date_consultation": "2026-10-12",
-      "nature": "institutionnelle"
-     },
-     {
-      "url": "https://www.moneyvox.fr/votre-argent/actualites/98673/smic-a-1-600-euros-les-pour-et-les-contre",
-      "titre": "SMIC à 1 600 euros : les pour et les contre",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     },
-     {
-      "url": "https://www.assemblee-nationale.fr/dyn/opendata/PIONANR5L17B2893.html",
-      "titre": "Proposition de loi n° 2893 d'indexation des salaires sur l'inflation (exposé des motifs)",
-      "date_consultation": "2026-10-12",
-      "nature": "primaire"
-     }
-    ],
-    "statut": "pilote"
-   }
   },
-  {
-   "id": "ECO-002",
-   "theme": "economie-dette",
-   "axe": "economie",
-   "sens": 1,
-   "enonce": "Tous les salaires doivent être indexés automatiquement sur l'inflation.",
-   "precision": "Aujourd'hui, seul le SMIC est indexé ; la loi interdit l'indexation automatique des autres salaires sur les prix.",
-   "origine": {
-    "description": "Proposition de loi n° 208 (2024-2025) déposée au Sénat le 17 décembre 2024",
-    "source": {
-     "url": "https://www.senat.fr/leg/ppl24-208.html",
-     "titre": "Indexer les salaires sur l'inflation (PPL) — texte déposé au Sénat",
-     "date_consultation": "2026-10-02",
-     "nature": "primaire"
-    }
-   },
-   "statut": "active",
-   "alertes_neutralite": [],
-   "scrutins": [],
-   "historique": [],
-   "impact": {
-    "changement": "Les salaires du privé, et ceux des agents publics, seraient relevés automatiquement au moins du niveau de l'inflation. Un texte déposé à l'Assemblée prévoit deux hausses par an (1er mars, 1er septembre), sauf au-delà de deux fois le salaire médian. Un autre, au Sénat, prévoit une hausse annuelle au moins égale à l'inflation prévue. Ce système a existé de 1952 à 1983.",
-    "pour": "Ses partisans estiment que les salaires progressent moins vite que les prix et que l'indexation protège le pouvoir d'achat sans dépendre des négociations. Ils rappellent que la Belgique et le Luxembourg la pratiquent déjà.",
-    "contre": "Ses opposants redoutent que des hausses automatiques de salaires nourrissent de nouvelles hausses de prix et alourdissent les coûts des entreprises, surtout des petites, qui n'ont pas toujours les moyens de les absorber.",
-    "sources": [
-     {
-      "url": "https://www.assemblee-nationale.fr/dyn/opendata/PIONANR5L17B2893.html",
-      "titre": "Proposition de loi n° 2893 d'indexation des salaires sur l'inflation",
-      "date_consultation": "2026-10-12",
-      "nature": "primaire"
-     },
-     {
-      "url": "https://senat.fr/leg/ppl24-208.pdf",
-      "titre": "Proposition de loi n° 208 (Sénat, 2024-2025) sur l'indexation des salaires sur l'inflation",
-      "date_consultation": "2026-10-12",
-      "nature": "primaire"
-     }
-    ],
-    "statut": "pilote"
-   }
-  },
-  {
-   "id": "ECO-003",
-   "theme": "economie-dette",
-   "axe": "economie",
-   "sens": 1,
-   "enonce": "Les prix des biens de première nécessité doivent être bloqués dans l'alimentation, l'énergie et les carburants.",
-   "precision": null,
-   "origine": {
-    "description": "Programme commun de gauche des législatives de 2024",
-    "source": {
-     "url": "https://www.zoomdici.fr/sites/default/files/upload/documents/lhumanite-presente-le-programme-du-nouveau-front-populaire.pdf",
-     "titre": "Programme du Nouveau Front populaire (juin 2024), copie hébergée par un site tiers",
-     "date_consultation": "2026-10-02",
-     "nature": "secondaire"
-    }
-   },
-   "statut": "active",
-   "alertes_neutralite": [
+  "_note": "Sources recherchées le 2026-10-02, lues via un résumé automatique : chiffres et citations à recontrôler avant publication. Énoncés alignés sur la forme exacte des propositions documentées.",
+  "questions": [
     {
-     "signalement": "trois secteurs dans un énoncé : ils sont réunis dans la proposition d'origine",
-     "decision": "un seul énoncé conservé"
-    }
-   ],
-   "scrutins": [],
-   "historique": [],
-   "impact": {
-    "changement": "Aujourd'hui, les prix sont libres, mais l'État peut les encadrer par décret pour six mois au plus en cas de crise ou de situation anormale du marché. Deux propositions de loi de 2026 portent sur l'énergie : l'une plafonne gaz et carburants six mois (renouvelables une fois) à leur moyenne des douze mois précédents ; l'autre gèle carburants, gaz et électricité trois mois au plus. Aucun texte consulté ne vise l'alimentation.",
-    "pour": "Ses partisans estiment que les prix de première nécessité s'envolent sous l'effet de crises et de spéculations, et que la puissance publique doit pouvoir protéger les ménages. Selon eux, les marges des grands groupes permettent d'absorber un plafonnement.",
-    "contre": "Ses opposants craignent des pénuries ou des retraits de produits quand le prix imposé devient inférieur aux coûts. Ils jugent aussi qu'un blocage se heurte au droit européen et se justifie mal quand l'inflation recule.",
-    "sources": [
-     {
-      "url": "https://www.senat.fr/leg/ppl25-453.pdf",
-      "titre": "Proposition de loi n° 453 (Sénat, 2025-2026) visant à plafonner les prix du gaz et des carburants",
-      "date_consultation": "2026-10-12",
-      "nature": "primaire"
-     },
-     {
-      "url": "https://lcp.fr/actualites/essence-lfi-depose-une-proposition-de-loi-pour-bloquer-les-prix-432389",
-      "titre": "Essence : LFI dépose une proposition de loi pour bloquer les prix",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     },
-     {
-      "url": "https://www.leclubdesjuristes.com/economie/le-blocage-des-prix-sur-les-produits-de-premiere-necessite-oui-mais-6385/",
-      "titre": "Le blocage des prix sur les produits de première nécessité ? Oui, mais…",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     }
-    ],
-    "statut": "pilote"
-   }
-  },
-  {
-   "id": "ECO-004",
-   "theme": "economie-dette",
-   "axe": "economie",
-   "sens": 1,
-   "enonce": "La durée légale du travail doit être ramenée à 32 heures par semaine dans les métiers pénibles ou de nuit.",
-   "precision": "La durée légale est de 35 heures par semaine pour tous les salariés.",
-   "origine": {
-    "description": "Programme commun de gauche des législatives de 2024 ; amendement n° 12 (rect.) du 22 juin 2026",
-    "source": {
-     "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2790/AN/12.pdf",
-     "titre": "Amendement n° 12 (rect.) au texte n° 2790 (22 juin 2026)",
-     "date_consultation": "2026-10-02",
-     "nature": "primaire"
-    }
-   },
-   "statut": "active",
-   "alertes_neutralite": [
+      "id": "ECO-001",
+      "theme": "economie-dette",
+      "axe": "economie",
+      "sens": 1,
+      "enonce": "Le SMIC doit être porté à 1 600 euros net par mois.",
+      "precision": "Le SMIC est d'environ 1 478 euros net par mois depuis le 1er juin 2026.",
+      "origine": {
+        "description": "Programme commun de gauche des législatives de 2024 ; montant actuel : info.gouv.fr",
+        "source": {
+          "url": "https://www.info.gouv.fr/actualite/le-smic-revalorise-le-1er-juin-2026",
+          "titre": "Le SMIC revalorisé le 1er juin 2026",
+          "date_consultation": "2026-10-02",
+          "nature": "primaire"
+        }
+      },
+      "statut": "active",
+      "alertes_neutralite": [],
+      "scrutins": [],
+      "historique": [],
+      "impact": {
+        "changement": "La hausse serait d'environ 122 euros net par mois pour un temps plein, soit un peu plus de 8 %. Elle concernerait tous les salariés rémunérés au minimum légal, dont 2,2 millions selon l'exposé des motifs d'une proposition de loi déposée à l'Assemblée nationale. Le coût du travail augmenterait mécaniquement pour les employeurs de ces salariés.",
+        "pour": "Ses partisans estiment qu'elle soutiendrait la consommation des ménages modestes et rattraperait une progression du SMIC plus faible, sur dix ans, que dans les autres pays de l'Union européenne. Ils citent des pays où l'emploi n'a pas reculé.",
+        "contre": "Ses opposants jugent qu'elle renchérirait le coût des emplois peu qualifiés et pourrait dissuader d'embaucher. Ils redoutent que des petites entreprises à faible marge, ne pouvant répercuter la hausse sur leurs prix, ne disparaissent.",
+        "sources": [
+          {
+            "url": "https://www.info.gouv.fr/actualite/le-smic-revalorise-le-1er-juin-2026",
+            "titre": "Le SMIC revalorisé le 1er juin 2026",
+            "date_consultation": "2026-10-12",
+            "nature": "institutionnelle"
+          },
+          {
+            "url": "https://www.moneyvox.fr/votre-argent/actualites/98673/smic-a-1-600-euros-les-pour-et-les-contre",
+            "titre": "SMIC à 1 600 euros : les pour et les contre",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          },
+          {
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/PIONANR5L17B2893.html",
+            "titre": "Proposition de loi n° 2893 d'indexation des salaires sur l'inflation (exposé des motifs)",
+            "date_consultation": "2026-10-12",
+            "nature": "primaire"
+          }
+        ],
+        "statut": "pilote"
+      }
+    },
     {
-     "signalement": "les 32 heures pour tous ne sont proposées par personne dans les sources trouvées",
-     "decision": "énoncé aligné sur la mesure documentée"
-    }
-   ],
-   "scrutins": [],
-   "historique": [],
-   "impact": {
-    "changement": "La durée légale de travail est le seuil au-delà duquel les heures sont comptées comme supplémentaires. Pour les métiers pénibles ou de nuit, il passerait de 35 à 32 heures par semaine. Aucun texte consulté ne fixe la liste de ces métiers ; une demande de rapport sur ce sujet pour le secteur du nettoyage a été déposée puis retirée. Les salariés à temps complet travaillent en moyenne 38,8 heures par semaine (2024).",
-    "pour": "Ses partisans estiment que le travail de nuit et les tâches pénibles usent la santé, notamment des femmes très présentes dans le nettoyage, et qu'un temps réduit protégerait mieux. Ils y voient aussi un moyen de partager l'emploi.",
-    "contre": "Ses opposants jugent que réduire le temps de travail, à rémunération maintenue, alourdit le coût du travail et pèse sur la compétitivité. À rémunération réduite, ils craignent une baisse de revenu pour des salariés déjà modestes.",
-    "sources": [
-     {
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/0770/CION-SOC/AS13.pdf",
-      "titre": "Amendement AS13 (rapport sur la durée du travail à 32 heures dans les métiers pénibles ou de nuit)",
-      "date_consultation": "2026-10-12",
-      "nature": "primaire"
-     },
-     {
-      "url": "https://www.insee.fr/fr/statistiques/8376854",
-      "titre": "Durée du travail - Insee",
-      "date_consultation": "2026-10-12",
-      "nature": "institutionnelle"
-     },
-     {
-      "url": "https://www.insee.fr/fr/metadonnees/definition/c1539",
-      "titre": "Durée légale du travail - Insee (définition)",
-      "date_consultation": "2026-10-12",
-      "nature": "institutionnelle"
-     },
-     {
-      "url": "https://culture-rh.com/semaine-32-heures/",
-      "titre": "Semaine de 32 heures",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     }
-    ],
-    "statut": "pilote"
-   }
-  },
-  {
-   "id": "ECO-005",
-   "theme": "economie-dette",
-   "axe": "economie",
-   "sens": 1,
-   "enonce": "Une entreprise qui délocalise dans les deux ans après avoir reçu une aide publique doit la rembourser intégralement.",
-   "precision": "Une commission d'enquête du Sénat a chiffré les aides publiques aux entreprises en 2023 à au moins 211 milliards d'euros au sens large, et à 108 milliards en périmètre restreint.",
-   "origine": {
-    "description": "Recommandation n° 20 du rapport n° 808 (2024-2025) de la commission d'enquête du Sénat, adopté le 1er juillet 2025",
-    "source": {
-     "url": "https://www.senat.fr/rap/r24-808-1/r24-808-1-syn.pdf",
-     "titre": "Transparence et évaluation des aides publiques aux entreprises — synthèse du rapport",
-     "date_consultation": "2026-10-02",
-     "nature": "primaire"
-    }
-   },
-   "statut": "active",
-   "alertes_neutralite": [
+      "id": "ECO-002",
+      "theme": "economie-dette",
+      "axe": "economie",
+      "sens": 1,
+      "enonce": "Tous les salaires doivent être indexés automatiquement sur l'inflation.",
+      "precision": "Aujourd'hui, seul le SMIC est indexé ; la loi interdit l'indexation automatique des autres salaires sur les prix.",
+      "origine": {
+        "description": "Proposition de loi n° 208 (2024-2025) déposée au Sénat le 17 décembre 2024",
+        "source": {
+          "url": "https://www.senat.fr/leg/ppl24-208.html",
+          "titre": "Indexer les salaires sur l'inflation (PPL) — texte déposé au Sénat",
+          "date_consultation": "2026-10-02",
+          "nature": "primaire"
+        }
+      },
+      "statut": "active",
+      "alertes_neutralite": [],
+      "scrutins": [],
+      "historique": [],
+      "impact": {
+        "changement": "Les salaires du privé, et ceux des agents publics, seraient relevés automatiquement au moins du niveau de l'inflation. Un texte déposé à l'Assemblée prévoit deux hausses par an (1er mars, 1er septembre), sauf au-delà de deux fois le salaire médian. Un autre, au Sénat, prévoit une hausse annuelle au moins égale à l'inflation prévue. Ce système a existé de 1952 à 1983.",
+        "pour": "Ses partisans estiment que les salaires progressent moins vite que les prix et que l'indexation protège le pouvoir d'achat sans dépendre des négociations. Ils rappellent que la Belgique et le Luxembourg la pratiquent déjà.",
+        "contre": "Ses opposants redoutent que des hausses automatiques de salaires nourrissent de nouvelles hausses de prix et alourdissent les coûts des entreprises, surtout des petites, qui n'ont pas toujours les moyens de les absorber.",
+        "sources": [
+          {
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/PIONANR5L17B2893.html",
+            "titre": "Proposition de loi n° 2893 d'indexation des salaires sur l'inflation",
+            "date_consultation": "2026-10-12",
+            "nature": "primaire"
+          },
+          {
+            "url": "https://senat.fr/leg/ppl24-208.pdf",
+            "titre": "Proposition de loi n° 208 (Sénat, 2024-2025) sur l'indexation des salaires sur l'inflation",
+            "date_consultation": "2026-10-12",
+            "nature": "primaire"
+          }
+        ],
+        "statut": "pilote"
+      }
+    },
     {
-     "signalement": "le chiffre de 211 milliards repose sur un périmètre large (108 milliards en périmètre restreint)",
-     "decision": "les deux chiffres sont cités (2026-10-02)"
-    }
-   ],
-   "scrutins": [],
-   "historique": [],
-   "impact": {
-    "changement": "Il n'existe pas de règle générale de remboursement : seules certaines aides, comme les aides régionales ou les prêts garantis pendant le Covid, comportent des clauses anti-délocalisation ou de non-versement de dividendes. La commission d'enquête du Sénat propose le remboursement total d'une aide si l'activité aidée est délocalisée dans les deux ans. Elle ne précise pas comment « délocaliser » serait défini ni comment le montant serait calculé.",
-    "pour": "Ses partisans estiment que l'argent public ne doit pas financer des emplois transférés à l'étranger et que les contreparties actuelles, peu contraignantes, ne permettent pas de récupérer les aides. Une entreprise aidée devrait rendre des comptes avant de partir.",
-    "contre": "Ses opposants soulignent que les entreprises affrontent une forte concurrence internationale et que leurs prélèvements obligatoires sont déjà parmi les plus élevés de l'Union européenne. Ils relèvent aussi que la proposition ne définit pas ce qu'est une délocalisation.",
-    "sources": [
-     {
-      "url": "https://www.publicsenat.fr/actualites/economie/un-cout-annuel-de-211-milliards-deuros-la-commission-denquete-du-senat-sur-les-aides-publiques-aux-entreprises-reclame-un-choc-de-transparence",
-      "titre": "Un coût annuel de 211 milliards d'euros : la commission d'enquête du Sénat sur les aides publiques aux entreprises réclame un « choc de transparence »",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     },
-     {
-      "url": "https://www.banquedesterritoires.fr/rembourser-laide-percue-si-une-entreprise-delocalise-les-idees-des-senateurs-concernant-les-aides",
-      "titre": "Rembourser l'aide perçue si une entreprise délocalise ? Les idées des sénateurs concernant les aides publiques",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     }
-    ],
-    "statut": "pilote"
-   }
-  },
-  {
-   "id": "ECO-006",
-   "theme": "economie-dette",
-   "axe": "economie",
-   "sens": 1,
-   "enonce": "ArcelorMittal France doit être nationalisé.",
-   "precision": "Une proposition de loi en ce sens a été adoptée par l'Assemblée nationale le 27 novembre 2025, rejetée par le Sénat le 25 février 2026, puis adoptée de nouveau à l'Assemblée le 11 juin 2026.",
-   "origine": {
-    "description": "Proposition de loi visant à la nationalisation d'ArcelorMittal France",
-    "source": {
-     "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/7380",
-     "titre": "Scrutin n° 7380 — deuxième séance du jeudi 11 juin 2026",
-     "date_consultation": "2026-10-02",
-     "nature": "primaire"
-    }
-   },
-   "statut": "active",
-   "alertes_neutralite": [
+      "id": "ECO-003",
+      "theme": "economie-dette",
+      "axe": "economie",
+      "sens": 1,
+      "enonce": "Face à une flambée des prix, l'État doit bloquer temporairement les prix des biens de première nécessité dans l'alimentation, l'énergie et les carburants.",
+      "precision": "Il s'agit d'un blocage limité dans le temps, décidé face à une hausse brutale des prix, et non d'un blocage permanent.",
+      "origine": {
+        "description": "Programme commun de gauche des législatives de 2024",
+        "source": {
+          "url": "https://www.zoomdici.fr/sites/default/files/upload/documents/lhumanite-presente-le-programme-du-nouveau-front-populaire.pdf",
+          "titre": "Programme du Nouveau Front populaire (juin 2024), copie hébergée par un site tiers",
+          "date_consultation": "2026-10-02",
+          "nature": "secondaire"
+        }
+      },
+      "statut": "active",
+      "alertes_neutralite": [
+        {
+          "signalement": "trois secteurs dans un énoncé : ils sont réunis dans la proposition d'origine",
+          "decision": "un seul énoncé conservé"
+        }
+      ],
+      "scrutins": [],
+      "historique": [
+        {
+          "date": "2026-10-12",
+          "ancien_enonce": "Les prix des biens de première nécessité doivent être bloqués dans l'alimentation, l'énergie et les carburants."
+        }
+      ],
+      "impact": {
+        "changement": "Aujourd'hui, les prix sont libres, mais l'État peut les encadrer par décret pour six mois au plus en cas de crise ou de situation anormale du marché. Deux propositions de loi de 2026 portent sur l'énergie : l'une plafonne gaz et carburants six mois (renouvelables une fois) à leur moyenne des douze mois précédents ; l'autre gèle carburants, gaz et électricité trois mois au plus. Aucun texte consulté ne vise l'alimentation.",
+        "pour": "Ses partisans estiment que les prix de première nécessité s'envolent sous l'effet de crises et de spéculations, et que la puissance publique doit pouvoir protéger les ménages. Selon eux, les marges des grands groupes permettent d'absorber un plafonnement.",
+        "contre": "Ses opposants craignent des pénuries ou des retraits de produits quand le prix imposé devient inférieur aux coûts. Ils jugent aussi qu'un blocage se heurte au droit européen et se justifie mal quand l'inflation recule.",
+        "sources": [
+          {
+            "url": "https://www.senat.fr/leg/ppl25-453.pdf",
+            "titre": "Proposition de loi n° 453 (Sénat, 2025-2026) visant à plafonner les prix du gaz et des carburants",
+            "date_consultation": "2026-10-12",
+            "nature": "primaire"
+          },
+          {
+            "url": "https://lcp.fr/actualites/essence-lfi-depose-une-proposition-de-loi-pour-bloquer-les-prix-432389",
+            "titre": "Essence : LFI dépose une proposition de loi pour bloquer les prix",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          },
+          {
+            "url": "https://www.leclubdesjuristes.com/economie/le-blocage-des-prix-sur-les-produits-de-premiere-necessite-oui-mais-6385/",
+            "titre": "Le blocage des prix sur les produits de première nécessité ? Oui, mais…",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          }
+        ],
+        "statut": "pilote"
+      }
+    },
     {
-     "signalement": "l'énoncé nomme une entreprise : mesure précise mais liée à l'actualité",
-     "decision": "conservée (2026-10-02) ; suite de la navette non trouvée"
-    }
-   ],
-   "scrutins": [],
-   "historique": [],
-   "impact": {
-    "changement": "La loi transférerait à l'État, douze mois après sa promulgation, les sites français du groupe (neuf sites cités dont Dunkerque, Fos-sur-Mer et Florange), qui emploient environ 7 100 salariés dans sept usines selon l'exposé des motifs. Les actionnaires seraient indemnisés, après déduction des aides publiques reçues, selon une évaluation indépendante. Une entreprise publique serait créée. Le coût n'est pas établi : un rapporteur a évoqué 3 à 4 milliards d'euros, sans préciser ce que ce chiffre couvre.",
-    "pour": "Ses partisans estiment que l'acier est un secteur stratégique et que la décarbonation et le maintien des emplois exigent un contrôle public, face à un groupe qui, selon eux, investit peu malgré les aides et les dividendes versés.",
-    "contre": "Ses opposants jugent que la nationalisation déplacerait le problème du marché vers le contribuable, l'État n'ayant pas des moyens illimités. Ils estiment que des investisseurs privés sont nécessaires et préfèrent des réponses européennes (clauses de sauvegarde, taxe carbone aux frontières).",
-    "sources": [
-     {
-      "url": "https://questions.assemblee-nationale.fr/dyn/17/textes/l17b1537_proposition-loi.pdf",
-      "titre": "Proposition de loi n° 1537 visant à nationaliser les sites sidérurgiques d'ArcelorMittal en France",
-      "date_consultation": "2026-10-12",
-      "nature": "primaire"
-     },
-     {
-      "url": "https://lcp.fr/actualites/arcelormittal-au-terme-d-un-bras-de-fer-dans-l-hemicycle-l-assemblee-vote-a-nouveau-en",
-      "titre": "ArcelorMittal : au terme d'un bras de fer dans l'hémicycle, l'Assemblée vote à nouveau en faveur de la nationalisation",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     }
-    ],
-    "statut": "pilote"
-   }
-  },
-  {
-   "id": "ECO-007",
-   "theme": "economie-dette",
-   "axe": "economie",
-   "sens": 1,
-   "enonce": "L'écart entre le plus bas et le plus haut salaire d'une même entreprise doit être limité de 1 à 20.",
-   "precision": null,
-   "origine": {
-    "description": "Amendement n° 7 du 22 juin 2026 au texte n° 2790",
-    "source": {
-     "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2790/AN/7.pdf",
-     "titre": "Amendement n° 7 au texte n° 2790 (22 juin 2026)",
-     "date_consultation": "2026-10-02",
-     "nature": "primaire"
-    }
-   },
-   "statut": "active",
-   "alertes_neutralite": [],
-   "scrutins": [],
-   "historique": [],
-   "impact": {
-    "changement": "Aucune règle générale ne limite aujourd'hui l'écart de salaires dans les entreprises privées. Deux plafonds existent : 450 000 euros pour les dirigeants d'entreprises publiques depuis 2012, et sept fois le SMIC en moyenne pour les cinq mieux payés des entreprises d'économie sociale agréées. Dans les 40 plus grandes entreprises cotées, le dirigeant gagnait en moyenne 163 fois le salaire moyen en 2021, selon une ONG.",
-    "pour": "Ses partisans estiment que des écarts extrêmes fragilisent la cohésion d'une entreprise et incitent à privilégier le rendement à court terme. Ils citent des entreprises qui ont plafonné volontairement les écarts sans perte de compétitivité.",
-    "contre": "Ses opposants craignent qu'un plafond décourage les dirigeants de talent d'occuper ou de rester à de tels postes. Pour eux, les rémunérations élevées correspondent à un prix de marché, qu'une règle nationale fausserait.",
-    "sources": [
-     {
-      "url": "https://www.oxfamfrance.org/app/uploads/2023/04/Rapport_VF_Final_Inegalites-salariales_Aux-grandes-entreprises-les-gros-ecarts-OK-1.pdf",
-      "titre": "Inégalités salariales : aux grandes entreprises les gros écarts (rapport Oxfam France)",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     }
-    ],
-    "statut": "pilote"
-   }
-  },
-  {
-   "id": "ECO-008",
-   "theme": "economie-dette",
-   "axe": "economie",
-   "sens": 1,
-   "enonce": "Une sixième semaine de congés payés doit être accordée à tous les salariés.",
-   "precision": "Les salariés ont droit à cinq semaines de congés payés.",
-   "origine": {
-    "description": "Amendement n° 12 (rect.) du 22 juin 2026 au texte n° 2790",
-    "source": {
-     "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2790/AN/12.pdf",
-     "titre": "Amendement n° 12 (rect.) au texte n° 2790 (22 juin 2026)",
-     "date_consultation": "2026-10-02",
-     "nature": "primaire"
-    }
-   },
-   "statut": "active",
-   "alertes_neutralite": [],
-   "scrutins": [],
-   "historique": [],
-   "impact": {
-    "changement": "Le plafond annuel de congés passerait de 30 à 36 jours ouvrables, à raison de trois jours par mois travaillé au lieu de deux jours et demi, dans le privé comme dans la fonction publique. En 2010, selon l'Insee cité dans l'exposé des motifs d'une proposition de loi, les Français prenaient en moyenne 37 jours de congés, 32 pour les ouvriers et 41 pour les cadres.",
-    "pour": "Ses partisans estiment que la productivité justifie plus de temps libre, la dernière semaine ayant été ajoutée en 1982. Ils attendent des créations d'emplois : 40 000 selon une étude d'un institut, jusqu'à 100 000 selon les auteurs d'un texte.",
-    "contre": "Ses opposants jugent que des congés supplémentaires augmenteraient le coût du travail et pèseraient sur la compétitivité, surtout pour les petites entreprises qui remplacent difficilement un salarié absent. Ils doutent que les emplois attendus se créent.",
-    "sources": [
-     {
-      "url": "https://www.assemblee-nationale.fr/15/pdf/propositions/pion2097.pdf",
-      "titre": "Proposition de loi n° 2097 visant à instituer une sixième semaine de congés payés",
-      "date_consultation": "2026-10-12",
-      "nature": "primaire"
-     }
-    ],
-    "statut": "pilote"
-   }
-  },
-  {
-   "id": "ECO-009",
-   "theme": "economie-dette",
-   "axe": "economie",
-   "sens": 1,
-   "enonce": "Le point d'indice des fonctionnaires doit être relevé de 10 %.",
-   "precision": "Le point d'indice sert à calculer le traitement des fonctionnaires. Sa dernière hausse date du 1er juillet 2023 (+1,5 %).",
-   "origine": {
-    "description": "Programme commun de gauche des législatives de 2024",
-    "source": {
-     "url": "https://www.zoomdici.fr/sites/default/files/upload/documents/lhumanite-presente-le-programme-du-nouveau-front-populaire.pdf",
-     "titre": "Programme du Nouveau Front populaire (juin 2024), copie hébergée par un site tiers",
-     "date_consultation": "2026-10-02",
-     "nature": "secondaire"
-    }
-   },
-   "statut": "active",
-   "alertes_neutralite": [],
-   "scrutins": [],
-   "historique": [],
-   "impact": {
-    "changement": "Une hausse de 1 % du point d'indice coûte environ 2,07 milliards d'euros par an à l'État, aux collectivités et aux hôpitaux, selon la Cour des comptes citée par la presse. Par simple extrapolation, +10 % représenterait de l'ordre de 20 milliards d'euros par an, pour environ 5,6 millions d'agents publics.",
-    "pour": "Ses partisans estiment que le point d'indice a perdu du terrain face à l'inflation depuis plusieurs années et qu'une hausse est nécessaire pour compenser la baisse de pouvoir d'achat des agents et maintenir l'attractivité des métiers publics.",
-    "contre": "Ses opposants soulignent le coût d'environ 2 milliards d'euros par point de hausse et jugent la mesure peu ciblée : elle bénéficie à tous les agents, pour un gain limité (15 euros par mois pour 1 %).",
-    "sources": [
-     {
-      "url": "https://acteurspublics.fr/articles/1-2-ou-3-de-hausse-du-point-dindice-quel-impact-sur-les-finances-publiques",
-      "titre": "1 %, 2 % ou 3 % de hausse du point d'indice : quel impact sur les finances publiques ?",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     },
-     {
-      "url": "https://selectra.info/finance/actualites/marche/point-indice-gel-2027-fonctionnaires-salaire",
-      "titre": "Point d'indice : gel en 2027 pour les fonctionnaires",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     }
-    ],
-    "statut": "pilote"
-   }
-  },
-  {
-   "id": "ECO-010",
-   "theme": "economie-dette",
-   "axe": "economie",
-   "sens": 1,
-   "enonce": "L'obligation de 15 heures d'activité par semaine pour les allocataires du RSA doit être supprimée.",
-   "precision": "Cette obligation, créée par la loi du 18 décembre 2023, s'applique partout depuis le 1er janvier 2025, avec des dispenses (santé, handicap, parent isolé).",
-   "origine": {
-    "description": "Loi n° 2023-1196 du 18 décembre 2023 pour le plein emploi",
-    "source": {
-     "url": "https://www.service-public.gouv.fr/particuliers/actualites/A17997?lang=fr",
-     "titre": "Service-Public — nouvelles modalités du RSA en 2025",
-     "date_consultation": "2026-10-02",
-     "nature": "primaire"
-    }
-   },
-   "statut": "active",
-   "alertes_neutralite": [
+      "id": "ECO-004",
+      "theme": "economie-dette",
+      "axe": "economie",
+      "sens": 1,
+      "enonce": "La durée légale du travail doit être ramenée à 32 heures par semaine dans les métiers pénibles ou de nuit.",
+      "precision": "La durée légale est de 35 heures par semaine pour tous les salariés.",
+      "origine": {
+        "description": "Programme commun de gauche des législatives de 2024 ; amendement n° 12 (rect.) du 22 juin 2026",
+        "source": {
+          "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2790/AN/12.pdf",
+          "titre": "Amendement n° 12 (rect.) au texte n° 2790 (22 juin 2026)",
+          "date_consultation": "2026-10-02",
+          "nature": "primaire"
+        }
+      },
+      "statut": "active",
+      "alertes_neutralite": [
+        {
+          "signalement": "les 32 heures pour tous ne sont proposées par personne dans les sources trouvées",
+          "decision": "énoncé aligné sur la mesure documentée"
+        }
+      ],
+      "scrutins": [],
+      "historique": [],
+      "impact": {
+        "changement": "La durée légale de travail est le seuil au-delà duquel les heures sont comptées comme supplémentaires. Pour les métiers pénibles ou de nuit, il passerait de 35 à 32 heures par semaine. Aucun texte consulté ne fixe la liste de ces métiers ; une demande de rapport sur ce sujet pour le secteur du nettoyage a été déposée puis retirée. Les salariés à temps complet travaillent en moyenne 38,8 heures par semaine (2024).",
+        "pour": "Ses partisans estiment que le travail de nuit et les tâches pénibles usent la santé, notamment des femmes très présentes dans le nettoyage, et qu'un temps réduit protégerait mieux. Ils y voient aussi un moyen de partager l'emploi.",
+        "contre": "Ses opposants jugent que réduire le temps de travail, à rémunération maintenue, alourdit le coût du travail et pèse sur la compétitivité. À rémunération réduite, ils craignent une baisse de revenu pour des salariés déjà modestes.",
+        "sources": [
+          {
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/0770/CION-SOC/AS13.pdf",
+            "titre": "Amendement AS13 (rapport sur la durée du travail à 32 heures dans les métiers pénibles ou de nuit)",
+            "date_consultation": "2026-10-12",
+            "nature": "primaire"
+          },
+          {
+            "url": "https://www.insee.fr/fr/statistiques/8376854",
+            "titre": "Durée du travail - Insee",
+            "date_consultation": "2026-10-12",
+            "nature": "institutionnelle"
+          },
+          {
+            "url": "https://www.insee.fr/fr/metadonnees/definition/c1539",
+            "titre": "Durée légale du travail - Insee (définition)",
+            "date_consultation": "2026-10-12",
+            "nature": "institutionnelle"
+          },
+          {
+            "url": "https://culture-rh.com/semaine-32-heures/",
+            "titre": "Semaine de 32 heures",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          }
+        ],
+        "statut": "pilote"
+      }
+    },
     {
-     "signalement": "origine = état du droit ; la seule proposition trouvée vise l'annulation globale des réformes du RSA, sans citer les 15 heures",
-     "decision": "conservée"
-    }
-   ],
-   "scrutins": [],
-   "historique": [],
-   "impact": {
-    "changement": "Les allocataires du RSA n'auraient plus à réaliser un minimum de 15 heures d'activité par semaine (formation, immersion en entreprise, démarches d'insertion). Cette obligation a été testée dans 47 territoires en 2023-2024 avant d'être généralisée. Le texte de l'énoncé ne dit pas si le contrat d'engagement et l'accompagnement par France Travail resteraient en place.",
-    "pour": "Ses partisans estiment qu'il n'existe pas d'offre d'activité adaptée en nombre suffisant, que l'accompagnement manque de moyens, et que les sanctions risquent d'éloigner de l'aide des personnes fragiles qui n'y recourraient plus.",
-    "contre": "Ses opposants, défenseurs de l'obligation, y voient un accompagnement vers l'emploi (formation, immersion en entreprise, démarches) plutôt que du travail gratuit. Ils soutiennent que l'activité régulière favorise la reprise d'un emploi.",
-    "sources": [
-     {
-      "url": "https://www.aide-sociale.fr/reforme-rsa/",
-      "titre": "Réforme du RSA",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     },
-     {
-      "url": "https://www.publicsenat.fr/actualites/emploi/rsa-sous-conditions-une-mesure-disproportionnee-selon-les-associations-de-lutte-contre-la-pauvrete",
-      "titre": "RSA sous conditions : une mesure disproportionnée selon les associations de lutte contre la pauvreté",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     }
-    ],
-    "statut": "pilote"
-   }
-  },
-  {
-   "id": "ECO-011",
-   "theme": "economie-dette",
-   "axe": "economie",
-   "sens": -1,
-   "enonce": "Deux jours fériés doivent être supprimés.",
-   "precision": null,
-   "origine": {
-    "description": "Annonce du Premier ministre du 15 juillet 2025, retirée en septembre 2025",
-    "source": {
-     "url": "https://www.legifiscal.fr/actualites-fiscales/4234-sebastien-lecornu-renonce-suppression-2-jours-feries.html",
-     "titre": "Sébastien Lecornu renonce à la suppression de 2 jours fériés",
-     "date_consultation": "2026-10-02",
-     "nature": "secondaire"
-    }
-   },
-   "statut": "active",
-   "alertes_neutralite": [],
-   "scrutins": [],
-   "historique": [],
-   "impact": {
-    "changement": "Le plan de juillet 2025 visait le lundi de Pâques et le 8 mai : ils deviendraient des jours travaillés sans rémunération supplémentaire, dans le public comme dans le privé. Les employeurs privés verseraient une contribution à l'État. Le gouvernement de l'époque en attendait 4,2 milliards d'euros par an, mais l'Insee évalue le gain d'un jour travaillé à environ 1,6 milliard d'euros.",
-    "pour": "Ses partisans estiment que deux jours travaillés de plus augmenteraient l'activité (0,5 % selon les services du Premier ministre de l'époque) et les recettes sans créer d'impôt au sens strict.",
-    "contre": "Ses opposants y voient du travail non payé, assimilable à une hausse d'impôt qui ne dit pas son nom, et jugent le gain inférieur aux chiffres annoncés. Les syndicats dénoncent une atteinte à un acquis social.",
-    "sources": [
-     {
-      "url": "https://www.previssima.fr/actualite/bayrou-maintient-le-cap-sur-la-suppression-de-deux-jours-feries-malgre-la-fronde-syndicale-8654.html",
-      "titre": "Suppression de deux jours fériés : Bayrou maintient le cap, les syndicats se préparent pour une rentrée explosive",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     },
-     {
-      "url": "https://www.europe1.fr/france/budget-2026-francois-bayrou-propose-de-supprimer-deux-jours-feries-le-8-mai-et-le-lundi-de-paques-764261",
-      "titre": "Budget 2026 : François Bayrou propose de supprimer deux jours fériés, le 8 mai et le lundi de Pâques",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     }
-    ],
-    "statut": "pilote"
-   }
-  },
-  {
-   "id": "ECO-012",
-   "theme": "economie-dette",
-   "axe": "economie",
-   "sens": -1,
-   "enonce": "Les prestations sociales doivent être gelées pendant un an.",
-   "precision": "Gel : absence de revalorisation annuelle sur l'inflation. Une « année blanche » avait été annoncée en juillet 2025 ; elle n'a pas été retenue dans le budget 2026.",
-   "origine": {
-    "description": "Annonce du Premier ministre du 15 juillet 2025",
-    "source": {
-     "url": "https://www.moneyvox.fr/votre-argent/actualites/107381/impots-immobilier-locatif-apl-rsa-tout-ce-qui-change-avec-le-budget-2026",
-     "titre": "Impôts, immobilier locatif, APL, RSA... Tout ce qui change (au final) avec le budget 2026",
-     "date_consultation": "2026-10-02",
-     "nature": "secondaire"
-    }
-   },
-   "statut": "active",
-   "alertes_neutralite": [
+      "id": "ECO-005",
+      "theme": "economie-dette",
+      "axe": "economie",
+      "sens": 1,
+      "enonce": "Une entreprise qui délocalise dans les deux ans après avoir reçu une aide publique doit la rembourser intégralement.",
+      "precision": "Une commission d'enquête du Sénat a chiffré les aides publiques aux entreprises en 2023 à au moins 211 milliards d'euros au sens large, et à 108 milliards en périmètre restreint.",
+      "origine": {
+        "description": "Recommandation n° 20 du rapport n° 808 (2024-2025) de la commission d'enquête du Sénat, adopté le 1er juillet 2025",
+        "source": {
+          "url": "https://www.senat.fr/rap/r24-808-1/r24-808-1-syn.pdf",
+          "titre": "Transparence et évaluation des aides publiques aux entreprises — synthèse du rapport",
+          "date_consultation": "2026-10-02",
+          "nature": "primaire"
+        }
+      },
+      "statut": "active",
+      "alertes_neutralite": [
+        {
+          "signalement": "le chiffre de 211 milliards repose sur un périmètre large (108 milliards en périmètre restreint)",
+          "decision": "les deux chiffres sont cités (2026-10-02)"
+        }
+      ],
+      "scrutins": [],
+      "historique": [],
+      "impact": {
+        "changement": "Il n'existe pas de règle générale de remboursement : seules certaines aides, comme les aides régionales ou les prêts garantis pendant le Covid, comportent des clauses anti-délocalisation ou de non-versement de dividendes. La commission d'enquête du Sénat propose le remboursement total d'une aide si l'activité aidée est délocalisée dans les deux ans. Elle ne précise pas comment « délocaliser » serait défini ni comment le montant serait calculé.",
+        "pour": "Ses partisans estiment que l'argent public ne doit pas financer des emplois transférés à l'étranger et que les contreparties actuelles, peu contraignantes, ne permettent pas de récupérer les aides. Une entreprise aidée devrait rendre des comptes avant de partir.",
+        "contre": "Ses opposants soulignent que les entreprises affrontent une forte concurrence internationale et que leurs prélèvements obligatoires sont déjà parmi les plus élevés de l'Union européenne. Ils relèvent aussi que la proposition ne définit pas ce qu'est une délocalisation.",
+        "sources": [
+          {
+            "url": "https://www.publicsenat.fr/actualites/economie/un-cout-annuel-de-211-milliards-deuros-la-commission-denquete-du-senat-sur-les-aides-publiques-aux-entreprises-reclame-un-choc-de-transparence",
+            "titre": "Un coût annuel de 211 milliards d'euros : la commission d'enquête du Sénat sur les aides publiques aux entreprises réclame un « choc de transparence »",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          },
+          {
+            "url": "https://www.banquedesterritoires.fr/rembourser-laide-percue-si-une-entreprise-delocalise-les-idees-des-senateurs-concernant-les-aides",
+            "titre": "Rembourser l'aide perçue si une entreprise délocalise ? Les idées des sénateurs concernant les aides publiques",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          }
+        ],
+        "statut": "pilote"
+      }
+    },
     {
-     "signalement": "l'« année blanche » annoncée regroupait prestations, pensions et barèmes fiscaux",
-     "decision": "scindée : les pensions sont en RET-009 ; le gel des barèmes fiscaux n'est pas repris"
-    }
-   ],
-   "scrutins": [],
-   "historique": [],
-   "impact": {
-    "changement": "Selon l'Institut des politiques publiques, geler en 2026 à la fois les retraites, les prestations sociales et le barème de l'impôt sur le revenu rapporterait 5,7 milliards d'euros à l'État, dont environ 1,3 milliard pour les seules prestations sociales (hypothèse d'inflation de 1,3 %). Pour ce gel d'ensemble, cet institut estime que 3,2 % des ménages verraient leur niveau de vie baisser d'au moins 1 %.",
-    "pour": "Ses partisans estiment qu'un gel d'un an améliore immédiatement le solde public et répartit l'effort sur l'ensemble des revenus plutôt que de concentrer les économies sur quelques postes de dépenses ou sur des impôts nouveaux.",
-    "contre": "Ses opposants jugent qu'il réduit le pouvoir d'achat de ceux qui dépendent de ces prestations, puisque les montants ne suivraient plus les prix. Ils soulignent que l'effet porte sur des ménages déjà modestes.",
-    "sources": [
-     {
-      "url": "https://www.journaldeleconomie.fr/budget-une-annee-blanche-permettrait-57-milliards-deuros-deconomies-en-2026/",
-      "titre": "Budget : une année blanche permettrait 5,7 milliards d'euros d'économies en 2026",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     },
-     {
-      "url": "https://placement.meilleurtaux.com/retraite/actualites/2025-decembre/retraites-base-2026-hausse-officielle-0-9-confirmee.html",
-      "titre": "Retraites de base 2026 : la hausse officielle à 0,9 % confirmée",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     }
-    ],
-    "statut": "pilote"
-   }
-  },
-  {
-   "id": "ECO-013",
-   "theme": "economie-dette",
-   "axe": "economie",
-   "sens": -1,
-   "enonce": "Une règle imposant l'équilibre du budget de l'État doit être inscrite dans la Constitution.",
-   "precision": "Mesure souvent appelée « règle d'or » budgétaire.",
-   "origine": {
-    "description": "Propositions publiques de mars 2025 et de juillet 2026",
-    "source": {
-     "url": "https://www.europe1.fr/node/668233",
-     "titre": "Dissolution, référendum sur les retraites et sur une « règle d'or » budgétaire : Philippe dévoile sa méthode",
-     "date_consultation": "2026-10-02",
-     "nature": "secondaire"
-    }
-   },
-   "statut": "active",
-   "alertes_neutralite": [
+      "id": "ECO-006",
+      "theme": "economie-dette",
+      "axe": "economie",
+      "sens": 1,
+      "enonce": "ArcelorMittal France doit être nationalisé.",
+      "precision": "Une proposition de loi en ce sens a été adoptée par l'Assemblée nationale le 27 novembre 2025, rejetée par le Sénat le 25 février 2026, puis adoptée de nouveau à l'Assemblée le 11 juin 2026.",
+      "origine": {
+        "description": "Proposition de loi visant à la nationalisation d'ArcelorMittal France",
+        "source": {
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/7380",
+          "titre": "Scrutin n° 7380 — deuxième séance du jeudi 11 juin 2026",
+          "date_consultation": "2026-10-02",
+          "nature": "primaire"
+        }
+      },
+      "statut": "active",
+      "alertes_neutralite": [
+        {
+          "signalement": "l'énoncé nomme une entreprise : mesure précise mais liée à l'actualité",
+          "decision": "conservée (2026-10-02) ; suite de la navette non trouvée"
+        }
+      ],
+      "scrutins": [],
+      "historique": [],
+      "impact": {
+        "changement": "La loi transférerait à l'État, douze mois après sa promulgation, les sites français du groupe (neuf sites cités dont Dunkerque, Fos-sur-Mer et Florange), qui emploient environ 7 100 salariés dans sept usines selon l'exposé des motifs. Les actionnaires seraient indemnisés, après déduction des aides publiques reçues, selon une évaluation indépendante. Une entreprise publique serait créée. Le coût n'est pas établi : un rapporteur a évoqué 3 à 4 milliards d'euros, sans préciser ce que ce chiffre couvre.",
+        "pour": "Ses partisans estiment que l'acier est un secteur stratégique et que la décarbonation et le maintien des emplois exigent un contrôle public, face à un groupe qui, selon eux, investit peu malgré les aides et les dividendes versés.",
+        "contre": "Ses opposants jugent que la nationalisation déplacerait le problème du marché vers le contribuable, l'État n'ayant pas des moyens illimités. Ils estiment que des investisseurs privés sont nécessaires et préfèrent des réponses européennes (clauses de sauvegarde, taxe carbone aux frontières).",
+        "sources": [
+          {
+            "url": "https://questions.assemblee-nationale.fr/dyn/17/textes/l17b1537_proposition-loi.pdf",
+            "titre": "Proposition de loi n° 1537 visant à nationaliser les sites sidérurgiques d'ArcelorMittal en France",
+            "date_consultation": "2026-10-12",
+            "nature": "primaire"
+          },
+          {
+            "url": "https://lcp.fr/actualites/arcelormittal-au-terme-d-un-bras-de-fer-dans-l-hemicycle-l-assemblee-vote-a-nouveau-en",
+            "titre": "ArcelorMittal : au terme d'un bras de fer dans l'hémicycle, l'Assemblée vote à nouveau en faveur de la nationalisation",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          }
+        ],
+        "statut": "pilote"
+      }
+    },
     {
-     "signalement": "« règle d'or » est une expression favorable à la mesure",
-     "decision": "absente de l'énoncé, mentionnée dans la précision pour que l'utilisateur reconnaisse la mesure"
-    }
-   ],
-   "scrutins": [],
-   "historique": [],
-   "impact": {
-    "changement": "La Constitution n'impose pas aujourd'hui l'équilibre du budget. Une proposition déposée en janvier 2026 ajouterait à l'article 34 que, à partir de 2030, les lois de finances ne pourraient être ni présentées ni adoptées en déficit, selon des règles fixées par une loi d'application. Le cadre actuel est européen : un traité de 2012 limite le déficit structurel à 0,5 % du produit intérieur brut.",
-    "pour": "Ses partisans estiment que la dette, de 117 % du produit intérieur brut en 2025 selon les auteurs d'un texte, et ses intérêts croissants menacent la marge d'action de l'État. Une règle durable s'imposerait, selon eux, aux gouvernements successifs.",
-    "contre": "Ses opposants jugent qu'une telle règle empêcherait de relancer l'économie en cas de crise, comme en 2008-2009, et pourrait imposer une rigueur prolongée. Ils estiment aussi que les contribuables d'aujourd'hui paieraient seuls des investissements utiles aux générations futures.",
-    "sources": [
-     {
-      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b2352_proposition-loi.pdf",
-      "titre": "Proposition de loi constitutionnelle n° 2352 (2026) relative à l'équilibre des comptes publics",
-      "date_consultation": "2026-10-12",
-      "nature": "primaire"
-     },
-     {
-      "url": "https://www.lafinancepourtous.com/decryptages/politiques-economiques/theories-economiques/regle-d-or-budgetaire/",
-      "titre": "Qu'est-ce que la règle d'or ?",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     },
-     {
-      "url": "https://www.ifrap.org/pour-ne-pas-finir-etouffes-par-la-dette-une-regle-dor-budgetaire-finira-par-devenir-incontournable",
-      "titre": "Pour ne pas finir étouffés par la dette, une règle d'or budgétaire finira par devenir incontournable",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     }
-    ],
-    "statut": "pilote"
-   }
-  },
-  {
-   "id": "ECO-014",
-   "theme": "economie-dette",
-   "axe": "economie",
-   "sens": -1,
-   "enonce": "Un fonctionnaire de l'État sur trois partant à la retraite ne doit pas être remplacé.",
-   "precision": "La mesure annoncée en 2025 visait les administrations et opérateurs de l'État, pas les collectivités ni les hôpitaux.",
-   "origine": {
-    "description": "Annonce du Premier ministre du 15 juillet 2025",
-    "source": {
-     "url": "https://acteurspublics.fr/articles/francois-bayrou-annonce-le-non-remplacement-dun-fonctionnaire-sur-trois-partant-a-la-retraite-francois-bayrou-annonce-le-non-remplacement-dun-fonctionnaire-sur-trois-suppression-de-postes-non/",
-     "titre": "François Bayrou annonce le non-remplacement d'un fonctionnaire d'État sur trois partant à la retraite",
-     "date_consultation": "2026-10-02",
-     "nature": "secondaire"
-    }
-   },
-   "statut": "active",
-   "alertes_neutralite": [],
-   "scrutins": [],
-   "historique": [],
-   "impact": {
-    "changement": "Le plan présenté en juillet 2025 prévoyait que les administrations et opérateurs de l'État ne remplacent pas un départ à la retraite sur trois à partir de 2027, en plus de 3 000 suppressions de postes dès 2026. En décembre 2025, le Sénat a voté une règle plus large, un départ sur deux, chiffrée à environ 23 000 postes et 700 millions d'euros.",
-    "pour": "Ses partisans estiment que réduire les effectifs de l'État permet de diminuer durablement les dépenses de fonctionnement et d'inciter les administrations à se réorganiser, en s'appuyant sur les départs naturels plutôt que sur des licenciements.",
-    "contre": "Ses opposants craignent qu'une baisse mécanique des effectifs dégrade les services rendus. Lors du vote d'une règle plus stricte au Sénat, une ministre a averti que supprimer 9 000 postes dans l'éducation sans anticipation aurait des effets non voulus.",
-    "sources": [
-     {
-      "url": "https://acteurspublics.fr/articles/francois-bayrou-annonce-le-non-remplacement-dun-fonctionnaire-sur-trois-partant-a-la-retraite-francois-bayrou-annonce-le-non-remplacement-dun-fonctionnaire-sur-trois-suppression-de-postes-non/",
-      "titre": "François Bayrou annonce le non-remplacement d'un fonctionnaire sur trois partant à la retraite",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     },
-     {
-      "url": "https://www.publicsenat.fr/actualites/economie/arrets-maladie-les-senateurs-augmentent-a-trois-jours-le-delai-de-carence-dans-la-fonction-publique",
-      "titre": "Arrêts maladie : les sénateurs augmentent à trois jours le délai de carence dans la fonction publique",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     }
-    ],
-    "statut": "pilote"
-   }
-  },
-  {
-   "id": "ECO-015",
-   "theme": "economie-dette",
-   "axe": "economie",
-   "sens": -1,
-   "enonce": "La durée légale annuelle du travail doit être portée de 1 607 à 1 623 heures.",
-   "precision": "1 607 heures par an correspondent aux 35 heures par semaine.",
-   "origine": {
-    "description": "Proposition publique du 7 janvier 2026, présentée comme la fin des 35 heures",
-    "source": {
-     "url": "https://www.publicsenat.fr/actualites/politique/la-fete-est-finie-bruno-retailleau-veut-supprimer-les-35-heures-inciter-a-la-reprise-dactivite-et-plafonner-les-aides-sociales-pour-relancer-lemploi",
-     "titre": "Article Public Sénat sur les propositions de janvier 2026 relatives au travail (titre exact à relever)",
-     "date_consultation": "2026-10-02",
-     "nature": "secondaire"
-    }
-   },
-   "statut": "active",
-   "alertes_neutralite": [
+      "id": "ECO-007",
+      "theme": "economie-dette",
+      "axe": "economie",
+      "sens": 1,
+      "enonce": "L'écart entre le plus bas et le plus haut salaire d'une même entreprise doit être limité de 1 à 20.",
+      "precision": null,
+      "origine": {
+        "description": "Amendement n° 7 du 22 juin 2026 au texte n° 2790",
+        "source": {
+          "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2790/AN/7.pdf",
+          "titre": "Amendement n° 7 au texte n° 2790 (22 juin 2026)",
+          "date_consultation": "2026-10-02",
+          "nature": "primaire"
+        }
+      },
+      "statut": "active",
+      "alertes_neutralite": [],
+      "scrutins": [],
+      "historique": [],
+      "impact": {
+        "changement": "Aucune règle générale ne limite aujourd'hui l'écart de salaires dans les entreprises privées. Deux plafonds existent : 450 000 euros pour les dirigeants d'entreprises publiques depuis 2012, et sept fois le SMIC en moyenne pour les cinq mieux payés des entreprises d'économie sociale agréées. Dans les 40 plus grandes entreprises cotées, le dirigeant gagnait en moyenne 163 fois le salaire moyen en 2021, selon une ONG.",
+        "pour": "Ses partisans estiment que des écarts extrêmes fragilisent la cohésion d'une entreprise et incitent à privilégier le rendement à court terme. Ils citent des entreprises qui ont plafonné volontairement les écarts sans perte de compétitivité.",
+        "contre": "Ses opposants craignent qu'un plafond décourage les dirigeants de talent d'occuper ou de rester à de tels postes. Pour eux, les rémunérations élevées correspondent à un prix de marché, qu'une règle nationale fausserait.",
+        "sources": [
+          {
+            "url": "https://www.oxfamfrance.org/app/uploads/2023/04/Rapport_VF_Final_Inegalites-salariales_Aux-grandes-entreprises-les-gros-ecarts-OK-1.pdf",
+            "titre": "Inégalités salariales : aux grandes entreprises les gros écarts (rapport Oxfam France)",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          }
+        ],
+        "statut": "pilote"
+      }
+    },
     {
-     "signalement": "la proposition d'origine comporte aussi une exonération de cotisations et d'impôt au-delà de 1 607 heures, non reprise",
-     "decision": "énoncé conservé tel quel (2026-10-02)"
-    }
-   ],
-   "scrutins": [],
-   "historique": [],
-   "impact": {
-    "changement": "La durée légale annuelle augmenterait de 16 heures, soit environ deux journées de travail de huit heures. Au-delà de ce seuil, les heures sont comptées comme supplémentaires. Le Sénat a voté en novembre 2025 une mesure proche, à 1 619 heures par an (+12 heures), dont un sénateur attendait plus de 10 milliards d'euros par an. Le gouvernement s'y opposait.",
-    "pour": "Ses partisans estiment que la France doit créer davantage de richesse pour financer sa solidarité, que « le travail doit payer », et que quelques heures de plus par an constituent une manière peu douloureuse de redresser les comptes sociaux.",
-    "contre": "Ses opposants soulignent qu'elle ferait perdre aux salariés concernés des heures supplémentaires majorées, donc du pouvoir d'achat, et qu'elle pèserait surtout sur les salariés précaires. Ils jugent que ce sujet relève du droit du travail plus que d'un budget.",
-    "sources": [
-     {
-      "url": "https://acteurspublics.fr/articles/12-heures-en-plus-par-an-le-senat-vote-une-augmentation-du-temps-de-travail-dans-la-fonction-publique/",
-      "titre": "12 heures en plus par an : le Sénat vote une augmentation du temps de travail dans la fonction publique",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     },
-     {
-      "url": "https://www.insee.fr/fr/metadonnees/definition/c1539",
-      "titre": "Durée légale du travail - Insee (définition)",
-      "date_consultation": "2026-10-12",
-      "nature": "institutionnelle"
-     }
-    ],
-    "statut": "pilote"
-   }
-  },
-  {
-   "id": "ECO-016",
-   "theme": "economie-dette",
-   "axe": "economie",
-   "sens": -1,
-   "enonce": "Le cumul du RSA et des aides au logement doit être plafonné à 70 % du SMIC.",
-   "precision": null,
-   "origine": {
-    "description": "Proposition de loi n° 765 du 19 décembre 2024",
-    "source": {
-     "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b0765_proposition-loi.pdf",
-     "titre": "Proposition de loi n° 765 (17e législature)",
-     "date_consultation": "2026-10-02",
-     "nature": "primaire"
-    }
-   },
-   "statut": "active",
-   "alertes_neutralite": [],
-   "scrutins": [],
-   "historique": [],
-   "impact": {
-    "changement": "Le total du RSA et des aides au logement perçu par une personne ou un ménage ne pourrait pas dépasser 70 % du SMIC net, soit environ 1 000 euros à ce niveau de SMIC, avec une modulation possible selon la composition du ménage. Une proposition de loi en ce sens a été déposée en 2024 ; la commission des affaires sociales en a supprimé le plafond en janvier 2025.",
-    "pour": "Ses partisans estiment que certains foyers gagnent peu ou moins en travaillant qu'en cumulant des aides, et qu'un plafond rendrait l'emploi toujours plus rémunérateur, tout en simplifiant le système et en limitant les fraudes.",
-    "contre": "Ses opposants jugent le seuil de 70 % arbitraire et craignent que le plafond frappe surtout les familles et les personnes modestes. Selon eux, un temps plein au SMIC rapporte déjà le double du RSA et des aides au logement.",
-    "sources": [
-     {
-      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b0765_proposition-loi.pdf",
-      "titre": "Proposition de loi n° 765 visant à plafonner le cumul des prestations sociales non contributives",
-      "date_consultation": "2026-10-12",
-      "nature": "primaire"
-     },
-     {
-      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2425039_compte-rendu.pdf",
-      "titre": "Compte rendu de la commission des affaires sociales du 29 janvier 2025 (proposition de loi n° 765)",
-      "date_consultation": "2026-10-12",
-      "nature": "primaire"
-     }
-    ],
-    "statut": "pilote"
-   }
-  },
-  {
-   "id": "ECO-017",
-   "theme": "economie-dette",
-   "axe": "economie",
-   "sens": -1,
-   "enonce": "Le RSA doit être limité à deux ans pour les personnes aptes au travail.",
-   "precision": "Le RSA n'est pas limité dans le temps aujourd'hui.",
-   "origine": {
-    "description": "Proposition publique du 11 mai 2025",
-    "source": {
-     "url": "https://econostrum.info/rsa-wauquiez-veut-en-finir-avec-laide-a-vie/",
-     "titre": "RSA : Laurent Wauquiez veut en finir avec l'aide à vie pour les allocataires aptes au travail",
-     "date_consultation": "2026-10-02",
-     "nature": "secondaire"
-    }
-   },
-   "statut": "active",
-   "alertes_neutralite": [],
-   "scrutins": [],
-   "historique": [],
-   "impact": {
-    "changement": "Le RSA cesserait d'être versé après 24 mois consécutifs, sauf renouvellement, pour les personnes aptes au travail. Un amendement au budget 2026 prévoyait des exceptions pour les personnes reconnues inaptes (handicap, maladie de longue durée) et celles engagées dans un parcours d'insertion ; il n'a pas été défendu. Son exposé cite 1,85 million d'allocataires en août 2025.",
-    "pour": "Ses partisans estiment qu'une limite dans le temps inciterait à reprendre un emploi, alors que, selon l'auteur d'un amendement, 488 000 emplois restaient non pourvus au deuxième trimestre 2025.",
-    "contre": "Ses opposants rappellent que le RSA ne permet pas de sortir de la pauvreté et qu'une interruption, même temporaire, peut avoir de graves conséquences. Ils craignent que des personnes renoncent à des droits et jugent l'offre d'accompagnement insuffisante.",
-    "sources": [
-     {
-      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906C/CION_FIN/CF562.pdf",
-      "titre": "Amendement II-CF562 au projet de loi de finances pour 2026 (durée maximale du RSA)",
-      "date_consultation": "2026-10-12",
-      "nature": "primaire"
-     },
-     {
-      "url": "https://www.publicsenat.fr/actualites/emploi/rsa-sous-conditions-une-mesure-disproportionnee-selon-les-associations-de-lutte-contre-la-pauvrete",
-      "titre": "RSA sous conditions : une mesure disproportionnée selon les associations de lutte contre la pauvreté",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     }
-    ],
-    "statut": "pilote"
-   }
-  },
-  {
-   "id": "ECO-018",
-   "theme": "economie-dette",
-   "axe": "economie",
-   "sens": -1,
-   "enonce": "Les fonctionnaires en arrêt maladie doivent avoir trois jours de carence au lieu d'un.",
-   "precision": "Jour de carence : jour d'arrêt non rémunéré. Les fonctionnaires en ont un ; les salariés du privé en ont trois, souvent pris en charge par l'employeur.",
-   "origine": {
-    "description": "Proposition gouvernementale de l'automne 2024, abandonnée en janvier 2025",
-    "source": {
-     "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F13861?lang=fr",
-     "titre": "Service-Public — jour de carence dans la fonction publique",
-     "date_consultation": "2026-10-02",
-     "nature": "primaire"
-    }
-   },
-   "statut": "active",
-   "alertes_neutralite": [
+      "id": "ECO-008",
+      "theme": "economie-dette",
+      "axe": "economie",
+      "sens": 1,
+      "enonce": "Une sixième semaine de congés payés doit être accordée à tous les salariés.",
+      "precision": "Les salariés ont droit à cinq semaines de congés payés.",
+      "origine": {
+        "description": "Amendement n° 12 (rect.) du 22 juin 2026 au texte n° 2790",
+        "source": {
+          "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2790/AN/12.pdf",
+          "titre": "Amendement n° 12 (rect.) au texte n° 2790 (22 juin 2026)",
+          "date_consultation": "2026-10-02",
+          "nature": "primaire"
+        }
+      },
+      "statut": "active",
+      "alertes_neutralite": [],
+      "scrutins": [],
+      "historique": [],
+      "impact": {
+        "changement": "Le plafond annuel de congés passerait de 30 à 36 jours ouvrables, à raison de trois jours par mois travaillé au lieu de deux jours et demi, dans le privé comme dans la fonction publique. En 2010, selon l'Insee cité dans l'exposé des motifs d'une proposition de loi, les Français prenaient en moyenne 37 jours de congés, 32 pour les ouvriers et 41 pour les cadres.",
+        "pour": "Ses partisans estiment que la productivité justifie plus de temps libre, la dernière semaine ayant été ajoutée en 1982. Ils attendent des créations d'emplois : 40 000 selon une étude d'un institut, jusqu'à 100 000 selon les auteurs d'un texte.",
+        "contre": "Ses opposants jugent que des congés supplémentaires augmenteraient le coût du travail et pèseraient sur la compétitivité, surtout pour les petites entreprises qui remplacent difficilement un salarié absent. Ils doutent que les emplois attendus se créent.",
+        "sources": [
+          {
+            "url": "https://www.assemblee-nationale.fr/15/pdf/propositions/pion2097.pdf",
+            "titre": "Proposition de loi n° 2097 visant à instituer une sixième semaine de congés payés",
+            "date_consultation": "2026-10-12",
+            "nature": "primaire"
+          }
+        ],
+        "statut": "pilote"
+      }
+    },
     {
-     "signalement": "la règle du privé (trois jours, souvent compensés) n'a pas été revérifiée",
-     "decision": "à compléter"
+      "id": "ECO-009",
+      "theme": "economie-dette",
+      "axe": "economie",
+      "sens": 1,
+      "enonce": "Le point d'indice des fonctionnaires doit être relevé de 10 %.",
+      "precision": "Le point d'indice sert à calculer le traitement des fonctionnaires. Sa dernière hausse date du 1er juillet 2023 (+1,5 %).",
+      "origine": {
+        "description": "Programme commun de gauche des législatives de 2024",
+        "source": {
+          "url": "https://www.zoomdici.fr/sites/default/files/upload/documents/lhumanite-presente-le-programme-du-nouveau-front-populaire.pdf",
+          "titre": "Programme du Nouveau Front populaire (juin 2024), copie hébergée par un site tiers",
+          "date_consultation": "2026-10-02",
+          "nature": "secondaire"
+        }
+      },
+      "statut": "active",
+      "alertes_neutralite": [],
+      "scrutins": [],
+      "historique": [],
+      "impact": {
+        "changement": "Une hausse de 1 % du point d'indice coûte environ 2,07 milliards d'euros par an à l'État, aux collectivités et aux hôpitaux, selon la Cour des comptes citée par la presse. Par simple extrapolation, +10 % représenterait de l'ordre de 20 milliards d'euros par an, pour environ 5,6 millions d'agents publics.",
+        "pour": "Ses partisans estiment que le point d'indice a perdu du terrain face à l'inflation depuis plusieurs années et qu'une hausse est nécessaire pour compenser la baisse de pouvoir d'achat des agents et maintenir l'attractivité des métiers publics.",
+        "contre": "Ses opposants soulignent le coût d'environ 2 milliards d'euros par point de hausse et jugent la mesure peu ciblée : elle bénéficie à tous les agents, pour un gain limité (15 euros par mois pour 1 %).",
+        "sources": [
+          {
+            "url": "https://acteurspublics.fr/articles/1-2-ou-3-de-hausse-du-point-dindice-quel-impact-sur-les-finances-publiques",
+            "titre": "1 %, 2 % ou 3 % de hausse du point d'indice : quel impact sur les finances publiques ?",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          },
+          {
+            "url": "https://selectra.info/finance/actualites/marche/point-indice-gel-2027-fonctionnaires-salaire",
+            "titre": "Point d'indice : gel en 2027 pour les fonctionnaires",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          }
+        ],
+        "statut": "pilote"
+      }
+    },
+    {
+      "id": "ECO-010",
+      "theme": "economie-dette",
+      "axe": "economie",
+      "sens": 1,
+      "enonce": "L'obligation de 15 heures d'activité par semaine pour les allocataires du RSA doit être supprimée.",
+      "precision": "Cette obligation, créée par la loi du 18 décembre 2023, s'applique partout depuis le 1er janvier 2025, avec des dispenses (santé, handicap, parent isolé).",
+      "origine": {
+        "description": "Loi n° 2023-1196 du 18 décembre 2023 pour le plein emploi",
+        "source": {
+          "url": "https://www.service-public.gouv.fr/particuliers/actualites/A17997?lang=fr",
+          "titre": "Service-Public — nouvelles modalités du RSA en 2025",
+          "date_consultation": "2026-10-02",
+          "nature": "primaire"
+        }
+      },
+      "statut": "active",
+      "alertes_neutralite": [
+        {
+          "signalement": "origine = état du droit ; la seule proposition trouvée vise l'annulation globale des réformes du RSA, sans citer les 15 heures",
+          "decision": "conservée"
+        }
+      ],
+      "scrutins": [],
+      "historique": [],
+      "impact": {
+        "changement": "Les allocataires du RSA n'auraient plus à réaliser un minimum de 15 heures d'activité par semaine (formation, immersion en entreprise, démarches d'insertion). Cette obligation a été testée dans 47 territoires en 2023-2024 avant d'être généralisée. Le texte de l'énoncé ne dit pas si le contrat d'engagement et l'accompagnement par France Travail resteraient en place.",
+        "pour": "Ses partisans estiment qu'il n'existe pas d'offre d'activité adaptée en nombre suffisant, que l'accompagnement manque de moyens, et que les sanctions risquent d'éloigner de l'aide des personnes fragiles qui n'y recourraient plus.",
+        "contre": "Ses opposants, défenseurs de l'obligation, y voient un accompagnement vers l'emploi (formation, immersion en entreprise, démarches) plutôt que du travail gratuit. Ils soutiennent que l'activité régulière favorise la reprise d'un emploi.",
+        "sources": [
+          {
+            "url": "https://www.aide-sociale.fr/reforme-rsa/",
+            "titre": "Réforme du RSA",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          },
+          {
+            "url": "https://www.publicsenat.fr/actualites/emploi/rsa-sous-conditions-une-mesure-disproportionnee-selon-les-associations-de-lutte-contre-la-pauvrete",
+            "titre": "RSA sous conditions : une mesure disproportionnée selon les associations de lutte contre la pauvreté",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          }
+        ],
+        "statut": "pilote"
+      }
+    },
+    {
+      "id": "ECO-011",
+      "theme": "economie-dette",
+      "axe": "economie",
+      "sens": -1,
+      "enonce": "Deux jours fériés doivent être supprimés.",
+      "precision": null,
+      "origine": {
+        "description": "Annonce du Premier ministre du 15 juillet 2025, retirée en septembre 2025",
+        "source": {
+          "url": "https://www.legifiscal.fr/actualites-fiscales/4234-sebastien-lecornu-renonce-suppression-2-jours-feries.html",
+          "titre": "Sébastien Lecornu renonce à la suppression de 2 jours fériés",
+          "date_consultation": "2026-10-02",
+          "nature": "secondaire"
+        }
+      },
+      "statut": "active",
+      "alertes_neutralite": [],
+      "scrutins": [],
+      "historique": [],
+      "impact": {
+        "changement": "Le plan de juillet 2025 visait le lundi de Pâques et le 8 mai : ils deviendraient des jours travaillés sans rémunération supplémentaire, dans le public comme dans le privé. Les employeurs privés verseraient une contribution à l'État. Le gouvernement de l'époque en attendait 4,2 milliards d'euros par an, mais l'Insee évalue le gain d'un jour travaillé à environ 1,6 milliard d'euros.",
+        "pour": "Ses partisans estiment que deux jours travaillés de plus augmenteraient l'activité (0,5 % selon les services du Premier ministre de l'époque) et les recettes sans créer d'impôt au sens strict.",
+        "contre": "Ses opposants y voient du travail non payé, assimilable à une hausse d'impôt qui ne dit pas son nom, et jugent le gain inférieur aux chiffres annoncés. Les syndicats dénoncent une atteinte à un acquis social.",
+        "sources": [
+          {
+            "url": "https://www.previssima.fr/actualite/bayrou-maintient-le-cap-sur-la-suppression-de-deux-jours-feries-malgre-la-fronde-syndicale-8654.html",
+            "titre": "Suppression de deux jours fériés : Bayrou maintient le cap, les syndicats se préparent pour une rentrée explosive",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          },
+          {
+            "url": "https://www.europe1.fr/france/budget-2026-francois-bayrou-propose-de-supprimer-deux-jours-feries-le-8-mai-et-le-lundi-de-paques-764261",
+            "titre": "Budget 2026 : François Bayrou propose de supprimer deux jours fériés, le 8 mai et le lundi de Pâques",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          }
+        ],
+        "statut": "pilote"
+      }
+    },
+    {
+      "id": "ECO-012",
+      "theme": "economie-dette",
+      "axe": "economie",
+      "sens": -1,
+      "enonce": "Les prestations sociales doivent être gelées pendant un an.",
+      "precision": "Gel : absence de revalorisation annuelle sur l'inflation. Une « année blanche » avait été annoncée en juillet 2025 ; elle n'a pas été retenue dans le budget 2026.",
+      "origine": {
+        "description": "Annonce du Premier ministre du 15 juillet 2025",
+        "source": {
+          "url": "https://www.moneyvox.fr/votre-argent/actualites/107381/impots-immobilier-locatif-apl-rsa-tout-ce-qui-change-avec-le-budget-2026",
+          "titre": "Impôts, immobilier locatif, APL, RSA... Tout ce qui change (au final) avec le budget 2026",
+          "date_consultation": "2026-10-02",
+          "nature": "secondaire"
+        }
+      },
+      "statut": "active",
+      "alertes_neutralite": [
+        {
+          "signalement": "l'« année blanche » annoncée regroupait prestations, pensions et barèmes fiscaux",
+          "decision": "scindée : les pensions sont en RET-009 ; le gel des barèmes fiscaux n'est pas repris"
+        }
+      ],
+      "scrutins": [],
+      "historique": [],
+      "impact": {
+        "changement": "Selon l'Institut des politiques publiques, geler en 2026 à la fois les retraites, les prestations sociales et le barème de l'impôt sur le revenu rapporterait 5,7 milliards d'euros à l'État, dont environ 1,3 milliard pour les seules prestations sociales (hypothèse d'inflation de 1,3 %). Pour ce gel d'ensemble, cet institut estime que 3,2 % des ménages verraient leur niveau de vie baisser d'au moins 1 %.",
+        "pour": "Ses partisans estiment qu'un gel d'un an améliore immédiatement le solde public et répartit l'effort sur l'ensemble des revenus plutôt que de concentrer les économies sur quelques postes de dépenses ou sur des impôts nouveaux.",
+        "contre": "Ses opposants jugent qu'il réduit le pouvoir d'achat de ceux qui dépendent de ces prestations, puisque les montants ne suivraient plus les prix. Ils soulignent que l'effet porte sur des ménages déjà modestes.",
+        "sources": [
+          {
+            "url": "https://www.journaldeleconomie.fr/budget-une-annee-blanche-permettrait-57-milliards-deuros-deconomies-en-2026/",
+            "titre": "Budget : une année blanche permettrait 5,7 milliards d'euros d'économies en 2026",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          },
+          {
+            "url": "https://placement.meilleurtaux.com/retraite/actualites/2025-decembre/retraites-base-2026-hausse-officielle-0-9-confirmee.html",
+            "titre": "Retraites de base 2026 : la hausse officielle à 0,9 % confirmée",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          }
+        ],
+        "statut": "pilote"
+      }
+    },
+    {
+      "id": "ECO-013",
+      "theme": "economie-dette",
+      "axe": "economie",
+      "sens": -1,
+      "enonce": "Une règle imposant l'équilibre du budget de l'État doit être inscrite dans la Constitution.",
+      "precision": "Mesure souvent appelée « règle d'or » budgétaire.",
+      "origine": {
+        "description": "Propositions publiques de mars 2025 et de juillet 2026",
+        "source": {
+          "url": "https://www.europe1.fr/node/668233",
+          "titre": "Dissolution, référendum sur les retraites et sur une « règle d'or » budgétaire : Philippe dévoile sa méthode",
+          "date_consultation": "2026-10-02",
+          "nature": "secondaire"
+        }
+      },
+      "statut": "active",
+      "alertes_neutralite": [
+        {
+          "signalement": "« règle d'or » est une expression favorable à la mesure",
+          "decision": "absente de l'énoncé, mentionnée dans la précision pour que l'utilisateur reconnaisse la mesure"
+        }
+      ],
+      "scrutins": [],
+      "historique": [],
+      "impact": {
+        "changement": "La Constitution n'impose pas aujourd'hui l'équilibre du budget. Une proposition déposée en janvier 2026 ajouterait à l'article 34 que, à partir de 2030, les lois de finances ne pourraient être ni présentées ni adoptées en déficit, selon des règles fixées par une loi d'application. Le cadre actuel est européen : un traité de 2012 limite le déficit structurel à 0,5 % du produit intérieur brut.",
+        "pour": "Ses partisans estiment que la dette, de 117 % du produit intérieur brut en 2025 selon les auteurs d'un texte, et ses intérêts croissants menacent la marge d'action de l'État. Une règle durable s'imposerait, selon eux, aux gouvernements successifs.",
+        "contre": "Ses opposants jugent qu'une telle règle empêcherait de relancer l'économie en cas de crise, comme en 2008-2009, et pourrait imposer une rigueur prolongée. Ils estiment aussi que les contribuables d'aujourd'hui paieraient seuls des investissements utiles aux générations futures.",
+        "sources": [
+          {
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b2352_proposition-loi.pdf",
+            "titre": "Proposition de loi constitutionnelle n° 2352 (2026) relative à l'équilibre des comptes publics",
+            "date_consultation": "2026-10-12",
+            "nature": "primaire"
+          },
+          {
+            "url": "https://www.lafinancepourtous.com/decryptages/politiques-economiques/theories-economiques/regle-d-or-budgetaire/",
+            "titre": "Qu'est-ce que la règle d'or ?",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          },
+          {
+            "url": "https://www.ifrap.org/pour-ne-pas-finir-etouffes-par-la-dette-une-regle-dor-budgetaire-finira-par-devenir-incontournable",
+            "titre": "Pour ne pas finir étouffés par la dette, une règle d'or budgétaire finira par devenir incontournable",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          }
+        ],
+        "statut": "pilote"
+      }
+    },
+    {
+      "id": "ECO-014",
+      "theme": "economie-dette",
+      "axe": "economie",
+      "sens": -1,
+      "enonce": "Un fonctionnaire de l'État sur trois partant à la retraite ne doit pas être remplacé.",
+      "precision": "La mesure annoncée en 2025 visait les administrations et opérateurs de l'État, pas les collectivités ni les hôpitaux.",
+      "origine": {
+        "description": "Annonce du Premier ministre du 15 juillet 2025",
+        "source": {
+          "url": "https://acteurspublics.fr/articles/francois-bayrou-annonce-le-non-remplacement-dun-fonctionnaire-sur-trois-partant-a-la-retraite-francois-bayrou-annonce-le-non-remplacement-dun-fonctionnaire-sur-trois-suppression-de-postes-non/",
+          "titre": "François Bayrou annonce le non-remplacement d'un fonctionnaire d'État sur trois partant à la retraite",
+          "date_consultation": "2026-10-02",
+          "nature": "secondaire"
+        }
+      },
+      "statut": "active",
+      "alertes_neutralite": [],
+      "scrutins": [],
+      "historique": [],
+      "impact": {
+        "changement": "Le plan présenté en juillet 2025 prévoyait que les administrations et opérateurs de l'État ne remplacent pas un départ à la retraite sur trois à partir de 2027, en plus de 3 000 suppressions de postes dès 2026. En décembre 2025, le Sénat a voté une règle plus large, un départ sur deux, chiffrée à environ 23 000 postes et 700 millions d'euros.",
+        "pour": "Ses partisans estiment que réduire les effectifs de l'État permet de diminuer durablement les dépenses de fonctionnement et d'inciter les administrations à se réorganiser, en s'appuyant sur les départs naturels plutôt que sur des licenciements.",
+        "contre": "Ses opposants craignent qu'une baisse mécanique des effectifs dégrade les services rendus. Lors du vote d'une règle plus stricte au Sénat, une ministre a averti que supprimer 9 000 postes dans l'éducation sans anticipation aurait des effets non voulus.",
+        "sources": [
+          {
+            "url": "https://acteurspublics.fr/articles/francois-bayrou-annonce-le-non-remplacement-dun-fonctionnaire-sur-trois-partant-a-la-retraite-francois-bayrou-annonce-le-non-remplacement-dun-fonctionnaire-sur-trois-suppression-de-postes-non/",
+            "titre": "François Bayrou annonce le non-remplacement d'un fonctionnaire sur trois partant à la retraite",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          },
+          {
+            "url": "https://www.publicsenat.fr/actualites/economie/arrets-maladie-les-senateurs-augmentent-a-trois-jours-le-delai-de-carence-dans-la-fonction-publique",
+            "titre": "Arrêts maladie : les sénateurs augmentent à trois jours le délai de carence dans la fonction publique",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          }
+        ],
+        "statut": "pilote"
+      }
+    },
+    {
+      "id": "ECO-015",
+      "theme": "economie-dette",
+      "axe": "economie",
+      "sens": -1,
+      "enonce": "La durée légale annuelle du travail doit être portée de 1 607 à 1 623 heures.",
+      "precision": "1 607 heures par an correspondent aux 35 heures par semaine.",
+      "origine": {
+        "description": "Proposition publique du 7 janvier 2026, présentée comme la fin des 35 heures",
+        "source": {
+          "url": "https://www.publicsenat.fr/actualites/politique/la-fete-est-finie-bruno-retailleau-veut-supprimer-les-35-heures-inciter-a-la-reprise-dactivite-et-plafonner-les-aides-sociales-pour-relancer-lemploi",
+          "titre": "Article Public Sénat sur les propositions de janvier 2026 relatives au travail (titre exact à relever)",
+          "date_consultation": "2026-10-02",
+          "nature": "secondaire"
+        }
+      },
+      "statut": "active",
+      "alertes_neutralite": [
+        {
+          "signalement": "la proposition d'origine comporte aussi une exonération de cotisations et d'impôt au-delà de 1 607 heures, non reprise",
+          "decision": "énoncé conservé tel quel (2026-10-02)"
+        }
+      ],
+      "scrutins": [],
+      "historique": [],
+      "impact": {
+        "changement": "La durée légale annuelle augmenterait de 16 heures, soit environ deux journées de travail de huit heures. Au-delà de ce seuil, les heures sont comptées comme supplémentaires. Le Sénat a voté en novembre 2025 une mesure proche, à 1 619 heures par an (+12 heures), dont un sénateur attendait plus de 10 milliards d'euros par an. Le gouvernement s'y opposait.",
+        "pour": "Ses partisans estiment que la France doit créer davantage de richesse pour financer sa solidarité, que « le travail doit payer », et que quelques heures de plus par an constituent une manière peu douloureuse de redresser les comptes sociaux.",
+        "contre": "Ses opposants soulignent qu'elle ferait perdre aux salariés concernés des heures supplémentaires majorées, donc du pouvoir d'achat, et qu'elle pèserait surtout sur les salariés précaires. Ils jugent que ce sujet relève du droit du travail plus que d'un budget.",
+        "sources": [
+          {
+            "url": "https://acteurspublics.fr/articles/12-heures-en-plus-par-an-le-senat-vote-une-augmentation-du-temps-de-travail-dans-la-fonction-publique/",
+            "titre": "12 heures en plus par an : le Sénat vote une augmentation du temps de travail dans la fonction publique",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          },
+          {
+            "url": "https://www.insee.fr/fr/metadonnees/definition/c1539",
+            "titre": "Durée légale du travail - Insee (définition)",
+            "date_consultation": "2026-10-12",
+            "nature": "institutionnelle"
+          }
+        ],
+        "statut": "pilote"
+      }
+    },
+    {
+      "id": "ECO-016",
+      "theme": "economie-dette",
+      "axe": "economie",
+      "sens": -1,
+      "enonce": "Le cumul du RSA et des aides au logement doit être plafonné à 70 % du SMIC.",
+      "precision": null,
+      "origine": {
+        "description": "Proposition de loi n° 765 du 19 décembre 2024",
+        "source": {
+          "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b0765_proposition-loi.pdf",
+          "titre": "Proposition de loi n° 765 (17e législature)",
+          "date_consultation": "2026-10-02",
+          "nature": "primaire"
+        }
+      },
+      "statut": "active",
+      "alertes_neutralite": [],
+      "scrutins": [],
+      "historique": [],
+      "impact": {
+        "changement": "Le total du RSA et des aides au logement perçu par une personne ou un ménage ne pourrait pas dépasser 70 % du SMIC net, soit environ 1 000 euros à ce niveau de SMIC, avec une modulation possible selon la composition du ménage. Une proposition de loi en ce sens a été déposée en 2024 ; la commission des affaires sociales en a supprimé le plafond en janvier 2025.",
+        "pour": "Ses partisans estiment que certains foyers gagnent peu ou moins en travaillant qu'en cumulant des aides, et qu'un plafond rendrait l'emploi toujours plus rémunérateur, tout en simplifiant le système et en limitant les fraudes.",
+        "contre": "Ses opposants jugent le seuil de 70 % arbitraire et craignent que le plafond frappe surtout les familles et les personnes modestes. Selon eux, un temps plein au SMIC rapporte déjà le double du RSA et des aides au logement.",
+        "sources": [
+          {
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b0765_proposition-loi.pdf",
+            "titre": "Proposition de loi n° 765 visant à plafonner le cumul des prestations sociales non contributives",
+            "date_consultation": "2026-10-12",
+            "nature": "primaire"
+          },
+          {
+            "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-soc/l17cion-soc2425039_compte-rendu.pdf",
+            "titre": "Compte rendu de la commission des affaires sociales du 29 janvier 2025 (proposition de loi n° 765)",
+            "date_consultation": "2026-10-12",
+            "nature": "primaire"
+          }
+        ],
+        "statut": "pilote"
+      }
+    },
+    {
+      "id": "ECO-017",
+      "theme": "economie-dette",
+      "axe": "economie",
+      "sens": -1,
+      "enonce": "Le RSA doit être limité à deux ans pour les personnes aptes au travail.",
+      "precision": "Le RSA n'est pas limité dans le temps aujourd'hui.",
+      "origine": {
+        "description": "Proposition publique du 11 mai 2025",
+        "source": {
+          "url": "https://econostrum.info/rsa-wauquiez-veut-en-finir-avec-laide-a-vie/",
+          "titre": "RSA : Laurent Wauquiez veut en finir avec l'aide à vie pour les allocataires aptes au travail",
+          "date_consultation": "2026-10-02",
+          "nature": "secondaire"
+        }
+      },
+      "statut": "active",
+      "alertes_neutralite": [],
+      "scrutins": [],
+      "historique": [],
+      "impact": {
+        "changement": "Le RSA cesserait d'être versé après 24 mois consécutifs, sauf renouvellement, pour les personnes aptes au travail. Un amendement au budget 2026 prévoyait des exceptions pour les personnes reconnues inaptes (handicap, maladie de longue durée) et celles engagées dans un parcours d'insertion ; il n'a pas été défendu. Son exposé cite 1,85 million d'allocataires en août 2025.",
+        "pour": "Ses partisans estiment qu'une limite dans le temps inciterait à reprendre un emploi, alors que, selon l'auteur d'un amendement, 488 000 emplois restaient non pourvus au deuxième trimestre 2025.",
+        "contre": "Ses opposants rappellent que le RSA ne permet pas de sortir de la pauvreté et qu'une interruption, même temporaire, peut avoir de graves conséquences. Ils craignent que des personnes renoncent à des droits et jugent l'offre d'accompagnement insuffisante.",
+        "sources": [
+          {
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906C/CION_FIN/CF562.pdf",
+            "titre": "Amendement II-CF562 au projet de loi de finances pour 2026 (durée maximale du RSA)",
+            "date_consultation": "2026-10-12",
+            "nature": "primaire"
+          },
+          {
+            "url": "https://www.publicsenat.fr/actualites/emploi/rsa-sous-conditions-une-mesure-disproportionnee-selon-les-associations-de-lutte-contre-la-pauvrete",
+            "titre": "RSA sous conditions : une mesure disproportionnée selon les associations de lutte contre la pauvreté",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          }
+        ],
+        "statut": "pilote"
+      }
+    },
+    {
+      "id": "ECO-018",
+      "theme": "economie-dette",
+      "axe": "economie",
+      "sens": -1,
+      "enonce": "Les fonctionnaires en arrêt maladie doivent avoir trois jours de carence au lieu d'un.",
+      "precision": "Jour de carence : jour d'arrêt non rémunéré. Les fonctionnaires en ont un ; les salariés du privé en ont trois, souvent pris en charge par l'employeur.",
+      "origine": {
+        "description": "Proposition gouvernementale de l'automne 2024, abandonnée en janvier 2025",
+        "source": {
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F13861?lang=fr",
+          "titre": "Service-Public — jour de carence dans la fonction publique",
+          "date_consultation": "2026-10-02",
+          "nature": "primaire"
+        }
+      },
+      "statut": "active",
+      "alertes_neutralite": [
+        {
+          "signalement": "la règle du privé (trois jours, souvent compensés) n'a pas été revérifiée",
+          "decision": "à compléter"
+        }
+      ],
+      "scrutins": [],
+      "historique": [],
+      "impact": {
+        "changement": "Le fonctionnaire en arrêt maladie ne serait indemnisé qu'à partir du quatrième jour. Le Sénat a voté cette mesure en décembre 2025, contre l'avis du gouvernement : l'économie totale passerait de 108 millions d'euros (jour de carence actuel) à 216 millions. Selon le ministre, environ 70 % des salariés du privé sont couverts par leur employeur pour tout ou partie des trois jours.",
+        "pour": "Ses partisans estiment qu'il faut traiter public et privé de la même façon : en 2022, les agents publics ont été en arrêt maladie 14,5 jours en moyenne, contre 11,7 jours dans le privé, selon un rapport d'inspections publiques.",
+        "contre": "Ses opposants répondent que cet écart a été divisé par six et que les taux d'absence sont désormais proches. Ils craignent que la mesure incite à retarder les arrêts, donc à les allonger, et y voient une stigmatisation des fonctionnaires.",
+        "sources": [
+          {
+            "url": "https://www.publicsenat.fr/actualites/economie/arrets-maladie-les-senateurs-augmentent-a-trois-jours-le-delai-de-carence-dans-la-fonction-publique",
+            "titre": "Arrêts maladie : les sénateurs augmentent à trois jours le délai de carence dans la fonction publique",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          }
+        ],
+        "statut": "pilote"
+      }
+    },
+    {
+      "id": "ECO-019",
+      "theme": "economie-dette",
+      "axe": "economie",
+      "sens": -1,
+      "enonce": "Les salariés doivent pouvoir renoncer à leur cinquième semaine de congés payés en échange d'un paiement.",
+      "precision": null,
+      "origine": {
+        "description": "Piste évoquée par la ministre du Travail le 15 juillet 2025",
+        "source": {
+          "url": "https://www.editions-tissot.fr/actualite/droit-du-travail/budget-2026-les-annonces-du-gouvernement-en-matiere-sociale",
+          "titre": "Budget 2026 : les annonces du Gouvernement en matière sociale (17 juillet 2025)",
+          "date_consultation": "2026-10-02",
+          "nature": "secondaire"
+        }
+      },
+      "statut": "active",
+      "alertes_neutralite": [],
+      "scrutins": [],
+      "historique": [],
+      "impact": {
+        "changement": "Aujourd'hui, les congés payés non pris sont en principe perdus et ne peuvent pas être payés. Une proposition de loi de juin 2026 permettrait de renoncer à cinq jours par an, avec l'accord écrit de l'employeur, contre une majoration d'au moins un dixième de la rémunération. Les cotisations sociales seraient exonérées pendant trois ans au plus, et le plafond annuel d'exonération fiscale serait porté à 10 000 euros. Un projet de 2025 allait jusqu'à 25 % de majoration.",
+        "pour": "Ses partisans estiment que la mesure, fondée sur le volontariat, augmenterait le pouvoir d'achat et éviterait que des jours soient perdus : près d'un quart des actifs ne prennent pas tous leurs congés payés, selon l'exposé des motifs.",
+        "contre": "Ses opposants craignent que le choix soit théorique pour des salariés contraints financièrement et que la monétisation devienne une norme, avec un risque pour les conditions de travail et pour les acquis sociaux.",
+        "sources": [
+          {
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b2958_proposition-loi.pdf",
+            "titre": "Proposition de loi n° 2958 visant à permettre la monétisation de congés payés",
+            "date_consultation": "2026-10-12",
+            "nature": "primaire"
+          },
+          {
+            "url": "https://www.previssima.fr/actualite/moins-de-vacances-pour-gagner-plus-un-depute-lr-propose-de-transformer-les-conges-payes-non-pris-en-salaire.html",
+            "titre": "Moins de vacances pour gagner plus ? Un député LR propose de transformer les congés payés non pris en salaire",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          },
+          {
+            "url": "https://www.journaldugeek.com/2025/07/17/apres-la-suppression-des-jours-feries-le-gouvernement-veut-monetiser-votre-5e-semaine-de-conges-payes/",
+            "titre": "Après la suppression des jours fériés, le gouvernement veut monétiser votre 5e semaine de congés payés",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          }
+        ],
+        "statut": "pilote"
+      }
+    },
+    {
+      "id": "ECO-020",
+      "theme": "economie-dette",
+      "axe": "economie",
+      "sens": -1,
+      "enonce": "Un tiers des agences et opérateurs de l'État, hors universités, doit être fusionné ou supprimé.",
+      "precision": null,
+      "origine": {
+        "description": "Annonce de la ministre des Comptes publics du 27 avril 2025",
+        "source": {
+          "url": "https://www.banquedesterritoires.fr/amelie-de-montchalin-promet-un-grand-menage-dans-les-agences-et-operateurs-de-letat",
+          "titre": "Amélie de Montchalin promet un grand « ménage » dans les agences et opérateurs de l'État",
+          "date_consultation": "2026-10-02",
+          "nature": "secondaire"
+        }
+      },
+      "statut": "active",
+      "alertes_neutralite": [],
+      "scrutins": [],
+      "historique": [],
+      "impact": {
+        "changement": "Le gouvernement de l'époque a engagé en 2025 un examen de plus de 800 opérateurs, agences et organismes, qui emploient environ 180 000 personnes ; le Sénat recense 103 agences, 434 opérateurs et 317 organismes consultatifs. L'objectif était de fusionner ou supprimer un tiers des opérateurs et agences, hors universités, pour 2 à 3 milliards d'euros d'économies visées d'ici 2027. Selon la Cour des comptes, le nombre d'opérateurs avait déjà baissé d'environ 25 % entre 2010 et 2020.",
+        "pour": "Ses partisans estiment qu'il s'agit d'un bon usage de l'argent public : supprimer ce qui est inutile ou coûte trop cher, éviter les doublons entre agences et administrations, et ramener certaines missions dans les ministères.",
+        "contre": "Ses opposants doutent d'économies de cette ampleur : fusionner ou supprimer des structures rapporterait plutôt des millions que des milliards, et atteindre l'objectif reviendrait à réduire des missions utiles aux collectivités et aux entreprises, comme le fonds chaleur.",
+        "sources": [
+          {
+            "url": "https://www.publicsenat.fr/actualites/politique/info-public-senat-les-pistes-du-gouvernement-pour-reduire-le-nombre-dagences-de-letat",
+            "titre": "[Info Public Sénat] Les pistes du gouvernement pour réduire le nombre d'agences de l'État",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          },
+          {
+            "url": "https://www.publicsenat.fr/actualites/politique/2-a-3-milliards-deconomies-sur-les-agences-de-letat-pourquoi-le-chiffre-de-la-ministre-interroge-la-commission-denquete-du-senat",
+            "titre": "2 à 3 milliards d'économies sur les agences de l'État : pourquoi le chiffre de la ministre interroge la commission d'enquête du Sénat",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          }
+        ],
+        "statut": "pilote"
+      }
     }
-   ],
-   "scrutins": [],
-   "historique": [],
-   "impact": {
-    "changement": "Le fonctionnaire en arrêt maladie ne serait indemnisé qu'à partir du quatrième jour. Le Sénat a voté cette mesure en décembre 2025, contre l'avis du gouvernement : l'économie totale passerait de 108 millions d'euros (jour de carence actuel) à 216 millions. Selon le ministre, environ 70 % des salariés du privé sont couverts par leur employeur pour tout ou partie des trois jours.",
-    "pour": "Ses partisans estiment qu'il faut traiter public et privé de la même façon : en 2022, les agents publics ont été en arrêt maladie 14,5 jours en moyenne, contre 11,7 jours dans le privé, selon un rapport d'inspections publiques.",
-    "contre": "Ses opposants répondent que cet écart a été divisé par six et que les taux d'absence sont désormais proches. Ils craignent que la mesure incite à retarder les arrêts, donc à les allonger, et y voient une stigmatisation des fonctionnaires.",
-    "sources": [
-     {
-      "url": "https://www.publicsenat.fr/actualites/economie/arrets-maladie-les-senateurs-augmentent-a-trois-jours-le-delai-de-carence-dans-la-fonction-publique",
-      "titre": "Arrêts maladie : les sénateurs augmentent à trois jours le délai de carence dans la fonction publique",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     }
-    ],
-    "statut": "pilote"
-   }
-  },
-  {
-   "id": "ECO-019",
-   "theme": "economie-dette",
-   "axe": "economie",
-   "sens": -1,
-   "enonce": "Les salariés doivent pouvoir renoncer à leur cinquième semaine de congés payés en échange d'un paiement.",
-   "precision": null,
-   "origine": {
-    "description": "Piste évoquée par la ministre du Travail le 15 juillet 2025",
-    "source": {
-     "url": "https://www.editions-tissot.fr/actualite/droit-du-travail/budget-2026-les-annonces-du-gouvernement-en-matiere-sociale",
-     "titre": "Budget 2026 : les annonces du Gouvernement en matière sociale (17 juillet 2025)",
-     "date_consultation": "2026-10-02",
-     "nature": "secondaire"
-    }
-   },
-   "statut": "active",
-   "alertes_neutralite": [],
-   "scrutins": [],
-   "historique": [],
-   "impact": {
-    "changement": "Aujourd'hui, les congés payés non pris sont en principe perdus et ne peuvent pas être payés. Une proposition de loi de juin 2026 permettrait de renoncer à cinq jours par an, avec l'accord écrit de l'employeur, contre une majoration d'au moins un dixième de la rémunération. Les cotisations sociales seraient exonérées pendant trois ans au plus, et le plafond annuel d'exonération fiscale serait porté à 10 000 euros. Un projet de 2025 allait jusqu'à 25 % de majoration.",
-    "pour": "Ses partisans estiment que la mesure, fondée sur le volontariat, augmenterait le pouvoir d'achat et éviterait que des jours soient perdus : près d'un quart des actifs ne prennent pas tous leurs congés payés, selon l'exposé des motifs.",
-    "contre": "Ses opposants craignent que le choix soit théorique pour des salariés contraints financièrement et que la monétisation devienne une norme, avec un risque pour les conditions de travail et pour les acquis sociaux.",
-    "sources": [
-     {
-      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b2958_proposition-loi.pdf",
-      "titre": "Proposition de loi n° 2958 visant à permettre la monétisation de congés payés",
-      "date_consultation": "2026-10-12",
-      "nature": "primaire"
-     },
-     {
-      "url": "https://www.previssima.fr/actualite/moins-de-vacances-pour-gagner-plus-un-depute-lr-propose-de-transformer-les-conges-payes-non-pris-en-salaire.html",
-      "titre": "Moins de vacances pour gagner plus ? Un député LR propose de transformer les congés payés non pris en salaire",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     },
-     {
-      "url": "https://www.journaldugeek.com/2025/07/17/apres-la-suppression-des-jours-feries-le-gouvernement-veut-monetiser-votre-5e-semaine-de-conges-payes/",
-      "titre": "Après la suppression des jours fériés, le gouvernement veut monétiser votre 5e semaine de congés payés",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     }
-    ],
-    "statut": "pilote"
-   }
-  },
-  {
-   "id": "ECO-020",
-   "theme": "economie-dette",
-   "axe": "economie",
-   "sens": -1,
-   "enonce": "Un tiers des agences et opérateurs de l'État, hors universités, doit être fusionné ou supprimé.",
-   "precision": null,
-   "origine": {
-    "description": "Annonce de la ministre des Comptes publics du 27 avril 2025",
-    "source": {
-     "url": "https://www.banquedesterritoires.fr/amelie-de-montchalin-promet-un-grand-menage-dans-les-agences-et-operateurs-de-letat",
-     "titre": "Amélie de Montchalin promet un grand « ménage » dans les agences et opérateurs de l'État",
-     "date_consultation": "2026-10-02",
-     "nature": "secondaire"
-    }
-   },
-   "statut": "active",
-   "alertes_neutralite": [],
-   "scrutins": [],
-   "historique": [],
-   "impact": {
-    "changement": "Le gouvernement de l'époque a engagé en 2025 un examen de plus de 800 opérateurs, agences et organismes, qui emploient environ 180 000 personnes ; le Sénat recense 103 agences, 434 opérateurs et 317 organismes consultatifs. L'objectif était de fusionner ou supprimer un tiers des opérateurs et agences, hors universités, pour 2 à 3 milliards d'euros d'économies visées d'ici 2027. Selon la Cour des comptes, le nombre d'opérateurs avait déjà baissé d'environ 25 % entre 2010 et 2020.",
-    "pour": "Ses partisans estiment qu'il s'agit d'un bon usage de l'argent public : supprimer ce qui est inutile ou coûte trop cher, éviter les doublons entre agences et administrations, et ramener certaines missions dans les ministères.",
-    "contre": "Ses opposants doutent d'économies de cette ampleur : fusionner ou supprimer des structures rapporterait plutôt des millions que des milliards, et atteindre l'objectif reviendrait à réduire des missions utiles aux collectivités et aux entreprises, comme le fonds chaleur.",
-    "sources": [
-     {
-      "url": "https://www.publicsenat.fr/actualites/politique/info-public-senat-les-pistes-du-gouvernement-pour-reduire-le-nombre-dagences-de-letat",
-      "titre": "[Info Public Sénat] Les pistes du gouvernement pour réduire le nombre d'agences de l'État",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     },
-     {
-      "url": "https://www.publicsenat.fr/actualites/politique/2-a-3-milliards-deconomies-sur-les-agences-de-letat-pourquoi-le-chiffre-de-la-ministre-interroge-la-commission-denquete-du-senat",
-      "titre": "2 à 3 milliards d'économies sur les agences de l'État : pourquoi le chiffre de la ministre interroge la commission d'enquête du Sénat",
-      "date_consultation": "2026-10-12",
-      "nature": "secondaire"
-     }
-    ],
-    "statut": "pilote"
-   }
-  }
- ]
+  ]
 }

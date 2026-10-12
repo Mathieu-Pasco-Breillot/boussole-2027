@@ -1,4 +1,5 @@
 import { AnimatePresence, motion } from 'motion/react';
+import { Extraits } from './Extraits.tsx';
 import { useEffect, useRef, useState } from 'react';
 import { qualifierEcart } from '../../core/duel/index.ts';
 import type { Valeur } from '../../core/score/types.ts';
@@ -8,8 +9,6 @@ import { questionCourante, situation } from '../jeu.ts';
 import { Depliants } from './Depliants.tsx';
 import { ECARTS, ECHELLE, libelleTheme, libelleValeur, NATURES } from '../libelles.ts';
 import { paquet } from '../paquet.ts';
-import { apresSource } from '../badges.ts';
-import { majBadges } from '../stockage.ts';
 import { INTENSITE } from './Quiz.tsx';
 
 interface Props {
@@ -136,24 +135,7 @@ export function QuizDuel({ partie, onRepondre, onSuivante, onModifier, onQuitter
                     {ECARTS[qualifierEcart(4 - Math.abs(saisie!.valeur - position.code))]}
                   </p>
                 )}
-                {position?.extrait && (
-                  <div className="mt-3 border-l-2 border-or/60 pl-3 [overflow-wrap:anywhere]">
-                    <p>{position.extrait.reformulation}</p>
-                    {position.extrait.citation && <p className="mt-1 italic">« {position.extrait.citation} »</p>}
-                    <p className="mt-1 text-sm">
-                      <a
-                        className="underline"
-                        href={position.extrait.source.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        onClick={() => majBadges((b) => apresSource(b, position.extrait!.source.url))}
-                      >
-                        {position.extrait.source.titre}
-                      </a>
-                      {position.extrait.source.datePublication ? ` (${position.extrait.source.datePublication})` : ''}
-                    </p>
-                  </div>
-                )}
+                <Extraits extraits={position?.extraits} className="mt-3" />
               </div>
 
               {affinite && (

@@ -1,4 +1,4 @@
-import { apresDesaccordsLus, apresSource, badgesDe } from '../badges.ts';
+import { apresDesaccordsLus, badgesDe } from '../badges.ts';
 import { EVENEMENT_BADGES, lireBadges, majBadges } from '../stockage.ts';
 import { motion, useReducedMotion } from 'motion/react';
 import { useEffect, useMemo, useRef, useState } from 'react';
@@ -9,6 +9,7 @@ import { questionsParId, resultatsDePartie } from '../jeu.ts';
 import { FIABILITE, libelleTheme, libelleValeur, MODES, MOTIFS_NON_EVALUATION, NATURES } from '../libelles.ts';
 import { paquet } from '../paquet.ts';
 import { CartePartage } from './CartePartage.tsx';
+import { Extraits } from './Extraits.tsx';
 import { SEUIL_CLASSEMENT_QUESTIONS } from '../../core/score/parametres.ts';
 import { jouer } from '../son.ts';
 
@@ -40,7 +41,6 @@ function groupesParMotif(liste: readonly { candidatId: string; motif: string }[]
 function LigneAccord({ candidatId, a }: { candidatId: string; a: AccordDesaccord }) {
   const q = questionsParId.get(a.questionId);
   const position = paquet.positions[candidatId]?.find((p) => p.questionId === a.questionId);
-  const extrait = position?.extrait;
   return (
     <li className="rounded-xl bg-nuit p-3 text-sm leading-relaxed">
       <p className="font-semibold">{q?.enonce}</p>
@@ -51,18 +51,7 @@ function LigneAccord({ candidatId, a }: { candidatId: string; a: AccordDesaccord
       <p>
         Sa position : <strong>{libelleValeur(a.code)}</strong> ({NATURES[a.nature] ?? a.nature})
       </p>
-      {extrait && (
-        <div className="mt-2 border-l-2 border-or/60 pl-3 [overflow-wrap:anywhere]">
-          <p>{extrait.reformulation}</p>
-          {extrait.citation && <p className="mt-1 italic">« {extrait.citation} »</p>}
-          <p className="mt-1">
-            <a className="underline" href={extrait.source.url} target="_blank" rel="noopener noreferrer" onClick={() => majBadges((b) => apresSource(b, extrait.source.url))}>
-              {extrait.source.titre}
-            </a>
-            {extrait.source.datePublication ? ` (${extrait.source.datePublication})` : ''}
-          </p>
-        </div>
-      )}
+      <Extraits extraits={position?.extraits} />
     </li>
   );
 }
@@ -176,7 +165,7 @@ function CarteCandidat({ s, rang, exAequo, visible = true, onFiche }: { s: Score
         onClick={() => {
           if (!ouvert) {
             // Badge « Contradicteur » : le détail montre les extraits de ses trois désaccords les plus forts.
-            const avecExtrait = s.desaccords.filter((a) => paquet.positions[s.candidatId]?.find((p) => p.questionId === a.questionId)?.extrait);
+            const avecExtrait = s.desaccords.filter((a) => paquet.positions[s.candidatId]?.find((p) => p.questionId === a.questionId)?.extraits?.length);
             if (avecExtrait.length >= 3) majBadges(apresDesaccordsLus);
           }
           setOuvert((o) => !o);
