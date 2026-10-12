@@ -322,7 +322,7 @@
       "objets": [
         "data/questions/securite.json"
       ],
-      "description": "Encart Impact étendu au thème Sécurité (20 questions actives) : rédaction par un sous-agent Opus 5.5 avec recherche web, relecture aveugle Sonnet 5.5 (14 ok, 6 corrections appliquées : SEC-004, 011, 012, 014, 015, 021 ; 0 bloquant). Titres de sources vérifiés sur les pages et corrigés avant intégration. Légifrance, inaccessible (403), n'a pas pu être vérifié : le texte exact de l'article L. 435-1 du code de la sécurité intérieure n'a pas été lu, et la correction de SEC-004 a été reformulée sans numéro de paragraphe ni formule non étayée par une source. Statut « pilote » : non relu question par question par un humain. Aucune Précision modifiée.",
+      "description": "Encart Impact étendu au thème Sécurité (20 questions actives) : rédaction par un sous-agent Opus 5.5 avec recherche web, relecture aveugle Sonnet 5.5 (14 ok, 6 corrections appliquées : SEC-004, 011, 012, 014, 015, 021 ; 0 bloquant). Titres de sources vérifiés sur les pages et corrigés avant intégration. Légifrance, inaccessible (403), n'a pas pu être vérifié : le texte exact de l'article L. 435-1 du code de la sécurité intérieure n'a pas été lu, et la correction de SEC-004 a été reformulée sans numéro de paragraphe ni formule non étayée par une source. Le jugement « nécessaire » de SEC-019 est attribué au Conseil d'État (revue finale). Statut « pilote » : non relu question par question par un humain. Aucune Précision modifiée.",
       "auteur": "Claude, à la demande de Mathieu",
       "reference": "extension impact vague 2, sécurité, du 12 octobre 2026"
     },

@@ -7,14 +7,14 @@ L'encart « Impact » s'affiche à côté de « Précision » sous chaque propos
 | Thèmes | Questions actives | État |
 |---|---|---|
 | Institutions | 18 | En ligne, **validé** par Mathieu (rédaction Opus 5.5, relecture aveugle Sonnet 5.5) |
-| Défense, Écologie et énergie, Économie et dette, Éducation, Fiscalité | 94 | En ligne, statut **pilote** (rédaction et relecture aveugle Sonnet 5.5 : 37 ok, 57 corrigées, 0 bloquant) |
+| Défense, Écologie et énergie, Économie et dette, Éducation, Fiscalité | 95 | En ligne, statut **pilote** (rédaction et relecture aveugle Sonnet 5.5 : 37 ok, 57 corrigées, 0 bloquant ; EDU-020, rédigée ensuite, Opus 5.5 et relecture aveugle Sonnet 5.5 : corrigée, 0 bloquant) |
 | Immigration, Retraites, Santé, Sécurité, Union européenne | 94 | En ligne, statut **pilote** (rédaction Opus 5.5, relecture aveugle Sonnet 5.5 : 0 bloquant) |
 
 Détail de la vague 2 (questions actives ; ok / corrigées à la relecture) :
 
 | Thème | Questions | Ok | Corrigées |
 |---|---|---|---|
-| Retraites | 19 | — | — |
+| Retraites | 19 | 11 | 8 |
 | Santé | 19 | 11 | 8 |
 | Immigration | 21 | 12 | 9 |
 | Sécurité | 20 | 14 | 6 |
