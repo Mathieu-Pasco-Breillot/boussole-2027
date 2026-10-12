@@ -395,6 +395,26 @@
       "description": "Correction de Précisions vérifiées par recherche, à la demande de Mathieu. SEC-009 : amende forfaitaire de 200 € portée à 500 € par l'article 25 de la loi n° 2026-798 du 18 août 2026 (JORF n° 192 du 19 août 2026) ; lecture issue d'un résumé de la page du Journal officiel, version consolidée de Légifrance non relue, des sources secondaires concordant. La même loi ajoute une suspension du permis de conduire, non mentionnée dans l'encart validé, à examiner par Mathieu. SEC-013 : « la règle pour les courtes peines » devient « la règle pour les peines de six mois ou moins, sauf impossibilité » (ministère de la Justice, loi du 23 mars 2019). Encarts inchangés. Aucun code de position modifié.",
       "auteur": "Claude",
       "reference": "correction précisions sécurité du 12 octobre 2026"
+    },
+    {
+      "date": "2026-10-12",
+      "type": "reformulation",
+      "objets": [
+        "data/questions/fiscalite.json"
+      ],
+      "description": "Correction de Précisions vérifiées par recherche, à la demande de Mathieu. FIS-008 : « Seules les pensions de retraite ont des taux variables selon le revenu » devient « Les pensions de retraite et les allocations chômage ont des taux variables selon le revenu fiscal de référence » (articles L136-2 et L136-8 du code de la sécurité sociale ; sources secondaires concordantes, instruction ministérielle non lue). FIS-009 : « En 2011, elle s'appliquait si les titres étaient vendus dans les 15 ans » devient « De 2011 à 2013, elle s'appliquait si les titres étaient vendus dans les 8 ans » (impots.gouv.fr, page « Je quitte la France, suis-je concerné par l'exit tax ? », lue le 12 octobre 2026) ; l'encart de FIS-009 est corrigé de la même façon (délai de 8 ans pour la version de 2011, au lieu de 15 ans). Encart de FIS-008 inchangé. Le passage de l'encart de FIS-009 attribuant à ses opposants un « délai de 15 ans » est corrigé de la même façon (« délai de 8 ans »). Aucun code de position modifié.",
+      "auteur": "Claude",
+      "reference": "correction précisions fiscalité du 12 octobre 2026"
+    },
+    {
+      "date": "2026-10-12",
+      "type": "reformulation",
+      "objets": [
+        "data/questions/ecologie-energie.json"
+      ],
+      "description": "Correction d'un encart vérifié par recherche, à la demande de Mathieu. ENV-004 : « uniquement pour la culture de noisettes » devient « pour certaines filières déterminées (betteraves, cerises, pommes, noisettes) », d'après le communiqué du ministère de l'Agriculture du 19 août 2026, ajouté aux sources de l'encart. Précision inchangée. Aucun code de position modifié.",
+      "auteur": "Claude",
+      "reference": "correction précisions écologie-énergie du 12 octobre 2026"
     }
   ]
 }
