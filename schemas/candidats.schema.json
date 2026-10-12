@@ -42,7 +42,7 @@
         },
         "statut_evaluation": { "enum": ["evalue", "codage_en_attente", "non_evalue"] },
         "motif_non_evaluation": {
-          "enum": ["primaire_en_cours", "pressenti", "declaration_non_sourcee", "absent_liste_officielle"]
+          "enum": ["primaire_en_cours", "battu_primaire", "pressenti", "declaration_non_sourcee", "absent_liste_officielle"]
         },
         "vague": { "type": "integer", "minimum": 1 },
         "primaire": { "$ref": "#/$defs/identifiantPrimaire" },

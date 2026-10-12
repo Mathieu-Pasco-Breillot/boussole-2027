@@ -52,6 +52,7 @@ export type StatutEvaluation = 'evalue' | 'codage_en_attente' | 'non_evalue';
 /** Motif pour lequel un candidat n'est pas évalué. */
 export type MotifNonEvaluation =
   | 'primaire_en_cours'
+  | 'battu_primaire'
   | 'pressenti'
   | 'declaration_non_sourcee'
   | 'absent_liste_officielle'

@@ -148,6 +148,17 @@
       "description": "Vérification indépendante des 41 codes de la vague 3 (Arthaud, Attal, Le Pen, Lisnard, Philippe, Retailleau, Roussel), selon le même protocole que les 648 premiers codes : page source téléchargée, vérificateur Opus 5.5, second arbitre Fable 5.1 sur les propositions de changement et les cas R6. Résultat : 39 confirmés, aucun corrigé, 2 à revoir par un humain. Retailleau IMM-009 : le second arbitre propose la nature « imprécise » au lieu de « nuancée », le vérificateur confirme le code publié. Lisnard EDU-001 : vérificateur et arbitre proposaient de retirer l'extrait, faute de trouver le passage, mais ils n'avaient obtenu qu'une version tronquée de la page Atlantico alors que la vague 3 avait retrouvé la citation mot à mot ; le retrait n'est pas appliqué. Aucune de ces étapes n'est validée par un humain (mode POC).",
       "auteur": "Claude (fiabilisation des codages), à la demande de Mathieu",
       "reference": "phase-4, fiabilisation du 4 octobre 2026"
+    },
+    {
+      "date": "2026-10-12",
+      "type": "changement_statut",
+      "objets": [
+        "data/candidats.json",
+        "docs/critere-inclusion.md"
+      ],
+      "description": "Primaire PS – Place publique : Raphaël Glucksmann l'emporte dès le premier tour (résultats annoncés le 11 octobre 2026, environ 66 % des voix, devant Olivier Faure à environ 14,5 %, Ségolène Royal, Emmanuel Maurel et Jérôme Guedj). Glucksmann passe à « investi », codage en attente (vague 3), conformément à la règle R2 ; Faure, Royal, Maurel et Guedj passent à « retiré », non évalués avec le nouveau motif « battu à une primaire ». Primaire marquée terminée. Sources : CNews et Time France, 11-12 octobre 2026.",
+      "auteur": "Claude, à la demande de Mathieu",
+      "reference": "critère d'inclusion v1, R2"
     }
   ]
 }

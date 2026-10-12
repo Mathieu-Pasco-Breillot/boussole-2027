@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "7965c28748cc65e8f47fa84574adaa761d79ade0baa01ce574ebb05f0bbe5174",
+  "empreinte_donnees": "d723f455867d039ea551a4908861869f0aa91947851458415aa437358e26378c",
   "provisoire": true,
   "questions_actives": 206,
   "seuil_evalue": 0.4,
@@ -614,6 +614,81 @@
           "questions_actives": 18,
           "codes_publies": 2,
           "taux_couverture": 0.111111
+        },
+        "retraites": {
+          "questions_actives": 19,
+          "codes_publies": 0,
+          "taux_couverture": 0
+        },
+        "sante": {
+          "questions_actives": 19,
+          "codes_publies": 0,
+          "taux_couverture": 0
+        },
+        "securite": {
+          "questions_actives": 20,
+          "codes_publies": 0,
+          "taux_couverture": 0
+        },
+        "union-europeenne": {
+          "questions_actives": 15,
+          "codes_publies": 0,
+          "taux_couverture": 0
+        }
+      }
+    },
+    "glucksmann-raphael": {
+      "vague": 3,
+      "statut_evaluation": "codage_en_attente",
+      "positions_disponibles": false,
+      "questions_avec_position": 0,
+      "avec_extrait": 0,
+      "codes_publies": 0,
+      "arbitrages_en_attente": 0,
+      "non_connu_apres_accord": 0,
+      "taux_couverture": 0,
+      "seuil_evalue_atteint": false,
+      "natures": {
+        "nette": 0,
+        "nuancee": 0,
+        "imprecise": 0
+      },
+      "parts_natures": null,
+      "par_theme": {
+        "defense": {
+          "questions_actives": 14,
+          "codes_publies": 0,
+          "taux_couverture": 0
+        },
+        "ecologie-energie": {
+          "questions_actives": 23,
+          "codes_publies": 0,
+          "taux_couverture": 0
+        },
+        "economie-dette": {
+          "questions_actives": 20,
+          "codes_publies": 0,
+          "taux_couverture": 0
+        },
+        "education": {
+          "questions_actives": 18,
+          "codes_publies": 0,
+          "taux_couverture": 0
+        },
+        "fiscalite": {
+          "questions_actives": 19,
+          "codes_publies": 0,
+          "taux_couverture": 0
+        },
+        "immigration": {
+          "questions_actives": 21,
+          "codes_publies": 0,
+          "taux_couverture": 0
+        },
+        "institutions": {
+          "questions_actives": 18,
+          "codes_publies": 0,
+          "taux_couverture": 0
         },
         "retraites": {
           "questions_actives": 19,

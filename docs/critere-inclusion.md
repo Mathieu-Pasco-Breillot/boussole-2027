@@ -38,12 +38,16 @@ Tant qu'un candidat n'est pas codé, il apparaît avec la mention « codage en a
 - **Pressentis (R1 non remplie)** : Zemmour, Bertrand, Villepin, Wauquiez.
 - **Primaire en cours (R2)** : Faure, Glucksmann, Guedj, Maurel, Royal.
 
+## Mise à jour du 12 octobre 2026
+
+- **Primaire PS – Place publique terminée** (premier tour des 9 et 10 octobre, résultats le 11) : Glucksmann l'emporte dès le premier tour. Il est investi et entre en vague 3 (codage en attente).
+- **Battus à la primaire** : Faure, Guedj, Maurel, Royal. Ils ne sont plus candidats et restent listés comme non évalués, avec ce motif.
+
 ## À vérifier avant publication
 
 - Source de la déclaration de chaque candidat de la vague 2 (R1 : média national).
 - Statut exact de François Ruffin (candidat déclaré, initialement en vue d'une primaire unitaire qui n'a pas lieu).
 - Décision d'appel du 7 juillet 2026 concernant Marine Le Pen.
-- Calendrier officiel de la primaire PS–Place publique.
 
 ## Historique
 

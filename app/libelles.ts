@@ -38,6 +38,7 @@ export const FIABILITE: Record<string, string> = { faible: 'faible', moyenne: 'm
 
 export const MOTIFS_NON_EVALUATION: Record<string, string> = {
   primaire_en_cours: 'Primaire en cours',
+  battu_primaire: 'Battus à une primaire',
   pressenti: 'Pressentis, pas encore déclarés',
   declaration_non_sourcee: 'Déclaration de candidature non sourcée',
   absent_liste_officielle: 'Absents de la liste officielle',
@@ -78,6 +79,7 @@ export const EXPLICATIONS_MOTIFS: Record<string, string> = {
   codage_en_attente: 'Candidature déclarée (règle R1), mais positions pas encore codées : codage en attente, par vagues publiées.',
   pressenti: 'Candidature évoquée, mais pas encore déclarée publiquement, personnellement et sans condition (règle R1).',
   primaire_en_cours: "Participants à une primaire non achevée : le vainqueur sera évalué dès sa désignation (règle R2).",
+  battu_primaire: "Battus à la primaire de leur camp : ils ne sont plus candidats, seul le vainqueur est évalué (règle R2).",
   declaration_non_sourcee: "Déclaration de candidature sans article d'un média national pour l'attester (règle R1).",
   absent_liste_officielle: 'Absents de la liste officielle publiée par le Conseil constitutionnel (règle R3).',
   motif_non_renseigne: 'Motif non renseigné dans les données.',

@@ -65,7 +65,11 @@ export namespace Candidats {
     date_declaration?: string;
     statut_evaluation: 'evalue' | 'codage_en_attente' | 'non_evalue';
     motif_non_evaluation?:
-      'primaire_en_cours' | 'pressenti' | 'declaration_non_sourcee' | 'absent_liste_officielle';
+      | 'primaire_en_cours'
+      | 'battu_primaire'
+      | 'pressenti'
+      | 'declaration_non_sourcee'
+      | 'absent_liste_officielle';
     vague?: number;
     primaire?: IdentifiantPrimaire;
     a_verifier?: string;

@@ -1,6 +1,6 @@
 {
   "_critere_version": 1,
-  "_date_etat_des_lieux": "2026-10-02",
+  "_date_etat_des_lieux": "2026-10-12",
   "_note": "Dates « à vérifier » et sources R1 à compléter sur source primaire avant publication.",
   "candidats": [
     {"id": "le-pen-marine", "prenom": "Marine", "nom": "Le Pen", "parti": "Rassemblement national", "statut_candidature": "declare", "date_declaration": "2023-09", "statut_evaluation": "evalue", "vague": 1, "a_verifier": "décision d'appel du 2026-07-07"},
@@ -29,13 +29,13 @@
     {"id": "villepin-dominique-de", "prenom": "Dominique", "nom": "de Villepin", "parti": "La France humaniste", "statut_candidature": "pressenti", "statut_evaluation": "non_evalue", "motif_non_evaluation": "pressenti"},
     {"id": "wauquiez-laurent", "prenom": "Laurent", "nom": "Wauquiez", "parti": "Les Républicains", "statut_candidature": "pressenti", "statut_evaluation": "non_evalue", "motif_non_evaluation": "pressenti", "a_verifier": "statut exact"},
 
-    {"id": "faure-olivier", "prenom": "Olivier", "nom": "Faure", "parti": "Parti socialiste", "statut_candidature": "en_primaire", "primaire": "primaire-ps-place-publique-2026", "statut_evaluation": "non_evalue", "motif_non_evaluation": "primaire_en_cours"},
-    {"id": "glucksmann-raphael", "prenom": "Raphaël", "nom": "Glucksmann", "parti": "Place publique", "statut_candidature": "en_primaire", "primaire": "primaire-ps-place-publique-2026", "statut_evaluation": "non_evalue", "motif_non_evaluation": "primaire_en_cours"},
-    {"id": "guedj-jerome", "prenom": "Jérôme", "nom": "Guedj", "parti": "Parti socialiste", "statut_candidature": "en_primaire", "primaire": "primaire-ps-place-publique-2026", "statut_evaluation": "non_evalue", "motif_non_evaluation": "primaire_en_cours"},
-    {"id": "maurel-emmanuel", "prenom": "Emmanuel", "nom": "Maurel", "parti": "Gauche républicaine et socialiste", "statut_candidature": "en_primaire", "primaire": "primaire-ps-place-publique-2026", "statut_evaluation": "non_evalue", "motif_non_evaluation": "primaire_en_cours"},
-    {"id": "royal-segolene", "prenom": "Ségolène", "nom": "Royal", "parti": "Parti socialiste", "statut_candidature": "en_primaire", "primaire": "primaire-ps-place-publique-2026", "statut_evaluation": "non_evalue", "motif_non_evaluation": "primaire_en_cours"}
+    {"id": "faure-olivier", "prenom": "Olivier", "nom": "Faure", "parti": "Parti socialiste", "statut_candidature": "retire", "primaire": "primaire-ps-place-publique-2026", "statut_evaluation": "non_evalue", "motif_non_evaluation": "battu_primaire", "note": "Battu au premier tour de la primaire PS – Place publique du 11 octobre 2026, remportée par Raphaël Glucksmann."},
+    {"id": "glucksmann-raphael", "prenom": "Raphaël", "nom": "Glucksmann", "parti": "Place publique", "statut_candidature": "investi", "date_declaration": "2026-08-23", "statut_evaluation": "codage_en_attente", "vague": 3, "primaire": "primaire-ps-place-publique-2026", "note": "Désigné le 11 octobre 2026 dès le premier tour de la primaire PS – Place publique (environ 66 % des voix) ; évalué dès sa désignation (règle R2)."},
+    {"id": "guedj-jerome", "prenom": "Jérôme", "nom": "Guedj", "parti": "Parti socialiste", "statut_candidature": "retire", "primaire": "primaire-ps-place-publique-2026", "statut_evaluation": "non_evalue", "motif_non_evaluation": "battu_primaire", "note": "Battu au premier tour de la primaire PS – Place publique du 11 octobre 2026, remportée par Raphaël Glucksmann."},
+    {"id": "maurel-emmanuel", "prenom": "Emmanuel", "nom": "Maurel", "parti": "Gauche républicaine et socialiste", "statut_candidature": "retire", "primaire": "primaire-ps-place-publique-2026", "statut_evaluation": "non_evalue", "motif_non_evaluation": "battu_primaire", "note": "Battu au premier tour de la primaire PS – Place publique du 11 octobre 2026, remportée par Raphaël Glucksmann."},
+    {"id": "royal-segolene", "prenom": "Ségolène", "nom": "Royal", "parti": "Parti socialiste", "statut_candidature": "retire", "primaire": "primaire-ps-place-publique-2026", "statut_evaluation": "non_evalue", "motif_non_evaluation": "battu_primaire", "note": "Battue au premier tour de la primaire PS – Place publique du 11 octobre 2026, remportée par Raphaël Glucksmann."}
   ],
   "primaires": [
-    {"id": "primaire-ps-place-publique-2026", "nom": "Primaire PS – Place publique", "calendrier": "octobre 2026 (dates à vérifier sur source officielle)", "statut": "en_cours", "vainqueur": null}
+    {"id": "primaire-ps-place-publique-2026", "nom": "Primaire PS – Place publique", "calendrier": "premier tour les 9 et 10 octobre 2026, résultats annoncés le 11 octobre ; second tour (16-17 octobre) sans objet", "statut": "terminee", "vainqueur": "glucksmann-raphael"}
   ]
 }
