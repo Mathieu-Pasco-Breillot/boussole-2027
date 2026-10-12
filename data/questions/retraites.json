@@ -19,7 +19,7 @@
    "axe": "economie",
    "sens": 1,
    "enonce": "L'âge légal de départ à la retraite doit être fixé à 62 ans.",
-   "precision": "La loi du 14 avril 2023 relève progressivement l'âge légal de 62 à 64 ans. La loi de financement de la sécurité sociale pour 2026 a gelé ce relèvement à 62 ans et 9 mois jusqu'en janvier 2028 ; sans nouvelle loi, il reprend ensuite jusqu'à 64 ans.",
+   "precision": "La loi du 14 avril 2023 relève progressivement l'âge légal de 62 à 64 ans. La loi de financement de la sécurité sociale pour 2026 a gelé ce relèvement à 62 ans et 9 mois, pour les générations 1963 et 1964, jusqu'en janvier 2028 ; sans nouvelle loi, il reprend ensuite jusqu'à 64 ans.",
    "origine": {
     "description": "Loi n° 2023-270 du 14 avril 2023 ; loi n° 2025-1403 du 30 décembre 2025 de financement de la sécurité sociale pour 2026 (suspension)",
     "source": {
@@ -41,8 +41,38 @@
     {
      "date": "2026-10-02",
      "ancien_enonce": "L'âge légal de départ à la retraite doit être ramené à 62 ans."
+    },
+    {
+     "date": "2026-10-12",
+     "note": "Précision complétée : l'âge de 62 ans et 9 mois ne vaut que pour les générations 1963 et 1964 (1965 : 63 ans selon la date de naissance ; 1969 : 64 ans). L'ancienne précision l'énonçait sans limite de génération."
     }
-   ]
+   ],
+   "impact": {
+    "changement": "Jusqu'en janvier 2028, l'âge reste à 62 ans et 9 mois pour les générations 1963 et 1964, et 64 ans demeure prévu pour celle de 1969, selon le COR. La mesure ramènerait l'âge à 62 ans pour toutes les générations. Le COR chiffre la seule suspension à 1,8 milliard d'euros par an en moyenne jusqu'en 2032. Selon les simulations qu'il rassemble, un an d'âge en plus améliore de 0,3 à 0,6 point de PIB, à dix ans, le solde public.",
+    "pour": "Ses partisans estiment que le déficit projeté reste limité, 0,2 point de PIB en 2030 selon le COR, et peut être comblé par d'autres recettes, sans demander deux ans de travail de plus, notamment dans les métiers pénibles.",
+    "contre": "Ses opposants invoquent le vieillissement : 3,6 personnes de 20 à 64 ans pour une de 65 ans ou plus en 2009, 2,5 en 2025 selon le COR. Ils ajoutent que reporter l'âge soutient l'emploi.",
+    "sources": [
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14043",
+      "titre": "À partir de quel âge un salarié peut-il partir en retraite ?",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.cor-retraites.fr/sites/default/files/2026-07/RA_2026_def_1.pdf",
+      "titre": "Rapport annuel du COR, juin 2026 (p. 9, 39, 59-60, 96, 124)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.cor-retraites.fr/sites/default/files/2026-06/Synth%C3%A8se_RA_2026_0.pdf",
+      "titre": "Synthèse du rapport annuel du COR, juin 2026 (p. 15-16)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "RET-002",
@@ -63,7 +93,33 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "L'âge d'ouverture des droits, fixé à 64 ans pour les générations nées à partir de 1969, serait ramené à 60 ans. Parmi les nouveaux retraités de 2024, 10,3 % des hommes et 4,8 % des femmes sont partis à 60 ans, selon le COR. Partir sans la durée de cotisation requise entraînerait toujours une décote : 0,625 point de taux de pension en moins par trimestre manquant, dans la limite de vingt trimestres.",
+    "pour": "Ses partisans estiment qu'après une longue vie de travail, notamment dans les métiers pénibles, chacun doit pouvoir partir à 60 ans en bonne santé, et que d'autres recettes peuvent financer ce choix.",
+    "contre": "Ses opposants rappellent que les retraites coûtent déjà 422 milliards d'euros, 14,1 % du PIB en 2025 selon le COR, et qu'un départ plus précoce alourdirait un système projeté en déficit.",
+    "sources": [
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14043",
+      "titre": "À partir de quel âge un salarié peut-il partir en retraite ?",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F19666",
+      "titre": "Retraite du salarié : qu'est-ce que la décote ?",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.cor-retraites.fr/sites/default/files/2026-07/RA_2026_def_1.pdf",
+      "titre": "Rapport annuel du COR, juin 2026 (p. 67, 96, 221)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "RET-003",
@@ -94,7 +150,33 @@
      "date": "2026-10-02",
      "ancien_enonce": "L'âge légal de départ à la retraite doit être porté à 65 ans ou plus."
     }
-   ]
+   ],
+   "impact": {
+    "changement": "L'âge d'ouverture des droits passerait à 65 ans, un an au-delà des 64 ans prévus pour les générations nées à partir de 1969. Selon les simulations rassemblées par le COR, un an d'âge en plus accroît l'emploi de 160 000 à 250 000 personnes à dix ans et améliore le solde des comptes publics de 0,3 à 0,6 point de PIB, avec une hausse temporaire du chômage.",
+    "pour": "Ses partisans estiment que l'allongement de la vie justifie de travailler plus longtemps, et que cela accroît l'emploi et les recettes publiques, comme le chiffrent les simulations rassemblées par le COR.",
+    "contre": "Ses opposants soulignent que moins d'une personne sur deux de 60 à 64 ans occupe un emploi (44,4 % en 2025 selon le COR) : beaucoup attendraient un an de plus leur pension sans travailler.",
+    "sources": [
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14043",
+      "titre": "À partir de quel âge un salarié peut-il partir en retraite ?",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.cor-retraites.fr/sites/default/files/2026-06/Synth%C3%A8se_RA_2026_0.pdf",
+      "titre": "Synthèse du rapport annuel du COR, juin 2026 (p. 15-16)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.cor-retraites.fr/sites/default/files/2026-07/RA_2026_def_1.pdf",
+      "titre": "Rapport annuel du COR, juin 2026 (p. 208)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "RET-004",
@@ -156,7 +238,27 @@
      "date": "2026-10-02",
      "ancien_enonce": "La durée de cotisation requise pour une retraite à taux plein doit être allongée au-delà de 43 ans."
     }
-   ]
+   ],
+   "impact": {
+    "changement": "Il faudrait 180 trimestres cotisés pour une retraite à taux plein, soit huit de plus que les 172 prévus pour la génération 1966. Avant 67 ans, chaque trimestre manquant réduit le taux de la pension de base : 49,375 % au lieu de 50 % pour un trimestre, 37,5 % à partir de vingt. À 67 ans, le taux plein reste acquis quelle que soit la durée cotisée.",
+    "pour": "Ses partisans estiment que la durée de carrière doit suivre l'allongement de la vie, et qu'une durée de cotisation tient mieux compte de l'âge d'entrée dans la vie active qu'un âge légal unique.",
+    "contre": "Ses opposants estiment que beaucoup n'atteindraient pas 45 ans de cotisation (études, chômage, temps partiel) et subiraient la décote ou attendraient 67 ans, comme déjà 10,5 % des femmes et 7,6 % des hommes.",
+    "sources": [
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F19666",
+      "titre": "Retraite du salarié : qu'est-ce que la décote ?",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.cor-retraites.fr/sites/default/files/2026-07/RA_2026_def_1.pdf",
+      "titre": "Rapport annuel du COR, juin 2026 (p. 59-60, 221)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "RET-006",
@@ -177,7 +279,33 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Il suffirait de 160 trimestres (40 ans) pour le taux plein ; avant la réforme de 2023, il en fallait 167 pour la génération 1960 et 171 pour celle de 1970, selon le COR. La durée ne permet pas de partir avant l'âge légal, sauf carrière longue : elle décide surtout si la décote s'applique, soit 0,625 point de taux de pension en moins par trimestre manquant.",
+    "pour": "Ses partisans estiment que 43 ans de cotisation sont difficiles à atteindre avec des études longues, du chômage ou du temps partiel, et qu'un taux plein à 40 ans éviterait la décote à de nombreux salariés.",
+    "contre": "Ses opposants estiment que raccourcir la durée alors que l'on vit plus longtemps accroîtrait des dépenses de retraite déjà égales à 14,1 % du PIB en 2025, dans un système que le COR projette en déficit.",
+    "sources": [
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F19666",
+      "titre": "Retraite du salarié : qu'est-ce que la décote ?",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F13845",
+      "titre": "Retraite anticipée pour carrière longue du salarié",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.cor-retraites.fr/sites/default/files/2026-07/RA_2026_def_1.pdf",
+      "titre": "Rapport annuel du COR, juin 2026 (p. 60, 67, 96)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "RET-007",
@@ -198,7 +326,27 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Les pensions du privé reposent aujourd'hui sur la répartition ; le plan d'épargne retraite, ouvert depuis le 1er octobre 2019, est facultatif, sauf quand l'employeur a mis en place un plan d'entreprise obligatoire. Une part des cotisations serait placée pour chaque salarié ; l'énoncé ne précise ni cette part ni le gestionnaire. Repère : deux régimes existants en capitalisation (fonctionnaires, pharmaciens) détiennent près de 61 milliards d'euros d'actifs, pour 422 milliards d'euros de dépenses de retraite en 2025 (COR).",
+    "pour": "Ses partisans estiment qu'une part placée diversifierait le financement des pensions et rémunérerait l'épargne : le portefeuille du régime additionnel des fonctionnaires a rapporté 4,7 % par an en moyenne sur 2006-2025, selon le COR.",
+    "contre": "Ses opposants soulignent que, pendant la transition, les actifs devraient financer à la fois les pensions actuelles et leur propre épargne, et que les pensions dépendraient des marchés financiers.",
+    "sources": [
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34982",
+      "titre": "Plan d'épargne retraite (PER)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.cor-retraites.fr/sites/default/files/2026-07/RA_2026_def_1.pdf",
+      "titre": "Rapport annuel du COR, juin 2026 (p. 67, 103)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "RET-008",
@@ -206,7 +354,7 @@
    "axe": "economie",
    "sens": 1,
    "enonce": "Les pensions de retraite doivent être indexées sur l'évolution des salaires plutôt que sur les prix.",
-   "precision": "Les pensions du régime général suivent les prix en pratique depuis le milieu des années 1980 ; la règle est inscrite dans la loi depuis 2003.",
+   "precision": "Les pensions du régime général suivent les prix en pratique depuis la fin des années 1980 ; la règle est inscrite dans la loi depuis 2003.",
    "origine": {
     "description": "Document du Conseil d'orientation des retraites sur les modes d'indexation",
     "source": {
@@ -224,7 +372,32 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [
+    {
+     "date": "2026-10-12",
+     "note": "Précision corrigée : « depuis le milieu des années 1980 » devient « depuis la fin des années 1980 » (Insee Analyses n° 17, 15 avril 2014 : indexation sur les prix dans le régime général « dès la fin des années 1980 »)."
+    }
+   ],
+   "impact": {
+    "changement": "Les pensions de base sont revalorisées chaque 1er janvier selon les prix à la consommation hors tabac ; elles suivraient désormais l'évolution des salaires. Selon une étude récente de l'Insee citée par le COR, l'indexation sur les prix a réduit à elle seule les dépenses de retraite de 1,7 point de PIB en 2018.",
+    "pour": "Ses partisans estiment que les retraités doivent profiter de la hausse des salaires : sans cela, leur niveau de vie rapporté à celui de l'ensemble passerait de 100,2 % en 2023 à 90,3 % en 2070, selon le COR.",
+    "contre": "Ses opposants soulignent que l'indexation sur les prix contient les dépenses et que les retraités ont déjà le niveau de vie de l'ensemble : 2 473 € par mois contre 2 468 € en 2023 (COR).",
+    "sources": [
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/actualites/A17919",
+      "titre": "Pensions de retraite de base : quelle revalorisation au 1er janvier 2026 ?",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.cor-retraites.fr/sites/default/files/2026-07/RA_2026_def_1.pdf",
+      "titre": "Rapport annuel du COR, juin 2026 (p. 14, 15, 64, 73, 76, 169)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "RET-009",
@@ -255,7 +428,39 @@
      "date": "2026-10-02",
      "ancien_enonce": "Les pensions de retraite doivent être gelées pendant au moins un an pour réduire le déficit public."
     }
-   ]
+   ],
+   "impact": {
+    "changement": "Les pensions de base, revalorisées chaque 1er janvier selon les prix, resteraient inchangées pendant au moins un an ; l'énoncé ne prévoit pas de rattrapage. Les retraites représentent 422 milliards d'euros en 2025, soit 24,3 % des dépenses publiques (COR). Le COR n'a pas chiffré un gel ; pour une moindre revalorisation de 6 milliards d'euros, ses simulations donnent un PIB réduit de 0,1 à 0,2 % et 10 000 à 20 000 postes en moins à deux ans.",
+    "pour": "Ses partisans estiment qu'un effort partagé par tous les retraités réduit le déficit sans toucher à l'âge de départ, les retraites pesant près d'un quart des dépenses publiques, et que la mesure peut rester limitée dans le temps.",
+    "contre": "Ses opposants soulignent qu'un gel réduit le pouvoir d'achat de tous les retraités, y compris les plus modestes, et que la baisse de consommation qui en résulte freine l'activité, comme le relève le COR.",
+    "sources": [
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/actualites/A17919",
+      "titre": "Pensions de retraite de base : quelle revalorisation au 1er janvier 2026 ?",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.cor-retraites.fr/sites/default/files/2026-07/RA_2026_def_1.pdf",
+      "titre": "Rapport annuel du COR, juin 2026 (p. 64, 67, 123)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.cor-retraites.fr/sites/default/files/2026-06/Synth%C3%A8se_RA_2026_0.pdf",
+      "titre": "Synthèse du rapport annuel du COR, juin 2026 (p. 16)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.weka.fr/actualite/?p=215567",
+      "titre": "Retraite des fonctionnaires : le COR rouvre le débat sur l'intégration des primes (Weka, 16 juin 2026)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "RET-010",
@@ -276,7 +481,27 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Le minimum de pension pour une carrière complète passerait de 85 % à 100 % du SMIC net. En janvier 2023, le SMIC net valait 1 353,07 € et 85 % environ 1 150 € ; le relèvement à 85 % était alors chiffré par le gouvernement à 1,1 milliard d'euros pour 1,8 million de retraités. Selon le COR, une carrière complète au SMIC donnerait une pension inférieure à 85 % du SMIC net à partir de la génération 1995.",
+    "pour": "Ses partisans estiment qu'une carrière complète au SMIC doit assurer une pension au moins égale au SMIC net, soit environ 200 € de plus par mois qu'avec 85 %, aux montants de 2023.",
+    "contre": "Ses opposants soulignent que relever le minimum affaiblit le lien entre cotisations et pension et ajoute des dépenses à un système en déficit de 5,1 milliards d'euros en 2025, selon le COR.",
+    "sources": [
+     {
+      "url": "https://www.publicsenat.fr/actualites/politique/reforme-des-retraites-qui-sera-concerne-par-la-pension-minimum-de-1200-euros",
+      "titre": "Réforme des retraites : qui sera concerné par la pension minimum de 1200 euros ? (Public Sénat, 13 janvier 2023)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.cor-retraites.fr/sites/default/files/2026-07/RA_2026_def_1.pdf",
+      "titre": "Rapport annuel du COR, juin 2026 (p. 19, 93, 178)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "RET-011",
@@ -306,7 +531,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "La fermeture des principaux régimes spéciaux, aujourd'hui limitée aux personnes recrutées depuis septembre 2023, s'étendrait aux salariés en poste, qui relèveraient du régime général ; l'énoncé ne dit rien de leurs droits acquis. Début 2023, selon le directeur de la caisse de retraite de la RATP : 42 000 salariés sous statut, près de 52 000 pensionnés, 80 % du personnel en « catégorie active » (départ anticipé), et 780 millions d'euros versés par l'État en 2022.",
+    "pour": "Ses partisans estiment que les règles de retraite ne doivent pas dépendre de l'employeur, et qu'une extinction par les seuls recrutements pèse longtemps sur l'État : selon la caisse de la RATP, ses pensions seraient versées 80 ans.",
+    "contre": "Ses opposants jugent que changer les règles en cours de carrière remet en cause des droits sur lesquels les salariés comptaient, notamment dans des métiers à fortes contraintes comme ceux de la catégorie active.",
+    "sources": [
+     {
+      "url": "https://www.legisocial.fr/actualites-sociales/6123-fin-regimes-speciaux-retraite-decrets-sont-publies-jo.html",
+      "titre": "Fin des régimes spéciaux de retraite : les décrets sont publiés au JO du 30 juillet 2023 (Légisocial)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.publicsenat.fr/actualites/politique/fin-du-regime-special-de-la-ratp-en-2026-la-compensation-de-l-etat-devra-etre",
+      "titre": "Fin du régime spécial de la RATP : en 2026, la compensation de l'État devra être « de 1,2 milliard d'euros » (Public Sénat, 1er février 2023)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.cor-retraites.fr/sites/default/files/2026-07/RA_2026_def_1.pdf",
+      "titre": "Rapport annuel du COR, juin 2026 (p. 63, 81)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "RET-012",
@@ -332,7 +583,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Les régimes de base et complémentaires existants seraient remplacés par un régime unique où chaque cotisation achète des points, convertis en pension au départ selon une valeur commune à tous. Un projet de loi de ce type a été déposé à l'Assemblée nationale le 24 janvier 2020 ; adopté en première lecture en mars 2020, il n'a jamais été voté définitivement. L'énoncé ne précise ni le taux de cotisation ni le calendrier de transition.",
+    "pour": "Ses partisans estiment qu'un régime unique, où chaque euro cotisé ouvre les mêmes droits, rend les règles lisibles et identiques pour tous, et tient mieux compte des carrières hachées.",
+    "contre": "Ses opposants soulignent que le montant de la pension ne serait plus connu à l'avance, puisqu'il dépendrait de la valeur future du point, ajustable selon l'état des comptes.",
+    "sources": [
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/15/textes/l15b2623_projet-loi",
+      "titre": "Projet de loi, n° 2623 rectifié, instituant un système universel de retraite (Assemblée nationale, 15e législature, déposé le 24 janvier 2020)",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://conseil-etat.fr/ressources/avis-aux-pouvoirs-publics/derniers-avis-publies/avis-sur-un-projet-de-loi-organique-et-un-projet-de-loi-instituant-un-systeme-universel-de-retraite",
+      "titre": "Avis sur un projet de loi organique et un projet de loi instituant un système universel de retraite (Conseil d'État, 24 janvier 2020)",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/15/dossiers/systeme_universel_retraite",
+      "titre": "Système universel de retraite (loi organique) - Dossiers législatifs - 15e législature - Assemblée nationale",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "RET-013",
@@ -363,7 +640,27 @@
      "date": "2026-10-02",
      "ancien_enonce": "Les cotisations retraite versées par les employeurs doivent être augmentées pour financer le système."
     }
-   ]
+   ],
+   "impact": {
+    "changement": "Les cotisations retraite des employeurs augmenteraient, dans une proportion non fixée par l'énoncé. Les cotisations fournissent 277 des 417 milliards d'euros de ressources en 2025 (COR). Pour les collectivités et hôpitaux, le taux de cotisation (employeur et salariés) de leur caisse passe déjà de 41,8 % en 2024 à 53,8 % en 2028. Selon le COR, 6 milliards d'euros de plus réduisent le PIB de 0,1 % et l'emploi de 25 000 à 50 000 postes à deux ans.",
+    "pour": "Ses partisans estiment que les entreprises tirent profit du travail des salariés et peuvent contribuer davantage, ce qui financerait les pensions sans reculer l'âge de départ ni réduire les pensions.",
+    "contre": "Ses opposants soulignent qu'une telle hausse renchérit le coût du travail, comme le note le COR, au risque de freiner l'embauche et la compétitivité des entreprises.",
+    "sources": [
+     {
+      "url": "https://www.cor-retraites.fr/sites/default/files/2026-07/RA_2026_def_1.pdf",
+      "titre": "Rapport annuel du COR, juin 2026 (p. 17, 18, 31, 81, 88, 124)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.cor-retraites.fr/sites/default/files/2026-06/Synth%C3%A8se_RA_2026_0.pdf",
+      "titre": "Synthèse du rapport annuel du COR, juin 2026 (p. 16)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "RET-014",
@@ -394,7 +691,21 @@
      "date": "2026-10-02",
      "ancien_enonce": "Les cotisations retraite des salariés doivent être réduites pour augmenter le salaire net."
     }
-   ]
+   ],
+   "impact": {
+    "changement": "Les cotisations retraite prélevées sur les salaires seraient réduites : le salaire net augmenterait, mais les recettes du système baisseraient. Les cotisations fournissent 277 des 417 milliards d'euros de ressources en 2025, et le système affichait cette année-là un déficit de 5,1 milliards d'euros (COR). L'énoncé ne précise ni l'ampleur de la baisse ni sa compensation.",
+    "pour": "Ses partisans estiment qu'une baisse des cotisations salariales augmenterait le salaire net, soutiendrait le pouvoir d'achat et rendrait le travail plus rémunérateur, sans toucher à l'âge de départ.",
+    "contre": "Ses opposants soulignent que ces recettes financent les pensions versées : le COR projette déjà un déficit de 0,2 point de PIB en 2030 et de 0,9 point en 2045, qu'une baisse non compensée creuserait.",
+    "sources": [
+     {
+      "url": "https://www.cor-retraites.fr/sites/default/files/2026-07/RA_2026_def_1.pdf",
+      "titre": "Rapport annuel du COR, juin 2026 (p. 17, 19, 88, 96)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "RET-015",
@@ -415,7 +726,33 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Aujourd'hui, un début de carrière avant 20 ans permet de partir à 60 ans et 3 mois pour la génération 1963, mais à 62 ans pour celle de 1970, avec 170 à 172 trimestres cotisés selon la génération, dont 4 ou 5 en début de carrière. L'âge serait fixé à 60 ans pour toutes les générations. L'énoncé ne dit pas si la durée cotisée exigée serait maintenue.",
+    "pour": "Ses partisans estiment que les personnes entrées tôt dans la vie active ont cotisé plus longtemps, souvent dans des métiers pénibles, et doivent pouvoir partir à 60 ans quelle que soit leur année de naissance.",
+    "contre": "Ses opposants estiment qu'un départ à 60 ans pour tous les débuts avant 20 ans alourdirait les dépenses d'un système projeté en déficit, alors que l'âge légal a été relevé pour les autres assurés.",
+    "sources": [
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F13845",
+      "titre": "Retraite anticipée pour carrière longue du salarié",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F14043",
+      "titre": "À partir de quel âge un salarié peut-il partir en retraite ?",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.cor-retraites.fr/sites/default/files/2026-07/RA_2026_def_1.pdf",
+      "titre": "Rapport annuel du COR, juin 2026 (p. 61, 96)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "RET-016",
@@ -441,7 +778,27 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Le compte professionnel de prévention retient aujourd'hui six facteurs : travail de nuit, travail répétitif, équipes alternantes, milieu hyperbare, températures extrêmes et bruit. Chaque facteur rapporte 4 points par année d'exposition ; 10 points valent un trimestre, dans la limite de 80 points, soit 8 trimestres. Les charges lourdes, postures pénibles et vibrations ouvriraient elles aussi un départ anticipé ; l'énoncé ne précise ni le mécanisme, ni les seuils d'exposition, ni la durée d'anticipation.",
+    "pour": "Ses partisans estiment que ces expositions usent le corps et réduisent le temps de retraite en bonne santé, et qu'elles doivent ouvrir des droits au même titre que le travail de nuit ou le bruit.",
+    "contre": "Ses opposants estiment que ces expositions sont difficiles à mesurer salarié par salarié, qu'elles alourdiraient les obligations déclaratives des employeurs, notamment des petites entreprises, et multiplieraient les litiges sur les seuils retenus.",
+    "sources": [
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15504",
+      "titre": "Compte professionnel de prévention (C2P)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F36326",
+      "titre": "Utilisation du compte professionnel de prévention (C2P) pour la retraite du salarié",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "RET-017",
@@ -472,7 +829,27 @@
      "date": "2026-10-02",
      "ancien_enonce": "L'âge auquel la retraite est versée sans décote, quelle que soit la durée cotisée, doit être abaissé de 67 à 65 ans."
     }
-   ]
+   ],
+   "impact": {
+    "changement": "Aujourd'hui, un assuré qui part avant 67 ans sans tous ses trimestres subit une décote : 0,625 point de taux de pension en moins par trimestre manquant, dans la limite de vingt trimestres. La mesure avancerait ce seuil de six mois. Selon le COR, 10,5 % des femmes et 7,6 % des hommes partent aujourd'hui à 67 ans.",
+    "pour": "Ses partisans estiment que l'attente jusqu'à 67 ans pénalise surtout les personnes aux carrières interrompues ou à temps partiel, plus souvent des femmes, qui partent davantage à cet âge.",
+    "contre": "Ses opposants estiment que la mesure augmenterait les dépenses d'un système projeté en déficit et inciterait à partir plus tôt, sans régler le manque de trimestres cotisés.",
+    "sources": [
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F19666",
+      "titre": "Retraite du salarié : qu'est-ce que la décote ?",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.cor-retraites.fr/sites/default/files/2026-07/RA_2026_def_1.pdf",
+      "titre": "Rapport annuel du COR, juin 2026 (p. 96, 221)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "RET-018",
@@ -493,7 +870,39 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Au régime général, la réversion vaut 54 % de la pension de base du défunt, dès 55 ans, sous plafond de ressources : 25 001,60 € par an seul, 40 002,56 € en couple (montants 2026, revalorisés chaque année). Elle vaut 50 % dans la fonction publique et 60 % des droits complémentaires à l'Agirc-Arrco. Ces régimes appliqueraient aussi un plafond, que l'énoncé ne fixe pas. En 2024, la réversion représentait 19,3 % de la pension moyenne des femmes (COR).",
+    "pour": "Ses partisans estiment que la réversion doit aller aux survivants qui en ont besoin plutôt qu'à ceux qui disposent de revenus élevés, et que les mêmes règles doivent s'appliquer dans tous les régimes.",
+    "contre": "Ses opposants estiment que la réversion prolonge des droits acquis par les cotisations du couple, et qu'un plafond réduirait le revenu de nombreuses veuves, pour qui elle pèse lourd dans la pension.",
+    "sources": [
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F13104",
+      "titre": "Pension de réversion de l'Assurance retraite",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F21819",
+      "titre": "Pension de réversion en cas de décès d'un fonctionnaire",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.agirc-arrco.fr/particuliers/demander-retraite/pension-reversion/",
+      "titre": "Pension de réversion du conjoint ou ex-conjoint",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.cor-retraites.fr/sites/default/files/2026-07/RA_2026_def_1.pdf",
+      "titre": "Rapport annuel du COR, juin 2026 (p. 184)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "RET-019",
@@ -519,7 +928,39 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "La pension d'un fonctionnaire vaut à taux plein 75 % du dernier traitement indiciaire détenu depuis au moins six mois, primes non comprises. Elle serait calculée sur les 25 meilleures années, comme dans le privé, où le taux plein est de 50 % du salaire moyen. Les primes ouvrent seulement des droits à un régime additionnel, dans la limite de 20 % du traitement. L'énoncé ne dit pas si le taux de 75 % ou la place des primes changeraient.",
+    "pour": "Ses partisans estiment que des règles de calcul identiques pour tous sont plus équitables, et que le dernier traitement avantage ceux dont la rémunération progresse fortement en fin de carrière.",
+    "contre": "Ses opposants soulignent que le calcul sur le dernier traitement compense l'exclusion des primes ; changer la base de calcul sans revoir le reste ferait baisser les pensions des fonctionnaires.",
+    "sources": [
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F21142",
+      "titre": "Montant de la retraite de l'agent public",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F21552",
+      "titre": "Montant de la retraite du salarié du secteur privé",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.weka.fr/actualite/?p=215567",
+      "titre": "Retraite des fonctionnaires : le COR rouvre le débat sur l'intégration des primes (Weka, 16 juin 2026)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.cor-retraites.fr/sites/default/files/2026-07/RA_2026_def_1.pdf",
+      "titre": "Rapport annuel du COR, juin 2026 (p. 138)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "RET-020",
@@ -611,7 +1052,27 @@
      "date": "2026-10-02",
      "note": "ajoutée pour rétablir l'équilibre des sens"
     }
-   ]
+   ],
+   "impact": {
+    "changement": "Les dividendes perçus par les particuliers supportent aujourd'hui un prélèvement forfaitaire de 31,4 % : 12,8 % d'impôt sur le revenu et 18,6 % de prélèvements sociaux. Les cotisations retraite, assises sur les revenus d'activité, ont fourni 277 milliards d'euros en 2025, soit 65,6 % des ressources du système (COR). Les dividendes s'ajouteraient à cette assiette ; l'énoncé ne fixe ni le taux ni si ces cotisations ouvriraient des droits.",
+    "pour": "Ses partisans estiment que les revenus du travail financent l'essentiel des retraites alors que ceux du capital y contribuent peu, et que des dividendes remplacent parfois des salaires pour réduire les cotisations.",
+    "contre": "Ses opposants estiment que les dividendes, déjà imposés dans l'entreprise puis à 31,4 % chez l'associé, supportent une fiscalité élevée, et qu'une charge supplémentaire freinerait l'investissement.",
+    "sources": [
+     {
+      "url": "https://entreprendre.service-public.gouv.fr/vosdroits/F32963",
+      "titre": "Fiscalité des dividendes perçus par les associés",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.cor-retraites.fr/sites/default/files/2026-07/RA_2026_def_1.pdf",
+      "titre": "Rapport annuel du COR, juin 2026 (p. 88-89)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   }
  ]
 }

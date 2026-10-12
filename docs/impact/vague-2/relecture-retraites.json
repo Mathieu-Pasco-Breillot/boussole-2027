@@ -1,0 +1,134 @@
+[
+  {
+    "id": "RET-001",
+    "verdict": "corriger",
+    "remarques": "Neutralité, absence de noms, lisibilité : conformes. Vérifié (COR RA p. 59-60, 96 ; Synthèse p. 16 ; service-public F14043 consulté) : 62 ans 9 mois pour les générations 1963-1964 après suspension, 64 ans pour 1969, déficit 0,2 point en 2030, rapport 3,6 puis 2,5, fourchette 0,3-0,6 point. Inexactitude : le 1,8 milliard est un coût annuel moyen jusqu'en 2032 (RA p. 9 et 107), pas un total ; la phrase actuelle laisse croire à un montant global. La première phrase recoupe en partie la Précision (gel à 62 ans 9 mois). Réserve : la fourchette 0,3-0,6 concerne un relèvement d'un an, pas un retour à 62 ans (le texte le dit correctement). Sigle COR jamais développé (valable pour tout le thème, voir bilan).",
+    "corrections": {
+      "changement": "Après la suspension, l'âge reste à 62 ans et 9 mois pour les générations 1963 et 1964, et 64 ans demeure prévu pour celle de 1969, selon le COR. La mesure ramènerait l'âge à 62 ans pour toutes les générations. Le COR chiffre la seule suspension à 1,8 milliard d'euros par an en moyenne jusqu'en 2032. Selon les simulations qu'il rassemble, un an d'âge en plus améliore de 0,3 à 0,6 point de PIB, à dix ans, le solde public."
+    }
+  },
+  {
+    "id": "RET-002",
+    "verdict": "ok",
+    "remarques": "Vérifié : 10,3 % des hommes et 4,8 % des femmes partis à 60 ans, nouveaux retraités 2024 (RA p. 221) ; 422 Md€ et 14,1 % du PIB (p. 67) ; décote 0,625 point par trimestre sur 20 trimestres (service-public F19666 consulté). Neutralité et équilibre corrects. Réserve mineure : « entraînerait toujours une décote » suppose que la durée requise reste inchangée, ce que l'énoncé ne dit pas ; acceptable car formulé comme la règle actuelle.",
+    "corrections": {}
+  },
+  {
+    "id": "RET-003",
+    "verdict": "ok",
+    "remarques": "Vérifié : 160 000 à 250 000 emplois et 0,3 à 0,6 point de solde à dix ans = tableau de la Synthèse p. 16 (le rapport p. 124 donne une autre fourchette, 210 000-240 000, mais la Synthèse est bien citée) ; 44,4 % d'emploi des 60-64 ans en 2025 (RA p. 208) ; 64 ans pour 1969 (service-public F14043 consulté). Équilibre correct.",
+    "corrections": {}
+  },
+  {
+    "id": "RET-005",
+    "verdict": "ok",
+    "remarques": "Vérifié : 172 trimestres pour la génération 1966 (RA p. 59-60), barème de décote 49,375 % à 37,5 % (service-public F19666 consulté), 10,5 % des femmes et 7,6 % des hommes partis à 67 ans (RA p. 221). Remarque mineure : 180 trimestres est une durée d'assurance (trimestres validés, y compris certaines périodes non cotisées), pas strictement « cotisés » ; l'énoncé parle de « durée de cotisation », donc le terme est défendable.",
+    "corrections": {}
+  },
+  {
+    "id": "RET-006",
+    "verdict": "ok",
+    "remarques": "Vérifié : 167 trimestres (génération 1960) et 171 (génération 1970) avant la réforme de 2023, 172 après (RA p. 60) ; décote (F19666 consulté). Équilibre pour/contre correct (36/36 mots).",
+    "corrections": {}
+  },
+  {
+    "id": "RET-007",
+    "verdict": "corriger",
+    "remarques": "Vérifié : PER ouvert le 1er octobre 2019, facultatif sauf plan d'entreprise obligatoire (F34982 consulté) ; RAFP 53,6 + CAVP 7,6 = 61,2 Md€ en valeur de marché (RA p. 103) ; 422 Md€. Problème dans « pour » : 4,7 % est le rendement interne du portefeuille d'actifs du régime, pas ce que perçoivent les cotisants ; le COR donne dans la même phrase un rendement technique du régime (valeur de service sur valeur d'achat du point) de 3,89 % en 2025. Présenter 4,7 % comme « rendement du régime » est trompeur. Correction : préciser « portefeuille ». Longueur : pour 35 mots / contre 29, écart conforme. Mineur : 61,2 est « plus de 61 » et non « près de 61 » (changement).",
+    "corrections": {
+      "pour": "Ses partisans estiment qu'une part placée diversifierait le financement des pensions et rémunérerait l'épargne : le portefeuille du régime additionnel des fonctionnaires a rapporté 4,7 % par an en moyenne sur 2006-2025, selon le COR."
+    }
+  },
+  {
+    "id": "RET-008",
+    "verdict": "corriger",
+    "remarques": "Vérifié : indexation sur les prix hors tabac, +0,9 % au 1er janvier 2026 (service-public A17919 consulté) ; 100,2 % en 2023 vers 90,3 % en 2070 (RA p. 14, 155) ; 2 473 € contre 2 468 € en 2023, par mois et par unité de consommation (RA p. 15). Erreur : « étude de l'Insee de 2018 » ; le COR parle d'une étude récente de l'Insee dont l'effet est mesuré pour l'année 2018 (RA p. 73 : 1,7 point de PIB « en 2018 »). La date de l'étude est donc fausse et la date de l'effet manquante. Le texte ne précise pas non plus de quels salaires il s'agit (l'énoncé non plus).",
+    "corrections": {
+      "changement": "Les pensions de base sont revalorisées chaque 1er janvier selon les prix à la consommation hors tabac ; elles suivraient désormais l'évolution des salaires. Selon une étude récente de l'Insee citée par le COR, l'indexation sur les prix a réduit à elle seule les dépenses de retraite de 1,7 point de PIB en 2018."
+    }
+  },
+  {
+    "id": "RET-009",
+    "verdict": "corriger",
+    "remarques": "Vérifié : 0,9 % au 1er janvier 2026 et gel du PLFSS non retenu (A17919 consulté) ; 422 Md€ et 24,3 % des dépenses publiques (RA p. 67-68) ; 10 000 à 20 000 postes et PIB -0,1 à -0,2 % à deux ans pour 6 Md€ de moindre revalorisation (Synthèse p. 16). Problème : la simulation porte sur une sous-indexation uniforme de 6 Md€, pas sur un gel d'un an dont le texte ne donne aucun montant ; le lecteur peut croire que le gel vaut 6 Md€. Il faut dire que le COR n'a pas chiffré un gel. Dans « pour », « limité dans le temps » présume la durée, alors que l'énoncé dit « au moins un an ». Source secondaire Weka : titre indiqué (« Retraites : les chiffres du rapport annuel du COR ») différent du titre réel (« Retraite des fonctionnaires : le COR rouvre le débat sur l'intégration des primes »).",
+    "corrections": {
+      "changement": "Les pensions de base, revalorisées chaque 1er janvier selon les prix, resteraient inchangées pendant au moins un an ; l'énoncé ne prévoit pas de rattrapage. Les retraites représentent 422 milliards d'euros en 2025, soit 24,3 % des dépenses publiques (COR). Le COR n'a pas chiffré un gel ; pour une moindre revalorisation de 6 milliards d'euros, ses simulations donnent un PIB réduit de 0,1 à 0,2 % et 10 000 à 20 000 postes en moins à deux ans.",
+      "pour": "Ses partisans estiment qu'un effort partagé par tous les retraités réduit le déficit sans toucher à l'âge de départ, les retraites pesant près d'un quart des dépenses publiques, et que la mesure peut rester limitée dans le temps."
+    }
+  },
+  {
+    "id": "RET-010",
+    "verdict": "corriger",
+    "remarques": "Vérifié : SMIC net 1 353,07 € et 85 % = environ 1 150 € ; 1,1 Md€ et 1,8 million de personnes (Public Sénat 13/01/2023, consulté) ; pension sous 85 % du SMIC net à partir de la génération 1995 (RA p. 178) ; déficit 5,1 Md€ (p. 19, 93). Problèmes : (1) 1,1 Md€ et 1,8 million sont des estimations du gouvernement de l'époque, non attribuées dans le texte, alors que la source les attribue ; (2) montants de 2023, périmés en octobre 2026 (le SMIC net a été revalorisé depuis) : à actualiser si le rédacteur dispose d'une source sur le SMIC net 2026 ; le « environ 200 € de plus » du « pour » est un calcul sur ces montants anciens, déjà étiqueté « montants de 2023 ».",
+    "corrections": {
+      "changement": "Le minimum de pension pour une carrière complète passerait de 85 % à 100 % du SMIC net. En janvier 2023, le SMIC net valait 1 353,07 € et 85 % environ 1 150 € ; le relèvement à 85 % était alors chiffré par le gouvernement à 1,1 milliard d'euros pour 1,8 million de retraités. Selon le COR, une carrière complète au SMIC donnerait une pension inférieure à 85 % du SMIC net à partir de la génération 1995."
+    }
+  },
+  {
+    "id": "RET-011",
+    "verdict": "corriger",
+    "remarques": "Problèmes : (1) tous les chiffres RATP sont des déclarations du directeur de la caisse de retraite de la RATP (Public Sénat, consulté), non attribuées dans le texte ; (2) le « 1,2 milliard en 2026 » est le besoin de financement estimé de la caisse, lié à la perte des cotisations des recrutés depuis septembre 2023, c'est-à-dire à la fermeture déjà décidée, pas à l'extension aux salariés en poste : l'insérer dans « changement » induit en erreur, à retirer ; (3) « versées encore 80 ans » est aussi une estimation de ce directeur, à attribuer ; (4) la page du Sénat citée (interventions d'une sénatrice, 4 mars 2023) ne contient, une fois chargée, qu'une liste d'interventions sans texte exploitable : elle n'étaye aucun fait et son titre n'est pas le titre réel (« Interventions de Catherine DEROCHE le samedi 4 mars 2023 ») ; à remplacer ou retirer. Les données RATP concernent un régime sur cinq, ce que le texte signale (« À la RATP »). « Relèveraient du régime général » est une inférence raisonnable (même sort que les recrutés depuis 2023) mais ne figure pas dans l'énoncé. Le COR (p. 63) ne dénombre que quatre régimes fermés alors que la Précision en cite cinq : à arbitrer par l'humain.",
+    "corrections": {
+      "changement": "La fermeture des principaux régimes spéciaux, aujourd'hui limitée aux personnes recrutées depuis septembre 2023, s'étendrait aux salariés en poste, qui relèveraient du régime général ; l'énoncé ne dit rien de leurs droits acquis. Début 2023, selon le directeur de la caisse de retraite de la RATP : 42 000 salariés sous statut, près de 52 000 pensionnés, 80 % du personnel en « catégorie active » (départ anticipé), et 780 millions d'euros versés par l'État en 2022.",
+      "pour": "Ses partisans estiment que les règles de retraite ne doivent pas dépendre de l'employeur, et qu'une extinction par les seuls recrutements pèse longtemps sur l'État : selon la caisse de la RATP, ses pensions seraient versées 80 ans."
+    }
+  },
+  {
+    "id": "RET-012",
+    "verdict": "corriger",
+    "remarques": "Vérifié : projet de loi n° 2623 déposé le 24 janvier 2020 (assemblee-nationale.fr consulté) ; procédure accélérée engagée le même jour (dossier législatif AN, non listé parmi les sources) ; avis du Conseil d'État du 24 janvier 2020 (page consultée). Problèmes : (1) le texte ne dit pas que le projet n'a pas abouti (adopté en première lecture à l'Assemblée en mars 2020, jamais voté définitivement) : « a été déposé » laisse croire à une réforme en cours ; (2) « procédure accélérée » est du jargon et l'avis du Conseil d'État n'apporte rien au lecteur ; (3) le titre de la source Conseil d'État (« Avis du Conseil d'État du 24 janvier 2020 sur… ») n'est pas le titre exact de la page (« Avis sur un projet de loi organique et un projet de loi instituant un système universel de retraite »), et la page AN a pour titre « Projet de loi, n° 2623 rectifié ». Ajouter en source le dossier législatif de l'AN (https://www.assemblee-nationale.fr/dyn/15/dossiers/systeme_universel_retraite, titre « Système universel de retraite (loi organique) – Dossiers législatifs – 15e législature ») pour étayer l'issue du texte. Équilibre pour/contre correct.",
+    "corrections": {
+      "changement": "Les régimes de base et complémentaires existants seraient remplacés par un régime unique où chaque cotisation achète des points, convertis en pension au départ selon une valeur commune à tous. Un projet de loi de ce type a été déposé à l'Assemblée nationale le 24 janvier 2020 ; adopté en première lecture en mars 2020, il n'a jamais été voté définitivement. L'énoncé ne précise ni le taux de cotisation ni le calendrier de transition."
+    }
+  },
+  {
+    "id": "RET-013",
+    "verdict": "corriger",
+    "remarques": "Vérifié : 277 des 417 Md€ (RA p. 17) ; PIB -0,1 % et -25 000 à -50 000 emplois à deux ans (Synthèse p. 16 ; le rapport p. 124 écrit 10 000 à 50 000, écart noté). Erreur : le COR (RA p. 31, note 26) écrit que le taux de cotisation « employeur et salariés » de la CNRACL passe de 41,8 % à 53,8 % ; le texte en fait un « taux employeur », ce qui est inexact. Correction proposée (nombre de mots maintenu à 80 maximum).",
+    "corrections": {
+      "changement": "Les cotisations retraite des employeurs augmenteraient, dans une proportion non fixée par l'énoncé. Les cotisations fournissent 277 des 417 milliards d'euros de ressources en 2025 (COR). Pour les collectivités et hôpitaux, le taux de cotisation (employeur et salariés) de leur caisse passe déjà de 41,8 % en 2024 à 53,8 % en 2028. Selon le COR, 6 milliards d'euros de plus réduisent le PIB de 0,1 % et l'emploi de 25 000 à 50 000 postes à deux ans."
+    }
+  },
+  {
+    "id": "RET-014",
+    "verdict": "ok",
+    "remarques": "Vérifié : 277 des 417 Md€ (RA p. 17, 88) ; déficit 5,1 Md€ en 2025 (p. 19, 93) ; -0,2 point en 2030 et -0,9 point en 2045 (p. 96). « Le salaire net augmenterait » suppose un salaire brut inchangé : implicite mais conforme à l'énoncé. Neutralité correcte ; le « contre » (35 mots) est plus chiffré que le « pour » (28), écart de longueur 25 %, dans la limite.",
+    "corrections": {}
+  },
+  {
+    "id": "RET-015",
+    "verdict": "ok",
+    "remarques": "Vérifié (RA p. 59 et 61, tableau 1.5) : 60 ans 3 mois pour la génération 1963 ; 62 ans pour 1970 ; 170 à 172 trimestres ; 4 ou 5 trimestres avant 20 ans (service-public F13845 consulté). Équilibre correct.",
+    "corrections": {}
+  },
+  {
+    "id": "RET-016",
+    "verdict": "ok",
+    "remarques": "Vérifié (service-public F15504 et F36326 consultés) : six facteurs, 4 points par facteur et par an, 10 points = 1 trimestre, plafond 80 points soit 8 trimestres. Omission non bloquante : les 20 premiers points sont réservés à la formation (les trimestres de retraite ne viennent qu'au-delà), et les trimestres permettent de partir au plus 2 ans avant l'âge légal ; l'ajouter améliorerait la précision si l'espace le permet. « Milieu hyperbare » n'est pas expliqué (jargon pour le grand public). Neutralité correcte.",
+    "corrections": {}
+  },
+  {
+    "id": "RET-017",
+    "verdict": "ok",
+    "remarques": "Vérifié : décote 0,625 point par trimestre manquant dans la limite de 20 trimestres, jusqu'à 67 ans (F19666 consulté) ; 10,5 % des femmes et 7,6 % des hommes partent à 67 ans (RA p. 221, sur les départs récents). Neutralité et équilibre corrects.",
+    "corrections": {}
+  },
+  {
+    "id": "RET-018",
+    "verdict": "ok",
+    "remarques": "Vérifié (F13104 consulté, page vérifiée le 01/01/2026) : 54 %, 55 ans, plafonds 25 001,60 € et 40 002,56 € ; F21819 : 50 % dans la fonction publique ; 19,3 % en 2024 (RA p. 184). Page Agirc-Arrco inaccessible (rejet antibot) : le 60 % reste non vérifié par moi. Le texte fait exactement 80 mots, à la limite. Équilibre correct.",
+    "corrections": {}
+  },
+  {
+    "id": "RET-019",
+    "verdict": "ok",
+    "remarques": "Vérifié : 75 % du dernier traitement indiciaire détenu depuis au moins 6 mois (F21142 consulté), 25 meilleures années et taux de 50 % dans le privé (F21552 consulté), primes dans la limite de 20 % du traitement (RA p. 138). Le texte fait exactement 80 mots. Équilibre correct (30/30). Source Weka : titre indiqué différent du titre réel (« Retraite des fonctionnaires : le COR rouvre le débat sur l'intégration des primes ») ; à corriger dans le champ sources.",
+    "corrections": {}
+  },
+  {
+    "id": "RET-022",
+    "verdict": "ok",
+    "remarques": "Vérifié : PFU de 31,4 % (12,8 % + 18,6 %) (entreprendre.service-public F32963 consulté) ; 277 Md€ soit 65,6 % des ressources (RA p. 88-89). Cas particulier non évoqué mais déclaré en réserves : certains dividendes de dirigeants sont déjà soumis à cotisations au-delà d'un seuil. Équilibre correct (32/26, écart 19 %).",
+    "corrections": {}
+  }
+]

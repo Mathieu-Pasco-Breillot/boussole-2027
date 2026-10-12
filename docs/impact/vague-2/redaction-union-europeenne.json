@@ -1,0 +1,377 @@
+[
+ {
+  "id": "EUR-001",
+  "changement": "L'adhésion d'un pays est décidée à l'unanimité des États membres réunis au Conseil, après approbation du Parlement européen à la majorité de ses membres. Le traité d'adhésion doit ensuite être ratifié par chacun des États. Pour l'Ukraine et la Moldavie, le premier groupe de chapitres de négociation, dit « fondamentaux », a été ouvert le 15 juin 2026, et celui des relations extérieures le 14 juillet 2026, selon un média spécialisé.",
+  "pour": "Ses partisans estiment que l'adhésion ancrerait durablement l'Ukraine à l'Union, renforcerait la sécurité du continent face à la Russie et élargirait le marché commun européen.",
+  "contre": "Ses opposants jugent que l'Ukraine, en guerre, est loin de remplir les critères d'adhésion, et craignent un coût élevé pour le budget européen ainsi qu'une concurrence agricole accrue.",
+  "sources": [
+   {
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12012M049",
+    "titre": "Traité sur l'Union européenne, article 49 (version consolidée, EN)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   },
+   {
+    "url": "https://europeanwesternbalkans.com/2026/06/15/ukraine-and-moldova-launch-accession-talks-with-opening-of-fundamentals-cluster/",
+    "titre": "Ukraine and Moldova launch accession talks with opening of Fundamentals cluster (European Western Balkans, 15 juin 2026)",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   },
+   {
+    "url": "https://radiomoldova.md/p/80834",
+    "titre": "Ukraine and Moldova advance as EU holds landmark enlargement talks (Radio Moldova, 14.07.2026)",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   },
+   {
+    "url": "https://www.eunews.it/en/2026/07/14/eu-opens-ukraine-external-relations-cluster-kos-says-open-the-others-as-soon-as-possible/",
+    "titre": "EU opens Ukraine external relations cluster; Kos says “open the others as soon as possible” (Eunews, 14 juillet 2026)",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Dates d'ouverture des groupes de chapitres tirées d'un seul média spécialisé (European Western Balkans), non recoupées sur le site du Conseil. Retirés du brouillon faute de source : le motif du blocage par un État membre (minorité hongroise), la mention d'un « blocage » et « aucune date de fin de négociation ». Arguments pour/contre sans source dédiée (logique générale du débat, attribués, sans chiffre). Précision : exacte, mais gagnerait à être datée (premiers groupes de chapitres ouverts en juin 2026). Le communiqué du Conseil de l'Union européenne du 14 juillet 2026, cité par le relecteur, n'a pu être consulté (accès bloqué) : les dates d'ouverture des groupes de chapitres sont donc attribuées à la presse spécialisée, et étayées par deux médias (Radio Moldova et Eunews pour le 14 juillet ; Radio Moldova et European Western Balkans pour le 15 juin)."
+ },
+ {
+  "id": "EUR-002",
+  "changement": "Selon l'article 31 du traité sur l'Union européenne, la politique étrangère commune se décide en principe à l'unanimité. Le traité prévoit déjà des cas de vote à la majorité qualifiée, par exemple pour appliquer une décision commune, sauf en matière militaire ou de défense. Un État peut s'abstenir sans bloquer, sauf si les abstentions représentent un tiers des États ou de la population. Les chefs d'État ou de gouvernement peuvent, à l'unanimité, étendre le vote à la majorité.",
+  "pour": "Ses partisans estiment que le veto d'un seul État paralyse l'Union face aux crises et l'empêche de parler d'une seule voix ; le vote à la majorité permettrait de décider plus vite.",
+  "contre": "Ses opposants craignent qu'un pays se voie imposer une position contraire à ses intérêts ou à sa diplomatie, et défendent le veto comme garantie de la souveraineté de chaque État.",
+  "sources": [
+   {
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:12016M031",
+    "titre": "Traité sur l'Union européenne, article 31 (version consolidée, EN)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   }
+  ],
+  "reserves": "Retiré : la proposition de la Commission de 2018 d'étendre la majorité qualifiée (source Wikipédia, non vérifiée). Le seuil exact de la majorité qualifiée (défini ailleurs dans les traités) n'est pas donné. « Les chefs d'État ou de gouvernement » = le Conseil européen (article 31, paragraphe 3). L'exclusion des décisions militaires ou de défense vient de l'article 31, paragraphe 4 (même source, hors liste des faits pré-validés : à contrôler). Arguments pour/contre sans source dédiée (logique générale, attribués, sans chiffre). Désaccord avec la Précision (« elles exigent l'accord unanime ») : incomplète, l'article 31, paragraphe 2, prévoit déjà des cas de vote à la majorité qualifiée ; proposition : « Elles exigent en général l'accord unanime des États membres. »"
+ },
+ {
+  "id": "EUR-003",
+  "changement": "Le 16 juillet 2025, la Commission européenne a proposé pour 2028-2034 un plafond d'engagements de dépenses de 1 763 milliards d'euros aux prix de 2025, soit 1 985 milliards en euros courants. Elle y associe cinq nouvelles recettes propres à l'Union, qu'elle estime à environ 50 milliards d'euros par an. Selon la direction générale du Trésor, citée par le Sénat, la contribution annuelle moyenne de la France passerait de 26 milliards d'euros sur 2021-2027 à 38 milliards.",
+  "pour": "Ses partisans estiment qu'un budget plus important est nécessaire pour financer en commun la défense, la compétitivité et la transition écologique, que les États ne peuvent assumer seuls.",
+  "contre": "Ses opposants estiment qu'une telle hausse alourdirait la contribution des États en période de dette publique élevée, et qu'il faudrait d'abord mieux employer le budget actuel.",
+  "sources": [
+   {
+    "url": "https://www.senat.fr/fileadmin/cru-1762483659/Commissions/Finances/2025-2026/PLF_2026/Essentiel/Mission_Affaires_europeennes_Essentiel_post-commission.pdf",
+    "titre": "L'essentiel sur… le projet de loi de finances pour 2026 : participation de la France au budget de l'Union européenne (Sénat, commission des finances)",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   },
+   {
+    "url": "https://www.senat.fr/fileadmin/cru-1762483659/Commissions/Finances/2025-2026/PLF_2026/NP/Affaires_europeennes_NP_PLF_2026.pdf",
+    "titre": "Projet de loi de finances pour 2026, note de présentation « Participation de la France au budget de l'Union européenne (article 45) » (Sénat, commission des finances)",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   }
+  ],
+  "reserves": "Chiffres vérifiés dans les deux documents du Sénat (1 763 et 1 985 milliards ; 26 et 38 milliards ; recettes propres « autour de 50 milliards » par an, chiffrage jugé « encore très incertain » par le Sénat). Retirés du brouillon : la proposition de la présidence du Conseil du 10 octobre 2026 (-8 %, environ 1 600 milliards), l'adoption à l'unanimité (article du traité non consulté). L'état de la négociation à la date de rédaction n'est pas vérifié. Arguments pour/contre sans source dédiée. Désaccords avec la Précision : « 2 000 milliards » correspond aux prix courants (1 763 milliards aux prix de 2025), à préciser ; « 1 200 milliards » pour 2021-2027 non vérifié (le Sénat donne 1 074 milliards aux prix de 2018 pour le plafond initial d'engagements) ; « d'environ 29 à près de 40 milliards » à corriger en « de 26 à 38 milliards d'euros par an en moyenne » (direction générale du Trésor, citée par le Sénat)."
+ },
+ {
+  "id": "EUR-004",
+  "changement": "Toute nouvelle recette propre de l'Union exige une décision unanime des États, ratifiée ensuite dans chacun d'eux. En 2018, la Commission européenne a proposé une taxe de 3 % sur les revenus de la publicité ciblée, des plateformes d'intermédiation et de la vente de données, pour les groupes dépassant 750 millions d'euros de chiffre d'affaires mondial et 50 millions dans l'Union ; les États ne l'ont pas adoptée. Ses propositions de juillet 2025 ne comprennent pas de taxe numérique.",
+  "pour": "Ses partisans estiment que ces groupes sont moins imposés que les autres entreprises et qu'une taxe européenne éviterait des taxes nationales disparates tout en donnant des ressources propres à l'Union.",
+  "contre": "Ses opposants craignent que la taxe soit répercutée sur les prix payés par les consommateurs et expose l'Union à des mesures de rétorsion commerciale, notamment des États-Unis.",
+  "sources": [
+   {
+    "url": "https://epthinktank.eu/2018/07/17/interim-digital-services-tax-on-revenues-from-certain-digital-services-eu-legislation-in-progress/",
+    "titre": "Interim digital services tax on revenues from certain digital services [EU Legislation in Progress] (Service de recherche du Parlement européen, 17 juillet 2018)",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   },
+   {
+    "url": "https://www.senat.fr/fileadmin/cru-1762483659/Commissions/Finances/2025-2026/PLF_2026/NP/Affaires_europeennes_NP_PLF_2026.pdf",
+    "titre": "Projet de loi de finances pour 2026, note de présentation « Participation de la France au budget de l'Union européenne (article 45) » (Sénat, commission des finances)",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   },
+   {
+    "url": "https://oeil.europarl.europa.eu/oeil/en/procedure-file?reference=2018/0073(CNS)",
+    "titre": "Procedure File: 2018/0073(CNS) | Legislative Observatory | European Parliament",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   }
+  ],
+  "reserves": "Contenu de la proposition de 2018 : source secondaire (Service de recherche du Parlement européen), le texte original de la Commission n'a pas été lu. Non-adoption au Conseil du 4 décembre 2018 : formulée « non adoptée », pas « rejetée » ; la page du Service de recherche datée de juillet 2018 ne couvre peut-être pas cette date (à confirmer). Juillet 2025 : le Sénat décrit cinq recettes propres proposées, dont un prélèvement sur le chiffre d'affaires des entreprises opérant dans l'Union (7,6 milliards d'euros par an selon la Commission), aucune propre au numérique. Retiré : « la fiscalité européenne se décide à l'unanimité » (article du traité non consulté ; seule l'unanimité pour la décision sur les ressources propres est sourcée). Arguments pour/contre sans source dédiée. Ajustement après relecture : la correction ne précise pas qui perçoit la taxe et n'affirme pas que les États ont refusé de l'adopter (non étayé) ; elle dit seulement que la taxe, proposée en 2018, n'a jamais été adoptée et que la procédure est en attente de décision finale (fiche 2018/0073(CNS) de l'observatoire législatif : proposition COM(2018)0148 du 21/03/2018, vote du Parlement européen le 13/12/2018). L'unanimité requise pour la fiscalité (art. 113 TFUE) n'est pas reprise."
+ },
+ {
+  "id": "EUR-005",
+  "changement": "Tout État européen qui respecte les valeurs de l'Union inscrites dans le traité peut demander à adhérer. Chaque adhésion est décidée à l'unanimité des États au Conseil, après approbation du Parlement européen, puis ratifiée par tous les États membres. En France, la ratification passe par un référendum, sauf si chaque assemblée autorise, à la majorité des trois cinquièmes, un vote du Parlement réuni en Congrès, à la même majorité.",
+  "pour": "Ses partisans estiment qu'accueillir de nouveaux membres d'ici 2030 stabiliserait les voisins de l'Union, élargirait son marché et renforcerait son poids face aux grandes puissances.",
+  "contre": "Ses opposants jugent l'échéance trop rapide : ils craignent une Union plus difficile à gouverner, des réformes insuffisantes chez les candidats et un coût accru pour le budget et l'agriculture.",
+  "sources": [
+   {
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12012M049",
+    "titre": "Traité sur l'Union européenne, article 49 (version consolidée, EN)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   },
+   {
+    "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+    "titre": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (articles 88-1 et 88-5)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   }
+  ],
+  "reserves": "Retirés du brouillon : « neuf pays sont candidats » (non vérifié), « le Monténégro est le plus avancé » / « seul le Monténégro a clos des chapitres » (contredit : l'Albanie aussi aurait clos des chapitres le 14 juillet 2026 selon une source secondaire), objectif d'adhésion 2028 du Monténégro (objectif national, non vérifié). Aucune date d'entrée de nouveaux membres n'a pu être sourcée. Arguments pour/contre sans source dédiée. Précision : la liste des pays en négociation (Monténégro, Albanie, Moldavie, Ukraine) n'a pas été vérifiée et pourrait être incomplète."
+ },
+ {
+  "id": "EUR-006",
+  "changement": "Depuis un règlement européen de juin 2022, l'Union peut, après enquête, réduire jusqu'à 50 % la note des offres venant de pays qui restreignent l'accès des entreprises européennes à leurs marchés publics, ou les exclure. Ce texte ne donne pas de priorité aux produits européens. Une proposition de la Commission du 4 mars 2026, en cours d'examen, exigerait des produits « fabriqués dans l'Union » dans certains achats publics : acier, ciment, aluminium, automobile, technologies dites « zéro net ».",
+  "pour": "Ses partisans estiment que l'argent public européen devrait soutenir l'emploi et l'industrie de l'Union, comme d'autres grandes puissances le font pour leurs propres achats publics.",
+  "contre": "Ses opposants craignent des prix plus élevés pour les acheteurs publics, des mesures de réciprocité contre les entreprises européennes à l'étranger et une moindre concurrence.",
+  "sources": [
+   {
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32022R1031",
+    "titre": "Règlement (UE) 2022/1031 du 23 juin 2022 (instrument relatif aux marchés publics internationaux)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   },
+   {
+    "url": "https://www.crowell.com/en/insights/publications/what-to-know-about-proposed-eu-industrial-accelerator-act",
+    "titre": "What To Know About Proposed EU Industrial Accelerator Act (article Law360 publié par Crowell, 29 avril 2026)",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Contenu de la proposition du 4 mars 2026 (« Industrial Accelerator Act ») tiré d'une source secondaire (cabinet d'avocats Crowell & Moring) ; le texte de la Commission et l'état de la procédure au 12 octobre 2026 ne sont pas vérifiés. « Technologies zéro net » : technologies servant à réduire les émissions nettes, non détaillées faute de source. Retiré : la proposition de la Commission de 2012 (non vérifiée). Arguments pour/contre sans source dédiée. Précision « texte en négociation » : confirmée par cette source secondaire."
+ },
+ {
+  "id": "EUR-007",
+  "changement": "Créée en 2019, la taxe a rapporté 277 millions d'euros cette année-là et 474 millions en 2021 ; 36 entreprises l'ont payée en 2021, selon le ministère de l'Économie. L'amendement adopté par les députés le 28 octobre 2025 relevait aussi de 750 millions à 2 milliards d'euros le chiffre d'affaires mondial à partir duquel un groupe y est soumis. Ses auteurs évaluaient le rendement de la taxe à environ 700 millions d'euros en 2024.",
+  "pour": "Ses partisans estiment que ces groupes paient peu d'impôt dans les pays où se trouvent leurs utilisateurs ; doubler le taux rapporterait davantage et répondrait aux droits de douane américains visant des produits français.",
+  "contre": "Ses opposants soulignent que la taxe est souvent répercutée sur les prix et qu'un doublement du taux relancerait les menaces de rétorsion commerciale visant surtout des groupes américains.",
+  "sources": [
+   {
+    "url": "https://www.assemblee-nationale.fr/dyn/16/questions/QANR5L16QE2974.pdf",
+    "titre": "Question écrite n° 2974 « Rendement de la taxe sur les services numériques » et réponse du ministère (Assemblée nationale, 16e législature)",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   },
+   {
+    "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906A/AN/655.pdf",
+    "titre": "Amendement n° I-655 au projet de loi de finances pour 2026 (n° 1906), après l'article 12 (Assemblée nationale)",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   },
+   {
+    "url": "https://lcp.fr/actualites/gafam-les-deputes-votent-pour-multiplier-par-deux-la-taxe-qui-vise-les-geants-du",
+    "titre": "GAFAM : les députés votent pour multiplier par deux la taxe qui vise les géants du numérique | LCP - Assemblée nationale",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Vérifié dans les textes : 277, 375 et 474 millions d'euros (2019-2021) et 27, 28 et 36 entreprises (réponse ministérielle à la question écrite n° 2974) ; taux 3 % → 6 % et seuil mondial 750 millions → 2 milliards, rendement « d'environ 700 millions d'euros en 2024 » (exposé de l'amendement I-655, chiffre de ses auteurs, non officiel). Date d'adoption en séance (28 octobre 2025) : source média (LCP) ; décompte du vote non repris. Argument « réponse aux droits de douane américains » tiré de l'exposé de l'amendement. Retirés : seuil de 25 millions en France, « 26 entreprises », droits de douane américains de 2020 (montant non vérifié). Précision : « sans figurer dans le budget final » non vérifié (loi de finances 2026 définitive non consultée)."
+ },
+ {
+  "id": "EUR-008",
+  "changement": "L'article 50 du traité sur l'Union européenne permet à un État de se retirer selon ses règles constitutionnelles. Il notifie son intention au Conseil européen, puis l'Union négocie avec lui un accord de retrait tenant compte de leurs relations futures. Les traités cessent de s'appliquer à l'entrée en vigueur de cet accord ou, à défaut, deux ans après la notification. Ce délai peut être prolongé par décision unanime du Conseil européen, avec l'accord de l'État concerné.",
+  "pour": "Ses partisans estiment que la France retrouverait la pleine maîtrise de ses lois, de ses frontières, de sa monnaie et de son budget, aujourd'hui partagés avec l'Union.",
+  "contre": "Ses opposants estiment que la France perdrait l'accès facile au marché unique et son influence dans les décisions européennes, au détriment de ses entreprises et de ses agriculteurs.",
+  "sources": [
+   {
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12012M050",
+    "titre": "Traité sur l'Union européenne, article 50 (version consolidée, EN)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   }
+  ],
+  "reserves": "Retirés : « un État sorti peut redemander à adhérer » (renvoi à l'article 49 non vérifié) et la date de sortie du Royaume-Uni (non vérifiée dans cette passe). Pas d'évaluation chiffrée sourcée des effets économiques : volontairement omise. Arguments pour/contre sans source dédiée (logique générale, attribués, sans chiffre)."
+ },
+ {
+  "id": "EUR-009",
+  "changement": "L'article 140 du traité sur le fonctionnement de l'Union européenne prévoit que, lorsqu'un État adopte l'euro, le taux de conversion de sa monnaie est fixé de façon irrévocable. Cet article ne prévoit aucune procédure pour quitter la zone euro. Les conditions d'un retour à une monnaie nationale ne sont donc pas fixées à l'avance par ce texte.",
+  "pour": "Ses partisans estiment qu'une monnaie nationale permettrait d'ajuster le taux de change et les taux d'intérêt à la situation du pays et de retrouver la maîtrise de sa politique monétaire.",
+  "contre": "Ses opposants craignent une forte instabilité financière, un renchérissement de la dette publique et des produits importés, et la perte des avantages d'une monnaie commune.",
+  "sources": [
+   {
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12012E140",
+    "titre": "Traité sur le fonctionnement de l'Union européenne, article 140 (version consolidée, EN)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   }
+  ],
+  "reserves": "Seul l'article 140 a été lu : l'absence de procédure de sortie est affirmée pour cet article, pas pour l'ensemble des traités (à confirmer par un juriste). Retiré : « aucun pays n'en est jamais sorti » (source Wikipédia). L'idée que les modalités seraient « à négocier » est une déduction, non une source : non reprise. Texte volontairement court. Arguments pour/contre sans source dédiée."
+ },
+ {
+  "id": "EUR-010",
+  "changement": "L'article 88-1 de la Constitution prévoit que la République participe à l'Union, dont les États exercent en commun certaines compétences en vertu des traités. Le 15 octobre 2021, le Conseil constitutionnel a jugé « inhérent à l'identité constitutionnelle de la France » le principe interdisant de confier à des personnes privées des pouvoirs de police administrative générale. La proposition inscrirait dans la Constitution une règle générale faisant prévaloir le droit français.",
+  "pour": "Ses partisans estiment que les règles décidées par les Français et leur Parlement doivent l'emporter, et qu'une règle écrite dans la Constitution protégerait mieux la souveraineté que la seule jurisprudence.",
+  "contre": "Ses opposants estiment que la primauté commune du droit européen garantit l'application uniforme des règles dans les 27 États, et que la remettre en cause fragiliserait le marché unique et exposerait la France à des recours.",
+  "sources": [
+   {
+    "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+    "titre": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (articles 88-1 et 88-5)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   },
+   {
+    "url": "https://www.conseil-constitutionnel.fr/decision/2021/2021940QPC.htm",
+    "titre": "Décision n° 2021-940 QPC du 15 octobre 2021 (Conseil constitutionnel)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   }
+  ],
+  "reserves": "Faits limités à l'article 88-1 et au considérant 15 de la décision n° 2021-940 QPC ; la décision n'emploie pas le mot « primauté ». Retirés (lecture juridique non sourcée) : la règle selon laquelle le Conseil constitutionnel ne contrôle pas une loi transposant strictement une règle européenne précise. Jurisprudence de la Cour de justice de l'Union sur la primauté non consultée. Arguments pour/contre sans source dédiée (« exposerait la France à des recours » : non sourcé). Désaccord avec la Précision (« le droit européen l'emporte sur les lois françaises ») : non vérifiée dans les sources lues ; à sourcer (jurisprudence du Conseil d'État et de la Cour de cassation, article 55 de la Constitution) ou à nuancer."
+ },
+ {
+  "id": "EUR-011",
+  "changement": "Le projet de loi de finances pour 2026 prévoyait 28,8 milliards d'euros de prélèvement sur les recettes de l'État au profit de l'Union, soit 5,7 milliards de plus que les 23,1 milliards de la loi de finances 2025. Selon le Sénat, cette hausse s'explique surtout par un rattrapage des paiements européens, notamment ceux de la politique de cohésion. En 2024, la France a versé environ 7,9 milliards d'euros de plus qu'elle n'a reçu, d'après les estimations reprises par le Sénat.",
+  "pour": "Ses partisans estiment que la France contribue davantage qu'elle ne reçoit et que ces milliards seraient mieux employés dans le budget national, notamment pour réduire le déficit.",
+  "contre": "Ses opposants estiment que cette baisse obligerait à réduire des dépenses européennes dont bénéficient agriculteurs et régions françaises, et affaiblirait l'influence de la France dans les négociations.",
+  "sources": [
+   {
+    "url": "https://www.senat.fr/fileadmin/cru-1762483659/Commissions/Finances/2025-2026/PLF_2026/NP/Affaires_europeennes_NP_PLF_2026.pdf",
+    "titre": "Projet de loi de finances pour 2026, note de présentation « Participation de la France au budget de l'Union européenne (article 45) » (Sénat, commission des finances)",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   },
+   {
+    "url": "https://www.senat.fr/fileadmin/cru-1762483659/Commissions/Finances/2025-2026/PLF_2026/Essentiel/Mission_Affaires_europeennes_Essentiel_post-commission.pdf",
+    "titre": "L'essentiel sur… le projet de loi de finances pour 2026 : participation de la France au budget de l'Union européenne (Sénat, commission des finances)",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   }
+  ],
+  "reserves": "Vérifié dans les documents du Sénat : 28,8 milliards (article 45 du projet de loi de finances 2026), +5,7 milliards par rapport à la loi de finances initiale 2025 (23,098 milliards), +24,6 % par rapport à la prévision d'exécution 2025, rattrapage des crédits de paiement de la politique de cohésion ; solde net de -7,9 milliards d'euros en 2024 « selon la méthode comptable » (annexe budgétaire citée par le Sénat), la France étant deuxième contributeur net. Montant de la loi de finances définitive 2026 non vérifié. Retiré : l'adoption du budget de l'Union à l'unanimité (article du traité non consulté). Argument contre sans source dédiée."
+ },
+ {
+  "id": "EUR-012",
+  "changement": "Un État peut déjà les rétablir temporairement en cas de menace grave. Depuis une réforme de juin 2024, une menace imprévisible justifie un mois de contrôles, trois mois au plus ; une menace prévisible, des périodes de six mois dans la limite de deux ans, puis, dans des cas exceptionnels, deux périodes de six mois au plus. La France reconduit ses contrôles tous les six mois ; le 2 juin 2026, la Commission a recommandé leur levée progressive.",
+  "pour": "Ses partisans estiment que contrôler les entrées depuis un autre pays Schengen permettrait de repérer plus tôt des personnes en situation irrégulière ou dangereuses que les contrôles aux frontières extérieures laissent passer.",
+  "contre": "Ses opposants jugent ces contrôles lourds, perturbateurs pour les travailleurs frontaliers et le commerce, et difficiles à concilier avec la liberté de circulation et l'interdiction des discriminations selon la nationalité.",
+  "sources": [
+   {
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024R1717",
+    "titre": "Règlement (UE) 2024/1717 du 13 juin 2024 modifiant le code frontières Schengen",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   },
+   {
+    "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1785540",
+    "titre": "Schengen Borders Code (Parlement européen, observatoire législatif : résumé du règlement (UE) 2024/1717)",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   },
+   {
+    "url": "https://www.assemblee-nationale.fr/dyn/17/questions/QANR5L17QE17214",
+    "titre": "Question n°17214 : Levée des contrôles aux frontières intérieures de l'espace Schengen - Assemblée nationale (17e législature)",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   },
+   {
+    "url": "https://eucrim.eu/news/commission-internal-border-controls-by-nine-member-states-should-phase-out/",
+    "titre": "Commission: Internal Border Controls by Nine Member States Should Phase Out (eucrim, 17 juillet 2026)",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Durées : règlement (UE) 2024/1717 et résumé de l'observatoire législatif du Parlement européen. Reconduction semestrielle par la France et avis de la Commission du 2 juin 2026 : tirés de la question écrite n° 17214 (publiée au Journal officiel le 21 juillet 2026), texte d'un député et non avis de la Commission lu directement. L'arrêt de la Cour de justice du 26 avril 2022 (six mois au plus) n'est plus la règle en vigueur depuis la réforme de 2024 : non repris. Retirés : contrôles « aléatoires » « depuis fin 2015 » (non sourcés). Aucune source sur l'organisation ou la légalité de contrôles visant les seuls non-Européens ; argument « interdiction des discriminations » sans source dédiée, comme les autres arguments. L'avis de la Commission du 2 juin 2026 (neuf États dont la France) est étayé par l'article d'eucrim du 17 juillet 2026, qui complète la question écrite n° 17214."
+ },
+ {
+  "id": "EUR-014",
+  "changement": "L'article 88-1 de la Constitution prévoit que la République participe à l'Union, dont les États exercent en commun certaines compétences en vertu des traités. En 2021, le Conseil constitutionnel a reconnu un principe « inhérent à l'identité constitutionnelle de la France » : ne pas confier à des personnes privées des pouvoirs de police administrative générale. Les traités prévoient par ailleurs une procédure de retrait de l'Union (article 50 du traité sur l'Union européenne).",
+  "pour": "Ses partisans estiment qu'un gouvernement élu doit pouvoir appliquer le programme voté par les électeurs, et que des règles européennes ne devraient pas l'en empêcher, car le vote populaire doit primer.",
+  "contre": "Ses opposants estiment que refuser d'appliquer les règles communes rompt l'engagement pris par la France dans les traités, l'exposerait à des recours et encouragerait d'autres États à faire de même.",
+  "sources": [
+   {
+    "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+    "titre": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (articles 88-1 et 88-5)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   },
+   {
+    "url": "https://www.conseil-constitutionnel.fr/decision/2021/2021940QPC.htm",
+    "titre": "Décision n° 2021-940 QPC du 15 octobre 2021 (Conseil constitutionnel)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   },
+   {
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12012M050",
+    "titre": "Traité sur l'Union européenne, article 50 (version consolidée, EN)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   },
+   {
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12012E258",
+    "titre": "Traité sur le fonctionnement de l'Union européenne, article 258 (version consolidée, EN)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   },
+   {
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:12012E260",
+    "titre": "Traité sur le fonctionnement de l'Union européenne, article 260 (version consolidée, EN)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   }
+  ],
+  "reserves": "Retirés : l'analyse selon laquelle un refus motivé par un programme politique « ne figure pas parmi » les cas admis par le Conseil constitutionnel (lecture juridique à faire valider par un juriste) ; les sanctions de la Cour de justice (recours en manquement, astreintes), non vérifiées. Argument contre « recours » sans source dédiée, comme les autres arguments. Précision : l'attribution « présentée par ses auteurs comme une désobéissance » n'est pas sourcée."
+ },
+ {
+  "id": "EUR-015",
+  "changement": "La loi européenne sur le climat de 2021 fixe une baisse nette d'au moins 55 % des émissions de gaz à effet de serre en 2030 par rapport à 1990. Un objectif de baisse nette de 90 % en 2040 a reçu l'accord final des États en mars 2026, selon une association forestière européenne. Une proposition de décembre 2025, discutée en juin 2026, ramènerait de 100 % à 90 % la baisse exigée des émissions des voitures neuves en 2035.",
+  "pour": "Ses partisans estiment que ces normes pèsent sur les coûts des agriculteurs, des industriels et des ménages, et qu'une pause permettrait d'en évaluer les effets avant d'aller plus loin.",
+  "contre": "Ses opposants estiment que suspendre le pacte retarderait la baisse des émissions et l'adaptation des filières, et créerait une incertitude pour les entreprises qui ont déjà investi.",
+  "sources": [
+   {
+    "url": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32021R1119",
+    "titre": "Règlement (UE) 2021/1119 (loi européenne sur le climat)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   },
+   {
+    "url": "https://eustafor.eu/2040-climate-target-council-gives-final-green-light-commission-publishes-public-consultations/",
+    "titre": "2040 climate target: Council gives final green light, Commission publishes public consultations (EUSTAFOR)",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   },
+   {
+    "url": "https://data.consilium.europa.eu/doc/document/ST-10065-2026-REV-1/en/pdf",
+    "titre": "Proposal for a REGULATION OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL amending Regulation (EU) 2019/631 as regards CO2 emission performance standards for new light duty vehicles and vehicle labelling and repealing Directive 1999/94/EC - Progress report (Conseil de l'Union européenne, 10065/1/26 REV 1, 15 juin 2026)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   }
+  ],
+  "reserves": "Objectif 2040 (réduction nette de 90 %, crédits internationaux jusqu'à 5 %, vote du Conseil du 5 mars 2026) : source secondaire (EUSTAFOR) ; publication au Journal officiel de l'Union non vérifiée. Proposition du 16 décembre 2025 sur les voitures et camionnettes (2035 : 100 % → 90 % ; camionnettes 2030 : 50 % → 40 % ; nouvelles flexibilités) : rapport d'avancement du Conseil du 15 juin 2026 ; état ultérieur non vérifié. Retirés : « émissions de CO2 » (la loi vise les gaz à effet de serre), l'évaluation de 2026 sur les hybrides, la loi sur la restauration de la nature (20 %). Arguments pour/contre sans source dédiée. Désaccord avec la Précision : elle omet la révision en cours de l'objectif 2035 pour les voitures (90 % au lieu de 100 %) et l'objectif 2040 ; proposition d'ajouter « dont la révision est en cours »."
+ },
+ {
+  "id": "EUR-016",
+  "changement": "Le 9 janvier 2026, le Conseil de l'Union a autorisé la signature de l'accord, signé le 17 janvier. Le 21 janvier, le Parlement européen a décidé, par 334 voix contre 324, de demander à la Cour de justice un avis sur sa compatibilité avec les traités, selon l'agence Reuters. D'après un cabinet de conseil, les droits de douane baissent par étapes : en 5 à 15 ans pour les produits agricoles, en 10 ans au plus pour l'industrie.",
+  "pour": "Ses partisans estiment que refuser l'accord protégerait les éleveurs et agriculteurs français d'une concurrence soumise à des normes moins strictes, conformément au vote de la France au Conseil.",
+  "contre": "Ses opposants estiment qu'un État ne peut pas écarter un accord commercial conclu par l'Union, que la France s'exposerait à des recours, et que ses exportateurs perdraient des débouchés.",
+  "sources": [
+   {
+    "url": "https://policy.trade.ec.europa.eu/eu-trade-relationships-country-and-region/countries-and-regions/mercosur/eu-mercosur-agreement_en",
+    "titre": "EU-Mercosur agreement (Commission européenne)",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   },
+   {
+    "url": "https://data.consilium.europa.eu/doc/document/CM-1112-2026-INIT/en/pdf",
+    "titre": "EU-Mercosur Agreements – Initiation of written procedure (Conseil de l'Union européenne, CM 1112/26, 9 janvier 2026)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   },
+   {
+    "url": "https://www.internazionale.it/ultime-notizie-reuters/2026/01/21/eu-lawmakers-refer-eu-mercosur-trade-agreement-to-top-eu-court",
+    "titre": "EU lawmakers refer EU-Mercosur trade agreement to top EU court (Reuters, repris par Internazionale, 21 janvier 2026)",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   },
+   {
+    "url": "https://www.bdo.ie/en-gb/news/2026/bdo-trade-update-mercosur-agreement-april-2026",
+    "titre": "BDO Trade Update - Mercosur Agreement - April 2026 (BDO Irlande)",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   },
+   {
+    "url": "https://www.europarl.europa.eu/news/en/press-room/20260116IPR32450/eu-mercosur-meps-demand-a-legal-opinion-on-its-conformity-with-the-eu-treaties",
+    "titre": "EU-Mercosur: MEPs demand a legal opinion on its conformity with the EU treaties (Parlement européen, communiqué du 21 janvier 2026)",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   }
+  ],
+  "reserves": "Décision du 9 janvier 2026 (procédure écrite du Conseil, document CM 1112/26, sans décompte des votes) et signature du 17 janvier : page de la Commission. Vote du Parlement européen : source média (Reuters via Internazionale). Calendrier de baisse des droits : BDO Irlande (secondaire ; véhicules électriques jusqu'à 18 ans, non repris). Retirés : décompte « 21 voix contre 5 », autres votes contre (Autriche, Hongrie, Irlande, Pologne) et abstention belge (médias seulement), « 91 à 92 % des exportations » (BDO parle de lignes tarifaires), « sur quinze ans », « quotas d'importation ». Arguments pour/contre sans source dédiée (dont « un État ne peut pas écarter un accord » : lecture juridique attribuée aux opposants, non vérifiée)."
+ }
+]

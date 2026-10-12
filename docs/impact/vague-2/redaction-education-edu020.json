@@ -1,0 +1,41 @@
+[
+ {
+  "id": "EDU-020",
+  "changement": "Les mêmes enseignants seraient répartis entre moins d'élèves : selon une étude statistique du ministère citée par la presse, l'école compterait 1 676 800 élèves de moins d'ici 2035 (−14,2 %), dont 160 000 dès la rentrée 2026. Selon l'Institut des politiques publiques, garder tous les postes ferait passer la taille moyenne des classes de 22,4 élèves en 2024 à 18,2 en 2034. À l'inverse, en supprimer environ 50 000 économiserait près de 3,4 milliards d'euros par an.",
+  "pour": "Ses partisans estiment que la baisse démographique offre l'occasion d'alléger les classes et d'éviter des fermetures en zone rurale. Selon l'Institut des politiques publiques, ce choix rapporterait davantage à la société, à terme, que des suppressions.",
+  "contre": "Ses opposants font valoir que les postes baissent déjà moins vite que les élèves, environ 0,5 % contre 1,5 %. Dans un budget contraint, ils jugent nécessaire d'adapter les moyens et estiment que des classes plus petites ne suffisent pas.",
+  "sources": [
+   {
+    "url": "https://www.ipp.eu/en/publication/class-sizes-and-regional-inequalities-what-strategy-should-be-adopted-in-the-face-of-population-decline/",
+    "titre": "Class sizes and regional inequalities: what strategy should be adopted in the face of population decline?",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   },
+   {
+    "url": "https://www.banquedesterritoires.fr/baisse-des-effectifs-scolaires-des-previsions-dix-ans-preoccupantes",
+    "titre": "Baisse des effectifs scolaires : en 2035, l'école face à un vertige démographique",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   },
+   {
+    "url": "https://www.publicsenat.fr/actualites/education/enseignement-la-baisse-demographique-suffit-elle-a-justifier-les-fermetures-de-classes",
+    "titre": "Enseignement : la baisse démographique suffit-elle à justifier les fermetures de classes ?",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   },
+   {
+    "url": "https://www.publicsenat.fr/actualites/parlementaire/budget-le-senat-confirme-la-suppression-de-4-000-postes-denseignants",
+    "titre": "Budget : le Sénat confirme la suppression de 4 000 postes d'enseignants",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   },
+   {
+    "url": "https://www.letudiant.fr/educpros/actualite/fin-du-marathon-budgetaire-que-prevoit-la-loi-de-finance-2026-pour-l-education-nationale-et-l-enseignement-superieur.html",
+    "titre": "Fin du marathon budgétaire : que prévoit la loi de finance 2026 pour l'Éducation nationale et l'enseignement supérieur ?",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Rédigé sans accès web, à partir de faits relevés par un chercheur. L'étude de la DEPP (7 avril 2026) et les travaux de la Cour des comptes n'ont pas été consultés directement : les projections d'élèves viennent de Localtis. Le chiffre IPP de 3,4 Md€ porte sur un scénario de suppression d'environ 50 000 postes, pas sur les 3 256 de la Précision ; l'IPP chiffre aussi le maintien à environ 4,5 Md€ de gain économique et 2,9 Md€ de recettes fiscales en 2034 (recettes, non économie budgétaire), résumés dans « pour » sans chiffre. L'économie liée aux suppressions 2026 est estimée à 75 M€ par la commission des finances du Sénat selon Public Sénat (non reprise). Les 3 256 postes de la Précision concernent le public ; des suppressions supplémentaires dans le privé sous contrat (762 postes, selon des amendements) n'ont pas été vérifiées. L'adoption finale de la loi de finances 2026 n'a pas été vérifiée sur Légifrance. L'origine de la question évoque des « propositions de candidats… rapportées en août 2026 » alors que sa source date du 3 février 2026 : discordance signalée, non modifiée. Les remplacements, avancés par les partisans, ne figurent dans aucune source consultée et n'ont pas été repris."
+ }
+]

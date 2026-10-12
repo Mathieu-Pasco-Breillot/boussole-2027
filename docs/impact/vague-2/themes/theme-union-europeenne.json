@@ -1,0 +1,77 @@
+[
+ {
+  "id": "EUR-001",
+  "enonce": "L'Ukraine doit adhérer à l'Union européenne.",
+  "precision": "Les négociations d'adhésion sont ouvertes. En France, un traité d'adhésion doit être approuvé par référendum ou par un vote des trois cinquièmes du Parlement."
+ },
+ {
+  "id": "EUR-002",
+  "enonce": "Les décisions de politique étrangère de l'Union européenne doivent pouvoir être prises à la majorité, sans droit de veto des États.",
+  "precision": "Aujourd'hui, elles exigent l'accord unanime des États membres."
+ },
+ {
+  "id": "EUR-003",
+  "enonce": "Le budget de l'Union européenne pour 2028-2034 doit être porté à 2 000 milliards d'euros.",
+  "precision": "C'est la proposition de la Commission européenne. Le budget 2021-2027 est d'environ 1 200 milliards. La contribution française pourrait passer d'environ 29 à près de 40 milliards d'euros par an."
+ },
+ {
+  "id": "EUR-004",
+  "enonce": "Une taxe européenne sur les grandes entreprises du numérique doit être créée pour financer le budget de l'Union.",
+  "precision": null
+ },
+ {
+  "id": "EUR-005",
+  "enonce": "L'Union européenne doit accueillir de nouveaux États membres d'ici 2030.",
+  "precision": "Le Monténégro, l'Albanie, la Moldavie et l'Ukraine sont en négociation d'adhésion."
+ },
+ {
+  "id": "EUR-006",
+  "enonce": "Les marchés publics doivent donner la priorité aux produits fabriqués dans l'Union européenne.",
+  "precision": "Un texte européen en ce sens est en négociation."
+ },
+ {
+  "id": "EUR-007",
+  "enonce": "Le taux de la taxe française sur les services numériques doit être porté de 3 % à 6 %.",
+  "precision": "Cette taxe vise le chiffre d'affaires des grandes entreprises du numérique. Une hausse à 6 % a été votée à l'Assemblée nationale en octobre 2025, sans figurer dans le budget final."
+ },
+ {
+  "id": "EUR-008",
+  "enonce": "La France doit quitter l'Union européenne.",
+  "precision": null
+ },
+ {
+  "id": "EUR-009",
+  "enonce": "La France doit abandonner l'euro et rétablir une monnaie nationale.",
+  "precision": null
+ },
+ {
+  "id": "EUR-010",
+  "enonce": "La Constitution doit affirmer que le droit français prime sur le droit européen.",
+  "precision": "Aujourd'hui, le droit européen l'emporte sur les lois françaises."
+ },
+ {
+  "id": "EUR-011",
+  "enonce": "La contribution de la France au budget de l'Union européenne doit être ramenée de 28,8 à 23,1 milliards d'euros par an.",
+  "precision": null
+ },
+ {
+  "id": "EUR-012",
+  "enonce": "Les étrangers non européens doivent être contrôlés aux frontières françaises, même lorsqu'ils viennent d'un autre pays de l'espace Schengen.",
+  "precision": "Dans l'espace Schengen, les contrôles aux frontières entre pays membres sont en principe supprimés. La proposition, dite « double frontière », ne prévoit pas de sortir de Schengen."
+ },
+ {
+  "id": "EUR-014",
+  "enonce": "La France doit refuser d'appliquer les règles européennes qui empêchent la mise en œuvre du programme du président élu.",
+  "precision": "Mesure présentée par ses auteurs comme une « désobéissance » aux traités."
+ },
+ {
+  "id": "EUR-015",
+  "enonce": "Le Pacte vert européen doit être suspendu.",
+  "precision": "Pacte vert : ensemble de lois européennes visant la neutralité carbone en 2050 (fin des voitures thermiques neuves, marché du carbone, normes agricoles)."
+ },
+ {
+  "id": "EUR-016",
+  "enonce": "La France doit refuser d'appliquer l'accord commercial entre l'Union européenne et le Mercosur.",
+  "precision": "Cet accord avec l'Argentine, le Brésil, le Paraguay et l'Uruguay s'applique à titre provisoire depuis le 1er mai 2026, malgré le vote contre de la France. La Cour de justice de l'Union européenne a été saisie."
+ }
+]

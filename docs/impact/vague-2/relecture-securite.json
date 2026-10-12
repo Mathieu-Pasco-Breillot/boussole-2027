@@ -1,0 +1,134 @@
+[
+  {
+    "id": "SEC-001",
+    "verdict": "ok",
+    "remarques": "Neutralité et symétrie correctes (27/30 mots), aucun nom. Source 1 (page Défenseur des droits, titre exact) confirme l'absence de traçabilité des contrôles ; rapport de décembre 2017 (titre exact « Le maintien de l'ordre au regard des règles de déontologie ») : recommandation n° 4 sur la traçabilité des contrôles d'identité, bien rendue (le texte signale honnêtement qu'il ne demande pas un récépissé). Détail de lisibilité : « ce document » renvoie à une « trace écrite » (le mot récépissé n'apparaît pas) ; défini par la Précision, donc non bloquant.",
+    "corrections": {}
+  },
+  {
+    "id": "SEC-002",
+    "verdict": "ok",
+    "remarques": "Chiffre tranché : le rapport du Défenseur des droits (déc. 2017) écrit bien « 22 personnes ont perdu un œil ou l'usage d'un œil à la suite d'un tir de LBD ou de grenade de désencerclement » (22, pas 23 ; la formulation du texte est exacte, grenade incluse). Recommandation d'interdire le LBD en maintien de l'ordre confirmée. Page du Conseil d'État vérifiée : ordonnances du 1er février 2019 rejetant les demandes d'interdiction ou de suspension du LBD (contexte « gilets jaunes »). Chiffre daté de 2017, mais correctement daté dans le texte.",
+    "corrections": {}
+  },
+  {
+    "id": "SEC-003",
+    "verdict": "ok",
+    "remarques": "Pétition n° 1319 vérifiée sur le site de l'Assemblée : 263 867 signatures, déposée le 23/03/2023, classée par la commission des Lois le 05/04/2023. Titre de la source = description reconstituée (titre de la page : « Pétition pour la dissolution de la BRAV-M »), écart mineur. Deux points faibles non bloquants : (1) « le maintien de l'ordre resterait confié aux autres unités » n'est étayé par aucune source ; (2) le texte ne dit pas que cette unité est parisienne (préfecture de police), non vérifié dans les sources.",
+    "corrections": {}
+  },
+  {
+    "id": "SEC-004",
+    "verdict": "corriger",
+    "remarques": "Légifrance a bloqué l'accès (403 Cloudflare) : article L. 435-1 non vérifié en ligne. D'après le texte de l'article tel que je le connais, le 4° vise des occupants « susceptibles, dans leur fuite, de perpétrer des atteintes à leur vie ou à leur intégrité physique ou à celles d'autrui » ; le texte omet « intégrité physique », ce qui restreint à tort le champ aux atteintes à la vie. À confirmer sur Légifrance avant intégration. Reste ok : cinq cas, loi du 28 février 2017, absolue nécessité et stricte proportionnalité. Neutralité et symétrie correctes (30/29).",
+    "corrections": {
+      "changement": "Depuis la loi du 28 février 2017, cet article autorise policiers et gendarmes à faire usage de leur arme dans cinq cas, en cas d'absolue nécessité et de manière strictement proportionnée. L'un d'eux vise l'immobilisation d'un véhicule dont le conducteur n'obtempère pas à l'ordre d'arrêt et dont les occupants sont susceptibles, dans leur fuite, de porter atteinte à des personnes, selon les conditions que l'article précise. La mesure supprimerait ce cadre commun aux deux forces."
+    }
+  },
+  {
+    "id": "SEC-005",
+    "verdict": "ok",
+    "remarques": "Page du Défenseur des droits (titre exact) vérifiée : IGPN rattachée au directeur général de la police nationale, IGGN au directeur général de la gendarmerie nationale, Défenseur des droits « seule autorité de contrôle externe », indépendante. Article 71-1 de la Constitution non vérifié (Légifrance 403) mais exact d'après mes connaissances. Pistes non bloquantes : le texte n'évoque pas le rôle d'enquête judiciaire de ces inspections sous l'autorité de magistrats (argument possible côté « contre ») ; l'énoncé ne dit pas non plus si l'organisme aurait des pouvoirs d'enquête, ce que le texte signale.",
+    "corrections": {}
+  },
+  {
+    "id": "SEC-006",
+    "verdict": "ok",
+    "remarques": "Chiffres tranchés sur les PDF du ministère de la Justice : 135,6 % au 1er décembre 2025 (86 229 détenus pour 63 613 places opérationnelles) ; 139,1 % au 1er avril 2026, 88 145 détenus, 63 353 places, 26 458 détenus en surnombre (définition du ministère : détenus au-delà des places dans les établissements surpeuplés). Tous exacts. Point d'attention : la Précision cite des chiffres plus récents (1er août 2026 : 89 668 détenus, 63 303 places, soit environ 141,7 %) que le texte (avril 2026) ; deux jeux de chiffres coexistent à l'écran, sans erreur mais à harmoniser si une source du 1er août est disponible. Titre de la source 1 : le PDF s'intitule « Mesure de l'incarcération, indicateurs clés au 1er avril 2026 » (écart mineur). Le droit actuel de libération sous contrainte n'est pas mentionné (non vérifié).",
+    "corrections": {}
+  },
+  {
+    "id": "SEC-008",
+    "verdict": "ok",
+    "remarques": "Acteurs publics (titre exact) vérifié : engouement pour la police de proximité en 1998, expérimentation dans 5 villes puis généralisation en 2000-2002, arrêt en 2003 ; l'article mentionne aussi un rapport IGPN de 2001 critique et 5 000 emplois créés entre 1997 et 2002 (le texte dit que les sources ne donnent pas d'évaluation chiffrée : un peu sévère mais défendable). Le dispositif actuel de type « sécurité du quotidien » n'est pas évoqué (non vérifié). Symétrie correcte (28/27).",
+    "corrections": {}
+  },
+  {
+    "id": "SEC-009",
+    "verdict": "ok",
+    "remarques": "POUR L'UTILISATEUR : (1) La proposition de loi n° 750 (19/12/2024, titre exact) vise « l'usage simple » et maintient les sanctions pour « les usages problématiques ou dangereux » (exposé des motifs, p. 7) ; l'énoncé dit « quelle qu'elle soit » et « ne doit plus être puni » : l'écart usage simple / usage aggravé n'est pas signalé dans le texte. (2) « la police et la justice ne traiteraient plus ces affaires » est formulé de façon absolue ; l'exposé parle de redéploiement des moyens. (3) Portugal : l'OFDT (note de synthèse 2021-03, juin 2021, titre exact) confirme 2001, les commissions de dissuasion de la toxicomanie, la baisse du nombre d'usagers d'héroïne (de plus de 100 000 vers environ 30 000 selon l'exposé de la PPL citant l'OFDT) ; mais l'OFDT souligne la difficulté d'imputer ces évolutions à la réforme pénale seule et que partisans et opposants l'interprètent différemment : la formule « y associent » est correcte. Le Portugal conserve en outre des sanctions administratives, ce que le texte ne dit pas. (4) Montant de l'amende forfaitaire (200 €) : Légifrance (article L. 3421-1) a renvoyé 403, non vérifié ; je n'ai pu confirmer ni infirmer une modification de 2026. (5) Textes pour/contre : 31/31 mots, symétriques ; aucun nom.",
+    "corrections": {}
+  },
+  {
+    "id": "SEC-010",
+    "verdict": "ok",
+    "remarques": "Légifrance a bloqué l'accès (403) : article 10-1 de la loi du 12 avril 2000 non vérifié en ligne ; le contenu (principes énumérés, retrait de subvention par décision motivée après observations, restitution sous six mois) correspond à ce que je connais du texte. À confirmer sur Légifrance. Symétrie (30/32) et neutralité correctes, aucun nom.",
+    "corrections": {}
+  },
+  {
+    "id": "SEC-011",
+    "verdict": "corriger",
+    "remarques": "Seuils vérifiés sur le texte de la loi du 10 août 2007 (page CNAPE) : délits 1 an (pour 3 ans encourus) à 4 ans (pour 10 ans) ; crimes 5 ans (pour 15 ans) à 15 ans (perpétuité) : exacts. Imprécision : la possibilité de déroger au minimum n'est ouverte qu'en cas de « garanties exceptionnelles d'insertion ou de réinsertion » pour une nouvelle récidive ; le texte laisse croire que la règle de dérogation est unique. Réserves non bloquantes : une extension de 2011 à certains délits de violences, hors récidive, n'est pas vérifiée dans les sources ; Légifrance a renvoyé 403 (loi 2014-896 non consultée). Titre de la source 3 : c'est celui de la loi, pas de la page CNAPE (RTF).",
+    "corrections": {
+      "changement": "Dans l'ancien dispositif, applicable en cas de récidive légale, le minimum dépendait de la peine encourue. Délits : de 1 an (pour 3 ans encourus) à 4 ans (pour 10 ans). Crimes : de 5 ans (pour 15 ans) à 15 ans (pour la perpétuité). Le juge pouvait y déroger par une décision spécialement motivée, au vu des circonstances, de la personnalité ou des garanties d'insertion ; en cas de nouvelle récidive, seules des garanties exceptionnelles d'insertion le permettaient."
+    }
+  },
+  {
+    "id": "SEC-012",
+    "verdict": "corriger",
+    "remarques": "Communiqué du Conseil constitutionnel (décision 2025-886 DC, titre exact) vérifié. Il indique que l'article L. 121-7 du code de la justice pénale des mineurs permet DÉJÀ aux juridictions de déroger à l'atténuation, à titre exceptionnel et par décision spécialement motivée, pour les mineurs de plus de 16 ans : cette règle actuelle, essentielle pour comprendre ce que la mesure changerait, manque au texte. Le texte répète aussi la censure déjà citée dans la Précision (redite, règle 4) et le communiqué qualifie l'atténuation d'« exigence constitutionnelle » à propos de l'article 7 (la mention du principe fondamental reconnu par les lois de la République, présente dans le texte, est à vérifier dans la décision elle-même). Correction proposée : ajoute la règle actuelle, condense la censure. La loi censurée visait les crimes et délits punis d'au moins 5 ans en récidive légale (non précisé, à ne pas ajouter faute de place).",
+    "corrections": {
+      "changement": "Pour les mineurs de 16 ans et plus, le juge peut déjà écarter la réduction de peine, mais seulement à titre exceptionnel et par décision motivée. La mesure la supprimerait pour les récidivistes. Le 19 juin 2025, le Conseil constitutionnel a censuré une loi qui rendait cette réduction exceptionnelle pour eux : il a rappelé que l'atténuation de la responsabilité pénale des mineurs en fonction de l'âge est une exigence constitutionnelle."
+    }
+  },
+  {
+    "id": "SEC-013",
+    "verdict": "ok",
+    "remarques": "Source unique (Dalloz Actualité) inaccessible depuis ma machine (« Request Rejected ») ; Légifrance 403 : l'article 132-25 du code pénal (peine de 6 mois ou moins : aménagement obligatoire sauf impossibilité, loi du 23 mars 2019 ; entre 6 mois et 1 an : possible) n'a pu être vérifié, mais correspond à ce que je connais du texte. Recommandation : ajouter l'article 132-25 sur Légifrance comme source primaire (une source secondaire seule, avec titre reconstitué à partir de l'URL, est fragile). Note : l'énoncé parle de « moins d'un an » alors que l'obligation ne vise que 6 mois ou moins : bien rendu. L'aménagement n'est pas « automatique » (juge) : le texte est correct. Symétrie (30/28) correcte.",
+    "corrections": {}
+  },
+  {
+    "id": "SEC-014",
+    "verdict": "corriger",
+    "remarques": "Chiffres du ministère de la Justice vérifiés : 63 353 places opérationnelles, 88 145 détenus au 1er avril 2026 ; 85 000 - 63 353 = 21 647, soit environ 22 000 : exact. Mauvaise attribution : la page du Sénat est le rapport n° 660 (déposé le 31 mai 2023) mais les causes du retard (crise sanitaire, guerre en Ukraine, réticences des riverains) sont des déclarations du garde des Sceaux lors de son audition du 23 mai 2023, pas une conclusion du rapport ; « d'ici 2027 » est confirmé. Titre de la source 2 : la page s'intitule « Projet de loi d'orientation et de programmation du ministère de la justice 2023-2027 » et la partie citée est l'audition du ministre. Doute : cette source date de 2023, l'état du plan de 15 000 places en 2026 n'est pas documenté. Correction proposée : attribution exacte. (Après lecture de `reserves` : un sous-amendement du 11 juillet 2023 aurait porté l'objectif à 18 000 places ; non vérifié, mais cela confirme que la source de 2023 est possiblement périmée.)",
+    "corrections": {
+      "changement": "Le ministère de la Justice comptait 63 353 places opérationnelles au 1er avril 2026, pour 88 145 détenus : atteindre 85 000 places supposerait d'en ouvrir environ 22 000. En mai 2023, le ministre de la Justice, auditionné par le Sénat, a reconnu un retard important du programme de 15 000 places supplémentaires d'ici 2027, en citant la crise sanitaire, la guerre en Ukraine et les réticences de riverains."
+    }
+  },
+  {
+    "id": "SEC-015",
+    "verdict": "corriger",
+    "remarques": "Le Courrier de l'Atlas (titre de la page : « Police : Les députés adoptent la présomption de légitime défense » ; titre h1 : « Tirs policiers : l'Assemblée nationale adopte la présomption de légitime défense » ; le titre indiqué dans les sources est une description, à corriger) confirme : adoption mardi 7 juillet en première lecture, 313 voix contre 199. Le texte omet « en première lecture » (l'adoption n'est pas définitive) et le caractère de présomption simple, renversable, relevé par la page. Les deux sources de l'Assemblée nationale ont répondu 503 : question écrite 79021 et dossier législatif non vérifiés. Les deux cas de l'article 122-6 sont exacts d'après mes connaissances. Précision (non modifiable, à signaler) : « c'est à eux de démontrer que leur tir était légal » est discutable juridiquement (en droit pénal la charge de la preuve de l'infraction pèse sur l'accusation ; l'agent invoque un fait justificatif). Le texte corrigé évite de nommer le ministre.",
+    "corrections": {
+      "changement": "Le code pénal présume déjà la légitime défense dans deux cas : repousser de nuit une intrusion par effraction, violence ou ruse dans un lieu habité, et se défendre contre des vols ou pillages violents. La mesure créerait une présomption, dite simple, donc réfutable selon Le Courrier de l'Atlas, pour l'usage de leur arme par les policiers et gendarmes. L'Assemblée nationale a adopté le texte en première lecture le 7 juillet 2026, par 313 voix contre 199."
+    }
+  },
+  {
+    "id": "SEC-016",
+    "verdict": "ok",
+    "remarques": "Cour des comptes (rapport public thématique, octobre 2020, « Les polices municipales ») vérifié : « près de 23 934 en 2019 », « en 2019, 81 % des policiers municipaux disposent d'armes et (...) 57 % sont dotés d'une arme à feu » : les trois chiffres sont exacts. Doute : données de 2019, possiblement dépassées en 2026 (une source plus récente serait préférable ; une évolution législative récente sur les polices municipales n'a pas été vérifiée). Symétrie (31/34) correcte, aucun nom.",
+    "corrections": {}
+  },
+  {
+    "id": "SEC-017",
+    "verdict": "ok",
+    "remarques": "Rapport n° 1698 (enregistré le 4 octobre 2023) vérifié : fait au nom de la commission des affaires sociales sur la proposition de loi n° 1612 ; article 1er : suppression ou suspension des allocations pour condamnation définitive à un crime ou délit puni d'au moins deux ans ; mentions « Supprimé par la commission » aux articles 1 et 2. TITRE INEXACT dans les sources : la proposition s'intitule « visant à supprimer ou à suspendre les allocations familiales pour les parents d'enfants criminels ou délinquants » (et non « des parents d'enfants délinquants »). Observation : le texte décrit une proposition non adoptée, pas la règle actuelle ; acceptable puisque l'énoncé ne précise rien.",
+    "corrections": {}
+  },
+  {
+    "id": "SEC-018",
+    "verdict": "ok",
+    "remarques": "Légifrance a bloqué les deux sources (403) : décision CE n° 295671 du 5 décembre 2007 et loi du 11 octobre 2010 non vérifiées en ligne ; les faits (loi de 2004 sur les signes religieux à l'école publique ; loi de 2010 : contravention ou stage de citoyenneté) correspondent à ce que je connais. La source pour la loi de 2004 est indirecte (décision de 2007) : citer plutôt la loi du 15 mars 2004 / article L. 141-5-1 du code de l'éducation. Neutralité et symétrie (31/29) correctes.",
+    "corrections": {}
+  },
+  {
+    "id": "SEC-019",
+    "verdict": "ok",
+    "remarques": "Décision du Conseil d'État n° 458088 du 29 juin 2023 (titre exact) vérifiée : la FFF pouvait interdire, pendant les matchs, le port de signes ou tenues manifestant ostensiblement une appartenance politique, philosophique, religieuse ou syndicale ; l'interdiction « apparaît nécessaire » au bon déroulement des matchs (la page emploie « nécessaire » ; « proportionnée » n'a pas été retrouvé mot pour mot). Aucun état de la loi sur ce sujet n'est indiqué (initiatives législatives éventuelles non vérifiées). Symétrie (31/32) correcte.",
+    "corrections": {}
+  },
+  {
+    "id": "SEC-020",
+    "verdict": "ok",
+    "remarques": "Source unique : PDF du compte rendu intégral de l'Assemblée (session 2009-2010) téléchargé mais illisible avec mes outils (pas d'extracteur PDF) : la loi du 17 juin 1998 et l'article L. 3711-3 du code de la santé publique n'ont pu être vérifiés ; ils correspondent à ce que je connais. Titre de la source reconstitué et trop vague (« injonction de soins ») : un compte rendu de débats n'est pas une source adaptée pour un fait de droit ; préférer Légifrance (403 ici). Neutralité correcte ; symétrie 33/26 (écart 21 %, dans la limite).",
+    "corrections": {}
+  },
+  {
+    "id": "SEC-021",
+    "verdict": "corriger",
+    "remarques": "Page de l'AI Act Service Desk (article 5, titre traduit correctement) vérifiée : interdiction de principe (5.1.h), trois exceptions dont infractions de l'annexe II punies d'au moins 4 ans de prison (maximum), autorisation préalable d'une autorité judiciaire ou administrative indépendante, loi nationale requise. Imprécision : « chaque usage exige une autorisation préalable » omet l'exception d'urgence prévue à l'article 5, paragraphe 3 (utilisation possible sans autorisation préalable, à demander sans délai et au plus tard sous 24 heures) ; passage non relu mot à mot dans la page téléchargée, à confirmer. Symétrie 34/34, neutralité correcte, aucun nom.",
+    "corrections": {
+      "changement": "Le règlement européen sur l'intelligence artificielle interdit en principe aux forces de l'ordre l'identification biométrique à distance en temps réel dans les espaces accessibles au public. Exceptions : recherche ciblée de victimes ou de disparus, menace grave et imminente ou terroriste, suspects d'infractions listées punies d'au moins 4 ans de prison. Une autorisation préalable est exigée (sauf urgence, demandée sous 24 heures), et un État ne peut y recourir que si sa loi le prévoit."
+    }
+  }
+]

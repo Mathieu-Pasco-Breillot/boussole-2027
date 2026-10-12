@@ -990,7 +990,45 @@
           "date": "2026-10-12",
           "note": "activée après codage de tous les candidats codés : 5 extraits, 4 codes publiés (Attal, Ruffin, Tondelier +2 ; Glucksmann +1 imprécise)"
         }
-      ]
+      ],
+      "impact": {
+        "changement": "Selon une projection du ministère de l'Éducation citée par la presse, l'école compterait 1 676 800 élèves de moins d'ici 2035 (−14,2 %), dont 160 000 à la rentrée 2026. Pour le primaire, l'Institut des politiques publiques estime que garder tous les postes ferait passer la taille moyenne des classes de 22,4 élèves en 2024 à 18,2 en 2034. À taille de classe constante, environ 50 000 postes seraient supprimables : près de 3,4 milliards d'euros par an en 2034.",
+        "pour": "Ses partisans estiment que la baisse démographique offre l'occasion d'alléger les classes et d'éviter des fermetures en zone rurale. Selon l'Institut des politiques publiques, dans le primaire, ce choix rapporterait davantage à la société, à terme, que des suppressions.",
+        "contre": "Ses opposants font valoir que les suppressions de cette année (0,5 % des postes) sont inférieures à la baisse des élèves (1,5 %). Dans un budget contraint, ils veulent adapter les moyens et doutent que des classes plus petites suffisent.",
+        "sources": [
+          {
+            "url": "https://www.ipp.eu/en/publication/class-sizes-and-regional-inequalities-what-strategy-should-be-adopted-in-the-face-of-population-decline/",
+            "titre": "Class sizes and regional inequalities: what strategy should be adopted in the face of population decline?",
+            "date_consultation": "2026-10-12",
+            "nature": "institutionnelle"
+          },
+          {
+            "url": "https://www.banquedesterritoires.fr/baisse-des-effectifs-scolaires-des-previsions-dix-ans-preoccupantes",
+            "titre": "Baisse des effectifs scolaires : en 2035, l'école face à un vertige démographique",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          },
+          {
+            "url": "https://www.publicsenat.fr/actualites/education/enseignement-la-baisse-demographique-suffit-elle-a-justifier-les-fermetures-de-classes",
+            "titre": "Enseignement : la baisse démographique suffit-elle à justifier les fermetures de classes ?",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          },
+          {
+            "url": "https://www.publicsenat.fr/actualites/parlementaire/budget-le-senat-confirme-la-suppression-de-4-000-postes-denseignants",
+            "titre": "Budget : le Sénat confirme la suppression de 4 000 postes d'enseignants",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          },
+          {
+            "url": "https://www.letudiant.fr/educpros/actualite/fin-du-marathon-budgetaire-que-prevoit-la-loi-de-finance-2026-pour-l-education-nationale-et-l-enseignement-superieur.html",
+            "titre": "Fin du marathon budgétaire : que prévoit la loi de finance 2026 pour l'Éducation nationale et l'enseignement supérieur ?",
+            "date_consultation": "2026-10-12",
+            "nature": "secondaire"
+          }
+        ],
+        "statut": "pilote"
+      }
     }
   ]
 }
