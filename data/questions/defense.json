@@ -40,7 +40,45 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Selon le Sénat, la loi d'actualisation porte le budget de la défense à 76,3 milliards d'euros en 2030, soit 2,5 % du PIB. Viser 3 % dès 2030 ajouterait un demi-point de PIB de dépenses par an. En 2025, les pays de l'OTAN se sont engagés à consacrer au moins 3,5 % de leur PIB à la défense de base d'ici 2035. Selon le Sénat, la trajectoire actuelle n'y mène pas.",
+    "pour": "Ses partisans estiment que la menace en Europe impose d'aller plus vite. Ils notent que la loi actuelle ne change pas le format des armées et que plusieurs capacités n'arriveraient qu'en 2035, trop tard pour un choc de haute intensité.",
+    "contre": "Ses opposants jugent cet effort difficile à financer : il supposerait des économies ailleurs ou davantage de dette, alors que la charge de la dette pourrait approcher 100 milliards d'euros en fin de décennie, selon le Sénat.",
+    "sources": [
+     {
+      "url": "https://www.senat.fr/lessentiel/pjl25-635.pdf",
+      "titre": "Actualisation de la LPM 2024-2030 : un effort réel mais insuffisant pour éviter le décrochage",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://augengeradeaus.net/wp-content/uploads/2025/06/20250625_NATO_The_Hague_Summit_Declaration.pdf",
+      "titre": "The Hague Summit Declaration",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.publicsenat.fr/actualites/politique/signal-tres-mitige-pas-de-vision-globale-lactualisation-de-la-loi-de-programmation-militaire-laisse-les-senateurs-sur-leur-faim",
+      "titre": "« Signal très mitigé », « pas de vision globale » : l’actualisation de la loi de programmation militaire laisse les sénateurs sur leur faim",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.economiematin.fr/?p=225668",
+      "titre": "Budget militaire : 36 milliards d’euros qui alourdissent la facture publique",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.lexisveille.fr/la-loi-actualisant-la-programmation-militaire-2024-2030-est-publiee",
+      "titre": "La loi actualisant la programmation militaire 2024-2030 est publiée",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "DEF-002",
@@ -75,7 +113,39 @@
      "date": "2026-10-03",
      "ancien_enonce": "La loi ne doit fixer aucun objectif de dépenses militaires en pourcentage du PIB."
     }
-   ]
+   ],
+   "impact": {
+    "changement": "La trajectoire de la loi d'actualisation est écrite en milliards d'euros (76,3 en 2030, soit 2,5 % du PIB selon le Sénat). Le pourcentage du PIB sert de repère, mais les crédits de chaque année restent votés dans la loi de finances. Supprimer l'objectif ne retirerait pas l'engagement pris à l'OTAN en 2025 : au moins 3,5 % du PIB pour la défense de base d'ici 2035.",
+    "pour": "Ses partisans estiment qu'un pourcentage du PIB est un repère trompeur : il fait varier la dépense avec la croissance plutôt qu'avec les menaces. Ils préféreraient fixer des capacités précises à obtenir, comme des munitions ou des navires.",
+    "contre": "Ses opposants y voient un repère simple, comparable avec les autres pays de l'OTAN, qui oblige chaque gouvernement à rendre des comptes. Sans lui, disent-ils, l'effort dépendrait davantage des arbitrages budgétaires de chaque année.",
+    "sources": [
+     {
+      "url": "https://www.senat.fr/lessentiel/pjl25-635.pdf",
+      "titre": "Actualisation de la LPM 2024-2030 : un effort réel mais insuffisant pour éviter le décrochage",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://augengeradeaus.net/wp-content/uploads/2025/06/20250625_NATO_The_Hague_Summit_Declaration.pdf",
+      "titre": "The Hague Summit Declaration",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.economiematin.fr/?p=225668",
+      "titre": "Budget militaire : 36 milliards d’euros qui alourdissent la facture publique",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.ifrap.org/sites/default/files/documents/2025-11/etude_ifrap_lpm_objectif_3.pdf",
+      "titre": "Défense, 4 défis pour atteindre l'objectif 3% en 2030",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "DEF-003",
@@ -105,7 +175,45 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "La proposition de loi n° 1210 (avril 2025) viserait les Français nés après le 31 décembre 2006. La durée et les critères de sélection seraient fixés par décret ; le texte cite le modèle finlandais, où les armées fixent des quotas annuels. Son coût n'est pas chiffré ; une taxe sur le tabac le compenserait. Le service volontaire actuel prévoit 29 500 volontaires sur 2026-2030, pour environ 2,3 milliards d'euros de coût affiché, plus élevé en réalité selon le Sénat.",
+    "pour": "Ses partisans estiment que la dégradation de la situation en Europe, avec la guerre en Ukraine, justifie de reconstituer des forces et une réserve. Ils y voient aussi un moyen de renforcer le lien entre les armées et la nation.",
+    "contre": "Ses opposants soulignent que les armées n'ont plus les casernes ni l'encadrement pour accueillir de nombreux appelés, et que le coût n'est pas chiffré. Ils rappellent que le service obligatoire avait été suspendu pour passer à des armées professionnelles.",
+    "sources": [
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1210_proposition-loi.pdf",
+      "titre": "Proposition de loi visant à rétablir le service national (n° 1210)",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.info.gouv.fr/public/index.php/actualite/service-national-ce-qu-il-faut-retenir",
+      "titre": "Service national : ce qu'il faut retenir",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.senat.fr/lessentiel/pjl25-635.pdf",
+      "titre": "Actualisation de la LPM 2024-2030 : un effort réel mais insuffisant pour éviter le décrochage",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://acteurspublics.fr/articles/1997-le-service-national-est-suspendu/",
+      "titre": "1997, le service national est suspendu",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2695/AN/73.rtf",
+      "titre": "Amendement n° 73 au projet de loi d'actualisation de la programmation militaire 2024-2030 (n° 2695), après l'article 34",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "DEF-004",
@@ -131,7 +239,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Le commandement intégré rassemble les états-majors permanents de l'OTAN. Depuis 2009, plusieurs centaines de militaires français servent dans une quinzaine de ces structures, et la France y a obtenu le commandement allié pour la transformation, à Norfolk (États-Unis). En sortir retirerait ces postes et ces responsabilités, mais la France resterait membre de l'Alliance et de son traité, comme entre 1966 et 2009.",
+    "pour": "Ses partisans estiment que la France y perd en autonomie de décision et se place à la remorque d'un allié. Pour eux, la période 1966-2009 montre qu'on peut rester membre tout en gardant son indépendance.",
+    "contre": "Ses opposants estiment que la France pèse davantage sur les décisions en siégeant dans les états-majors, et rappellent qu'un rapport officiel de 2012 jugeait une sortie exclue. Ils jugent la souveraineté préservée.",
+    "sources": [
+     {
+      "url": "https://www.assemblee-nationale.fr/14/pdf/rapports/r3620.pdf",
+      "titre": "Avis n° 3620 de la commission de la Défense nationale et des forces armées sur l'accession de la France au protocole sur le statut des quartiers généraux militaires internationaux",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.ifri.org/fr/articles/politique-etrangere/la-france-et-lotan-une-histoire",
+      "titre": "La France et l'OTAN : une histoire",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.nato.int/cps/en/natohq/official_texts_17120.htm",
+      "titre": "The North Atlantic Treaty",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "DEF-005",
@@ -157,7 +291,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Le traité de l'Atlantique Nord permet à tout membre de partir un an après avoir notifié sa décision au gouvernement américain. La France perdrait aussi la garantie de l'article 5 : une attaque contre un membre est traitée comme une attaque contre tous, chacun aidant comme il le juge nécessaire. Elle cesserait de participer aux structures de l'Alliance, dont elle est membre depuis sa création.",
+    "pour": "Ses partisans estiment que la France doit décider seule de la guerre et de la paix, sans dépendre d'un allié. Ils rappellent qu'elle a déjà quitté le commandement intégré de 1966 à 2009 tout en gardant son indépendance.",
+    "contre": "Ses opposants soulignent que l'article 5 protège aussi la France et que ses voisins européens comptent sur l'Alliance. Ils jugent que la France y perdrait de l'influence sans disposer d'une autre garantie collective équivalente.",
+    "sources": [
+     {
+      "url": "https://www.nato.int/cps/en/natohq/official_texts_17120.htm",
+      "titre": "The North Atlantic Treaty",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://fr.euronews.com/2026/04/03/verification-des-faits-comment-un-pays-peut-il-se-retirer-de-lotan",
+      "titre": "Vérification des faits : comment un pays membre peut-il se retirer de l'OTAN ?",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.ifri.org/fr/articles/politique-etrangere/la-france-et-lotan-une-histoire",
+      "titre": "La France et l'OTAN : une histoire",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "DEF-006",
@@ -183,7 +343,39 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "La Constitution oblige le gouvernement à informer le Parlement au plus tard trois jours après l'envoi de forces à l'étranger. Au-delà de quatre mois, le Parlement doit autoriser la prolongation. Selon la déclaration de Paris, une force dirigée par les Européens agirait à la demande de l'Ukraine, après une cessation crédible des hostilités. Aucun effectif français n'y est précisé. Le 13 juillet 2026, aucun cessez-le-feu n'était en vigueur.",
+    "pour": "Ses partisans estiment que la présence de troupes européennes dissuaderait une nouvelle attaque et permettrait de reconstruire l'armée ukrainienne. Ils y voient aussi la condition pour que les Européens pèsent dans les négociations de paix.",
+    "contre": "Ses opposants craignent un affrontement direct avec la Russie, qui a averti que ces troupes seraient des cibles. Ils soulignent que le projet dépend d'un accord entre Moscou et Washington et que les États-Unis excluent d'envoyer des soldats au sol.",
+    "sources": [
+     {
+      "url": "https://www.elysee.fr/emmanuel-macron/2026/01/06/des-garanties-de-securite-robustes-pour-une-paix-solide-et-durable-en-ukraine",
+      "titre": "Déclaration de Paris - Des garanties de sécurité robustes pour une paix solide et durable en Ukraine",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.elysee.fr/emmanuel-macron/2026/07/13/determines-a-accelerer-les-progres-vers-la-paix-declaration-des-copresidents-de-la-coalition-des-volontaires",
+      "titre": "Déterminés à accélérer les progrès vers la paix : Déclaration des coprésidents de la Coalition des volontaires",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/contenu/telechargement/629170/file/Fiche%2065%20-%20La%20d%C3%A9claration%20de%20guerre%20et%20les%20interventions%20arm%C3%A9es%20%C3%A0%20l%C3%A9tranger_actualis%C3%A9e050724.pdf",
+      "titre": "La déclaration de guerre et les interventions armées à l'étranger (Fiche n° 65)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.iris-france.org/guerre-en-ukraine-de-nouvelles-garanties-de-securite-occidentales/",
+      "titre": "Guerre en Ukraine : de nouvelles garanties de sécurité occidentales ?",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "DEF-007",
@@ -209,7 +401,39 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Le gel est sans limite de durée depuis le 12 décembre 2025 (il était renouvelé tous les six mois). Environ 185 milliards d'euros sont chez Euroclear, établissement belge, que la banque centrale russe poursuit devant un tribunal de Moscou. Le prêt de 90 milliards d'euros prévu pour 2026-2027 a reçu un premier versement en juin.",
+    "pour": "Ses partisans estiment que la Russie doit assumer les conséquences financières de la guerre. Ils soulignent que l'Ukraine demande aux alliés de combler un déficit de 23 milliards d'euros pour sa défense et que l'emprunt actuel pourrait ne pas suffire.",
+    "contre": "Ses opposants, à commencer par la Belgique, craignent des recours en justice de la Russie contre Euroclear. Ils jugent le montage juridiquement fragile et redoutent que des investisseurs étrangers retirent leurs fonds.",
+    "sources": [
+     {
+      "url": "https://www.parismatch.be/actualites/monde/2025/12/13/lunion-europeenne-valide-le-gel-indefini-de-la-belgique-la-belgique-approuve-AJTRFL6EEFCMHGNOIKYQPJAPYM/",
+      "titre": "L'Union européenne valide le gel indéfini des avoirs russes : la Belgique approuve",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://fr.euronews.com/2026/08/27/quatre-pays-de-lue-relancent-la-proposition-dutiliser-les-210-milliards-russes-geles-pour-",
+      "titre": "Quatre pays de l'UE relancent la proposition d'utiliser les 210 milliards russes gelés pour l'Ukraine",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://fr.euronews.com/2026/09/10/des-eurodeputes-veulent-utiliser-les-avoirs-russes-geles-pour-soutenir-lukraine",
+      "titre": "Des eurodéputés poussent à utiliser les avoirs russes gelés pour soutenir l'Ukraine",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.leclubdesjuristes.com/en-bref/actifs-russes-geles-la-banque-centrale-de-russie-attaque-euroclear-en-justice-13371/",
+      "titre": "Actifs russes gelés : la Banque centrale de Russie attaque Euroclear en justice",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "DEF-008",
@@ -235,7 +459,21 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "La décision d'employer l'arme nucléaire, sa planification et sa mise en œuvre resteraient strictement françaises. Des organes d'échange, prévus en 2026, serviraient à partager le renseignement et évaluer les menaces ; des alliés pourraient participer à certains exercices. Des avions porteurs pourraient être déployés temporairement chez des alliés, sans stockage permanent. L'arsenal doit augmenter, sans chiffre ni calendrier public.",
+    "pour": "Ses partisans estiment qu'elle répond à un doute sur les garanties américaines et à un sentiment de manque de dissuasion face à la Russie. Pour eux, une offre concrète et compatible avec l'OTAN renforce la dissuasion de toute l'Europe.",
+    "contre": "Ses opposants jugent les contours flous, notamment la définition des intérêts vitaux, qui reste à la seule appréciation de la France. Ils craignent une extension des cibles, une charge lourde pour les armées et réclament un débat au Parlement.",
+    "sources": [
+     {
+      "url": "https://www.ifri.org/sites/default/files/2026-04/ifri_fayet_dissuasion_nucleaire_francaise_2026.pdf",
+      "titre": "La dissuasion nucléaire française à l'épreuve d'un nouvel ordre européen. Analyse du discours présidentiel du 2 mars 2026",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "DEF-009",
@@ -265,7 +503,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Selon l'Observatoire des armements, qui analyse le rapport au Parlement 2025, les prises de commandes israéliennes de 2024 atteignent 27 millions d'euros (20 en 2023) ; le ministère dit que les deux tiers sont des composants destinés à des matériels réexportés. Les exportations de biens à double usage, civil et militaire, vers Israël atteignent environ 76 millions d'euros, dont 60 de capteurs et de lasers. Le périmètre d'un arrêt (armes, composants, double usage) serait à préciser.",
+    "pour": "Pour ses partisans, ces ventes contribuent à des opérations contraires au droit international. Ils invoquent le traité sur le commerce des armes, qui interdit un transfert dont l'État sait qu'il pourrait servir à un génocide ou des crimes de guerre.",
+    "contre": "Ses opposants, dont le gouvernement, répondent que la France ne vend pas d'armes à Israël, mais des composants à réexporter ou des systèmes défensifs. Ils ajoutent que chaque licence est déjà examinée par une commission interministérielle.",
+    "sources": [
+     {
+      "url": "https://www.obsarm.info/IMG/pdf/2025-10_cp_rapports_au_parlement.pdf",
+      "titre": "Des exportations massives d'armes et de biens à double usage aux régimes répressifs en 2024",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.amnesty.fr/actualites/transferts-darmes-vers-israel-mettre-fin-a-lopaci",
+      "titre": "Transferts d’armes vers Israël : mettre fin à l’opacité française",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1852_proposition-resolution.pdf",
+      "titre": "Proposition de résolution tendant à la création d'une commission d'enquête visant à renforcer l'effectivité du contrôle parlementaire sur l'action gouvernementale en matière d'exportations d'armements et de coopération militaire",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "DEF-010",
@@ -291,7 +555,45 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Le gouvernement délivre les licences d'exportation après examen par une commission interministérielle. Le Parlement reçoit un rapport annuel ; la date limite du 1er juin n'a jamais été respectée, selon une proposition de résolution déposée à l'Assemblée. La commission d'évaluation créée par la loi de programmation militaire 2024-2030 ne s'est réunie qu'une fois, selon ce même texte. Des propositions existent : une délégation parlementaire examinant les contrats, ou une délégation dotée d'un veto.",
+    "pour": "Ses partisans estiment que de telles décisions engagent la France et doivent être contrôlées par les élus avant les livraisons. Ils notent que les parlements britannique, néerlandais et suédois peuvent demander des explications, et jugent le rapport annuel trop partiel.",
+    "contre": "Ses opposants craignent qu'un débat parlementaire expose des intérêts stratégiques ou des informations couvertes par le secret de la défense nationale. Ils jugent que la politique étrangère et les licences relèvent de la responsabilité du gouvernement.",
+    "sources": [
+     {
+      "url": "https://www.publicsenat.fr/actualites/politique/exportation-darmes-a-letranger-le-senat-dote-le-parlement-dun-pouvoir-de-controle-contre-lavis-du-gouvernement",
+      "titre": "Exportation d'armes à l'étranger : le Sénat dote le Parlement d'un pouvoir de contrôle, contre l'avis du gouvernement",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.publicsenat.fr/actualites/economie/le-groupe-communiste-veut-reguler-les-exportations-d-armes-en-instaurant-un",
+      "titre": "Le groupe communiste veut réguler les exportations d'armes en instaurant un véritable contrôle parlementaire",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://lcp.fr/actualites/exportations-d-armes-les-deputes-veulent-davantage-de-controle-42339",
+      "titre": "Exportations d'armes : les députés veulent davantage de contrôle",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1852_proposition-resolution.pdf",
+      "titre": "Proposition de résolution tendant à la création d'une commission d'enquête visant à renforcer l'effectivité du contrôle parlementaire sur l'action gouvernementale en matière d'exportations d'armements et de coopération militaire",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.obsarm.info/IMG/pdf/2025-10_cp_rapports_au_parlement.pdf",
+      "titre": "Des exportations massives d'armes et de biens à double usage aux régimes répressifs en 2024",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "DEF-011",
@@ -312,7 +614,33 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Des euro-obligations seraient une dette émise par l'Union et garantie collectivement par les États. Les prêts SAFE reposent déjà sur des emprunts de l'Union, mais chaque État les rembourse lui-même, et au moins 65 % des composants achetés doivent venir de l'Union, de l'Ukraine ou de l'Espace économique européen. Un emprunt commun de 90 milliards d'euros a été décidé pour l'Ukraine fin 2025.",
+    "pour": "Ses partisans estiment que la signature de l'Union permettrait d'emprunter à de meilleures conditions et de financer de grands investissements. Ils citent le précédent du plan de relance de 750 milliards d'euros après la crise sanitaire.",
+    "contre": "Ses opposants craignent un affaiblissement de la discipline budgétaire, les contribuables d'un pays devant porter les risques des choix d'autres États. Ils redoutent aussi une dette européenne durablement alourdie, sans résoudre la faiblesse de la productivité.",
+    "sources": [
+     {
+      "url": "https://www.consilium.europa.eu/fr/policies/safe/",
+      "titre": "Qu'est-ce que l'instrument \"Agir pour la sécurité de l'Europe\" (SAFE)?",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://fr.euronews.com/2026/04/28/euronews-explique-quest-ce-que-les-euro-obligations-pourquoi-divisent-elles-et-ont-elles-u",
+      "titre": "Euronews explique : qu'est-ce que les euro-obligations, pourquoi divisent elles et ont-elles un sens ?",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://fr.euronews.com/2026/08/27/quatre-pays-de-lue-relancent-la-proposition-dutiliser-les-210-milliards-russes-geles-pour-",
+      "titre": "Quatre pays de l'UE relancent la proposition d'utiliser les 210 milliards russes gelés pour l'Ukraine",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "DEF-012",
@@ -333,7 +661,33 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Aujourd'hui, l'État n'organise pas toute la chaîne : selon un rapport parlementaire, la dernière usine française de munitions de petit calibre (Le Mans) a fermé en 1999. Un accord de juin 2026 prévoit que la France et l'Allemagne détiennent ensemble 80 % du fabricant de chars, le reste devant entrer en Bourse (introduction reportée). Un amendement créant un pôle public de l'armement a été rejeté à l'Assemblée le 29 avril 2026.",
+    "pour": "Ses partisans estiment que l'État aurait ainsi une vraie capacité de planification, des approvisionnements sécurisés et une production continue en cas de crise. Ils invoquent les tensions sur les stocks de munitions et la dépendance à des acteurs privés.",
+    "contre": "Ses opposants estiment que racheter ou fédérer des entreprises coûterait cher aux finances publiques et que les industriels privés, soutenus par des commandes publiques, peuvent produire. Ils notent que plusieurs groupes sont déjà européens.",
+    "sources": [
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2695/AN/168.rtf",
+      "titre": "Amendement n° 168 au projet de loi d'actualisation de la programmation militaire 2024-2030 (n° 2695), article premier",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://lcp.fr/actualites/munitions-drones-porte-avions-ces-dependances-qui-affaiblissent-l-armee-francaise-434563",
+      "titre": "Munitions, drones, porte-avions: ces dépendances qui affaiblissent l'armée française",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.boursorama.com/actualite-economique/actualites-amp/defense-knds-balaie-la-rumeur-d-une-nationalisation-complete-entre-france-et-allemagne-6672588f2662d8bf72fa1a7be8fd452c",
+      "titre": "Défense : KNDS balaie la rumeur d'une \"nationalisation complète\" entre France et Allemagne",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "DEF-013",
@@ -364,7 +718,33 @@
      "date": "2026-10-03",
      "ancien_enonce": "Les armées françaises doivent acheter du matériel militaire français plutôt qu'européen ou américain."
     }
-   ]
+   ],
+   "impact": {
+    "changement": "Les marchés d'armement sont soumis à une directive européenne de 2009 ; le traité de l'Union permet d'y déroger dans des cas que le ministère dit « très encadrés ». En 2026, un marché de tenues de combat de 485 millions d'euros autorise des fabrications hors Union, tandis que 89 % des fournisseurs d'habillement sont européens et 70 % français. Les prêts européens SAFE exigent au moins 65 % de composants européens.",
+    "pour": "Ses partisans estiment que la France dépend de l'étranger pour des équipements clés, comme les munitions de petit calibre, les drones moyenne altitude ou les catapultes du porte-avions. Pour eux, acheter français sécuriserait les approvisionnements et les emplois.",
+    "contre": "Ses opposants soulignent que certains produits français coûtent plus cher et que les chaînes de production ne sont pas toujours prêtes pour fabriquer en grand nombre, comme pour les drones tactiques. Ils jugent que cela peut retarder l'équipement des armées.",
+    "sources": [
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/17/questions/QANR5L17QE13571",
+      "titre": "Question écrite n° 13571 (marché de tenues de combat F3 BME, article 346 TFUE) et réponse du ministère des Armées",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://lcp.fr/actualites/munitions-drones-porte-avions-ces-dependances-qui-affaiblissent-l-armee-francaise-434563",
+      "titre": "Munitions, drones, porte-avions: ces dépendances qui affaiblissent l'armée française",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.consilium.europa.eu/fr/policies/safe/",
+      "titre": "Qu'est-ce que l'instrument \"Agir pour la sécurité de l'Europe\" (SAFE)?",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "DEF-014",
@@ -390,7 +770,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Les armes que la France livre à l'Ukraine comprennent des missiles de croisière SCALP, d'une portée de plus de 250 kilomètres, livrés depuis 2023. En 2026, elles incluent aussi des bombes guidées AASM Hammer et des Mirage 2000, d'après la presse ukrainienne. Se limiter aux équipements défensifs, comme la défense aérienne, exclurait ces matériels capables de frapper loin derrière la ligne de front.",
+    "pour": "Ses partisans craignent que des frappes en profondeur soient vues par la Russie comme une escalade : elle a averti qu'elles feraient des pays de l'OTAN des belligérants. Ils préfèrent aider l'Ukraine à se protéger sans élargir le conflit.",
+    "contre": "Ses opposants, avec Kiev, soutiennent que se défendre suppose de frapper les bases aériennes d'où partent les attaques. Selon eux, une aide limitée au défensif laisserait l'Ukraine encaisser les frappes sans pouvoir réduire la capacité de l'adversaire à les mener.",
+    "sources": [
+     {
+      "url": "https://mind.ua/en/news/20261617-ukraine-has-already-received-all-the-promised-long-range-scalp-missiles-from-france-and-deliveries",
+      "titre": "Ukraine has already received all the promised long-range SCALP missiles from France, and deliveries will continue",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://rubryka.com/en/2026/02/09/mirage-2000/",
+      "titre": "United to win: France to provide Ukraine with Mirage 2000 jets, anti-ballistic missiles, and AASM Hammer bombs",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://fr.le360.ma/monde/guerre-en-ukraine-tensions-autour-de-lusage-de-missiles-a-longue-portee-occidentaux-par-kiev_SATI4XYN55HN5F32PJTZQCA5OI/",
+      "titre": "Guerre en Ukraine: tensions autour de l'usage de missiles à longue portée occidentaux par Kiev",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "DEF-015",

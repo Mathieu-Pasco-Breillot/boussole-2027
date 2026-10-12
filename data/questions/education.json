@@ -51,7 +51,33 @@
      "date": "2026-10-12",
      "ancien_enonce": "Parcoursup doit être supprimé."
     }
-   ]
+   ],
+   "impact": {
+    "changement": "En 2026, 660 399 lycéens et environ 206 000 étudiants en réorientation se sont inscrits ; 126 632 candidats restaient sans proposition à la fin de la phase principale, contre 102 844 en 2025. Supprimer ou refondre entièrement la plateforme obligerait à définir un autre mode d'affectation et de classement des dossiers par les formations. En 2020, la Cour des comptes jugeait que la plateforme fonctionnait de manière satisfaisante, tout en relevant un défaut de transparence dans les classements.",
+    "pour": "Ses partisans estiment que les critères réels de sélection restent opaques : en 2020, seuls 2 % du code étaient accessibles et les « attendus » publiés ne correspondaient pas toujours aux critères retenus par les formations.",
+    "contre": "Ses opposants jugent que la plateforme fonctionne de manière satisfaisante, comme la Cour des comptes l'a relevé en 2020, et qu'une refonte complète imposerait de changer une procédure désormais connue de centaines de milliers de candidats chaque année.",
+    "sources": [
+     {
+      "url": "https://thotismedia.com/bilan-parcoursup-2026-plus-de-126-000-candidats-encore-sans-proposition-a-lissue-de-la-phase-principale/",
+      "titre": "Bilan Parcoursup 2026 : plus de 126 000 candidats encore sans proposition à l’issue de la phase d’admission principale",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://next.ink/brief-article/cour-des-comptes-parcoursup-sexpose-a-des-risques-qui-doivent-etre-imperativement-reduits/",
+      "titre": "Cour des comptes : Parcoursup « s’expose à des risques qui doivent être impérativement réduits »",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.letudiant.fr/educpros/actualite/le-manque-de-transparence-de-parcoursup-une-fois-de-plus-pointe-du-doigt.html",
+      "titre": "Le manque de transparence de Parcoursup, une fois de plus pointé du doigt",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "EDU-002",
@@ -77,7 +103,27 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Aujourd'hui, la restauration scolaire n'est pas un service obligatoire pour les communes, qui fixent le prix des repas lorsqu'elles l'organisent. L'énoncé étend la gratuité aux fournitures, aux transports et aux activités périscolaires. Elle demanderait un financement national ou une compensation aux collectivités. Pour la seule cantine, une proposition de loi examinée à l'Assemblée nationale a chiffré le coût pour l'État à 3,2 milliards d'euros ; les autres postes ne sont pas chiffrés dans les sources consultées.",
+    "pour": "Ses partisans estiment que le prix pèse sur les familles et en écarte certaines : dans les établissements d'éducation prioritaire renforcée, jusqu'à 75 % des élèves ne seraient pas inscrits à la cantine, selon l'exposé d'une proposition de loi.",
+    "contre": "Ses opposants jugent que la gratuité profiterait surtout aux familles aux revenus élevés et préfèrent des tarifs selon les ressources, jusqu'à la gratuité pour les plus modestes. Ils craignent aussi une charge trop lourde pour les communes.",
+    "sources": [
+     {
+      "url": "https://www.maire-info.com/restauration-scolaire/la-gratuite-des-cantines-scolaires-en-discussion-%C3%A0-l'assemblee-nationale-article-23945",
+      "titre": "La gratuité des cantines scolaires en discussion à l'Assemblée nationale",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.banquedesterritoires.fr/gratuite-des-cantines-une-fausse-bonne-idee",
+      "titre": "Gratuité des cantines : une fausse bonne idée ?",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "EDU-003",
@@ -108,7 +154,33 @@
      "date": "2026-10-03",
      "ancien_enonce": "Le nombre d'élèves par classe doit être limité à 19."
     }
-   ]
+   ],
+   "impact": {
+    "changement": "En 2024, selon le Conseil d'analyse économique, la France compte en moyenne 21,7 élèves par classe dans le premier degré et 25,6 au collège, contre 19,0 et 20,7 dans 17 autres pays de l'Union européenne étudiés. Atteindre 19 élèves en moyenne obligerait à ouvrir des classes et à recruter des enseignants. Le public compte 747 404 enseignants (rentrée 2025).",
+    "pour": "Ses partisans estiment que des classes moins chargées améliorent les apprentissages. Selon le Conseil d'analyse économique, retirer un élève par classe en primaire améliore les résultats d'environ 1,5 à 2,5 % d'écart-type par an.",
+    "contre": "Ses opposants jugent la mesure très coûteuse, car elle exige beaucoup d'enseignants et de salles supplémentaires, et relèvent que l'effet est plus incertain au collège selon le Conseil d'analyse économique.",
+    "sources": [
+     {
+      "url": "https://cae-eco.fr/static/pdf/Focus_113_taille_classes_250521.pdf",
+      "titre": "Efficacité économique de la réduction de la taille des classes",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.education.gouv.fr/sites/default/files/document/panoramachapitre-1-521071.pdf",
+      "titre": "Panorama statistique des personnels de l'enseignement scolaire 2025-2026",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.tendanceouest.com/actualite-245835-gestion-des-enseignants-systeme-couteux-et-peu-efficace-pour-la-cour-des-comptes",
+      "titre": "Gestion des enseignants: système coûteux et peu efficace pour la Cour des comptes",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "EDU-004",
@@ -129,7 +201,33 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "En 2022, l'État a versé environ 8 milliards d'euros aux établissements privés sous contrat, qui scolarisent 17 % des élèves. En 2021, 11,8 % de leurs élèves étaient boursiers, contre 29,1 % dans le public. La mesure ferait varier la dotation selon cet écart de composition sociale avec les établissements voisins. En 2023, la Cour des comptes a proposé de moduler les moyens selon le profil social des élèves, par un contrat d'objectifs avec chaque établissement.",
+    "pour": "Ses partisans estiment que l'argent public exige une contrepartie de mixité sociale : les élèves de familles très favorisées y sont passés de 26,4 % en 2000 à plus de 40 % en 2021, selon la Cour des comptes.",
+    "contre": "Ses opposants jugent qu'on ne peut pas juger tous les établissements sur un même critère, car la situation d'une école rurale diffère de celle d'un établissement de grande métropole, et qu'une baisse de crédits pénaliserait les élèves accueillis.",
+    "sources": [
+     {
+      "url": "https://www.ccomptes.fr/fr/publications/lenseignement-prive-sous-contrat",
+      "titre": "L'enseignement privé sous contrat",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.banquedesterritoires.fr/enseignement-prive-la-cour-des-comptes-veut-moduler-les-moyens-selon-la-composition-sociale-des",
+      "titre": "Enseignement privé : la Cour des comptes veut moduler les moyens selon la composition sociale des établissements",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.publicsenat.fr/actualites/education/enseignement-prive-la-cour-des-comptes-pointe-le-recul-de-la-mixite-sociale-et-le-manque-de-controle",
+      "titre": "Enseignement privé : la Cour des comptes pointe le recul de la mixité sociale et le manque de contrôle",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "EDU-005",
@@ -155,7 +253,21 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Aujourd'hui, les aides aux étudiants dépendent des ressources : environ 780 000 à 800 000 étudiants perçoivent une bourse sur critères sociaux. Une allocation de 1 078 € par mois irait à tous les étudiants de 18 à 25 ans, sans condition de ressources. Pour environ deux millions d'étudiants, les estimations débattues au Sénat en 2023 vont de 24 à 30 milliards d'euros par an, avant déduction éventuelle d'aides supprimées.",
+    "pour": "Ses partisans estiment qu'elle réduirait la précarité étudiante et le non-recours aux aides, rendrait les jeunes autonomes quelle que soit la situation de leurs parents, et bénéficierait aux classes moyennes, que les bourses ne couvrent pas.",
+    "contre": "Ses opposants jugent son coût trop élevé dans le contexte budgétaire, relèvent qu'elle ne tient pas compte des revenus des familles, la jugent incompatible avec un emploi salarié et préfèrent réformer les bourses existantes.",
+    "sources": [
+     {
+      "url": "https://www.senat.fr/cra/s20231213/s20231213_7.html",
+      "titre": "Proposition de loi visant à lutter contre la précarité de la jeunesse par l'instauration d'une allocation autonomie universelle d'études",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "EDU-006",
@@ -176,7 +288,21 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "En avril 2025, 139 764 AESH travaillaient à l'Éducation nationale, dont 64 % en CDI. Depuis la loi de 2022, le CDI est possible après trois ans d'exercice, contre six auparavant. La plupart travaillent 24 heures par semaine, pour environ 965 € nets par mois au premier échelon. Devenir fonctionnaire ferait passer ces agents du statut de contractuel à celui d'agent titulaire de l'État.",
+    "pour": "Ses partisans estiment qu'un statut stable et une meilleure rémunération réduiraient la précarité de ces personnels, dont le salaire à temps partiel est inférieur au seuil de pauvreté, et aideraient à les conserver auprès des élèves.",
+    "contre": "Ses opposants soulignent le coût d'une titularisation de près de 140 000 agents, jugent que le CDI, ouvert plus tôt depuis 2022, répond déjà en partie à la précarité, et rappellent le recrutement par concours.",
+    "sources": [
+     {
+      "url": "https://www.banquedesterritoires.fr/forte-augmentation-du-nombre-daesh-en-cdi",
+      "titre": "Forte augmentation du nombre d'AESH en CDI",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "EDU-007",
@@ -202,7 +328,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Selon l'OCDE (Regards sur l'éducation 2024), le salaire annuel moyen d'un enseignant du second degré en France va de 42 168 € en début de carrière à 68 910 € au sommet. Le ministère indique une hausse moyenne de 11 % entre avril 2022 et janvier 2024. Une hausse de 20 % en cinq ans équivaut à environ 3,7 % par an. Elle concernerait 747 404 enseignants du public (rentrée 2025).",
+    "pour": "Ses partisans estiment que le pouvoir d'achat des enseignants a reculé, le point d'indice n'ayant pas bougé depuis juillet 2023, et qu'une hausse rendrait le métier plus attractif face aux postes restés non pourvus.",
+    "contre": "Ses opposants jugent le coût élevé pour les finances publiques et rappellent que, selon le ministère, le salaire moyen français est légèrement supérieur à la moyenne de l'Union européenne.",
+    "sources": [
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/17/questions/QANR5L17QE1687.pdf",
+      "titre": "Salaires des enseignants (question écrite n° 1687 et réponse du ministère)",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://lessentieldeleco.fr/6514-les-enseignants-francais-sont-ils-vraiment-mal-payes/",
+      "titre": "Les enseignants français sont-ils vraiment mal payés ?",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.education.gouv.fr/sites/default/files/document/panoramachapitre-1-521071.pdf",
+      "titre": "Panorama statistique des personnels de l'enseignement scolaire 2025-2026",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "EDU-008",
@@ -228,7 +380,27 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Depuis 2017, les classes de CP et de CE1 des écoles d'éducation prioritaire comptent environ 12 élèves ; en 2021, 74 % des élèves de grande section en bénéficiaient. Le passage en CE2 s'accompagne d'une hausse de 6 à 7 élèves par classe. La mesure étendrait la limite à toutes les classes des écoles et collèges prioritaires, soit plus de 1,6 million d'élèves en 2023. Le dédoublement actuel mobilise 16 686 équivalents temps plein prévus, selon le Sénat.",
+    "pour": "Ses partisans estiment que les petits effectifs aident surtout les élèves défavorisés : au CP, l'écart de niveau avec les écoles hors éducation prioritaire a diminué de 36 %, selon le bilan du Sénat, et ils veulent prolonger cet effet.",
+    "contre": "Ses opposants soulignent le coût en postes et en salles, et relèvent que, selon la DEPP citée par le Sénat, le dédoublement en CE1 n'ajoute pas d'effet à celui du CP, ce qui interroge l'intérêt de l'étendre aux autres niveaux.",
+    "sources": [
+     {
+      "url": "https://eduscol.education.gouv.fr/4896/la-politique-de-l-education-prioritaire-les-reseaux-d-education-prioritaire-rep-et-rep",
+      "titre": "La politique de l'éducation prioritaire : les réseaux d'éducation prioritaire REP et REP +",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.senat.fr/rap/r21-543/r21-54310.html",
+      "titre": "Bilan des mesures éducatives du quinquennat",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "EDU-009",
@@ -254,7 +426,39 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Fin 2025, l'enseignement scolaire comptait 1 219 624 personnels (public et privé sous contrat), dont 747 404 enseignants du public. Recruter 160 000 personnes représenterait environ 13 % de ces effectifs si ces emplois s'ajoutent aux postes existants. L'énoncé ne précise ni les métiers concernés ni le calendrier.",
+    "pour": "Ses partisans estiment que les classes chargées, les absences mal remplacées et les besoins d'accompagnement exigent plus de personnels, et que la France compte davantage d'élèves par classe que ses voisins européens (21,7 contre 19,0 en primaire).",
+    "contre": "Ses opposants jugent la dépense très lourde pour le budget de l'État et rappellent que, selon la Cour des comptes en 2017, le coût du système éducatif augmente sans amélioration de sa performance.",
+    "sources": [
+     {
+      "url": "https://www.education.gouv.fr/sites/default/files/document/panoramachapitre-1-521071.pdf",
+      "titre": "Panorama statistique des personnels de l'enseignement scolaire 2025-2026",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.journaldeleconomie.fr/projet-budget-2026-suppression-4000-postes/",
+      "titre": "Le projet de budget 2026 prévoit 4 000 suppressions de postes d’enseignants",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://cae-eco.fr/static/pdf/Focus_113_taille_classes_250521.pdf",
+      "titre": "Efficacité économique de la réduction de la taille des classes",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.tendanceouest.com/actualite-245835-gestion-des-enseignants-systeme-couteux-et-peu-efficace-pour-la-cour-des-comptes",
+      "titre": "Gestion des enseignants: système coûteux et peu efficace pour la Cour des comptes",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "EDU-010",
@@ -280,7 +484,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "L'expérimentation 2024-2026 a concerné 115 établissements (97 écoles, 14 collèges, 4 lycées). Un trousseau complet coûte environ 200 €, cofinancé à 50 % par l'État dans la limite de 100 € par élève. Une évaluation de la DEPP de mai 2026 a constaté des effets limités sur le comportement et les apprentissages. Rendre l'uniforme obligatoire supposerait de décider qui paie les tenues, l'État ayant cessé son cofinancement en septembre 2026.",
+    "pour": "Ses partisans estiment qu'une tenue commune renforce le sentiment d'appartenance et la cohésion entre élèves : 75 % des directeurs d'école de l'expérimentation ont constaté une évolution positive de ce sentiment.",
+    "contre": "Ses opposants soulignent le coût et l'adhésion limitée des élèves : 57 % des élèves d'élémentaire disaient ne pas aimer porter la tenue et 63 % des collégiens ne s'y sentaient pas bien.",
+    "sources": [
+     {
+      "url": "https://fr.aleteia.org/2026/05/13/uniforme-a-lecole-un-premier-bilan-en-demi-teinte-mais-largement-soutenu-par-les-ecoles/",
+      "titre": "Uniforme à l'école : un premier bilan en demi-teinte",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.banquedesterritoires.fr/leducation-nationale-range-luniforme-au-placard",
+      "titre": "L'Éducation nationale range l'uniforme au placard",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.info.gouv.fr/actualite/uniformes-a-lecole-premieres-evaluations-de-lexperimentation",
+      "titre": "Uniformes à l’école : premières évaluations de l’expérimentation",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "EDU-011",
@@ -301,7 +531,21 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Dans le dispositif de 2010, après quatre demi-journées d'absence non justifiées dans un mois, une demande de suspension pouvait être adressée à la caisse d'allocations familiales. Entre février 2011 et mars 2012, 472 familles ont été touchées. Un rapport sénatorial de 2013 concluait que les données ne permettaient pas d'évaluer son efficacité. Ici, la mesure viserait le comportement (perturbation grave et répétée) et non l'absence.",
+    "pour": "Ses partisans estiment qu'un levier financier peut inciter les parents à intervenir auprès d'un enfant qui perturbe la classe, et que les familles doivent partager la responsabilité du comportement de leur enfant.",
+    "contre": "Ses opposants jugent la sanction à sens unique et inefficace : l'absentéisme est resté stable, autour de 5 %, entre 2011 et 2015, et un rapport sénatorial de 2013 l'a jugée répressive, inéquitable et inefficace.",
+    "sources": [
+     {
+      "url": "https://www.publicsenat.fr/actualites/societe/suppression-des-allocations-familiales-qua-donne-le-precedent-de-labsenteisme-scolaire",
+      "titre": "Suppression des allocations familiales : qu'a donné le précédent de l'absentéisme scolaire ?",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "EDU-012",
@@ -331,7 +575,39 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Aujourd'hui, les élèves volontaires peuvent demander, avec l'accord de leurs parents, une classe de troisième « prépa-métiers » à la fin de la quatrième : elle garde le socle commun et ajoute 180 heures de découverte des métiers. Un contrat d'apprentissage exige 16 ans, ou 15 ans après la troisième. La mesure permettrait d'orienter dès la quatrième des élèves en difficulté vers une voie professionnelle ou technologique, un an plus tôt qu'aujourd'hui.",
+    "pour": "Ses partisans estiment que des élèves en difficulté, enfermés dans des filières théoriques, pourraient se remobiliser plus tôt grâce à des apprentissages concrets, et que les métiers manuels et techniques peinent à recruter.",
+    "contre": "Ses opposants y voient un tri social précoce qui remet en cause le collège unique, et craignent une orientation imposée plutôt que choisie, au détriment de la mixité scolaire.",
+    "sources": [
+     {
+      "url": "https://eduscol.education.gouv.fr/5214/la-classe-de-troisieme-dite-prepa-metiers",
+      "titre": "La classe de troisième dite prépa-métiers",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2918?lang=%2F",
+      "titre": "Contrat d'apprentissage",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.75secondes.fr/?p=191737",
+      "titre": "Apprentissage à 14 ans : le plan choc de Bruno Retailleau",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.ifrap.org/education-et-culture/pourquoi-leducation-nationale-supprime-lapprentissage-14-ans",
+      "titre": "Pourquoi l'Éducation nationale supprime l'apprentissage à 14 ans",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "EDU-013",
@@ -357,7 +633,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Aucun examen n'est prévu pour entrer en sixième : le collège public est attribué selon le secteur du domicile. Un redoublement en école élémentaire reste possible une seule fois, sur proposition du conseil des maîtres, après dialogue avec la famille et avis de l'inspecteur. Un examen conditionnerait l'entrée en sixième ; l'énoncé ne précise ni son contenu ni le sort des élèves qui échoueraient.",
+    "pour": "Ses partisans estiment qu'un examen garantirait que les élèves savent lire, écrire et compter avant d'entrer au collège, et éviterait que des lacunes importantes s'accumulent jusqu'à la fin de la scolarité.",
+    "contre": "Ses opposants y voient un tri précoce des élèves, qui fragiliserait ceux qui ont le plus besoin d'accompagnement et ferait revenir l'école en arrière.",
+    "sources": [
+     {
+      "url": "https://www.education.gouv.fr/bo/18/Hebdo8/MENE1800673D.htm",
+      "titre": "Dispositions relatives au redoublement",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.education.gouv.fr/l-inscription-au-college-11987",
+      "titre": "L'inscription au collège",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.75secondes.fr/?p=191737",
+      "titre": "Apprentissage à 14 ans : le plan choc de Bruno Retailleau",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "EDU-014",
@@ -383,7 +685,45 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "L'État rémunère les enseignants du privé sous contrat (environ 8 milliards d'euros en 2022) ; les collectivités versent un forfait d'externat. En primaire, elles couvrent 9,6 % du budget du privé, contre 21,4 % dans le public. Selon une mission parlementaire, la dépense publique par élève est inférieure dans le privé de 55 % au premier degré et de 46 % au second (2021), en partie pour des raisons structurelles (rémunérations). Une égalité de financement alignerait ces montants.",
+    "pour": "Ses partisans estiment que les parents doivent pouvoir choisir l'école de leur enfant sans que le coût décide, et que la liberté de choix entre établissements, publics ou privés, élève la qualité de l'enseignement.",
+    "contre": "Ses opposants craignent un affaiblissement de l'école publique et un recul de la mixité : le privé sous contrat accueille 11,8 % de boursiers contre 29,1 % dans le public, selon la Cour des comptes.",
+    "sources": [
+     {
+      "url": "https://www.banquedesterritoires.fr/enseignement-prive-la-cour-des-comptes-veut-moduler-les-moyens-selon-la-composition-sociale-des",
+      "titre": "Enseignement privé : la Cour des comptes veut moduler les moyens selon la composition sociale des établissements",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/16/rapports/cion-cedu/l16b2423_rapport-information.pdf",
+      "titre": "Rapport d'information en conclusion des travaux de la mission d'information relative au financement public de l'enseignement privé sous contrat (n° 2423)",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.ifrap.org/education-et-culture/lenseignement-prive-coute-beaucoup-moins-cher-que-le-public-et-cest-un-rapport-parlementaire-qui-le-dit",
+      "titre": "L’enseignement privé coûte beaucoup moins cher que le public… et c’est un rapport parlementaire qui le dit",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.ifrap.org/education-et-culture/inegalites-scolaires-osons-le-forfait-par-eleve",
+      "titre": "\"Inégalités\" scolaires : osons le forfait par élève",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.ccomptes.fr/fr/publications/lenseignement-prive-sous-contrat",
+      "titre": "L'enseignement privé sous contrat",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "EDU-015",
@@ -409,7 +749,39 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Aujourd'hui, un élève du public est affecté à l'école ou au collège de son secteur. La famille peut demander une dérogation, accordée s'il reste de la place, selon un ordre de priorité (handicap, prise en charge médicale, boursiers, fratrie, proximité de la limite du secteur). Selon un chercheur cité par L'Étudiant, environ 8 % des élèves du public secondaire sont affectés hors de leur secteur. Supprimer la carte scolaire laisserait les familles choisir leur établissement.",
+    "pour": "Ses partisans estiment que la carte scolaire est déjà contournée et que sa suppression ouvrirait à toutes les familles un choix que seules les mieux informées exercent aujourd'hui, faute de connaître les possibilités de dérogation.",
+    "contre": "Ses opposants craignent plus de ségrégation : les ménages les plus diplômés demandent le plus de dérogations, et la Cour des comptes constatait en 2009 que 186 des 254 collèges « Ambition réussite » avaient perdu des élèves après l'assouplissement.",
+    "sources": [
+     {
+      "url": "https://www.education.gouv.fr/le-fonctionnement-de-la-carte-scolaire-dans-le-second-degre-11555",
+      "titre": "École, collège, lycée : l’affectation des élèves et l’attribution des moyens",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.letudiant.fr/educpros/actualite/carte-scolaire-premier-bilan-pour-un-assouplissement-a-effets-limites.html",
+      "titre": "Carte scolaire : premier bilan pour un assouplissement à effets limités",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.inegalites.fr/Assouplir-la-carte-scolaire-va-profiter-aux-plus-favorises",
+      "titre": "Assouplir la carte scolaire va profiter aux plus favorisés",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.banquedesterritoires.fr/la-cour-des-comptes-met-en-garde-contre-la-creation-de-ghettos-scolaires",
+      "titre": "Réforme de la carte scolaire - La Cour des comptes met en garde contre la création de \"ghettos scolaires\"",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "EDU-016",
@@ -435,7 +807,21 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "En 2013, le Conseil d'État a estimé que les parents qui accompagnent une sortie scolaire ne sont pas soumis à l'obligation de neutralité des agents publics. Une circulaire de 2012 permet pourtant de leur demander de ne pas manifester leurs convictions lors de ces sorties. La mesure créerait une interdiction des signes religieux visibles pour ces accompagnateurs, comme pour les personnels.",
+    "pour": "Ses partisans estiment que la neutralité protège la liberté de conscience des élèves et évite de les confronter trop tôt aux questions d'appartenance, et qu'une interdiction limitée à des sorties ponctuelles n'est pas disproportionnée.",
+    "contre": "Ses opposants jugent que cette interdiction porte atteinte à la liberté de conscience et d'expression de parents qui sont des usagers du service public, et que les enfants peuvent côtoyer très tôt la diversité des convictions.",
+    "sources": [
+     {
+      "url": "https://www.leclubdesjuristes.com/societe/le-port-de-signes-religieux-par-les-accompagnants-scolaires-le-principe-de-laicite-a-lepreuve-2586/",
+      "titre": "Le port de signes religieux par les accompagnants scolaires : le principe de laïcité à l’épreuve",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "EDU-017",
@@ -461,7 +847,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Ces groupes ne concernaient que la sixième et la cinquième. Ils sont remplacés par un « accompagnement pédagogique renforcé » en français et en mathématiques, que les établissements peuvent organiser en groupes à effectifs réduits, en groupes de besoins ou autrement, sur tout ou partie de l'horaire. La mesure rétablirait l'obligation de ces groupes ; l'énoncé ne précise pas si elle s'étendrait à la quatrième et à la troisième.",
+    "pour": "Ses partisans estiment que des élèves arrivent au collège avec de lourdes lacunes, que la plupart de ceux en grande difficulté en sixième le restent jusqu'à la fin, et qu'un enseignement ajusté évite l'ennui et prévient le décrochage.",
+    "contre": "Ses opposants craignent un tri des élèves contraire au collège unique et relèvent que l'inspection a noté en 2025 des difficultés de mise en œuvre. Un recours syndical a été rejeté par le Conseil d'État en février 2026.",
+    "sources": [
+     {
+      "url": "https://www.banquedesterritoires.fr/au-college-les-groupes-de-besoins-sont-remplaces-par-un-accompagnement-pedagogique-renforce",
+      "titre": "Au collège, les \"groupes de besoins\" sont remplacés par un \"accompagnement pédagogique renforcé\"",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.education.gouv.fr/college-des-enseignements-de-francais-et-de-mathematiques-organises-en-groupes-461985",
+      "titre": "Collège : des enseignements de français et de mathématiques organisés en groupes",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://blog.landot-avocats.net/2026/03/01/colleges-apres-un-redoublement-le-decret-groupes-de-niveau-obtient-enfin-en-droit-une-bonne-note/",
+      "titre": "Collèges : après un redoublement, le décret « groupes de niveau » obtient enfin, en droit, une bonne note",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "EDU-018",
@@ -487,7 +899,27 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Des postes dits « à profil », pourvus au choix du chef d'établissement, existent déjà ; la pratique a aussi été testée en éducation prioritaire en 2012 et 2015. En 2017, la Cour des comptes jugeait l'affectation actuelle trop rigide, sans prise en compte de la difficulté des postes. L'énoncé ne précise pas si le recrutement porterait sur tous les postes ou sur une partie.",
+    "pour": "Ses partisans estiment que l'ancienneté envoie les enseignants les plus jeunes dans les établissements difficiles, qu'un recrutement local stabiliserait les équipes et que, selon un groupe de réflexion, trois pays européens sur quatre le confient aux chefs d'établissement.",
+    "contre": "Ses opposants, dont des syndicats, jugent négatives les expériences passées, craignent des choix arbitraires et des inégalités entre établissements, et soulignent que ce mode de recrutement n'a pas encore fait ses preuves dans le système public français.",
+    "sources": [
+     {
+      "url": "https://www.europe1.fr/societe/recrutement-des-enseignants-par-les-directeurs-decole-a-marseille-un-dispositif-loin-detre-inedit-4065116",
+      "titre": "Recrutement des profs par les directeurs d'école : un dispositif loin d'être inédit",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.tendanceouest.com/actualite-245835-gestion-des-enseignants-systeme-couteux-et-peu-efficace-pour-la-cour-des-comptes",
+      "titre": "Gestion des enseignants: système coûteux et peu efficace pour la Cour des comptes",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "EDU-019",

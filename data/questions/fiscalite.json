@@ -32,7 +32,39 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "L'IFI ne taxe que l'immobilier ; l'ISF d'avant 2018 taxait aussi les placements financiers. Environ 193 600 foyers ont payé l'IFI en 2025, pour 2,3 milliards d'euros. L'ISF avait rapporté 5,1 milliards d'euros en 2017, contre 1,9 milliard pour l'IFI en 2018, soit un écart d'environ 3,2 milliards.",
+    "pour": "Ses partisans estiment que l'IFI laisse hors impôt les patrimoines financiers, que sa création a coûté environ 3 milliards d'euros de recettes par an et que l'effet promis sur l'investissement dans les entreprises n'est pas démontré.",
+    "contre": "Ses opposants estiment que taxer le patrimoine financier détourne l'épargne de l'investissement dans les entreprises et pousse les ménages fortunés à partir, comme le montrait selon eux le solde des départs avant 2018.",
+    "sources": [
+     {
+      "url": "https://www.previssima.fr/actualite/ifi-2025-nouveau-record-de-recettes-porte-par-la-hausse-du-nombre-de-contribuables.html",
+      "titre": "IFI 2025 : nouveau record de recettes porté par la hausse du nombre de contribuables",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.legifiscal.fr/actualites-fiscales/2089-impact-reforme-isf.html",
+      "titre": "Impact de la réforme de l'ISF (Legifiscal)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.legifiscal.fr/actualites-fiscales/2958-rapport-evaluation-reformes-fiscalite-capital.html",
+      "titre": "Rapport d'évaluation des réformes de la fiscalité du capital (Legifiscal)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.actu-juridique.fr/fiscalite/fiscal-finances/taxation-du-capital-le-bilan-5-ans-apres-la-reforme/",
+      "titre": "Taxation du capital : le bilan 5 ans après la réforme",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "FIS-002",
@@ -58,7 +90,27 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Les patrimoines supérieurs à 100 millions d'euros paieraient chaque année la différence entre 2 % de leur patrimoine, biens professionnels compris, et les impôts déjà payés sur leurs revenus, si elle est positive. Selon l'auteur de la proposition, environ 1 800 foyers seraient concernés et le rendement serait d'environ 20 milliards d'euros par an ; la commission des finances du Sénat cite 2 à 3 milliards si l'impôt sur les sociétés est pris en compte.",
+    "pour": "Ses partisans jugent que les très grandes fortunes paient proportionnellement moins que le reste de la population, leurs revenus restant souvent dans leurs sociétés. Un plancher de 2 % corrigerait cet écart ; ils estiment l'exil fiscal rare.",
+    "contre": "Ses opposants craignent la vente forcée de parts d'entreprises et un frein au capital-risque, car un fondateur peut avoir un patrimoine sans revenu. Ils redoutent aussi des départs, qui réduiraient le rendement, et une censure constitutionnelle.",
+    "sources": [
+     {
+      "url": "https://www.senat.fr/fileadmin/cru-1750816532/Commissions/Finances/2024-2025/Textes_legislatifs/Essentiel_PPL_IPF_Post_com.pdf",
+      "titre": "Impôt plancher de 2 % sur le patrimoine des ultrariches (PPL n° 380) – L'essentiel, Sénat",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.publicsenat.fr/actualites/economie/la-taxe-zucman-arrive-au-senat-on-vous-explique-les-enjeux-qui-se-cachent-derriere-cette-taxe-qui-vise-les-ultras-riches",
+      "titre": "La taxe Zucman arrive au Sénat : on vous explique les enjeux (Public Sénat)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "FIS-003",
@@ -79,7 +131,33 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Dividendes, intérêts et plus-values seraient ajoutés aux autres revenus et imposés selon le barème de l'impôt sur le revenu, au lieu d'un taux de 12,8 % d'impôt sur le revenu auquel s'ajoutent les prélèvements sociaux. Ces revenus relevaient du barème avant 2018. Selon le comité d'évaluation de France Stratégie, 0,1 % des foyers ont perçu 62 % des dividendes en 2019.",
+    "pour": "Ses partisans estiment qu'un euro tiré du capital doit être imposé comme un euro de salaire, et que le taux unique avantage surtout les plus gros détenteurs, les dividendes étant très concentrés.",
+    "contre": "Ses opposants estiment que le taux unique, plus simple et plus bas, attire les investisseurs et finance les entreprises. Ils rappellent que, sous le barème, la taxation des épargnants aisés avait atteint jusqu'à 60,5 % en 2017.",
+    "sources": [
+     {
+      "url": "https://www.quechoisir.org/enquete-bilan-des-reformes-fiscales-le-prelevement-forfaitaire-unique-pfu-n99560/",
+      "titre": "Enquête – Bilan des réformes fiscales : le prélèvement forfaitaire unique (PFU)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://placement.meilleurtaux.com/placement-financier/actualites/2026-avril/flat-tax-a-31-4-ce-qui-change-depuis-janvier-2026.html",
+      "titre": "Flat tax à 31,4 % : ce qui change depuis janvier 2026",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.legifiscal.fr/actualites-fiscales/2958-rapport-evaluation-reformes-fiscalite-capital.html",
+      "titre": "Rapport d'évaluation des réformes de la fiscalité du capital (Legifiscal)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "FIS-004",
@@ -100,7 +178,27 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Le barème compterait quatorze tranches au lieu de cinq. Les seuils et taux intermédiaires ne sont pas fixés par l'énoncé. Dans un chiffrage de 2022 d'une proposition de ce type, le taux maximal passait de 45 % à 65 % au-delà de 157 806 euros par part. Selon l'Institut Montaigne, cela rapporterait environ 4,7 milliards d'euros par an et toucherait 65 000 foyers.",
+    "pour": "Ses partisans estiment qu'un barème plus fin ferait payer davantage les très hauts revenus et moins les revenus moyens. Selon eux, les recettes supplémentaires financeraient des dépenses publiques et la plupart des ménages gagneraient en pouvoir d'achat.",
+    "contre": "Ses opposants rappellent que la France a déjà un des taux marginaux les plus élevés de l'OCDE, environ 55 % avec les prélèvements sociaux. Ils citent des études associant des taux supérieurs à 60 % à une croissance plus faible.",
+    "sources": [
+     {
+      "url": "https://www.institutmontaigne.org/presidentielle-2022/jean-luc-melenchon/rendre-limpot-sur-le-revenu-plus-progressif-avec-un-bareme-a-14-tranches",
+      "titre": "Institut Montaigne – Rendre l'impôt sur le revenu plus progressif avec un barème à 14 tranches (présidentielle 2022)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.previssima.fr/actualite/le-bareme-de-limpot-sur-le-revenu-2026-est-devoile-combien-allez-vous-payer-cette-annee.html",
+      "titre": "Le barème de l'impôt sur le revenu 2026 est dévoilé : combien allez-vous payer cette année ?",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "FIS-005",
@@ -121,7 +219,21 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Un taux de 100 % s'appliquerait à la part d'un héritage au-delà de 12 millions d'euros, au lieu d'un taux qui augmente par paliers. Les donations faites de son vivant seraient aussi concernées. Selon l'Institut Montaigne, avec la fin de certains avantages fiscaux, le total rapporterait environ 9 milliards d'euros par an (entre 7 et 11), après prise en compte de l'évasion fiscale.",
+    "pour": "Ses partisans estiment qu'un héritage très élevé relève davantage de la naissance que du mérite et qu'un plafond limiterait la transmission des inégalités, tout en finançant des dépenses publiques.",
+    "contre": "Ses opposants jugent un taux de 100 % confiscatoire et exposé à la censure du Conseil constitutionnel. Ils estiment qu'il inciterait les plus fortunés à changer de résidence fiscale avant de transmettre et pourrait réduire l'investissement.",
+    "sources": [
+     {
+      "url": "https://www.institutmontaigne.org/presidentielle-2022/jean-luc-melenchon/augmenter-les-droits-de-succession-sur-les-plus-hauts-patrimoines-et-creer-un-heritage-maximal-de-12-me",
+      "titre": "Institut Montaigne – Augmenter les droits de succession sur les plus hauts patrimoines et créer un héritage maximal de 12 M€ (présidentielle 2022)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "FIS-006",
@@ -147,7 +259,27 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Un Français parti vivre à l'étranger resterait imposé en France s'il réside dans un pays dont la fiscalité est inférieure de plus de 40 % à la française. Dans le texte débattu en 2025, il faut avoir vécu au moins trois ans en France dans les dix ans avant le départ et gagner plus de 230 000 euros par an. Les conventions fiscales prévalent, et l'impôt payé sur place est déduit. Le nombre de personnes concernées n'est pas connu.",
+    "pour": "Ses partisans estiment que quitter la France pour payer moins d'impôt ne doit pas faire disparaître l'obligation de contribuer, et que la mesure ne viserait que les très hauts revenus installés dans des pays à faible fiscalité.",
+    "contre": "Ses opposants jugent le dispositif complexe et juridiquement fragile : un impôt fondé sur la nationalité romprait avec le principe actuel, stigmatiserait les expatriés, alors que les conventions fiscales traitent déjà l'évasion.",
+    "sources": [
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1906A/AN/1705.pdf",
+      "titre": "Amendement n° I-1705 au projet de loi de finances pour 2026 (impôt universel ciblé) – Assemblée nationale",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://alliancesolidaire.org/2025/10/28/limpot-universel-cible-de-quoi-sagit-il/",
+      "titre": "L'impôt universel ciblé : de quoi s'agit-il ?",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "FIS-007",
@@ -168,7 +300,27 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "La part de la valeur d'une entreprise transmise qui est exonérée de droits passerait de 75 % à 50 %, donc la part taxée de 25 % à 50 %. Selon la Cour des comptes, le dispositif a coûté plus de 5,5 milliards d'euros en 2024, contre 1,2 milliard en 2020 et 2021. La Cour recommande aussi d'allonger la durée de conservation des titres et d'instaurer un barème d'exonération progressif.",
+    "pour": "Ses partisans estiment que le dispositif, devenu très coûteux et concentré sur quelques transmissions de très grande taille, peut être réduit sans le supprimer, et qu'un taux de 50 % dégagerait des recettes.",
+    "contre": "Ses opposants, dont des organisations d'employeurs, jugent que réduire l'exonération alourdirait la transmission des entreprises familiales et pourrait les exposer à des rachats étrangers, faute de moyens pour payer les droits.",
+    "sources": [
+     {
+      "url": "https://www.previssima.fr/actualite/la-cour-des-comptes-tire-la-sonnette-dalarme-sur-le-cout-du-pacte-dutreil.html",
+      "titre": "La Cour des comptes tire la sonnette d'alarme sur le coût du pacte Dutreil",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.legifiscal.fr/actualites-fiscales/4310-plf-2026-pacte-dutreil-recentre.html",
+      "titre": "PLF 2026 : le pacte Dutreil recentré",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "FIS-008",
@@ -189,7 +341,33 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "La CSG, qui a rapporté environ 154 milliards d'euros en 2024, plus que l'impôt sur le revenu, aurait un taux croissant avec le revenu. Elle varie déjà pour les retraités : 0, 3,8, 6,6 ou 8,3 % selon le revenu fiscal de référence du foyer. Les seuils, les taux et les revenus concernés par la mesure ne sont pas précisés dans l'énoncé.",
+    "pour": "Ses partisans estiment qu'un taux quasi uniforme pèse relativement plus sur les revenus modestes et moyens, et qu'une CSG croissante rendrait plus équitable le financement de la protection sociale.",
+    "contre": "Ses opposants jugent qu'une assiette large à taux faible rend la CSG peu perceptible et très productive. Selon eux, la rendre progressive la complexifierait, la rapprocherait de l'impôt sur le revenu et pourrait décourager l'investissement.",
+    "sources": [
+     {
+      "url": "https://www.moneyvox.fr/impot/actualites/105355/3-questions-pour-comprendre-la-csg-qui-rapporte-chaque-annee-plus-que-impot-sur-le-revenu",
+      "titre": "3 questions pour comprendre la CSG, qui rapporte chaque année plus que l'impôt sur le revenu",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://institutmontaigne.org/expressions/fusion-impot-sur-le-revenucsg-une-fausse-bonne-idee",
+      "titre": "Institut Montaigne – Fusion impôt sur le revenu/CSG : une fausse bonne idée",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.publicsenat.fr/actualites/non-classe/modulation-de-la-csg-je-vous-fais-le-pari-que-cet-amendement-ne-sera-pas-adopte",
+      "titre": "Modulation de la CSG : « Je vous fais le pari que cet amendement ne sera pas adopté »",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "FIS-009",
@@ -210,7 +388,33 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Aujourd'hui, l'impôt sur la plus-value latente d'un contribuable qui part à l'étranger tombe si ses titres sont conservés 2 ans (5 ans au-delà de 2,57 millions d'euros). Le retour à la version de 2011 rétablirait un délai de 15 ans. Elle vise ceux qui ont résidé en France au moins six des dix dernières années et détiennent des titres de plus de 800 000 euros ou au moins 50 % d'une société. Le rendement est difficile à estimer.",
+    "pour": "Ses partisans estiment qu'un délai long dissuade les départs motivés surtout par la vente de titres sans impôt, et que le délai actuel de 2 à 5 ans est trop court pour décourager ce type de départ.",
+    "contre": "Ses opposants estiment qu'un délai de 15 ans décourage la création et la direction d'entreprises en France, que l'impôt frappe un gain non encore réalisé, sans liquidités correspondantes, et que l'effet dissuasif du dispositif n'est pas établi.",
+    "sources": [
+     {
+      "url": "https://www.dougs.fr/blog/exit-tax/",
+      "titre": "Exit tax : c'est quoi ? Qui est concerné ? (Dougs)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.cyriljarnias.fr/exit-tax-2026-regles-taux-strategies-expatries/",
+      "titre": "Exit tax 2026 : règles, taux, stratégies expatriés",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://larevue.squirepattonboggs.com/assouplissement-de-lexit-tax.html",
+      "titre": "Assouplissement de l'exit tax",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "FIS-010",
@@ -240,7 +444,27 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "L'abattement de 10 % est plafonné à environ 4 400 euros par foyer, avec un minimum. Un forfait de 2 000 euros par retraité porterait la déduction maximale d'un couple à 4 000 euros. Selon une étude de l'Institut des politiques publiques citée par la presse, environ 1,5 million de retraités y gagneraient et 1,4 million y perdraient. Dans un cas type publié par la presse, une personne seule à 31 000 euros paierait plusieurs centaines d'euros de plus.",
+    "pour": "Ses partisans estiment que l'abattement proportionnel profite davantage aux pensions élevées et que le forfait, identique pour chacun, allégerait l'impôt de retraités aux pensions modestes, jusqu'à les rendre non imposables.",
+    "contre": "Ses opposants y voient une hausse d'impôt pour environ 1,4 million de retraités, y compris aux pensions moyennes, avec un surcoût de l'ordre de quelques centaines d'euros par an pour une personne seule.",
+    "sources": [
+     {
+      "url": "https://www.moneyvox.fr/retraite/actualites/105507/combien-impots-2026-en-plus-avec-abattement-de-2-000-euros-par-retraite-faites-le-test",
+      "titre": "Combien d'impôts en plus en 2026 avec un abattement de 2 000 euros par retraité ? Faites le test",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.auguste-patrimoine.fr/blog/suppression-abattement-retraites-budget-2027",
+      "titre": "Suppression de l'abattement de 10 % sur les retraites : que prévoit le budget 2027 ?",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "FIS-011",
@@ -266,7 +490,39 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "La CVAE rapportait environ 9,5 milliards d'euros aux collectivités avant sa baisse. Elle est payée par les entreprises de plus de 500 000 euros de chiffre d'affaires. Son taux maximal est de 0,28 % en 2026-2027, 0,19 % en 2028, 0,09 % en 2029, puis zéro en 2030. Sans attendre 2030, elle disparaîtrait plus tôt. Lors des réformes précédentes, une compensation par une part de TVA était prévue pour les collectivités.",
+    "pour": "Ses partisans estiment que la CVAE est un impôt de production qui pèse sur la compétitivité des entreprises françaises face à l'Allemagne et aux États-Unis, et qu'un calendrier plus court donnerait plus tôt un signal aux entreprises.",
+    "contre": "Ses opposants jugent que supprimer vite cet impôt creuse les finances publiques et affaiblit le lien fiscal entre entreprises et territoires. Ils rappellent que la compensation par la TVA fait porter le financement local sur l'ensemble des contribuables.",
+    "sources": [
+     {
+      "url": "https://formation.lefebvre-dalloz.fr/actualite/cvae-report-de-la-suppression-2030-et-contribution-complementaire-pour-2025",
+      "titre": "CVAE : report de la suppression à 2030 et contribution complémentaire pour 2025",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://propulsebyca.fr/actualites/suppression-cvae-2030",
+      "titre": "Loi de finances 2025 : la suppression de la CVAE reportée à 2030",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.maire-info.com/budget-de-letat/budget-2023-supprimer-la-c3s-plutot-que-la-cvae-la-proposition-alternative-de-lamf-art26-26792",
+      "titre": "Budget 2023 : supprimer la C3S plutôt que la CVAE, la proposition alternative de l'AMF",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.publicsenat.fr/actualites/politique/budget-le-senat-rejette-la-suppression-la-cvae-227952",
+      "titre": "Budget : le Sénat rejette la suppression de la CVAE",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "FIS-012",
@@ -318,7 +574,27 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "L'abattement en ligne directe reviendrait à 150 000 euros, son niveau de 2007, avant son retour à 100 000 euros en 2012. Environ 80 % des successions sont déjà totalement exonérées. Selon l'Institut Montaigne, le coût serait d'environ 1 milliard d'euros par an pour les successions en ligne directe, estimation incertaine faute de données fiscales fiables.",
+    "pour": "Ses partisans estiment que la hausse des prix de l'immobilier depuis 2012 fait entrer dans l'impôt des héritages de classe moyenne, souvent composés surtout du logement familial, et qu'il faut actualiser le seuil.",
+    "contre": "Ses opposants estiment que la baisse profiterait surtout aux héritages les plus élevés, puisque environ 80 % des successions sont déjà exonérées, qu'elle réduirait les recettes et accroîtrait les inégalités de patrimoine sans encourager les transmissions.",
+    "sources": [
+     {
+      "url": "https://www.institutmontaigne.org/legislatives-2024/ensemble-majorite-presidentielle/relever-labattement-sur-les-droits-de-succession-a-150-000-e-en-ligne-directe-enfants-et-100-000-e-en-ligne-indirecte/",
+      "titre": "Institut Montaigne – Relever l'abattement sur les droits de succession à 150 000 € en ligne directe (législatives 2024)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.moneyvox.fr/actu/88046/reforme-des-droits-de-succession-ce-que-coutent-les-promesses-de-macron-et-le-pen",
+      "titre": "Réforme des droits de succession : ce que coûtent les promesses de Macron et Le Pen",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "FIS-014",
@@ -339,7 +615,21 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Aujourd'hui, un parent ne peut donner 100 000 euros sans droits à chacun de ses enfants qu'une fois tous les 15 ans. Ce délai de renouvellement (rappel fiscal) serait ramené à 10 ans. Il était de 10 ans avant 2006 puis en 2011-2012, et de 15 ans depuis 2012. Selon l'Institut Montaigne, le coût serait d'environ 1 milliard d'euros par an, estimation incertaine.",
+    "pour": "Ses partisans estiment que des donations plus fréquentes accéléreraient la transmission du patrimoine vers des générations plus jeunes, qui ont davantage de besoins de financement, ce qui améliorerait l'allocation du capital.",
+    "contre": "Ses opposants estiment que la mesure augmenterait les montants transmis après impôt et la concentration des patrimoines. Le Conseil des prélèvements obligatoires juge qu'alléger l'impôt sur les donations pèse sur les finances publiques et risque de renforcer cette concentration.",
+    "sources": [
+     {
+      "url": "https://www.institutmontaigne.org/legislatives-2024/rassemblement-national/defiscaliser-les-donations-familiales-jusqua-100-000-e-tous-les-10-ans",
+      "titre": "Institut Montaigne – Défiscaliser les donations familiales jusqu'à 100 000 € tous les 10 ans (législatives 2024)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "FIS-015",
@@ -365,7 +655,39 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "La TVA augmenterait pour financer une baisse de cotisations sociales, surtout patronales. Environ 57 milliards d'euros de TVA vont déjà à la Sécurité sociale. L'effet dépend des entreprises : baisse de leurs prix hors taxe, hausse des salaires ou hausse de leurs marges. Une loi de mars 2012 prévoyait de passer le taux normal de 19,6 % à 21,2 % en octobre 2012, avec une baisse de cotisations familiales ; elle a été abrogée avant d'entrer en vigueur.",
+    "pour": "Ses partisans estiment qu'alléger le coût du travail favoriserait l'embauche et la compétitivité des entreprises, et que la TVA, payée aussi sur les produits importés, rééquilibrerait le financement de la protection sociale vers la consommation.",
+    "contre": "Ses opposants jugent qu'elle pèserait sur le pouvoir d'achat, surtout des retraités, pour un faible gain de compétitivité : selon un auteur de l'iFRAP, 3,5 points de cotisations en moins baisseraient d'environ 1 % le prix d'un produit exporté.",
+    "sources": [
+     {
+      "url": "https://www.lafinancepourtous.com/decryptages/finance-perso/revenus-et-fiscalite/tva/la-tva-sociale/la-tva-sociale-hausse-de-la-tva-pour-financer-une-partie-de-la-protection-sociale/",
+      "titre": "La « TVA sociale » : hausse de la TVA pour financer une partie de la protection sociale",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.lafinancepourtous.com/2012/04/02/les-nouvelles-hausses-de-la-tva-et-des-prelevements-sociaux/",
+      "titre": "Les nouvelles hausses de la TVA et des prélèvements sociaux",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.senat.fr/rap/r06-283/r06-283-syn.pdf",
+      "titre": "TVA sociale – synthèse de la table ronde, Sénat (avril 2007)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.ifrap.org/budget-et-fiscalite/instituer-une-tva-sociale-une-solution-inefficace",
+      "titre": "Instituer une TVA sociale : une solution inefficace (iFRAP)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "FIS-016",
@@ -386,7 +708,33 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "L'exonération d'impôt sur le revenu s'applique aujourd'hui dans la limite de 7 500 euros par an ; au-delà, les heures supplémentaires sont imposées. Sans plafond, toutes seraient exonérées. En octobre 2025, le ministère des comptes publics a estimé le coût à 1 milliard d'euros et indiqué que la mesure bénéficierait surtout aux cadres atteignant le plafond, la rémunération moyenne des heures supplémentaires étant d'environ 1 900 euros.",
+    "pour": "Ses partisans estiment que travailler davantage doit rapporter davantage, que le plafond pénalise les salariés qui font beaucoup d'heures et que la mesure accroîtrait leur pouvoir d'achat sans surcoût pour l'employeur.",
+    "contre": "Ses opposants jugent que la mesure profite surtout aux salariés les mieux payés, pèse sur les finances publiques et peut freiner les embauches, des employeurs pouvant préférer faire travailler davantage les salariés en place.",
+    "sources": [
+     {
+      "url": "https://www.moneyvox.fr/impot/actualites/105808/impot-sur-le-revenu-suppression-du-plafond-de-defiscalisation-des-heures-sup",
+      "titre": "Impôt sur le revenu : suppression du plafond de défiscalisation des heures sup",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.previssima.fr/actualite/heures-supplementaires-vers-une-defiscalisation-totale-des-octobre-2025.html",
+      "titre": "Heures supplémentaires : vers une défiscalisation totale dès octobre 2025 ?",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/exonerer-totalement-dimpots-et-de-charges-sociales-les-heures-supplementaires",
+      "titre": "Institut Montaigne – Exonérer totalement d'impôts et de charges sociales les heures supplémentaires (présidentielle 2022)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "FIS-017",
@@ -412,7 +760,21 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Tous les contribuables de moins de 30 ans seraient exonérés d'impôt sur le revenu, quel que soit leur revenu. Selon l'Institut Montaigne, le coût serait de 3,6 à 3,7 milliards d'euros par an, contre environ 2 milliards selon l'équipe qui a proposé l'idée en 2022. Environ 3,8 à 3,9 millions de personnes seraient bénéficiaires, pour un gain moyen d'environ 374 euros par an ; la plupart des moins de 25 ans ne sont pas imposés.",
+    "pour": "Ses partisans estiment qu'alléger l'impôt des jeunes actifs retiendrait des talents en France, aiderait à créer des entreprises, inciterait les jeunes diplômés à travailler en France et augmenterait leur pouvoir d'achat au moment de leur installation.",
+    "contre": "Ses opposants jugent qu'une exonération selon l'âge, quel que soit le revenu, traite différemment les jeunes des autres actifs, ce qui interroge au regard de l'égalité devant les charges publiques, et profite peu aux moins de 25 ans, rarement imposés.",
+    "sources": [
+     {
+      "url": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/exonerer-tous-les-jeunes-de-moins-de-30-ans-dimpot-sur-le-revenu/",
+      "titre": "Institut Montaigne – Exonérer tous les jeunes de moins de 30 ans d'impôt sur le revenu (présidentielle 2022)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "FIS-018",
@@ -438,7 +800,27 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "L'exonération passerait de 75 % à 100 % de la valeur transmise, les transmissions concernées ne donnant plus lieu à aucun droit, sous les conditions du dispositif (engagement de conservation des titres, fonction de direction). Selon la Cour des comptes, le dispositif a déjà coûté plus de 5,5 milliards d'euros en 2024, contre 1,2 milliard en 2020 et 2021. La Cour recommande plutôt de le resserrer.",
+    "pour": "Ses partisans estiment que toute taxation d'une transmission familiale peut forcer à vendre l'entreprise ou à la fragiliser, et qu'une exonération totale protégerait l'emploi local et l'ancrage des entreprises face aux rachats étrangers.",
+    "contre": "Ses opposants jugent que ce dispositif, déjà coûteux et concentré sur de très grandes transmissions, creuserait l'écart entre héritiers d'entreprises et autres héritiers ; la Cour des comptes recommande de le resserrer plutôt que de l'étendre.",
+    "sources": [
+     {
+      "url": "https://www.previssima.fr/actualite/la-cour-des-comptes-tire-la-sonnette-dalarme-sur-le-cout-du-pacte-dutreil.html",
+      "titre": "La Cour des comptes tire la sonnette d'alarme sur le coût du pacte Dutreil",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.legifiscal.fr/actualites-fiscales/4310-plf-2026-pacte-dutreil-recentre.html",
+      "titre": "PLF 2026 : le pacte Dutreil recentré",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "FIS-019",
@@ -468,7 +850,27 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Un panier d'environ 100 produits de première nécessité, dont la liste n'est pas fixée, passerait à 0 % de TVA. Selon l'Institut Montaigne, le coût serait de 4,7 milliards d'euros par an avec une liste restreinte (alimentation, hygiène) et de 8,8 milliards avec une liste élargie (valeurs 2023). Une directive européenne d'avril 2022 permet d'exonérer certains biens essentiels, dans la limite de sept catégories.",
+    "pour": "Ses partisans estiment que supprimer la TVA sur l'alimentation et l'hygiène soulagerait directement le budget des ménages, surtout modestes, qui y consacrent une part plus grande de leurs dépenses ; ils proposent un contrôle des prix.",
+    "contre": "Ses opposants jugent le coût élevé pour un effet limité : selon l'Institut Montaigne, à coût égal, un chèque alimentaire donnerait 700 euros aux 10 % de ménages les plus modestes, contre 100 environ avec la baisse de TVA.",
+    "sources": [
+     {
+      "url": "https://www.institutmontaigne.org/legislatives-2024/rassemblement-national/supprimer-la-tva-sur-les-produits-de-premiere-necessite",
+      "titre": "Institut Montaigne – Supprimer la TVA sur les produits de première nécessité (législatives 2024)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.journaldeleconomie.fr/?p=42440",
+      "titre": "Baisse de la TVA sur l'électricité et les produits de première nécessité : les gains pour votre portefeuille",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "FIS-020",
@@ -498,7 +900,27 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Le taux de TVA passerait de 20 % à 5,5 % sur l'électricité, le gaz et les carburants. Selon l'Institut Montaigne, le coût serait d'environ 11,3 milliards d'euros par an (entre 9 et 13,6), alors que la TVA sur ces produits rapporte environ 16,8 milliards (2022). Le gaz et l'électricité peuvent recevoir un taux réduit, avec accord de la Commission européenne ; les carburants n'y figurent pas, et la directive devrait être modifiée à l'unanimité des 27 États.",
+    "pour": "Ses partisans estiment que la mesure ferait baisser immédiatement les factures d'énergie et le prix à la pompe, soutiendrait le pouvoir d'achat et l'activité au-delà de la consommation supplémentaire qu'elle entraînerait.",
+    "contre": "Ses opposants jugent que la mesure coûterait cher, irait à l'encontre des objectifs climatiques européens en encourageant la consommation d'énergies fossiles, et se heurterait au droit européen pour les carburants.",
+    "sources": [
+     {
+      "url": "https://www.institutmontaigne.org/legislatives-2024/rassemblement-national/baisser-la-tva-de-20-a-55-pour-les-carburants-lelectricite-le-gaz-et-le-fioul-domestique",
+      "titre": "Institut Montaigne – Baisser la TVA de 20 % à 5,5 % pour les carburants, l'électricité, le gaz et le fioul domestique (législatives 2024)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.moneyvox.fr/votre-argent/actualites/98274/electricite-gaz-carburant-baisser-la-tva-a-5,5-comme-le-promet-le-rn-combien-ca-coute",
+      "titre": "Électricité, gaz, carburant : baisser la TVA à 5,5 % comme le promet le RN, combien ça coûte ?",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   }
  ]
 }

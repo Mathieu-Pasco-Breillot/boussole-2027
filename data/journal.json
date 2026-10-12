@@ -201,6 +201,20 @@
       "description": "Encart Impact du thème Institutions validé par Mathieu (statut « valide »). Ajustements : argument « contrôle insuffisant » ajouté au Contre d'INS-009 ; Précision d'INS-010 complétée (inéligibilité en principe obligatoire pour les atteintes à la probité depuis 2017) et Impact allégé en conséquence.",
       "auteur": "Claude, validé par Mathieu",
       "reference": "validation impact institutions du 12 octobre 2026"
+    },
+    {
+      "date": "2026-10-12",
+      "type": "ajout_impact",
+      "objets": [
+        "data/questions/defense.json",
+        "data/questions/ecologie-energie.json",
+        "data/questions/economie-dette.json",
+        "data/questions/education.json",
+        "data/questions/fiscalite.json"
+      ],
+      "description": "Encart Impact étendu à 5 thèmes (94 questions actives), méthode validée par Mathieu sur le pilote Institutions : rédaction par un sous-agent Sonnet 5.5 par thème avec recherche web, relecture aveugle Sonnet 5.5 par thème (37 ok, 57 corrections appliquées, 0 bloquant). ENV-018 reprend le texte validé par Mathieu dans une autre session. Statut « pilote » : non relu question par question par un humain.",
+      "auteur": "Claude, à la demande de Mathieu",
+      "reference": "extension impact vague 1 du 12 octobre 2026"
     }
   ]
 }

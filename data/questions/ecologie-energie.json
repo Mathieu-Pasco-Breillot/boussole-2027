@@ -39,7 +39,27 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Le règlement européen de 2023 impose, à partir de 2035, une réduction de 100 % des émissions de CO2 des voitures et camionnettes neuves vendues dans l'Union. Les véhicules déjà en circulation restent utilisables et peuvent être revendus d'occasion. Le texte proposé en décembre 2025 permettrait de compenser une partie des émissions, par exemple avec de l'acier bas carbone ou des carburants durables : « sans exception » écarterait cette possibilité.",
+    "pour": "Ses partisans estiment qu'une date ferme donne un signal clair aux constructeurs et aux acheteurs. Le transport routier pèse environ un cinquième des émissions de CO2 de l'Union et une voiture dure quinze ans : agir dès 2035 serait nécessaire.",
+    "contre": "Ses opposants jugent ce calendrier trop rapide face à une demande électrique incertaine et à des coûts élevés. Ils veulent pouvoir vendre encore des hybrides rechargeables ou des thermiques très efficaces pour amortir les investissements des usines.",
+    "sources": [
+     {
+      "url": "https://www.europarl.europa.eu/topics/fr/article/20221019STO44572/interdiction-de-l-ue-sur-la-vente-de-voitures-neuves-a-partir-de-2035-expliquee",
+      "titre": "Tout savoir sur l'interdiction de l'UE concernant la vente de voitures neuves à essence et diesel à partir de 2035",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.futura-sciences.com/automobile/actualites/categories-voiture-fin-thermique-2035-ce-revirement-rebat-il-cartes-automobile-129344/",
+      "titre": "Fin du thermique en 2035 : ce revirement rebat-il les cartes de l'automobile ?",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "ENV-002",
@@ -78,7 +98,27 @@
      "date": "2026-10-03",
      "ancien_enonce": "La France doit sortir du nucléaire d'ici 2050 et produire toute son électricité à partir d'énergies renouvelables."
     }
-   ]
+   ],
+   "impact": {
+    "changement": "Sortir du nucléaire en 2050 supposerait d'arrêter les réacteurs existants et de remplacer leur production : 373 TWh en 2025, soit environ 68 % de l'électricité produite en métropole, selon RTE (pourcentage calculé à partir de ses chiffres). Au total, 95 % de cette production est bas carbone (nucléaire et renouvelables). En 2021, RTE a jugé qu'un système sans nucléaire et 100 % renouvelable en 2050 serait techniquement possible, à des conditions strictes et cumulatives.",
+    "pour": "Ses partisans soulignent que RTE juge ce scénario techniquement faisable. Ils y voient la fin des risques d'accident et de la gestion des déchets radioactifs, et un système reposant sur des sources renouvelables et locales.",
+    "contre": "Ses opposants rappellent que le nucléaire fournit plus des deux tiers de l'électricité sans carbone. Selon les scénarios de RTE, conserver un parc nucléaire important avec davantage de renouvelables limiterait le risque de manquer les objectifs climatiques.",
+    "sources": [
+     {
+      "url": "https://analysesetdonnees.rte-france.com/en/annual-review-2025/keyfindings",
+      "titre": "Bilan électrique 2025 (RTE)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.connaissancedesenergies.org/afp/futurs-electriques-2050-les-six-scenarios-de-rte-211025",
+      "titre": "Futurs électriques 2050 : les six scénarios de RTE",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "ENV-003",
@@ -104,7 +144,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "En France, le glyphosate est déjà interdit aux collectivités pour l'entretien des espaces publics depuis 2017 et aux jardiniers amateurs depuis 2019. Les ventes ont atteint 7 765 tonnes en 2021 (données provisoires). Pour l'agriculture, l'Anses restreint les usages pour lesquels il existe des alternatives jugées acceptables. L'autorisation européenne a été renouvelée jusqu'en 2033 : selon la Commission, deux évaluations complètes n'ont pas relevé de préoccupation indiquant que les critères d'approbation n'étaient plus remplis.",
+    "pour": "Ses partisans mettent en avant la présence généralisée du glyphosate dans l'environnement et les études qui interrogent son lien avec certains cancers. Ils rappellent que la France a déjà interdit plusieurs de ses usages.",
+    "contre": "Ses opposants soulignent que les évaluations européennes n'ont relevé aucune préoccupation indiquant que les critères d'approbation n'étaient plus remplis, et que pour une partie des usages agricoles il n'existe pas encore d'alternative.",
+    "sources": [
+     {
+      "url": "https://www.ecologie.gouv.fr/politiques-publiques/sortie-du-glyphosate",
+      "titre": "Sortie du glyphosate",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.ecologie.gouv.fr/publication-des-donnees-provisoires-des-ventes-produits-phytopharmaceutiques",
+      "titre": "Publication des données provisoires des ventes de produits phytopharmaceutiques en 2021",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.pleinchamp.com/actualite/retro-2023-en-novembre-l-ue-reconduit-le-glyphosate-jusqu-en-2033",
+      "titre": "[Rétro 2023] En novembre, l'UE reconduit le glyphosate jusqu'en 2033",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "ENV-004",
@@ -130,7 +196,27 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "La loi permet à l'Anses d'accorder une dérogation pour l'acétamipride uniquement pour la culture de noisettes, si une menace grave pèse sur la production et si aucune alternative n'existe. La dérogation dure un an, renouvelable deux fois, et ce dispositif doit être abrogé trois ans après la promulgation. La pulvérisation n'est admise qu'avec les meilleures techniques limitant la dérive. Le Conseil constitutionnel a validé ces dispositions sous deux réserves.",
+    "pour": "Ses partisans invoquent les risques pour les abeilles et autres pollinisateurs, l'eau, les sols et la santé humaine, que le Conseil constitutionnel avait relevés en 2025 en censurant une première version du dispositif.",
+    "contre": "Ses opposants jugent l'interdiction française plus stricte que le droit européen, au détriment de la compétitivité des producteurs. Ils estiment que la filière noisette est dans une impasse technique, faute de solution de remplacement.",
+    "sources": [
+     {
+      "url": "https://www.conseil-constitutionnel.fr/decision/2026/2026914DC.htm",
+      "titre": "Décision n° 2026-914 DC du 14 août 2026 - Loi d'urgence pour la protection et la souveraineté agricoles",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.pleinchamp.com/actualite/une-proposition-de-loi-pour-autoriser-sous-conditions-l-acetamipride-et-le-flupyradifurone",
+      "titre": "Une proposition de loi pour autoriser sous conditions l'acétamipride et le flupyradifurone",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "ENV-005",
@@ -156,7 +242,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Selon une rapporteure parlementaire, ces retenues font en moyenne 8 hectares, sont financées à environ 70 % par des fonds publics et desservent environ 5 % des agriculteurs des territoires concernés. En 2020, 6,8 % de la surface agricole était irriguée. Un moratoire identique de dix ans, y compris pour les projets en cours d'instruction, a été proposé en 2023 ; il a été supprimé en commission.",
+    "pour": "Ses partisans estiment que ces retenues réduisent les débits des rivières en période sèche (environ 10 %, jusqu'à 50 %, selon une expertise de 2017 sur les retenues d'eau en général) et profitent à une minorité d'irrigants.",
+    "contre": "Ses opposants soulignent qu'elles remplacent des pompages d'été en nappe par des prélèvements d'hiver, quand l'eau est plus abondante. Ils jugent un moratoire de dix ans, sans solution de remplacement, contraire à l'urgence climatique et aux besoins agricoles.",
+    "sources": [
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/16/rapports/cion-dvp/l16b1902_rapport-fond.pdf",
+      "titre": "Rapport sur la proposition de loi visant à instaurer un moratoire sur le déploiement des méga-bassines (n° 1766)",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://agriculture.gouv.fr/retenues-de-substitution-dirrigation-dans-les-deux-sevres",
+      "titre": "Retenues de substitution d'irrigation dans les Deux-Sèvres",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://reporterre.net/Moratoire-sur-les-megabassines-71-des-Francais-y-sont-favorables",
+      "titre": "Mégabassines : « 71 % des Français sont favorables à un moratoire »",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "ENV-006",
@@ -177,7 +289,27 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Aujourd'hui, chaque projet routier ou autoroutier suit sa propre procédure d'autorisation, que le juge peut annuler : le tribunal administratif de Toulouse l'a fait pour l'A69 en février 2025. Une proposition de loi déposée en 2024 prévoyait un moratoire de trois ans sur les nouvelles routes et autoroutes, entretien et sécurité exceptés, et une commission nationale d'évaluation. En juin 2025, députés et sénateurs se sont accordés sur un texte reconnaissant à l'A69 une raison impérative d'intérêt public majeur.",
+    "pour": "Ses partisans estiment que le transport routier, qui produit 95 % des émissions des transports (32 % des émissions françaises), rend ces projets incompatibles avec les objectifs climatiques et de biodiversité, et que l'argent public irait mieux à d'autres mobilités.",
+    "contre": "Ses opposants estiment que ces projets désenclavent des territoires éloignés du réseau autoroutier et ferroviaire et sécurisent des routes accidentogènes. Ils ajoutent qu'arrêter des chantiers avancés coûterait des indemnisations, des emplois et une remise en état.",
+    "sources": [
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/PIONANR5L17B0455.html",
+      "titre": "Proposition de loi visant à instaurer un moratoire sur les projets d'infrastructures routières et autoroutières (n° 455)",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.senat.fr/lessentiel/ppl24-452.pdf",
+      "titre": "Proposition de loi relative à la raison impérative d'intérêt public majeur de la liaison autoroutière entre Castres et Toulouse",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "ENV-007",
@@ -207,7 +339,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Le seuil actuel de 2 h 30 concerne trois liaisons au départ de Paris-Orly (vers Bordeaux, Nantes et Lyon), selon la direction générale de l'aviation civile. Passer à quatre heures étendrait l'interdiction à d'autres liaisons. Selon une étude associative de 2021, le train pourrait absorber les voyageurs sur la plupart d'entre elles, sauf Rennes-Lyon et Paris-Biarritz, qui exigeraient des trains de plus grande capacité.",
+    "pour": "Ses partisans estiment que le train peut absorber la plupart de ces voyageurs. Selon une étude associative de 2021, un seuil de quatre heures réduirait de 33,2 % les émissions du transport aérien, contre 11,2 % avec le seuil actuel.",
+    "contre": "Ses opposants craignent que le train ne soit pas prêt : peu de concurrence, risque de hausse des prix, de baisse du confort et de la ponctualité. Ils demandent que la mesure dépende d'une concurrence ferroviaire effective.",
+    "sources": [
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/16/rapports/cion-dvp/l16b0681_rapport-information.pdf",
+      "titre": "Rapport d'information n° 681 sur la mise en application de la loi « climat et résilience »",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.futura-sciences.com/planete/actualites/environnement-remplacer-vols-interieurs-train-cest-possible-benefique-climat-92382/",
+      "titre": "Remplacer les vols intérieurs par le train, c'est possible et bénéfique pour le climat",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.quechoisir.org/action-ufc-que-choisir-suppression-des-vols-interieurs-garantir-les-interets-des-consommateurs-dans-une-reelle-transition-vers-le-ferroviaire-n90066/",
+      "titre": "Suppression des vols intérieurs - Garantir les intérêts des consommateurs dans une réelle transition vers le ferroviaire",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "ENV-008",
@@ -228,7 +386,39 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "En 2021, la Commission européenne s'est engagée à proposer la fin progressive des cages pour plusieurs espèces (poules pondeuses, truies, lapins, canards…). Elle prévoit un nouveau règlement sur le bien-être animal pour fin 2026, avec des périodes de transition selon les espèces. En France, environ 27 % des poules pondeuses restaient élevées en cage en 2025, selon une réponse ministérielle.",
+    "pour": "Ses partisans invoquent une attente sociétale forte sur le bien-être animal : une initiative citoyenne européenne a réuni près de 1,4 million de signatures. Ils rappellent que la Commission s'est engagée en 2021 à proposer la fin des cages.",
+    "contre": "Ses opposants, dont des éleveurs européens, craignent des baisses de production (porc : -23,6 % en cas d'arrêt immédiat, selon leur étude), des coûts plus élevés et plus d'importations, et demandent des règles identiques pour les produits importés.",
+    "sources": [
+     {
+      "url": "https://www.senat.fr/questions/base/2024/qSEQ241102401.html",
+      "titre": "Transition hors-cage de l'élevage des poules pondeuses à l'échelle européenne",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://citizens-initiative.europa.eu/end-cage-age_fr",
+      "titre": "Pour une nouvelle ère sans cage (End the Cage Age)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.reussir.fr/cages-en-elevage-le-copa-cogeca-alerte-sur-les-consequences-dune-interdiction",
+      "titre": "Cages en élevage : le Copa-Cogeca alerte sur les conséquences d'une interdiction en Europe",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.reussir.fr/vers-la-fin-des-cages-et-du-broyage-des-poussins-males-donnez-votre-avis-lue-sur-le-bien-etre",
+      "titre": "Vers la fin des cages et du broyage des poussins mâles : donnez votre avis à l'UE sur le bien-être animal",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "ENV-009",
@@ -249,7 +439,33 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Un amendement déposé en mars 2026 propose d'ajouter à l'article 1er de la Constitution une « règle verte » : ne pas prélever sur la nature plus de ressources renouvelables qu'elle ne peut reconstituer, ni produire plus qu'elle ne peut supporter sur une année. Il interdirait aussi à une génération d'imposer aux suivantes des lois moins protectrices de l'environnement. La Charte de l'environnement, de valeur constitutionnelle depuis 2005, pose aujourd'hui des principes généraux.",
+    "pour": "Ses partisans estiment qu'une limite inscrite dans la loi suprême s'imposerait à toutes les politiques publiques, comme une règle budgétaire. Le « jour du dépassement » est passé du 24 décembre en 1971 au 8 août en 2016.",
+    "contre": "Ses détracteurs soulignent que le pétrole, non renouvelable, ne rentre pas dans une règle fondée sur la régénération. Ils notent aussi qu'une règle nationale a une portée limitée face à une pollution mondiale.",
+    "sources": [
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2529/AN/327.pdf",
+      "titre": "Amendement n° 327 au projet de loi constitutionnelle relatif à la Nouvelle-Calédonie (n° 2529)",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.conseil-constitutionnel.fr/la-constitution/la-charte-de-l-environnement",
+      "titre": "La Charte de l'environnement",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.lyoncapitale.fr/?p=114099",
+      "titre": "Règle verte, VIe République : analyse de deux mesures de Mélenchon",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "ENV-010",
@@ -275,7 +491,27 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Le prix moyen de l'eau potable et de l'assainissement est de 4,69 € le m³ (1er janvier 2024), pour 148 litres consommés par habitant et par jour. Une proposition de loi, rejetée en commission à l'Assemblée, prévoyait de rendre gratuits 50 litres par jour et par personne (environ 18 m³ par an), financés par un prix plus élevé pour les résidences secondaires et les usages professionnels et par une taxe de 10 centimes sur sodas et eaux en bouteille.",
+    "pour": "Ses partisans estiment que l'accès à l'eau est un droit humain et qu'un volume vital gratuit, associé à un prix plus élevé des usages de confort comme les piscines, limiterait le gaspillage.",
+    "contre": "Ses opposants estiment que rendre gratuite une partie de l'eau, même limitée à un volume vital, encouragerait la consommation et le gaspillage. Ils s'interrogent aussi sur le financement, qui reposerait sur d'autres usagers et sur une nouvelle taxe.",
+    "sources": [
+     {
+      "url": "https://www.services.eaufrance.fr/chiffres",
+      "titre": "Chiffres clés de l'observatoire Sispea",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://reporterre.net/Rendons-gratuits-les-metres-cubes-d-eau-vitaux",
+      "titre": "Rendons gratuits les mètres cubes d'eau vitaux",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "ENV-011",
@@ -310,7 +546,33 @@
      "date": "2026-10-03",
      "ancien_enonce": "L'État doit cesser de soutenir financièrement toute nouvelle installation éolienne ou solaire."
     }
-   ]
+   ],
+   "impact": {
+    "changement": "L'État soutient l'électricité renouvelable par des contrats à prix garanti. Entre 2016 et 2024, ce soutien pour l'ensemble des renouvelables électriques et du biométhane a coûté environ 26,3 milliards d'euros, selon la Cour des comptes. La part inscrite au budget de l'État est de 9,06 milliards d'euros en 2026. Fin 2025, la France comptait 26,1 GW d'éolien raccordé, dont 24,1 GW à terre.",
+    "pour": "Ses partisans jugent ce soutien coûteux : en 2024, le tarif d'achat moyen était de 97,5 €/MWh pour l'éolien terrestre et de 178,2 €/MWh pour l'éolien en mer, contre un prix de gros habituel de 40 à 50 €/MWh.",
+    "contre": "Ses opposants rappellent que la part des renouvelables dans la production d'électricité est passée de 18 % à 27 % entre 2016 et 2024 avec ce soutien, et jugent qu'arrêter les aides compromettrait le développement de l'éolien.",
+    "sources": [
+     {
+      "url": "https://www.vie-publique.fr/files/rapport/pdf/302488.pdf",
+      "titre": "Le soutien aux énergies renouvelables à travers les charges de service public de l'énergie (Cour des comptes, mars 2026)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.banquedesterritoires.fr/vers-une-hausse-de-11-du-cout-du-soutien-public-aux-energies-renouvelables-en-2027",
+      "titre": "Vers une hausse de 11% du coût du soutien public aux énergies renouvelables en 2027",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.statistiques.developpement-durable.gouv.fr/tableau-de-bord-eolien-quatrieme-trimestre-2025",
+      "titre": "Tableau de bord : éolien - Quatrième trimestre 2025",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "ENV-012",
@@ -331,7 +593,27 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "L'obligation de créer une zone à faibles émissions concerne aujourd'hui les agglomérations de plus de 150 000 habitants ; la mesure supprimerait ce devoir. Ces zones ont été créées en 2019 et étendues en 2021 pour réduire les particules fines. En 2025, le gouvernement avait proposé de ne maintenir l'obligation que pour les agglomérations parisienne et lyonnaise, qui dépassent les seuils de qualité de l'air.",
+    "pour": "Ses partisans jugent le dispositif mal conçu : il pénalise les ménages modestes, qui ne peuvent pas acheter un véhicule plus récent, et son application inégale selon les agglomérations le rend peu lisible.",
+    "contre": "Ses opposants jugent que restreindre l'accès des véhicules les plus polluants limite les particules fines, responsables d'environ 40 000 décès par an selon Santé publique France.",
+    "sources": [
+     {
+      "url": "https://lcp.fr/actualites/zfe-le-conseil-constitutionnel-censure-la-suppression-des-zones-a-faibles-emissions",
+      "titre": "ZFE: le Conseil constitutionnel censure la suppression des zones à faibles émissions",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.banquedesterritoires.fr/zones-faibles-emissions-le-gouvernement-va-proposer-de-recentrer-lobligation-autour-de-paris-et",
+      "titre": "Zones à faibles émissions : le gouvernement va proposer de recentrer l'obligation autour de Paris et Lyon",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "ENV-013",
@@ -357,7 +639,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "L'objectif vient de la loi Climat et résilience de 2021 : passer de 250 000 à 125 000 hectares consommés sur 2021-2031 par rapport à la décennie précédente. Une loi de 2023 le répartit entre régions et communes, garantit un hectare à chaque commune et retire les grands projets nationaux du décompte local, via un forfait de 12 500 hectares. Un assouplissement a été censuré en mai 2026 pour motif de procédure.",
+    "pour": "Ses partisans, notamment des élus locaux ruraux, estiment que l'objectif freine les communes et la construction de logements, et que ses règles d'application s'écartent de l'esprit de la loi.",
+    "contre": "Ses opposants, notamment des associations de protection de l'environnement, estiment que sans objectif chiffré contraignant la loi perdrait son utilité contre la disparition des terres agricoles et naturelles.",
+    "sources": [
+     {
+      "url": "https://www.anil.org/aj-loi-artificialisation-sols-zan/",
+      "titre": "Loi n° 2023-630 du 20 juillet 2023 visant à faciliter la mise en œuvre des objectifs de lutte contre l'artificialisation des sols (ANIL)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.terre-net.fr/foncier-agricole/article/225301/zero-artificialisation-nette-des-sols-les-senateurs-assouplissent-le-texte",
+      "titre": "« Zéro artificialisation nette des sols » : les sénateurs assouplissent le texte",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://lcp.fr/actualites/zfe-le-conseil-constitutionnel-censure-la-suppression-des-zones-a-faibles-emissions",
+      "titre": "ZFE: le Conseil constitutionnel censure la suppression des zones à faibles émissions",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "ENV-014",
@@ -378,7 +686,39 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Depuis la loi de 2017, l'État ne délivre plus de permis de recherche d'hydrocarbures et ne renouvellera plus les concessions d'exploitation après 2040. Aucun gisement exploitable n'a été découvert en Guyane : la découverte de 2011 était insuffisante et la campagne de forages achevée en 2019 a échoué. Selon les auteurs de la proposition de loi, Mayotte, les îles Éparses et Saint-Pierre-et-Miquelon pourraient receler des hydrocarbures, ce que rien n'a confirmé à ce jour.",
+    "pour": "Ses partisans y voient des recettes pour des territoires pauvres (selon le rapporteur du texte, 53 % de pauvreté en Guyane, plus de 77 % à Mayotte), un gain de sécurité énergétique et une liberté de décision locale.",
+    "contre": "Ses opposants jugent que le pétrole n'est pas une solution de développement faute de ressources exploitables à un coût viable. Ils redoutent des dommages environnementaux irréversibles, des profits captés ailleurs et une position française intenable à l'international.",
+    "sources": [
+     {
+      "url": "https://www.senat.fr/lessentiel/ppl25-185.pdf",
+      "titre": "Fin de l'interdiction de recherche, d'exploration et d'exploitation des hydrocarbures, dans les territoires d'outre-mer (Sénat)",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.maire-info.com/outre-mer/outre-mer-lexploitation-des-hydrocarbures-et-sa-manne-financiere-va-t-elle-etre-relancee-art26-30427",
+      "titre": "Outre-mer : l'exploitation des hydrocarbures (et sa manne financière) va-t-elle être relancée ?",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://lcp.fr/actualites/exploitation-des-hydrocarbures-le-rapporteur-du-texte-appelle-a-la-desobeissance-civile",
+      "titre": "Exploitation des hydrocarbures: le rapporteur du texte appelle à la « désobéissance civile » en Guyane",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://rci.fm/deuxiles/infos/Politique/Hydrocarbures-en-Outre-mer-la-proposition-de-loi-rejetee-quelques-voix-pres",
+      "titre": "Hydrocarbures en Outre-mer : la proposition de loi rejetée à quelques voix près à l'Assemblée",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "ENV-015",
@@ -399,7 +739,27 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "L'Ademe est un opérateur de l'État. Selon son président, elle a géré en 2024 3,4 milliards d'euros de fonds publics appartenant à l'État, dont 92 % pour la décarbonation d'entreprises et de réseaux de chaleur. Le Fonds chaleur en représentait 820 millions d'euros et a accompagné 1 350 installations. L'agence traite aussi des sites pollués sans propriétaire et administre la Base Carbone, qui fournit les facteurs d'émission de référence.",
+    "pour": "Ses partisans mettent en cause le coût de l'agence et l'étendue de ses missions. Ils estiment que ces actions peuvent être reprises par l'État ou abandonnées.",
+    "contre": "Ses opposants soulignent que l'agence atteint les objectifs fixés par l'État et que, selon son président, l'Inspection générale des finances juge sa gestion globalement bien menée. Ils rappellent ses missions de dépollution et la Base Carbone.",
+    "sources": [
+     {
+      "url": "https://www.connaissancedesenergies.org/afp/le-president-de-lademe-repond-aux-attaques-violentes-et-definitives-contre-lagence-251113",
+      "titre": "Le président de l'Ademe répond aux « attaques violentes et définitives » contre l'agence",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.hellowatt.fr/blog/ademe-menacee-fermeture-2026/",
+      "titre": "L'ADEME menacée de fermeture en 2026 : vos aides à la rénovation menacées",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "ENV-016",
@@ -420,7 +780,33 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "L'OFB compte plus de 3 000 agents, dont environ 1 700 inspecteurs de l'environnement qui contrôlent notamment les agriculteurs et les chasseurs. Il gère aussi des aires protégées, produit de l'expertise et accompagne les collectivités et les acteurs économiques. Dans le projet de budget 2026, sa subvention de l'État était de 117,6 millions d'euros, avec un plafond d'emplois en baisse de 16 postes.",
+    "pour": "Ses partisans reprochent à l'office des contrôles que des agriculteurs jugent intimidants, y compris dans un contexte de crise agricole, et estiment qu'ils pèsent sur leur activité.",
+    "contre": "Ses opposants soutiennent que l'OFB assure la police de l'environnement, le suivi des aires protégées, nécessaires face à l'érosion de la biodiversité, et rappellent que ses agents ont subi des menaces et un incendie de locaux.",
+    "sources": [
+     {
+      "url": "https://www.linfodurable.fr/office-de-la-biodiversite-face-aux-attaques-les-syndicats-pronent-la-greve-des-controles-48916",
+      "titre": "Office de la biodiversité: face aux attaques, les syndicats prônent la grève des contrôles",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.linfodurable.fr/police-de-lenvironnement-lofb-denonce-suppressions-de-postes-et-financement-en-baisse-48209",
+      "titre": "Police de l'environnement, l'OFB dénonce suppressions de postes et financement en baisse",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-dvp/l17cion-dvp2526011_compte-rendu.pdf",
+      "titre": "Compte rendu n° 11 de la commission du développement durable, 29 octobre 2025",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "ENV-017",
@@ -446,7 +832,21 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "La loi prévoit d'interdire aussi la location des logements classés F à partir de 2028. En 2023, on estimait à 4,8 millions les logements classés F ou G, dont 1,5 million dans le parc locatif privé et 0,4 million dans le parc social. En copropriété, jusqu'à 250 000 logements G étaient concernés par l'interdiction du 1er janvier 2025, selon le ministère. Une proposition de loi de 2024 prévoyait de la suspendre dans certains cas de blocage en copropriété.",
+    "pour": "Ses partisans estiment que l'interdiction pèse sur des propriétaires qui ne peuvent pas toujours réaliser les travaux, notamment en copropriété où l'assemblée générale décide, et qu'elle touche une part importante du parc locatif (1,5 million de logements F ou G).",
+    "contre": "Ses opposants jugent qu'elle protège les locataires de logements coûteux à chauffer et fixe un cap de rénovation. Pour eux, un assouplissement ciblé, avec plan de travaux, suffit à régler les blocages.",
+    "sources": [
+     {
+      "url": "https://www.connaissancedesenergies.org/afp/coproprietes-une-proposition-de-loi-pour-suspendre-linterdiction-des-passoires-energetiques-soutenue-par-le-gouvernement-241030",
+      "titre": "Copropriétés : une proposition de loi pour suspendre l'interdiction des passoires énergétiques soutenue par le gouvernement",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "ENV-018",
@@ -472,7 +872,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Les traités européens ne prévoient pas de sortie des règles du marché de l'électricité. La France devrait donc obtenir une dérogation, comme l'Espagne et le Portugal en 2022-2023 (à titre temporaire), ou s'exposer à des sanctions. Elle est aussi le premier exportateur d'électricité d'Europe (92 TWh nets en 2025). Les recettes de ces exportations, qui doivent aider à financer les nouveaux réacteurs, et l'accès aux importations en cas de pénurie reposent sur ces règles communes.",
+    "pour": "Ses partisans en attendent un prix calculé sur les coûts de production français, surtout nucléaires (environ 60 € le mégawattheure selon le régulateur), et moins exposé aux flambées du gaz comme en 2022.",
+    "contre": "Ses opposants soulignent la difficulté d'obtenir une dérogation et le risque de sanctions, ainsi que la perte possible des recettes d'exportation et de l'accès aux importations en cas de pénurie.",
+    "sources": [
+     {
+      "url": "https://www.connaissancedesenergies.org/parc-nucleaire-la-cre-actualise-son-estimation-du-cout-de-production-pour-les-annees-venir-241104",
+      "titre": "Parc nucléaire : la CRE actualise son estimation du coût de production pour les années à venir",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.les-energies-renouvelables.eu/article/actualites/energies/exportations-delectricite-la-france-bat-un-record-en-2025-92-twh-nets-226/",
+      "titre": "Exportations d'électricité : la France bat un record en 2025 (92 TWh nets)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.publicsenat.fr/actualites/politique/marche-europeen-de-lelectricite-sortie-ou-reforme-les-paradoxes-de-la-normalisation-du-rn",
+      "titre": "Marché européen de l'électricité : sortie ou réforme ? Les paradoxes de la normalisation du RN",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "ENV-019",
@@ -591,7 +1017,27 @@
      "date": "2026-10-03",
      "note": "créée par scission de ENV-011"
     }
-   ]
+   ],
+   "impact": {
+    "changement": "L'État soutient l'électricité renouvelable par des contrats à prix garanti : environ 26,3 milliards d'euros entre 2016 et 2024 pour l'ensemble des renouvelables électriques et du biométhane, selon la Cour des comptes. Celle-ci a relevé des sur-rémunérations pour le photovoltaïque sur bâtiment. En février 2026, la France comptait environ 30 GW de solaire installé et 10 GW de projets autorisés en attente.",
+    "pour": "Ses partisans soulignent que le coût du soutien à l'ensemble des renouvelables est passé de 3,9 milliards d'euros en 2024 à environ 7,3 milliards attendus en 2025, avec des sur-rémunérations constatées. Ils jugent ces dépenses injustifiées pour de nouvelles installations.",
+    "contre": "Ses opposants notent que le solaire a atteint les objectifs de programmation de 2023. Des professionnels du secteur estiment qu'un objectif trop bas équivaudrait à un moratoire et menacerait des dizaines de milliers d'emplois.",
+    "sources": [
+     {
+      "url": "https://www.vie-publique.fr/files/rapport/pdf/302488.pdf",
+      "titre": "Le soutien aux énergies renouvelables à travers les charges de service public de l'énergie (Cour des comptes, mars 2026)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.banquedesterritoires.fr/programmation-pluriannuelle-de-lenergie-le-decret-signe-en-fin-de-semaine-annonce-sebastien-lecornu",
+      "titre": "Programmation pluriannuelle de l'énergie : le décret signé « en fin de semaine », annonce Sébastien Lecornu",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "ENV-023",
@@ -626,7 +1072,33 @@
      "date": "2026-10-03",
      "note": "ajoutée pour couvrir la construction de nouveaux réacteurs"
     }
-   ]
+   ],
+   "impact": {
+    "changement": "La programmation de l'énergie prévoit six nouveaux réacteurs et huit autres en option : la mesure ferait de ces huit options des réacteurs à construire, soit quatorze au total. EDF estime à 72,8 milliards d'euros (valeurs 2020, hors financement) le coût des six premiers EPR2, environ 40 % de plus qu'en 2022 ; aucun chiffrage ne porte sur les huit autres. Une décision finale d'investissement est attendue d'ici fin 2026 pour les six premiers.",
+    "pour": "Ses partisans estiment qu'un parc nucléaire important associé aux renouvelables limite le risque de manquer les objectifs climatiques, comme l'indiquent les scénarios de RTE de 2021.",
+    "contre": "Ses opposants soulignent que le coût estimé a augmenté d'environ 40 % depuis 2022 et que la trajectoire budgétaire reste incertaine (intérêts, retards, dépassements de Flamanville).",
+    "sources": [
+     {
+      "url": "https://www.journaldeleconomie.fr/enorme-devis-edf-futurs-epr2/",
+      "titre": "EPR : EDF annonce un devis colossal de 73 milliards d'euros pour six réacteurs",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.banquedesterritoires.fr/programmation-pluriannuelle-de-lenergie-le-decret-signe-en-fin-de-semaine-annonce-sebastien-lecornu",
+      "titre": "Programmation pluriannuelle de l'énergie : le décret signé « en fin de semaine », annonce Sébastien Lecornu",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.connaissancedesenergies.org/afp/futurs-electriques-2050-les-six-scenarios-de-rte-211025",
+      "titre": "Futurs électriques 2050 : les six scénarios de RTE",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "ENV-024",
@@ -661,7 +1133,33 @@
      "date": "2026-10-03",
      "note": "ajoutée à la demande de Mathieu (prix du gaz)"
     }
-   ]
+   ],
+   "impact": {
+    "changement": "En octobre 2026, le prix repère du gaz de la Commission de régulation de l'énergie (CRE) est de 182,88 €/MWh TTC en moyenne, environ 30 % de plus qu'en début d'année selon sa présidente, qui estime la facture 2026 supérieure d'environ 120 € à celle de 2025. En 2021-2022, un blocage des tarifs réglementés a fait absorber l'écart aux distributeurs, avec un rattrapage possible dès avril 2022. En 2014, le Conseil d'État a invalidé une limitation de hausses tarifaires.",
+    "pour": "Ses partisans estiment qu'un blocage protégerait le pouvoir d'achat des ménages, notamment ceux qui se chauffent au gaz, face à une hausse d'environ 30 % depuis le début de l'année.",
+    "contre": "Ses opposants jugent que l'État n'a plus les moyens d'un soutien généralisé, qu'un blocage reporte la hausse plutôt qu'il ne l'annule, l'écart étant rattrapé plus tard, et qu'il expose à des recours juridiques.",
+    "sources": [
+     {
+      "url": "https://www.connaissancedesenergies.org/afp/gaz-la-facture-moyenne-2026-superieure-de-120-euros-a-2025-calcule-le-regulateur-de-lenergie-260915",
+      "titre": "120 euros de plus en 2026 : le régulateur estime la hausse moyenne de la facture de gaz des ménages français",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.publicsenat.fr/actualites/politique/prix-du-gaz-et-de-l-electricite-que-prevoit-le-gouvernement-pour-les-prochains",
+      "titre": "Prix du gaz et de l'électricité : que prévoit le gouvernement pour les prochains mois ?",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.jechange.fr/energie/gaz/news/prix-record-gouvernement-refus-baisse-taxes",
+      "titre": "Le Gouvernement refuse une baisse des taxes sur le gaz : « Nous n'avons plus les moyens du quoi qu'il en coûte »",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "ENV-025",
@@ -687,7 +1185,21 @@
      "date": "2026-10-03",
      "note": "ajoutée avec ENV-024"
     }
-   ]
+   ],
+   "impact": {
+    "changement": "Le 6 avril 2026, après la quasi-fermeture du détroit d'Ormuz, le prix moyen national du gazole était de 2,279 € le litre et celui du SP95-E10 de 2,011 €. Le baril de Brent est passé d'environ 72 dollars avant le conflit à 119,50 dollars le 9 mars. Les aides ciblées comprennent 20 centimes par litre pour les transporteurs routiers et un chèque énergie renforcé de 153 € en moyenne pour 3,8 millions de foyers.",
+    "pour": "Ses partisans estiment qu'une mesure générale protège tous les automobilistes, y compris ceux sans droit aux aides ciblées, alors que les marges de raffinage ont presque doublé. Ils défendent un gel des prix ou une TVA à 5 %.",
+    "contre": "Ses opposants jugent le coût injustifiable pour les finances publiques : en Italie, une baisse d'environ 25 centimes par litre, pour 500 millions d'euros, aurait été en grande partie absorbée par la hausse des cours. Ils préfèrent des aides ciblées.",
+    "sources": [
+     {
+      "url": "https://lessentieldeleco.fr/6655-crise-carburants-lecornu-refuse-toujours-le-blocage-des-prix/",
+      "titre": "Crise carburants : Lecornu refuse toujours le blocage des prix",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "ENV-026",
@@ -718,7 +1230,33 @@
      "date": "2026-10-03",
      "note": "ajoutée à la demande de Mathieu (voitures électriques)"
     }
-   ]
+   ],
+   "impact": {
+    "changement": "Le bonus d'achat dépend aujourd'hui d'un score environnemental, d'un prix inférieur à 47 000 € et d'un poids inférieur à 2 400 kg, et il est financé par les certificats d'économie d'énergie. Selon le règlement européen proposé le 4 mars 2026, une aide publique exigerait un véhicule assemblé dans l'Union avec au moins 70 % de composants européens en valeur, batterie exclue. Le Parlement européen et le Conseil l'examinent.",
+    "pour": "Ses partisans estiment que l'argent public doit d'abord soutenir la production et l'emploi européens. Ils jugent le seuil réalisable : selon une étude d'équipementiers, les véhicules fabriqués en Europe contiennent déjà 80 à 90 % de pièces européennes.",
+    "contre": "Ses opposants, notamment des constructeurs, jugent qu'un véhicule vaut plus que la somme de ses pièces (recherche, ingénierie, main-d'œuvre qualifiée). Ils préfèrent que le véhicule fini soit évalué, avec une méthode qui compte davantage que les seuls composants.",
+    "sources": [
+     {
+      "url": "https://www.linfodurable.fr/automobile-le-bonus-ecologique-sera-augmente-jusqua-5700-euros-en-2026-53621",
+      "titre": "Automobile: le bonus écologique sera augmenté jusqu'à 5.700 euros en 2026",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://journalauto.com/industrie/bruxelles-devoile-ses-regles-de-contenu-local-pour-lautomobile-electrique-subventionnee/",
+      "titre": "Bruxelles dévoile ses règles de contenu local pour l'automobile électrique subventionnée",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://nordot.app/1445407297347617780",
+      "titre": "EU car industry clashes over strategy to fight Chinese competitors",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "ENV-027",
