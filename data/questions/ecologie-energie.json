@@ -454,7 +454,7 @@
    "axe": "europe",
    "sens": -1,
    "enonce": "La France doit sortir des règles du marché européen de l'électricité pour fixer elle-même le prix de l'électricité.",
-   "precision": null,
+   "precision": "Aujourd'hui, le prix de gros de l'électricité se forme sur un marché commun aux pays européens : à chaque heure, il est fixé par la dernière centrale nécessaire pour couvrir la demande, souvent une centrale au gaz. Depuis 2026, quand ce prix dépasse certains seuils, une partie des revenus du nucléaire d'EDF est reversée aux consommateurs.",
    "origine": {
     "description": "Programme des législatives de 2024 ; proposition de loi en préparation rapportée en juin 2026",
     "source": {
