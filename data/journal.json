@@ -375,6 +375,26 @@
       "description": "Correction de Précisions vérifiées par recherche, à la demande de Mathieu. IMM-001 : « après sept ans de présence, ou après douze mois de travail » remplacé par la voie de l'article L. 435-4 du Ceseda (trois ans de résidence, douze mois de travail sur vingt-quatre, expérimental jusqu'au 31 décembre 2026). IMM-014 : « les étrangers qui travaillent » devient « les titulaires d'un titre de séjour autorisant à travailler, ainsi que les réfugiés ». Encarts inchangés. Aucun code de position modifié.",
       "auteur": "Claude",
       "reference": "correction précisions immigration du 12 octobre 2026"
+    },
+    {
+      "date": "2026-10-12",
+      "type": "reformulation",
+      "objets": [
+        "data/questions/union-europeenne.json"
+      ],
+      "description": "Correction de Précisions vérifiées par recherche, à la demande de Mathieu. EUR-002 : « l'accord unanime » devient « en principe l'accord unanime, sauf cas prévus par le traité » (article 31 du traité sur l'Union européenne). EUR-003 : « d'environ 29 à près de 40 milliards d'euros par an » devient « d'environ 26 à environ 38 milliards d'euros par an en moyenne », estimation de la direction générale du Trésor rapportée par le Sénat ; le chiffre de 29 milliards est la contribution de 2026 et celui de 40 milliards un scénario. Encarts inchangés. Aucun code de position modifié.",
+      "auteur": "Claude",
+      "reference": "correction précisions union européenne du 12 octobre 2026"
+    },
+    {
+      "date": "2026-10-12",
+      "type": "reformulation",
+      "objets": [
+        "data/questions/securite.json"
+      ],
+      "description": "Correction de Précisions vérifiées par recherche, à la demande de Mathieu. SEC-009 : amende forfaitaire de 200 € portée à 500 € par l'article 25 de la loi n° 2026-798 du 18 août 2026 (JORF n° 192 du 19 août 2026) ; lecture issue d'un résumé de la page du Journal officiel, version consolidée de Légifrance non relue, des sources secondaires concordant. La même loi ajoute une suspension du permis de conduire, non mentionnée dans l'encart validé, à examiner par Mathieu. SEC-013 : « la règle pour les courtes peines » devient « la règle pour les peines de six mois ou moins, sauf impossibilité » (ministère de la Justice, loi du 23 mars 2019). Encarts inchangés. Aucun code de position modifié.",
+      "auteur": "Claude",
+      "reference": "correction précisions sécurité du 12 octobre 2026"
     }
   ]
 }

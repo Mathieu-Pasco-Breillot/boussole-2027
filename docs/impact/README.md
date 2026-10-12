@@ -32,13 +32,15 @@ Vague 1 : DEF-001, DEF-002, DEF-003, ENV-004, ENV-024, ECO-009, ECO-011, EDU-017
 
 Vague 2 (d'après les brouillons et les relectures) :
 - **RET-011** : la Précision cite cinq régimes fermés dont celui du CESE ; le COR n'en cite que quatre.
-- **SEC-009** : amende forfaitaire de 200 € ou de 500 € selon une version récente de Légifrance (non vérifiée).
-- **SEC-014** : « 15 000 places » ou « jusqu'à 18 000 places » ?
-- Autres Précisions signalées par les relectures, sans détail ici : SAN-008, SAN-009, SAN-012 (non vérifiables) ; IMM-012 (non vérifiable) ; EUR-002, EUR-003, EUR-010, EUR-012, EUR-015 ; SEC-006, SEC-008, SEC-013, SEC-021 (le détail figure dans `vague-2/relecture-<thème>.json`).
+- **SEC-006** : chiffres du 1er août non relus dans le PDF du ministère.
+- **SEC-021** : « sans suite à l'Assemblée nationale » non vérifiable ; la proposition de loi a été retransmise à l'Assemblée nationale en juillet 2024, statut ultérieur inconnu.
+- Autres Précisions signalées par les relectures, sans détail ici : SAN-008, SAN-009, SAN-012 (non vérifiables) ; IMM-012 (non vérifiable) (le détail figure dans `vague-2/relecture-<thème>.json`).
 
-Corrigées le 12 octobre 2026 après vérification (historique de la question et journal, type `reformulation`) : RET-001 (âge de 62 ans et 9 mois limité aux générations 1963 et 1964), RET-008 (« fin des années 1980 »), SAN-015 (votée en février 2025), IMM-001 (voie de l'article L. 435-4 du Ceseda), IMM-014 (titulaires d'un titre autorisant à travailler et réfugiés). Encarts retouchés : RET-001 et SAN-019 (extension de l'accord préalable du contrôle médical).
+Corrigées le 12 octobre 2026 après vérification (historique de la question et journal, type `reformulation`) : RET-001 (âge de 62 ans et 9 mois limité aux générations 1963 et 1964), RET-008 (« fin des années 1980 »), SAN-015 (votée en février 2025), IMM-001 (voie de l'article L. 435-4 du Ceseda), IMM-014 (titulaires d'un titre autorisant à travailler et réfugiés), EUR-002 (unanimité « en principe », sauf cas prévus par le traité), EUR-003 (26 à 38 milliards d'euros par an en moyenne, estimation de la direction générale du Trésor), SEC-009 (amende forfaitaire de 500 € depuis la loi n° 2026-798 du 18 août 2026), SEC-013 (règle pour les peines de six mois ou moins, sauf impossibilité). Encarts retouchés : RET-001 et SAN-019 (extension de l'accord préalable du contrôle médical).
 
-Vérifiées exactes le 12 octobre 2026, non modifiées : RET-005, RET-006, SAN-006, SAN-016, SAN-019 (Précision), IMM-005, IMM-011, IMM-018.
+À examiner par Mathieu : la loi n° 2026-798 ajoute une suspension du permis de conduire pour usage de stupéfiants, non mentionnée dans l'encart validé de SEC-009.
+
+Vérifiées exactes le 12 octobre 2026, non modifiées : RET-005, RET-006, SAN-006, SAN-016, SAN-019 (Précision), IMM-005, IMM-011, IMM-018, EUR-010, EUR-012, EUR-015, SEC-008, SEC-014.
 
 Toute correction de Précision s'accompagne d'une entrée `historique` sur la question et d'une entrée de journal.
 

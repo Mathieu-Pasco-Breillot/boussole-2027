@@ -80,7 +80,7 @@
    "axe": "europe",
    "sens": 1,
    "enonce": "Les décisions de politique étrangère de l'Union européenne doivent pouvoir être prises à la majorité, sans droit de veto des États.",
-   "precision": "Aujourd'hui, elles exigent l'accord unanime des États membres.",
+   "precision": "Aujourd'hui, elles exigent en principe l'accord unanime des États membres, sauf cas prévus par le traité.",
    "origine": {
     "description": "Lettre de onze États membres, dont la France, du 1er septembre 2026",
     "source": {
@@ -93,7 +93,12 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": [],
+   "historique": [
+    {
+     "date": "2026-10-12",
+     "note": "Précision corrigée : « elles exigent l'accord unanime des États membres » devient « en principe l'accord unanime, sauf cas prévus par le traité », l'article 31 du traité sur l'Union européenne prévoyant des cas de majorité qualifiée et excluant les décisions à implications militaires ou de défense."
+    }
+   ],
    "impact": {
     "changement": "Selon l'article 31 du traité sur l'Union européenne, la politique étrangère se décide en principe à l'unanimité. Le traité prévoit déjà des votes à la majorité qualifiée, par exemple pour appliquer une décision commune, sauf en matière militaire ou de défense. Un État peut s'abstenir sans bloquer, sauf si les abstentions réunissent au moins un tiers des États et un tiers de la population. Les chefs d'État ou de gouvernement peuvent, à l'unanimité, étendre le vote à la majorité.",
     "pour": "Ses partisans estiment que le veto d'un seul État paralyse l'Union face aux crises et l'empêche de parler d'une seule voix ; le vote à la majorité permettrait de décider plus vite.",
@@ -115,7 +120,7 @@
    "axe": "europe",
    "sens": 1,
    "enonce": "Le budget de l'Union européenne pour 2028-2034 doit être porté à 2 000 milliards d'euros.",
-   "precision": "C'est la proposition de la Commission européenne. Le budget 2021-2027 est d'environ 1 200 milliards. La contribution française pourrait passer d'environ 29 à près de 40 milliards d'euros par an.",
+   "precision": "C'est la proposition de la Commission européenne. Le budget 2021-2027 est d'environ 1 200 milliards. La contribution française pourrait passer d'environ 26 à environ 38 milliards d'euros par an en moyenne (estimation de la direction générale du Trésor rapportée par le Sénat).",
    "origine": {
     "description": "Proposition de la Commission européenne de juillet 2025",
     "source": {
@@ -133,7 +138,12 @@
     }
    ],
    "scrutins": [],
-   "historique": [],
+   "historique": [
+    {
+     "date": "2026-10-12",
+     "note": "Précision corrigée : l'ancienne formulation « d'environ 29 à près de 40 milliards d'euros par an » comparait la contribution de 2026 et un scénario ; elle est alignée sur l'estimation de la direction générale du Trésor, de 26 à 38 milliards d'euros par an en moyenne (cadres 2021-2027 et 2028-2034)."
+    }
+   ],
    "impact": {
     "changement": "Le 16 juillet 2025, la Commission européenne a proposé pour 2028-2034 un plafond d'engagements de dépenses de 1 763 milliards d'euros aux prix de 2025, soit 1 985 milliards en euros courants. Elle y associe cinq nouvelles recettes propres à l'Union, qu'elle estime à environ 50 milliards d'euros par an. Selon la direction générale du Trésor, citée par le Sénat, la contribution annuelle moyenne de la France passerait de 26 milliards d'euros sur 2021-2027 à 38 milliards.",
     "pour": "Ses partisans estiment qu'un budget plus important est nécessaire pour financer en commun la défense, la compétitivité et la transition écologique, que les États ne peuvent assumer seuls.",

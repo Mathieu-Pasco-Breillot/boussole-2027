@@ -362,7 +362,7 @@
    "axe": "securite",
    "sens": 1,
    "enonce": "Consommer de la drogue, quelle qu'elle soit (cannabis, cocaïne, héroïne…), ne doit plus être puni par la loi.",
-   "precision": "Aujourd'hui, consommer n'importe quel stupéfiant est un délit, le plus souvent sanctionné par une amende forfaitaire de 200 €. La mesure supprimerait toute sanction pour la seule consommation. La vente et le trafic resteraient interdits et punis.",
+   "precision": "Aujourd'hui, consommer n'importe quel stupéfiant est un délit, le plus souvent sanctionné par une amende forfaitaire de 500 €. La mesure supprimerait toute sanction pour la seule consommation. La vente et le trafic resteraient interdits et punis.",
    "origine": {
     "description": "Proposition de loi n° 750 du 19 décembre 2024",
     "source": {
@@ -380,6 +380,10 @@
      "date": "2026-10-12",
      "ancien_enonce": "La consommation de drogue ne doit plus être une infraction pénale.",
      "note": "Énoncé précisé (toutes drogues, pas seulement le cannabis) et précision réécrite pour dire ce que la mesure change, à la demande de Mathieu ; périmètre inchangé, codages conservés."
+    },
+    {
+     "date": "2026-10-12",
+     "note": "Précision corrigée : l'amende forfaitaire est portée de 200 € à 500 € par la loi n° 2026-798 du 18 août 2026 (art. 25, art. L. 3421-1 du code de la santé publique). La même loi ajoute une suspension du permis de conduire, non mentionnée dans l'encart validé (à examiner par Mathieu)."
     }
    ],
    "impact": {
@@ -540,7 +544,7 @@
    "axe": "securite",
    "sens": -1,
    "enonce": "Les peines de prison ferme de moins d'un an ne doivent plus être aménagées automatiquement.",
-   "precision": "Aménagement : la peine est exécutée hors de prison, par exemple sous bracelet électronique. Il est aujourd'hui la règle pour les courtes peines.",
+   "precision": "Aménagement : la peine est exécutée hors de prison, par exemple sous bracelet électronique. Il est aujourd'hui la règle pour les peines de six mois ou moins, sauf impossibilité.",
    "origine": {
     "description": "Proposition de loi adoptée par l'Assemblée nationale le 3 avril 2025 et par le Sénat le 1er juillet 2025",
     "source": {
@@ -558,7 +562,12 @@
     }
    ],
    "scrutins": [],
-   "historique": [],
+   "historique": [
+    {
+     "date": "2026-10-12",
+     "note": "Précision corrigée : « la règle pour les courtes peines » devient « la règle pour les peines de six mois ou moins, sauf impossibilité », conformément à la loi du 23 mars 2019 (de six mois à un an, l'aménagement est possible sans être obligatoire)."
+    }
+   ],
    "impact": {
     "changement": "Selon Dalloz Actualité, qui commente un arrêt de la Cour de cassation du 6 avril 2022, une loi du 23 mars 2019 impose en principe d'aménager une peine de prison ferme de 6 mois ou moins, sauf impossibilité, tout refus devant être spécialement motivé. Entre 6 mois et 1 an, l'aménagement est possible sans être obligatoire. La mesure supprimerait cette obligation pour les plus courtes peines.",
     "pour": "Ses partisans estiment qu'une peine qui n'est pas exécutée en prison perd sa crédibilité, et que l'exécution réelle des courtes peines renforcerait la dissuasion et la confiance dans la justice.",
