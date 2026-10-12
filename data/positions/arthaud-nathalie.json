@@ -1828,10 +1828,44 @@
       },
       "code": null,
       "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Interrogée sur la nécessité de réformer Parcoursup et dans quel sens, la candidate répond oui : selon elle la plateforme, censée trier les étudiants selon leurs choix, a ajouté de l'opacité à un système déjà très sélectif. Elle estime que la seule solution, que les gouvernements refusent depuis des années, est de construire des universités et des écoles face à la hausse démographique. La réponse ne parle ni de suppression ni de refonte complète de la plateforme.",
+          "citation_courte": "a contribué à rajouter de l’opacité à un système déjà très sélectif",
+          "reformulation_anonymisee": "Interrogé sur la nécessité de réformer la plateforme d'admission dans le supérieur et dans quel sens, [CANDIDAT] répond oui : selon [CANDIDAT] la plateforme, censée trier les étudiants selon leurs choix, a ajouté de l'opacité à un système déjà très sélectif. [CANDIDAT] estime que la seule solution, que les gouvernements refusent depuis des années, est de construire des universités et des écoles face à la hausse démographique. La réponse ne parle ni de suppression ni de refonte complète de la plateforme.",
+          "citation_anonymisee": "a contribué à rajouter de l’opacité à un système déjà très sélectif",
+          "source": {
+            "url": "https://www.radiofrance.fr/franceinter/presidentielle-2022-voici-les-reponses-de-nathalie-arthaud-aux-questions-sur-la-jeunesse-3199613",
+            "titre": "Présidentielle 2022 : voici les réponses de Nathalie Arthaud aux 💯 questions sur la jeunesse",
+            "date_publication": "2022-04-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-12",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": null,
+          "nature": "non_connu",
+          "justification": "Critique l'opacité et prône la construction d'universités, sans se prononcer sur la suppression ou la refonte de la plateforme (sujet voisin, R4).",
+          "date": "2026-10-12",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": null,
+          "nature": "non_connu",
+          "justification": "Critique l'opacité mais sa solution (construire des universités) ne porte ni sur la suppression ni sur la refonte de la plateforme.",
+          "date": "2026-10-12",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "arbitrage": null,
+      "item_aveugle": "b00a6c14"
     },
     {
       "question_id": "EDU-002",

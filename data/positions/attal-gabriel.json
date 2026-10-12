@@ -1788,12 +1788,60 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": -1,
+      "nature": "nuancee",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Il ne veut pas supprimer Parcoursup : il dit qu'il serait le premier à le demander si cela suffisait à faire disparaître le malaise de la jeunesse. Il souhaite en revanche « faire évoluer » le dispositif : moins de poids du contrôle continu, davantage d'épreuves terminales pour fonder les dossiers et la sélection dans le supérieur, et un parcours d'orientation avec mentorat, tutorat et stages. Il ne propose donc pas de refonte complète de la plateforme.",
+          "citation_courte": "je serai le premier à le demander",
+          "reformulation_anonymisee": "[CANDIDAT] ne veut pas supprimer la plateforme : il dit qu'il serait le premier à le demander si cela suffisait à faire disparaître le malaise de la jeunesse. Il souhaite en revanche la « faire évoluer » : moins de poids du contrôle continu, davantage d'épreuves terminales pour fonder les dossiers et la sélection dans le supérieur, et un parcours d'orientation avec mentorat, tutorat et stages. Il ne propose donc pas de refonte complète de la plateforme.",
+          "citation_anonymisee": "je serai le premier à le demander",
+          "source": {
+            "url": "https://www.bfmtv.com/politique/la-republique-en-marche/presidentielle-gabriel-attal-presente-son-pacte-pour-la-jeunesse-lors-d-un-meeting-et-vise-le-rn-et-lfi_AD-202610100323.html",
+            "titre": "Présidentielle: Gabriel Attal présente son \"pacte pour la jeunesse\" lors d'un meeting et vise le RN et LFI (BFM, AFP)",
+            "date_publication": "2026-10-10",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-12",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Il défend l'existence de la plateforme en rappelant qu'avant elle, les affectations se faisaient par tirage au sort, et rejette l'idée de la supprimer. Il présente le projet de supprimer la plateforme comme une « sélection par l'échec ».",
+          "citation_courte": "Rappelons-nous de ce qui existait avant : le tirage au sort",
+          "reformulation_anonymisee": "Il défend l'existence de la plateforme en rappelant qu'avant elle, les affectations se faisaient par tirage au sort, et rejette l'idée de la supprimer. Il présente le projet de la supprimer comme une « sélection par l'échec ».",
+          "citation_anonymisee": "Rappelons-nous de ce qui existait avant : le tirage au sort",
+          "source": {
+            "url": "https://www.franceinfo.fr/elections/presidentielle/sur-fond-de-colere-lyceenne-gabriel-attal-et-jean-luc-melenchon-poursuivent-leur-duel-a-distance_8232382.html",
+            "titre": "Sur fond de colère lycéenne, Gabriel Attal et Jean-Luc Mélenchon poursuivent leur duel à distance (franceinfo)",
+            "date_publication": "2026-10-11",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-12",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": -1,
+          "nature": "nuancee",
+          "justification": "Rejette la suppression et défend la plateforme tout en voulant la faire évoluer (épreuves terminales, orientation), sans refonte complète : contre-proposition identifiable.",
+          "date": "2026-10-12",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": -1,
+          "nature": "nuancee",
+          "justification": "Rejette la suppression et ne propose qu'une évolution (contrôle continu, épreuves terminales), pas une refonte complète.",
+          "date": "2026-10-12",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "arbitrage": null,
+      "item_aveugle": "6e03ef6f"
     },
     {
       "question_id": "EDU-002",

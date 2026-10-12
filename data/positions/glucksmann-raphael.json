@@ -823,7 +823,7 @@
     },
     {
       "question_id": "EDU-001",
-      "item_aveugle": "8e69b948",
+      "item_aveugle": "38f46d2b",
       "extraits": [
         {
           "reformulation": "Le parti qu'il dirige propose de repenser en profondeur Parcoursup à travers une concertation réunissant parents, étudiants, universités et acteurs de l'éducation, et de renforcer parallèlement l'accompagnement personnalisé à l'orientation en amont. Le texte ne parle pas de supprimer la plateforme.",
@@ -843,17 +843,17 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": -1,
+          "code": 1,
           "nature": "nuancee",
-          "justification": "Veut repenser la plateforme par concertation, sans la supprimer.",
+          "justification": "Propose de repenser en profondeur la plateforme via une concertation, sans suppression ni refonte explicitement intégrale : va dans le sens de l'énoncé de façon partielle.",
           "date": "2026-10-12",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
-          "code": -1,
+          "code": 1,
           "nature": "imprecise",
-          "justification": "Repenser la plateforme sans la supprimer.",
+          "justification": "Veut repenser en profondeur la plateforme par concertation, direction de refonte claire mais contenu non précisé.",
           "date": "2026-10-12",
           "aveugle": true
         },
@@ -863,22 +863,16 @@
         "tire_au_sort": false
       },
       "contestations": [],
-      "version": 1,
-      "code": -1,
+      "version": 2,
+      "code": 1,
       "nature": "imprecise",
       "statut": "arbitre",
       "arbitrage": {
         "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
         "date": "2026-10-12",
-        "code_retenu": -1,
+        "code_retenu": 1,
         "nature_retenue": "imprecise",
-        "motif": "Repenser la plateforme plutôt que la supprimer va à l'encontre de l'énoncé, mais « repenser en profondeur par concertation » ne décrit aucune mesure concrète : imprecise."
-      },
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-12",
-        "verdict": "confirme",
-        "motif": "Repenser Parcoursup par concertation suppose de réformer plutôt que d'abolir la plateforme, direction perceptible contre l'énoncé, mais sans mesure concrète ni rejet explicite de la suppression : −1 imprecise défendable."
+        "motif": "« Repenser en profondeur » par concertation donne une direction de refonte sans suppression ni contenu précis de la refonte : la position ne se reformule pas en mesure concrète, donc +1 imprecise."
       }
     },
     {

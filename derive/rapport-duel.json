@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "6b8d7c25728968a99b387557894220ad883069e0d6803232d5f9f6762adf1a2b",
+  "empreinte_donnees": "82c7d1dfc943ff8833ec09b5c25c5b81304f80d4fb8bc7303000beffbf613ea0",
   "proposition_min": 8,
   "questions_actives": 206,
   "candidats": [
@@ -54,14 +54,14 @@
     },
     {
       "candidat": "attal-gabriel",
-      "propositions": 67,
-      "couverture_banque": 0.325243,
+      "propositions": 68,
+      "couverture_banque": 0.330097,
       "duel_disponible": true,
       "par_theme": {
         "defense": 2,
         "ecologie-energie": 8,
         "economie-dette": 8,
-        "education": 7,
+        "education": 8,
         "fiscalite": 11,
         "immigration": 3,
         "institutions": 5,
@@ -71,11 +71,11 @@
         "union-europeenne": 6
       },
       "par_sens": {
-        "plus": 28,
+        "plus": 29,
         "moins": 39
       },
       "positions_imprecises": 15,
-      "part_imprecise": 0.223881
+      "part_imprecise": 0.220588
     },
     {
       "candidat": "batho-delphine",
@@ -98,14 +98,15 @@
     },
     {
       "candidat": "becht-olivier",
-      "propositions": 1,
-      "couverture_banque": 0.004854,
+      "propositions": 2,
+      "couverture_banque": 0.009709,
       "duel_disponible": false,
       "par_theme": {
-        "ecologie-energie": 1
+        "ecologie-energie": 1,
+        "education": 1
       },
       "par_sens": {
-        "plus": 1,
+        "plus": 2,
         "moins": 0
       },
       "positions_imprecises": 0,

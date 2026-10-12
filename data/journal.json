@@ -169,6 +169,17 @@
       "description": "Codage de Raphaël Glucksmann (vague 3), désigné le 11 octobre 2026. Sources : site place-publique.eu parcouru en entier (97 pages, dont le projet « Acte I » de juin 2025), presse et textes qu'il signe. Dérogation décidée par Mathieu le 12 octobre 2026 : les textes de son parti publiés sur ce site sont admis comme programme_parti bien qu'antérieurs à l'investiture. WikiGlucksmann, synthèse non officielle, n'a servi que de carnet de pistes et n'est jamais cité. 11 extracteurs (Sonnet) : 63 questions sur 206 avec au moins un extrait. Double codage aveugle (Opus, Sonnet) : 57 accords sur 63 (61 sur le code seul), 6 désaccords arbitrés provisoirement par un troisième modèle (Fable). 60 codes publiés (29,1 % des questions actives). Vérification indépendante de ces 60 codes contre la page source : 58 confirmés, 2 corrigés après second arbitrage concordant (IMM-004 +1 imprécise → −1 nuancée ; SAN-017 −1 imprécise → −2 nette), 6 reformulations rendues plus fidèles, un type de source corrigé. Contrôle humain tiré au sort (graine 20261016) : EDU-003, FIS-007, IMM-001, INS-002, INS-004, INS-015. Aucune étape validée par un humain (mode POC).",
       "auteur": "Claude, à la demande de Mathieu",
       "reference": "phase-4, codage de Glucksmann du 12 octobre 2026"
+    },
+    {
+      "date": "2026-10-12",
+      "type": "recodage",
+      "objets": [
+        "data/questions/education.json",
+        "data/positions/*.json"
+      ],
+      "description": "EDU-001 reformulée à la demande de Mathieu : « Parcoursup doit être supprimé. » devient « Parcoursup doit être supprimé ou intégralement retravaillé. » (précision complétée : les ajustements à la marge n'en relèvent pas ; alerte de neutralité ajoutée, l'énoncé réunissant deux options). Extraction complémentaire (Sonnet) pour les 13 candidats sans extrait : 3 trouvés (Attal, Becht, Arthaud). Double codage aveugle (Opus, Sonnet) des 10 candidats ayant au moins un extrait, sur le nouvel énoncé : 9 accords, 1 désaccord de nature arbitré provisoirement (Fable). Changements : Glucksmann −1 imprécise → +1 imprécise (« repenser en profondeur » la plateforme) ; Attal non connu → −1 nuancée (refuse la suppression, veut la faire évoluer) ; Becht non connu → +2 nette (suppression et remplacement). Inchangés : Le Pen, Mélenchon, Roussel +2 ; Ruffin +1 imprécise ; Lisnard, Dupont-Aignan −1 nuancée ; Arthaud non connu (sujet voisin, R4). Vérification indépendante de Glucksmann retirée (faite sur l'ancien énoncé). Aucune étape validée par un humain (mode POC).",
+      "auteur": "Claude, à la demande de Mathieu",
+      "reference": "recodage EDU-001 du 12 octobre 2026"
     }
   ]
 }

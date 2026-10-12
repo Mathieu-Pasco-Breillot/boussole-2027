@@ -1303,16 +1303,16 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "imprecise",
-          "justification": "Veut revenir sur Parcoursup sans dire s'il le supprimerait.",
-          "date": "2026-10-04",
+          "justification": "Veut revenir sur la réforme Parcoursup sans préciser suppression ni remplacement : direction perceptible, mesure non spécifiée.",
+          "date": "2026-10-12",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "imprecise",
-          "justification": "Veut revenir sur Parcoursup sans préciser suppression ni remplacement.",
-          "date": "2026-10-04",
+          "justification": "Veut revenir sur la réforme Parcoursup sans préciser suppression ou remplacement.",
+          "date": "2026-10-12",
           "aveugle": true
         },
         "accord": true
@@ -1322,8 +1322,8 @@
         "tire_au_sort": false
       },
       "contestations": [],
-      "version": 1,
-      "item_aveugle": "9162a6e8"
+      "version": 2,
+      "item_aveugle": "b99bf046"
     },
     {
       "question_id": "EDU-002",

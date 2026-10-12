@@ -2029,18 +2029,12 @@
     },
     {
       "question_id": "EDU-001",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Le compte rendu de 2022 rapporte sa volonté d'abroger Parcoursup et le discours de 2023 le condamne sans réserve (« A bas Parcoursup ! ») : soutien sans réserve à la suppression."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "77af1da3",
+      "item_aveugle": "986e1f02",
       "extraits": [
         {
           "reformulation": "Dans un discours public, il condamne Parcoursup, qu'il décrit comme une « monstrueuse grossièreté » qui transforme l'éducation en marchandise, et conclut par un cri d'opposition. Il n'énonce pas de mesure précise de suppression ni de calendrier : c'est un appel d'ordre oratoire.",
@@ -2076,16 +2070,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Sources concordantes : volonté d'abroger Parcoursup en 2022, condamnation réitérée en 2023.",
-          "date": "2026-10-03",
+          "justification": "Sources concordantes : volonté d'abroger Parcoursup rappelée en 2022 et condamnation explicite en 2023 (« A bas Parcoursup ! »).",
+          "date": "2026-10-12",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Il a rappelé sa volonté d'abroger Parcoursup et le condamne sans réserve, les deux sources concordant.",
-          "date": "2026-10-03",
+          "justification": "Volonté d'abroger Parcoursup et opposition frontale, sources concordantes.",
+          "date": "2026-10-12",
           "aveugle": true
         },
         "accord": true
@@ -2093,7 +2087,13 @@
       "code": 2,
       "nature": "nette",
       "statut": "accord",
-      "arbitrage": null
+      "arbitrage": null,
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-10-04",
+        "verdict": "confirme",
+        "motif": "Le compte rendu de 2022 rapporte sa volonté d'abroger Parcoursup et le discours de 2023 le condamne sans réserve (« A bas Parcoursup ! ») : soutien sans réserve à la suppression."
+      }
     },
     {
       "question_id": "EDU-002",

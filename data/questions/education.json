@@ -19,8 +19,8 @@
    "theme": "education",
    "axe": "economie",
    "sens": 1,
-   "enonce": "Parcoursup doit être supprimé.",
-   "precision": "Parcoursup est la plateforme nationale d'admission dans l'enseignement supérieur après le baccalauréat.",
+   "enonce": "Parcoursup doit être supprimé ou intégralement retravaillé.",
+   "precision": "Parcoursup est la plateforme nationale d'admission dans l'enseignement supérieur après le baccalauréat. Sont visées la suppression de la plateforme ou sa refonte complète ; des ajustements à la marge (transparence, calendrier, extension de l'offre) n'en relèvent pas.",
    "origine": {
     "description": "Programme commun de gauche des législatives de 2024 ; proposition de loi n° 2488 du 17 février 2026",
     "source": {
@@ -39,10 +39,19 @@
     {
      "signalement": "sens discutable : mesure portée des deux côtés de l'axe",
      "decision": "sens +1 par défaut ; sans effet sur le score"
+    },
+    {
+     "signalement": "l'énoncé réunit deux options (suppression, refonte complète), alors que la règle est une seule mesure par énoncé",
+     "decision": "choix de Mathieu (2026-10-12) : un seul énoncé, les deux options visant la fin de Parcoursup dans sa forme actuelle ; positions recodées sur le nouvel énoncé"
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [
+    {
+     "date": "2026-10-12",
+     "ancien_enonce": "Parcoursup doit être supprimé."
+    }
+   ]
   },
   {
    "id": "EDU-002",

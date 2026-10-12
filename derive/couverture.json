@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "6b8d7c25728968a99b387557894220ad883069e0d6803232d5f9f6762adf1a2b",
+  "empreinte_donnees": "82c7d1dfc943ff8833ec09b5c25c5b81304f80d4fb8bc7303000beffbf613ea0",
   "provisoire": true,
   "questions_actives": 206,
   "seuil_evalue": 0.4,
@@ -10,10 +10,10 @@
       "statut_evaluation": "codage_en_attente",
       "positions_disponibles": true,
       "questions_avec_position": 206,
-      "avec_extrait": 68,
+      "avec_extrait": 69,
       "codes_publies": 61,
       "arbitrages_en_attente": 0,
-      "non_connu_apres_accord": 5,
+      "non_connu_apres_accord": 6,
       "taux_couverture": 0.296117,
       "seuil_evalue_atteint": false,
       "natures": {
@@ -168,21 +168,21 @@
       "statut_evaluation": "codage_en_attente",
       "positions_disponibles": true,
       "questions_avec_position": 206,
-      "avec_extrait": 73,
-      "codes_publies": 67,
+      "avec_extrait": 74,
+      "codes_publies": 68,
       "arbitrages_en_attente": 0,
       "non_connu_apres_accord": 1,
-      "taux_couverture": 0.325243,
+      "taux_couverture": 0.330097,
       "seuil_evalue_atteint": false,
       "natures": {
         "nette": 19,
-        "nuancee": 33,
+        "nuancee": 34,
         "imprecise": 15
       },
       "parts_natures": {
-        "nette": 0.283582,
-        "nuancee": 0.492537,
-        "imprecise": 0.223881
+        "nette": 0.279412,
+        "nuancee": 0.5,
+        "imprecise": 0.220588
       },
       "par_theme": {
         "defense": {
@@ -202,8 +202,8 @@
         },
         "education": {
           "questions_actives": 18,
-          "codes_publies": 7,
-          "taux_couverture": 0.388889
+          "codes_publies": 8,
+          "taux_couverture": 0.444444
         },
         "fiscalite": {
           "questions_actives": 19,
@@ -326,14 +326,14 @@
       "statut_evaluation": "codage_en_attente",
       "positions_disponibles": true,
       "questions_avec_position": 206,
-      "avec_extrait": 1,
-      "codes_publies": 1,
+      "avec_extrait": 2,
+      "codes_publies": 2,
       "arbitrages_en_attente": 0,
       "non_connu_apres_accord": 0,
-      "taux_couverture": 0.004854,
+      "taux_couverture": 0.009709,
       "seuil_evalue_atteint": false,
       "natures": {
-        "nette": 1,
+        "nette": 2,
         "nuancee": 0,
         "imprecise": 0
       },
@@ -360,8 +360,8 @@
         },
         "education": {
           "questions_actives": 18,
-          "codes_publies": 0,
-          "taux_couverture": 0
+          "codes_publies": 1,
+          "taux_couverture": 0.055556
         },
         "fiscalite": {
           "questions_actives": 19,

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "6b8d7c25728968a99b387557894220ad883069e0d6803232d5f9f6762adf1a2b",
+  "empreinte_donnees": "82c7d1dfc943ff8833ec09b5c25c5b81304f80d4fb8bc7303000beffbf613ea0",
   "provisoire": true,
   "codeurs": {
     "codeur_1": [
@@ -11,34 +11,34 @@
     ]
   },
   "global": {
-    "couples_codes": 963,
-    "accord_code_et_nature": 752,
-    "taux_accord": 0.780893,
-    "accord_code_seul": 818,
-    "taux_accord_code_seul": 0.849429,
-    "couples_pour_kappa": 881,
-    "kappa_pondere_quadratique": 0.953223,
+    "couples_codes": 966,
+    "accord_code_et_nature": 755,
+    "taux_accord": 0.781573,
+    "accord_code_seul": 821,
+    "taux_accord_code_seul": 0.849896,
+    "couples_pour_kappa": 883,
+    "kappa_pondere_quadratique": 0.953307,
     "arbitrages_en_attente": 0
   },
   "par_vague": {
     "1": {
-      "couples_codes": 735,
-      "accord_code_et_nature": 568,
-      "taux_accord": 0.772789,
-      "accord_code_seul": 610,
-      "taux_accord_code_seul": 0.829932,
-      "couples_pour_kappa": 669,
-      "kappa_pondere_quadratique": 0.943184,
+      "couples_codes": 737,
+      "accord_code_et_nature": 570,
+      "taux_accord": 0.773406,
+      "accord_code_seul": 612,
+      "taux_accord_code_seul": 0.830393,
+      "couples_pour_kappa": 670,
+      "kappa_pondere_quadratique": 0.94325,
       "arbitrages_en_attente": 0
     },
     "2": {
-      "couples_codes": 165,
-      "accord_code_et_nature": 127,
-      "taux_accord": 0.769697,
-      "accord_code_seul": 147,
-      "taux_accord_code_seul": 0.890909,
-      "couples_pour_kappa": 153,
-      "kappa_pondere_quadratique": 0.982658,
+      "couples_codes": 166,
+      "accord_code_et_nature": 128,
+      "taux_accord": 0.771084,
+      "accord_code_seul": 148,
+      "taux_accord_code_seul": 0.891566,
+      "couples_pour_kappa": 154,
+      "kappa_pondere_quadratique": 0.982788,
       "arbitrages_en_attente": 0
     },
     "3": {
@@ -48,17 +48,17 @@
       "accord_code_seul": 61,
       "taux_accord_code_seul": 0.968254,
       "couples_pour_kappa": 59,
-      "kappa_pondere_quadratique": 0.995838,
+      "kappa_pondere_quadratique": 0.99578,
       "arbitrages_en_attente": 0
     }
   },
   "par_candidat": {
     "arthaud-nathalie": {
-      "couples_codes": 68,
-      "accord_code_et_nature": 50,
-      "taux_accord": 0.735294,
-      "accord_code_seul": 52,
-      "taux_accord_code_seul": 0.764706,
+      "couples_codes": 69,
+      "accord_code_et_nature": 51,
+      "taux_accord": 0.73913,
+      "accord_code_seul": 53,
+      "taux_accord_code_seul": 0.768116,
       "couples_pour_kappa": 60,
       "kappa_pondere_quadratique": 0.893083,
       "arbitrages_en_attente": 0
@@ -74,13 +74,13 @@
       "arbitrages_en_attente": 0
     },
     "attal-gabriel": {
-      "couples_codes": 73,
-      "accord_code_et_nature": 54,
-      "taux_accord": 0.739726,
-      "accord_code_seul": 57,
-      "taux_accord_code_seul": 0.780822,
-      "couples_pour_kappa": 65,
-      "kappa_pondere_quadratique": 0.940305,
+      "couples_codes": 74,
+      "accord_code_et_nature": 55,
+      "taux_accord": 0.743243,
+      "accord_code_seul": 58,
+      "taux_accord_code_seul": 0.783784,
+      "couples_pour_kappa": 66,
+      "kappa_pondere_quadratique": 0.940881,
       "arbitrages_en_attente": 0
     },
     "batho-delphine": {
@@ -94,13 +94,13 @@
       "arbitrages_en_attente": 0
     },
     "becht-olivier": {
-      "couples_codes": 1,
-      "accord_code_et_nature": 1,
+      "couples_codes": 2,
+      "accord_code_et_nature": 2,
       "taux_accord": 1,
-      "accord_code_seul": 1,
+      "accord_code_seul": 2,
       "taux_accord_code_seul": 1,
-      "couples_pour_kappa": 1,
-      "kappa_pondere_quadratique": null,
+      "couples_pour_kappa": 2,
+      "kappa_pondere_quadratique": 1,
       "arbitrages_en_attente": 0
     },
     "bouamrane-karim": {
@@ -140,7 +140,7 @@
       "accord_code_seul": 61,
       "taux_accord_code_seul": 0.968254,
       "couples_pour_kappa": 59,
-      "kappa_pondere_quadratique": 0.995838,
+      "kappa_pondere_quadratique": 0.99578,
       "arbitrages_en_attente": 0
     },
     "lalanne-francis": {

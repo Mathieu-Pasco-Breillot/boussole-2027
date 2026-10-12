@@ -2009,14 +2009,8 @@
     },
     {
       "question_id": "EDU-001",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Elle plaide pour la suppression de Parcoursup : +2 nette. La source date de la campagne de 2022."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
@@ -2044,22 +2038,28 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Se prononce pour la suppression de Parcoursup.",
-          "date": "2026-10-04",
+          "justification": "Se prononce explicitement pour la suppression de la plateforme ; l'absence de détail sur le remplacement ne réduit pas la mesure énoncée.",
+          "date": "2026-10-12",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Pour la suppression de la plateforme.",
-          "date": "2026-10-04",
+          "justification": "Se prononce explicitement pour la suppression de la plateforme, le dispositif de remplacement non détaillé ne limitant pas la position.",
+          "date": "2026-10-12",
           "aveugle": true
         },
         "accord": true
       },
       "arbitrage": null,
-      "item_aveugle": "354a0946"
+      "item_aveugle": "069a074c",
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-10-04",
+        "verdict": "confirme",
+        "motif": "Elle plaide pour la suppression de Parcoursup : +2 nette. La source date de la campagne de 2022."
+      }
     },
     {
       "question_id": "EDU-002",

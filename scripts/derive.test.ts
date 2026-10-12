@@ -59,11 +59,11 @@ describe('désaccord non arbitré = « non connu » (D8)', () => {
     expect(estPublie({ ...(position('candidat-a', 'RET-001', 1) as object), code: 1 } as never)).toBe(true);
   });
 
-  it('sur les données réelles (phase 4, vagues 1 à 3 et Glucksmann, 20 candidats) : 900 codes publiés, aucun arbitrage en attente', () => {
+  it('sur les données réelles (phase 4, vagues 1 à 3 et Glucksmann, 20 candidats, recodage EDU-001) : 902 codes publiés, aucun arbitrage en attente', () => {
     const couverture = calculerCouverture(reel) as { candidats: Record<string, { codes_publies: number; arbitrages_en_attente: number }> };
     const total = Object.values(couverture.candidats).reduce((s, c) => s + c.codes_publies, 0);
     const attente = Object.values(couverture.candidats).reduce((s, c) => s + c.arbitrages_en_attente, 0);
-    expect(total).toBe(900);
+    expect(total).toBe(902);
     expect(attente).toBe(0);
   });
 });
@@ -93,11 +93,11 @@ describe('kappa pondéré quadratique', () => {
 describe('reproduit les chiffres publiés de la phase 4 (vagues 1 à 3, 11 thèmes, 4 octobre 2026)', () => {
   const accord = calculerAccordCodeurs(reel);
 
-  it('accord global : 963 couples, 752 accords (78,1 %), code seul 84,9 %, kappa 0,95', () => {
-    expect(accord.global.couples_codes).toBe(963);
-    expect(accord.global.accord_code_et_nature).toBe(752);
-    expect(arrondi3(accord.global.taux_accord)).toBe(0.781);
-    expect(arrondi3(accord.global.taux_accord_code_seul)).toBe(0.849);
+  it('accord global : 966 couples, 755 accords (78,2 %), code seul 85,0 %, kappa 0,95', () => {
+    expect(accord.global.couples_codes).toBe(966);
+    expect(accord.global.accord_code_et_nature).toBe(755);
+    expect(arrondi3(accord.global.taux_accord)).toBe(0.782);
+    expect(arrondi3(accord.global.taux_accord_code_seul)).toBe(0.85);
     expect(arrondi3(accord.global.kappa_pondere_quadratique)).toBe(0.953);
     // 12 arbitrages du pilote + 121 (vague 1) + 18 (vague 2) + 17 (vague 3) arbitrages provisoires par un troisième modèle, validation humaine en attente ;
     // un arbitrage disparaît le 4 octobre 2026 avec son extrait, retiré par la vérification indépendante (agrégateur) ;
@@ -109,8 +109,8 @@ describe('reproduit les chiffres publiés de la phase 4 (vagues 1 à 3, 11 thèm
   });
 
   it.each([
-    ['arthaud-nathalie', 68, 50, 0.893, 0],
-    ['attal-gabriel', 73, 54, 0.94, 0],
+    ['arthaud-nathalie', 69, 51, 0.893, 0],
+    ['attal-gabriel', 74, 55, 0.941, 0],
     ['dupont-aignan-nicolas', 83, 67, 0.936, 0],
     ['le-pen-marine', 97, 75, 0.946, 0],
     ['lisnard-david', 88, 69, 0.899, 0],
@@ -128,8 +128,8 @@ describe('reproduit les chiffres publiés de la phase 4 (vagues 1 à 3, 11 thèm
 
   it.each([
     // candidat, avec extrait, codes publiés, nette, nuancée, imprécise, « non connu » malgré un extrait (règle R4)
-    ['arthaud-nathalie', 68, 61, 22, 17, 22, 5],
-    ['attal-gabriel', 73, 67, 19, 33, 15, 1],
+    ['arthaud-nathalie', 69, 61, 22, 17, 22, 6],
+    ['attal-gabriel', 74, 68, 19, 34, 15, 1],
     ['dupont-aignan-nicolas', 83, 82, 40, 31, 11, 1],
     ['le-pen-marine', 97, 94, 36, 45, 13, 1],
     ['lisnard-david', 88, 80, 29, 34, 17, 5],

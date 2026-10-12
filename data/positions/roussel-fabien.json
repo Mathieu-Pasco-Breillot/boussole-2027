@@ -1761,18 +1761,12 @@
     },
     {
       "question_id": "EDU-001",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Interrogé par L'Etudiant, il répond « Supprimer Parcoursup et le numerus clausus » ; Le Parisien rapporte que son programme prévoit de « supprimer Parcoursup ». Engagement net (campagne 2022, date recevable)."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "89e69b30",
+      "item_aveugle": "b180d344",
       "extraits": [
         {
           "reformulation": "Interrogé sur la mixité sociale dans l'enseignement supérieur, le candidat répond qu'il faut supprimer Parcoursup ainsi que le numerus clausus (numerus apertus), et créer des places dans l'enseignement supérieur et la recherche. Engagement de programme présenté comme une mesure à mettre en œuvre s'il est élu.",
@@ -1808,16 +1802,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "S'engage à supprimer Parcoursup.",
-          "date": "2026-10-03",
+          "justification": "Engagement de programme à supprimer Parcoursup, confirmé par deux sources concordantes.",
+          "date": "2026-10-12",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Il veut supprimer Parcoursup, engagement répété dans deux sources.",
-          "date": "2026-10-03",
+          "justification": "Engagement de supprimer Parcoursup, répété dans les deux sources.",
+          "date": "2026-10-12",
           "aveugle": true
         },
         "accord": true
@@ -1825,7 +1819,13 @@
       "code": 2,
       "nature": "nette",
       "statut": "accord",
-      "arbitrage": null
+      "arbitrage": null,
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-10-04",
+        "verdict": "confirme",
+        "motif": "Interrogé par L'Etudiant, il répond « Supprimer Parcoursup et le numerus clausus » ; Le Parisien rapporte que son programme prévoit de « supprimer Parcoursup ». Engagement net (campagne 2022, date recevable)."
+      }
     },
     {
       "question_id": "EDU-002",

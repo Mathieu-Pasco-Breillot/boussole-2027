@@ -845,17 +845,51 @@
     },
     {
       "question_id": "EDU-001",
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
+      "code": 2,
+      "nature": "nette",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Interrogé sur le mouvement lycéen contre Parcoursup, il juge ce mouvement légitime sur le fond et dit que Parcoursup, qualifié de boîte noire, doit être supprimé et remplacé. Il évoque aussi de mieux prendre en compte les épreuves du baccalauréat et d'envisager une épreuve de spécialité pour déterminer l'orientation des élèves (piste évoquée, sans détail).",
+          "citation_courte": "Parcoursup est une boîte noire qui doit être supprimée et remplacée",
+          "reformulation_anonymisee": "Interrogé sur le mouvement lycéen contre la plateforme d'admission dans le supérieur, [CANDIDAT] juge ce mouvement légitime sur le fond et dit que la plateforme, qualifiée de boîte noire, doit être supprimée et remplacée. [CANDIDAT] évoque aussi de mieux prendre en compte les épreuves du baccalauréat et d'envisager une épreuve de spécialité pour déterminer l'orientation des élèves (piste évoquée, sans détail).",
+          "citation_anonymisee": "La plateforme est une boîte noire qui doit être supprimée et remplacée",
+          "source": {
+            "url": "https://www.sudradio.fr/politique/olivier-becht-je-suis-candidat-a-lelection-presidentielle-et-jirai-jusquau-bout",
+            "titre": "Olivier Becht : « Je suis candidat à l'élection présidentielle et j'irai jusqu'au bout ! » - Sud Radio",
+            "date_publication": "2026-10-11",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-12",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": 2,
+          "nature": "nette",
+          "justification": "Affirme que la plateforme doit être supprimée et remplacée.",
+          "date": "2026-10-12",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": 2,
+          "nature": "nette",
+          "justification": "Dit que la plateforme doit être supprimée et remplacée.",
+          "date": "2026-10-12",
+          "aveugle": true
+        },
+        "accord": true
+      },
       "arbitrage": null,
       "controle_humain": {
         "tire_au_sort": false
       },
       "contestations": [],
-      "version": 1
+      "version": 1,
+      "item_aveugle": "180a9f21"
     },
     {
       "question_id": "EDU-002",

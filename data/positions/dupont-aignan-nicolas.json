@@ -1883,18 +1883,12 @@
     },
     {
       "question_id": "EDU-001",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "La source indique qu'il garderait Parcoursup en le réformant (transparence des algorithmes locaux), ce qui contredit la suppression avec une condition identifiable."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "99a12993",
+      "item_aveugle": "9b1836d1",
       "extraits": [
         {
           "reformulation": "Un article de presse comparant les programmes 2022 indique que le candidat ne propose pas de supprimer Parcoursup : il le conserverait en ajoutant plus de transparence sur les algorithmes locaux (position présentée comme identique à celle d'une autre candidate).",
@@ -1916,16 +1910,16 @@
           "modele": "claude-opus-5-5",
           "code": -1,
           "nature": "nuancee",
-          "justification": "Conserverait Parcoursup en y ajoutant de la transparence : le statu quo réformé contredit la suppression.",
-          "date": "2026-10-03",
+          "justification": "Ne propose pas de supprimer Parcoursup et le conserverait en ajoutant de la transparence, ajustement à la marge exclu par l'énoncé.",
+          "date": "2026-10-12",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": -1,
           "nature": "nuancee",
-          "justification": "Conserverait Parcoursup en y ajoutant de la transparence sur les algorithmes locaux.",
-          "date": "2026-10-03",
+          "justification": "Conserve Parcoursup en ajoutant de la transparence, ce qui relève d'un ajustement à la marge.",
+          "date": "2026-10-12",
           "aveugle": true
         },
         "accord": true
@@ -1933,7 +1927,13 @@
       "code": -1,
       "nature": "nuancee",
       "statut": "accord",
-      "arbitrage": null
+      "arbitrage": null,
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-10-04",
+        "verdict": "confirme",
+        "motif": "La source indique qu'il garderait Parcoursup en le réformant (transparence des algorithmes locaux), ce qui contredit la suppression avec une condition identifiable."
+      }
     },
     {
       "question_id": "EDU-002",
