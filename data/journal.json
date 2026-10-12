@@ -159,6 +159,16 @@
       "description": "Primaire PS – Place publique : Raphaël Glucksmann l'emporte dès le premier tour (résultats annoncés le 11 octobre 2026, environ 66 % des voix, devant Olivier Faure à environ 14,5 %, Ségolène Royal, Emmanuel Maurel et Jérôme Guedj). Glucksmann passe à « investi », codage en attente (vague 3), conformément à la règle R2 ; Faure, Royal, Maurel et Guedj passent à « retiré », non évalués avec le nouveau motif « battu à une primaire ». Primaire marquée terminée. Sources : CNews et Time France, 11-12 octobre 2026.",
       "auteur": "Claude, à la demande de Mathieu",
       "reference": "critère d'inclusion v1, R2"
+    },
+    {
+      "date": "2026-10-12",
+      "type": "recodage",
+      "objets": [
+        "data/positions/glucksmann-raphael.json"
+      ],
+      "description": "Codage de Raphaël Glucksmann (vague 3), désigné le 11 octobre 2026. Sources : site place-publique.eu parcouru en entier (97 pages, dont le projet « Acte I » de juin 2025), presse et textes qu'il signe. Dérogation décidée par Mathieu le 12 octobre 2026 : les textes de son parti publiés sur ce site sont admis comme programme_parti bien qu'antérieurs à l'investiture. WikiGlucksmann, synthèse non officielle, n'a servi que de carnet de pistes et n'est jamais cité. 11 extracteurs (Sonnet) : 63 questions sur 206 avec au moins un extrait. Double codage aveugle (Opus, Sonnet) : 57 accords sur 63 (61 sur le code seul), 6 désaccords arbitrés provisoirement par un troisième modèle (Fable). 60 codes publiés (29,1 % des questions actives). Vérification indépendante de ces 60 codes contre la page source : 58 confirmés, 2 corrigés après second arbitrage concordant (IMM-004 +1 imprécise → −1 nuancée ; SAN-017 −1 imprécise → −2 nette), 6 reformulations rendues plus fidèles, un type de source corrigé. Contrôle humain tiré au sort (graine 20261016) : EDU-003, FIS-007, IMM-001, INS-002, INS-004, INS-015. Aucune étape validée par un humain (mode POC).",
+      "auteur": "Claude, à la demande de Mathieu",
+      "reference": "phase-4, codage de Glucksmann du 12 octobre 2026"
     }
   ]
 }

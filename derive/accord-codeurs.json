@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "d723f455867d039ea551a4908861869f0aa91947851458415aa437358e26378c",
+  "empreinte_donnees": "6b8d7c25728968a99b387557894220ad883069e0d6803232d5f9f6762adf1a2b",
   "provisoire": true,
   "codeurs": {
     "codeur_1": [
@@ -11,13 +11,13 @@
     ]
   },
   "global": {
-    "couples_codes": 900,
-    "accord_code_et_nature": 695,
-    "taux_accord": 0.772222,
-    "accord_code_seul": 757,
-    "taux_accord_code_seul": 0.841111,
-    "couples_pour_kappa": 822,
-    "kappa_pondere_quadratique": 0.950177,
+    "couples_codes": 963,
+    "accord_code_et_nature": 752,
+    "taux_accord": 0.780893,
+    "accord_code_seul": 818,
+    "taux_accord_code_seul": 0.849429,
+    "couples_pour_kappa": 881,
+    "kappa_pondere_quadratique": 0.953223,
     "arbitrages_en_attente": 0
   },
   "par_vague": {
@@ -39,6 +39,16 @@
       "taux_accord_code_seul": 0.890909,
       "couples_pour_kappa": 153,
       "kappa_pondere_quadratique": 0.982658,
+      "arbitrages_en_attente": 0
+    },
+    "3": {
+      "couples_codes": 63,
+      "accord_code_et_nature": 57,
+      "taux_accord": 0.904762,
+      "accord_code_seul": 61,
+      "taux_accord_code_seul": 0.968254,
+      "couples_pour_kappa": 59,
+      "kappa_pondere_quadratique": 0.995838,
       "arbitrages_en_attente": 0
     }
   },
@@ -121,6 +131,16 @@
       "taux_accord_code_seul": 1,
       "couples_pour_kappa": 2,
       "kappa_pondere_quadratique": null,
+      "arbitrages_en_attente": 0
+    },
+    "glucksmann-raphael": {
+      "couples_codes": 63,
+      "accord_code_et_nature": 57,
+      "taux_accord": 0.904762,
+      "accord_code_seul": 61,
+      "taux_accord_code_seul": 0.968254,
+      "couples_pour_kappa": 59,
+      "kappa_pondere_quadratique": 0.995838,
       "arbitrages_en_attente": 0
     },
     "lalanne-francis": {
@@ -236,10 +256,10 @@
   },
   "arbitrages": {
     "en_attente": 0,
-    "rendus": 205
+    "rendus": 211
   },
   "controle_humain": {
-    "tires_au_sort": 84,
+    "tires_au_sort": 90,
     "effectues": 9,
     "corrections": 0
   }

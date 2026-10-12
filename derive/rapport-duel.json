@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "d723f455867d039ea551a4908861869f0aa91947851458415aa437358e26378c",
+  "empreinte_donnees": "6b8d7c25728968a99b387557894220ad883069e0d6803232d5f9f6762adf1a2b",
   "proposition_min": 8,
   "questions_actives": 206,
   "candidats": [
@@ -169,6 +169,31 @@
       },
       "positions_imprecises": 1,
       "part_imprecise": 0.5
+    },
+    {
+      "candidat": "glucksmann-raphael",
+      "propositions": 60,
+      "couverture_banque": 0.291262,
+      "duel_disponible": true,
+      "par_theme": {
+        "defense": 4,
+        "ecologie-energie": 12,
+        "economie-dette": 3,
+        "education": 4,
+        "fiscalite": 5,
+        "immigration": 6,
+        "institutions": 6,
+        "retraites": 4,
+        "sante": 2,
+        "securite": 7,
+        "union-europeenne": 7
+      },
+      "par_sens": {
+        "plus": 43,
+        "moins": 17
+      },
+      "positions_imprecises": 16,
+      "part_imprecise": 0.266667
     },
     {
       "candidat": "lalanne-francis",
