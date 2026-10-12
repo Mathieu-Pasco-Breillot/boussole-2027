@@ -65,7 +65,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -117,7 +117,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -163,7 +163,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -215,7 +215,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -268,7 +268,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -326,7 +326,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -378,7 +378,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -431,7 +431,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -466,7 +466,7 @@
    "impact": {
     "changement": "Un nouvel article de la Constitution permettrait à la Collectivité de Corse, si une loi d'application l'y autorise, d'adapter les lois nationales et de fixer ses propres règles dans ses compétences. Nationalité, justice, droit pénal, défense, sécurité, monnaie et droit électoral resteraient exclus. Les électeurs inscrits en Corse seraient consultés sur le statut. Restent un vote identique du Sénat, puis un référendum ou un vote du Congrès aux trois cinquièmes.",
     "pour": "Ses partisans estiment que l'insularité et le relief de la Corse justifient des règles adaptées que l'État tarde à accorder : sur 72 demandes d'adaptation en quinze ans, seules 13 ont abouti, selon un rapport sénatorial.",
-    "contre": "Ses opposants y voient une atteinte à l'unité de la République et à l'égalité devant la loi, qui ne s'appliquerait plus de la même façon partout. Ils craignent aussi un précédent que d'autres régions pourraient réclamer.",
+    "contre": "Ses opposants y voient une atteinte à l'unité de la République et à l'égalité devant la loi. Ils jugent le contrôle prévu insuffisant pour un pouvoir de faire la loi et craignent un précédent pour d'autres régions.",
     "sources": [
      {
       "url": "https://www.senat.fr/leg/pjl25-782.html",
@@ -491,9 +491,15 @@
       "titre": "Autonomie de la Corse : la réforme constitutionnelle va-t-elle s'échouer au Sénat ?",
       "date_consultation": "2026-10-12",
       "nature": "secondaire"
+     },
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2697/CION_LOIS/CL40",
+      "titre": "Amendement n° CL40 au projet de loi constitutionnelle pour une Corse autonome au sein de la République (n° 2697)",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -502,7 +508,7 @@
    "axe": "institutions",
    "sens": 1,
    "enonce": "Toute personne condamnée pour corruption ou atteinte à la probité doit être interdite de candidature aux élections municipales.",
-   "precision": "Aujourd'hui, l'inéligibilité est une peine prononcée par le juge, au cas par cas.",
+   "precision": "Aujourd'hui, l'inéligibilité est une peine prononcée par le juge. Pour les atteintes à la probité, elle est en principe obligatoire depuis 2017, mais le juge peut l'écarter par une décision spécialement motivée.",
    "origine": {
     "description": "Proposition de loi n° 1934 du 14 octobre 2025 (limitée aux élections municipales)",
     "source": {
@@ -528,10 +534,14 @@
     {
      "date": "2026-10-03",
      "ancien_enonce": "Toute personne condamnée pour corruption ou atteinte à la probité doit être interdite de candidature aux élections."
+    },
+    {
+     "date": "2026-10-12",
+     "note": "Précision complétée : l'inéligibilité est en principe obligatoire pour les atteintes à la probité depuis 2017 (art. 131-26-2 du code pénal), le juge pouvant l'écarter par décision motivée. L'ancienne précision parlait d'une peine prononcée « au cas par cas »."
     }
    ],
    "impact": {
-    "changement": "Depuis 2017, le juge doit déjà prononcer une inéligibilité temporaire en cas d'atteinte à la probité, mais il peut l'écarter par une décision spécialement motivée. La mesure rendrait automatique l'interdiction de se présenter aux municipales pour toute personne condamnée pour corruption ou atteinte à la probité, sans appréciation du juge. Son application supposerait de vérifier le casier des candidats : aux municipales de 2020, il n'a été demandé que pour 6 % des quelque 900 000 candidatures.",
+    "changement": "La mesure rendrait automatique l'interdiction de se présenter aux municipales pour toute personne condamnée pour corruption ou atteinte à la probité, sans que le juge puisse l'écarter. Son application supposerait de vérifier le casier des candidats : aux municipales de 2020, il n'a été demandé que pour 6 % des quelque 900 000 candidatures.",
     "pour": "Pour ses défenseurs, un élu local gère de l'argent public et doit être irréprochable ; une règle automatique, identique pour tous, renforcerait la confiance des électeurs et éviterait des décisions variables d'un tribunal à l'autre.",
     "contre": "Ses opposants rappellent que la Constitution impose d'adapter chaque peine à la personne et aux faits : une interdiction automatique risquerait d'être censurée et frapperait de la même façon une faute mineure et une corruption grave.",
     "sources": [
@@ -554,7 +564,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -610,7 +620,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -663,7 +673,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -725,7 +735,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -777,7 +787,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -833,7 +843,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -895,7 +905,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -957,7 +967,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -1026,7 +1036,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   }
  ]

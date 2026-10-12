@@ -191,6 +191,16 @@
       "description": "Pilote de l'encart « Impact » sur les 18 questions actives du thème Institutions, à la demande de Mathieu : champ impact (changement, pour, contre, sources, statut « pilote »). Rédaction par trois sous-agents Opus avec recherche web, relecture aveugle Sonnet (14 ok, 4 corrections appliquées : INS-002, INS-005, INS-010, INS-015). Non encore validé par un humain.",
       "auteur": "Claude, à la demande de Mathieu",
       "reference": "pilote impact institutions du 12 octobre 2026"
+    },
+    {
+      "date": "2026-10-12",
+      "type": "ajout_impact",
+      "objets": [
+        "data/questions/institutions.json"
+      ],
+      "description": "Encart Impact du thème Institutions validé par Mathieu (statut « valide »). Ajustements : argument « contrôle insuffisant » ajouté au Contre d'INS-009 ; Précision d'INS-010 complétée (inéligibilité en principe obligatoire pour les atteintes à la probité depuis 2017) et Impact allégé en conséquence.",
+      "auteur": "Claude, validé par Mathieu",
+      "reference": "validation impact institutions du 12 octobre 2026"
     }
   ]
 }
