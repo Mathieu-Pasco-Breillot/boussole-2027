@@ -46,7 +46,39 @@
      "date": "2026-10-03",
      "ancien_enonce": "Les travailleurs sans papiers doivent être régularisés."
     }
-   ]
+   ],
+   "impact": {
+    "changement": "En 2025, 28 610 étrangers ont été régularisés, tous motifs confondus, selon la Direction générale des étrangers en France. Le ministère de l'Intérieur estime à environ 700 000 le nombre de personnes sans titre. La voie des métiers en tension, créée en 2024 et expérimentale jusqu'à fin 2026, exige trois ans de résidence et douze mois de travail sur les vingt-quatre derniers. La mesure étendrait la régularisation à tous les travailleurs sans titre.",
+    "pour": "Ses partisans estiment que des personnes qui travaillent déjà, souvent dans des secteurs qui peinent à recruter, doivent obtenir un statut, ce qui réduirait aussi le travail non déclaré et l'exploitation par certains employeurs.",
+    "contre": "Ses opposants craignent qu'une régularisation générale crée un « appel d'air » et attire de nouvelles arrivées irrégulières ; ils préfèrent examiner chaque dossier au cas par cas, selon des critères précis.",
+    "sources": [
+     {
+      "url": "https://www.publicsenat.fr/actualites/societe/immigration-titres-de-sejour-en-nette-hausse-et-regularisations-en-baisse-sur-lannee-2025",
+      "titre": "Immigration : titres de séjour en nette hausse et régularisations en baisse sur l'année 2025 (Public Sénat, 27 janvier 2026)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.publicsenat.fr/actualites/politique/immigration-a-quoi-correspond-la-proposition-dolivier-faure-de-regulariser-400-000-travailleurs-sans-papiers",
+      "titre": "Immigration : à quoi correspond la proposition d'Olivier Faure de régulariser 400 000 travailleurs sans-papiers ? (Public Sénat, 17 septembre 2026)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/17/questions/QANR5L17QE6781",
+      "titre": "Question n°6781 : Mise en œuvre de l'article L. 435-4 du CESEDA relatif aux métiers en tension",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://novlaw.fr/loi-immigration-2024-mesures-restant-apres-la-decision-du-conseil-constitutionnel/",
+      "titre": "Loi immigration 2024 : Mesures restant après la décision du Conseil constitutionnel",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "IMM-002",
@@ -76,7 +108,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Le Conseil constitutionnel a censuré en totalité environ trente et un articles de la loi du 26 janvier 2024. Restent notamment, selon un site juridique, une épreuve de français et un examen civique pour certains titres de séjour, des amendes jusqu'à 20 000 € pour les employeurs d'étrangers sans titre, des mesures d'intégration, et la régularisation dans les métiers en tension. L'abrogation viserait l'ensemble de ces dispositions encore en vigueur.",
+    "pour": "Ses partisans, aux motivations opposées, jugent la loi soit trop restrictive envers les étrangers, soit insuffisante pour réduire l'immigration, et veulent la remplacer par un autre texte.",
+    "contre": "Ses opposants estiment que l'abrogation ferait disparaître des outils déjà en place, comme l'exigence de français ou les sanctions contre les employeurs, et préfèrent amender la loi.",
+    "sources": [
+     {
+      "url": "https://www.conseil-constitutionnel.fr/decision/2024/2023863DC.htm",
+      "titre": "Décision n° 2023-863 DC du 25 janvier 2024 | Conseil constitutionnel",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://novlaw.fr/loi-immigration-2024-mesures-restant-apres-la-decision-du-conseil-constitutionnel/",
+      "titre": "Loi immigration 2024 : Mesures restant après la décision du Conseil constitutionnel",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/17/questions/QANR5L17QE6781",
+      "titre": "Question n°6781 : Mise en œuvre de l'article L. 435-4 du CESEDA relatif aux métiers en tension",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "IMM-003",
@@ -102,7 +160,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Les citoyens européens votent aux municipales mais ne peuvent être ni maire ni adjoint, ni participer à l'élection des sénateurs (article 88-3 de la Constitution). En 1992, le Conseil constitutionnel a lié ce vote à l'élection du Sénat. Une révision exige un texte voté dans les mêmes termes par les deux assemblées, puis un référendum ou, selon les cas, un vote du Congrès aux trois cinquièmes. Une proposition sénatoriale de 2011 prévoyait plus de cinq ans de résidence.",
+    "pour": "Ses partisans estiment qu'un habitant installé durablement, qui participe à la vie locale et paie des impôts locaux, doit pouvoir choisir ses élus municipaux, comme les ressortissants européens.",
+    "contre": "Ses opposants estiment que le droit de vote est lié à la nationalité, d'autant que les élus municipaux participent à l'élection des sénateurs ; pour eux, la voie normale reste la naturalisation.",
+    "sources": [
+     {
+      "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+      "titre": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur | Conseil constitutionnel",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.conseil-constitutionnel.fr/decision/1992/92308DC.htm",
+      "titre": "Décision n° 92-308 DC du 9 avril 1992 | Conseil constitutionnel",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.senat.fr/leg/ppl10-288.pdf",
+      "titre": "Proposition de loi constitutionnelle tendant à créer un titre nouveau de la Constitution relatif au droit de vote et à l'éligibilité des étrangers aux élections municipales",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "IMM-004",
@@ -132,7 +216,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "La carte de résident de dix ans est réservée à des cas précis, notamment familiaux. Après une première année de séjour, l'étranger reçoit en principe une carte pluriannuelle de quatre ans. Après cinq ans de séjour régulier, il peut demander la carte de résident longue durée-UE, valable dix ans, sous conditions : français de niveau intermédiaire (B1), examen civique, ressources au moins égales au Smic. La mesure ferait du titre de dix ans le titre ordinaire des étrangers en règle.",
+    "pour": "Ses partisans estiment que des titres courts imposent des renouvellements fréquents, avec des délais en préfecture qui font perdre des droits à des personnes en règle, et qu'un titre long faciliterait l'emploi et le logement.",
+    "contre": "Ses opposants estiment que des titres plus courts permettent à l'État de vérifier régulièrement les conditions du séjour (emploi, ressources, ordre public), et que la longue durée doit venir après une intégration constatée.",
+    "sources": [
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2208",
+      "titre": "Carte de résident de 10 ans d'un étranger en France",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F35799",
+      "titre": "Carte de séjour pluriannuelle",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F17359",
+      "titre": "Carte de résident de longue durée-UE (étranger en France depuis 5 ans)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "IMM-005",
@@ -153,7 +263,45 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "En 2025, le traitement d'une demande d'asile durait en moyenne 10,8 mois, recours compris, pour un objectif de six mois, selon la commission des lois du Sénat ; 52,1 % des demandeurs ont obtenu une protection. La France a enregistré 151 665 demandes en 2025, selon la Direction générale des étrangers en France. La mesure permettrait de travailler pendant toute l'instruction, y compris aux personnes finalement déboutées.",
+    "pour": "Ses partisans estiment que des mois sans travail maintiennent les demandeurs dans la dépendance aux aides et retardent leur insertion ; travailler plus tôt réduirait le coût de l'accueil.",
+    "contre": "Ses opposants craignent qu'un accès immédiat au travail attire des demandes d'asile pour motif économique et complique le départ des personnes déboutées, déjà installées dans un emploi.",
+    "sources": [
+     {
+      "url": "https://www.senat.fr/lessentiel/pjl25-526.pdf",
+      "titre": "Mise en œuvre du Pacte sur la migration et l'asile",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.publicsenat.fr/actualites/societe/immigration-titres-de-sejour-en-nette-hausse-et-regularisations-en-baisse-sur-lannee-2025",
+      "titre": "Immigration : titres de séjour en nette hausse et régularisations en baisse sur l'année 2025 (Public Sénat, 27 janvier 2026)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.publicsenat.fr/actualites/politique/droit-dasile-un-rapport-senatorial-alerte-sur-son-cout-et-son-utilisation-detournee-en-voie-dimmigration-comme-les-autres",
+      "titre": "Droit d'asile : un rapport sénatorial alerte sur son coût et son utilisation détournée en « voie d'immigration comme les autres » (Public Sénat, 15 juillet 2026)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2232",
+      "titre": "Demande d'asile",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2741",
+      "titre": "Accès au travail du demandeur d'asile",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "IMM-006",
@@ -188,7 +336,27 @@
      "date": "2026-10-03",
      "ancien_enonce": "Un statut de déplacé climatique doit être créé pour accueillir les personnes chassées de leur pays par le changement climatique."
     }
-   ]
+   ],
+   "impact": {
+    "changement": "Le droit français protège aujourd'hui les réfugiés, les bénéficiaires de la protection subsidiaire et les apatrides ; le Préambule de 1946 vise les personnes persécutées pour leur action en faveur de la liberté. Aucun de ces textes ne mentionne le climat. Un nouveau statut devrait définir les personnes concernées (catastrophe soudaine ou dégradation lente), la durée du séjour et les droits accordés.",
+    "pour": "Ses partisans estiment que des personnes privées de leur terre par la montée des eaux ou la sécheresse n'ont aucune voie légale d'accueil, et que le droit doit reconnaître ce risque comme il reconnaît les persécutions.",
+    "contre": "Ses opposants estiment que les causes climatiques sont difficiles à distinguer des motifs économiques, que le nombre de bénéficiaires serait difficile à prévoir, et préfèrent l'aide sur place ou des visas ciblés.",
+    "sources": [
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2232",
+      "titre": "Demande d'asile",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/preambule-de-la-constitution-du-27-octobre-1946",
+      "titre": "Préambule de la Constitution du 27 octobre 1946 | Conseil constitutionnel",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "IMM-007",
@@ -214,7 +382,27 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "La convention des Nations unies sur le droit de la mer demande à chaque État côtier de favoriser un service de recherche et de sauvetage doté de moyens adaptés. La Société nationale de sauvetage en mer, association financée surtout par le public, intervient à la demande des centres publics de coordination (CROSS) dans plus de 55 % des sauvetages en mer, selon l'association. Une agence dédiée aux migrants serait un service nouveau, de périmètre et de budget non précisés.",
+    "pour": "Ses partisans estiment que des moyens publics dédiés permettraient de sauver davantage de vies sans dépendre de navires associatifs, et de mieux coordonner les secours avec les autres pays riverains.",
+    "contre": "Ses opposants estiment que les secours existants portent déjà assistance à toute personne en détresse, et craignent qu'une agence dédiée encourage les traversées et représente un coût élevé.",
+    "sources": [
+     {
+      "url": "https://www.un.org/depts/los/convention_agreements/texts/unclos/part7.htm",
+      "titre": "Convention des Nations unies sur le droit de la mer, partie VII (haute mer)",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.snsm.org/notre-association/notre-organisation",
+      "titre": "Société nationale de sauvetage en mer : notre organisation",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "IMM-008",
@@ -244,7 +432,27 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Un enfant né en France de parents étrangers peut aussi devenir français par déclaration dès 13 ans, sous condition de résidence. Il est français dès sa naissance si l'un de ses parents est lui-même né en France. Des règles plus strictes s'appliquent à Mayotte depuis une loi du 12 mai 2025. La mesure ferait de la naissance sur le sol français la seule condition, sans durée de résidence ni démarche.",
+    "pour": "Ses partisans estiment qu'un enfant né et élevé en France appartient déjà à la communauté nationale, et que la nationalité dès la naissance lui éviterait démarches et incertitude juridique jusqu'à sa majorité.",
+    "contre": "Ses opposants estiment que la nationalité doit traduire un lien durable avec le pays, vérifié par la résidence, et craignent des arrivées motivées par la nationalité que l'enfant obtiendrait.",
+    "sources": [
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F295",
+      "titre": "Nationalité française d'un enfant né en France de parents étrangers",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N51039",
+      "titre": "Renforcer les conditions d'accès à la nationalité française à Mayotte, dossier législatif (17e législature) | Assemblée nationale",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "IMM-009",
@@ -275,7 +483,27 @@
      "date": "2026-10-03",
      "ancien_enonce": "Les parents sans papiers d'enfants scolarisés en France doivent être régularisés."
     }
-   ]
+   ],
+   "impact": {
+    "changement": "Aujourd'hui, un parent étranger d'enfant français peut obtenir une carte « vie privée et familiale » d'un an, et le préfet garde un pouvoir d'appréciation, avec saisine possible d'une commission du titre de séjour. Aucun titre n'est prévu pour les parents d'un enfant étranger scolarisé. En 2025, 28 610 étrangers ont été régularisés, tous motifs confondus. La mesure ferait de la scolarisation d'un enfant un motif de régularisation de ses parents, sans fixer de durée.",
+    "pour": "Ses partisans estiment qu'un enfant scolarisé en France y a ses attaches, et que laisser ses parents sans titre fragilise sa scolarité et sa vie familiale, sous la menace d'un renvoi.",
+    "contre": "Ses opposants estiment qu'un tel critère récompenserait un séjour irrégulier et pourrait inciter à scolariser des enfants pour obtenir un titre ; ils préfèrent l'examen de chaque famille.",
+    "sources": [
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2209",
+      "titre": "Carte de séjour « vie privée et familiale » d'un étranger en France",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.publicsenat.fr/actualites/societe/immigration-titres-de-sejour-en-nette-hausse-et-regularisations-en-baisse-sur-lannee-2025",
+      "titre": "Immigration : titres de séjour en nette hausse et régularisations en baisse sur l'année 2025 (Public Sénat, 27 janvier 2026)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "IMM-010",
@@ -306,7 +534,21 @@
      "date": "2026-10-03",
      "ancien_enonce": "Les étudiants étrangers sans papiers doivent être régularisés."
     }
-   ]
+   ],
+   "impact": {
+    "changement": "Les étudiants étrangers non européens reçoivent normalement un titre de séjour étudiant : 118 000 premiers titres de ce type en 2025, selon la Direction générale des étrangers en France. Un étudiant sans titre valide n'a aujourd'hui aucun droit automatique au séjour. La mesure régulariserait tous les étudiants en situation irrégulière ; leur nombre n'est pas connu, et l'énoncé ne fixe aucune condition d'inscription ou de résultats.",
+    "pour": "Ses partisans estiment que ces étudiants poursuivent déjà des études en France, que certains perdent leur titre à cause des délais des préfectures, et que la France a intérêt à garder ceux qu'elle forme.",
+    "contre": "Ses opposants estiment que le titre étudiant est accordé pour un motif précis et temporaire, et qu'une régularisation générale pourrait encourager des inscriptions destinées surtout à obtenir le droit de rester.",
+    "sources": [
+     {
+      "url": "https://www.publicsenat.fr/actualites/societe/immigration-titres-de-sejour-en-nette-hausse-et-regularisations-en-baisse-sur-lannee-2025",
+      "titre": "Immigration : titres de séjour en nette hausse et régularisations en baisse sur l'année 2025 (Public Sénat, 27 janvier 2026)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "IMM-011",
@@ -327,7 +569,27 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "La mesure supprimerait l'acquisition de la nationalité par la naissance et la résidence en France, y compris par déclaration dès 13 ans. Resteraient la filiation, c'est-à-dire un parent français, et la naturalisation, accordée sur demande. L'énoncé ne dit pas si un enfant né en France d'un parent lui-même né en France resterait français. Une loi du 12 mai 2025 a déjà renforcé les conditions d'accès à la nationalité à Mayotte.",
+    "pour": "Ses partisans estiment que la nationalité doit se transmettre par la filiation ou résulter d'un choix, et non du lieu de naissance, la naturalisation permettant de vérifier l'intégration et la volonté de devenir français.",
+    "contre": "Ses opposants estiment que le droit du sol fait de jeunes nés et élevés en France des citoyens, et que sa suppression maintiendrait étrangers des jeunes dans le seul pays qu'ils connaissent.",
+    "sources": [
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F295",
+      "titre": "Nationalité française d'un enfant né en France de parents étrangers",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N51039",
+      "titre": "Renforcer les conditions d'accès à la nationalité française à Mayotte, dossier législatif (17e législature) | Assemblée nationale",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "IMM-012",
@@ -357,7 +619,27 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Aujourd'hui, un étranger peut demander un logement social avec un titre de séjour ou un récépissé, sans aucune priorité liée à la nationalité. En 1993, le Conseil constitutionnel a admis que la loi traite différemment les étrangers, placés dans une situation différente, mais leur a reconnu un droit à la protection sociale lorsqu'ils résident de manière stable et régulière. La mesure classerait les demandeurs en règle selon leur nationalité.",
+    "pour": "Ses partisans estiment que les logements sociaux, financés par la collectivité et en nombre limité, doivent aller d'abord aux nationaux, alors que la demande dépasse largement l'offre.",
+    "contre": "Ses opposants estiment qu'attribuer un logement selon la nationalité, et non selon les ressources et les besoins, rompt l'égalité et pénalise des familles en règle, sans créer un logement de plus.",
+    "sources": [
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F869",
+      "titre": "Quelles sont les conditions pour obtenir un logement social ?",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.conseil-constitutionnel.fr/decision/1993/93325DC.htm",
+      "titre": "Décision n° 93-325 DC du 13 août 1993 | Conseil constitutionnel",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "IMM-013",
@@ -383,7 +665,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Aujourd'hui, un étranger non européen travaille en France grâce à un titre qui l'y autorise (carte de résident, par exemple) ou à une autorisation de travail demandée en ligne par son employeur. Le Préambule de 1946 garantit à chacun le droit d'obtenir un emploi et interdit de léser quiconque en raison de ses origines. La mesure donnerait la priorité aux Français pour l'emploi ; l'énoncé ne dit pas si elle viserait seulement les embauches, ni si elle exclurait les Européens.",
+    "pour": "Ses partisans estiment qu'en période de chômage, l'État doit d'abord garantir un emploi à ses ressortissants, ce qui protégerait aussi les salaires et les conditions de travail des salariés déjà installés.",
+    "contre": "Ses opposants estiment qu'une préférence à l'embauche selon la nationalité est discriminatoire et difficile à contrôler pour les employeurs, et qu'elle priverait certains secteurs de la main-d'œuvre qui leur manque.",
+    "sources": [
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F15898",
+      "titre": "Travail d'un étranger en France : carte de séjour - salarié/travailleur temporaire",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/preambule-de-la-constitution-du-27-octobre-1946",
+      "titre": "Préambule de la Constitution du 27 octobre 1946 | Conseil constitutionnel",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2208",
+      "titre": "Carte de résident de 10 ans d'un étranger en France",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "IMM-014",
@@ -409,7 +717,39 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Le Sénat a adopté le 18 mars 2025 une proposition de loi exigeant deux ans de séjour régulier pour certaines prestations, dont les allocations familiales et les aides au logement. En seraient dispensés les titulaires d'un titre autorisant à travailler, les réfugiés, les bénéficiaires d'une protection subsidiaire ou temporaire et les apatrides. La condition censurée en 2024 (cinq ans de résidence ou trente mois d'activité) l'a été comme sans lien avec le projet de loi, sans jugement sur le fond.",
+    "pour": "Ses partisans estiment qu'un droit à des prestations financées par la collectivité doit suivre un temps de présence et de participation à la vie du pays, et que cela dissuaderait des arrivées motivées par les aides.",
+    "contre": "Ses opposants estiment que des familles résidant légalement seraient privées de ressources pendant deux ans, au détriment des enfants, et rappellent que la protection sociale est reconnue aux résidents stables et réguliers.",
+    "sources": [
+     {
+      "url": "https://www.senat.fr/leg/tas24-083.html",
+      "titre": "Condition de durée de résidence pour le versement de prestations sociales",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F12006",
+      "titre": "Aide personnalisée au logement (APL)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.conseil-constitutionnel.fr/decision/2024/2023863DC.htm",
+      "titre": "Décision n° 2023-863 DC du 25 janvier 2024 | Conseil constitutionnel",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.conseil-constitutionnel.fr/decision/1993/93325DC.htm",
+      "titre": "Décision n° 93-325 DC du 13 août 1993 | Conseil constitutionnel",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "IMM-015",
@@ -435,7 +775,27 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Le rétablissement voté en 2024 figurait à l'article 17 de la loi, censuré comme sans lien avec le projet de loi. Le 30 octobre 2025, l'Assemblée nationale a supprimé, par 209 voix contre 169, l'article unique d'un texte qui rétablissait ce délit. La mesure ferait à nouveau du séjour sans titre une infraction pénale, en plus des procédures administratives d'éloignement ; l'énoncé ne précise pas la peine.",
+    "pour": "Ses partisans estiment qu'un délit donnerait aux enquêteurs des moyens que la procédure administrative ne permet pas, comme la garde à vue, et marquerait clairement l'interdiction du séjour irrégulier.",
+    "contre": "Ses opposants estiment que le délit n'aiderait pas à renvoyer les personnes concernées, qu'il encombrerait les tribunaux et détournerait la police des filières, et doutent de son effet dissuasif.",
+    "sources": [
+     {
+      "url": "https://www.conseil-constitutionnel.fr/decision/2024/2023863DC.htm",
+      "titre": "Décision n° 2023-863 DC du 25 janvier 2024 | Conseil constitutionnel",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://questions.assemblee-nationale.fr/dyn/17/scrutins/3261",
+      "titre": "Analyse du scrutin n°3261 - 17e législature",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "IMM-016",
@@ -461,7 +821,27 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Aujourd'hui, chaque catégorie de titre de séjour suit ses propres conditions, sans plafond global : 384 230 premiers titres ont été délivrés en 2025, selon la Direction générale des étrangers en France. Les objectifs censurés en 2024 étaient fixés sur trois ans, excluaient l'asile et imposaient un débat au Parlement. L'énoncé vise un maximum voté chaque année, et non des objectifs.",
+    "pour": "Ses partisans estiment que le Parlement, représentant les citoyens, doit décider combien d'étrangers la France peut accueillir selon ses capacités de logement, d'emploi et d'intégration.",
+    "contre": "Ses opposants estiment qu'un plafond serait difficile à concilier avec le regroupement familial et l'asile, et qu'un nombre fixé à l'avance ne suivrait ni les besoins en main-d'œuvre ni les crises internationales.",
+    "sources": [
+     {
+      "url": "https://www.conseil-constitutionnel.fr/decision/2024/2023863DC.htm",
+      "titre": "Décision n° 2023-863 DC du 25 janvier 2024 | Conseil constitutionnel",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.publicsenat.fr/actualites/societe/immigration-titres-de-sejour-en-nette-hausse-et-regularisations-en-baisse-sur-lannee-2025",
+      "titre": "Immigration : titres de séjour en nette hausse et régularisations en baisse sur l'année 2025 (Public Sénat, 27 janvier 2026)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "IMM-017",
@@ -482,7 +862,45 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Le Préambule de 1946 garantit l'asile aux personnes persécutées pour leur action en faveur de la liberté. En 1993, le Conseil constitutionnel y a vu un principe de valeur constitutionnelle, impliquant en général que le demandeur reste provisoirement en France jusqu'à la décision. En 2025, la France a enregistré 151 665 demandes. La procédure à la frontière du pacte européen, applicable depuis juin 2026, concernerait environ 1 % des demandes selon l'Ofpra. La mesure supprimerait le dépôt sur le territoire.",
+    "pour": "Ses partisans estiment qu'examiner les demandes à l'étranger éviterait des traversées dangereuses et des entrées irrégulières, et permettrait d'accueillir de façon ordonnée les personnes réellement persécutées.",
+    "contre": "Ses opposants estiment que les personnes persécutées ne peuvent pas toujours atteindre une représentation française, et que la mesure viderait de sa portée un droit reconnu par la Constitution.",
+    "sources": [
+     {
+      "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/preambule-de-la-constitution-du-27-octobre-1946",
+      "titre": "Préambule de la Constitution du 27 octobre 1946 | Conseil constitutionnel",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.conseil-constitutionnel.fr/decision/1993/93325DC.htm",
+      "titre": "Décision n° 93-325 DC du 13 août 1993 | Conseil constitutionnel",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.publicsenat.fr/actualites/societe/immigration-titres-de-sejour-en-nette-hausse-et-regularisations-en-baisse-sur-lannee-2025",
+      "titre": "Immigration : titres de séjour en nette hausse et régularisations en baisse sur l'année 2025 (Public Sénat, 27 janvier 2026)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.senat.fr/lessentiel/pjl25-526.pdf",
+      "titre": "Mise en œuvre du Pacte sur la migration et l'asile",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.ofpra.gouv.fr/actualites/mise-a-jour-pacte-europeen-quels-changements-pour-les-procedures-devant-lofpra",
+      "titre": "(Mise à jour) Pacte européen : quels changements pour les procédures devant l'Ofpra ? | Ofpra",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "IMM-018",
@@ -503,7 +921,45 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Sous l'accord de 1968, un Algérien marié à une personne française peut obtenir un certificat de résidence de dix ans après un an de mariage ; les autres étrangers peuvent demander la carte de résident après trois ans de mariage. Pour le RSA, la condition de cinq ans de titre de séjour ne s'applique pas aux Algériens. La résolution adoptée en 2025 découle d'une proposition déposée le 9 septembre 2025. La dénonciation viserait à mettre fin à ces règles particulières.",
+    "pour": "Ses partisans estiment que l'accord donne aux Algériens des avantages refusés aux autres étrangers, invoquent la faible reprise par l'Algérie de ses ressortissants expulsés, et veulent une règle identique pour tous.",
+    "contre": "Ses opposants estiment que la dénonciation n'accélérerait pas les renvois, qu'elle dépendrait d'une coopération avec l'Algérie que la rupture compliquerait, et préfèrent renégocier l'accord.",
+    "sources": [
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1778_proposition-resolution",
+      "titre": "Proposition de résolution n° 1778 (17e législature) | Assemblée nationale",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L17N52719",
+      "titre": "Dénoncer les accords franco-algériens du 27 décembre 1968, dossier législatif (17e législature) | Assemblée nationale",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2257",
+      "titre": "Certificat de résidence de 10 ans - Personne de nationalité algérienne",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2208",
+      "titre": "Carte de résident de 10 ans d'un étranger en France",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F19778",
+      "titre": "RSA : demandeur de 25 ans et plus",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "IMM-019",
@@ -524,7 +980,21 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Aujourd'hui, le séjour irrégulier ne peut pas, à lui seul, empêcher un mariage : le Conseil constitutionnel l'a jugé en 2003 au nom de la liberté du mariage, et a censuré en partie la disposition du code civil sur le contrôle des mariages. En cas d'indices sérieux de fraude, l'officier d'état civil peut saisir le procureur de la République, qui dispose de quinze jours pour se prononcer. La mesure interdirait le mariage en France aux personnes sans titre de séjour.",
+    "pour": "Ses partisans estiment qu'une personne qui n'a pas le droit de séjourner ne devrait pas pouvoir utiliser le mariage pour obtenir un titre, et que le contrôle actuel laisse passer des mariages de complaisance.",
+    "contre": "Ses opposants estiment qu'interdire le mariage selon le statut administratif porte atteinte à une liberté fondamentale, pénalise des couples sincères, et que le procureur contrôle déjà les unions douteuses.",
+    "sources": [
+     {
+      "url": "https://www.conseil-constitutionnel.fr/decision/2003/2003484DC.htm",
+      "titre": "Décision n° 2003-484 DC du 20 novembre 2003 | Conseil constitutionnel",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "IMM-020",
@@ -550,7 +1020,21 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "En 2024, le Conseil constitutionnel a admis l'expulsion d'un étranger jusque-là protégé, condamné définitivement pour un crime ou un délit puni d'au moins trois ou cinq ans de prison, si la décision est motivée, proportionnée, fondée sur une menace grave et actuelle pour l'ordre public, et tient compte de sa situation personnelle et familiale. Chaque cas est donc examiné. La mesure imposerait l'expulsion après toute condamnation pour crime ou délit, quelle que soit la peine.",
+    "pour": "Ses partisans estiment qu'un crime ou un délit commis par un étranger doit entraîner son départ sans exception, pour la sécurité des habitants et la crédibilité de l'État.",
+    "contre": "Ses opposants estiment qu'un automatisme sans examen de chaque situation (liens familiaux, ancienneté en France, gravité de l'infraction) conduirait à expulser pour des infractions mineures.",
+    "sources": [
+     {
+      "url": "https://www.conseil-constitutionnel.fr/decision/2024/2023863DC.htm",
+      "titre": "Décision n° 2023-863 DC du 25 janvier 2024 | Conseil constitutionnel",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   },
   {
    "id": "IMM-021",
@@ -581,7 +1065,33 @@
      "date": "2026-10-03",
      "note": "créée à côté de IMM-014 (deux ans) : deux mesures distinctes"
     }
-   ]
+   ],
+   "impact": {
+    "changement": "Aujourd'hui, les conditions varient selon l'aide : en général un titre de séjour valide pour l'aide au logement ; cinq ans de titre autorisant à travailler pour le RSA, sauf notamment pour les titulaires de la carte de résident et les réfugiés. La condition censurée en 2024 visait cinq ans de résidence ou trente mois d'activité, écartée comme sans lien avec le projet de loi. L'énoncé exige à la fois résidence et travail, sans préciser les aides visées.",
+    "pour": "Ses partisans estiment que les aides sociales doivent venir après une contribution durable au pays, par le travail et les cotisations, et que cette règle réduirait l'attrait du système social.",
+    "contre": "Ses opposants estiment qu'exiger cinq ans de travail priverait de ressources des personnes malades ou sans emploi résidant légalement, et contredirait la protection sociale reconnue aux résidents réguliers.",
+    "sources": [
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F19778",
+      "titre": "RSA : demandeur de 25 ans et plus",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F12006",
+      "titre": "Aide personnalisée au logement (APL)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.conseil-constitutionnel.fr/decision/2024/2023863DC.htm",
+      "titre": "Décision n° 2023-863 DC du 25 janvier 2024 | Conseil constitutionnel",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "pilote"
+   }
   }
  ]
 }
