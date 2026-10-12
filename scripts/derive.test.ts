@@ -59,11 +59,11 @@ describe('désaccord non arbitré = « non connu » (D8)', () => {
     expect(estPublie({ ...(position('candidat-a', 'RET-001', 1) as object), code: 1 } as never)).toBe(true);
   });
 
-  it('sur les données réelles (phase 4, vagues 1 à 3 et Glucksmann, 20 candidats, recodage EDU-001) : 902 codes publiés, aucun arbitrage en attente', () => {
+  it('sur les données réelles (phase 4, vagues 1 à 3 et Glucksmann, 20 candidats, recodage EDU-001, ajout EDU-020) : 906 codes publiés, aucun arbitrage en attente', () => {
     const couverture = calculerCouverture(reel) as { candidats: Record<string, { codes_publies: number; arbitrages_en_attente: number }> };
     const total = Object.values(couverture.candidats).reduce((s, c) => s + c.codes_publies, 0);
     const attente = Object.values(couverture.candidats).reduce((s, c) => s + c.arbitrages_en_attente, 0);
-    expect(total).toBe(902);
+    expect(total).toBe(906);
     expect(attente).toBe(0);
   });
 });
@@ -93,30 +93,30 @@ describe('kappa pondéré quadratique', () => {
 describe('reproduit les chiffres publiés de la phase 4 (vagues 1 à 3, 11 thèmes, 4 octobre 2026)', () => {
   const accord = calculerAccordCodeurs(reel);
 
-  it('accord global : 966 couples, 755 accords (78,2 %), code seul 85,0 %, kappa 0,95', () => {
-    expect(accord.global.couples_codes).toBe(966);
-    expect(accord.global.accord_code_et_nature).toBe(755);
-    expect(arrondi3(accord.global.taux_accord)).toBe(0.782);
-    expect(arrondi3(accord.global.taux_accord_code_seul)).toBe(0.85);
+  it('accord global : 971 couples, 757 accords (78,0 %), code seul 84,9 %, kappa 0,95', () => {
+    expect(accord.global.couples_codes).toBe(971);
+    expect(accord.global.accord_code_et_nature).toBe(757);
+    expect(arrondi3(accord.global.taux_accord)).toBe(0.78);
+    expect(arrondi3(accord.global.taux_accord_code_seul)).toBe(0.849);
     expect(arrondi3(accord.global.kappa_pondere_quadratique)).toBe(0.953);
     // 12 arbitrages du pilote + 121 (vague 1) + 18 (vague 2) + 17 (vague 3) arbitrages provisoires par un troisième modèle, validation humaine en attente ;
     // un arbitrage disparaît le 4 octobre 2026 avec son extrait, retiré par la vérification indépendante (agrégateur) ;
-    // + 6 arbitrages et 6 contrôles tirés pour Glucksmann (12 octobre 2026).
+    // + 6 arbitrages et 6 contrôles tirés pour Glucksmann, puis 3 arbitrages et 1 contrôle tiré pour EDU-020 (12 octobre 2026).
     expect(accord.arbitrages.en_attente).toBe(0);
-    expect(accord.arbitrages.rendus).toBe(211);
-    expect(accord.controle_humain.tires_au_sort).toBe(90);
+    expect(accord.arbitrages.rendus).toBe(214);
+    expect(accord.controle_humain.tires_au_sort).toBe(91);
     // + 10 revues humaines de Mathieu sur Glucksmann le 12 octobre 2026 (6 contrôles tirés, 4 autres décisions).
     expect(accord.controle_humain.effectues).toBe(19);
   });
 
   it.each([
     ['arthaud-nathalie', 69, 51, 0.893, 0],
-    ['attal-gabriel', 74, 55, 0.941, 0],
+    ['attal-gabriel', 75, 56, 0.942, 0],
     ['dupont-aignan-nicolas', 83, 67, 0.936, 0],
     ['le-pen-marine', 97, 75, 0.946, 0],
     ['lisnard-david', 88, 69, 0.899, 0],
     ['melenchon-jean-luc', 104, 79, 0.959, 0],
-    ['philippe-edouard', 56, 41, 0.982, 0],
+    ['philippe-edouard', 57, 42, 0.982, 0],
     ['retailleau-bruno', 90, 71, 0.945, 0],
     ['roussel-fabien', 76, 62, 0.971, 0],
   ])('%s : %i couples, %i accords, kappa %f, %i arbitrage(s) en attente', (id, couples, accords, kappa, attente) => {
@@ -130,12 +130,12 @@ describe('reproduit les chiffres publiés de la phase 4 (vagues 1 à 3, 11 thèm
   it.each([
     // candidat, avec extrait, codes publiés, nette, nuancée, imprécise, « non connu » malgré un extrait (règle R4)
     ['arthaud-nathalie', 69, 61, 22, 17, 22, 6],
-    ['attal-gabriel', 74, 68, 19, 34, 15, 1],
+    ['attal-gabriel', 75, 69, 20, 34, 15, 1],
     ['dupont-aignan-nicolas', 83, 82, 40, 31, 11, 1],
     ['le-pen-marine', 97, 94, 36, 45, 13, 1],
     ['lisnard-david', 88, 80, 29, 34, 17, 5],
     ['melenchon-jean-luc', 104, 97, 48, 24, 25, 5],
-    ['philippe-edouard', 56, 47, 12, 20, 15, 3],
+    ['philippe-edouard', 57, 47, 12, 20, 15, 4],
     ['retailleau-bruno', 90, 83, 35, 32, 16, 5],
     ['roussel-fabien', 76, 71, 31, 26, 14, 2],
   ])('couverture de %s : %i extraits, %i codes, natures %i/%i/%i, %i R4', (id, extraits, codes, nette, nuancee, imprecise, r4) => {
@@ -151,11 +151,11 @@ describe('reproduit les chiffres publiés de la phase 4 (vagues 1 à 3, 11 thèm
     expect(c.non_connu_apres_accord).toBe(r4);
   });
 
-  it('la couverture se juge sur l\'ensemble des 206 questions actives', () => {
+  it('la couverture se juge sur l\'ensemble des 207 questions actives', () => {
     const c = calculerCouverture(reel);
-    expect(c.questions_actives).toBe(206);
+    expect(c.questions_actives).toBe(207);
     const arthaud = (c.candidats as Record<string, { taux_couverture: number; seuil_evalue_atteint: boolean }>)['arthaud-nathalie']!;
-    expect(arrondi3(arthaud.taux_couverture)).toBe(0.296);
+    expect(arrondi3(arthaud.taux_couverture)).toBe(0.295);
     expect(arthaud.seuil_evalue_atteint).toBe(false);
   });
 });
@@ -265,27 +265,28 @@ describe('population de référence (méthodologie v1.4, D14)', () => {
     const pop = populationDeReference(reel);
     const comparables = candidatsComparables(reel);
     expect(comparables).toHaveLength(20);
-    expect(pop).toHaveLength(11);
+    expect(pop).toHaveLength(12);
     for (const id of comparables) expect(pop.includes(id), id).toBe(partQuestionsCodees(reel, id) >= SEUIL_POPULATION_REFERENCE);
-    // Cas limite : Ruffin est codé sur 41 questions sur 206 (19,9 %) et reste hors de la population.
-    expect(Math.round(partQuestionsCodees(reel, 'ruffin-francois') * 206)).toBe(41);
-    expect(pop).not.toContain('ruffin-francois');
+    // Cas limite : Ruffin, codé sur 41 questions sur 206 (19,9 %) jusqu'au 12 octobre 2026, entre dans la population
+    // avec EDU-020 : 42 questions sur 207 (20,3 %).
+    expect(Math.round(partQuestionsCodees(reel, 'ruffin-francois') * 207)).toBe(42);
+    expect(pop).toContain('ruffin-francois');
     expect(pop).toContain('tondelier-marine');
   });
 
   it('les candidats sous le seuil ne pèsent ni sur D ni sur l\'ancrage, qui garde ses ancres', () => {
     const d = calculerDiscriminance(reel);
     expect(d.population).toEqual(populationDeReference(reel));
-    expect(d.candidats_evalues).toBe(11);
+    expect(d.candidats_evalues).toBe(12);
     expect(calculerAncrage(reel).ancres.length).toBeGreaterThan(0);
   });
 });
 
 describe('discriminance sur données réelles', () => {
-  it('liste les 206 questions actives ; D n\'est défini que pour celles codées par au moins 4 candidats', () => {
+  it('liste les 207 questions actives ; D n\'est défini que pour celles codées par au moins 4 candidats', () => {
     const d = calculerDiscriminance(reel);
-    expect(Object.keys(d.questions)).toHaveLength(206);
-    expect(d.candidats_evalues).toBe(11);
+    expect(Object.keys(d.questions)).toHaveLength(207);
+    expect(d.candidats_evalues).toBe(12);
     expect(d.provisoire).toBe(true);
     for (const [id, l] of Object.entries(d.questions)) {
       expect(l.D === null).toBe(l.candidats_codes < 4);

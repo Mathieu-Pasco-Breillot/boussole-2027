@@ -1,13 +1,13 @@
 {
   "version": 1,
-  "empreinte_donnees": "37283d7380c735574ec234ef6c4da3aa9784e0e9b7107e4d2153b3e27729a4ec",
+  "empreinte_donnees": "ae9b906d022b6f289d24e517ca6866e35acafb6f04fcffe8c3ef4b3f50ee5664",
   "proposition_min": 8,
-  "questions_actives": 206,
+  "questions_actives": 207,
   "candidats": [
     {
       "candidat": "arthaud-nathalie",
       "propositions": 61,
-      "couverture_banque": 0.296117,
+      "couverture_banque": 0.294686,
       "duel_disponible": true,
       "par_theme": {
         "defense": 6,
@@ -32,7 +32,7 @@
     {
       "candidat": "asselineau-francois",
       "propositions": 20,
-      "couverture_banque": 0.097087,
+      "couverture_banque": 0.096618,
       "duel_disponible": true,
       "par_theme": {
         "defense": 1,
@@ -54,14 +54,14 @@
     },
     {
       "candidat": "attal-gabriel",
-      "propositions": 68,
-      "couverture_banque": 0.330097,
+      "propositions": 69,
+      "couverture_banque": 0.333333,
       "duel_disponible": true,
       "par_theme": {
         "defense": 2,
         "ecologie-energie": 8,
         "economie-dette": 8,
-        "education": 8,
+        "education": 9,
         "fiscalite": 11,
         "immigration": 3,
         "institutions": 5,
@@ -71,16 +71,16 @@
         "union-europeenne": 6
       },
       "par_sens": {
-        "plus": 29,
+        "plus": 30,
         "moins": 39
       },
       "positions_imprecises": 15,
-      "part_imprecise": 0.220588
+      "part_imprecise": 0.217391
     },
     {
       "candidat": "batho-delphine",
       "propositions": 6,
-      "couverture_banque": 0.029126,
+      "couverture_banque": 0.028986,
       "duel_disponible": false,
       "par_theme": {
         "defense": 1,
@@ -99,7 +99,7 @@
     {
       "candidat": "becht-olivier",
       "propositions": 2,
-      "couverture_banque": 0.009709,
+      "couverture_banque": 0.009662,
       "duel_disponible": false,
       "par_theme": {
         "ecologie-energie": 1,
@@ -115,7 +115,7 @@
     {
       "candidat": "bouamrane-karim",
       "propositions": 5,
-      "couverture_banque": 0.024272,
+      "couverture_banque": 0.024155,
       "duel_disponible": false,
       "par_theme": {
         "ecologie-energie": 1,
@@ -134,7 +134,7 @@
     {
       "candidat": "dupont-aignan-nicolas",
       "propositions": 82,
-      "couverture_banque": 0.398058,
+      "couverture_banque": 0.396135,
       "duel_disponible": true,
       "par_theme": {
         "defense": 9,
@@ -159,7 +159,7 @@
     {
       "candidat": "egger-clara",
       "propositions": 2,
-      "couverture_banque": 0.009709,
+      "couverture_banque": 0.009662,
       "duel_disponible": false,
       "par_theme": {
         "institutions": 2
@@ -173,14 +173,14 @@
     },
     {
       "candidat": "glucksmann-raphael",
-      "propositions": 60,
-      "couverture_banque": 0.291262,
+      "propositions": 61,
+      "couverture_banque": 0.294686,
       "duel_disponible": true,
       "par_theme": {
         "defense": 4,
         "ecologie-energie": 12,
         "economie-dette": 3,
-        "education": 4,
+        "education": 5,
         "fiscalite": 5,
         "immigration": 6,
         "institutions": 6,
@@ -190,16 +190,16 @@
         "union-europeenne": 7
       },
       "par_sens": {
-        "plus": 43,
+        "plus": 44,
         "moins": 17
       },
-      "positions_imprecises": 15,
-      "part_imprecise": 0.25
+      "positions_imprecises": 16,
+      "part_imprecise": 0.262295
     },
     {
       "candidat": "lalanne-francis",
       "propositions": 4,
-      "couverture_banque": 0.019417,
+      "couverture_banque": 0.019324,
       "duel_disponible": false,
       "par_theme": {
         "defense": 1,
@@ -216,7 +216,7 @@
     {
       "candidat": "le-pen-marine",
       "propositions": 94,
-      "couverture_banque": 0.456311,
+      "couverture_banque": 0.454106,
       "duel_disponible": true,
       "par_theme": {
         "defense": 5,
@@ -241,7 +241,7 @@
     {
       "candidat": "lisnard-david",
       "propositions": 80,
-      "couverture_banque": 0.38835,
+      "couverture_banque": 0.386473,
       "duel_disponible": true,
       "par_theme": {
         "defense": 5,
@@ -266,7 +266,7 @@
     {
       "candidat": "melenchon-jean-luc",
       "propositions": 97,
-      "couverture_banque": 0.470874,
+      "couverture_banque": 0.468599,
       "duel_disponible": true,
       "par_theme": {
         "defense": 8,
@@ -291,7 +291,7 @@
     {
       "candidat": "mikolajczak-antoine",
       "propositions": 8,
-      "couverture_banque": 0.038835,
+      "couverture_banque": 0.038647,
       "duel_disponible": true,
       "par_theme": {
         "ecologie-energie": 1,
@@ -309,7 +309,7 @@
     {
       "candidat": "philippe-edouard",
       "propositions": 47,
-      "couverture_banque": 0.228155,
+      "couverture_banque": 0.227053,
       "duel_disponible": true,
       "par_theme": {
         "defense": 5,
@@ -334,7 +334,7 @@
     {
       "candidat": "philippot-florian",
       "propositions": 21,
-      "couverture_banque": 0.101942,
+      "couverture_banque": 0.101449,
       "duel_disponible": true,
       "par_theme": {
         "defense": 2,
@@ -355,7 +355,7 @@
     {
       "candidat": "retailleau-bruno",
       "propositions": 83,
-      "couverture_banque": 0.402913,
+      "couverture_banque": 0.400966,
       "duel_disponible": true,
       "par_theme": {
         "defense": 3,
@@ -380,7 +380,7 @@
     {
       "candidat": "roussel-fabien",
       "propositions": 71,
-      "couverture_banque": 0.34466,
+      "couverture_banque": 0.342995,
       "duel_disponible": true,
       "par_theme": {
         "defense": 8,
@@ -404,14 +404,14 @@
     },
     {
       "candidat": "ruffin-francois",
-      "propositions": 41,
-      "couverture_banque": 0.199029,
+      "propositions": 42,
+      "couverture_banque": 0.202899,
       "duel_disponible": true,
       "par_theme": {
         "defense": 3,
         "ecologie-energie": 6,
         "economie-dette": 3,
-        "education": 1,
+        "education": 2,
         "fiscalite": 4,
         "immigration": 1,
         "institutions": 5,
@@ -421,22 +421,22 @@
         "union-europeenne": 5
       },
       "par_sens": {
-        "plus": 30,
+        "plus": 31,
         "moins": 11
       },
       "positions_imprecises": 15,
-      "part_imprecise": 0.365854
+      "part_imprecise": 0.357143
     },
     {
       "candidat": "tondelier-marine",
-      "propositions": 50,
-      "couverture_banque": 0.242718,
+      "propositions": 51,
+      "couverture_banque": 0.246377,
       "duel_disponible": true,
       "par_theme": {
         "defense": 1,
         "ecologie-energie": 16,
         "economie-dette": 7,
-        "education": 4,
+        "education": 5,
         "fiscalite": 8,
         "immigration": 2,
         "institutions": 2,
@@ -445,11 +445,11 @@
         "union-europeenne": 1
       },
       "par_sens": {
-        "plus": 41,
+        "plus": 42,
         "moins": 9
       },
       "positions_imprecises": 5,
-      "part_imprecise": 0.1
+      "part_imprecise": 0.098039
     }
   ]
 }

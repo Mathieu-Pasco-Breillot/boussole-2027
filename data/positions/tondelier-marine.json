@@ -2090,6 +2090,66 @@
       "version": 1
     },
     {
+      "question_id": "EDU-020",
+      "item_aveugle": "a9d9a510",
+      "extraits": [
+        {
+          "reformulation": "Selon RMC, qui rapporte la proposition présentée par Marine Tondelier et les écologistes le 31 août 2026 (plafond de 19 élèves par classe en maternelle et élémentaire d'ici 2032, 12 en éducation prioritaire), la mesure s'appuie sur la baisse démographique et consiste à maintenir le nombre de professeurs plutôt que de fermer des classes et supprimer des postes. L'article formule cela comme la position des écologistes, sans citation directe de la candidate sur les postes.",
+          "citation_courte": "maintenir le nombre de professeurs pour réduire la taille des classes",
+          "reformulation_anonymisee": "Selon un média, qui rapporte la proposition présentée par [CANDIDAT] et [PARTI] à la rentrée 2026 (plafond de 19 élèves par classe en maternelle et élémentaire d'ici 2032, 12 en éducation prioritaire), la mesure s'appuie sur la baisse démographique et consiste à maintenir le nombre de professeurs plutôt que de fermer des classes et supprimer des postes. L'article formule cela comme la position de [PARTI], sans citation directe de [CANDIDAT] sur les postes.",
+          "citation_anonymisee": "maintenir le nombre de professeurs pour réduire la taille des classes",
+          "source": {
+            "url": "https://rmc.bfmtv.com/actualites/societe/education/marine-tondelier-et-les-ecologistes-veulent-limiter-les-classes-de-primaire-a-19-eleves_AV-202609020701.html",
+            "titre": "Marine Tondelier et les écologistes veulent limiter les classes de primaire à 19 élèves (RMC)",
+            "date_publication": "2026-09-02",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-12",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": 2,
+          "nature": "nette",
+          "justification": "La proposition présentée consiste explicitement à maintenir le nombre de professeurs malgré la baisse démographique plutôt que de supprimer des postes, avec un objectif chiffré et daté de taille des classes.",
+          "date": "2026-10-12",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": 1,
+          "nature": "imprecise",
+          "justification": "Maintien des professeurs face à la baisse démographique rapporté comme position du parti, sans citation directe du candidat.",
+          "date": "2026-10-12",
+          "aveugle": true
+        },
+        "accord": false
+      },
+      "controle_humain": {
+        "tire_au_sort": false
+      },
+      "contestations": [],
+      "version": 1,
+      "code": 2,
+      "nature": "nette",
+      "statut": "arbitre",
+      "arbitrage": {
+        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
+        "date": "2026-10-12",
+        "code_retenu": 2,
+        "nature_retenue": "nette",
+        "motif": "La proposition est présentée par le candidat lui-même et consiste explicitement à maintenir le nombre de professeurs plutôt que supprimer des postes face à la baisse démographique, avec cible chiffrée et datée ; l'absence de citation directe ne constitue pas une réserve sur la mesure."
+      },
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-10-12",
+        "verdict": "confirme",
+        "motif": "RMC présente le plafond de 19 élèves comme la proposition de Marine Tondelier, qui « entend tirer parti de la baisse de la démographie scolaire » en maintenant le nombre de professeurs plutôt qu'en supprimant des postes : maintien explicite malgré la baisse d'élèves, cible chiffrée et datée (2032)."
+      }
+    },
+    {
       "question_id": "FIS-001",
       "code": 1,
       "nature": "imprecise",

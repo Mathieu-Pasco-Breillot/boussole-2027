@@ -1,20 +1,20 @@
 {
   "version": 1,
-  "empreinte_donnees": "37283d7380c735574ec234ef6c4da3aa9784e0e9b7107e4d2153b3e27729a4ec",
+  "empreinte_donnees": "ae9b906d022b6f289d24e517ca6866e35acafb6f04fcffe8c3ef4b3f50ee5664",
   "provisoire": true,
-  "questions_actives": 206,
+  "questions_actives": 207,
   "seuil_evalue": 0.4,
   "candidats": {
     "arthaud-nathalie": {
       "vague": 1,
       "statut_evaluation": "codage_en_attente",
       "positions_disponibles": true,
-      "questions_avec_position": 206,
+      "questions_avec_position": 207,
       "avec_extrait": 69,
       "codes_publies": 61,
       "arbitrages_en_attente": 0,
       "non_connu_apres_accord": 6,
-      "taux_couverture": 0.296117,
+      "taux_couverture": 0.294686,
       "seuil_evalue_atteint": false,
       "natures": {
         "nette": 22,
@@ -43,9 +43,9 @@
           "taux_couverture": 0.55
         },
         "education": {
-          "questions_actives": 18,
+          "questions_actives": 19,
           "codes_publies": 2,
-          "taux_couverture": 0.111111
+          "taux_couverture": 0.105263
         },
         "fiscalite": {
           "questions_actives": 19,
@@ -88,12 +88,12 @@
       "vague": 2,
       "statut_evaluation": "codage_en_attente",
       "positions_disponibles": true,
-      "questions_avec_position": 206,
+      "questions_avec_position": 207,
       "avec_extrait": 21,
       "codes_publies": 20,
       "arbitrages_en_attente": 0,
       "non_connu_apres_accord": 0,
-      "taux_couverture": 0.097087,
+      "taux_couverture": 0.096618,
       "seuil_evalue_atteint": false,
       "natures": {
         "nette": 8,
@@ -122,7 +122,7 @@
           "taux_couverture": 0.05
         },
         "education": {
-          "questions_actives": 18,
+          "questions_actives": 19,
           "codes_publies": 0,
           "taux_couverture": 0
         },
@@ -167,22 +167,22 @@
       "vague": 1,
       "statut_evaluation": "codage_en_attente",
       "positions_disponibles": true,
-      "questions_avec_position": 206,
-      "avec_extrait": 74,
-      "codes_publies": 68,
+      "questions_avec_position": 207,
+      "avec_extrait": 75,
+      "codes_publies": 69,
       "arbitrages_en_attente": 0,
       "non_connu_apres_accord": 1,
-      "taux_couverture": 0.330097,
+      "taux_couverture": 0.333333,
       "seuil_evalue_atteint": false,
       "natures": {
-        "nette": 19,
+        "nette": 20,
         "nuancee": 34,
         "imprecise": 15
       },
       "parts_natures": {
-        "nette": 0.279412,
-        "nuancee": 0.5,
-        "imprecise": 0.220588
+        "nette": 0.289855,
+        "nuancee": 0.492754,
+        "imprecise": 0.217391
       },
       "par_theme": {
         "defense": {
@@ -201,9 +201,9 @@
           "taux_couverture": 0.4
         },
         "education": {
-          "questions_actives": 18,
-          "codes_publies": 8,
-          "taux_couverture": 0.444444
+          "questions_actives": 19,
+          "codes_publies": 9,
+          "taux_couverture": 0.473684
         },
         "fiscalite": {
           "questions_actives": 19,
@@ -246,12 +246,12 @@
       "vague": 2,
       "statut_evaluation": "codage_en_attente",
       "positions_disponibles": true,
-      "questions_avec_position": 206,
+      "questions_avec_position": 207,
       "avec_extrait": 6,
       "codes_publies": 6,
       "arbitrages_en_attente": 0,
       "non_connu_apres_accord": 0,
-      "taux_couverture": 0.029126,
+      "taux_couverture": 0.028986,
       "seuil_evalue_atteint": false,
       "natures": {
         "nette": 1,
@@ -280,7 +280,7 @@
           "taux_couverture": 0
         },
         "education": {
-          "questions_actives": 18,
+          "questions_actives": 19,
           "codes_publies": 0,
           "taux_couverture": 0
         },
@@ -325,12 +325,12 @@
       "vague": 2,
       "statut_evaluation": "codage_en_attente",
       "positions_disponibles": true,
-      "questions_avec_position": 206,
+      "questions_avec_position": 207,
       "avec_extrait": 2,
       "codes_publies": 2,
       "arbitrages_en_attente": 0,
       "non_connu_apres_accord": 0,
-      "taux_couverture": 0.009709,
+      "taux_couverture": 0.009662,
       "seuil_evalue_atteint": false,
       "natures": {
         "nette": 2,
@@ -359,9 +359,9 @@
           "taux_couverture": 0
         },
         "education": {
-          "questions_actives": 18,
+          "questions_actives": 19,
           "codes_publies": 1,
-          "taux_couverture": 0.055556
+          "taux_couverture": 0.052632
         },
         "fiscalite": {
           "questions_actives": 19,
@@ -404,12 +404,12 @@
       "vague": 2,
       "statut_evaluation": "codage_en_attente",
       "positions_disponibles": true,
-      "questions_avec_position": 206,
+      "questions_avec_position": 207,
       "avec_extrait": 6,
       "codes_publies": 5,
       "arbitrages_en_attente": 0,
       "non_connu_apres_accord": 1,
-      "taux_couverture": 0.024272,
+      "taux_couverture": 0.024155,
       "seuil_evalue_atteint": false,
       "natures": {
         "nette": 0,
@@ -438,9 +438,9 @@
           "taux_couverture": 0.05
         },
         "education": {
-          "questions_actives": 18,
+          "questions_actives": 19,
           "codes_publies": 1,
-          "taux_couverture": 0.055556
+          "taux_couverture": 0.052632
         },
         "fiscalite": {
           "questions_actives": 19,
@@ -483,12 +483,12 @@
       "vague": 1,
       "statut_evaluation": "codage_en_attente",
       "positions_disponibles": true,
-      "questions_avec_position": 206,
+      "questions_avec_position": 207,
       "avec_extrait": 83,
       "codes_publies": 82,
       "arbitrages_en_attente": 0,
       "non_connu_apres_accord": 1,
-      "taux_couverture": 0.398058,
+      "taux_couverture": 0.396135,
       "seuil_evalue_atteint": false,
       "natures": {
         "nette": 40,
@@ -517,9 +517,9 @@
           "taux_couverture": 0.2
         },
         "education": {
-          "questions_actives": 18,
+          "questions_actives": 19,
           "codes_publies": 4,
-          "taux_couverture": 0.222222
+          "taux_couverture": 0.210526
         },
         "fiscalite": {
           "questions_actives": 19,
@@ -562,12 +562,12 @@
       "vague": 2,
       "statut_evaluation": "codage_en_attente",
       "positions_disponibles": true,
-      "questions_avec_position": 206,
+      "questions_avec_position": 207,
       "avec_extrait": 2,
       "codes_publies": 2,
       "arbitrages_en_attente": 0,
       "non_connu_apres_accord": 0,
-      "taux_couverture": 0.009709,
+      "taux_couverture": 0.009662,
       "seuil_evalue_atteint": false,
       "natures": {
         "nette": 0,
@@ -596,7 +596,7 @@
           "taux_couverture": 0
         },
         "education": {
-          "questions_actives": 18,
+          "questions_actives": 19,
           "codes_publies": 0,
           "taux_couverture": 0
         },
@@ -641,22 +641,22 @@
       "vague": 3,
       "statut_evaluation": "codage_en_attente",
       "positions_disponibles": true,
-      "questions_avec_position": 206,
-      "avec_extrait": 63,
-      "codes_publies": 60,
+      "questions_avec_position": 207,
+      "avec_extrait": 64,
+      "codes_publies": 61,
       "arbitrages_en_attente": 0,
       "non_connu_apres_accord": 3,
-      "taux_couverture": 0.291262,
+      "taux_couverture": 0.294686,
       "seuil_evalue_atteint": false,
       "natures": {
         "nette": 25,
         "nuancee": 20,
-        "imprecise": 15
+        "imprecise": 16
       },
       "parts_natures": {
-        "nette": 0.416667,
-        "nuancee": 0.333333,
-        "imprecise": 0.25
+        "nette": 0.409836,
+        "nuancee": 0.327869,
+        "imprecise": 0.262295
       },
       "par_theme": {
         "defense": {
@@ -675,9 +675,9 @@
           "taux_couverture": 0.15
         },
         "education": {
-          "questions_actives": 18,
-          "codes_publies": 4,
-          "taux_couverture": 0.222222
+          "questions_actives": 19,
+          "codes_publies": 5,
+          "taux_couverture": 0.263158
         },
         "fiscalite": {
           "questions_actives": 19,
@@ -720,12 +720,12 @@
       "vague": 2,
       "statut_evaluation": "codage_en_attente",
       "positions_disponibles": true,
-      "questions_avec_position": 206,
+      "questions_avec_position": 207,
       "avec_extrait": 4,
       "codes_publies": 4,
       "arbitrages_en_attente": 0,
       "non_connu_apres_accord": 0,
-      "taux_couverture": 0.019417,
+      "taux_couverture": 0.019324,
       "seuil_evalue_atteint": false,
       "natures": {
         "nette": 3,
@@ -754,7 +754,7 @@
           "taux_couverture": 0
         },
         "education": {
-          "questions_actives": 18,
+          "questions_actives": 19,
           "codes_publies": 0,
           "taux_couverture": 0
         },
@@ -799,12 +799,12 @@
       "vague": 1,
       "statut_evaluation": "evalue",
       "positions_disponibles": true,
-      "questions_avec_position": 206,
+      "questions_avec_position": 207,
       "avec_extrait": 97,
       "codes_publies": 94,
       "arbitrages_en_attente": 0,
       "non_connu_apres_accord": 1,
-      "taux_couverture": 0.456311,
+      "taux_couverture": 0.454106,
       "seuil_evalue_atteint": true,
       "natures": {
         "nette": 36,
@@ -833,9 +833,9 @@
           "taux_couverture": 0.2
         },
         "education": {
-          "questions_actives": 18,
+          "questions_actives": 19,
           "codes_publies": 9,
-          "taux_couverture": 0.5
+          "taux_couverture": 0.473684
         },
         "fiscalite": {
           "questions_actives": 19,
@@ -878,12 +878,12 @@
       "vague": 1,
       "statut_evaluation": "codage_en_attente",
       "positions_disponibles": true,
-      "questions_avec_position": 206,
+      "questions_avec_position": 207,
       "avec_extrait": 88,
       "codes_publies": 80,
       "arbitrages_en_attente": 0,
       "non_connu_apres_accord": 5,
-      "taux_couverture": 0.38835,
+      "taux_couverture": 0.386473,
       "seuil_evalue_atteint": false,
       "natures": {
         "nette": 29,
@@ -912,9 +912,9 @@
           "taux_couverture": 0.2
         },
         "education": {
-          "questions_actives": 18,
+          "questions_actives": 19,
           "codes_publies": 8,
-          "taux_couverture": 0.444444
+          "taux_couverture": 0.421053
         },
         "fiscalite": {
           "questions_actives": 19,
@@ -957,12 +957,12 @@
       "vague": 1,
       "statut_evaluation": "evalue",
       "positions_disponibles": true,
-      "questions_avec_position": 206,
+      "questions_avec_position": 207,
       "avec_extrait": 104,
       "codes_publies": 97,
       "arbitrages_en_attente": 0,
       "non_connu_apres_accord": 5,
-      "taux_couverture": 0.470874,
+      "taux_couverture": 0.468599,
       "seuil_evalue_atteint": true,
       "natures": {
         "nette": 48,
@@ -991,9 +991,9 @@
           "taux_couverture": 0.4
         },
         "education": {
-          "questions_actives": 18,
+          "questions_actives": 19,
           "codes_publies": 5,
-          "taux_couverture": 0.277778
+          "taux_couverture": 0.263158
         },
         "fiscalite": {
           "questions_actives": 19,
@@ -1036,12 +1036,12 @@
       "vague": 2,
       "statut_evaluation": "codage_en_attente",
       "positions_disponibles": true,
-      "questions_avec_position": 206,
+      "questions_avec_position": 207,
       "avec_extrait": 10,
       "codes_publies": 8,
       "arbitrages_en_attente": 0,
       "non_connu_apres_accord": 1,
-      "taux_couverture": 0.038835,
+      "taux_couverture": 0.038647,
       "seuil_evalue_atteint": false,
       "natures": {
         "nette": 3,
@@ -1070,9 +1070,9 @@
           "taux_couverture": 0
         },
         "education": {
-          "questions_actives": 18,
+          "questions_actives": 19,
           "codes_publies": 1,
-          "taux_couverture": 0.055556
+          "taux_couverture": 0.052632
         },
         "fiscalite": {
           "questions_actives": 19,
@@ -1115,12 +1115,12 @@
       "vague": 1,
       "statut_evaluation": "codage_en_attente",
       "positions_disponibles": true,
-      "questions_avec_position": 206,
-      "avec_extrait": 56,
+      "questions_avec_position": 207,
+      "avec_extrait": 57,
       "codes_publies": 47,
       "arbitrages_en_attente": 0,
-      "non_connu_apres_accord": 3,
-      "taux_couverture": 0.228155,
+      "non_connu_apres_accord": 4,
+      "taux_couverture": 0.227053,
       "seuil_evalue_atteint": false,
       "natures": {
         "nette": 12,
@@ -1149,9 +1149,9 @@
           "taux_couverture": 0.2
         },
         "education": {
-          "questions_actives": 18,
+          "questions_actives": 19,
           "codes_publies": 4,
-          "taux_couverture": 0.222222
+          "taux_couverture": 0.210526
         },
         "fiscalite": {
           "questions_actives": 19,
@@ -1194,12 +1194,12 @@
       "vague": 2,
       "statut_evaluation": "codage_en_attente",
       "positions_disponibles": true,
-      "questions_avec_position": 206,
+      "questions_avec_position": 207,
       "avec_extrait": 23,
       "codes_publies": 21,
       "arbitrages_en_attente": 0,
       "non_connu_apres_accord": 1,
-      "taux_couverture": 0.101942,
+      "taux_couverture": 0.101449,
       "seuil_evalue_atteint": false,
       "natures": {
         "nette": 9,
@@ -1228,9 +1228,9 @@
           "taux_couverture": 0
         },
         "education": {
-          "questions_actives": 18,
+          "questions_actives": 19,
           "codes_publies": 2,
-          "taux_couverture": 0.111111
+          "taux_couverture": 0.105263
         },
         "fiscalite": {
           "questions_actives": 19,
@@ -1273,12 +1273,12 @@
       "vague": 1,
       "statut_evaluation": "evalue",
       "positions_disponibles": true,
-      "questions_avec_position": 206,
+      "questions_avec_position": 207,
       "avec_extrait": 90,
       "codes_publies": 83,
       "arbitrages_en_attente": 0,
       "non_connu_apres_accord": 5,
-      "taux_couverture": 0.402913,
+      "taux_couverture": 0.400966,
       "seuil_evalue_atteint": true,
       "natures": {
         "nette": 35,
@@ -1307,9 +1307,9 @@
           "taux_couverture": 0.3
         },
         "education": {
-          "questions_actives": 18,
+          "questions_actives": 19,
           "codes_publies": 8,
-          "taux_couverture": 0.444444
+          "taux_couverture": 0.421053
         },
         "fiscalite": {
           "questions_actives": 19,
@@ -1352,12 +1352,12 @@
       "vague": 1,
       "statut_evaluation": "codage_en_attente",
       "positions_disponibles": true,
-      "questions_avec_position": 206,
+      "questions_avec_position": 207,
       "avec_extrait": 76,
       "codes_publies": 71,
       "arbitrages_en_attente": 0,
       "non_connu_apres_accord": 2,
-      "taux_couverture": 0.34466,
+      "taux_couverture": 0.342995,
       "seuil_evalue_atteint": false,
       "natures": {
         "nette": 31,
@@ -1386,9 +1386,9 @@
           "taux_couverture": 0.35
         },
         "education": {
-          "questions_actives": 18,
+          "questions_actives": 19,
           "codes_publies": 6,
-          "taux_couverture": 0.333333
+          "taux_couverture": 0.315789
         },
         "fiscalite": {
           "questions_actives": 19,
@@ -1431,22 +1431,22 @@
       "vague": 2,
       "statut_evaluation": "codage_en_attente",
       "positions_disponibles": true,
-      "questions_avec_position": 206,
-      "avec_extrait": 41,
-      "codes_publies": 41,
+      "questions_avec_position": 207,
+      "avec_extrait": 42,
+      "codes_publies": 42,
       "arbitrages_en_attente": 0,
       "non_connu_apres_accord": 0,
-      "taux_couverture": 0.199029,
+      "taux_couverture": 0.202899,
       "seuil_evalue_atteint": false,
       "natures": {
-        "nette": 10,
+        "nette": 11,
         "nuancee": 16,
         "imprecise": 15
       },
       "parts_natures": {
-        "nette": 0.243902,
-        "nuancee": 0.390244,
-        "imprecise": 0.365854
+        "nette": 0.261905,
+        "nuancee": 0.380952,
+        "imprecise": 0.357143
       },
       "par_theme": {
         "defense": {
@@ -1465,9 +1465,9 @@
           "taux_couverture": 0.15
         },
         "education": {
-          "questions_actives": 18,
-          "codes_publies": 1,
-          "taux_couverture": 0.055556
+          "questions_actives": 19,
+          "codes_publies": 2,
+          "taux_couverture": 0.105263
         },
         "fiscalite": {
           "questions_actives": 19,
@@ -1510,22 +1510,22 @@
       "vague": 2,
       "statut_evaluation": "codage_en_attente",
       "positions_disponibles": true,
-      "questions_avec_position": 206,
-      "avec_extrait": 51,
-      "codes_publies": 50,
+      "questions_avec_position": 207,
+      "avec_extrait": 52,
+      "codes_publies": 51,
       "arbitrages_en_attente": 0,
       "non_connu_apres_accord": 1,
-      "taux_couverture": 0.242718,
+      "taux_couverture": 0.246377,
       "seuil_evalue_atteint": false,
       "natures": {
-        "nette": 23,
+        "nette": 24,
         "nuancee": 22,
         "imprecise": 5
       },
       "parts_natures": {
-        "nette": 0.46,
-        "nuancee": 0.44,
-        "imprecise": 0.1
+        "nette": 0.470588,
+        "nuancee": 0.431373,
+        "imprecise": 0.098039
       },
       "par_theme": {
         "defense": {
@@ -1544,9 +1544,9 @@
           "taux_couverture": 0.35
         },
         "education": {
-          "questions_actives": 18,
-          "codes_publies": 4,
-          "taux_couverture": 0.222222
+          "questions_actives": 19,
+          "codes_publies": 5,
+          "taux_couverture": 0.263158
         },
         "fiscalite": {
           "questions_actives": 19,

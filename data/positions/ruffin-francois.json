@@ -1564,6 +1564,68 @@
       "version": 1
     },
     {
+      "question_id": "EDU-020",
+      "item_aveugle": "2ec74699",
+      "extraits": [
+        {
+          "reformulation": "Invité de franceinfo le 9 octobre 2026, François Ruffin dit qu'il faut garantir qu'il n'y aura aucune suppression de poste dans le prochain budget de l'Éducation nationale, que les postes soient maintenus en tenant compte de l'inflation (qu'il chiffre à 3 %), et il affirme que le budget en préparation supprime 1 588 postes. Il ne se prononce pas dans ce passage sur le lien avec la baisse du nombre d'élèves.",
+          "citation_courte": "il n'y aura pas de suppression de poste dans le prochain budget",
+          "reformulation_anonymisee": "Interrogé à la radio le 9 octobre 2026, [CANDIDAT] dit qu'il faut garantir qu'il n'y aura aucune suppression de poste dans le prochain budget de l'Éducation nationale, que les postes soient maintenus en tenant compte de l'inflation (qu'il chiffre à 3 %), et il affirme que le budget en préparation supprime 1 588 postes. Il ne se prononce pas dans ce passage sur le lien avec la baisse du nombre d'élèves.",
+          "citation_anonymisee": "il n'y aura pas de suppression de poste dans le prochain budget",
+          "source": {
+            "url": "https://www.franceinfo.fr/replay-magazine/franceinfo/l-invite-politique/nous-n-avons-qu-une-reponse-policiere-a-la-mobilisation-lyceenne-accuse-francois-ruffin-malgre-l-annonce-du-recrutement-de-3-000-professeurs-remplacants_8200070.html",
+            "titre": "\"Nous n'avons qu'une réponse policière\" à la mobilisation lycéenne, accuse François Ruffin (franceinfo)",
+            "date_publication": "2026-10-09",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-12",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": 2,
+          "nature": "nette",
+          "justification": "Engagement ferme : aucune suppression de poste dans le prochain budget de l'Éducation nationale, alors que les suppressions sont justifiées par la baisse démographique.",
+          "date": "2026-10-12",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "Aucune suppression de poste et maintien des postes, mais sans lien exprimé avec la baisse du nombre d'élèves.",
+          "date": "2026-10-12",
+          "aveugle": true
+        },
+        "accord": false
+      },
+      "controle_humain": {
+        "tire_au_sort": true,
+        "date": null,
+        "resultat": null
+      },
+      "contestations": [],
+      "version": 1,
+      "code": 2,
+      "nature": "nette",
+      "statut": "arbitre",
+      "arbitrage": {
+        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
+        "date": "2026-10-12",
+        "code_retenu": 2,
+        "nature_retenue": "nette",
+        "motif": "Engagement ferme et chiffré qu'aucun poste ne sera supprimé dans le prochain budget, soit exactement la mesure énoncée dans le contexte où les suppressions sont justifiées par la démographie ; l'absence de mention explicite de la baisse d'élèves n'est pas une condition ni une limite."
+      },
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-10-12",
+        "verdict": "confirme",
+        "motif": "Ruffin exige qu'aucun poste de l'Éducation nationale ne soit supprimé au prochain budget, ce qui couvre entièrement les postes d'enseignants (périmètre plus large, R6) ; la limitation au prochain budget répond au contexte de l'énoncé et ne constitue pas une réserve, +2 nette défendable."
+      }
+    },
+    {
       "question_id": "FIS-001",
       "code": 1,
       "nature": "imprecise",

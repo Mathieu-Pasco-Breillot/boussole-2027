@@ -2066,6 +2066,68 @@
       }
     },
     {
+      "question_id": "EDU-020",
+      "item_aveugle": "7017125e",
+      "extraits": [
+        {
+          "reformulation": "Interrogé par Le Figaro (propos rapportés par Le Parisien), il dit qu'avec près d'un million d'élèves en moins, il y a les moyens de continuer à réduire les effectifs dans les classes là où c'est nécessaire et de mieux payer les professeurs, sans dégrader les finances publiques. La source ne dit pas explicitement ce qu'il advient du nombre de postes.",
+          "citation_courte": "nous avons les moyens de continuer à réduire les effectifs dans les classes",
+          "reformulation_anonymisee": "[CANDIDAT] dit qu'avec près d'un million d'élèves en moins, il y a les moyens de continuer à réduire les effectifs dans les classes là où c'est nécessaire et de mieux payer les professeurs, sans dégrader les finances publiques. La source ne dit pas explicitement ce qu'il advient du nombre de postes.",
+          "citation_anonymisee": "nous avons les moyens de continuer à réduire les effectifs dans les classes",
+          "source": {
+            "url": "https://www.leparisien.fr/politique/edouard-philippe-propose-une-hausse-de-20-du-salaire-des-enseignants-et-une-amende-pour-les-parents-deleves-perturbateurs-24-08-2026-6PEALBAZKRHFTMB42O2HXJS77E.php",
+            "titre": "Édouard Philippe propose une hausse de 20 % du salaire des enseignants et une amende pour les parents d'élèves perturbateurs",
+            "date_publication": "2026-08-24",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-12",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Dans son entretien au Figaro du 24 août 2026, tel que résumé par L'Opinion (formulation du journaliste, sans citation directe sur ce point), il ne prévoit pas d'embaucher davantage de professeurs du fait de la baisse programmée du nombre d'élèves ; il veut en revanche augmenter de 20 % la rémunération moyenne des enseignants sur le quinquennat.",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Dans un entretien de la presse nationale, tel que résumé par un journaliste (sans citation directe sur ce point), [CANDIDAT] ne prévoit pas d'embaucher davantage de professeurs du fait de la baisse programmée du nombre d'élèves ; il veut en revanche augmenter de 20 % la rémunération moyenne des enseignants sur le quinquennat.",
+          "citation_anonymisee": null,
+          "source": {
+            "url": "https://www.lopinion.fr/politique/immigration-education-talonne-par-jean-luc-melenchon-edouard-philippe-devoile-ses-cartes",
+            "titre": "Immigration, éducation : talonné par Jean-Luc Mélenchon, Edouard Philippe dévoile ses cartes",
+            "date_publication": "2026-08-24",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-12",
+          "citation_verifiee_mot_a_mot": null
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": null,
+          "nature": "non_connu",
+          "justification": "Le candidat veut réduire les effectifs par classe là où c'est nécessaire et ne prévoit pas d'embaucher davantage, mais la source ne dit pas s'il maintient ou réduit le nombre de postes.",
+          "date": "2026-10-12",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": null,
+          "nature": "non_connu",
+          "justification": "Aucune source ne dit ce qu'il advient du nombre de postes ; pas d'embauche supplémentaire et réduction des effectifs évoquée sans position sur le maintien.",
+          "date": "2026-10-12",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "controle_humain": {
+        "tire_au_sort": false
+      },
+      "contestations": [],
+      "version": 1,
+      "code": null,
+      "nature": "non_connu",
+      "statut": "accord",
+      "arbitrage": null
+    },
+    {
       "question_id": "SAN-001",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",

@@ -2420,6 +2420,60 @@
       "arbitrage": null
     },
     {
+      "question_id": "EDU-020",
+      "item_aveugle": "47ce57e9",
+      "extraits": [
+        {
+          "reformulation": "Dans son meeting de Lyon, selon le compte rendu de Lyon Mag, il s'oppose à la suppression annoncée de 1 600 postes d'enseignants dans le projet de budget de l'année suivante. Il promet une hausse du budget de l'Éducation nationale et veut profiter de la baisse démographique pour réduire les effectifs par classe, sans fermer de classes. Propos rapportés par le journaliste, sans citation directe.",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Lors d'un meeting, selon le compte rendu d'un média, [CANDIDAT] s'oppose à la suppression annoncée de 1 600 postes d'enseignants dans le projet de budget de l'année suivante. Il promet une hausse du budget de l'Éducation nationale et veut profiter de la baisse démographique pour réduire les effectifs par classe, sans fermer de classes. Propos rapportés par le journaliste, sans citation directe.",
+          "citation_anonymisee": null,
+          "source": {
+            "url": "https://www.lyonmag.com/article/154267/presidentielle-2027-a-lyon-gabriel-attal-devoile-son-pacte-pour-la-jeunesse-et-cible-jean-luc-melenchon",
+            "titre": "Présidentielle 2027 : à Lyon, Gabriel Attal dévoile son \"pacte pour la jeunesse\" et cible Jean-Luc Mélenchon",
+            "date_publication": "2026-10-10",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-12",
+          "citation_verifiee_mot_a_mot": null
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": 2,
+          "nature": "nette",
+          "justification": "Le candidat s'oppose à la suppression des 1 600 postes et veut profiter de la baisse démographique pour réduire les effectifs par classe sans fermer de classes.",
+          "date": "2026-10-12",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": 2,
+          "nature": "nette",
+          "justification": "S'oppose aux suppressions de postes et veut profiter de la baisse démographique pour réduire les effectifs sans fermer de classes, donc maintien malgré la baisse.",
+          "date": "2026-10-12",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "controle_humain": {
+        "tire_au_sort": false
+      },
+      "contestations": [],
+      "version": 1,
+      "code": 2,
+      "nature": "nette",
+      "statut": "accord",
+      "arbitrage": null,
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-10-12",
+        "verdict": "confirme",
+        "motif": "Selon Lyon Mag, Attal s'oppose à la suppression de 1 600 postes et veut profiter de la baisse démographique pour réduire les effectifs par classe : c'est le maintien des postes malgré la baisse d'élèves, sans réserve exprimée."
+      }
+    },
+    {
       "question_id": "SAN-001",
       "contestations": [],
       "version": 1,

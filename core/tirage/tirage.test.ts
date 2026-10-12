@@ -416,8 +416,8 @@ describe('sur les données réelles (data/ et derive/)', () => {
     lire<DeriveAncrage.DeriveAncrage>('ancrage.json'),
   );
 
-  it('la banque contient les 206 questions actives et l\'ancrage publié', () => {
-    expect(reelle.questions).toHaveLength(206);
+  it('la banque contient les 207 questions actives et l\'ancrage publié', () => {
+    expect(reelle.questions).toHaveLength(207);
     expect(reelle.themes).toHaveLength(11);
     expect(reelle.ancres).toEqual(lire<DeriveAncrage.DeriveAncrage>('ancrage.json').ancres);
   });

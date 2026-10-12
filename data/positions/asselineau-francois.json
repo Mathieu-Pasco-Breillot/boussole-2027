@@ -1202,6 +1202,20 @@
       "version": 1
     },
     {
+      "question_id": "EDU-020",
+      "code": null,
+      "nature": "non_connu",
+      "statut": "sans_extrait",
+      "extraits": [],
+      "codage": null,
+      "arbitrage": null,
+      "controle_humain": {
+        "tire_au_sort": false
+      },
+      "contestations": [],
+      "version": 1
+    },
+    {
       "question_id": "FIS-001",
       "code": 1,
       "nature": "imprecise",

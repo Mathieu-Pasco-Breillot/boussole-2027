@@ -1264,6 +1264,66 @@
       "version": 1
     },
     {
+      "question_id": "EDU-020",
+      "item_aveugle": "07c3e624",
+      "extraits": [
+        {
+          "reformulation": "Dans un communiqué du 20 mars 2026, le parti dénonce la suppression de 3 256 postes à la rentrée 2026. Il déplore que ces moyens n'aient pas servi à réduire la taille des classes, renforcer le suivi des élèves et améliorer les conditions de travail du personnel, et appelle à se mobiliser du 30 mars au 3 avril 2026 pour défendre l'école publique.",
+          "citation_courte": "Ces moyens auraient pu servir à réduire la taille des classes",
+          "reformulation_anonymisee": "Dans un communiqué de mars 2026, [PARTI] dénonce la suppression de 3 256 postes à la rentrée 2026. Il déplore que ces moyens n'aient pas servi à réduire la taille des classes, renforcer le suivi des élèves et améliorer les conditions de travail du personnel, et appelle à se mobiliser pour défendre l'école publique.",
+          "citation_anonymisee": "Ces moyens auraient pu servir à réduire la taille des classes",
+          "source": {
+            "url": "https://place-publique.eu/posts/4WFEE3zp7CEaiQTAYTMATR/ecole-publique-3-256-postes-supprimes-a-la-rentree-2026-un-nouveau-recul-pour-nos-eleves",
+            "titre": "École publique : 3 256 postes supprimés à la rentrée 2026, un nouveau recul pour nos élèves. | Place publique",
+            "date_publication": "2026-03-20",
+            "type": "programme_parti"
+          },
+          "date_consultation": "2026-10-12",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "Le parti dénonce la suppression des 3 256 postes en arguant qu'ils auraient dû servir à réduire la taille des classes, ce qui va dans le sens du maintien, mais sans engagement explicite ; hésitation entre +2 et +1, on retient le plus proche de 0.",
+          "date": "2026-10-12",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": 1,
+          "nature": "imprecise",
+          "justification": "Le parti dénonce la suppression de postes et regrette que les moyens n'aient pas servi à réduire les classes, sans engagement explicite de maintien.",
+          "date": "2026-10-12",
+          "aveugle": true
+        },
+        "accord": false
+      },
+      "controle_humain": {
+        "tire_au_sort": false
+      },
+      "contestations": [],
+      "version": 1,
+      "code": 1,
+      "nature": "imprecise",
+      "statut": "arbitre",
+      "arbitrage": {
+        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
+        "date": "2026-10-12",
+        "code_retenu": 1,
+        "nature_retenue": "imprecise",
+        "motif": "Le parti dénonce la suppression des 3 256 postes, ce qui donne une direction claire, mais n'exprime aucun engagement ni mesure concrète de maintien reformulable : direction perceptible sans modalités."
+      },
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-10-12",
+        "verdict": "confirme",
+        "motif": "Le parti dénonce la suppression des 3 256 postes et regrette qu'ils n'aient pas servi à réduire les classes, sans formuler d'engagement de maintien : direction claire, mesure non spécifiée, +1 imprecise défendable."
+      }
+    },
+    {
       "question_id": "ENV-001",
       "code": null,
       "nature": "non_connu",

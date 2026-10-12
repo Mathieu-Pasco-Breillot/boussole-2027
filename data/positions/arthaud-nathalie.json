@@ -2212,6 +2212,20 @@
       "arbitrage": null
     },
     {
+      "question_id": "EDU-020",
+      "code": null,
+      "nature": "non_connu",
+      "statut": "sans_extrait",
+      "extraits": [],
+      "codage": null,
+      "arbitrage": null,
+      "controle_humain": {
+        "tire_au_sort": false
+      },
+      "contestations": [],
+      "version": 1
+    },
+    {
       "question_id": "SAN-001",
       "contestations": [],
       "version": 1,

@@ -3,12 +3,12 @@
  "_lot": 5,
  "_statut": "VALIDÉ le 2026-10-03 — sources à recontrôler sur textes officiels avant publication",
  "_equilibre": {
-  "actives": 18,
-  "suspendues": 2,
-  "sens_plus": 9,
+  "actives": 19,
+  "suspendues": 1,
+  "sens_plus": 10,
   "sens_moins": 9,
   "axes": {
-   "economie": 15,
+   "economie": 16,
    "securite": 3
   }
  },
@@ -968,7 +968,7 @@
      "nature": "secondaire"
     }
    },
-   "statut": "suspendue",
+   "statut": "active",
    "alertes_neutralite": [
     {
      "signalement": "question ajoutée lors de la revue du codage de Glucksmann (EDU-003)",
@@ -980,6 +980,10 @@
     {
      "date": "2026-10-12",
      "note": "ajoutée à la demande de Mathieu ; suspendue en attente d'une passe de codage pour tous les candidats, puis à activer"
+    },
+    {
+     "date": "2026-10-12",
+     "note": "activée après codage de tous les candidats codés : 5 extraits, 4 codes publiés (Attal, Ruffin, Tondelier +2 ; Glucksmann +1 imprécise)"
     }
    ]
   }
