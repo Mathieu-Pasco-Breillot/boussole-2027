@@ -249,6 +249,16 @@
       "description": "Suite de la revue humaine du codage de Glucksmann : Mathieu reprend les sept codes que Claude avait relus sur délégation. Validés : INS-001 (+1 nuancée), IMM-004 (−1 nuancée), SAN-017 (−2 nette), SEC-009 (+1 imprécise), RET-007 (−2 nette). Corrigés : ECO-003, +1 nuancée → null (le plafonnement des prix ne vise que les Outre-mer, sujet voisin) ; EUR-008, −1 imprécise → −2 nette (saut fédéral et « locomotive de la puissance européenne », extrait de sa lettre aux Français ajouté). Le schéma des positions accepte désormais une correction par le contrôle humain (resultat « corrige », code_avant, nature_avant, motif), que le validateur fait primer sur les codeurs, l'arbitre et la vérification.",
       "auteur": "Mathieu, avec Claude",
       "reference": "phase-4, revue du codage de Glucksmann, 12 octobre 2026"
+    },
+    {
+      "date": "2026-10-12",
+      "type": "arbitrage",
+      "objets": [
+        "data/positions/arthaud-nathalie.json"
+      ],
+      "description": "Retour d'un testeur sur ECO-003 : Arthaud était codée « plutôt pas d'accord » sur quatre énoncés qu'elle juge insuffisants, et non excessifs. Corrigés par Mathieu, −1 nuancée → +1 nuancée, par la règle R1 (le candidat va plus loin dans le même sens) au lieu de R3 : ECO-003 (blocage des prix ; elle veut la vente à prix coûtant imposée et la confiscation des profits), ENV-025 (blocage des carburants ; réquisition des surprofits), ECO-006 (nationalisation d'ArcelorMittal ; expropriation sous contrôle des travailleurs), EDU-007 (+20 % pour les enseignants ; hausse générale des salaires). Inventaire complet des cas voisins : phase-4/inventaire-accords-trompeurs.md (projet).",
+      "auteur": "Mathieu, avec Claude",
+      "reference": "retour testeur sur ECO-003, 12 octobre 2026"
     }
   ]
 }

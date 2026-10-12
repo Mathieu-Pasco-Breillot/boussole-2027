@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "c28dc241af29f5735c2a6701da030fa6035a6212d39b646c2f9de8acd199f236",
+  "empreinte_donnees": "871133c3dee188b719d73e57aa036273cd0c0563fd136a7f3ebe048519f2359a",
   "provisoire": true,
   "parametres": {
     "nombre_ancres": 10,
@@ -99,7 +99,7 @@
       "theme": "education",
       "axe": "economie",
       "sens": 1,
-      "D": 1.227273,
+      "D": 1.045455,
       "couverture": 0.916667,
       "candidats_codes": 11
     }

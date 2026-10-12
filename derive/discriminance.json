@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "c28dc241af29f5735c2a6701da030fa6035a6212d39b646c2f9de8acd199f236",
+  "empreinte_donnees": "871133c3dee188b719d73e57aa036273cd0c0563fd136a7f3ebe048519f2359a",
   "provisoire": true,
   "population": [
     "arthaud-nathalie",
@@ -170,8 +170,8 @@
       "sens": 1,
       "candidats_codes": 6,
       "couverture": 0.5,
-      "variance": 0.555556,
-      "D": 0.277778
+      "variance": 0,
+      "D": 0
     },
     "ECO-004": {
       "theme": "economie-dette",
@@ -197,8 +197,8 @@
       "sens": 1,
       "candidats_codes": 4,
       "couverture": 0.333333,
-      "variance": 1.1875,
-      "D": 0.395833
+      "variance": 0.1875,
+      "D": 0.0625
     },
     "ECO-007": {
       "theme": "economie-dette",
@@ -386,8 +386,8 @@
       "sens": 1,
       "candidats_codes": 11,
       "couverture": 0.916667,
-      "variance": 1.338843,
-      "D": 1.227273
+      "variance": 1.140496,
+      "D": 1.045455
     },
     "EDU-008": {
       "theme": "education",
@@ -692,8 +692,8 @@
       "sens": 1,
       "candidats_codes": 8,
       "couverture": 0.666667,
-      "variance": 2.4375,
-      "D": 1.625
+      "variance": 2.5,
+      "D": 1.666667
     },
     "ENV-026": {
       "theme": "ecologie-energie",

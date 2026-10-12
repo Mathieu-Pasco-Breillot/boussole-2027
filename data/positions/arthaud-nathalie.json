@@ -778,9 +778,14 @@
         "motif": "Elle écarte le blocage gouvernemental des prix au profit de l'indexation des salaires et de la confiscation des profits ; le prix coûtant imposé à Total n'est pas un blocage général : R3 défendable."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-12",
+        "resultat": "corrige",
+        "code_avant": -1,
+        "nature_avant": "nuancee",
+        "motif": "Corrigé par Mathieu le 12 octobre 2026 (retour d'un testeur) : elle n'écarte pas le blocage parce qu'il irait trop loin mais parce qu'il ne va pas assez loin (compensé aux pétroliers) ; elle veut imposer la vente à prix coûtant et confisquer les profits, une mesure qui va plus loin dans le même sens. La règle R1 s'applique (+1 nuancée), pas R3."
       },
       "item_aveugle": "9910ece0",
       "extraits": [
@@ -832,7 +837,7 @@
         },
         "accord": false
       },
-      "code": -1,
+      "code": 1,
       "nature": "nuancee",
       "statut": "arbitre",
       "arbitrage": {
@@ -880,9 +885,14 @@
         "motif": "Elle écarte la nationalisation présentée comme solution (souvenir de 1982 dans la sidérurgie) et préconise d'exproprier les capitalistes et de mettre l'économie sous contrôle des travailleurs."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-12",
+        "resultat": "corrige",
+        "code_avant": -1,
+        "nature_avant": "nuancee",
+        "motif": "Corrigé par Mathieu le 12 octobre 2026 (retour d'un testeur) : elle juge la nationalisation insuffisante et veut l'expropriation sous contrôle des travailleurs : elle va plus loin dans le même sens. La règle R1 s'applique (+1 nuancée), pas R3."
       },
       "item_aveugle": "ba0b7bcd",
       "extraits": [
@@ -934,7 +944,7 @@
         },
         "accord": true
       },
-      "code": -1,
+      "code": 1,
       "nature": "nuancee",
       "statut": "accord",
       "arbitrage": null
@@ -1946,9 +1956,14 @@
         "motif": "Elle écarte une hausse propre aux enseignants au profit d'une revalorisation générale des salaires obtenue par les luttes, autre mécanisme identifiable : R3, -1 nuancee. Note : le motif d'arbitrage dit retenir le codeur A alors que -1 est le code du codeur 2 ; source de 2022 seulement."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-12",
+        "resultat": "corrige",
+        "code_avant": -1,
+        "nature_avant": "nuancee",
+        "motif": "Corrigé par Mathieu le 12 octobre 2026 (retour d'un testeur) : elle ne veut pas de hausse réservée aux enseignants mais une hausse générale de tous les salaires, qui les inclut : elle va plus loin dans le même sens. La règle R1 s'applique (+1 nuancée), pas R3."
       },
       "item_aveugle": "56a15891",
       "extraits": [
@@ -1986,7 +2001,7 @@
         },
         "accord": false
       },
-      "code": -1,
+      "code": 1,
       "nature": "nuancee",
       "statut": "arbitre",
       "arbitrage": {
@@ -5570,9 +5585,14 @@
         "motif": "Elle écarte le blocage par l'État (coût reporté sur les travailleurs) au profit d'un autre mécanisme identifiable (prix coûtant imposé à Total, réquisition des surprofits) : R3, −1 nuancee."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-12",
+        "resultat": "corrige",
+        "code_avant": -1,
+        "nature_avant": "nuancee",
+        "motif": "Corrigé par Mathieu le 12 octobre 2026 (retour d'un testeur) : elle écarte le blocage décidé par l'État parce qu'il serait compensé aux pétroliers, et veut réquisitionner les surprofits pour faire baisser le prix à la pompe : elle va plus loin dans le même sens. La règle R1 s'applique (+1 nuancée), pas R3."
       },
       "item_aveugle": "1f82b08e",
       "extraits": [
@@ -5638,7 +5658,7 @@
         },
         "accord": false
       },
-      "code": -1,
+      "code": 1,
       "nature": "nuancee",
       "statut": "arbitre",
       "arbitrage": {
