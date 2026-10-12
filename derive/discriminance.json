@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "1b8f989683ef7bcaf5138cfbcd049507833a9e1dfb980f5b19b6ff62218adccf",
+  "empreinte_donnees": "c28dc241af29f5735c2a6701da030fa6035a6212d39b646c2f9de8acd199f236",
   "provisoire": true,
   "population": [
     "arthaud-nathalie",
@@ -168,10 +168,10 @@
       "theme": "economie-dette",
       "axe": "economie",
       "sens": 1,
-      "candidats_codes": 7,
-      "couverture": 0.583333,
-      "variance": 0.489796,
-      "D": 0.285714
+      "candidats_codes": 6,
+      "couverture": 0.5,
+      "variance": 0.555556,
+      "D": 0.277778
     },
     "ECO-004": {
       "theme": "economie-dette",
@@ -773,8 +773,8 @@
       "sens": -1,
       "candidats_codes": 8,
       "couverture": 0.666667,
-      "variance": 1.859375,
-      "D": 1.239583
+      "variance": 1.9375,
+      "D": 1.291667
     },
     "EUR-009": {
       "theme": "union-europeenne",

@@ -399,6 +399,12 @@ export namespace Positions {
        * Vide tant que le contrôle humain n'a pas eu lieu. Le script de dérivation compte comme correction la valeur « corrige ».
        */
       resultat?: string | null;
+      /**
+       * Présent quand le contrôle humain corrige le code (resultat « corrige ») : code publié avant la correction. Le code corrigé est alors le code publié de la position.
+       */
+      code_avant?: number | null;
+      nature_avant?: Nature | null;
+      motif?: string;
     };
     /**
      * Vérification indépendante contre la page source (4 octobre 2026). verdict « confirme » : code jugé défendable ; « corrige » : le vérificateur et un second arbitre, indépendants l'un de l'autre, ont retenu le même autre code, qui devient le code publié (code_avant garde l'ancien) ; « maintenu » : le second arbitre a gardé le code publié ; « a_revoir » : désaccord non tranché, le code publié est inchangé et l'item est listé pour un humain ; « source_inaccessible » : page impossible à consulter, code inchangé. Aucune de ces étapes n'est validée par un humain.

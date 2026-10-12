@@ -131,7 +131,13 @@
             "resultat": {
               "description": "Vide tant que le contrôle humain n'a pas eu lieu. Le script de dérivation compte comme correction la valeur « corrige ».",
               "anyOf": [{ "type": "string", "minLength": 1 }, { "type": "null" }]
-            }
+            },
+            "code_avant": {
+              "description": "Présent quand le contrôle humain corrige le code (resultat « corrige ») : code publié avant la correction. Le code corrigé est alors le code publié de la position.",
+              "$ref": "#/$defs/code"
+            },
+            "nature_avant": { "anyOf": [{ "$ref": "#/$defs/nature" }, { "type": "null" }] },
+            "motif": { "type": "string", "minLength": 1 }
           }
         },
         "verification": {

@@ -59,11 +59,11 @@ describe('désaccord non arbitré = « non connu » (D8)', () => {
     expect(estPublie({ ...(position('candidat-a', 'RET-001', 1) as object), code: 1 } as never)).toBe(true);
   });
 
-  it('sur les données réelles (phase 4, vagues 1 à 3 et Glucksmann, 20 candidats, recodage EDU-001, ajout EDU-020) : 906 codes publiés, aucun arbitrage en attente', () => {
+  it('sur les données réelles (phase 4, vagues 1 à 3 et Glucksmann, 20 candidats, recodage EDU-001, ajout EDU-020, ECO-003 passé à null par Mathieu) : 905 codes publiés, aucun arbitrage en attente', () => {
     const couverture = calculerCouverture(reel) as { candidats: Record<string, { codes_publies: number; arbitrages_en_attente: number }> };
     const total = Object.values(couverture.candidats).reduce((s, c) => s + c.codes_publies, 0);
     const attente = Object.values(couverture.candidats).reduce((s, c) => s + c.arbitrages_en_attente, 0);
-    expect(total).toBe(906);
+    expect(total).toBe(905);
     expect(attente).toBe(0);
   });
 });
@@ -106,7 +106,7 @@ describe('reproduit les chiffres publiés de la phase 4 (vagues 1 à 3, 11 thèm
     expect(accord.arbitrages.rendus).toBe(214);
     expect(accord.controle_humain.tires_au_sort).toBe(91);
     // + 10 revues humaines de Mathieu sur Glucksmann le 12 octobre 2026 (6 contrôles tirés, 4 autres décisions).
-    expect(accord.controle_humain.effectues).toBe(20); // + contrôle de Ruffin sur EDU-020 (validé par Mathieu)
+    expect(accord.controle_humain.effectues).toBe(27); // + Ruffin × EDU-020, puis 7 autres revues de Mathieu sur Glucksmann
   });
 
   it.each([

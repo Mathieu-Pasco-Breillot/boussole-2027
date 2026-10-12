@@ -528,12 +528,17 @@
         "accord": true
       },
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-12",
+        "resultat": "corrige",
+        "code_avant": 1,
+        "nature_avant": "nuancee",
+        "motif": "Corrigé par Mathieu lors de la revue du 12 octobre 2026 : le plafonnement des prix ne vise que les Outre-mer, sans l'énergie ni les carburants ; l'étendre à la France entière serait une déduction (sujet voisin), d'où null."
       },
       "contestations": [],
-      "version": 1,
-      "code": 1,
-      "nature": "nuancee",
+      "version": 2,
+      "code": null,
+      "nature": "non_connu",
       "statut": "accord",
       "arbitrage": null,
       "verification": {
@@ -2522,6 +2527,20 @@
       "item_aveugle": "9cd3ef8c",
       "extraits": [
         {
+          "reformulation": "Dans sa lettre aux Français annonçant sa candidature (août 2026), il s'engage à faire de la France « la locomotive de la puissance européenne naissante ».",
+          "citation_courte": "Nous ferons de la France la locomotive de la puissance européenne naissante",
+          "reformulation_anonymisee": "Dans sa lettre annonçant sa candidature, [CANDIDAT] s'engage à faire de la France la locomotive de la puissance européenne naissante.",
+          "citation_anonymisee": "Nous ferons de la France la locomotive de la puissance européenne naissante",
+          "source": {
+            "url": "https://place-publique.eu/posts/2fgDdljEIy36rgxBjRyiQZ/raphael-glucksmann-sa-lettre-aux-francais",
+            "titre": "Raphaël Glucksmann - Sa lettre aux Français",
+            "date_publication": "2026-08-25",
+            "type": "texte_signe"
+          },
+          "date_consultation": "2026-10-12",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
           "reformulation": "Dans un texte du parti qu'il dirige, le Brexit est jugé avoir isolé, affaibli et appauvri le Royaume-Uni ; le texte refuse le retour au nationalisme et plaide pour une Europe politique et un « saut fédéral ». Il parle du Royaume-Uni et ne traite pas explicitement d'une sortie de la France.",
           "citation_courte": "Le Brexit n'a pas rendu le Royaume-Uni plus fort, il l'a isolé, affaibli et",
           "reformulation_anonymisee": "Un texte de [PARTI] juge que la sortie d'un pays de l'Union l'a isolé, affaibli et appauvri ; il refuse le retour au nationalisme et plaide pour une Europe politique fédérale. Il ne traite pas explicitement d'une sortie de la France.",
@@ -2556,12 +2575,17 @@
         "accord": true
       },
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-12",
+        "resultat": "corrige",
+        "code_avant": -1,
+        "nature_avant": "imprecise",
+        "motif": "Corrigé par Mathieu lors de la revue du 12 octobre 2026 : le candidat veut un « saut fédéral » de l'Union et faire de la France « la locomotive de la puissance européenne » (lettre aux Français, août 2026, extrait ajouté) ; c'est le contraire d'une sortie de l'Union, d'où −2 nette."
       },
       "contestations": [],
-      "version": 1,
-      "code": -1,
-      "nature": "imprecise",
+      "version": 2,
+      "code": -2,
+      "nature": "nette",
       "statut": "accord",
       "arbitrage": null,
       "verification": {
@@ -3442,7 +3466,9 @@
         "accord": false
       },
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-12",
+        "resultat": "correction de la vérification validée par Mathieu (-1 nuancee, R5)"
       },
       "contestations": [],
       "version": 2,
@@ -3856,7 +3882,9 @@
         "accord": false
       },
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-12",
+        "resultat": "arbitrage revu et validé par Mathieu (+1 nuancee)"
       },
       "contestations": [],
       "version": 1,
@@ -4592,7 +4620,9 @@
         "accord": true
       },
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-12",
+        "resultat": "valide par Mathieu (-2 nette)"
       },
       "contestations": [],
       "version": 1,
@@ -5112,7 +5142,9 @@
         "accord": true
       },
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-12",
+        "resultat": "correction de la vérification validée par Mathieu (-2 nette)"
       },
       "contestations": [],
       "version": 2,
@@ -5428,7 +5460,9 @@
         "accord": true
       },
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-12",
+        "resultat": "valide par Mathieu (+1 imprecise)"
       },
       "contestations": [],
       "version": 1,

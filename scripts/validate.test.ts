@@ -123,3 +123,22 @@ describe('autres règles', () => {
     expect(regles(ds)).toContain('schema');
   });
 });
+
+describe('règle : correction par le contrôle humain', () => {
+  const eco003 = (ds: Libre) => ds.positions['glucksmann-raphael'].positions.find((p: Libre) => p.question_id === 'ECO-003');
+  it('une correction humaine motivée prime sur l’accord des codeurs (données réelles, ECO-003)', () => {
+    expect(eco003(reel).controle_humain.resultat).toBe('corrige');
+    expect(eco003(reel).code).not.toBe(eco003(reel).codage.codeur_1.code);
+    expect(regles(copie(reel))).not.toContain('position-incoherente');
+  });
+  it('échoue sans motif', () => {
+    const ds = copie(reel);
+    delete eco003(ds).controle_humain.motif;
+    expect(regles(ds)).toContain('position-incoherente');
+  });
+  it('sans code_avant, le code doit redevenir celui des codeurs', () => {
+    const ds = copie(reel);
+    delete eco003(ds).controle_humain.code_avant;
+    expect(regles(ds)).toContain('position-incoherente');
+  });
+});

@@ -237,6 +237,18 @@
       "description": "Ajout et activation de EDU-020 « Le nombre de postes d'enseignants doit être maintenu malgré la baisse du nombre d'élèves » (sens +1, axe économie), née de la revue d'EDU-003 avec Mathieu. Extraction pour les 20 candidats codés (4 extracteurs) : 5 candidats avec extrait. Double codage aveugle : 2 accords sur 5, 3 arbitrages provisoires (Fable). 4 codes publiés : Attal +2 nette, Ruffin +2 nette, Tondelier +2 nette, Glucksmann +1 imprécise ; Philippe null (aucune position sur les postes). Vérification indépendante : 4 confirmés. Contrôle humain tiré au sort (graine 20261019) : Ruffin. Aucune étape validée par un humain (mode POC).",
       "auteur": "Claude, à la demande de Mathieu",
       "reference": "revue EDU-003 du 12 octobre 2026"
+    },
+    {
+      "date": "2026-10-12",
+      "type": "arbitrage",
+      "objets": [
+        "data/positions/glucksmann-raphael.json",
+        "schemas/positions.schema.json",
+        "scripts/lib/validate.ts"
+      ],
+      "description": "Suite de la revue humaine du codage de Glucksmann : Mathieu reprend les sept codes que Claude avait relus sur délégation. Validés : INS-001 (+1 nuancée), IMM-004 (−1 nuancée), SAN-017 (−2 nette), SEC-009 (+1 imprécise), RET-007 (−2 nette). Corrigés : ECO-003, +1 nuancée → null (le plafonnement des prix ne vise que les Outre-mer, sujet voisin) ; EUR-008, −1 imprécise → −2 nette (saut fédéral et « locomotive de la puissance européenne », extrait de sa lettre aux Français ajouté). Le schéma des positions accepte désormais une correction par le contrôle humain (resultat « corrige », code_avant, nature_avant, motif), que le validateur fait primer sur les codeurs, l'arbitre et la vérification.",
+      "auteur": "Mathieu, avec Claude",
+      "reference": "phase-4, revue du codage de Glucksmann, 12 octobre 2026"
     }
   ]
 }

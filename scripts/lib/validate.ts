@@ -257,7 +257,11 @@ export function validerDataset(ds: Dataset): Rapport {
       // Un code corrigé par la vérification indépendante remplace celui des codeurs ou de l'arbitre :
       // il doit alors être exactement celui retenu par le second arbitrage.
       const verif = p.verification;
-      if (verif?.verdict === 'corrige') {
+      // Un code corrigé par le contrôle humain (resultat « corrige », code_avant renseigné) prime sur les codeurs, l'arbitre et la vérification.
+      const corrigeHumain = p.controle_humain?.resultat === 'corrige' && p.controle_humain && 'code_avant' in p.controle_humain;
+      if (corrigeHumain) {
+        if (!p.controle_humain.motif) erreur('position-incoherente', fichier, `${id} : correction humaine sans motif`);
+      } else if (verif?.verdict === 'corrige') {
         const sa = verif.second_arbitrage;
         if (!sa) {
           erreur('position-incoherente', fichier, `${id} : code corrigé par la vérification sans second arbitrage`);
@@ -276,7 +280,7 @@ export function validerDataset(ds: Dataset): Rapport {
       if (p.statut === 'arbitrage_en_attente' && c1 && c2 && c1.code === c2.code && c1.nature === c2.nature) {
         erreur('position-incoherente', fichier, `${id} : arbitrage en attente alors que les deux codeurs sont d'accord`);
       }
-      if (p.statut === 'arbitre' && p.arbitrage && verif?.verdict !== 'corrige') {
+      if (p.statut === 'arbitre' && p.arbitrage && verif?.verdict !== 'corrige' && !corrigeHumain) {
         if (p.code !== p.arbitrage.code_retenu || p.nature !== p.arbitrage.nature_retenue) {
           erreur('position-incoherente', fichier, `${id} : le code publié ne correspond pas au code retenu par l'arbitrage`);
         }

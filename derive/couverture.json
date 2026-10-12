@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "1b8f989683ef7bcaf5138cfbcd049507833a9e1dfb980f5b19b6ff62218adccf",
+  "empreinte_donnees": "c28dc241af29f5735c2a6701da030fa6035a6212d39b646c2f9de8acd199f236",
   "provisoire": true,
   "questions_actives": 207,
   "seuil_evalue": 0.4,
@@ -643,20 +643,20 @@
       "positions_disponibles": true,
       "questions_avec_position": 207,
       "avec_extrait": 64,
-      "codes_publies": 61,
+      "codes_publies": 60,
       "arbitrages_en_attente": 0,
-      "non_connu_apres_accord": 3,
-      "taux_couverture": 0.294686,
+      "non_connu_apres_accord": 4,
+      "taux_couverture": 0.289855,
       "seuil_evalue_atteint": false,
       "natures": {
-        "nette": 25,
-        "nuancee": 20,
-        "imprecise": 16
+        "nette": 26,
+        "nuancee": 19,
+        "imprecise": 15
       },
       "parts_natures": {
-        "nette": 0.409836,
-        "nuancee": 0.327869,
-        "imprecise": 0.262295
+        "nette": 0.433333,
+        "nuancee": 0.316667,
+        "imprecise": 0.25
       },
       "par_theme": {
         "defense": {
@@ -671,8 +671,8 @@
         },
         "economie-dette": {
           "questions_actives": 20,
-          "codes_publies": 3,
-          "taux_couverture": 0.15
+          "codes_publies": 2,
+          "taux_couverture": 0.1
         },
         "education": {
           "questions_actives": 19,
