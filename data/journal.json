@@ -295,6 +295,16 @@
       "description": "Encart Impact étendu au thème Retraites (19 questions actives) : rédaction par un sous-agent Opus 5.5 avec recherche web, relecture aveugle Sonnet 5.5 (11 ok, 8 corrections appliquées : RET-001, 007, 008, 009, 010, 011, 012, 013 ; 0 bloquant). Titres de sources vérifiés sur les pages et corrigés avant intégration. Statut « pilote » : non relu question par question par un humain.",
       "auteur": "Claude, à la demande de Mathieu",
       "reference": "extension impact vague 2, retraites, du 12 octobre 2026"
+    },
+    {
+      "date": "2026-10-12",
+      "type": "ajout_impact",
+      "objets": [
+        "data/questions/sante.json"
+      ],
+      "description": "Encart Impact étendu au thème Santé (19 questions actives) : rédaction par un sous-agent Opus 5.5 avec recherche web, relecture aveugle Sonnet 5.5 (11 ok, 8 corrections appliquées : SAN-001, 002, 005, 007, 009, 015, 016, 018 ; 0 bloquant). Titres de sources vérifiés sur les pages et corrigés avant intégration (Légifrance, inaccessible, non vérifié). Statut « pilote » : non relu question par question par un humain.",
+      "auteur": "Claude, à la demande de Mathieu",
+      "reference": "extension impact vague 2, santé, du 12 octobre 2026"
     }
   ]
 }

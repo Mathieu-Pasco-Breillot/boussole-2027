@@ -1,0 +1,134 @@
+[
+  {
+    "id": "SAN-001",
+    "verdict": "corriger",
+    "remarques": "Faits vérifiés sur Caducée (13 juin = date non confirmée sur la page ; contenu OK) : Assemblée 99 contre 9 et 10 abstentions (7 mai 2025), article 1 adopté par 215 voix contre 118 le 11 juin 2026, examen ajourné sine die ; Localtis confirme le vote du Sénat. Problème de lisibilité et d'exactitude : « y » est ambigu, le lecteur peut croire que la règle du départ d'un confrère est celle de l'Assemblée ou s'applique à tous. En réalité (Caducée) la règle du départ d'un confrère est celle de la version du Sénat pour les spécialistes, avec exceptions, et les généralistes relèvent d'un engagement d'exercice à temps partiel. Le score de l'Assemblée répète en partie la Précision. Titres de sources : « Caducée, 13 juin 2026 : déserts médicaux, le vote du Sénat… » et « Banque des Territoires, Localtis, 12 juin 2026 : … » sont descriptifs ; titres réels : « Déserts médicaux : le Sénat adopte une régulation édulcorée de l'installation, mais laisse la loi Garot en plan » et « Lutte contre les déserts médicaux : à la régulation façon Garot, les sénateurs préfèrent l'\"aménagement\" de la liberté d'installation ». Neutralité, absence de noms : OK.",
+    "corrections": {
+      "changement": "La mesure créerait une autorisation préalable à l'installation dans les zones les mieux pourvues en médecins. Le 11 juin 2026, le Sénat a adopté l'article 1 par 215 voix contre 118, dans une version assouplie : un généraliste devrait s'engager à exercer à temps partiel en zone en manque de médecins ; un spécialiste s'installerait au départ d'un confrère, avec des exceptions. Le Sénat a ensuite ajourné l'examen, sans date de reprise."
+    }
+  },
+  {
+    "id": "SAN-002",
+    "verdict": "corriger",
+    "remarques": "Point prioritaire tranché : le chiffrage de 2,6 à 2,9 Md€ (soit 65 à 72 %) est celui de la note 19 de la p. 10 du HCAAM, qui chiffre deux jeux d'hypothèses du SCÉNARIO 3 : (20 % de la population avec accès à un tarif opposable + plafond de dépassements de 50 % du tarif Sécu) ou (40 % + plafond de 100 %), appliqués aux pratiques actuelles et non aux seuls nouveaux installés. Ce n'est donc pas l'effet du seul plafond par acte : la rédaction omet l'accès au tarif opposable pour 20 % ou 40 % de la population, et attribue la baisse au plafond seul (le rédacteur le sait : réserves). Le nom « scénario 3 plafond par acte » est une simplification : le scénario 3 combine droit au tarif opposable sous condition de ressources, plafond absolu par acte pour les nouveaux installés, revalorisations de 330 M€ de cinq spécialités. Autres faits vérifiés dans le texte : 4,7 Md€ en 2025 hors médecine générale (p. 1 et 6) ; 53 % d'adhésion à l'Optam/Optam-ACO en 2024 (p. 5), « éligibles » exact. Titres : « Haut Conseil…, Décryptages santé n° 3, juin 2026 : les dépassements d'honoraires… (p. 1, 5, 6, 8, 10) » est descriptif (le PDF s'ouvre sur « Les dépassements d'honoraires : une exception au principe… ») ; « Caducée, 10 juin 2026 : secteur 2, … » descriptif, titre réel « Secteur 2 : les trois scénarios du HCAAM pour réformer les dépassements d'honoraires » (article du 9-10 juin). Contre : l'argument sur les tarifs trop bas est discuté puis écarté par le HCAAM (p. 10) mais bien attribué aux opposants : OK.",
+    "corrections": {
+      "changement": "Selon le Haut Conseil pour l'avenir de l'assurance maladie, les dépassements des spécialistes hors généralistes ont atteint 4,7 milliards en 2025. L'option d'encadrement avait recueilli 53 % des médecins éligibles en 2024. Un de ses scénarios associe un plafond par acte (50 % ou 100 % du tarif Sécu) à un tarif sans dépassement pour 20 % ou 40 % de la population : sur les pratiques actuelles, les dépassements baisseraient de 65 à 72 % (2,6 à 2,9 milliards)."
+    }
+  },
+  {
+    "id": "SAN-003",
+    "verdict": "ok",
+    "remarques": "Taux vérifiés sur Ameli : consultation à 70 % (exemple 30 € : 21 € pris en charge), hospitalisation 80 %, médicaments de 15 % à 100 %. Neutre, sans nom. Sources limitées à Ameli (aucun fait de coût avancé : retiré à raison). Pour et contre équilibrés, mais non sourcés (arguments courants). Titre Ameli : « Ameli.fr : tableau récapitulatif… » vs réel « Tableaux récapitulatifs des taux de remboursement | ameli.fr » : écart mineur.",
+    "corrections": {}
+  },
+  {
+    "id": "SAN-004",
+    "verdict": "ok",
+    "remarques": "Faits vérifiés : Service-public (décret n° 2026-858 du 11 septembre 2026, JO du 12 septembre ; plafonds 70 €, 140 € cumulés contre 100 € ; revalorisation selon l'inflation à partir du 1er janvier 2028) ; Caducée : 78 € par an en ALD contre 41 € pour les autres, d'après le rapport de la Cour des comptes de mai 2026. Observation : la Précision appelle « franchise » les 2 € par consultation, qui sont la participation forfaitaire ; le changement fait bien la distinction, à conserver. Titres : Service-public « actualité : décret n° 2026-858… » descriptif, titre réel « Les plafonds annuels des franchises médicales et participations forfaitaires augmentent dès le 1er octobre 2026 » ; Caducée « franchises médicales à 140 euros cumulés… » correspond au h1 (le <title> est « Franchises médicales : deux plafonds à 70 euros au 1er octobre 2026 ») ; Ameli : écart mineur. Pour et contre équilibrés.",
+    "corrections": {}
+  },
+  {
+    "id": "SAN-005",
+    "verdict": "corriger",
+    "remarques": "Sources ouvertes : page Sénat de la PPL n° 677 (articles 1, 2 et 5 conformes : établissement public « Pôle public du médicament et des dispositifs médicaux » au 1er janvier 2022, programme public de production des médicaments essentiels en arrêt de commercialisation ou en tension, taux de l'article L. 245-6 du code de la Sécurité sociale porté de 0,17 % à 1 %) ; Public Sénat (publié le 02/12/2020, URL valide, non tronquée : le slug se termine ainsi sur le site, mais son titre réel est « Les sénateurs communistes veulent créer un pôle public du médicament : un enjeu de « souveraineté » », pas le titre rédigé). Le texte indique que le pôle s'appuierait sur les pharmacies centrales des armées et l'AP-HP, et que la taxe de 1 % porte sur le chiffre d'affaires des laboratoires. Problèmes : (1) la moitié de l'argument contre (« doutent qu'un établissement public réunisse les investissements et le savoir-faire ») n'est étayée par aucune source listée (le rédacteur l'avoue) : seule l'objection du périmètre (préférence pour une échelle européenne, « certains à la commission des affaires sociales ») figure dans Public Sénat ; (2) le sort de la PPL de 2020 (débattue le 9 décembre 2020) n'est pas donné : le lecteur ne sait pas si le texte est en cours, rejeté ou caduc ; à faire vérifier par un humain ; (3) l'argument contre principal (coût pour les finances publiques / effet sur l'industrie) manque, sans source pour l'asseoir. Correction de contre limitée au fait sourcé, de longueur comparable (24 contre 26 mots).",
+    "corrections": {
+      "contre": "Ses opposants, dont certains sénateurs en commission, contestent le périmètre national du projet et préféreraient un pôle du médicament créé à l'échelle européenne plutôt qu'à l'échelle française."
+    }
+  },
+  {
+    "id": "SAN-006",
+    "verdict": "ok",
+    "remarques": "Localtis vérifié : la commission des affaires sociales du Sénat a validé l'article rétablissant une obligation de participation individuelle à la permanence des soins ambulatoires ; la rapporteure parle d'un dispositif actuel inégalitaire qui pèse « sur une minorité de médecins, souvent jeunes » ; sénateurs et députés d'accord sur la nécessité de mieux répartir la permanence des soins (formulation exacte, pas d'accord sur l'obligation elle-même). Pas de nom (rapporteure non nommée). Titre : source « Banque des Territoires, Localtis, 12 juin 2026 : déserts médicaux, … permanence des soins » descriptif ; titre réel « Lutte contre les déserts médicaux : à la régulation façon Garot, les sénateurs préfèrent l'\"aménagement\" de la liberté d'installation ». Précision (« depuis 2003 ») non vérifiée par moi non plus. Pour/contre équilibrés.",
+    "corrections": {}
+  },
+  {
+    "id": "SAN-007",
+    "verdict": "corriger",
+    "remarques": "Faits vérifiés : FHF (décret n° 2025-186 du 26 février 2025 mettant en œuvre la réforme de l'article 49 de la LFSS 2024 : trois compartiments activité / objectifs de santé publique / missions spécifiques ; réforme limitée au champ médecine, chirurgie, obstétrique). Non étayé : la parenthèse « tarification à l'activité et soins suivant des protocoles » pour le compartiment activité ne figure pas sur la page FHF consultée (la page nomme seulement les trois compartiments) ; à retirer. Inexact : le rapport sénatorial n° 587 (déposé le 29 mars 2022) recommande de tourner la page du « tout T2A » et de passer à un financement activité-population-qualité en maintenant un lien avec l'activité réelle ; « d'en sortir » est trop fort. Il est utile de préciser que la réforme ne concerne que les services MCO. Titres : FHF « réforme du financement des établissements de santé, les compartiments de financement » vs réel « … les compartiments objectifs de santé publique et missions spécifiques en 2025 » ; Sénat « rapport n° 587 (2021-2022) … (recommandations sur le financement de l'hôpital) » vs réel « Hôpital : sortir des urgences - Rapport ».",
+    "corrections": {
+      "changement": "Selon la Fédération hospitalière de France, la réforme issue du budget de la Sécurité sociale pour 2024 répartit le financement des services de médecine, chirurgie et obstétrique en trois compartiments : « activité », « objectifs de santé publique » et « missions spécifiques ». Supprimer la tarification à l'activité exigerait un autre mode de paiement, que l'énoncé ne précise pas. En 2022, une commission d'enquête du Sénat a proposé un financement combinant activité, population et qualité."
+    }
+  },
+  {
+    "id": "SAN-008",
+    "verdict": "ok",
+    "remarques": "Caducée vérifié : le pacte présenté le 25 avril 2025 (modifié le 2 mai 2025 d'après la bibliographie) prévoit que chaque médecin puisse consacrer jusqu'à deux jours par mois à des consultations en zones rouges ; rapport de la commission des affaires sociales du Sénat déposé le 27 mai 2026 : 6,4 millions d'assurés sans médecin traitant en 2025. Le verbe « consacrent » du changement gagnerait à rester facultatif (« puissent »), mais la Précision lève l'ambiguïté (volontariat). Précision (« septembre 2025 ») non vérifiée par moi. Titre de la source Caducée descriptif (voir SAN-001). Pour et contre équilibrés.",
+    "corrections": {}
+  },
+  {
+    "id": "SAN-009",
+    "verdict": "corriger",
+    "remarques": "Faits vérifiés : OFDT : 595 000 séjours en MCO liés à l'alcool en 2023, 308 000 patients ; verre standard de 10 g d'alcool pur. Santé publique France : 41 000 décès annuels ; la mention « estimation portant sur 2015 » ne figure pas sur la page consultée (mise à jour du 26 janvier 2026), donc non étayée par la source listée (exacte à ma connaissance, à confirmer). Lisibilité : « unité d'alcool » n'est pas définie alors que le rédacteur indique dans ses réserves ne pas l'avoir écrite faute de source ; l'OFDT donne le verre standard à 10 g, donc la définition est sourçable. Titres : « Santé publique France : alcool (page mise à jour le 26 janvier 2026) » correct sur le fond ; OFDT « : alcool » vs réel « Alcool - Synthèse des connaissances ».",
+    "corrections": {
+      "changement": "Aucune boisson alcoolisée ne pourrait être vendue à moins de 0,50 euro par unité d'alcool (un verre standard, soit 10 grammes d'alcool pur) : les boissons les moins chères au regard de leur teneur en alcool seraient les plus concernées. Santé publique France attribue à l'alcool 41 000 décès par an (estimation portant sur 2015). L'Observatoire français des drogues et des tendances addictives relève 595 000 séjours hospitaliers liés à l'alcool en 2023, pour 308 000 patients."
+    }
+  },
+  {
+    "id": "SAN-010",
+    "verdict": "ok",
+    "remarques": "OFDT (cannabis) vérifié : usage interdit ; amende forfaitaire délictuelle de 200 € depuis 2019, généralisée en septembre 2020 ; trafic passible de la réclusion criminelle à perpétuité. Titre : « OFDT : cannabis » vs réel « Cannabis (résine, herbe, huile, CBD) - Synthèse des connaissances ». Neutre, pas de nom. Pour et contre équilibrés.",
+    "corrections": {}
+  },
+  {
+    "id": "SAN-011",
+    "verdict": "ok",
+    "remarques": "Service-public (F3079) vérifié : plafond 10 421 € (métropole, personne seule), prise en charge à 100 % aux tarifs Sécu, soins urgents pour les personnes sans AME. Public Sénat (31/01/2025) : crédits gelés à 1,2 Md€ « à hauteur de 2024 » (donc budget 2025, non 2026 : chiffre un peu ancien). Titres : Service-public « aide médicale de l'État (AME) » vs réel « Qu'est-ce que l'aide médicale de l'État (AME) ? » ; Public Sénat titre correct (précédé de la date). Pour et contre équilibrés.",
+    "corrections": {}
+  },
+  {
+    "id": "SAN-012",
+    "verdict": "ok",
+    "remarques": "Service-public (F3053) vérifié : carence Sécu de 3 jours ; complément employeur après un délai de 7 jours, versé dès le 8e jour, sauf convention ou accord collectif plus favorable. Observation sur la Précision (non à modifier) : « le plus souvent compensés par l'employeur ou la prévoyance » n'est pas étayé par Service-public (le rédacteur le signale). Titre : « indemnités journalières versées au salarié en arrêt maladie » vs réel « Arrêt maladie : indemnités journalières versées au salarié ». Pour et contre équilibrés.",
+    "corrections": {}
+  },
+  {
+    "id": "SAN-013",
+    "verdict": "ok",
+    "remarques": "Service-public (F303) vérifié : depuis le 1er septembre 2026, 31 jours maximum pour un arrêt initial (au-delà avec justification), prolongations limitées à 62 jours (dérogation justifiée), téléconsultation limitée à 3 jours en principe. Titre : « arrêt de travail pour maladie du salarié » vs réel « Arrêt maladie : démarches à effectuer par le salarié ». Le changement répète le 31 jours de la Précision mais en tire la comparaison utile. Pour et contre équilibrés.",
+    "corrections": {}
+  },
+  {
+    "id": "SAN-015",
+    "verdict": "corriger",
+    "remarques": "Faits vérifiés : Conseil constitutionnel 2025-875 DC du 28 février 2025, article 52 de la LFSS 2025 censuré car le législateur n'a défini ni la nature de la pénalité, ni son montant, ni ses conditions de mise en œuvre ; le texte permettait aussi de subordonner le rendez-vous à une préautorisation bancaire et renvoyait montant, délai d'annulation, motifs d'exonération à un décret. Public Sénat (16/11/2023) : amendement de commission au PLFSS 2024 (somme forfaitaire fixée par décret, reversée en partie aux soignants, trois modes de paiement) et « 6 à 10 % » estimé par l'Académie de médecine et l'Ordre : cette estimation porte sur les patients qui ne se présentent pas, non sur ceux « concernés » par la pénalité. Problèmes : (1) le changement décrit la version sénatoriale de 2023 (amendement jamais entré en vigueur) au lieu du texte censuré ; (2) le montant de 5 € de l'énoncé, élément nouveau par rapport au texte censuré (qui le renvoyait à un décret), n'est pas dit ; (3) « 6 à 10 % des patients sont concernés » est ambigu et daté de 2023. Précision inexacte à signaler (ne pas modifier) : « Votée fin 2024 » ; le Conseil a été saisi le 20 février 2025 de la LFSS 2025, adoptée définitivement en février 2025. Titres : CC « décision n° 2025-875 DC du 28 février 2025 » exact (le <title> ajoute « | Conseil constitutionnel »). Public Sénat : titre exact, daté. Pour/contre équilibrés.",
+    "corrections": {
+      "changement": "Le Conseil constitutionnel a censuré la mesure votée dans le budget de la Sécurité sociale pour 2025, car la loi ne définissait ni la nature de la pénalité, ni son montant, ni ses conditions, renvoyés à un décret. Ce texte permettait aussi d'exiger une préautorisation bancaire pour prendre rendez-vous. L'énoncé fixerait le montant à 5 euros. En 2023, l'Académie de médecine et l'Ordre des médecins estimaient que 6 à 10 % des patients ne se présentent pas à leur rendez-vous."
+    }
+  },
+  {
+    "id": "SAN-016",
+    "verdict": "corriger",
+    "remarques": "Légifrance a refusé l'accès (403, Cloudflare « Just a moment ») : les deux articles du code de la santé publique n'ont pas pu être ouverts ; je ne peux pas confirmer leur numérotation. L'ARS PACA (page ouverte) confirme le financement par l'État, l'assurance maladie et la CNSA, et le fonds d'intervention régional ; le rédacteur note lui-même que la contribution de la CNSA concerne surtout le médico-social. Doute à faire vérifier par un humain : l'article L. 1432-1 cité (que je rattache de mémoire au conseil de surveillance, présidé par le préfet de région) n'est peut-être pas celui qui qualifie les ARS d'établissements publics administratifs de l'État (L. 1431-1) ni celui du financement ; vérifier les numéros d'articles. Problème de fond : le changement décrit l'ARS actuelle (ce que fait déjà la Précision) mais jamais la nouvelle règle de l'énoncé (suppression des agences, missions confiées aux préfets) ; la phrase finale seule évoque le sujet. La correction ajoute cette règle (l'énoncé la porte, aucune source n'est nécessaire) en restant sous 80 mots. Titres : « Code de la santé publique, article L. 1432-1 » et « L. 1431-2 » non vérifiables ; ARS PACA « : les dépenses régionales de santé (4 septembre 2025) » vs réel « Les dépenses régionales de santé | Agence régionale de santé PACA » (date non retrouvée).",
+    "corrections": {
+      "changement": "Les agences régionales de santé sont des établissements publics de l'État. Dans chaque région, elles assurent la veille sanitaire, participent à la gestion des crises, autorisent et contrôlent les établissements, et organisent l'offre de soins. L'État, l'assurance maladie et la Caisse nationale de solidarité pour l'autonomie les financent. La mesure les supprimerait et confierait leurs missions aux préfets ; l'énoncé ne précise pas le sort de leurs personnels et budgets."
+    }
+  },
+  {
+    "id": "SAN-017",
+    "verdict": "ok",
+    "remarques": "Service-public et Caducée vérifiés : plafonds de 70 € chacun depuis le 1er octobre 2026, 140 € cumulés contre 100 € auparavant ; revalorisation selon l'inflation au 1er janvier 2028. Suggestion facultative : Caducée (article ouvert, listé pour SAN-004) cite environ 750 M€ d'économies pour le projet initial à 200 € cumulés, ordre de grandeur utile dont la mention attribuée serait possible (le rédacteur l'a retiré faute de vérification officielle). La phrase « un patient pourrait payer jusqu'à 200 euros » est exacte. Titre Service-public descriptif (voir SAN-004). Pour et contre équilibrés ; le contre ne reprend qu'un argument.",
+    "corrections": {}
+  },
+  {
+    "id": "SAN-018",
+    "verdict": "corriger",
+    "remarques": "Point prioritaire tranché : vérifié sur le Conseil constitutionnel (décision 2026-910 DC du 14 août 2026, loi déclarée conforme sous réserves, §111 et §113) : le médecin notifie sa décision dans un délai de quinze jours à compter de la formalisation de la demande ; la personne ne peut confirmer qu'après un délai de réflexion d'au moins deux jours ; AP-HP : trois réserves, entrée en vigueur le 20 août 2026 mais application subordonnée à des décrets ; Caducée (25 août) : même chose. Légifrance : accès refusé (403) pour le texte de la loi 2026-794 et la loi 2016-87 ; la loi 2016 a été lue dans l'extrait local fourni (arrêt des traitements, y compris nutrition et hydratation artificielles, art. L. 1110-5-2 sédation profonde et continue, dans des cas définis). Problèmes : (1) « Depuis cette loi » + « Avant elle, le droit prévoyait » laisse entendre que le droit de 2016 a disparu ; le rédacteur reconnaît ne pas pouvoir dire ce qu'il resterait ; reformuler au passé historique de la loi de 2016 sans affirmer son sort ; (2) dans pour/contre, « ses partisans » désigne les partisans de l'abrogation alors que « la loi » est le sujet : confusion probable pour le lecteur, à lever ; (3) « reconnaît à chaque malade le droit » est inexact : la loi fixe cinq conditions cumulatives (majorité, nationalité ou résidence, affection grave et incurable en phase avancée ou terminale, souffrance, aptitude). Titres : CC « décision n° 2026-910 DC du 14 août 2026 » exact ; AP-HP « affaires juridiques : loi n° 2026-794… » proche du réel (« Loi n° 2026-794 du 18 août 2026… - APHP DAJDP ») ; Caducée « : aide à mourir, la loi est en vigueur… » reprend le titre réel ; Légifrance : titres non vérifiables.",
+    "corrections": {
+      "changement": "Abroger cette loi supprimerait l'aide à mourir : le patient s'administre la substance létale, ou la reçoit d'un médecin ou d'un infirmier s'il n'en est pas capable. Le médecin répond sous 15 jours ; le patient confirme au moins deux jours plus tard. La loi, conforme à la Constitution sous trois réserves, attend ses décrets. Avant, la loi de 2016 prévoyait l'arrêt des traitements (nutrition et hydratation artificielles comprises) et une sédation profonde et continue jusqu'au décès dans certains cas.",
+      "pour": "Les partisans de l'abrogation estiment que la loi expose des personnes vulnérables à des pressions, que ses critères restent difficiles à apprécier, et que la priorité devrait être l'accès aux soins palliatifs.",
+      "contre": "Les opposants à l'abrogation estiment que la loi reconnaît aux malades remplissant ses conditions le droit de choisir leur fin de vie dans un cadre contrôlé, ce que la sédation profonde et continue ne permettait pas toujours."
+    }
+  },
+  {
+    "id": "SAN-019",
+    "verdict": "ok",
+    "remarques": "Service-public (F3079) vérifié : certains soins non urgents sont pris en charge seulement après 9 mois pour un nouveau bénéficiaire majeur ; Public Sénat (31/01/2025) : crédits gelés à 1,2 Md€ (budget 2025). Doute à faire vérifier par un humain : à ma connaissance (décret du 4 décembre 2019, article R. 251-3 du code de l'action sociale et des familles, non vérifiable car Légifrance refuse l'accès et Ameli renvoie 404), le délai de neuf mois s'accompagne déjà, pour certains soins programmés, d'un accord préalable de l'assurance maladie ; si c'est exact, le changement présente comme nouvelle une règle qui existe déjà en partie, et la formule « l'énoncé ne précise pas la liste des soins » prendrait un autre sens. Non corrigé faute de source vérifiable. Titres : voir SAN-011.",
+    "corrections": {}
+  },
+  {
+    "id": "SAN-020",
+    "verdict": "ok",
+    "remarques": "Ameli vérifié : consultation à 30 € chez un généraliste, l'Assurance Maladie prend en charge 21 € (70 %), participation forfaitaire de 2 € retenue, hospitalisation 80 %. Le calcul 18 € / 3 € est correct (60 % de 30 €) et signalé comme calcul dans les réserves, mais le changement le présente sans mention de calcul : acceptable (arithmétique simple). Pour et contre équilibrés.",
+    "corrections": {}
+  }
+]
