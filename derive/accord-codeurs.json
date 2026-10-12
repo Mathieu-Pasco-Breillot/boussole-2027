@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "871133c3dee188b719d73e57aa036273cd0c0563fd136a7f3ebe048519f2359a",
+  "empreinte_donnees": "af0d6d979ada1d44f3a0c51f21c1ad3f9df45c8284edd16304cd8471b5862ae6",
   "provisoire": true,
   "codeurs": {
     "codeur_1": [
@@ -260,7 +260,7 @@
   },
   "controle_humain": {
     "tires_au_sort": 91,
-    "effectues": 31,
-    "corrections": 6
+    "effectues": 38,
+    "corrections": 13
   }
 }

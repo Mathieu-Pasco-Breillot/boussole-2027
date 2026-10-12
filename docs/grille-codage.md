@@ -1,4 +1,4 @@
-# Grille de codage — version 1.3
+# Grille de codage — version 1.4
 
 Statut : **VALIDÉ le 3 octobre 2026** (v1 validée le 2 octobre 2026). Cette grille est publiée avant tout codage. Toute modification ultérieure incrémente la version et entraîne un recodage des codes concernés, consigné au journal.
 
@@ -20,6 +20,14 @@ Issues du pilote retraites (phase 4), validées par Mathieu le 3 octobre 2026 :
 - § 2 : règle R6 ajoutée (proposition englobante), **proposée par l'assistant le 4 octobre 2026 et appliquée à titre provisoire, à valider par Mathieu**. Elle tranche une incohérence relevée entre les deux lots d'arbitrage de la vague 1 (bilan de la phase 4, § 3).
 - § 6 : étape de vérification indépendante contre la page source ajoutée (point 7).
 
+
+## Modifications de la version 1.4
+
+Issues du retour d'un testeur sur le blocage des prix, validées par Mathieu le 12 octobre 2026 :
+
+- § 2, R3 : ne s'applique pas quand l'autre mécanisme va plus loin dans le même sens que l'énoncé ; c'est alors R1 (+1). Quatre codes d'Arthaud corrigés.
+- § 2, R5 révisée : seuil de la moitié du chemin, conversion dans l'unité de l'énoncé, rejet explicite, et distinction entre « même mesure, autre chiffre » et « autre mesure ». Sept codes passent de −1 à +1.
+- Inventaire des cas : phase-4/inventaire-accords-trompeurs.md (projet).
 ## 1. Ce qui est codé
 
 On code la position d'un candidat **par rapport à l'énoncé tel qu'il est écrit**, jamais par rapport à un axe ou à un camp. Si l'énoncé est formulé à rebours (« Il ne faut pas… »), le code reste relatif à l'énoncé.
@@ -45,9 +53,9 @@ Règles :
 Règles d'application (v1.1) :
 
 - **R1 — Le candidat va plus loin que l'énoncé, dans le même sens.** Quand l'énoncé fixe une valeur et que le candidat propose une valeur qui va plus loin dans la même direction, le code est **+1 `nuancee`**. Exemple : énoncé « âge légal fixé à 62 ans », candidat qui veut 60 ans. L'écart est capté par la question qui porte sur l'autre valeur.
-- **R5 — Le candidat ne va pas jusqu'à la valeur de l'énoncé (v1.2).** Quand le candidat retient explicitement une autre valeur, qui va moins loin que celle de l'énoncé, le code est **−1 `nuancee`** : il refuse la mesure énoncée et sa contre-proposition est identifiable. Exemple : énoncé « âge légal fixé à 60 ans », candidat qui veut 62 ou 63 ans. Celui qui veut aller plus loin accepterait l'énoncé comme étape (R1, +1) ; celui qui veut aller moins loin le refuse. Si sa valeur va dans la direction opposée à l'énoncé par rapport au droit en vigueur, le code est −2.
+- **R5 — Le candidat va dans le même sens, mais moins loin (v1.4).** Quand l'énoncé fixe un chiffre et que le candidat retient un autre chiffre, dans le même sens mais moins loin : on convertit d'abord dans l'unité de l'énoncé (euros en pourcentage, hausse annuelle en hausse cumulée, montant d'une proposition ancienne en valeur relative à son époque). Si le candidat fait **au moins la moitié du chemin** entre le droit en vigueur et le chiffre de l'énoncé, le code est **+1 `nuancee`** ; sinon **−1 `nuancee`**. S'il rejette explicitement le chiffre de l'énoncé, le code est −1 quel que soit l'écart. Si sa valeur va dans la direction opposée à l'énoncé par rapport au droit en vigueur, le code est −2. R5 ne vaut que pour une même mesure avec un autre chiffre : quand le candidat propose une **autre mesure**, même plus douce (volontaire au lieu d'obligatoire, dépénaliser au lieu de légaliser, tarif bas au lieu de gratuité), le code reste −1 `nuancee`. Exemples : énoncé « SMIC à 1 600 € net », candidat à 1 550 € → +1 ; candidat à 1 500 € → −1 ; candidat qui dit « pas 1 600 €, c'est irréaliste » → −1.
 - **R2 — Calendrier de mise en œuvre.** Un engagement ferme sur la cible exacte de l'énoncé, assorti d'un calendrier d'étalement (« progressivement », « en dix ans », « dans un premier temps… puis »), est **+2 `nette`** : un calendrier n'est pas une réserve. « Progressivement » ne conduit à +1 que si la cible ou le périmètre sont réduits ou non précisés.
-- **R3 — Rejet du principe même de l'énoncé.** Quand le candidat écarte explicitement le paramètre sur lequel porte l'énoncé au profit d'un autre mécanisme identifiable, sans donner de chiffre, le code est **−1 `nuancee`** : on sait ce qu'il veut. Exemple : énoncé sur un âge légal, candidat qui veut supprimer tout âge légal au profit de la seule durée de cotisation.
+- **R3 — Rejet du principe même de l'énoncé.** Quand le candidat écarte explicitement le paramètre sur lequel porte l'énoncé au profit d'un autre mécanisme identifiable, sans donner de chiffre, le code est **−1 `nuancee`** : on sait ce qu'il veut. Exemple : énoncé sur un âge légal, candidat qui veut supprimer tout âge légal au profit de la seule durée de cotisation. R3 ne s'applique pas quand l'autre mécanisme va **plus loin dans le même sens** que l'énoncé (exemple : énoncé « bloquer les prix », candidat qui veut imposer la vente à prix coûtant) : c'est alors R1, +1 `nuancee` (v1.4).
 - **R6 — Proposition englobante (v1.3, provisoire).** Quand la mesure du candidat **contient entièrement** celle de l'énoncé, dans le même sens, par un **périmètre** plus large et non par une valeur sur une échelle, le code est **+2 `nette`** : appliquer sa mesure, c'est appliquer l'énoncé en entier. Exemple : énoncé « supprimer les aides aux nouvelles installations », candidat « supprimer toutes les aides ». Symétriquement, une suppression ou une interdiction plus large qui couvre entièrement l'objet d'un énoncé proposant de l'autoriser ou de le développer est **−2 `nette`**. R6 ne s'applique pas si la mesure du candidat ne couvre qu'une partie de l'énoncé, si l'écart porte sur une valeur chiffrée (R1), ou si l'englobement est une déduction et non ce que dit le candidat.
 - **R4 — Position générale face à un énoncé précis.** Une position de principe sur le thème, qui ne reprend pas la mesure précise de l'énoncé (ses critères, son seuil, son public), est **« non connu »**, par application de la règle du sujet voisin. Exemple : « il faut prendre en compte la pénibilité » face à un énoncé qui cite trois critères précis.
 
@@ -77,7 +85,7 @@ Une position `imprecise` est traitée comme à moitié connue : elle compte pour
 | « Retour à 62 ans pour ceux qui ont commencé à travailler avant 20 ans. » | +1 | nuancee |
 | « Nous rétablirons la retraite à 60 ans. » | +1 | nuancee (R1) |
 | « Il faudra revenir sur cette réforme injuste. » | +1 | imprecise |
-| « L'âge légal sera de 63 ans. » | −1 | nuancee (R5) |
+| « L'âge légal sera de 63 ans. » | −1 | nuancee (R5 : moins de la moitié du chemin) |
 | « Je ne toucherai pas à l'âge légal actuel, ni à la hausse ni à la baisse. » | −1 | nuancee |
 | « Il ne faut plus d'âge légal : seule la durée de cotisation doit compter. » | −1 | nuancee (R3) |
 | « Il faudra travailler jusqu'à 65 ans. » | −2 | nette |

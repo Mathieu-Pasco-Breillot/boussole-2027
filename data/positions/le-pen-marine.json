@@ -2214,11 +2214,14 @@
         "motif": "3 % par an sur cinq ans (environ 16 %) reste en deçà des 20 % de l'énoncé : valeur moindre explicite, −1 nuancee (R5). Source de la campagne 2022, recevable."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": true,
-        "date": null,
-        "resultat": null
+        "date": "2026-10-12",
+        "resultat": "corrige",
+        "code_avant": -1,
+        "nature_avant": "nuancee",
+        "motif": "Recodé par la règle R5 révisée (grille v1.4), validée par Mathieu le 12 octobre 2026 : 3 % par an pendant cinq ans, soit environ +16 % cumulés contre +20 % dans l'énoncé (lu avant inflation, comme la proposition d'origine) : 80 % du chemin, d'où +1 nuancée."
       },
       "item_aveugle": "9d397678",
       "extraits": [
@@ -2256,7 +2259,7 @@
         },
         "accord": true
       },
-      "code": -1,
+      "code": 1,
       "nature": "nuancee",
       "statut": "accord",
       "arbitrage": null

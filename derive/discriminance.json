@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "871133c3dee188b719d73e57aa036273cd0c0563fd136a7f3ebe048519f2359a",
+  "empreinte_donnees": "af0d6d979ada1d44f3a0c51f21c1ad3f9df45c8284edd16304cd8471b5862ae6",
   "provisoire": true,
   "population": [
     "arthaud-nathalie",
@@ -152,8 +152,8 @@
       "sens": 1,
       "candidats_codes": 7,
       "couverture": 0.583333,
-      "variance": 1.673469,
-      "D": 0.97619
+      "variance": 1.346939,
+      "D": 0.785714
     },
     "ECO-002": {
       "theme": "economie-dette",
@@ -269,8 +269,8 @@
       "sens": -1,
       "candidats_codes": 5,
       "couverture": 0.416667,
-      "variance": 1.44,
-      "D": 0.6
+      "variance": 1.6,
+      "D": 0.666667
     },
     "ECO-015": {
       "theme": "economie-dette",
@@ -386,8 +386,8 @@
       "sens": 1,
       "candidats_codes": 11,
       "couverture": 0.916667,
-      "variance": 1.140496,
-      "D": 1.045455
+      "variance": 0.545455,
+      "D": 0.5
     },
     "EDU-008": {
       "theme": "education",
@@ -989,8 +989,8 @@
       "sens": -1,
       "candidats_codes": 9,
       "couverture": 0.75,
-      "variance": 1.358025,
-      "D": 1.018519
+      "variance": 1.555556,
+      "D": 1.166667
     },
     "FIS-019": {
       "theme": "fiscalite",
@@ -1439,8 +1439,8 @@
       "sens": 1,
       "candidats_codes": 4,
       "couverture": 0.333333,
-      "variance": 1.5,
-      "D": 0.5
+      "variance": 0.25,
+      "D": 0.083333
     },
     "RET-011": {
       "theme": "retraites",

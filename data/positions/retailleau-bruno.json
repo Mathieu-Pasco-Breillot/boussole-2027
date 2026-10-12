@@ -1062,9 +1062,14 @@
         "motif": "Le programme retient le non-remplacement de moins d'un départ sur cinq, valeur moins ambitieuse qu'un sur trois (R5)."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-12",
+        "resultat": "corrige",
+        "code_avant": -1,
+        "nature_avant": "nuancee",
+        "motif": "Recodé par la règle R5 révisée (grille v1.4), validée par Mathieu le 12 octobre 2026 : près d'un départ sur cinq non remplacé contre un sur trois dans l'énoncé : 60 % du chemin, d'où +1 nuancée."
       },
       "item_aveugle": "ba93eab1",
       "extraits": [
@@ -1116,7 +1121,7 @@
         },
         "accord": true
       },
-      "code": -1,
+      "code": 1,
       "nature": "nuancee",
       "statut": "accord",
       "arbitrage": null

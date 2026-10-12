@@ -1,6 +1,6 @@
 # Protocole de codage des positions
 
-Ce dossier décrit comment les positions des candidats (`data/positions/*.json`) sont recherchées, codées et vérifiées. La grille est dans `docs/grille-codage.md` (v1.3), la méthodologie dans `docs/methodologie.md`. Les vagues passées sont décrites dans le journal (`data/journal.json`).
+Ce dossier décrit comment les positions des candidats (`data/positions/*.json`) sont recherchées, codées et vérifiées. La grille est dans `docs/grille-codage.md` (v1.4), la méthodologie dans `docs/methodologie.md`. Les vagues passées sont décrites dans le journal (`data/journal.json`).
 
 | Fichier | Rôle |
 |---|---|

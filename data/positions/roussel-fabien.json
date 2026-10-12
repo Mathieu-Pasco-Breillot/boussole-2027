@@ -367,7 +367,7 @@
     },
     {
       "question_id": "RET-010",
-      "code": -1,
+      "code": 1,
       "nature": "nuancee",
       "statut": "arbitre",
       "item_aveugle": "efae002e",
@@ -414,7 +414,12 @@
         "motif": "plancher chiffré de 1 200 € net, sans alignement sur le SMIC"
       },
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-12",
+        "resultat": "corrige",
+        "code_avant": -1,
+        "nature_avant": "nuancee",
+        "motif": "Recodé par la règle R5 révisée (grille v1.4), validée par Mathieu le 12 octobre 2026 : pension minimale de 1 200 € net proposée en 2022, soit environ 94 % du SMIC net d'alors : plus de la moitié du chemin vers le niveau du SMIC, d'où +1 nuancée."
       },
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
@@ -431,7 +436,7 @@
         }
       },
       "contestations": [],
-      "version": 2
+      "version": 3
     },
     {
       "question_id": "RET-011",
@@ -738,9 +743,14 @@
         "motif": "Il retient 1 500 euros net, une valeur moins élevée que les 1 600 euros de l'énoncé, dans le même sens (R5). L'extrait 1 est typé programme_officiel alors qu'il s'agit de la profession de foi 2022 : à requalifier ; les deux sources datent de 2022."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-12",
+        "resultat": "corrige",
+        "code_avant": -1,
+        "nature_avant": "nuancee",
+        "motif": "Recodé par la règle R5 révisée (grille v1.4), validée par Mathieu le 12 octobre 2026 : SMIC à 1 500 € net proposé en 2022, soit environ +18 % sur le SMIC net d'alors, contre +8 % pour passer de 1 478 € (juin 2026) à 1 600 € : va au-delà de l'énoncé en valeur relative, d'où +1 nuancée."
       },
       "item_aveugle": "3e9425cf",
       "extraits": [
@@ -792,7 +802,7 @@
         },
         "accord": true
       },
-      "code": -1,
+      "code": 1,
       "nature": "nuancee",
       "statut": "accord",
       "arbitrage": null
@@ -1938,9 +1948,14 @@
         "motif": "Le candidat retient explicitement 850 euros (plus une part variable selon les besoins), montant inférieur aux 1 078 euros de l'énoncé : R5, −1 nuancee."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-12",
+        "resultat": "corrige",
+        "code_avant": -1,
+        "nature_avant": "nuancee",
+        "motif": "Recodé par la règle R5 révisée (grille v1.4), validée par Mathieu le 12 octobre 2026 : 850 € par mois pour tous les étudiants contre 1 078 € dans l'énoncé, à partir d'aucune allocation universelle : 79 % du chemin, d'où +1 nuancée."
       },
       "item_aveugle": "1456761c",
       "extraits": [
@@ -1978,7 +1993,7 @@
         },
         "accord": true
       },
-      "code": -1,
+      "code": 1,
       "nature": "nuancee",
       "statut": "accord",
       "arbitrage": null

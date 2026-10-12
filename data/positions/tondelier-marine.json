@@ -1855,7 +1855,7 @@
     },
     {
       "question_id": "EDU-007",
-      "code": -1,
+      "code": 1,
       "nature": "nuancee",
       "statut": "accord",
       "extraits": [
@@ -1895,10 +1895,15 @@
       },
       "arbitrage": null,
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-12",
+        "resultat": "corrige",
+        "code_avant": -1,
+        "nature_avant": "nuancee",
+        "motif": "Recodé par la règle R5 révisée (grille v1.4), validée par Mathieu le 12 octobre 2026 : +15 % en cinq ans en plus de l'inflation, soit au moins autant que +20 % avant inflation : va jusqu'à l'énoncé ou au-delà, d'où +1 nuancée."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "item_aveugle": "264b5e5d"
     },
     {
