@@ -83,9 +83,9 @@ test('les badges : Campagne terminée, puis « tout effacer » les retire', asyn
 test('fin de chapitre : progression et mascotte seulement, aucun nom, aucun score, pas à la reprise', async ({ page }) => {
   await lancer(page, 'Express');
   const bandeau = page.getByRole('list', { name: 'Chapitres' });
-  // Taille du premier chapitre : « Question 1 sur N ».
-  const surtitre = (await page.getByText(/Question 1 sur \d+/).first().textContent()) ?? '';
-  const taille = Number(/Question 1 sur (\d+)/.exec(surtitre)![1]);
+  // Taille du premier chapitre : « Proposition 1 sur N ».
+  const surtitre = (await page.getByText(/Proposition 1 sur \d+/).first().textContent()) ?? '';
+  const taille = Number(/Proposition 1 sur (\d+)/.exec(surtitre)![1]);
   await expect(bandeau).toBeVisible();
   for (let i = 0; i < taille; i++) {
     const avant = await page.getByRole('heading', { level: 1 }).first().innerText();
@@ -100,7 +100,7 @@ test('fin de chapitre : progression et mascotte seulement, aucun nom, aucun scor
   await page.reload();
   await page.getByRole('button', { name: /Reprendre la partie/ }).click();
   await expect(page.getByRole('button', { name: "Plutôt d'accord" })).toBeVisible();
-  await expect(page.getByText(/Question 1 sur \d+/).first()).toBeVisible();
+  await expect(page.getByText(/Proposition 1 sur \d+/).first()).toBeVisible();
 });
 
 test('préparation : un chapitre écarté (poids 0) disparaît du bandeau, et le nombre de questions annoncé est tenu', async ({ page }) => {

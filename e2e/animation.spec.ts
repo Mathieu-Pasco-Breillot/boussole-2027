@@ -20,7 +20,7 @@ test("un second tap sur l'ancienne carte, pendant sa sortie, ne remplace pas la 
   await expect(page.getByText('2 / 20').or(page.getByRole('button', { name: /^Continuer/ }))).toBeVisible();
   await passerFinDeChapitre(page);
   await expect(page.getByText('2 / 20')).toBeVisible();
-  await page.getByRole('button', { name: '← Question précédente' }).click();
+  await page.getByRole('button', { name: '← Proposition précédente' }).click();
   await expect(page.getByRole('button', { name: "Plutôt d'accord" })).toHaveAttribute('aria-pressed', 'true');
   await expect(page.getByRole('button', { name: "Pas du tout d'accord" })).toHaveAttribute('aria-pressed', 'false');
 });

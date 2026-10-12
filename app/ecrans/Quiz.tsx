@@ -89,10 +89,11 @@ export function Quiz({ partie, onRepondre, onReculer, onQuitter }: Props) {
           className="mt-6 flex flex-1 flex-col"
         >
           <p className="text-xs font-semibold tracking-[0.18em] text-or uppercase">
-            Chapitre {s.chapitre + 1} sur {partie.chapitres.length} · {libelleTheme(s.theme)} · Question{' '}
+            Chapitre {s.chapitre + 1} sur {partie.chapitres.length} · {libelleTheme(s.theme)} · Proposition{' '}
             {s.dansChapitre + 1} sur {s.taille}
           </p>
-          <h1 className="mt-3 font-serif text-3xl leading-snug font-semibold">{question.enonce}</h1>
+          <p className="mt-3 text-sm text-sourdine">Êtes-vous d'accord ?</p>
+          <h1 className="mt-1 font-serif text-3xl leading-snug font-semibold">{question.enonce}</h1>
 
           {question.precision && (
             <div className="mt-3">
@@ -150,7 +151,7 @@ export function Quiz({ partie, onRepondre, onReculer, onQuitter }: Props) {
               disabled={partie.position === 0}
               className="text-sm text-sourdine underline disabled:opacity-30"
             >
-              ← Question précédente
+              ← Proposition précédente
             </button>
           </div>
         </motion.div>
