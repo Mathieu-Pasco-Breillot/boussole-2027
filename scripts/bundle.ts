@@ -5,7 +5,7 @@
  *   npm run bundle:check    échoue si le fichier committé n'est pas à jour
  *
  * Le paquet ne contient que ce que le quiz et les résultats affichent : questions actives, candidats,
- * positions publiées avec leur premier extrait et leur source, et les fichiers de derive/ nécessaires
+ * positions publiées avec tous leurs extraits et leurs sources, et les fichiers de derive/ nécessaires
  * au tirage. Les justifications des codeurs et les textes anonymisés restent consultables dans le dépôt.
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
@@ -61,15 +61,14 @@ export function construirePaquet() {
   for (const [id, f] of Object.entries(ds.positions)) {
     positions[id] = f.positions.map((p) => {
       const etat = etatDePosition(p.statut, p.code);
-      const extrait = p.extraits[0];
       return {
         questionId: p.question_id,
         etat,
         code: etat === 'publie' ? p.code : null,
         nature: etat === 'publie' ? p.nature : etat === 'arbitrage_en_attente' ? null : 'non_connu',
-        ...(etat === 'publie' && extrait
+        ...(etat === 'publie' && p.extraits.length > 0
           ? {
-              extrait: {
+              extraits: p.extraits.map((extrait) => ({
                 reformulation: extrait.reformulation,
                 citation: extrait.citation_verifiee_mot_a_mot === false ? null : extrait.citation_courte,
                 source: {
@@ -77,7 +76,7 @@ export function construirePaquet() {
                   url: extrait.source.url,
                   datePublication: extrait.source.date_publication ?? null,
                 },
-              },
+              })),
             }
           : {}),
       };

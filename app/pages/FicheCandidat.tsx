@@ -1,5 +1,4 @@
-import { apresSource } from '../badges.ts';
-import { majBadges } from '../stockage.ts';
+import { Extraits } from '../ecrans/Extraits.tsx';
 import { EXPLICATIONS_MOTIFS, libelleTheme, libelleValeur, MOTIFS_NON_EVALUATION, NATURES, pourcentage, SEUIL_EVALUE, THEMES } from '../libelles.ts';
 import { questionsParId } from '../jeu.ts';
 import { paquet } from '../paquet.ts';
@@ -84,16 +83,7 @@ export function FicheCandidat({ id, onRetour, libelleRetour = '← Retour' }: { 
                   <li key={p.questionId} className="rounded-lg bg-nuit p-3">
                     <p className="font-semibold">{q(p.questionId)?.enonce}</p>
                     <p className="mt-1">Position : <strong>{libelleValeur(p.code!)}</strong> ({NATURES[p.nature ?? ''] ?? p.nature})</p>
-                    {p.extrait && (
-                      <div className="mt-2 border-l-2 border-or/60 pl-3 [overflow-wrap:anywhere]">
-                        <p>{p.extrait.reformulation}</p>
-                        {p.extrait.citation && <p className="mt-1 italic">« {p.extrait.citation} »</p>}
-                        <p className="mt-1">
-                          <a className="underline" href={p.extrait.source.url} target="_blank" rel="noopener noreferrer" onClick={() => majBadges((b) => apresSource(b, p.extrait!.source.url))}>{p.extrait.source.titre}</a>
-                          {p.extrait.source.datePublication ? ` (${p.extrait.source.datePublication})` : ''}
-                        </p>
-                      </div>
-                    )}
+                    <Extraits extraits={p.extraits} className="mt-2" />
                   </li>
                 ))}
               </ul>

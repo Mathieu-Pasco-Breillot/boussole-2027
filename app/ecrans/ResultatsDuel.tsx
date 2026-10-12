@@ -1,12 +1,11 @@
 import { useMemo, useState } from 'react';
+import { Extraits } from './Extraits.tsx';
 import { qualifierEcart } from '../../core/duel/index.ts';
 import type { PartieDuel } from '../duel.ts';
 import { affiniteDePartie, positionSur } from '../duel.ts';
 import { questionsParId } from '../jeu.ts';
 import { ECARTS, libelleTheme, libelleValeur, NATURES, TAILLES_DUEL_INFO } from '../libelles.ts';
 import { paquet } from '../paquet.ts';
-import { apresSource } from '../badges.ts';
-import { majBadges } from '../stockage.ts';
 import { Detail } from './Resultats.tsx';
 
 interface Props {
@@ -91,24 +90,7 @@ export function ResultatsDuel({ partie, onFiche, onAutreDuel, onAccueil, onViepr
                         {saisie.valeur !== 'sans_avis' ? ` · ${ECARTS[qualifierEcart(4 - Math.abs(saisie.valeur - p.code))]}` : ''}
                       </p>
                     )}
-                    {p?.extrait && (
-                      <div className="mt-2 border-l-2 border-or/60 pl-3 [overflow-wrap:anywhere]">
-                        <p>{p.extrait.reformulation}</p>
-                        {p.extrait.citation && <p className="mt-1 italic">« {p.extrait.citation} »</p>}
-                        <p className="mt-1">
-                          <a
-                            className="underline"
-                            href={p.extrait.source.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={() => majBadges((b) => apresSource(b, p.extrait!.source.url))}
-                          >
-                            {p.extrait.source.titre}
-                          </a>
-                          {p.extrait.source.datePublication ? ` (${p.extrait.source.datePublication})` : ''}
-                        </p>
-                      </div>
-                    )}
+                    <Extraits extraits={p?.extraits} className="mt-2" />
                   </li>
                 );
               })}

@@ -35,7 +35,7 @@ export interface PositionPaquet {
   etat: EtatPosition;
   code: Valeur | null;
   nature: 'nette' | 'nuancee' | 'imprecise' | 'non_connu' | null;
-  extrait?: ExtraitPaquet;
+  extraits?: ExtraitPaquet[];
 }
 
 export interface CandidatPaquet {

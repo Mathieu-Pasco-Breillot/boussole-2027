@@ -274,6 +274,17 @@
       "description": "Grille v1.4, validée par Mathieu : R3 ne s'applique plus quand le candidat va plus loin dans le même sens (R1) ; R5 révisée avec un seuil de la moitié du chemin entre le droit en vigueur et le chiffre de l'énoncé, après conversion dans l'unité de l'énoncé, sauf rejet explicite, et seulement pour une même mesure avec un autre chiffre. Application aux 30 codes R5 à −1 : sept passent à +1 nuancée (Dupont-Aignan FIS-018, Le Pen EDU-007, Tondelier EDU-007, Retailleau ECO-014, Roussel ECO-001, RET-010 et EDU-005). Les codes sur l'âge de départ (RET-001 à RET-003) restent à revoir un par un, le droit en vigueur ayant changé avec la suspension de la réforme. Sources des repères : SMIC net de 1 477,93 € au 1er juin 2026 (info.gouv.fr) ; salaire net moyen des enseignants de 3 090 € en 2024 (DEPP, note 2026-36).",
       "auteur": "Mathieu, avec Claude",
       "reference": "retour testeur sur ECO-003, 12 octobre 2026"
+    },
+    {
+      "date": "2026-10-12",
+      "type": "reformulation",
+      "objets": [
+        "data/questions/economie-dette.json",
+        "data/questions/education.json"
+      ],
+      "description": "ECO-003 reformulé à la demande de Mathieu après le retour d'un testeur (l'énoncé ne disait pas si le blocage était permanent ou réservé aux crises) : « Face à une flambée des prix, l'État doit bloquer temporairement les prix des biens de première nécessité dans l'alimentation, l'énergie et les carburants », avec une précision. Les codes existants restent valables : toutes les propositions codées sont des blocages de crise, et le contrôle permanent des prix voulu par Ruffin va plus loin dans le même sens (R1). EDU-007 : précision ajoutée, la hausse de 20 % est comptée avant inflation, la proposition d'origine ne le précisant pas (LCP, 24 août 2026).",
+      "auteur": "Mathieu, avec Claude",
+      "reference": "retour testeur sur ECO-003, 12 octobre 2026"
     }
   ]
 }
