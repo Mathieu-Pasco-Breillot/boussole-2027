@@ -1,0 +1,42 @@
+name: Release
+
+# À chaque push sur develop, release-please lit les commits (conventional commits) et tient à jour une PR de
+# release : numéros de version (données et application) et notes de version. Fusionner cette PR crée les tags
+# et les GitHub Releases, puis avance la branche main sur le commit publié : Railway déploie main en production.
+
+on:
+  push:
+    branches: [develop]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    steps:
+      - id: rp
+        uses: googleapis/release-please-action@v5
+        with:
+          target-branch: develop
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
+
+      - name: Avance main sur la version publiée (production Railway)
+        if: steps.rp.outputs.releases_created == 'true'
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - if: steps.rp.outputs.releases_created == 'true'
+        run: |
+          git fetch origin main || true
+          # Avance rapide uniquement : main ne reçoit jamais de commit propre, elle suit les versions publiées.
+          if git rev-parse --verify -q origin/main >/dev/null; then
+            git merge-base --is-ancestor origin/main "$GITHUB_SHA" || { echo "main a divergé de develop : à corriger à la main"; exit 1; }
+          fi
+          git push origin "$GITHUB_SHA:refs/heads/main"
