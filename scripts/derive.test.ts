@@ -105,7 +105,8 @@ describe('reproduit les chiffres publiés de la phase 4 (vagues 1 à 3, 11 thèm
     expect(accord.arbitrages.en_attente).toBe(0);
     expect(accord.arbitrages.rendus).toBe(211);
     expect(accord.controle_humain.tires_au_sort).toBe(90);
-    expect(accord.controle_humain.effectues).toBe(9);
+    // + 10 revues humaines de Mathieu sur Glucksmann le 12 octobre 2026 (6 contrôles tirés, 4 autres décisions).
+    expect(accord.controle_humain.effectues).toBe(19);
   });
 
   it.each([

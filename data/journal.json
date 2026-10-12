@@ -215,6 +215,17 @@
       "description": "Encart Impact étendu à 5 thèmes (94 questions actives), méthode validée par Mathieu sur le pilote Institutions : rédaction par un sous-agent Sonnet 5.5 par thème avec recherche web, relecture aveugle Sonnet 5.5 par thème (37 ok, 57 corrections appliquées, 0 bloquant). ENV-018 reprend le texte validé par Mathieu dans une autre session. Statut « pilote » : non relu question par question par un humain.",
       "auteur": "Claude, à la demande de Mathieu",
       "reference": "extension impact vague 1 du 12 octobre 2026"
+    },
+    {
+      "date": "2026-10-12",
+      "type": "arbitrage",
+      "objets": [
+        "data/positions/glucksmann-raphael.json",
+        "data/questions/education.json"
+      ],
+      "description": "Revue humaine du codage de Glucksmann par Mathieu. Contrôles tirés au sort validés : EDU-003, FIS-007, IMM-001, INS-002, INS-004, INS-015. Arbitrages provisoires validés : ENV-005 (+1 nuancée), ENV-013 (−1 nuancée). EUR-002 : arbitrage humain, +1 imprécise → +2 nette (R6), avec ajout d'un extrait du candidat (Le Grand Continent, mai 2024) qui vise expressément le veto sur les sanctions contre la Russie. FIS-007 et FIS-018 : extrait de L'Opinion écarté (détail précisé par l'équipe de campagne, pas par le candidat) ; FIS-018 s'appuie désormais sur RMC ; codes inchangés. Question EDU-020 ajoutée (maintien des postes d'enseignants malgré la baisse démographique), suspendue en attente de codage. Sur délégation de Mathieu, Claude a relu sans les modifier INS-001, IMM-004, SAN-017, ECO-003, EUR-008, SEC-009 et RET-007 : ces sept codes ne sont pas validés par un humain. EDU-001 avait été traitée dans une autre session.",
+      "auteur": "Mathieu, avec Claude",
+      "reference": "phase-4, revue du codage de Glucksmann, 12 octobre 2026"
     }
   ]
 }

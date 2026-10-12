@@ -929,8 +929,8 @@
       },
       "controle_humain": {
         "tire_au_sort": true,
-        "date": null,
-        "resultat": null
+        "date": "2026-10-12",
+        "resultat": "valide par Mathieu (+1 imprecise)"
       },
       "contestations": [],
       "version": 1,
@@ -1478,7 +1478,9 @@
         "accord": false
       },
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-12",
+        "resultat": "arbitrage revu et validé par Mathieu (+1 nuancee)"
       },
       "contestations": [],
       "version": 1,
@@ -1810,7 +1812,9 @@
         "accord": false
       },
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-12",
+        "resultat": "arbitrage revu et validé par Mathieu (-1 nuancee)"
       },
       "contestations": [],
       "version": 1,
@@ -2190,6 +2194,20 @@
           },
           "date_consultation": "2026-10-12",
           "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Dans son discours-programme pour les élections européennes de 2024, publié par Le Grand Continent, il s'engage à défendre la fin de l'unanimité au Conseil et le passage à la majorité qualifiée, en citant le veto de la Hongrie sur les sanctions visant la Russie et celui des paradis fiscaux en matière fiscale.",
+          "citation_courte": "Nous défendrons la fin de l’unanimité",
+          "reformulation_anonymisee": "Dans son discours-programme pour des élections européennes, [CANDIDAT] s'engage à défendre la fin de l'unanimité au Conseil et le passage à la majorité qualifiée, en citant le veto d'un État membre sur les sanctions visant la Russie et celui des paradis fiscaux en matière fiscale.",
+          "citation_anonymisee": "Nous défendrons la fin de l’unanimité",
+          "source": {
+            "url": "https://legrandcontinent.eu/fr/2024/05/16/batir-leurope-de-2030-la-doctrine-glucksmann-gc/",
+            "titre": "Bâtir l'Europe de 2030 : la doctrine Glucksmann",
+            "date_publication": "2024-05-16",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-12",
+          "citation_verifiee_mot_a_mot": true
         }
       ],
       "codage": {
@@ -2212,25 +2230,27 @@
         "accord": false
       },
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-12",
+        "resultat": "corrigé par Mathieu : +1 imprecise → +2 nette (R6, fin de l'unanimité dans tous les domaines, politique étrangère citée en exemple) ; extrait Le Grand Continent ajouté"
       },
       "contestations": [],
-      "version": 1,
-      "code": 1,
-      "nature": "imprecise",
+      "version": 2,
+      "code": 2,
+      "nature": "nette",
       "statut": "arbitre",
       "arbitrage": {
-        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
+        "par": "Mathieu (arbitrage humain lors de la revue du 12 octobre 2026), remplace l'arbitrage provisoire du troisième modèle (+1 imprecise)",
         "date": "2026-10-12",
-        "code_retenu": 1,
-        "nature_retenue": "imprecise",
-        "motif": "Le passage général du Conseil à la majorité englobe logiquement la politique étrangère (direction perceptible, pas un simple sujet voisin), mais son application à ce domaine n'est pas spécifiée : +1 imprecise."
+        "code_retenu": 2,
+        "nature_retenue": "nette",
+        "motif": "Le candidat défend la fin de l'unanimité au Conseil dans tous les domaines et cite lui-même le veto sur les sanctions visant la Russie (Le Grand Continent, mai 2024) ; l'Acte I (2025) va dans le même sens : proposition englobante, R6, +2 nette."
       },
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
         "date": "2026-10-12",
         "verdict": "confirme",
-        "motif": "Le passage général à la majorité qualifiée au Conseil européen va dans le sens de l'énoncé sans viser expressément la politique étrangère : +1 imprecise est défendable."
+        "motif": "Le passage général à la majorité qualifiée au Conseil européen va dans le sens de l'énoncé sans viser expressément la politique étrangère : +1 imprecise est défendable. Revue humaine du 12 octobre 2026 : ajout d'un extrait du candidat (Le Grand Continent, mai 2024) qui vise expressément le veto sur les sanctions contre la Russie."
       }
     },
     {
@@ -2810,20 +2830,6 @@
           },
           "date_consultation": "2026-10-12",
           "citation_verifiee_mot_a_mot": null
-        },
-        {
-          "reformulation": "Le candidat veut recalibrer le pacte Dutreil en redéfinissant la notion de biens professionnels éligibles, sur le modèle proposé par la Cour des comptes, tout en préservant les PME, pour un gain attendu de 3 milliards d'euros par an. L'article ne mentionne pas de nouveau taux d'abattement.",
-          "citation_courte": "redéfinir la notion de biens professionnels",
-          "reformulation_anonymisee": "[CANDIDAT] veut recalibrer le pacte Dutreil en redéfinissant la notion de biens professionnels éligibles, sur le modèle proposé par la Cour des comptes, tout en préservant les PME, pour un gain attendu de 3 milliards d'euros par an. L'article ne mentionne pas de nouveau taux d'abattement.",
-          "citation_anonymisee": "redéfinir la notion de biens professionnels",
-          "source": {
-            "url": "https://www.lopinion.fr/politique/nous-prendrons-tout-la-taxation-de-lheritage-le-retour-de-ce-totem-de-la-gauche",
-            "titre": "« Nous prendrons tout » : la taxation de l’héritage, le retour de ce totem de la gauche - l'Opinion",
-            "date_publication": "2026-08-25",
-            "type": "declaration_publique"
-          },
-          "date_consultation": "2026-10-12",
-          "citation_verifiee_mot_a_mot": true
         }
       ],
       "codage": {
@@ -2847,11 +2853,11 @@
       },
       "controle_humain": {
         "tire_au_sort": true,
-        "date": null,
-        "resultat": null
+        "date": "2026-10-12",
+        "resultat": "valide par Mathieu (+1 imprecise) ; extrait de L'Opinion écarté (propos de l'équipe de campagne)"
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "code": 1,
       "nature": "imprecise",
       "statut": "accord",
@@ -2860,7 +2866,13 @@
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
         "date": "2026-10-12",
         "verdict": "confirme",
-        "motif": "Le candidat veut restreindre l'éligibilité au pacte Dutreil (3 milliards attendus) sans toucher au taux de 75 % : même sens que l'énoncé sans la mesure précise, +1 imprecise défendable. La reformulation de l'extrait 2 ajoute des éléments absents de l'article."
+        "motif": "Le candidat veut restreindre l'éligibilité au pacte Dutreil (3 milliards attendus) sans toucher au taux de 75 % : même sens que l'énoncé sans la mesure précise, +1 imprecise défendable. La reformulation de l'extrait 2 ajoute des éléments absents de l'article.",
+        "extraits_ecartes": [
+          {
+            "url": "https://www.lopinion.fr/politique/nous-prendrons-tout-la-taxation-de-lheritage-le-retour-de-ce-totem-de-la-gauche",
+            "motif": "détail de la mesure précisé par l'équipe de campagne (coordinateur), pas par le candidat : écarté lors de la revue humaine du 12 octobre 2026"
+          }
+        ]
       }
     },
     {
@@ -3028,18 +3040,18 @@
       "item_aveugle": "e7beceaa",
       "extraits": [
         {
-          "reformulation": "Le candidat veut recalibrer le pacte Dutreil (75 % d'exonération) en redéfinissant la notion de biens professionnels pour élargir l'assiette, tout en préservant les PME, avec un gain attendu de 3 milliards d'euros. Il ne propose pas d'exonération totale.",
-          "citation_courte": "redéfinir la notion de biens professionnels",
-          "reformulation_anonymisee": "[CANDIDAT] veut recalibrer le pacte Dutreil (75 % d'exonération) en redéfinissant la notion de biens professionnels pour élargir l'assiette, tout en préservant les PME, avec un gain attendu de 3 milliards d'euros. Il ne propose pas d'exonération totale.",
-          "citation_anonymisee": "redéfinir la notion de biens professionnels",
+          "reformulation": "Invité de RMC-BFMTV le 4 septembre 2026, il veut modifier le pacte Dutreil (abattement de 75 %) pour que toutes les entreprises n'y soient plus éligibles, avec 3 milliards d'euros attendus par an. Il ne propose pas d'exonération totale.",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Invité d'une émission de radio-télévision en septembre 2026, [CANDIDAT] veut modifier le dispositif d'abattement de 75 % sur les transmissions d'entreprises pour que toutes les entreprises n'y soient plus éligibles, avec 3 milliards d'euros attendus par an. Il ne propose pas d'exonération totale.",
+          "citation_anonymisee": null,
           "source": {
-            "url": "https://www.lopinion.fr/politique/nous-prendrons-tout-la-taxation-de-lheritage-le-retour-de-ce-totem-de-la-gauche",
-            "titre": "« Nous prendrons tout » : la taxation de l’héritage, le retour de ce totem de la gauche - l'Opinion",
-            "date_publication": "2026-08-25",
+            "url": "https://rmc.bfmtv.com/actualites/politique/presidentielle-2027-raphael-glucksmann-veut-taxer-les-mega-heritages_AV-202609040678.html",
+            "titre": "Présidentielle 2027: Raphaël Glucksmann veut taxer les \"méga-héritages\" - RMC",
+            "date_publication": "2026-09-04",
             "type": "declaration_publique"
           },
           "date_consultation": "2026-10-12",
-          "citation_verifiee_mot_a_mot": true
+          "citation_verifiee_mot_a_mot": null
         }
       ],
       "codage": {
@@ -3062,10 +3074,12 @@
         "accord": true
       },
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-12",
+        "resultat": "revu par Mathieu (−2 nette maintenu) ; source remplacée par RMC, extrait de L'Opinion écarté (propos de l'équipe de campagne)"
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "code": -2,
       "nature": "nette",
       "statut": "accord",
@@ -3074,7 +3088,13 @@
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
         "date": "2026-10-12",
         "verdict": "confirme",
-        "motif": "Resserrer le Dutreil pour taxer davantage les transmissions est le contraire d'une exonération totale : −2 nette défendable. La reformulation ajoutait une condition (« reprise durable ») absente de la source."
+        "motif": "Resserrer le Dutreil pour taxer davantage les transmissions est le contraire d'une exonération totale : −2 nette défendable. La reformulation ajoutait une condition (« reprise durable ») absente de la source.",
+        "extraits_ecartes": [
+          {
+            "url": "https://www.lopinion.fr/politique/nous-prendrons-tout-la-taxation-de-lheritage-le-retour-de-ce-totem-de-la-gauche",
+            "motif": "détail de la mesure précisé par l'équipe de campagne (coordinateur), pas par le candidat : écarté lors de la revue humaine du 12 octobre 2026"
+          }
+        ]
       }
     },
     {
@@ -3199,8 +3219,8 @@
       },
       "controle_humain": {
         "tire_au_sort": true,
-        "date": null,
-        "resultat": null
+        "date": "2026-10-12",
+        "resultat": "valide par Mathieu (+1 imprecise)"
       },
       "contestations": [],
       "version": 1,
@@ -3837,8 +3857,8 @@
       },
       "controle_humain": {
         "tire_au_sort": true,
-        "date": null,
-        "resultat": null
+        "date": "2026-10-12",
+        "resultat": "valide par Mathieu (+1 imprecise)"
       },
       "contestations": [],
       "version": 1,
@@ -3907,8 +3927,8 @@
       },
       "controle_humain": {
         "tire_au_sort": true,
-        "date": null,
-        "resultat": null
+        "date": "2026-10-12",
+        "resultat": "valide par Mathieu (+1 nuancee)"
       },
       "contestations": [],
       "version": 1,
@@ -4197,8 +4217,8 @@
       },
       "controle_humain": {
         "tire_au_sort": true,
-        "date": null,
-        "resultat": null
+        "date": "2026-10-12",
+        "resultat": "valide par Mathieu (-2 nette)"
       },
       "contestations": [],
       "version": 1,

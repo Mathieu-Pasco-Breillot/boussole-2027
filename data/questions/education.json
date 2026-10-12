@@ -4,7 +4,7 @@
  "_statut": "VALIDÉ le 2026-10-03 — sources à recontrôler sur textes officiels avant publication",
  "_equilibre": {
   "actives": 18,
-  "suspendues": 1,
+  "suspendues": 2,
   "sens_plus": 9,
   "sens_moins": 9,
   "axes": {
@@ -949,6 +949,37 @@
     {
      "date": "2026-10-03",
      "note": "suspendue : conservée dans la banque mais non posée, faute de responsable politique identifié pour la porter ; à réactiver si un candidat se positionne"
+    }
+   ]
+  },
+  {
+   "id": "EDU-020",
+   "theme": "education",
+   "axe": "economie",
+   "sens": 1,
+   "enonce": "Le nombre de postes d'enseignants doit être maintenu malgré la baisse du nombre d'élèves.",
+   "precision": "La loi de finances pour 2026 supprime 3 256 postes d'enseignants à la rentrée 2026 (1 891 dans le premier degré, 1 365 dans le second), en invoquant la baisse démographique.",
+   "origine": {
+    "description": "Débat sur la loi de finances 2026 ; propositions de candidats qui veulent utiliser la baisse démographique pour alléger les classes plutôt que supprimer des postes (rapportées en août 2026)",
+    "source": {
+     "url": "https://www.letudiant.fr/educpros/actualite/fin-du-marathon-budgetaire-que-prevoit-la-loi-de-finance-2026-pour-l-education-nationale-et-l-enseignement-superieur.html",
+     "titre": "Fin du marathon budgétaire : que prévoit la loi de finances 2026 pour l'Éducation nationale et l'enseignement supérieur (3 février 2026)",
+     "date_consultation": "2026-10-12",
+     "nature": "secondaire"
+    }
+   },
+   "statut": "suspendue",
+   "alertes_neutralite": [
+    {
+     "signalement": "question ajoutée lors de la revue du codage de Glucksmann (EDU-003)",
+     "decision": "formulation sans chiffre ni justification ; précision limitée aux faits budgétaires (2026-10-12)"
+    }
+   ],
+   "scrutins": [],
+   "historique": [
+    {
+     "date": "2026-10-12",
+     "note": "ajoutée à la demande de Mathieu ; suspendue en attente d'une passe de codage pour tous les candidats, puis à activer"
     }
    ]
   }
