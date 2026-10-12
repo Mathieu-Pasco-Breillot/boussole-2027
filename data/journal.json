@@ -325,6 +325,16 @@
       "description": "Encart Impact étendu au thème Sécurité (20 questions actives) : rédaction par un sous-agent Opus 5.5 avec recherche web, relecture aveugle Sonnet 5.5 (14 ok, 6 corrections appliquées : SEC-004, 011, 012, 014, 015, 021 ; 0 bloquant). Titres de sources vérifiés sur les pages et corrigés avant intégration. Légifrance, inaccessible (403), n'a pas pu être vérifié : le texte exact de l'article L. 435-1 du code de la sécurité intérieure n'a pas été lu, et la correction de SEC-004 a été reformulée sans numéro de paragraphe ni formule non étayée par une source. Statut « pilote » : non relu question par question par un humain. Aucune Précision modifiée.",
       "auteur": "Claude, à la demande de Mathieu",
       "reference": "extension impact vague 2, sécurité, du 12 octobre 2026"
+    },
+    {
+      "date": "2026-10-12",
+      "type": "ajout_impact",
+      "objets": [
+        "data/questions/union-europeenne.json"
+      ],
+      "description": "Encart Impact étendu au thème Union européenne (15 questions actives) : rédaction par un sous-agent Opus 5.5 avec recherche web, relecture aveugle Sonnet 5.5 (6 ok, 9 corrections appliquées : EUR-001, 002, 004, 006, 010, 011, 012, 014, 016 ; 0 bloquant). Titres de sources vérifiés sur les pages et corrigés avant intégration. Le communiqué du Conseil de l'Union européenne du 14 juillet 2026 était inaccessible : la correction de EUR-001 attribue donc les dates d'ouverture des groupes de chapitres à la presse spécialisée (deux médias ajoutés) et non au Conseil. La correction de EUR-004 a été reformulée à partir de la fiche de procédure 2018/0073(CNS) de l'observatoire législatif du Parlement européen (taxe proposée en 2018, jamais adoptée, procédure en attente de décision finale), sans préciser qui la perçoit ni la cause de la non-adoption. EUR-Lex n'a pu être lu que via publications.europa.eu. Statut « pilote » : non relu question par question par un humain. Aucune Précision modifiée.",
+      "auteur": "Claude, à la demande de Mathieu",
+      "reference": "extension impact vague 2, union européenne, du 12 octobre 2026"
     }
   ]
 }
