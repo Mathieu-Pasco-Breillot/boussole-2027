@@ -1,0 +1,368 @@
+[
+ {
+  "id": "SEC-001",
+  "changement": "Aujourd'hui, un contrôle d'identité sans suite ne laisse aucune trace écrite pour la personne contrôlée. La mesure imposerait de lui remettre ce document à chaque contrôle. Le Défenseur des droits recommande d'assurer la traçabilité des contrôles, y compris lors des manifestations (rapport de 2017), sans demander précisément un récépissé remis à la personne.",
+  "pour": "Ses partisans estiment qu'une trace écrite permettrait de mesurer la fréquence des contrôles, de contester ceux jugés discriminatoires et d'inciter les agents à mieux justifier chacun d'eux.",
+  "contre": "Ses opposants jugent que cette obligation alourdirait la tâche des agents sans garantir une baisse des contrôles contestés, et y voient un signe de défiance envers les forces de l'ordre.",
+  "sources": [
+   {
+    "url": "https://www.defenseurdesdroits.fr/controles-didentite-que-dit-le-droit-et-comment-mettre-fin-aux-controles-discriminatoires-565",
+    "titre": "Contrôles d'identité : que dit le droit et comment mettre fin aux contrôles discriminatoires ? (Défenseur des droits)",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   },
+   {
+    "url": "https://www.defenseurdesdroits.fr/sites/default/files/2023-03/DDD_Rapport-maintien-ordre_201712.pdf",
+    "titre": "Défenseur des droits, « Le maintien de l'ordre au regard des règles de déontologie », rapport de décembre 2017",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   }
+  ],
+  "reserves": "Faits : DDD1 (traçabilité « par tous moyens ») et DDD3 p. 41 et 58 (recommandation n° 4). Décision du Conseil d'État de 2023 sur les contrôles discriminatoires non vérifiée, retirée. Arguments pour/contre de portée générale, sans source. Titre de DDD1 reconstitué d'après l'URL : à contrôler."
+ },
+ {
+  "id": "SEC-002",
+  "changement": "La mesure interdirait le lanceur de balles de défense lors des manifestations, sans viser ses autres usages. Dans un rapport de décembre 2017, le Défenseur des droits a recommandé de l'interdire dans le maintien de l'ordre ; il relevait que 22 personnes avaient perdu un œil ou son usage après un tir de cette arme ou d'une grenade de désencerclement. Le 1er février 2019, le Conseil d'État n'a pas ordonné son interdiction.",
+  "pour": "Ses partisans estiment que, dans une foule en mouvement, le tir peut toucher une autre personne que celle visée, et que les blessures au visage sont graves. Pour eux, d'autres moyens de maintien de l'ordre suffisent.",
+  "contre": "Ses opposants estiment que cette arme permet de tenir à distance des groupes violents sans contact direct, et que sa suppression obligerait à recourir à des moyens plus dangereux ou au corps-à-corps.",
+  "sources": [
+   {
+    "url": "https://www.defenseurdesdroits.fr/sites/default/files/2023-03/DDD_Rapport-maintien-ordre_201712.pdf",
+    "titre": "Défenseur des droits, « Le maintien de l'ordre au regard des règles de déontologie », rapport de décembre 2017",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   },
+   {
+    "url": "https://www.conseil-etat.fr/actualites/usage-des-lanceurs-de-balles-de-defense",
+    "titre": "Conseil d'État, usage des lanceurs de balles de défense (ordonnances du 1er février 2019)",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   }
+  ],
+  "reserves": "Recommandation n° 2 : DDD3 p. 34 et 58 ; « 22 personnes » : DDD3 p. 96 (données antérieures au rapport, avant le mouvement de 2018-2019). Chiffre « 23 yeux selon l'AFP » et « entre matraque et arme à feu » retirés (non vérifiés). Arguments pour/contre sans source."
+ },
+ {
+  "id": "SEC-003",
+  "changement": "La mesure supprimerait les brigades de répression de l'action violente motorisée ; le maintien de l'ordre resterait confié aux autres unités. En 2023, une pétition demandant leur dissolution a recueilli 263 867 signatures sur le site de l'Assemblée nationale : lancée le 23 mars, elle a été classée le 5 avril.",
+  "pour": "Ses partisans leur reprochent des violences lors des manifestations et jugent que des policiers à moto, très mobiles, sont difficiles à identifier et à contrôler.",
+  "contre": "Ses opposants estiment que leur rapidité est utile pour interpeller des casseurs dans les cortèges, et que les fautes individuelles relèvent de sanctions, non d'une dissolution.",
+  "sources": [
+   {
+    "url": "https://petitions.assemblee-nationale.fr/initiatives/i-1319",
+    "titre": "Pétition pour la dissolution de la BRAV-M (Plateforme des pétitions de l'Assemblée nationale, pétition n° 1319)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   }
+  ],
+  "reserves": "Date de création (mars 2019) et effectif retirés : aucune source primaire listée. Arguments pour/contre sans source. Le nombre de signatures est celui affiché sur la page de la pétition."
+ },
+ {
+  "id": "SEC-004",
+  "changement": "Depuis la loi du 28 février 2017, cet article autorise policiers et gendarmes à faire usage de leur arme dans cinq cas, en cas d'absolue nécessité et de manière strictement proportionnée. L'un d'eux vise l'immobilisation d'un véhicule dont le conducteur n'obtempère pas à l'ordre d'arrêt et dont les occupants risquent, dans leur fuite, de porter atteinte à leur vie ou à celle d'autrui. La mesure supprimerait ce cadre commun aux deux forces.",
+  "pour": "Ses partisans estiment que cet article a facilité les tirs sur des véhicules en fuite, parfois mortels, et que ces situations devraient relever des seules règles de la légitime défense.",
+  "contre": "Ses opposants estiment que cet article protège des agents qui décident en quelques secondes face à un véhicule pouvant servir d'arme, et que sans lui ils hésiteraient à intervenir.",
+  "sources": [
+   {
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000034107970",
+    "titre": "Code de la sécurité intérieure, article L. 435-1",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   }
+  ],
+  "reserves": "« 13 morts en 2022 » retiré (source non officielle). Le régime applicable après abrogation (retour aux règles générales du code pénal) n'est pas vérifié, donc non écrit. Arguments pour/contre sans source ; l'effet de l'article sur le nombre de tirs n'est pas établi ici."
+ },
+ {
+  "id": "SEC-005",
+  "changement": "L'inspection générale de la police nationale et celle de la gendarmerie nationale relèvent chacune de la direction générale de leur force : elles exercent un contrôle interne. Le Défenseur des droits, autorité inscrite dans la Constitution, contrôle déjà de l'extérieur le respect de la déontologie par les forces de sécurité. La mesure confierait le rôle de ces inspections à un organisme indépendant rattaché à lui ; l'énoncé ne précise pas ses pouvoirs.",
+  "pour": "Ses partisans estiment qu'un service rattaché à la hiérarchie qu'il contrôle ne peut pas être perçu comme impartial, et qu'un organisme extérieur renforcerait la confiance dans les enquêtes sur les violences policières.",
+  "contre": "Ses opposants estiment que ces inspections connaissent les métiers de terrain, et qu'un organisme extérieur mènerait des enquêtes moins informées et fragiliserait la confiance des agents dans leur contrôle.",
+  "sources": [
+   {
+    "url": "https://www.defenseurdesdroits.fr/deontologie-des-forces-de-securite-pour-un-respect-des-regles-de-bonne-conduite-1204",
+    "titre": "Déontologie des forces de sécurité : pour un respect des règles de bonne conduite (Défenseur des droits)",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   },
+   {
+    "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000019241106",
+    "titre": "Constitution du 4 octobre 1958, article 71-1",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   }
+  ],
+  "reserves": "Contrôle interne/externe : DDD2. Article 71-1 : le Défenseur des droits veille au respect des droits et libertés ; sa compétence en déontologie des forces de sécurité vient de la loi organique de 2011 (non ouverte), affirmée ici via DDD2 seulement. Arguments pour/contre sans source."
+ },
+ {
+  "id": "SEC-006",
+  "changement": "La mesure rendrait obligatoire la sortie anticipée, avec un suivi, de détenus en fin de peine dès qu'une prison dépasse ses places, jusqu'à revenir à 100 %. Selon le ministère de la Justice, la densité carcérale de l'ensemble des prisons était de 135,6 % au 1er décembre 2025 et de 139,1 % au 1er avril 2026, avec alors 26 458 détenus en surnombre. Le nombre de sorties dépendrait de l'occupation de chaque établissement.",
+  "pour": "Ses partisans estiment qu'une prison trop pleine dégrade les conditions de détention et les chances de réinsertion, et qu'un seuil automatique obligerait l'État à traiter la surpopulation plutôt qu'à la tolérer.",
+  "contre": "Ses opposants estiment que les libérations devraient dépendre de la situation et de la dangerosité de chacun, non des places disponibles, et craignent des sorties plus précoces que ce qu'a décidé le tribunal.",
+  "sources": [
+   {
+    "url": "https://www.justice.gouv.fr/sites/default/files/2026-04/mesure_mensuelle_01042026.pdf",
+    "titre": "Ministère de la Justice, « Mesure de l'incarcération, indicateurs clés au 1er avril 2026 »",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   },
+   {
+    "url": "https://www.justice.gouv.fr/sites/default/files/2025-12/statistique_etablissements_personnes_ecrouees_01122025.pdf",
+    "titre": "Ministère de la Justice, statistique des établissements et des personnes écrouées en France au 1er décembre 2025",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   }
+  ],
+  "reserves": "Chiffres : JUS1 p. 1 (88 145 détenus, 63 353 places, 139,1 %, 26 458 en surnombre) ; JUS2 p. 6 (86 229 détenus, 63 613 places, 135,6 %). Les chiffres d'août 2026 de la Précision (89 668 / 63 303, soit 141,6 %) viennent d'un extrait de la mesure mensuelle du 1er août 2026 non lu en entier : non recoupés. Détails de la libération sous contrainte actuelle retirés (non sourcés). Arguments pour/contre sans source."
+ },
+ {
+  "id": "SEC-008",
+  "changement": "Le dispositif national avait été lancé en 1998, selon le média spécialisé Acteurs publics. Le rétablir supposerait d'affecter des agents, pris sur d'autres missions ou recrutés, au contact des habitants et au traitement des problèmes du quotidien. L'énoncé ne précise ni les effectifs ni les territoires concernés, et les sources consultées ne donnent pas d'évaluation chiffrée de l'ancien dispositif.",
+  "pour": "Ses partisans estiment que la présence régulière d'agents connus des habitants restaure la confiance, facilite la collecte d'informations et permet de calmer les tensions avant qu'elles ne s'aggravent.",
+  "contre": "Ses opposants estiment que des agents affectés au contact manquent aux missions d'intervention et d'enquête, et que ce dispositif coûteux n'a pas démontré d'effet sur la délinquance.",
+  "sources": [
+   {
+    "url": "https://acteurspublics.fr/articles/quand-le-gouvernement-jospin-lancait-la-police-de-proximite/",
+    "titre": "Acteurs publics, « Quand le gouvernement Jospin lançait la police de proximité »",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Seule source : un média spécialisé (secondaire) pour 1998 et l'abandon en 2003. Aucune évaluation ni coût sourcés ; l'argument « coûteux, sans effet démontré » est attribué aux opposants sans source. Dispositifs actuels (police de sécurité du quotidien, etc.) non vérifiés."
+ },
+ {
+  "id": "SEC-009",
+  "changement": "Les consommateurs n'auraient plus de casier judiciaire ni d'amende pour usage, et la police et la justice ne traiteraient plus ces affaires. Dans la proposition de loi d'origine, l'orientation vers les soins n'est évoquée que dans l'exposé des motifs, et la détention reste punissable.",
+  "pour": "Le Portugal a fait ce choix en 2001 en remplaçant les poursuites par des commissions orientant vers les soins ; ses défenseurs y associent une forte baisse du nombre d'usagers d'héroïne.",
+  "contre": "Les opposants y voient un signal de banalisation et un frein à la lutte contre les trafics. La proposition de loi d'origine ne prévoit rien à la place de la sanction.",
+  "sources": [
+   {
+    "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b0750_proposition-loi.pdf",
+    "titre": "Assemblée nationale, proposition de loi n° 750 visant à supprimer les sanctions pénales liées à l'usage simple de stupéfiants (19 décembre 2024)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   },
+   {
+    "url": "https://www.ofdt.fr/sites/ofdt/files/2024-06/eisxio2b6.pdf",
+    "titre": "OFDT, « Dépénalisation des drogues au Portugal : bilan 20 ans après », note de synthèse 2021-03",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   }
+  ],
+  "reserves": "Texte validé par Mathieu le 12 octobre 2026 (docs/impacts-en-attente.md) repris tel quel et réparti dans les trois champs (règle 10) ; seule la forme est retouchée : le constat sur l'exposé des motifs et la détention est placé dans « changement », l'absence de dispositif à la place de la sanction reste dans « contre » comme dans la rubrique « Ce qui est débattu » (limite de 40 mots). Points à faire arbitrer, sans modification du texte : (1) la PPL n° 750 (19/12/2024) supprime le 1er alinéa de l'article L. 3421-1 (usage simple : 1 an et 3 750 €) mais maintient l'usage aggravé (certaines fonctions ou transports : 5 ans, 75 000 €) ; le texte validé ne le dit pas et l'énoncé parle de toute consommation. (2) OFDT : usagers problématiques d'opioïdes 42 000 en 2005 → 28 287 en 2018, soit environ un tiers de baisse, et l'OFDT souligne la difficulté d'imputer ces évolutions à la seule réforme (p. 2, 10, 13) ; « forte baisse » reste attribuée aux défenseurs. Au Portugal, l'usage reste une infraction administrative (amende de 25 à 150 €, commissions de dissuasion, réforme en vigueur le 1er juillet 2001). (3) Précision : l'article L. 3421-1, modifié par la loi n° 2026-798 du 18 août 2026 (art. 25), prévoirait selon Légifrance une amende forfaitaire de 500 € (400 € minorée, 1 000 € majorée), et non 200 € : à vérifier."
+ },
+ {
+  "id": "SEC-010",
+  "changement": "Le contrat engage notamment l'association à respecter les principes de liberté, d'égalité, de fraternité et de dignité humaine, les symboles de la République, la laïcité et l'ordre public. En cas de manquement, l'administration peut retirer la subvention par une décision motivée, après avoir entendu l'association, et exiger le remboursement des sommes versées après le manquement, dans un délai de six mois au plus. La mesure supprimerait cette obligation.",
+  "pour": "Ses partisans estiment que les termes du contrat sont flous, qu'ils permettent de retirer des subventions à des associations critiques envers les pouvoirs publics, et que les lois existantes suffisent.",
+  "contre": "Ses opposants estiment que l'argent public ne doit pas financer des associations qui ne respectent pas les principes de la République, et que le contrat donne à l'administration un moyen direct d'agir.",
+  "sources": [
+   {
+    "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043970265",
+    "titre": "Loi n° 2000-321 du 12 avril 2000, article 10-1 (contrat d'engagement républicain)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   }
+  ],
+  "reserves": "Faits : article 10-1 de la loi n° 2000-321. « Liberté de conscience » (brouillon) retirée : absente du texte. Le décret n° 2021-1947 du 31 décembre 2021 (applicable depuis le 2 janvier 2022, cohérent avec la Précision) n'est pas cité faute de source listée. Arguments pour/contre sans source."
+ },
+ {
+  "id": "SEC-011",
+  "changement": "Dans l'ancien dispositif, applicable en cas de récidive légale, le minimum dépendait de la peine encourue. Délits : de 1 an (pour 3 ans encourus) à 4 ans (pour 10 ans encourus). Crimes : de 5 ans (pour 15 ans encourus) à 15 ans (pour la perpétuité). Le juge pouvait y déroger par une décision spécialement motivée, en tenant compte des garanties d'insertion ou de réinsertion de la personne.",
+  "pour": "Ses partisans estiment que des minimums rendent la sanction plus prévisible et réduisent l'écart entre la peine prévue par la loi et celle prononcée, ce qui dissuaderait la récidive.",
+  "contre": "Ses opposants estiment que ces minimums limitent la liberté du juge d'adapter la peine à chaque situation et peuvent conduire à des peines disproportionnées par rapport aux faits.",
+  "sources": [
+   {
+    "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000029362502",
+    "titre": "LOI n° 2014-896 du 15 août 2014 relative à l'individualisation des peines et renforçant l'efficacité des sanctions pénales (1)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   },
+   {
+    "url": "https://www.conseil-constitutionnel.fr/decision/2007/2007554dc.htm",
+    "titre": "Décision n° 2007-554 DC du 9 août 2007",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   },
+   {
+    "url": "https://www.cnape.fr/documents/loi-n-2007-1198-du-10-aout-2007-renforcant-la-lutte-contre-la-recidive-des-majeurs-et-des-mineurs/",
+    "titre": "CNAPE, reproduction (RTF) du JORF n° 185 du 11 août 2007, texte n° 1 : LOI n° 2007-1198 du 10 août 2007 renforçant la lutte contre la récidive des majeurs et des mineurs (1)",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Faits : loi n° 2007-1198 (création), loi n° 2014-896, art. 7, I, 1° (abrogation des art. 132-18-1, 132-19-1, 132-19-2 du code pénal ; entrée en vigueur au 1er octobre 2014, art. 54, I), décision CC 2007-554 DC (faculté de dérogation, garanties d'insertion ou de réinsertion, garanties exceptionnelles en cas de récidive renouvelée). Non vérifié : les seuils sont lus uniquement dans une reproduction secondaire du Journal officiel (CNAPE), non sur Légifrance ; articulation avec le sursis simple non vérifiée, donc non évoquée ; aucun bilan officiel chiffré des effets, donc aucun chiffre cité ; arguments pour/contre sans source. La fourchette « 5 à 15 ans » pour les crimes est correcte (retirée à tort dans une version précédente) ; les seuils s'entendent selon la peine encourue."
+ },
+ {
+  "id": "SEC-012",
+  "changement": "La mesure supprimerait la réduction de moitié pour les récidivistes de 16 ans et plus. Le 19 juin 2025, le Conseil constitutionnel a censuré l'article de la loi qui, pour eux, faisait de l'absence de réduction la règle et de la réduction l'exception. Il s'est fondé sur l'atténuation de la responsabilité pénale des mineurs, qu'il range parmi les principes fondamentaux reconnus par les lois de la République.",
+  "pour": "Ses partisans estiment qu'un mineur de 16 ou 17 ans déjà condamné a conscience de ses actes, et qu'une peine plus lourde protégerait les victimes et dissuaderait la récidive.",
+  "contre": "Ses opposants estiment que les mineurs sont plus facilement réinsérables, que leur responsabilité doit rester atténuée, et rappellent que le Conseil constitutionnel a déjà censuré une règle de ce type.",
+  "sources": [
+   {
+    "url": "https://www.conseil-constitutionnel.fr/actualites/communique/decision-n-2025-886-dc-du-19-juin-2025-communique-de-presse",
+    "titre": "Conseil constitutionnel, communiqué de presse sur la décision n° 2025-886 DC du 19 juin 2025",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   }
+  ],
+  "reserves": "Faits : communiqué CC886 (article 7 censuré, principe fondamental reconnu par les lois de la République, règle de la moitié tirée du code de la justice pénale des mineurs). La Précision est exacte. Les conditions dans lesquelles une telle mesure pourrait être compatible avec la Constitution ne sont pas analysées (pas de lecture juridique non sourcée). Arguments pour/contre sans source."
+ },
+ {
+  "id": "SEC-013",
+  "changement": "Selon Dalloz Actualité, qui commente un arrêt de la Cour de cassation du 6 avril 2022, une loi du 23 mars 2019 impose en principe d'aménager une peine de prison ferme de 6 mois ou moins, sauf impossibilité, tout refus devant être spécialement motivé. Entre 6 mois et 1 an, l'aménagement est possible sans être obligatoire. La mesure supprimerait cette obligation pour les plus courtes peines.",
+  "pour": "Ses partisans estiment qu'une peine qui n'est pas exécutée en prison perd sa crédibilité, et que l'exécution réelle des courtes peines renforcerait la dissuasion et la confiance dans la justice.",
+  "contre": "Ses opposants estiment que les courtes peines en prison désocialisent et favorisent la récidive, alors que l'aménagement permet de garder un emploi, et qu'elles aggraveraient la surpopulation carcérale.",
+  "sources": [
+   {
+    "url": "https://www.dalloz-actualite.fr/document/crim-6-avr-2022-f-b-n-21-83457",
+    "titre": "Dalloz Actualité, commentaire de Cass. crim., 6 avril 2022, n° 21-83.457",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Seule source secondaire (Dalloz Actualité) ; article 132-25 du code pénal non relu sur Légifrance, version en vigueur en 2026 non vérifiée. L'énoncé parle de « moins d'un an » alors que l'obligation ne vaut que jusqu'à 6 mois ; la Précision (« la règle pour les courtes peines ») est donc à nuancer pour la tranche 6 mois-1 an. Arguments pour/contre sans source."
+ },
+ {
+  "id": "SEC-014",
+  "changement": "Le ministère de la Justice comptait 63 353 places opérationnelles au 1er avril 2026, pour 88 145 détenus : atteindre 85 000 places supposerait d'en ouvrir environ 22 000. Selon un rapport du Sénat de mai 2023, le programme de 15 000 places supplémentaires d'ici 2027 a pris du retard, notamment à cause de la crise sanitaire, de la guerre en Ukraine et de l'opposition de riverains.",
+  "pour": "Ses partisans estiment qu'une peine ne peut être exécutée que si les places existent, et qu'il faut mettre fin à la surpopulation pour améliorer les conditions de détention et de travail du personnel.",
+  "contre": "Ses opposants estiment que construire coûte cher, que les nouvelles places se remplissent aussitôt, et préfèrent développer les peines alternatives et la prévention plutôt que la détention.",
+  "sources": [
+   {
+    "url": "https://www.justice.gouv.fr/sites/default/files/2026-04/mesure_mensuelle_01042026.pdf",
+    "titre": "Ministère de la Justice, « Mesure de l'incarcération, indicateurs clés au 1er avril 2026 »",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   },
+   {
+    "url": "https://www.senat.fr/rap/l22-660/l22-66024.html",
+    "titre": "Sénat, rapport n° 660 (2022-2023), « Projet de loi d'orientation et de programmation du ministère de la justice 2023-2027 »",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   }
+  ],
+  "reserves": "Places : JUS1 p. 1 (63 353) ; 63 613 au 1er décembre 2025 (JUS2). « Environ 22 000 » = 85 000 − 63 353, calcul simple. Calcul « 7 000 de plus que les 15 000 » retiré. Précision incomplète : un sous-amendement adopté le 11 juillet 2023 aurait porté l'objectif jusqu'à 18 000 places (15 000 + 3 000 sous réserve d'urbanisme), non lu, donc non écrit. Coût par place non sourcé. Arguments pour/contre sans source (« les places se remplissent » est une thèse d'opposants)."
+ },
+ {
+  "id": "SEC-015",
+  "changement": "Le code pénal présume déjà la légitime défense dans deux cas : repousser de nuit une entrée par effraction, violence ou ruse dans un lieu habité, et se défendre contre les auteurs de vols ou de pillages violents. La mesure créerait une présomption pour l'usage de leur arme par les policiers et gendarmes. Le texte adopté le 7 juillet 2026 l'a été par 313 voix contre 199, selon Le Courrier de l'Atlas.",
+  "pour": "Ses partisans estiment que les agents décident en quelques secondes pour protéger autrui, et que cette présomption les protégerait de poursuites qu'ils jugent injustifiées après un tir.",
+  "contre": "Ses opposants estiment qu'une présomption rendrait plus difficile d'établir un tir illégal, notamment lorsque la victime est décédée, et affaiblirait le contrôle du juge sur l'usage de la force.",
+  "sources": [
+   {
+    "url": "https://www.assemblee-nationale.fr/dyn/14/questions/QANR5L14QE79021.pdf",
+    "titre": "Assemblée nationale, question écrite n° 79021 (XIVe législature) sur l'article 122-6 du code pénal",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   },
+   {
+    "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/presomption_legitime_defense_forces_ordre",
+    "titre": "Assemblée nationale, dossier législatif : « Reconnaître une présomption de légitime défense pour les forces de l'ordre, dans l'exercice de leurs fonctions »",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   },
+   {
+    "url": "https://www.lecourrierdelatlas.com/?p=214718",
+    "titre": "Le Courrier de l'Atlas, « Police : Les députés adoptent la présomption de légitime défense » (juillet 2026, vote de l'Assemblée nationale du 7 juillet 2026)",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Article 122-6 : QE79021. Adoption à l'Assemblée le 7 juillet 2026 : LEG ; décompte des voix : média seulement. Suite au Sénat non trouvée. Nature de la présomption (simple ou irréfragable) non vérifiée, donc non écrite. Précision « c'est à eux de démontrer que leur tir était légal » : formulation juridique non vérifiée. Arguments pour/contre sans source."
+ },
+ {
+  "id": "SEC-016",
+  "changement": "Selon la Cour des comptes (rapport d'octobre 2020), la France comptait 23 934 policiers municipaux en 2019, dont 81 % disposaient d'une arme et 57 % d'une arme à feu. L'armement est aujourd'hui facultatif et suppose aussi une convention de coordination avec la police ou la gendarmerie nationales. La mesure en ferait la règle par défaut.",
+  "pour": "Ses partisans estiment que les policiers municipaux sont souvent les premiers sur place, exposés aux mêmes risques que les policiers nationaux, et qu'ils doivent pouvoir se protéger et protéger la population.",
+  "contre": "Ses opposants estiment que le maire, responsable de ses agents et connaissant sa commune, doit garder le choix, et que l'armement impose une formation et des coûts que toutes les communes ne peuvent assumer.",
+  "sources": [
+   {
+    "url": "https://www.vie-publique.fr/files/rapport/pdf/276784.pdf",
+    "titre": "Cour des comptes, « Les polices municipales », rapport public thématique, octobre 2020",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   }
+  ],
+  "reserves": "CDC p. 28 (32 898 agents avec ASVP et gardes champêtres), p. 29 (23 934), p. 54 (81 % et 57 % en 2019), p. 57-58 (armement facultatif, demande du maire, autorisation du préfet, convention). Chiffres de 2019 : pas d'actualisation 2026 sourcée. « 43,6 % en 2016 » et « 24 000 armés » retirés. Lois récentes sur la police municipale non vérifiées. Arguments pour/contre sans source."
+ },
+ {
+  "id": "SEC-017",
+  "changement": "En 2023, une proposition de loi examinée à l'Assemblée nationale prévoyait de retirer les allocations familiales aux parents d'un mineur condamné définitivement pour un crime ou un délit puni d'au moins 2 ans de prison. Selon le rapport du 4 octobre 2023, la commission en a supprimé les articles 1 et 2. L'énoncé ne précise ni la durée de la suspension ni de seuil de gravité.",
+  "pour": "Ses partisans estiment que les parents ont une responsabilité dans l'éducation de leurs enfants, et qu'une sanction financière les inciterait à mieux les encadrer et à prévenir la récidive.",
+  "contre": "Ses opposants estiment qu'on ne peut faire peser sur les parents la faute d'un enfant, et que la mesure fragiliserait des familles souvent modestes, au risque d'aggraver la situation de l'enfant.",
+  "sources": [
+   {
+    "url": "https://www.assemblee-nationale.fr/dyn/docs/RAPPANR5L16B1698.raw",
+    "titre": "Assemblée nationale, rapport n° 1698 sur la proposition de loi n° 1612 visant à supprimer ou à suspendre les allocations familiales pour les parents d'enfants criminels ou délinquants (4 octobre 2023)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   }
+  ],
+  "reserves": "Faits : RAP1698. Droit actuel de suspension des prestations (code de la sécurité sociale, L. 552-3 et L. 523-1) non vérifié, donc non écrit. « Quelle que soit la gravité » retiré (absent de l'énoncé). Arguments pour/contre sans source."
+ },
+ {
+  "id": "SEC-018",
+  "changement": "Depuis une loi de 2004, les signes manifestant ostensiblement une appartenance religieuse sont interdits aux élèves des écoles, collèges et lycées publics. Depuis une loi de 2010, nul ne peut porter dans l'espace public une tenue destinée à dissimuler son visage, sous peine d'une contravention ou d'un stage de citoyenneté. La mesure étendrait l'interdiction du voile aux mineures dans tout l'espace public, même s'il ne couvre pas le visage.",
+  "pour": "Ses partisans estiment que le voile porté par des enfants et des adolescentes peut résulter d'une pression familiale ou sociale, et que l'interdiction protégerait leur liberté de choisir à l'âge adulte.",
+  "contre": "Ses opposants estiment qu'une telle interdiction porte atteinte à la liberté de religion et d'expression, stigmatiserait les familles musulmanes et pourrait conduire des jeunes filles à rester chez elles.",
+  "sources": [
+   {
+    "url": "https://www.legifrance.gouv.fr/ceta/id/CETATEXT000018007973/",
+    "titre": "Conseil d'État, décision n° 295671 du 5 décembre 2007",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   },
+   {
+    "url": "https://www.legifrance.gouv.fr/loda/id/LEGITEXT000022912210",
+    "titre": "Loi n° 2010-1192 du 11 octobre 2010 interdisant la dissimulation du visage dans l'espace public",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   }
+  ],
+  "reserves": "Loi n° 2004-228 (article L. 141-5-1 du code de l'éducation) : via CE295 ; le mot « voile » n'y figure pas. Loi n° 2010-1192 : contravention de 2e classe, exceptions à l'article 2. Aucune proposition de loi en cours vérifiée ; compatibilité avec la Constitution et la Convention européenne des droits de l'homme non analysée. Arguments pour/contre sans source."
+ },
+ {
+  "id": "SEC-019",
+  "changement": "Le 29 juin 2023, le Conseil d'État a jugé que la fédération de football pouvait interdire, pendant les matchs et manifestations qu'elle organise, tout signe ou tenue manifestant ostensiblement une appartenance politique, philosophique, religieuse ou syndicale, cette interdiction étant nécessaire et proportionnée. La mesure ferait de l'interdiction des signes religieux une règle fixée par la loi pour toutes les compétitions.",
+  "pour": "Ses partisans estiment que les compétitions doivent rester neutres, que les règles doivent être les mêmes dans tous les sports, et que le sport doit rester à l'écart des appartenances religieuses.",
+  "contre": "Ses opposants estiment que cette interdiction exclurait des sportives et sportifs qui pratiquent leur religion, et qu'il ne revient pas à la loi de régler cette question à la place des fédérations.",
+  "sources": [
+   {
+    "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2023-06-29/458088",
+    "titre": "Conseil d'État, décision n° 458088 du 29 juin 2023",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   }
+  ],
+  "reserves": "Faits : CE3 (décision n° 458088 ; décisions jointes n° 459547 et 463408). Communiqué du Conseil d'État (CE2) non cité : URL complète indisponible. Généralisation « ce sont les fédérations qui décident » retirée. Propositions de loi sur le sport non vérifiées ; portée de la mesure (spectateurs, bénévoles) non précisée par l'énoncé. Arguments pour/contre sans source."
+ },
+ {
+  "id": "SEC-020",
+  "changement": "Depuis une loi du 17 juin 1998, une personne condamnée pour une infraction sexuelle peut être soumise à une injonction de soins, qui peut comporter un traitement réduisant la libido (article L. 3711-3 du code de la santé publique). La mesure rendrait ce traitement obligatoire pour les auteurs de crimes sexuels jugés les plus dangereux ; l'énoncé ne précise ni qui en déciderait ni selon quels critères.",
+  "pour": "Ses partisans estiment qu'un traitement obligatoire réduirait le risque de nouveaux crimes de la part des condamnés les plus dangereux, et qu'un refus de soins ne devrait pas les laisser libres de récidiver.",
+  "contre": "Ses opposants estiment que l'efficacité n'est pas démontrée sans adhésion de la personne, et qu'imposer un traitement médical pose un problème d'éthique et d'intégrité du corps.",
+  "sources": [
+   {
+    "url": "https://www.assemblee-nationale.fr/13/pdf/CRI/2009-2010/cahiers/c20100058.pdf",
+    "titre": "Assemblée nationale, compte rendu intégral, 2e séance du 18 novembre 2009 (58e séance) : « Réduction du risque de récidive criminelle », article 5 ter (injonction de soins)",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   }
+  ],
+  "reserves": "Source unique : compte rendu de séance de 2009-2010 (article L. 3711-3, consentement) ; texte en vigueur non relu sur Légifrance. Loi n° 98-468 du 17 juin 1998 non ouverte. « Dispositif de 1997-2001 » retiré (il concerne le Danemark). Efficacité non sourcée : laissée aux seuls opposants. Le terme « castration chimique » est lui-même discuté."
+ },
+ {
+  "id": "SEC-021",
+  "changement": "Le règlement européen sur l'intelligence artificielle interdit en principe aux forces de l'ordre l'identification biométrique à distance en temps réel dans l'espace public. Il admet des exceptions : recherche ciblée de victimes ou de personnes disparues, menace grave et imminente ou terroriste, recherche de suspects d'infractions listées punies d'au moins 4 ans de prison. Chaque usage exige une autorisation préalable, et un État ne peut y recourir que si sa loi le prévoit.",
+  "pour": "Ses partisans estiment que cette technologie permettrait de retrouver plus vite des suspects ou de prévenir un attentat dans une foule, et qu'un cadre strict, limité aux infractions les plus graves, protégerait les libertés.",
+  "contre": "Ses opposants estiment que la surveillance des visages dans l'espace public porte atteinte à la vie privée et à la liberté de manifester, que la technique peut se tromper et que son usage s'étendrait.",
+  "sources": [
+   {
+    "url": "https://ai-act-service-desk.ec.europa.eu/en/ai-act/article-5",
+    "titre": "Commission européenne, AI Act Service Desk, article 5 : pratiques d'IA interdites",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   }
+  ],
+  "reserves": "Faits : article 5, paragraphe 1, h) et paragraphes suivants (AIA). Le terme « criminalité organisée » n'est pas repris faute de vérification de l'annexe II. Précision : la proposition de loi du Sénat (n° 505) a été adoptée le 12 juin 2023 (SEN505 ; 226 voix contre 117 selon Politis) ; « sans suite à l'Assemblée nationale » non vérifié. Arguments pour/contre sans source."
+ }
+]
