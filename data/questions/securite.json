@@ -239,8 +239,8 @@
    "theme": "securite",
    "axe": "securite",
    "sens": 1,
-   "enonce": "La consommation de drogue ne doit plus être une infraction pénale.",
-   "precision": "Aujourd'hui, l'usage de stupéfiants est un délit, le plus souvent puni d'une amende forfaitaire. La proposition ne légalise ni la vente ni le trafic.",
+   "enonce": "Consommer de la drogue, quelle qu'elle soit (cannabis, cocaïne, héroïne…), ne doit plus être puni par la loi.",
+   "precision": "Aujourd'hui, consommer n'importe quel stupéfiant est un délit, le plus souvent sanctionné par une amende forfaitaire de 200 €. La mesure supprimerait toute sanction pour la seule consommation. La vente et le trafic resteraient interdits et punis.",
    "origine": {
     "description": "Proposition de loi n° 750 du 19 décembre 2024",
     "source": {
@@ -253,7 +253,13 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [
+    {
+     "date": "2026-10-12",
+     "ancien_enonce": "La consommation de drogue ne doit plus être une infraction pénale.",
+     "note": "Énoncé précisé (toutes drogues, pas seulement le cannabis) et précision réécrite pour dire ce que la mesure change, à la demande de Mathieu ; périmètre inchangé, codages conservés."
+    }
+   ]
   },
   {
    "id": "SEC-010",
