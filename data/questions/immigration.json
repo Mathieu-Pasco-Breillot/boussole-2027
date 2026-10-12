@@ -19,7 +19,7 @@
    "axe": "frontieres",
    "sens": 1,
    "enonce": "Les travailleurs étrangers en situation irrégulière doivent être régularisés.",
-   "precision": "« En situation irrégulière » : sans titre de séjour valide ; on dit couramment « sans papiers ». Aujourd'hui, la régularisation se décide au cas par cas : le préfet peut l'accorder après sept ans de présence, ou après douze mois de travail dans un métier en tension.",
+   "precision": "« En situation irrégulière » : sans titre de séjour valide ; on dit couramment « sans papiers ». Aujourd'hui, la régularisation se décide au cas par cas ; la voie des métiers en tension (article L. 435-4 du Ceseda, à titre expérimental jusqu'au 31 décembre 2026) exige trois ans de résidence et douze mois de travail sur les vingt-quatre derniers mois.",
    "origine": {
     "description": "Programme commun de gauche des législatives de 2024 ; règles actuelles : circulaire du 24 janvier 2025",
     "source": {
@@ -45,6 +45,10 @@
     {
      "date": "2026-10-03",
      "ancien_enonce": "Les travailleurs sans papiers doivent être régularisés."
+    },
+    {
+     "date": "2026-10-12",
+     "note": "Précision corrigée : « le préfet peut l'accorder après sept ans de présence, ou après douze mois de travail dans un métier en tension » est remplacé par la voie de l'article L. 435-4 du Ceseda (trois ans de résidence, douze mois de travail sur vingt-quatre). Aucun texte ne fixe « sept ans » (réponse ministérielle à la question écrite n° 3685, JO du 10 juin 2025)."
     }
    ],
    "impact": {
@@ -699,7 +703,7 @@
    "axe": "frontieres",
    "sens": -1,
    "enonce": "Les étrangers doivent résider en France depuis au moins deux ans pour toucher les allocations familiales et les aides au logement.",
-   "precision": "La proposition votée au Sénat dispense de cette condition les étrangers qui travaillent. Une condition de cinq ans a été censurée par le Conseil constitutionnel en 2024.",
+   "precision": "La proposition votée au Sénat dispense de cette condition les titulaires d'un titre de séjour autorisant à travailler, ainsi que les réfugiés. Une condition de cinq ans a été censurée par le Conseil constitutionnel en 2024.",
    "origine": {
     "description": "Proposition de loi n° 299 adoptée par le Sénat le 18 mars 2025",
     "source": {
@@ -717,7 +721,12 @@
     }
    ],
    "scrutins": [],
-   "historique": [],
+   "historique": [
+    {
+     "date": "2026-10-12",
+     "note": "Précision corrigée : « les étrangers qui travaillent » devient « les titulaires d'un titre de séjour autorisant à travailler, ainsi que les réfugiés ». L'ancienne formulation confondait titre autorisant à travailler et exercice d'un emploi (texte adopté n° 83, art. L. 512-2-1)."
+    }
+   ],
    "impact": {
     "changement": "Le Sénat a adopté le 18 mars 2025 une proposition de loi exigeant deux ans de séjour régulier pour certaines prestations, dont les allocations familiales et les aides au logement. En seraient dispensés les titulaires d'un titre autorisant à travailler, les réfugiés, les bénéficiaires d'une protection subsidiaire ou temporaire et les apatrides. La condition censurée en 2024 (cinq ans de résidence ou trente mois d'activité) l'a été comme sans lien avec le projet de loi, sans jugement sur le fond.",
     "pour": "Ses partisans estiment qu'un droit à des prestations financées par la collectivité doit suivre un temps de présence et de participation à la vie du pays, et que cela dissuaderait des arrivées motivées par les aides.",

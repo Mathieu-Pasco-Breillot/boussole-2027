@@ -603,7 +603,7 @@
    "axe": "economie",
    "sens": -1,
    "enonce": "Un patient qui n'honore pas un rendez-vous médical sans prévenir doit payer une pénalité de 5 euros.",
-   "precision": "Mesure souvent appelée « taxe lapin ». Votée fin 2024, elle a été censurée par le Conseil constitutionnel le 28 février 2025 pour imprécision.",
+   "precision": "Mesure souvent appelée « taxe lapin ». Votée en février 2025 dans la loi de financement de la sécurité sociale pour 2025, elle a été censurée par le Conseil constitutionnel le 28 février 2025 pour imprécision.",
    "origine": {
     "description": "Annonce du Premier ministre en 2024 ; article 52 de la loi de financement de la sécurité sociale pour 2025, censuré",
     "source": {
@@ -616,7 +616,12 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": [],
+   "historique": [
+    {
+     "date": "2026-10-12",
+     "note": "Précision corrigée : « Votée fin 2024 » devient « Votée en février 2025 dans la loi de financement de la sécurité sociale pour 2025 » (adoption définitive le 17 février 2025, décision n° 2025-875 DC du 28 février 2025)."
+    }
+   ],
    "impact": {
     "changement": "Le Conseil constitutionnel a censuré la mesure votée dans le budget de la Sécurité sociale pour 2025, car la loi ne définissait ni la nature de la pénalité, ni son montant, ni ses conditions, renvoyés à un décret. Ce texte permettait aussi d'exiger une préautorisation bancaire pour prendre rendez-vous. L'énoncé fixerait le montant à 5 euros. En 2023, l'Académie de médecine et l'Ordre des médecins estimaient que 6 à 10 % des patients ne se présentent pas à leur rendez-vous.",
     "pour": "Ses partisans estiment que les rendez-vous manqués font perdre des créneaux alors que l'accès aux médecins est difficile, et qu'une pénalité inciterait les patients à prévenir.",
@@ -817,9 +822,14 @@
     }
    ],
    "scrutins": [],
-   "historique": [],
+   "historique": [
+    {
+     "date": "2026-10-12",
+     "note": "Encart Impact corrigé (Précision inchangée) : « soumettrait les soins non urgents à un accord préalable » ne tenait pas compte de l'accord préalable du contrôle médical déjà prévu pendant le délai de neuf mois (art. L. 251-2 du code de l'action sociale et des familles) ; la mesure l'étendrait à tous les bénéficiaires."
+    }
+   ],
    "impact": {
-    "changement": "Aujourd'hui, pour les nouveaux bénéficiaires, certains soins non urgents ne sont pris en charge qu'après un délai de neuf mois. La mesure soumettrait les soins non urgents à un accord préalable de l'assurance maladie ; l'énoncé ne précise ni la liste des soins, ni le délai de réponse, ni la suite donnée à une absence de réponse. Les crédits de l'aide étaient de l'ordre de 1,2 milliard d'euros en 2025, selon la presse.",
+    "changement": "Aujourd'hui, pour les nouveaux bénéficiaires, certains soins non urgents ne sont pris en charge qu'après un délai de neuf mois, ou avant, sur accord préalable du contrôle médical de l'assurance maladie. La mesure étendrait cet accord préalable à tous les bénéficiaires ; l'énoncé ne précise ni la liste des soins, ni le délai de réponse, ni la suite donnée à une absence de réponse. Les crédits de l'aide étaient de l'ordre de 1,2 milliard d'euros en 2025, selon la presse.",
     "pour": "Ses partisans estiment qu'un contrôle préalable permettrait de vérifier la nécessité des soins et de limiter les dépenses et les abus, tout en préservant l'accès aux soins urgents.",
     "contre": "Ses opposants estiment que ce contrôle retarderait des soins, alourdirait la charge administrative des caisses et des hôpitaux, et conduirait à traiter plus tard des cas aggravés et plus coûteux.",
     "sources": [
@@ -834,6 +844,12 @@
       "titre": "Public Sénat, 31 janvier 2025 : aide médicale d'État, députés et sénateurs trouvent un compromis sur une baisse de 111 millions",
       "date_consultation": "2026-10-12",
       "nature": "secondaire"
+     },
+     {
+      "url": "https://www.senat.fr/rap/l25-139-327/l25-139-327_mono.html",
+      "titre": "Projet de loi de finances pour 2026 : Santé (rapport n° 139, 2025-2026)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
      }
     ],
     "statut": "pilote"

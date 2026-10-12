@@ -26,20 +26,19 @@ Détail de la vague 2 (questions actives ; ok / corrigées à la relecture) :
 - **Précisions signalées comme inexactes ou périmées, non modifiées** : liste ci-dessous. Chaque correction exigera une entrée `historique` sur la question et une entrée de journal.
 - **Sources à vérifier à la main** : Légifrance, Dalloz et consilium.europa.eu étaient inaccessibles aux agents (403 / anti-bot). À vérifier : SEC-004 (art. L.435-1), SEC-013 (art. 132-25), SEC-015 (art. 122-6), EUR-001 (communiqué du Conseil du 14/07/2026).
 
-## Précisions signalées comme inexactes ou périmées (non modifiées)
+## Précisions signalées comme inexactes ou périmées (restant à traiter)
 
 Vague 1 : DEF-001, DEF-002, DEF-003, ENV-004, ENV-024, ECO-009, ECO-011, EDU-017, FIS-008, FIS-009, FIS-016 (détail dans le bilan de la vague 1, projet Claude `phase-3/impact/bilan-vague-1.md`).
 
 Vague 2 (d'après les brouillons et les relectures) :
-- **IMM-001** : règle des « 12 mois dans un métier en tension » à confirmer (une source parle de 12 mois sur 24, avec 3 ans de résidence).
-- **IMM-011** : la loi sur Mayotte aurait été promulguée le 12 mai 2025, la Précision évoque 2026.
-- **IMM-014** : la proposition de loi du Sénat citée est introuvable.
-- **RET-008** : « inscrite dans la loi depuis 2003 » ; le COR parle d'une pratique depuis 1987, légale depuis 1993.
 - **RET-011** : la Précision cite cinq régimes fermés dont celui du CESE ; le COR n'en cite que quatre.
-- **SAN-015** : date de censure du Conseil constitutionnel (28 février 2025) à vérifier, possible confusion avec la promulgation de la loi de financement.
 - **SEC-009** : amende forfaitaire de 200 € ou de 500 € selon une version récente de Légifrance (non vérifiée).
 - **SEC-014** : « 15 000 places » ou « jusqu'à 18 000 places » ?
-- Autres Précisions signalées par les relectures, sans détail ici : RET-001, RET-005, RET-006 ; SAN-006, SAN-008, SAN-009, SAN-012 ; IMM-005, IMM-012, IMM-018 ; EUR-002, EUR-003, EUR-010, EUR-012, EUR-015 ; SEC-006, SEC-008, SEC-013, SEC-021 (le détail figure dans `vague-2/relecture-<thème>.json`).
+- Autres Précisions signalées par les relectures, sans détail ici : SAN-008, SAN-009, SAN-012 (non vérifiables) ; IMM-012 (non vérifiable) ; EUR-002, EUR-003, EUR-010, EUR-012, EUR-015 ; SEC-006, SEC-008, SEC-013, SEC-021 (le détail figure dans `vague-2/relecture-<thème>.json`).
+
+Corrigées le 12 octobre 2026 après vérification (historique de la question et journal, type `reformulation`) : RET-001 (âge de 62 ans et 9 mois limité aux générations 1963 et 1964), RET-008 (« fin des années 1980 »), SAN-015 (votée en février 2025), IMM-001 (voie de l'article L. 435-4 du Ceseda), IMM-014 (titulaires d'un titre autorisant à travailler et réfugiés). Encarts retouchés : RET-001 et SAN-019 (extension de l'accord préalable du contrôle médical).
+
+Vérifiées exactes le 12 octobre 2026, non modifiées : RET-005, RET-006, SAN-006, SAN-016, SAN-019 (Précision), IMM-005, IMM-011, IMM-018.
 
 Toute correction de Précision s'accompagne d'une entrée `historique` sur la question et d'une entrée de journal.
 

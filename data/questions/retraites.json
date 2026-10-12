@@ -19,7 +19,7 @@
    "axe": "economie",
    "sens": 1,
    "enonce": "L'âge légal de départ à la retraite doit être fixé à 62 ans.",
-   "precision": "La loi du 14 avril 2023 relève progressivement l'âge légal de 62 à 64 ans. La loi de financement de la sécurité sociale pour 2026 a gelé ce relèvement à 62 ans et 9 mois jusqu'en janvier 2028 ; sans nouvelle loi, il reprend ensuite jusqu'à 64 ans.",
+   "precision": "La loi du 14 avril 2023 relève progressivement l'âge légal de 62 à 64 ans. La loi de financement de la sécurité sociale pour 2026 a gelé ce relèvement à 62 ans et 9 mois, pour les générations 1963 et 1964, jusqu'en janvier 2028 ; sans nouvelle loi, il reprend ensuite jusqu'à 64 ans.",
    "origine": {
     "description": "Loi n° 2023-270 du 14 avril 2023 ; loi n° 2025-1403 du 30 décembre 2025 de financement de la sécurité sociale pour 2026 (suspension)",
     "source": {
@@ -41,10 +41,14 @@
     {
      "date": "2026-10-02",
      "ancien_enonce": "L'âge légal de départ à la retraite doit être ramené à 62 ans."
+    },
+    {
+     "date": "2026-10-12",
+     "note": "Précision complétée : l'âge de 62 ans et 9 mois ne vaut que pour les générations 1963 et 1964 (1965 : 63 ans selon la date de naissance ; 1969 : 64 ans). L'ancienne précision l'énonçait sans limite de génération."
     }
    ],
    "impact": {
-    "changement": "Après la suspension, l'âge reste à 62 ans et 9 mois pour les générations 1963 et 1964, et 64 ans demeure prévu pour celle de 1969, selon le COR. La mesure ramènerait l'âge à 62 ans pour toutes les générations. Le COR chiffre la seule suspension à 1,8 milliard d'euros par an en moyenne jusqu'en 2032. Selon les simulations qu'il rassemble, un an d'âge en plus améliore de 0,3 à 0,6 point de PIB, à dix ans, le solde public.",
+    "changement": "Jusqu'en janvier 2028, l'âge reste à 62 ans et 9 mois pour les générations 1963 et 1964, et 64 ans demeure prévu pour celle de 1969, selon le COR. La mesure ramènerait l'âge à 62 ans pour toutes les générations. Le COR chiffre la seule suspension à 1,8 milliard d'euros par an en moyenne jusqu'en 2032. Selon les simulations qu'il rassemble, un an d'âge en plus améliore de 0,3 à 0,6 point de PIB, à dix ans, le solde public.",
     "pour": "Ses partisans estiment que le déficit projeté reste limité, 0,2 point de PIB en 2030 selon le COR, et peut être comblé par d'autres recettes, sans demander deux ans de travail de plus, notamment dans les métiers pénibles.",
     "contre": "Ses opposants invoquent le vieillissement : 3,6 personnes de 20 à 64 ans pour une de 65 ans ou plus en 2009, 2,5 en 2025 selon le COR. Ils ajoutent que reporter l'âge soutient l'emploi.",
     "sources": [
@@ -350,7 +354,7 @@
    "axe": "economie",
    "sens": 1,
    "enonce": "Les pensions de retraite doivent être indexées sur l'évolution des salaires plutôt que sur les prix.",
-   "precision": "Les pensions du régime général suivent les prix en pratique depuis le milieu des années 1980 ; la règle est inscrite dans la loi depuis 2003.",
+   "precision": "Les pensions du régime général suivent les prix en pratique depuis la fin des années 1980 ; la règle est inscrite dans la loi depuis 2003.",
    "origine": {
     "description": "Document du Conseil d'orientation des retraites sur les modes d'indexation",
     "source": {
@@ -368,7 +372,12 @@
     }
    ],
    "scrutins": [],
-   "historique": [],
+   "historique": [
+    {
+     "date": "2026-10-12",
+     "note": "Précision corrigée : « depuis le milieu des années 1980 » devient « depuis la fin des années 1980 » (Insee Analyses n° 17, 15 avril 2014 : indexation sur les prix dans le régime général « dès la fin des années 1980 »)."
+    }
+   ],
    "impact": {
     "changement": "Les pensions de base sont revalorisées chaque 1er janvier selon les prix à la consommation hors tabac ; elles suivraient désormais l'évolution des salaires. Selon une étude récente de l'Insee citée par le COR, l'indexation sur les prix a réduit à elle seule les dépenses de retraite de 1,7 point de PIB en 2018.",
     "pour": "Ses partisans estiment que les retraités doivent profiter de la hausse des salaires : sans cela, leur niveau de vie rapporté à celui de l'ensemble passerait de 100,2 % en 2023 à 90,3 % en 2070, selon le COR.",
