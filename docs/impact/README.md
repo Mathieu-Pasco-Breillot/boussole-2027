@@ -8,41 +8,38 @@ L'encart « Impact » s'affiche à côté de « Précision » sous chaque propos
 |---|---|---|
 | Institutions | 18 | En ligne, **validé** par Mathieu (rédaction Opus 5.5, relecture aveugle Sonnet 5.5) |
 | Défense, Écologie et énergie, Économie et dette, Éducation, Fiscalité | 94 | En ligne, statut **pilote** (rédaction et relecture aveugle Sonnet 5.5 : 37 ok, 57 corrigées, 0 bloquant) |
-| **Immigration, Retraites, Santé, Sécurité, Union européenne** | **94** | **À faire** : ce dossier |
+| Immigration, Retraites, Santé, Sécurité, Union européenne | 94 | En ligne, statut **pilote** (rédaction Opus 5.5, relecture aveugle Sonnet 5.5 : 0 bloquant) |
 
-## Ce qui reste à faire
+Détail de la vague 2 (questions actives ; ok / corrigées à la relecture) :
 
-Les brouillons de `vague-2/brouillons/` ont été rédigés alors que le quota de recherche web de la session était épuisé. **Ils ne sont pas publiables en l'état** :
-- **Sécurité** : 7 questions sans aucune source (SEC-005, 010, 014, 017, 018, 019, 021), le reste surtout sur Wikipédia.
-- **Union européenne** : presque tout sur Wikipédia ; une seule source primaire.
-- **Santé** : sourçage partiel ; SAN-005 (pôle public du médicament) insuffisant ; SAN-018 décrit le texte avant son adoption définitive.
-- **Immigration**, **Retraites** : faits principaux sourcés, mais plusieurs arguments pour/contre non sourcés et des Précisions à vérifier.
+| Thème | Questions | Ok | Corrigées |
+|---|---|---|---|
+| Retraites | 19 | — | — |
+| Santé | 19 | 11 | 8 |
+| Immigration | 21 | 12 | 9 |
+| Sécurité | 20 | 14 | 6 |
+| Union européenne | 15 | 6 | 9 |
 
-Chaque brouillon a un champ `reserves` qui liste précisément ce qui n'a pas été vérifié. On peut s'en servir comme point de départ, mais chaque fait doit être resourcé.
+## Reste à faire
 
-## Procédure, thème par thème
-
-1. **Rédaction** (avec recherche web) : appliquer `consigne-redaction.md` aux questions de `vague-2/themes/theme-<thème>.json`. S'appuyer sur le brouillon et ses réserves, en remplaçant les pages Wikipédia par des sources primaires ou institutionnelles (Légifrance, Assemblée nationale, Sénat, Conseil constitutionnel, Conseil d'État, Cour des comptes, Insee, COR, Drees, Commission européenne…). Sortie : `vague-2/redaction-<thème>.json`.
-   - **SEC-009** : reprendre le texte déjà validé par Mathieu dans `docs/impacts-en-attente.md`, en le répartissant dans les trois champs.
-2. **Relecture aveugle** par un autre agent : appliquer `consigne-relecture.md`. Sortie : `vague-2/relecture-<thème>.json`. Le relecteur ne lit les `reserves` qu'après avoir donné son avis.
-3. **Intégration** : `python3 docs/impact/outils/integrer.py <thème>`. Le script applique les corrections et refuse d'intégrer s'il reste un verdict bloquant ou une question sans source.
-4. **Journal** : ajouter une entrée de type `ajout_impact` dans `data/journal.json` (voir les entrées du 12 octobre 2026).
-5. **Contrôles** : `npm run derive && npm run bundle && npm run check`. Le test `app/impact.test.ts` bloque tout nom de candidat ou de parti dans les textes.
-6. Quand les cinq thèmes sont faits : étendre le premier test de `app/impact.test.ts` à **toutes** les questions actives, et supprimer `docs/impacts-en-attente.md` (son contenu est alors intégré).
-
-Conseils tirés des vagues précédentes : deux ou trois agents en parallèle au plus (les sites officiels renvoient des erreurs 429 au-delà) ; chaque agent écrit ses fichiers de travail hors du dépôt et dans un dossier qui lui est propre ; Opus fait nettement moins d'erreurs de précision que Sonnet (22 % de corrections contre 60 %).
+- **Validation par Mathieu** pour passer les 10 thèmes pilotes (vagues 1 et 2) du statut « pilote » à « validé ».
+- **Précisions signalées comme inexactes ou périmées, non modifiées** : liste ci-dessous. Chaque correction exigera une entrée `historique` sur la question et une entrée de journal.
+- **Sources à vérifier à la main** : Légifrance, Dalloz et consilium.europa.eu étaient inaccessibles aux agents (403 / anti-bot). À vérifier : SEC-004 (art. L.435-1), SEC-013 (art. 132-25), SEC-015 (art. 122-6), EUR-001 (communiqué du Conseil du 14/07/2026).
 
 ## Précisions signalées comme inexactes ou périmées (non modifiées)
 
 Vague 1 : DEF-001, DEF-002, DEF-003, ENV-004, ENV-024, ECO-009, ECO-011, EDU-017, FIS-008, FIS-009, FIS-016 (détail dans le bilan de la vague 1, projet Claude `phase-3/impact/bilan-vague-1.md`).
 
-Vague 2 (d'après les brouillons) :
+Vague 2 (d'après les brouillons et les relectures) :
 - **IMM-001** : règle des « 12 mois dans un métier en tension » à confirmer (une source parle de 12 mois sur 24, avec 3 ans de résidence).
 - **IMM-011** : la loi sur Mayotte aurait été promulguée le 12 mai 2025, la Précision évoque 2026.
 - **IMM-014** : la proposition de loi du Sénat citée est introuvable.
 - **RET-008** : « inscrite dans la loi depuis 2003 » ; le COR parle d'une pratique depuis 1987, légale depuis 1993.
 - **RET-011** : la Précision cite cinq régimes fermés dont celui du CESE ; le COR n'en cite que quatre.
 - **SAN-015** : date de censure du Conseil constitutionnel (28 février 2025) à vérifier, possible confusion avec la promulgation de la loi de financement.
+- **SEC-009** : amende forfaitaire de 200 € ou de 500 € selon une version récente de Légifrance (non vérifiée).
+- **SEC-014** : « 15 000 places » ou « jusqu'à 18 000 places » ?
+- Autres Précisions signalées par les relectures, sans détail ici : RET-001, RET-005, RET-006 ; SAN-006, SAN-008, SAN-009, SAN-012 ; IMM-005, IMM-012, IMM-018 ; EUR-002, EUR-003, EUR-010, EUR-012, EUR-015 ; SEC-006, SEC-008, SEC-013, SEC-021 (le détail figure dans `vague-2/relecture-<thème>.json`).
 
 Toute correction de Précision s'accompagne d'une entrée `historique` sur la question et d'une entrée de journal.
 

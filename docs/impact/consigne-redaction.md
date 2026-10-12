@@ -31,7 +31,7 @@ Date de rédaction : celle du jour. Ta connaissance s'arrête à mi-2026 : véri
 8. L'énoncé doit être lu **tel qu'il est écrit** (par exemple « 2 % des électeurs », « 350 députés »).
 
 9. **Exemple validé** par le responsable du projet : `docs/impact/exemple-valide.json`. Vise ce niveau de précision et d'équilibre.
-10. **Textes déjà validés** : si une question de ton lot figure dans `docs/impacts-en-attente.md` (cas de SEC-009), reprends son contenu tel quel en le répartissant dans les champs `changement` / `pour` / `contre` (les faits dans `changement`, les attentes des partisans dans `pour`, les objections dans `contre`), en ne retouchant que la forme. Signale-le dans `reserves`.
+10. **Textes déjà validés** : si le responsable du projet a déjà validé un texte pour une question de ton lot (cas de SEC-009, aujourd'hui intégré dans `data/questions/securite.json`), reprends son contenu tel quel en le répartissant dans les champs `changement` / `pour` / `contre` (les faits dans `changement`, les attentes des partisans dans `pour`, les objections dans `contre`), en ne retouchant que la forme. Signale-le dans `reserves`.
 11. Si la Précision te paraît inexacte ou périmée après vérification, ne la modifie pas : explique-le dans `reserves` avec ta source.
 
 ## Livrable
