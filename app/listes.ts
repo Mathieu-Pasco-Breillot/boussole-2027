@@ -5,6 +5,7 @@
  */
 import type { CandidatPaquet } from './paquet.ts';
 import { paquet } from './paquet.ts';
+import { ORDRE_MOTIFS } from '../core/score/candidats.ts';
 
 export const alphabetique: readonly CandidatPaquet[] = [...paquet.candidats].sort(
   (a, b) => a.nom.localeCompare(b.nom, 'fr') || a.prenom.localeCompare(b.prenom, 'fr'),
@@ -29,7 +30,13 @@ export function groupesCandidats(): Groupes {
     const motif = c.motifNonEvaluation ?? 'motif_non_renseigne';
     parMotif.set(motif, [...(parMotif.get(motif) ?? []), c]);
   }
-  return { compares, enAttente, nonEvalues: [...parMotif.entries()] };
+  // Même ordre des motifs que les résultats : les battus à une primaire, plus dans la course, ferment la liste.
+  const rang = (m: string): number => {
+    const i = (ORDRE_MOTIFS as readonly string[]).indexOf(m);
+    return i === -1 ? ORDRE_MOTIFS.length : i;
+  };
+  const nonEvalues = [...parMotif.entries()].sort(([a], [b]) => rang(a) - rang(b));
+  return { compares, enAttente, nonEvalues };
 }
 
 export const nomComplet = (c: CandidatPaquet): string => `${c.prenom} ${c.nom}`;

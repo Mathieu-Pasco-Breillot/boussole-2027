@@ -8,12 +8,13 @@ import type { Candidat, Melanger, MotifNonEvaluation, NonEvalue, OptionsResultat
 /** Ordre d'affichage des motifs dans la liste des non évalués (spécification § 9.4). */
 export const ORDRE_MOTIFS: readonly MotifNonEvaluation[] = [
   'primaire_en_cours',
-  'battu_primaire',
   'pressenti',
   'declaration_non_sourcee',
   'absent_liste_officielle',
   'codage_en_attente',
   'motif_non_renseigne',
+  // Plus dans la course : toujours en dernier.
+  'battu_primaire',
 ];
 
 export function motifNonEvaluation(c: Candidat): MotifNonEvaluation {

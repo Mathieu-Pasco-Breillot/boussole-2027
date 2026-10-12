@@ -49,3 +49,10 @@ describe('séparation évalués / non évalués (spécification § 4 et § 9)', 
     expect(separerCandidats([], sansMelange)).toEqual({ aCalculer: [], nonEvalues: [] });
   });
 });
+
+describe('ordre des motifs', () => {
+  it('place les battus à une primaire en dernier', async () => {
+    const { ORDRE_MOTIFS } = await import('./candidats.ts');
+    expect(ORDRE_MOTIFS[ORDRE_MOTIFS.length - 1]).toBe('battu_primaire');
+  });
+});
