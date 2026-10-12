@@ -4,6 +4,9 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci
 COPY . .
+# Variables Railway lues à la compilation pour l'affichage des versions : canal (« preprod » sur develop) et commit.
+ARG CANAL
+ARG RAILWAY_GIT_COMMIT_SHA
 RUN npm run build
 
 # Étape 2 : serveur Caddy, fichiers statiques uniquement.
