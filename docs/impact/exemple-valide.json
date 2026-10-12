@@ -1,0 +1,38 @@
+{
+ "changement": "Un nouvel article de la Constitution permettrait à la Collectivité de Corse, si une loi d'application l'y autorise, d'adapter les lois nationales et de fixer ses propres règles dans ses compétences. Nationalité, justice, droit pénal, défense, sécurité, monnaie et droit électoral resteraient exclus. Les électeurs inscrits en Corse seraient consultés sur le statut. Restent un vote identique du Sénat, puis un référendum ou un vote du Congrès aux trois cinquièmes.",
+ "pour": "Ses partisans estiment que l'insularité et le relief de la Corse justifient des règles adaptées que l'État tarde à accorder : sur 72 demandes d'adaptation en quinze ans, seules 13 ont abouti, selon un rapport sénatorial.",
+ "contre": "Ses opposants y voient une atteinte à l'unité de la République et à l'égalité devant la loi. Ils jugent le contrôle prévu insuffisant pour un pouvoir de faire la loi et craignent un précédent pour d'autres régions.",
+ "sources": [
+  {
+   "url": "https://www.senat.fr/leg/pjl25-782.html",
+   "titre": "Une Corse autonome au sein de la République (PJLC) - Texte déposé - Sénat",
+   "date_consultation": "2026-10-12",
+   "nature": "primaire"
+  },
+  {
+   "url": "https://conseil-etat.fr/avis-consultatifs/derniers-avis-rendus/au-gouvernement/avis-relatif-au-projet-de-loi-constitutionnelle-pour-une-corse-autonome-au-sein-de-la-republique",
+   "titre": "Avis relatif au projet de loi constitutionnelle pour une Corse autonome au sein de la République",
+   "date_consultation": "2026-10-12",
+   "nature": "institutionnelle"
+  },
+  {
+   "url": "https://www.maire-info.com/corse/autonomie-de-la-corse-le-projet-de-loi-adopte-en-premiere-lecture-mais-les-incertitudes-demeurent-sur-son-avenir-article-30919",
+   "titre": "Autonomie de la Corse : le projet de loi adopté en première lecture, mais les incertitudes demeurent sur son avenir",
+   "date_consultation": "2026-10-12",
+   "nature": "secondaire"
+  },
+  {
+   "url": "https://www.publicsenat.fr/actualites/politique/autonomie-de-la-corse-la-reforme-constitutionnelle-va-t-elle-sechouer-au-senat",
+   "titre": "Autonomie de la Corse : la réforme constitutionnelle va-t-elle s'échouer au Sénat ?",
+   "date_consultation": "2026-10-12",
+   "nature": "secondaire"
+  },
+  {
+   "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2697/CION_LOIS/CL40",
+   "titre": "Amendement n° CL40 au projet de loi constitutionnelle pour une Corse autonome au sein de la République (n° 2697)",
+   "date_consultation": "2026-10-12",
+   "nature": "primaire"
+  }
+ ],
+ "statut": "valide"
+}

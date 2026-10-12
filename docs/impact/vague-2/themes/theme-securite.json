@@ -1,0 +1,102 @@
+[
+ {
+  "id": "SEC-001",
+  "enonce": "Les policiers doivent remettre un récépissé à chaque personne dont ils contrôlent l'identité.",
+  "precision": "Récépissé : document attestant du contrôle, de sa date et de son motif."
+ },
+ {
+  "id": "SEC-002",
+  "enonce": "L'usage des lanceurs de balles de défense (LBD) doit être interdit lors des manifestations.",
+  "precision": null
+ },
+ {
+  "id": "SEC-003",
+  "enonce": "Les brigades de policiers à moto chargées du maintien de l'ordre (BRAV-M) doivent être dissoutes.",
+  "precision": null
+ },
+ {
+  "id": "SEC-004",
+  "enonce": "La loi de 2017 qui fixe les cas où policiers et gendarmes peuvent faire usage de leur arme, notamment après un refus d'obtempérer, doit être abrogée.",
+  "precision": "Il s'agit de l'article L. 435-1 du code de la sécurité intérieure."
+ },
+ {
+  "id": "SEC-005",
+  "enonce": "Les inspections internes de la police et de la gendarmerie (IGPN, IGGN) doivent être remplacées par un organisme indépendant rattaché au Défenseur des droits.",
+  "precision": null
+ },
+ {
+  "id": "SEC-006",
+  "enonce": "Lorsqu'une prison dépasse 100 % d'occupation, des détenus en fin de peine doivent être libérés sous contrainte pour revenir à ce seuil.",
+  "precision": "Au 1er août 2026, les prisons françaises comptaient 89 668 détenus pour 63 303 places."
+ },
+ {
+  "id": "SEC-008",
+  "enonce": "Une police de proximité doit être rétablie.",
+  "precision": "Police de proximité : policiers affectés durablement à un quartier. Ce dispositif a été supprimé en 2003."
+ },
+ {
+  "id": "SEC-009",
+  "enonce": "Consommer de la drogue, quelle qu'elle soit (cannabis, cocaïne, héroïne…), ne doit plus être puni par la loi.",
+  "precision": "Aujourd'hui, consommer n'importe quel stupéfiant est un délit, le plus souvent sanctionné par une amende forfaitaire de 200 €. La mesure supprimerait toute sanction pour la seule consommation. La vente et le trafic resteraient interdits et punis."
+ },
+ {
+  "id": "SEC-010",
+  "enonce": "Le contrat d'engagement républicain imposé aux associations subventionnées doit être supprimé.",
+  "precision": "Depuis 2022, une association qui demande une subvention publique doit signer ce contrat, par lequel elle s'engage à respecter les principes de la République."
+ },
+ {
+  "id": "SEC-011",
+  "enonce": "Des peines minimales de prison doivent être imposées aux récidivistes.",
+  "precision": "Mesure souvent appelée « peines planchers ». Elles ont existé de 2007 à 2014."
+ },
+ {
+  "id": "SEC-012",
+  "enonce": "Les mineurs de 16 ans et plus en récidive doivent encourir les mêmes peines que les majeurs.",
+  "precision": "Aujourd'hui, un mineur encourt en principe la moitié de la peine prévue pour un majeur. Une loi de 2025 supprimant cette règle pour les récidivistes de 16 ans et plus a été censurée par le Conseil constitutionnel."
+ },
+ {
+  "id": "SEC-013",
+  "enonce": "Les peines de prison ferme de moins d'un an ne doivent plus être aménagées automatiquement.",
+  "precision": "Aménagement : la peine est exécutée hors de prison, par exemple sous bracelet électronique. Il est aujourd'hui la règle pour les courtes peines."
+ },
+ {
+  "id": "SEC-014",
+  "enonce": "Le nombre de places de prison doit être porté à 85 000.",
+  "precision": "Il y a aujourd'hui environ 63 000 places. Le plan en cours prévoit 15 000 places supplémentaires."
+ },
+ {
+  "id": "SEC-015",
+  "enonce": "Les policiers et gendarmes qui font usage de leur arme doivent être présumés avoir agi dans le cadre de la loi.",
+  "precision": "Aujourd'hui, c'est à eux de démontrer que leur tir était légal. Une proposition de loi en ce sens a été adoptée par l'Assemblée nationale le 7 juillet 2026."
+ },
+ {
+  "id": "SEC-016",
+  "enonce": "Les policiers municipaux doivent être armés, sauf refus motivé du maire.",
+  "precision": "Aujourd'hui, l'armement d'une police municipale est une décision du maire, autorisée par le préfet."
+ },
+ {
+  "id": "SEC-017",
+  "enonce": "Les allocations familiales doivent être suspendues pour les parents d'un mineur condamné pour un délit ou un crime.",
+  "precision": null
+ },
+ {
+  "id": "SEC-018",
+  "enonce": "Le port du voile doit être interdit aux mineures dans l'espace public.",
+  "precision": null
+ },
+ {
+  "id": "SEC-019",
+  "enonce": "Le port de signes religieux doit être interdit dans les compétitions sportives.",
+  "precision": null
+ },
+ {
+  "id": "SEC-020",
+  "enonce": "La castration chimique doit être imposée aux auteurs de crimes sexuels jugés les plus dangereux.",
+  "precision": "Castration chimique : traitement médicamenteux qui réduit la libido. Il ne peut aujourd'hui être prescrit qu'avec l'accord du condamné."
+ },
+ {
+  "id": "SEC-021",
+  "enonce": "La police doit pouvoir utiliser la reconnaissance faciale en temps réel dans l'espace public pour le terrorisme et la criminalité organisée.",
+  "precision": "La reconnaissance faciale n'est pas autorisée aujourd'hui. Une expérimentation de trois ans a été votée par le Sénat en 2023, sans suite à l'Assemblée nationale."
+ }
+]

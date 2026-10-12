@@ -1,0 +1,97 @@
+[
+ {
+  "id": "SAN-001",
+  "enonce": "L'installation d'un médecin dans une zone déjà bien dotée doit être soumise à autorisation.",
+  "precision": "Les médecins libéraux s'installent aujourd'hui où ils le souhaitent. Une proposition de loi prévoyant cette autorisation a été adoptée par l'Assemblée nationale le 7 mai 2025 ; le Sénat l'a réécrite en juin 2026."
+ },
+ {
+  "id": "SAN-002",
+  "enonce": "Les dépassements d'honoraires des médecins doivent être plafonnés.",
+  "precision": "Dépassement d'honoraires : part du tarif d'un médecin qui excède le tarif de l'assurance maladie et n'est pas remboursée par elle."
+ },
+ {
+  "id": "SAN-003",
+  "enonce": "L'assurance maladie doit rembourser à 100 % les soins prescrits, les mutuelles étant intégrées à la Sécurité sociale.",
+  "precision": "Mesure souvent appelée « 100 % Sécu »."
+ },
+ {
+  "id": "SAN-004",
+  "enonce": "Les franchises médicales doivent être supprimées.",
+  "precision": "Franchise : somme laissée à la charge du patient (1 euro par boîte de médicament, 2 euros par consultation). Deux plafonds annuels de 70 euros chacun s'appliquent depuis le 1er octobre 2026, contre 50 euros auparavant."
+ },
+ {
+  "id": "SAN-005",
+  "enonce": "Un établissement public chargé de produire des médicaments doit être créé.",
+  "precision": "Mesure souvent appelée « pôle public du médicament »."
+ },
+ {
+  "id": "SAN-006",
+  "enonce": "Tous les médecins doivent être obligés de participer aux gardes de nuit et de week-end.",
+  "precision": "Depuis 2003, les médecins libéraux participent aux gardes sur la base du volontariat."
+ },
+ {
+  "id": "SAN-007",
+  "enonce": "La tarification à l'activité doit être supprimée à l'hôpital.",
+  "precision": "Tarification à l'activité (T2A) : l'hôpital est financé selon le nombre et le type d'actes réalisés. Sa part a été réduite par une réforme en 2025, sans être supprimée."
+ },
+ {
+  "id": "SAN-008",
+  "enonce": "Les médecins doivent être obligés d'exercer jusqu'à deux jours par mois dans une zone qui manque de médecins.",
+  "precision": "Ce dispositif existe depuis septembre 2025 sur la base du volontariat."
+ },
+ {
+  "id": "SAN-009",
+  "enonce": "Un prix minimum de vente de l'alcool doit être fixé à 0,50 euro par unité d'alcool.",
+  "precision": "Cela correspond à environ 3,50 euros pour une bouteille de vin."
+ },
+ {
+  "id": "SAN-010",
+  "enonce": "Le cannabis à usage récréatif doit être légalisé.",
+  "precision": "L'usage du cannabis est aujourd'hui interdit et sanctionné."
+ },
+ {
+  "id": "SAN-011",
+  "enonce": "L'aide médicale de l'État doit être remplacée par une aide limitée aux soins urgents.",
+  "precision": "L'aide médicale de l'État (AME) prend en charge les soins des étrangers en situation irrégulière résidant en France depuis plus de trois mois."
+ },
+ {
+  "id": "SAN-012",
+  "enonce": "Un jour de carence non indemnisé, que l'employeur n'aurait pas le droit de compenser, doit être créé pour les arrêts maladie des salariés du privé.",
+  "precision": "Les salariés du privé ont trois jours de carence, le plus souvent compensés par l'employeur ou la prévoyance."
+ },
+ {
+  "id": "SAN-013",
+  "enonce": "Un premier arrêt maladie prescrit par un médecin de ville doit être limité à 15 jours.",
+  "precision": "Depuis le 1er septembre 2026, un premier arrêt est limité à 31 jours, sauf dérogation justifiée."
+ },
+ {
+  "id": "SAN-015",
+  "enonce": "Un patient qui n'honore pas un rendez-vous médical sans prévenir doit payer une pénalité de 5 euros.",
+  "precision": "Mesure souvent appelée « taxe lapin ». Votée fin 2024, elle a été censurée par le Conseil constitutionnel le 28 février 2025 pour imprécision."
+ },
+ {
+  "id": "SAN-016",
+  "enonce": "Les agences régionales de santé doivent être supprimées et leurs missions confiées aux préfets.",
+  "precision": "Les agences régionales de santé (ARS) pilotent l'organisation des soins dans chaque région."
+ },
+ {
+  "id": "SAN-017",
+  "enonce": "Les plafonds annuels des franchises médicales doivent être portés à 100 euros chacun.",
+  "precision": "Franchise : somme laissée à la charge du patient (1 euro par boîte de médicament, 2 euros par consultation). Deux plafonds annuels de 70 euros chacun s'appliquent depuis le 1er octobre 2026, contre 50 euros auparavant."
+ },
+ {
+  "id": "SAN-018",
+  "enonce": "La loi du 18 août 2026 créant un droit à l'aide à mourir doit être abrogée.",
+  "precision": "Cette loi permet à un majeur atteint d'une affection grave et incurable, en phase avancée ou terminale, d'obtenir une aide à mourir sous conditions."
+ },
+ {
+  "id": "SAN-019",
+  "enonce": "Les soins non urgents pris en charge par l'aide médicale de l'État doivent être soumis à un accord préalable de l'assurance maladie.",
+  "precision": "L'aide médicale de l'État (AME) prend en charge les soins des étrangers en situation irrégulière."
+ },
+ {
+  "id": "SAN-020",
+  "enonce": "La part d'une consultation médicale remboursée par l'assurance maladie doit passer de 70 % à 60 %.",
+  "precision": "Le reste est payé par la complémentaire santé ou par le patient."
+ }
+]
