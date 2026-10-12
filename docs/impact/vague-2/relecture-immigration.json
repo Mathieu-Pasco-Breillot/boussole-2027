@@ -1,0 +1,146 @@
+[
+  {
+    "id": "IMM-001",
+    "verdict": "corriger",
+    "remarques": "Neutralité/attribution : le « contre » prête aux opposants un chiffre qui vient d'un chercheur (Public Sénat, 17/09/2026) cité pour contester le chiffre de 400 000 et non pour illustrer un appel d'air ; l'article précise aussi que l'Espagne n'a répondu favorablement qu'à la moitié des demandes, ce que le texte omet. L'argument « appel d'air » est, lui, étayé par la même source (expert cité). Exactitude : 28 610 régularisations en 2025 (DGEF), 700 000 (estimation ministère de l'Intérieur) et conditions de l'article L. 435-4 (3 ans de résidence, 12 mois sur 24, expérimentation jusqu'au 31/12/2026) vérifiés dans les pages Public Sénat et la question écrite 6781. Précision : les « sept ans » sont confirmés par l'article Public Sénat du 17/09/2026 ; elle omet la voie L. 435-4 (3 ans de résidence, 12 mois sur 24, expérimentale jusqu'à fin 2026), ce qui n'est pas une erreur mais justifie le complément fourni par « changement ». Sources : le titre de la source 3 est paraphrasé ; titre réel de la page : « Question n°6781 : Mise en œuvre de l'article L. 435-4 du CESEDA relatif aux métiers en tension - Assemblée nationale ». Source 4 : H1 réel « Loi immigration 2024 : Mesures restant après la décision du Conseil constitutionnel » (balise title : « …les mesures maintenues après le Conseil constitutionnel | Novlaw Avocats »). Longueurs OK (73/34/30 mots).",
+    "corrections": {
+      "contre": "Ses opposants craignent qu'une régularisation générale crée un « appel d'air » et attire de nouvelles arrivées irrégulières ; ils préfèrent examiner chaque dossier au cas par cas, selon des critères précis."
+    }
+  },
+  {
+    "id": "IMM-002",
+    "verdict": "ok",
+    "remarques": "Vérifié : la décision 2023-863 DC censure en totalité 31 articles (comptage du dispositif : art. 3-6, 8-13, 15-19, 22, 24-26, 32, 33, 38, 45, 48, 50, 58, 65, 67-69, 81), plus des censures partielles ; le « environ » est superflu mais sans conséquence. Novlaw (page ouverte) confirme français/examen civique, amende jusqu'à 20 000 € par salarié, régularisation métiers en tension. Neutralité : le « pour » mêle deux motivations opposées, attribué et lisible ; « veulent la remplacer par un autre texte » n'est étayé par aucune source (position de débat). Aucun nom. Longueurs OK (70/27/27). Titre de la source Novlaw : voir IMM-001.",
+    "corrections": {}
+  },
+  {
+    "id": "IMM-003",
+    "verdict": "ok",
+    "remarques": "Vérifié : article 88-3 (Constitution, page ouverte) ; décision 92-308 DC, considérants 25-26 (lien conseillers municipaux / élection sénatoriale) ; article 89 pour la procédure ; PPLC n° 288 du Sénat (8 février 2011, PDF lu) : « condition de résidence de plus de cinq ans », texte de l'exposé des motifs, non adopté. Titre inexact de la source 3 : le document s'intitule « Proposition de loi constitutionnelle tendant à créer un titre nouveau de la Constitution relatif au droit de vote et à l'éligibilité des étrangers aux élections municipales » (n° 288, 2010-2011). Légère redite de la Précision (droit des Européens, révision constitutionnelle) mais le détail ajouté est utile. Longueurs OK (78/28/32).",
+    "corrections": {}
+  },
+  {
+    "id": "IMM-004",
+    "verdict": "ok",
+    "remarques": "Vérifié sur F2208 (carte de résident 10 ans : liens familiaux, services rendus, protection internationale ; B1 + examen civique), F35799 (carte pluriannuelle : en principe 4 ans après une première année) et F17359 (LD-UE : 5 ans de séjour, B1, examen civique, ressources au moins égales au Smic). Les titres de source sont de forme « Service-public.gouv.fr, fiche Fxxxx : … » et non les titres réels : « Carte de résident de 10 ans d'un étranger en France », « Carte de séjour pluriannuelle », « Carte de résident de longue durée-UE (étranger en France depuis 5 ans) ». Neutre, équilibré. Longueurs OK (80/35/33, changement à la limite).",
+    "corrections": {}
+  },
+  {
+    "id": "IMM-005",
+    "verdict": "ok",
+    "remarques": "Point tranché : les deux chiffres ne se contredisent pas. 10,8 mois (9,8 en 2024) vient de L'essentiel du Sénat (pjl25-526, p. 2) avec note : délai incluant enregistrement, examen Ofpra et recours devant la CNDA ; « objectif de six mois » y figure. Les 163 jours (Public Sénat 15/07/2026, rapport de la commission des finances) mesurent l'instruction Ofpra seule (131 j jusqu'à convocation + 57 j ; ordre d'un an recours compris) : le texte n'a pas repris ce chiffre, ce qui est cohérent. 151 665 demandes (DGEF, Public Sénat 27/01/2026) vs « plus de 145 000 » à l'Ofpra : périmètres différents, attribution correcte. 52,1 % = taux global de protection (décisions Ofpra + CNDA), pas une part de « demandeurs » : formulation approximative mais admissible. Règle des six mois (Précision) : confirmée par service-public F2741 « Accès au travail du demandeur d'asile » (vérifié le 16/09/2026, page téléchargée) : pas d'autorisation avant 6 mois, puis l'employeur peut en demander une si l'Ofpra n'a pas statué ; depuis le 12/06/2026 le délai court de l'enregistrement au GUDA ; la Précision reste donc exacte. Attention : la source listée F2232 (« Demande d'asile », vérifiée le 07/05/2025) contient, dans la rubrique décision, la phrase « Pendant l'instruction de votre dossier, vous avez le droit de travailler », qui ne soutient pas la Précision et peut prêter à confusion ; suggestion : ajouter F2741 aux sources. Neutralité correcte, longueurs OK (67/29/27).",
+    "corrections": {}
+  },
+  {
+    "id": "IMM-006",
+    "verdict": "ok",
+    "remarques": "Vérifié : F2232 (réfugié, protection subsidiaire, apatride) et alinéa 4 du Préambule de 1946 ; aucune mention du climat dans ces deux pages. Pas d'estimation chiffrée ni de source sur les déplacés climatiques : acceptable vu l'énoncé. « Un nouveau statut devrait définir… » est une description de conception, non un fait ; formulation à la limite mais sans valeur prescriptive. Équilibré (36/32 mots). Titre de F2232 réel : « Demande d'asile ».",
+    "corrections": {}
+  },
+  {
+    "id": "IMM-007",
+    "verdict": "corriger",
+    "remarques": "Exactitude : la page SNSM (« Notre organisation ») dit que, sur demande des CROSS, la SNSM intervient dans plus de 55 % des missions de sauvetage en mer ; le texte écrit « plus de 55 % des missions déclenchées par les CROSS », base différente (le rédacteur le signale lui-même comme ambigu). Le chiffre porte sur tous les sauvetages en mer, pas sur les migrants : la correction proposée le dit. Article 98 §2 de la convention vérifié (page ouverte ; son <title> HTML est « Preamble to the United Nations Convention on the Law of the Sea », la source est bien la Partie VII, article 98). L'adjectif « efficace » du changement vient de la convention (formulation quasi reprise de la source) : remplacé par une reformulation. « Service nouveau » : déduction non sourcée, acceptable. Longueurs OK.",
+    "corrections": {
+      "changement": "La convention des Nations unies sur le droit de la mer demande à chaque État côtier de favoriser un service de recherche et de sauvetage doté de moyens adaptés. La Société nationale de sauvetage en mer, association financée surtout par le public, intervient à la demande des centres publics de coordination (CROSS) dans plus de 55 % des sauvetages en mer, selon l'association. Une agence dédiée aux migrants serait un service nouveau, de périmètre et de budget non précisés."
+    }
+  },
+  {
+    "id": "IMM-008",
+    "verdict": "ok",
+    "remarques": "Vérifié sur F295 (vérifiée le 19/08/2025) : déclaration anticipée dès 13 ans avec 5 ans de résidence depuis l'âge de 8 ans ; français de naissance si l'un des parents est né en France ; règles spécifiques à Mayotte. Dossier législatif AN : loi promulguée le 12 mai 2025. Précision (18 ans, cinq ans depuis 11 ans) conforme à F295. Longueurs OK (70/32/29). Titre de F295 conforme sur le fond (« Nationalité française d'un enfant né en France de parents étrangers »).",
+    "corrections": {}
+  },
+  {
+    "id": "IMM-009",
+    "verdict": "corriger",
+    "remarques": "Inexact : « La fiche officielle ne prévoit aucun critère tiré de la scolarité ». F2209 (vérifiée le 01/05/2026) cite la scolarité à plusieurs endroits : certificats de scolarité comme preuve de résidence de l'enfant, « suivi scolaire » comme preuve de participation à l'éducation (parent d'enfant français) et une carte pour les jeunes nés en France avec 5 ans de scolarité après 10 ans (critère propre à l'enfant). Ce qui est exact : aucun titre propre aux parents d'un enfant étranger scolarisé (la fiche mentionne en revanche des « motifs humanitaires ou exceptionnels » à l'appréciation du préfet). Le reste est vérifié : parent d'enfant français, carte temporaire d'un an, possible même en situation irrégulière, refus soumis à la commission du titre de séjour mais le préfet peut refuser même après avis favorable ; 28 610 (Public Sénat). Titre réel de F2209 : « Carte de séjour « vie privée et familiale » d'un étranger en France ».",
+    "corrections": {
+      "changement": "Aujourd'hui, un parent étranger d'enfant français peut obtenir une carte « vie privée et familiale » d'un an, et le préfet garde un pouvoir d'appréciation, avec saisine possible d'une commission du titre de séjour. Aucun titre n'est prévu pour les parents d'un enfant étranger scolarisé. En 2025, 28 610 étrangers ont été régularisés, tous motifs confondus. La mesure ferait de la scolarisation d'un enfant un motif de régularisation de ses parents, sans fixer de durée."
+    }
+  },
+  {
+    "id": "IMM-010",
+    "verdict": "ok",
+    "remarques": "Vérifié : 118 000 premiers titres étudiants et 384 230 premiers titres au total en 2025 (DGEF via Public Sénat 27/01/2026). Non étayés par la source unique listée : « reçoivent normalement un titre de séjour étudiant », « aucun droit automatique au séjour » (le rédacteur l'admet dans ses réserves) et, dans « pour », « certains perdent leur titre à cause des délais des préfectures » (l'article Public Sénat du 17/09/2026 décrit ces délais en général, pas pour les étudiants). Suggestion : ajouter une fiche Service-public sur le titre étudiant ; faits plausibles, pas d'inexactitude constatée, d'où ok. Longueurs OK (67/34/31).",
+    "corrections": {}
+  },
+  {
+    "id": "IMM-011",
+    "verdict": "corriger",
+    "remarques": "Point tranché : la phrase sur « les deux parents résidant régulièrement depuis plus d'un an » ne repose sur aucune source listée (F295 dit seulement « Des règles spécifiques s'appliquent à Mayotte » ; le dossier législatif AN donne le titre « Renforcer les conditions d'accès… » et la promulgation du 12 mai 2025, sans le contenu). Elle s'appuie sur la circulaire du 5 mai 2026 (JUSC2611765C, lue) qui, de plus, dit « au moins un an » (et non « plus d'un an »), vise le séjour régulier « en France » (pas « à Mayotte »), et seulement le parent établi si un seul lien de filiation. Correction : phrase réduite à ce que F295 et le dossier AN étayent. Précision inexacte : « Des conditions plus strictes s'appliquent à Mayotte depuis 2026 » alors que la loi 2025-412 est entrée en vigueur le 14 mai 2025 selon la circulaire (seuls le décret du 30/04/2026 et la circulaire datent de 2026) ; proposition : « depuis 2025 ». Reste : pas de nom, équilibre pour/contre correct (34/32).",
+    "corrections": {
+      "changement": "La mesure supprimerait l'acquisition de la nationalité par la naissance et la résidence en France, y compris par déclaration dès 13 ans. Resteraient la filiation, c'est-à-dire un parent français, et la naturalisation, accordée sur demande. L'énoncé ne dit pas si un enfant né en France d'un parent lui-même né en France resterait français. Une loi du 12 mai 2025 a déjà renforcé les conditions d'accès à la nationalité à Mayotte."
+    }
+  },
+  {
+    "id": "IMM-012",
+    "verdict": "ok",
+    "remarques": "Vérifié : F869 (titre de séjour ou récépissé, aucune mention de nationalité) ; décision 93-325 DC, considérants 3-4 et 15 (étrangers « dans une situation différente » ; droit à la protection sociale pour les résidents stables et réguliers). « La demande dépasse largement l'offre » (pour) est un fait non sourcé placé dans l'argument des partisans : tolérable car attribué. La Précision « Elle suppose de réviser la Constitution » n'est étayée par aucune source consultée (lecture juridique débattue), comme le note le rédacteur. Titre de F869 réel : « Quelles sont les conditions pour obtenir un logement social ? ». Longueurs OK (69/27/31).",
+    "corrections": {}
+  },
+  {
+    "id": "IMM-013",
+    "verdict": "corriger",
+    "remarques": "Inexact par généralisation : « un étranger non européen ne peut occuper un emploi salarié qu'avec une autorisation de travail, demandée en ligne par son employeur ». Cela vaut pour la carte « salarié » (F15898), mais les titulaires d'une carte de résident (F2208) ou d'une carte « vie privée et familiale » (F2209) travaillent sans que l'employeur demande une autorisation (« Votre employeur n'a pas à demander d'autorisation de travail »). Correction proposée ; ajouter F2208 aux sources. Titre inexact : F15898 s'intitule en réalité « Travail d'un étranger en France : carte de séjour - salarié/travailleur temporaire » (et non « autorisation de travail d'un salarié étranger »). Préambule 1946 alinéa 5 vérifié. Longueurs OK (pour 31 / contre 30).",
+    "corrections": {
+      "changement": "Aujourd'hui, un étranger non européen travaille en France grâce à un titre qui l'y autorise (carte de résident, par exemple) ou à une autorisation de travail demandée en ligne par son employeur. Le Préambule de 1946 garantit à chacun le droit d'obtenir un emploi et interdit de léser quiconque en raison de ses origines. La mesure donnerait la priorité aux Français pour l'emploi ; l'énoncé ne dit pas si elle viserait seulement les embauches, ni si elle exclurait les Européens."
+    }
+  },
+  {
+    "id": "IMM-014",
+    "verdict": "corriger",
+    "remarques": "Point tranché. Texte adopté n° 83 (Sénat, 18/03/2025, page lue) : la condition de deux ans de titre (art. L. 512-2 CSS, allocations familiales, aides au logement via CCH, allocation personnalisée d'autonomie) n'est pas opposable aux titulaires d'un titre de séjour autorisant à travailler (art. L. 512-2-1), aux réfugiés, bénéficiaires de la protection subsidiaire ou temporaire et apatrides, et, pour les aides au logement, aux étudiants. Le changement n'en cite que la dispense la moins large et omet la principale (titre autorisant à travailler) ; la Précision (« étrangers qui travaillent ») est approximative : il s'agit des titulaires d'un titre autorisant à travailler, non de ceux qui exercent un emploi. Exactitude de « Aujourd'hui, l'APL exige seulement un titre de séjour valide » : F12006 (vérifiée le 01/07/2026) ajoute depuis le 1er juillet 2026 des conditions pour les étudiants hors UE (bourse, activité ou apprentissage) : retiré dans la correction. Censure 2024 : décision 2023-863 DC §94-96 confirmée (cinq ans de résidence ou trente mois d'affiliation ; cavalier, sans préjuger du fond). Titres de sources inexacts : tas24-083 s'intitule « Condition de durée de résidence pour le versement de prestations sociales » (texte « créant une condition de durée de résidence… » dans le corps) ; F12006 : « Aide personnalisée au logement (APL) ». Longueurs OK après correction (80 mots pour le changement).",
+    "corrections": {
+      "changement": "Le Sénat a adopté le 18 mars 2025 une proposition de loi exigeant deux ans de séjour régulier pour certaines prestations, dont les allocations familiales et les aides au logement. En seraient dispensés les titulaires d'un titre autorisant à travailler, les réfugiés, les bénéficiaires d'une protection subsidiaire ou temporaire et les apatrides. La condition censurée en 2024 (cinq ans de résidence ou trente mois d'activité) l'a été comme sans lien avec le projet de loi, sans jugement sur le fond."
+    }
+  },
+  {
+    "id": "IMM-015",
+    "verdict": "ok",
+    "remarques": "Point tranché : le scrutin n° 3261 (30/10/2025) porte sur l'amendement de suppression de l'article unique de la proposition de loi « visant au rétablissement du délit de séjour irrégulier » : 209 pour, 169 contre, 1 abstention, l'amendement est adopté, donc l'article est supprimé : le texte est exact. Décision 2023-863 DC §83-86 : l'article 17 punissait le séjour irrégulier d'une amende délictuelle et de trois ans d'interdiction du territoire, censuré comme cavalier sans préjuger du fond : exact. Suggestion facultative : indiquer la peine de la version de 2024 (amende et interdiction du territoire, sans prison), utile au lecteur alors que le texte dit que l'énoncé ne précise pas la peine. Redite partielle de la Précision (première phrase) sans gravité. Titre inexact de la source 2 : la page s'intitule « Analyse du scrutin n°3261 - 17e législature - Assemblée nationale » (les mentions « du 30 octobre 2025 » viennent du corps de la page). Longueurs OK (67/29/29). Le fait que le délit d'entrée irrégulière subsiste n'est pas évoqué (non sourcé ici).",
+    "corrections": {}
+  },
+  {
+    "id": "IMM-016",
+    "verdict": "ok",
+    "remarques": "Vérifié : décision 2023-863 DC §5-8 : le texte censuré prévoyait un débat annuel, un rapport et la détermination par le Parlement, pour trois ans, du nombre d'étrangers admis par catégorie hors asile ; 384 230 premiers titres (DGEF via Public Sénat). Le motif de censure n'est pas indiqué dans le texte alors qu'il est établi : le Conseil juge que le législateur ne peut imposer au Parlement un débat ou la fixation d'objectifs chiffrés (prérogatives sur l'ordre du jour, art. 48 de la Constitution) ; une phrase sur ce point éclairerait la lecture de l'énoncé (non ajoutée car le changement est déjà à 61 mots et le texte reste exact). « Sans plafond global » : constat non sourcé mais cohérent (Novlaw : le rapport annuel ne détermine aucun nombre). « Pour » un peu moins étoffé que « contre » (25/32 mots, écart 22 %), dans la limite.",
+    "corrections": {}
+  },
+  {
+    "id": "IMM-017",
+    "verdict": "corriger",
+    "remarques": "Inexact : le Conseil constitutionnel (93-325 DC, considérant 84) qualifie le droit d'asile de « principe de valeur constitutionnelle » ; « droit fondamental à caractère constitutionnel » y désigne les droits de la défense, pas l'asile. Le même considérant juge que le droit d'asile implique d'une manière générale que le demandeur soit autorisé à demeurer provisoirement sur le territoire jusqu'à la décision : élément central pour cette question, absent du texte. 151 665 demandes (DGEF) ; 52,1 % = taux global de protection (décisions Ofpra + CNDA), non une part de « demandeurs » : retiré de la correction pour alléger. Pacte applicable depuis le 12 juin 2026 et 1 % des demandes examinées en 2025 vérifiés (page Ofpra, mise à jour). Titre de la source Ofpra conforme ; source pjl25-526 : titre réel « Mise en œuvre du Pacte sur la migration et l'asile » (le sous-titre et « mai 2026 » viennent du rédacteur).",
+    "corrections": {
+      "changement": "Le Préambule de 1946 garantit l'asile aux personnes persécutées pour leur action en faveur de la liberté. En 1993, le Conseil constitutionnel y a vu un principe de valeur constitutionnelle, impliquant en général que le demandeur reste provisoirement en France jusqu'à la décision. En 2025, la France a enregistré 151 665 demandes. La procédure à la frontière du pacte européen, applicable depuis juin 2026, concernerait environ 1 % des demandes selon l'Ofpra. La mesure supprimerait le dépôt sur le territoire."
+    }
+  },
+  {
+    "id": "IMM-018",
+    "verdict": "ok",
+    "remarques": "Vérifié : F2257 (certificat de résidence algérien de 10 ans après 1 an de mariage ; page vérifiée le 01/10/2024 par Service-public, donc possiblement ancienne), F2208 (carte de résident après 3 ans de mariage), F19778 (RSA : la condition de cinq ans de titre « n'est pas applicable aux personnes de nationalité algérienne », vérifiée le 01/04/2026), proposition de résolution n° 1778 déposée le 9 septembre 2025 (le dossier AN la marque « adopté » ; la Précision donne le 30/10/2025, non contredit). La phrase sur la proposition du 9 septembre 2025 n'apporte rien au lecteur : on pourrait la retirer, sans que ce soit une erreur. « Faible reprise par l'Algérie » : affirmation des partisans, attribuée. Écart de longueur 31/24 mots (23 %), dans la limite. Titres : F2257 réel « Certificat de résidence de 10 ans - Personne de nationalité algérienne » ; F19778 réel « RSA : demandeur de 25 ans et plus » (et non « RSA d'un étranger »).",
+    "corrections": {}
+  },
+  {
+    "id": "IMM-019",
+    "verdict": "ok",
+    "remarques": "Vérifié : décision 2003-484 DC §93-97 : le séjour irrégulier ne peut faire obstacle, par lui-même, au mariage (§94) ; censure partielle de l'article 175-2 du code civil (dernières phrases du premier alinéa, signalement au préfet) ; saisine du procureur et délai de quinze jours validés (§93). L'état du droit actuel repose sur cette seule décision de 2003 : une recherche rapide confirme que l'article 175-2 actuel prévoit toujours quinze jours (recherche non opposable : pas de source primaire à jour dans la liste ; suggestion d'ajouter l'article 175-2 sur Légifrance ou une fiche Service-public). Pas de Précision. Équilibré (34/29), pas de nom. Longueur du changement à la limite (80 mots).",
+    "corrections": {}
+  },
+  {
+    "id": "IMM-020",
+    "verdict": "corriger",
+    "remarques": "Incomplet et pouvant induire en erreur : la décision 2023-863 DC (§115-121, réserve du §118) porte sur l'expulsion d'étrangers jusque-là protégés (catégories des art. L. 631-2 et L. 631-3 du Ceseda) condamnés définitivement pour un crime ou un délit puni d'au moins trois ou cinq ans d'emprisonnement selon les cas ; le texte laisse croire qu'elle vaut pour toute condamnation, alors que l'énoncé vise toute condamnation « quelle que soit la peine » : le contraste est l'information utile. « A exclu toute expulsion automatique » est une interprétation : le Conseil exige que l'administration démontre, à la date où elle se prononce, une menace grave et actuelle, et tienne compte de la situation personnelle et familiale ; la correction le dit sans parler d'exclusion. Neutre, équilibré (28/25).",
+    "corrections": {
+      "changement": "En 2024, le Conseil constitutionnel a admis l'expulsion d'un étranger jusque-là protégé, condamné définitivement pour un crime ou un délit puni d'au moins trois ou cinq ans de prison, si la décision est motivée, proportionnée, fondée sur une menace grave et actuelle pour l'ordre public, et tient compte de sa situation personnelle et familiale. Chaque cas est donc examiné. La mesure imposerait l'expulsion après toute condamnation pour crime ou délit, quelle que soit la peine."
+    }
+  },
+  {
+    "id": "IMM-021",
+    "verdict": "corriger",
+    "remarques": "Exactitude : F12006 (vérifiée le 01/07/2026) indique que l'APL exige un titre de séjour en cours de validité mais, depuis le 1er juillet 2026, les étudiants hors UE ne la perçoivent que dans trois cas (bourse sur critères sociaux, activité professionnelle, apprentissage) : « un titre de séjour valide pour l'aide au logement » est donc à nuancer. RSA (F19778) : cinq ans de titre permettant de travailler, non applicable aux Algériens ni aux titulaires de la carte de résident, réfugiés, apatrides et bénéficiaires de la protection subsidiaire : « sauf pour… les réfugiés » est incomplet ; remplacé par « notamment ». Décision 2023-863 DC §94-96 vérifiée. Titres des sources F19778 et F12006 : voir IMM-014/IMM-018. Neutre, longueurs OK après correction.",
+    "corrections": {
+      "changement": "Aujourd'hui, les conditions varient selon l'aide : en général un titre de séjour valide pour l'aide au logement ; cinq ans de titre autorisant à travailler pour le RSA, sauf notamment pour les titulaires de la carte de résident et les réfugiés. La condition censurée en 2024 visait cinq ans de résidence ou trente mois d'activité, écartée comme sans lien avec le projet de loi. L'énoncé exige à la fois résidence et travail, sans préciser les aides visées."
+    }
+  }
+]

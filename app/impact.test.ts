@@ -8,10 +8,9 @@ const noms = paquet.candidats.map((c) => c.nom);
 const partis = [...new Set(paquet.candidats.map((c) => c.parti))];
 
 describe('encart Impact', () => {
-  it('toutes les questions actives du thème Institutions en ont un', () => {
-    const institutions = paquet.questions.filter((q) => q.theme === 'institutions');
-    expect(institutions.length).toBeGreaterThan(0);
-    for (const q of institutions) expect(q.impact, q.id).toBeDefined();
+  it('toutes les questions actives de tous les thèmes en ont un', () => {
+    expect(paquet.questions.length).toBeGreaterThan(0);
+    for (const q of paquet.questions) expect(q.impact, q.id).toBeDefined();
   });
 
   it('chaque encart a ses trois textes et au moins une source', () => {

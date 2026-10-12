@@ -1,0 +1,12 @@
+[
+ {
+  "id": "EDU-020",
+  "verdict": "corriger",
+  "remarques": "Faits vérifiés : 1 676 800 / −14,2 % / 160 000 (Banque des Territoires, projection DEPP du 7 avril 2026, scénario intermédiaire) ; 22,4 -> 18,2, 50 000 postes et 3,4 Md€ (IPP, juin 2025) ; 0,5 % contre 1,5 % (Public Sénat, propos du ministre de l'Éducation, argument du gouvernement pour les suppressions de 2026, donc bien côté opposants au maintien) ; 3 256 / 1 891 / 1 365 conformes à la Précision. Aucun nom, pas de terme évaluatif. Problème de fond : l'étude IPP porte sur le seul primaire (baisse de 19 % des élèves d'ici 2034, scénario de classes de taille constante pour les 50 000 postes, économie annuelle en 2034) alors que le texte la juxtapose à des chiffres tous niveaux (1 676 800) et dit 'garder tous les postes' et 'supprimer 50 000' sans périmètre ni horizon : le lecteur peut croire à 50 000 suppressions tous degrés, à comparer aux 3 256 de la Précision. Le 0,5 %/1,5 % est un chiffre 2026 (propos ministériels, non étude), à borner à 'cette année'. Le 160 000 de la rentrée 2026 est une prévision d'avril : rentrée passée, formuler sans futur. L'écart pour/contre (36 vs 40 mots) est dans la limite. Le 'ne suffisent pas' repose sur une citation ministérielle (la baisse des effectifs par classe est efficace quand les pratiques évoluent), acceptable mais peu étayé : pas de correction. Sources toutes accessibles (200).",
+  "corrections": {
+   "changement": "Selon une projection du ministère de l'Éducation citée par la presse, l'école compterait 1 676 800 élèves de moins d'ici 2035 (−14,2 %), dont 160 000 à la rentrée 2026. Pour le primaire, l'Institut des politiques publiques estime que garder tous les postes ferait passer la taille moyenne des classes de 22,4 élèves en 2024 à 18,2 en 2034. À taille de classe constante, environ 50 000 postes seraient supprimables : près de 3,4 milliards d'euros par an en 2034.",
+   "pour": "Ses partisans estiment que la baisse démographique offre l'occasion d'alléger les classes et d'éviter des fermetures en zone rurale. Selon l'Institut des politiques publiques, dans le primaire, ce choix rapporterait davantage à la société, à terme, que des suppressions.",
+   "contre": "Ses opposants font valoir que les suppressions de cette année (0,5 % des postes) sont inférieures à la baisse des élèves (1,5 %). Dans un budget contraint, ils veulent adapter les moyens et doutent que des classes plus petites suffisent."
+  }
+ }
+]

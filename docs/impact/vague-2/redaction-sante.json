@@ -1,0 +1,383 @@
+[
+ {
+  "id": "SAN-001",
+  "changement": "La mesure créerait une autorisation préalable à l'installation dans les zones les mieux pourvues en médecins. L'Assemblée nationale a voté le texte par 99 voix contre 9 (10 abstentions) ; selon un média spécialisé, l'installation d'un spécialiste y serait liée au départ d'un confrère. Le 11 juin 2026, le Sénat a adopté l'article 1 par 215 voix contre 118, puis a ajourné l'examen sans fixer de date.",
+  "pour": "Ses partisans estiment que les aides incitatives n'ont pas suffi à réduire les écarts entre territoires, et qu'une autorisation orienterait les nouvelles installations vers les zones qui manquent de médecins.",
+  "contre": "Ses opposants jugent que le problème vient d'un manque global de médecins plutôt que de leur répartition, et qu'une contrainte détournerait les jeunes médecins de l'exercice libéral.",
+  "sources": [
+   {
+    "url": "https://www.caducee.net/actualite-medicale/16919/deserts-medicaux-le-senat-adopte-une-regulation-edulcoree-de-l-installation-mais-laisse-la-loi-garot-en-plan.html",
+    "titre": "Déserts médicaux : le Sénat adopte une régulation édulcorée de l'installation, mais laisse la loi Garot en plan",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   },
+   {
+    "url": "https://www.banquedesterritoires.fr/lutte-contre-les-deserts-medicaux-la-regulation-facon-garot-les-senateurs-preferent-lamenagement-de",
+    "titre": "Lutte contre les déserts médicaux : à la régulation façon Garot, les sénateurs préfèrent l'\"aménagement\" de la liberté d'installation",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Le texte voté par l'Assemblée nationale n'a pas été lu : la règle du départ d'un confrère n'est confirmée que pour les spécialistes, par la presse (Caducée), d'où l'attribution « selon un média spécialisé » ; le texte ne précise pas qui délivrerait l'autorisation (agence régionale de santé selon le brouillon, non vérifié, retiré). Contenu de l'article 1 adopté par le Sénat non détaillé. Sources du brouillon non confirmées retirées (Maire-info, page thématique Public Sénat). Titres des articles Caducée et Localtis rédigés de façon descriptive à partir de l'adresse, non recopiés mot pour mot. Arguments pour et contre : positions courantes du débat, sans source précise. Précision cohérente avec les faits confirmés."
+ },
+ {
+  "id": "SAN-002",
+  "changement": "Selon le Haut Conseil pour l'avenir de l'assurance maladie, les dépassements des spécialistes, hors généralistes, ont atteint 4,7 milliards d'euros en 2025. Leur encadrement repose sur une option à laquelle 53 % des médecins éligibles avaient adhéré en 2024. Le Haut Conseil a chiffré un plafond par acte, de 50 % ou 100 % du tarif de la Sécurité sociale : appliqué aux pratiques actuelles, il réduirait les dépassements de 65 à 72 % (2,6 à 2,9 milliards d'euros).",
+  "pour": "Ses partisans estiment que des tarifs imprévisibles conduisent des patients à renoncer à des soins, et qu'une hausse des seuls tarifs de base serait absorbée par de nouveaux dépassements.",
+  "contre": "Ses opposants jugent que les dépassements compensent des actes au tarif trop bas et des charges élevées, et qu'un plafond réduirait le revenu de nombreux spécialistes et leur intérêt pour certaines disciplines.",
+  "sources": [
+   {
+    "url": "https://www.strategie-plan.gouv.fr/files/files/Publications/2026/2026-06-23%20-%20HCAAM%20-%20D%C3%A9cryptage%20sant%C3%A9%203/D%C3%A9cryptages%20sant%C3%A9_n%C2%B03%20juin%202026_0.pdf",
+    "titre": "Décryptages santé n° 3, juin 2026 : Les dépassements d'honoraires : une exception au principe selon lequel les soins pris en charge respectent des tarifs régulés (p. 1, 5, 6, 8, 10)",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   },
+   {
+    "url": "https://www.caducee.net/actualite-medicale/16915/secteur-2-les-trois-scenarios-du-hcaam-pour-reformer-les-depassements-d-honoraires.html",
+    "titre": "Secteur 2 : les trois scénarios du HCAAM pour réformer les dépassements d'honoraires",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Le chiffrage de 2,6 à 2,9 Md€ (HCAAM p. 10, note 19) porte sur le scénario 3, qui associe au plafond un accès au tarif de base pour une partie de la population (20 % de la population avec un plafond de 50 %, ou 40 % avec un plafond de 100 %) ; c'est une estimation sous hypothèses, appliquée aux pratiques actuelles, alors que la transition proposée par le Haut Conseil n'entraîne pas de perte pour les médecins déjà installés. Autres chiffres confirmés non repris faute de place : 56 % des spécialistes en secteur 2 en 2024, taux moyen de dépassement de 51 % en 2025 (p. 1), engagements de l'Optam respectés à 100 % par 53,6 % des adhérents (p. 6), scénario 2 réduisant l'accès au secteur 2 à 45 % des éligibles (p. 8). Retirés : 255 M€, « 150 % du tarif », 4,5 Md€ en 2024. Sources Vidal et Caducée (abus ou compensation) retirées. Argument contre : présent dans le HCAAM (p. 10, piste discutée puis écartée) ; argument pour sur le renoncement aux soins : position courante, sans source précise."
+ },
+ {
+  "id": "SAN-003",
+  "changement": "L'assurance maladie rembourse aujourd'hui 70 % d'une consultation, 80 % des frais d'hospitalisation et de 15 à 100 % du prix des médicaments ; le reste est payé par la complémentaire santé ou par le patient. La mesure porterait à 100 % la prise en charge des soins prescrits et ferait entrer mutuelles et autres complémentaires dans la Sécurité sociale. L'énoncé ne précise ni le sort des dépassements d'honoraires ni le mode de financement.",
+  "pour": "Ses partisans attendent un accès aux soins sans reste à payer, la fin des écarts de couverture selon les contrats, et des économies sur les frais de gestion de plusieurs organismes.",
+  "contre": "Ses opposants craignent une charge nouvelle pour les finances publiques, la fin d'un financement partagé avec les complémentaires, et des pertes d'emplois et de savoir-faire dans les mutuelles.",
+  "sources": [
+   {
+    "url": "https://www.ameli.fr/assure/remboursements/rembourse/tableau-recapitulatif-taux-remboursement",
+    "titre": "Tableaux récapitulatifs des taux de remboursement",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   }
+  ],
+  "reserves": "Aucun chiffrage du coût de la mesure n'a été vérifié : tout coût est retiré. Source Wikipédia retirée. Le « reste payé par la complémentaire ou le patient » reprend la logique des taux d'Ameli, sans répartition chiffrée. Arguments pour et contre : positions courantes du débat, sans source précise."
+ },
+ {
+  "id": "SAN-004",
+  "changement": "L'administration distingue la franchise, sur les médicaments, de la participation forfaitaire, sur les consultations ; l'énoncé ne dit pas si cette dernière disparaîtrait aussi. Le décret n° 2026-858 du 11 septembre 2026 prévoit de revaloriser les plafonds dès 2028. Selon la Cour des comptes, citée par un média spécialisé, les patients en affection de longue durée (maladie chronique prise en charge à 100 %) paient en moyenne 78 euros par an, contre 41 euros pour les autres.",
+  "pour": "Ses partisans estiment que ces sommes pèsent d'abord sur les malades chroniques, qui atteignent plus souvent les plafonds, et peuvent conduire des patients modestes à renoncer à des soins.",
+  "contre": "Ses opposants estiment que ces sommes limitent les dépenses de l'assurance maladie et incitent chacun à une consommation de soins plus mesurée, sans toucher les patients exonérés.",
+  "sources": [
+   {
+    "url": "https://www.service-public.gouv.fr/particuliers/actualites/A17166?lang=fr",
+    "titre": "Les plafonds annuels des franchises médicales et participations forfaitaires augmentent dès le 1er octobre 2026",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   },
+   {
+    "url": "https://www.ameli.fr/assure/remboursements/rembourse/tableau-recapitulatif-taux-remboursement",
+    "titre": "Tableaux récapitulatifs des taux de remboursement",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   },
+   {
+    "url": "https://www.caducee.net/actualite-medicale/16965/franchises-medicales-a-140-euros-cumules-la-hausse-se-concentre-sur-les-plus-gros-consommateurs-de-soins.html",
+    "titre": "Franchises médicales : deux plafonds à 70 euros au 1er octobre 2026",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Le chiffre 78 € contre 41 € n'est connu que par Caducée, qui cite la Cour des comptes (rapport non lu) ; l'année de référence n'est pas vérifiée. La définition de l'affection de longue durée entre parenthèses est simplifiée (prise en charge à 100 % des soins liés à la maladie, hors franchises). Retirés : 2,5 Md€ en 2025 (source secondaire non vérifiée), 18 millions d'exonérés, 13,8 Md€ de déficit, affectation des recettes (Wikipédia). L'argument contre mentionne des patients exonérés sans en donner la liste (non sourcée). Arguments pour et contre : positions courantes du débat, sans source précise. Précision exacte."
+ },
+ {
+  "id": "SAN-005",
+  "changement": "Une proposition de loi déposée au Sénat en 2020 prévoyait un établissement public, le « Pôle public du médicament et des dispositifs médicaux », un programme de production des médicaments dont la commercialisation est arrêtée ou dont l'approvisionnement est tendu, et le passage de 0,17 % à 1 % du taux d'une taxe pour le financer. L'énoncé ne précise ni la liste des médicaments produits ni le financement retenu.",
+  "pour": "Ses partisans y voient un moyen de retrouver une souveraineté sanitaire, en produisant en France des médicaments qui manquent au lieu de dépendre de fabricants étrangers.",
+  "contre": "Ses opposants, dont certains sénateurs en commission, jugent préférable d'agir à l'échelle européenne, et doutent qu'un établissement public réunisse les investissements et le savoir-faire nécessaires.",
+  "sources": [
+   {
+    "url": "https://www.senat.fr/leg/ppl19-677.html",
+    "titre": "Création d'un pôle public du médicament et des produits médicaux (proposition de loi n° 677, 2019-2020)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   },
+   {
+    "url": "https://www.publicsenat.fr/article/politique/les-senateurs-communistes-veulent-creer-un-pole-public-du-medicament-un-enjeu-de",
+    "titre": "Les sénateurs communistes veulent créer un pôle public du médicament : un enjeu de « souveraineté »",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Sources : texte de la proposition (articles 1, 2 et 5) et Public Sénat (2020). Statut actuel de la proposition non trouvé (texte de 2020). L'assiette de la taxe portée de 0,17 % à 1 % (article 5) n'est pas précisée ici. Absents du texte et donc non écrits : « médicaments peu rentables », « intérêt thérapeutique majeur ». Seconde moitié de l'argument contre (investissements, savoir-faire) et mention « fabricants étrangers » : positions courantes, sans source précise. Source Public Sénat « sujet/medicaments » retirée."
+ },
+ {
+  "id": "SAN-006",
+  "changement": "Chaque médecin devrait assurer des gardes en dehors des heures d'ouverture des cabinets, ce qu'on appelle la permanence des soins ambulatoires. En juin 2026, la commission des affaires sociales du Sénat a rétabli cette obligation individuelle dans le texte sur l'accès aux soins ; selon la Banque des Territoires, députés et sénateurs s'accordent sur la nécessité de mieux répartir cette permanence. L'énoncé ne précise ni sanctions ni dispenses.",
+  "pour": "Ses partisans, dont la rapporteure du texte au Sénat, relèvent que le système actuel repose sur une minorité de médecins, souvent jeunes ; une participation de tous allégerait leur charge.",
+  "contre": "Ses opposants estiment qu'imposer des gardes à des médecins déjà très sollicités découragerait l'exercice libéral, et préfèrent un volontariat encouragé par une meilleure rémunération.",
+  "sources": [
+   {
+    "url": "https://www.banquedesterritoires.fr/lutte-contre-les-deserts-medicaux-la-regulation-facon-garot-les-senateurs-preferent-lamenagement-de",
+    "titre": "Lutte contre les déserts médicaux : à la régulation façon Garot, les sénateurs préfèrent l'\"aménagement\" de la liberté d'installation",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "La source (Localtis) parle d'un accord sur la nécessité de mieux répartir la permanence des soins, pas d'un accord sur l'obligation elle-même. Sanctions et dispenses non sourcées. Argument contre : position courante, sans source précise. Source Caducée retirée (aucun fait de l'encart n'en dépend). Précision « depuis 2003, volontariat » non vérifiée dans les sources de cette vague."
+ },
+ {
+  "id": "SAN-007",
+  "changement": "Selon la Fédération hospitalière de France, la réforme votée dans le budget de la Sécurité sociale pour 2024 répartit le financement des hôpitaux en trois compartiments : « activité » (tarification à l'activité et soins suivant des protocoles), « objectifs de santé publique » et « missions spécifiques ». Sa suppression exigerait un autre mode de paiement, non précisé par l'énoncé. Une commission d'enquête du Sénat a recommandé d'en sortir pour un financement mêlant activité, population et qualité.",
+  "pour": "Ses partisans estiment que ce mode de paiement pousse à multiplier les actes et à privilégier les soins les mieux rémunérés, au détriment de la qualité et des besoins de la population.",
+  "contre": "Ses opposants soulignent qu'il applique les mêmes règles aux hôpitaux publics et privés et lie les moyens à l'activité réelle ; un financement forfaitaire réduirait selon eux l'incitation à soigner davantage.",
+  "sources": [
+   {
+    "url": "https://www.fhf.fr/expertises/finances/reforme-du-mode-de-financement-de-lhospitalisation-tarification-lactivite/reforme-du-financement-des-etablissements-de-sante-les-compartiments-objectifs-de-sante-publique-et",
+    "titre": "Réforme du financement des établissements de santé : les compartiments objectifs de santé publique et missions spécifiques en 2025",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   },
+   {
+    "url": "https://www.senat.fr/rap/r21-587-1/r21-587-13.html",
+    "titre": "Hôpital : sortir des urgences - Rapport (Sénat, rapport n° 587, 2021-2022)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   }
+  ],
+  "reserves": "Réforme : article 49 de la loi n° 2023-1250 (loi de financement de la Sécurité sociale pour 2024), décret n° 2024-1267 du 31 décembre 2024 puis décret n° 2025-186 du 26 février 2025 ; décrets non ouverts, d'où l'attribution à la FHF. Le rapport sénatorial (n° 587, session 2021-2022) n'est pas daté plus précisément ici. Retirés : dates de création de la tarification à l'activité (2004 public, 2005 privé, seulement confirmées par des résumés secondaires non ouverts), « dotation populationnelle » comme compartiment, part de la tarification à l'activité, « report à 2028 ». Arguments pour et contre : le pour rejoint la critique sénatoriale ; le contre est une position courante, sans source précise. Précision : « sa part a été réduite par une réforme en 2025 » plausible (décrets de fin 2024 et février 2025) mais la réduction de la part n'est pas chiffrée dans les sources lues."
+ },
+ {
+  "id": "SAN-008",
+  "changement": "Un pacte gouvernemental du 25 avril 2025, modifié le 2 mai 2025, prévoit que des médecins consacrent jusqu'à deux jours par mois à des consultations dans les zones les plus en difficulté. La mesure rendrait cette participation obligatoire pour tous ; l'énoncé ne précise ni les zones ni les dispenses. Selon un rapport du Sénat publié en mai 2026, 6,4 millions de personnes n'avaient pas de médecin traitant en 2025.",
+  "pour": "Ses partisans estiment qu'une obligation répartirait l'effort entre tous les médecins et apporterait vite des consultations aux zones en difficulté, sans interdire l'installation ailleurs.",
+  "contre": "Ses opposants estiment qu'une obligation découragerait les jeunes médecins de l'exercice libéral et que des consultations ponctuelles n'assurent pas le suivi régulier des patients.",
+  "sources": [
+   {
+    "url": "https://www.caducee.net/actualite-medicale/16919/deserts-medicaux-le-senat-adopte-une-regulation-edulcoree-de-l-installation-mais-laisse-la-loi-garot-en-plan.html",
+    "titre": "Déserts médicaux : le Sénat adopte une régulation édulcorée de l'installation, mais laisse la loi Garot en plan",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Le chiffre de 6,4 millions provient du rapport du Sénat n° 668 du 27 mai 2026, cité par Caducée, non ouvert. La nature de la modification du 2 mai 2025 n'est pas détaillée. Précision « depuis septembre 2025 » non vérifiée : les sources lues datent le pacte du 25 avril 2025 sans date de mise en œuvre. Retiré : position de l'Ordre des médecins (portait sur la régulation de l'installation, pas sur cette obligation). Arguments pour et contre : positions courantes du débat, sans source précise."
+ },
+ {
+  "id": "SAN-009",
+  "changement": "Aucune boisson alcoolisée ne pourrait être vendue sous 0,50 euro par unité d'alcool : les boissons les moins chères au regard de leur teneur en alcool seraient les plus concernées. Santé publique France attribue à l'alcool 41 000 décès par an (estimation portant sur 2015). L'Observatoire français des drogues et des tendances addictives relève 595 000 séjours hospitaliers liés à l'alcool en 2023 en médecine, chirurgie et obstétrique, concernant 308 000 patients.",
+  "pour": "Ses partisans estiment qu'un prix plancher vise l'alcool le moins cher pour sa teneur, consommé selon eux par les plus gros buveurs, et réduirait ainsi les dommages sanitaires.",
+  "contre": "Ses opposants jugent la mesure pénalisante pour les consommateurs modestes, qui paieraient plus cher sans que les plus gros buveurs réduisent forcément leur consommation, et défavorable aux producteurs.",
+  "sources": [
+   {
+    "url": "https://www.santepubliquefrance.fr/alcool",
+    "titre": "Santé publique France : alcool (page mise à jour le 26 janvier 2026)",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   },
+   {
+    "url": "https://www.ofdt.fr/produits-et-addictions/de-z/alcool/",
+    "titre": "Alcool - Synthèse des connaissances",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   }
+  ],
+  "reserves": "Aucune source française sur un prix plancher à 0,50 € ; l'exemple écossais (0,50 £) n'a pas été ouvert et est retiré. L'énoncé ne définit pas « l'unité d'alcool » (10 g d'alcool pur en France selon l'usage, 8 g au Royaume-Uni) : non sourcé, non écrit. Précision approximative : avec une unité de 10 g, une bouteille de 75 cl à 12 % (environ 7,1 à 7,2 unités) reviendrait à environ 3,55 à 3,60 € ; à 13,5 %, environ 4 €. Proposition (non appliquée) : « Avec une unité de 10 grammes d'alcool pur, cela correspond à environ 3,60 euros pour une bouteille de vin à 12 %. » Arguments pour et contre : positions courantes du débat, sans source précise (aucune évaluation étrangère consultée)."
+ },
+ {
+  "id": "SAN-010",
+  "changement": "Depuis 2019, l'usage peut être puni d'une amende forfaitaire de 200 euros, appliquée dans toute la France depuis septembre 2020 ; la détention est interdite et le trafic est passible de la réclusion criminelle à perpétuité. La légalisation lèverait l'interdiction pour l'usage récréatif ; l'énoncé ne dit pas comment la production et la vente seraient organisées, ni quel âge minimal s'appliquerait.",
+  "pour": "Ses partisans estiment que l'interdiction n'a pas réduit l'usage, et qu'une vente légale permettrait de contrôler les produits, d'affaiblir les trafics et de libérer du temps de police et de justice.",
+  "contre": "Ses opposants estiment que la légalisation banaliserait un produit associé à des risques de dépendance et de troubles, notamment chez les jeunes, et que le trafic persisterait pour les produits non autorisés.",
+  "sources": [
+   {
+    "url": "https://www.ofdt.fr/produits-et-addictions/de-z/cannabis/",
+    "titre": "Cannabis (résine, herbe, huile, CBD) - Synthèse des connaissances",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   }
+  ],
+  "reserves": "Retiré : « environ 5 millions d'usagers dans l'année » (OFDT, année de mesure non relevée). « Amende forfaitaire délictuelle » simplifiée en « amende forfaitaire » ; la peine maximale vise les formes les plus graves du trafic (lecture du texte pénal non faite). Source Wikipédia retirée. Arguments pour et contre : positions courantes du débat, sans source précise (aucune évaluation étrangère consultée). Précision exacte."
+ },
+ {
+  "id": "SAN-011",
+  "changement": "L'aide prend aujourd'hui en charge à 100 %, aux tarifs de la Sécurité sociale, les soins des personnes sous un plafond de ressources (10 421 euros pour une personne seule en métropole, selon Service-public). Ceux qui n'y ont pas droit bénéficient déjà d'une prise en charge des soins urgents. La mesure limiterait la couverture à ces soins urgents. Les crédits de l'aide étaient de l'ordre de 1,2 milliard d'euros en 2025, selon la presse.",
+  "pour": "Ses partisans estiment que l'aide coûte cher et peut encourager l'immigration irrégulière, et qu'une couverture limitée à l'urgence réduirait la dépense publique en préservant les soins vitaux.",
+  "contre": "Ses opposants estiment que retarder les soins aggrave les maladies, coûte plus cher à l'hôpital une fois l'urgence atteinte et accroît les risques de contagion pour l'ensemble de la population.",
+  "sources": [
+   {
+    "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3079",
+    "titre": "Qu'est-ce que l'aide médicale de l'État (AME) ?",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   },
+   {
+    "url": "https://www.publicsenat.fr/actualites/politique/aide-medicale-detat-deputes-et-senateurs-trouvent-un-compromis-sur-une-baisse-de-111-millions",
+    "titre": "Public Sénat, 31 janvier 2025 : aide médicale d'État, députés et sénateurs trouvent un compromis sur une baisse de 111 millions",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Année du plafond de 10 421 € non précisée par la source (montant en vigueur affiché par Service-public le 12 octobre 2026). Le chiffre de 1,2 Md€ vient de Public Sénat (31 janvier 2025), qui évoque aussi 1,3 Md€ : d'où « de l'ordre de » ; budget 2026 non vérifié. Retiré : rapport de 2023 sans fraude structurelle (lu via Wikipédia), mention d'organisations médicales parmi les opposants. Source Wikipédia retirée. Arguments pour et contre : positions courantes du débat, sans source précise."
+ },
+ {
+  "id": "SAN-012",
+  "changement": "Aujourd'hui, l'employeur doit compléter les indemnités journalières de la Sécurité sociale à partir du 8e jour d'arrêt, sauf convention collective plus favorable. La mesure créerait un jour sans aucune indemnisation, que ni l'employeur ni un accord collectif ne pourraient compenser. L'énoncé ne dit pas si ce jour s'ajouterait aux trois jours de carence actuels ou en ferait partie.",
+  "pour": "Ses partisans estiment qu'un jour non indemnisé limiterait les arrêts courts qu'ils jugent injustifiés, réduirait les dépenses d'indemnités et responsabiliserait salariés et employeurs.",
+  "contre": "Ses opposants estiment que la mesure pénaliserait les salariés malades, surtout modestes, qui viendraient travailler malades au risque de contaminer leurs collègues, et limiterait les accords négociés.",
+  "sources": [
+   {
+    "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3053",
+    "titre": "Arrêt maladie : indemnités journalières versées au salarié",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   }
+  ],
+  "reserves": "Précision à nuancer (non modifiée) : « le plus souvent compensés par l'employeur ou la prévoyance » n'est pas vérifié ; Service-public indique seulement un complément employeur à partir du 8e jour, sauf convention plus favorable. Proposition : « Les salariés du privé ont trois jours de carence ; une convention collective peut prévoir leur prise en charge par l'employeur. » Retiré : estimation de 200 M€ (2018, quatrième jour de carence). Source Wikipédia retirée. Arguments pour et contre : positions courantes du débat, sans source précise."
+ },
+ {
+  "id": "SAN-013",
+  "changement": "La durée maximale d'un premier arrêt passerait de 31 à 15 jours ; au-delà, il faudrait une prolongation. Chaque prolongation est aujourd'hui limitée à 62 jours, et un arrêt prescrit en téléconsultation est en principe limité à 3 jours. L'énoncé ne dit pas si la possibilité actuelle de dépasser la limite pour raison médicale serait maintenue.",
+  "pour": "Ses partisans estiment que des arrêts plus courts imposent un suivi médical régulier, favorisent la reprise du travail et évitent des arrêts longs prolongés sans réévaluation.",
+  "contre": "Ses opposants estiment que la durée d'un arrêt doit dépendre de l'état du patient, et que la mesure multiplierait les consultations chez des médecins déjà très sollicités.",
+  "sources": [
+   {
+    "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F303",
+    "titre": "Arrêt maladie : démarches à effectuer par le salarié",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   }
+  ],
+  "reserves": "Arguments pour et contre : positions courantes du débat, sans source précise. Précision exacte (Service-public)."
+ },
+ {
+  "id": "SAN-015",
+  "changement": "Le Conseil constitutionnel a censuré la mesure votée parce que la loi ne définissait ni la nature, ni le montant, ni les conditions de la pénalité. La version sénatoriale de 2023 renvoyait le montant à un décret, prévoyait un versement à l'assurance maladie, qui pouvait en reverser une partie aux soignants, et plusieurs modes de paiement. Selon l'Académie de médecine et l'Ordre des médecins, 6 à 10 % des patients sont concernés.",
+  "pour": "Ses partisans estiment que les rendez-vous manqués font perdre des créneaux alors que l'accès aux médecins est difficile, et qu'une pénalité inciterait les patients à prévenir.",
+  "contre": "Ses opposants estiment qu'une pénalité frapperait surtout des personnes précaires ou malades, compliquerait la relation entre patients et soignants et serait difficile à appliquer.",
+  "sources": [
+   {
+    "url": "https://www.conseil-constitutionnel.fr/decision/2025/2025875DC.htm",
+    "titre": "Conseil constitutionnel, décision n° 2025-875 DC du 28 février 2025",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   },
+   {
+    "url": "https://www.publicsenat.fr/actualites/sante/taxe-lapin-le-senat-veut-faire-payer-les-patients-qui-ne-se-presentent-pas-a-leurs-rendez-vous-medicaux",
+    "titre": "Public Sénat, 16 novembre 2023 : « taxe lapin », le Sénat veut faire payer les patients qui ne se présentent pas à leurs rendez-vous médicaux",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "La censure vise l'article 52 de la loi examinée dans la décision n° 2025-875 DC du 28 février 2025 ; la date de la Précision est donc exacte (le doute du brouillon est levé). « Votée fin 2024 » non vérifié : proposition (non appliquée) « Adoptée par le Parlement, elle a été censurée… ». Le montant de 5 € vient de l'énoncé ; la version de 2023 décrite par Public Sénat est un amendement, non entré en vigueur. Argument pour défendu notamment par un ministre (source Public Sénat), non nommé. Argument contre : position courante, sans source précise."
+ },
+ {
+  "id": "SAN-016",
+  "changement": "Les agences régionales de santé sont des établissements publics administratifs de l'État. Elles conduisent la politique de santé dans la région : observation et veille sanitaire, participation à la gestion des crises, autorisation et contrôle des établissements et services, organisation de l'offre de soins. Elles sont financées par l'État, l'assurance maladie et la Caisse nationale de solidarité pour l'autonomie, notamment par un fonds d'intervention régional. L'énoncé ne précise pas le sort de leurs personnels et budgets.",
+  "pour": "Ses partisans estiment que ces agences ajoutent un échelon administratif éloigné du terrain, et qu'un pilotage par le préfet clarifierait les responsabilités et rapprocherait les décisions des élus.",
+  "contre": "Ses opposants estiment que la santé exige une expertise technique que les services du préfet n'ont pas, et que la coordination avec l'assurance maladie et les hôpitaux serait fragilisée.",
+  "sources": [
+   {
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000046812317",
+    "titre": "Code de la santé publique, article L. 1432-1",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   },
+   {
+    "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000045136971/",
+    "titre": "Code de la santé publique, article L. 1431-2",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   },
+   {
+    "url": "https://paca.ars.sante.fr/les-depenses-regionales-de-sante",
+    "titre": "Les dépenses régionales de santé",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   }
+  ],
+  "reserves": "Financement : la contribution de la Caisse nationale de solidarité pour l'autonomie concerne surtout le secteur médico-social (ARS PACA, page régionale prise comme exemple du mécanisme national). Retirés : « assistent le préfet en cas de crise » (formule absente du code) et « missions reprises par les préfets » (non sourcé). Source Wikipédia retirée. Arguments pour et contre : positions courantes du débat, sans source précise."
+ },
+ {
+  "id": "SAN-017",
+  "changement": "Les deux plafonds annuels passeraient de 70 à 100 euros chacun : un patient pourrait payer jusqu'à 200 euros par an au total, contre 140 euros aujourd'hui. Le décret n° 2026-858 du 11 septembre 2026 prévoit déjà de revaloriser ces plafonds selon l'inflation à partir de 2028 ; l'énoncé ne dit pas si cette règle serait conservée.",
+  "pour": "Ses partisans estiment que le relèvement réduirait les dépenses de l'assurance maladie et responsabiliserait les patients, pour un effort limité à ceux qui atteignent les plafonds.",
+  "contre": "Ses opposants estiment que la hausse pèserait surtout sur les personnes malades, qui consomment le plus de soins et atteignent le plus souvent les plafonds.",
+  "sources": [
+   {
+    "url": "https://www.service-public.gouv.fr/particuliers/actualites/A17166?lang=fr",
+    "titre": "Les plafonds annuels des franchises médicales et participations forfaitaires augmentent dès le 1er octobre 2026",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   }
+  ],
+  "reserves": "Retirés : 750 M€ d'économies (scénario de doublement abandonné, chiffrage non vérifié) et 18 millions d'exonérés. Sources Caducée et Vidal retirées. Arguments pour et contre : positions courantes du débat, sans source précise. Précision exacte."
+ },
+ {
+  "id": "SAN-018",
+  "changement": "Depuis cette loi, jugée conforme à la Constitution sous trois réserves, le patient s'administre lui-même la substance létale, ou la reçoit d'un médecin ou d'un infirmier s'il n'en est pas capable ; le médecin répond sous 15 jours, puis le patient confirme au moins deux jours plus tard. Son application dépend de décrets. Avant elle, le droit prévoyait l'arrêt des traitements, nutrition et hydratation artificielles comprises, et une sédation profonde et continue jusqu'au décès dans certains cas.",
+  "pour": "Ses partisans estiment que la loi expose des personnes vulnérables à des pressions, que ses critères restent difficiles à apprécier, et que la priorité devrait être l'accès aux soins palliatifs.",
+  "contre": "Ses opposants estiment que la loi reconnaît à chaque malade le droit de choisir sa fin de vie dans un cadre contrôlé, ce que la sédation profonde et continue ne permettait pas toujours.",
+  "sources": [
+   {
+    "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000054706877",
+    "titre": "Loi n° 2026-794 du 18 août 2026 relative au droit à l'aide à mourir (JORF du 19 août 2026)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   },
+   {
+    "url": "https://www.conseil-constitutionnel.fr/decision/2026/2026910DC.htm",
+    "titre": "Conseil constitutionnel, décision n° 2026-910 DC du 14 août 2026",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   },
+   {
+    "url": "https://affairesjuridiques.aphp.fr/textes/loi-n-2026-794-du-18-aout-2026-relative-au-droit-a-laide-a-mourir/",
+    "titre": "AP-HP, affaires juridiques : loi n° 2026-794 du 18 août 2026 relative au droit à l'aide à mourir",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   },
+   {
+    "url": "https://www.caducee.net/actualite-medicale/16948/aide-a-mourir-la-loi-est-en-vigueur-mais-le-passage-a-la-pratique-reste-inacheve.html",
+    "titre": "Caducée : aide à mourir, la loi est en vigueur mais le passage à la pratique reste inachevé",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   },
+   {
+    "url": "https://www.legifrance.gouv.fr/eli/loi/2016/2/2/AFSX1507642L/jo/texte",
+    "titre": "Loi n° 2016-87 du 2 février 2016 créant de nouveaux droits en faveur des malades et des personnes en fin de vie",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   }
+  ],
+  "reserves": "Les partisans de l'énoncé sont les partisans de l'abrogation. Délai de confirmation : « au moins deux jours » après notification (loi, V), et non 48 heures comme dans le brouillon. Mode d'administration d'après Caducée. Droit antérieur : loi n° 2016-87 lue dans une copie imprimée en 2019 (articles 2, 3 et 8) ; il n'est pas écrit que ces règles sont abrogées ni qu'elles s'appliqueraient de nouveau après abrogation (lecture juridique non sourcée). Les deux cas de sédation à la demande du patient (souffrance réfractaire, arrêt de traitement engageant le pronostic vital à court terme) et les directives anticipées non reprises faute de place. Contenu des trois réserves du Conseil non détaillé. Arguments pour et contre : positions courantes du débat, sans source précise. Précision exacte."
+ },
+ {
+  "id": "SAN-019",
+  "changement": "Aujourd'hui, pour les nouveaux bénéficiaires, certains soins non urgents ne sont pris en charge qu'après un délai de neuf mois. La mesure soumettrait les soins non urgents à un accord préalable de l'assurance maladie ; l'énoncé ne précise ni la liste des soins, ni le délai de réponse, ni la suite donnée à une absence de réponse. Les crédits de l'aide étaient de l'ordre de 1,2 milliard d'euros en 2025, selon la presse.",
+  "pour": "Ses partisans estiment qu'un contrôle préalable permettrait de vérifier la nécessité des soins et de limiter les dépenses et les abus, tout en préservant l'accès aux soins urgents.",
+  "contre": "Ses opposants estiment que ce contrôle retarderait des soins, alourdirait la charge administrative des caisses et des hôpitaux, et conduirait à traiter plus tard des cas aggravés et plus coûteux.",
+  "sources": [
+   {
+    "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F3079",
+    "titre": "Qu'est-ce que l'aide médicale de l'État (AME) ?",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   },
+   {
+    "url": "https://www.publicsenat.fr/actualites/politique/aide-medicale-detat-deputes-et-senateurs-trouvent-un-compromis-sur-une-baisse-de-111-millions",
+    "titre": "Public Sénat, 31 janvier 2025 : aide médicale d'État, députés et sénateurs trouvent un compromis sur une baisse de 111 millions",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Aucune source ne décrit une proposition d'accord préalable pour l'AME : le dispositif n'est décrit que tel que l'énonce la question. Le délai de neuf mois concerne certains soins programmés non urgents (Service-public) ; la liste n'est pas reprise. Chiffre de 1,2 Md€ : Public Sénat (31 janvier 2025), qui évoque aussi 1,3 Md€ ; budget 2026 non vérifié. Source Wikipédia retirée. Arguments pour et contre : positions courantes du débat, sans source précise."
+ },
+ {
+  "id": "SAN-020",
+  "changement": "Pour une consultation à 30 euros, l'assurance maladie prend aujourd'hui en charge 21 euros ; elle n'en prendrait plus que 18, soit 3 euros de plus pour la complémentaire santé ou le patient. La participation forfaitaire de 2 euros resterait à la charge du patient. L'énoncé ne modifie pas le taux de l'hospitalisation, fixé à 80 %.",
+  "pour": "Ses partisans estiment que ce transfert réduirait les dépenses de l'assurance maladie et inciterait les patients à une consommation de soins plus mesurée.",
+  "contre": "Ses opposants estiment que la hausse du reste à payer serait répercutée sur les cotisations des complémentaires ou supportée par les ménages sans complémentaire.",
+  "sources": [
+   {
+    "url": "https://www.ameli.fr/assure/remboursements/rembourse/tableau-recapitulatif-taux-remboursement",
+    "titre": "Tableaux récapitulatifs des taux de remboursement",
+    "date_consultation": "2026-10-12",
+    "nature": "institutionnelle"
+   }
+  ],
+  "reserves": "18 € est un calcul (60 % de 30 €), non une donnée de la source. Retiré : 13,8 Md€ de déficit 2026. Aucun chiffrage de l'économie trouvé. Les patients exonérés (affection de longue durée, etc.) ne sont pas traités par l'énoncé. Source Caducée retirée. Arguments pour et contre : positions courantes du débat, sans source précise."
+ }
+]

@@ -196,12 +196,23 @@
     }
    ],
    "scrutins": [],
-   "historique": [],
+   "historique": [
+    {
+     "date": "2026-10-12",
+     "note": "Encart corrigé : la phrase « uniquement pour la culture de noisettes » est remplacée par la liste des filières citées par le ministère de l'Agriculture dans son communiqué du 19 août 2026 (betteraves, cerises, pommes, noisettes). Précision inchangée."
+    }
+   ],
    "impact": {
-    "changement": "La loi permet à l'Anses d'accorder une dérogation pour l'acétamipride uniquement pour la culture de noisettes, si une menace grave pèse sur la production et si aucune alternative n'existe. La dérogation dure un an, renouvelable deux fois, et ce dispositif doit être abrogé trois ans après la promulgation. La pulvérisation n'est admise qu'avec les meilleures techniques limitant la dérive. Le Conseil constitutionnel a validé ces dispositions sous deux réserves.",
+    "changement": "La loi permet à l'Anses d'accorder une dérogation pour l'acétamipride pour certaines filières déterminées (betteraves, cerises, pommes, noisettes), si une menace grave pèse sur la production et si aucune alternative n'existe. La dérogation dure un an, renouvelable deux fois, et ce dispositif doit être abrogé trois ans après la promulgation. La pulvérisation n'est admise qu'avec les meilleures techniques limitant la dérive. Le Conseil constitutionnel a validé ces dispositions sous deux réserves.",
     "pour": "Ses partisans invoquent les risques pour les abeilles et autres pollinisateurs, l'eau, les sols et la santé humaine, que le Conseil constitutionnel avait relevés en 2025 en censurant une première version du dispositif.",
     "contre": "Ses opposants jugent l'interdiction française plus stricte que le droit européen, au détriment de la compétitivité des producteurs. Ils estiment que la filière noisette est dans une impasse technique, faute de solution de remplacement.",
     "sources": [
+     {
+      "url": "https://agriculture.gouv.fr/loi-durgence-pour-la-protection-et-la-souverainete-agricoles-promulguee-par-le-president-de-la",
+      "titre": "La loi d’urgence pour la protection et la souveraineté agricoles promulguée par le président de la République",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
      {
       "url": "https://www.conseil-constitutionnel.fr/decision/2026/2026914DC.htm",
       "titre": "Décision n° 2026-914 DC du 14 août 2026 - Loi d'urgence pour la protection et la souveraineté agricoles",

@@ -1,0 +1,107 @@
+[
+ {
+  "id": "IMM-001",
+  "enonce": "Les travailleurs étrangers en situation irrégulière doivent être régularisés.",
+  "precision": "« En situation irrégulière » : sans titre de séjour valide ; on dit couramment « sans papiers ». Aujourd'hui, la régularisation se décide au cas par cas : le préfet peut l'accorder après sept ans de présence, ou après douze mois de travail dans un métier en tension."
+ },
+ {
+  "id": "IMM-002",
+  "enonce": "La loi immigration du 26 janvier 2024 doit être abrogée.",
+  "precision": "Loi votée en décembre 2023 sur l'entrée, le séjour et l'éloignement des étrangers."
+ },
+ {
+  "id": "IMM-003",
+  "enonce": "Les étrangers non européens doivent pouvoir voter aux élections municipales.",
+  "precision": "Les citoyens d'un autre pays de l'Union européenne ont déjà ce droit. L'étendre suppose de réviser la Constitution."
+ },
+ {
+  "id": "IMM-004",
+  "enonce": "La carte de séjour de dix ans doit devenir le titre de séjour normal des étrangers en situation régulière.",
+  "precision": "Aujourd'hui, la plupart des étrangers reçoivent d'abord des titres d'un à quatre ans."
+ },
+ {
+  "id": "IMM-005",
+  "enonce": "Les demandeurs d'asile doivent pouvoir travailler dès le dépôt de leur demande.",
+  "precision": "Ils ne peuvent aujourd'hui demander une autorisation de travail qu'après six mois sans réponse à leur demande."
+ },
+ {
+  "id": "IMM-006",
+  "enonce": "Un statut de déplacé climatique doit être créé pour accueillir les personnes contraintes de quitter leur pays à cause du changement climatique.",
+  "precision": null
+ },
+ {
+  "id": "IMM-007",
+  "enonce": "Une agence publique de sauvetage des migrants en mer doit être créée.",
+  "precision": null
+ },
+ {
+  "id": "IMM-008",
+  "enonce": "Tout enfant né en France doit être français dès sa naissance.",
+  "precision": "Aujourd'hui, un enfant né en France de parents étrangers devient français à 18 ans s'il y a résidé cinq ans depuis l'âge de 11 ans."
+ },
+ {
+  "id": "IMM-009",
+  "enonce": "Les parents en situation irrégulière d'enfants scolarisés en France doivent être régularisés.",
+  "precision": "« En situation irrégulière » : sans titre de séjour valide ; on dit couramment « sans papiers »."
+ },
+ {
+  "id": "IMM-010",
+  "enonce": "Les étudiants étrangers en situation irrégulière doivent être régularisés.",
+  "precision": "« En situation irrégulière » : sans titre de séjour valide ; on dit couramment « sans papiers »."
+ },
+ {
+  "id": "IMM-011",
+  "enonce": "Le droit du sol doit être supprimé : la nationalité française ne s'obtiendrait plus que par filiation ou par naturalisation.",
+  "precision": "Aujourd'hui, un enfant né en France de parents étrangers devient français à 18 ans s'il y a résidé cinq ans depuis l'âge de 11 ans. Des conditions plus strictes s'appliquent à Mayotte depuis 2026."
+ },
+ {
+  "id": "IMM-012",
+  "enonce": "Les Français doivent être prioritaires sur les étrangers pour l'attribution des logements sociaux.",
+  "precision": "Mesure souvent appelée « priorité nationale ». Elle suppose de réviser la Constitution."
+ },
+ {
+  "id": "IMM-013",
+  "enonce": "Les Français doivent être prioritaires sur les étrangers pour l'accès à l'emploi.",
+  "precision": "Mesure souvent appelée « priorité nationale »."
+ },
+ {
+  "id": "IMM-014",
+  "enonce": "Les étrangers doivent résider en France depuis au moins deux ans pour toucher les allocations familiales et les aides au logement.",
+  "precision": "La proposition votée au Sénat dispense de cette condition les étrangers qui travaillent. Une condition de cinq ans a été censurée par le Conseil constitutionnel en 2024."
+ },
+ {
+  "id": "IMM-015",
+  "enonce": "Le séjour irrégulier en France doit redevenir un délit.",
+  "precision": "Ce délit a été supprimé en 2012. Son rétablissement, voté en 2024, a été censuré pour une raison de procédure."
+ },
+ {
+  "id": "IMM-016",
+  "enonce": "Le Parlement doit voter chaque année un nombre maximal d'étrangers admis à s'installer en France.",
+  "precision": "Des quotas de ce type, votés en 2024, ont été censurés par le Conseil constitutionnel."
+ },
+ {
+  "id": "IMM-017",
+  "enonce": "Les demandes d'asile doivent être déposées uniquement dans les ambassades et consulats français à l'étranger.",
+  "precision": "Aujourd'hui, une demande d'asile se dépose une fois arrivé en France."
+ },
+ {
+  "id": "IMM-018",
+  "enonce": "La France doit dénoncer l'accord franco-algérien de 1968.",
+  "precision": "Cet accord fixe des règles de séjour et de travail propres aux Algériens. Une résolution non contraignante demandant sa dénonciation a été adoptée par l'Assemblée nationale le 30 octobre 2025."
+ },
+ {
+  "id": "IMM-019",
+  "enonce": "Une personne en situation irrégulière ne doit pas pouvoir se marier en France.",
+  "precision": null
+ },
+ {
+  "id": "IMM-020",
+  "enonce": "Tout étranger condamné pour un crime ou un délit doit être expulsé.",
+  "precision": "L'expulsion se décide aujourd'hui au cas par cas. La loi de 2024 a levé plusieurs protections qui l'empêchaient."
+ },
+ {
+  "id": "IMM-021",
+  "enonce": "Les étrangers doivent avoir résidé et travaillé légalement en France pendant cinq ans pour toucher des aides sociales.",
+  "precision": "Une condition de cinq ans de résidence a été censurée par le Conseil constitutionnel en 2024."
+ }
+]

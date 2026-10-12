@@ -1,0 +1,253 @@
+[
+ {
+  "id": "SEC-001",
+  "changement": "Aujourd'hui, une personne contrôlée ne reçoit aucun document écrit : le contrôle ne laisse pas de trace pour elle. La mesure obligerait l'agent à remettre un papier indiquant au minimum la date, le lieu et le motif du contrôle. Elle concernerait les contrôles d'identité de la police et de la gendarmerie, qu'ils visent une infraction ou la prévention de troubles.",
+  "pour": "Ses partisans estiment qu'une trace écrite permettrait de mesurer la fréquence des contrôles et de contester ceux jugés discriminatoires, tout en incitant les agents à mieux justifier chaque contrôle.",
+  "contre": "Ses opposants jugent que cette obligation alourdirait la tâche des agents et ralentirait leurs interventions, sans garantir une baisse des contrôles contestés. Ils y voient aussi un signe de défiance envers les forces de l'ordre.",
+  "sources": [
+   {
+    "url": "https://fr.wikipedia.org/wiki/Contr%C3%B4le_d%27identit%C3%A9_en_France",
+    "titre": "Contrôle d'identité en France — Wikipédia",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Aucune recherche web possible : quota de recherches épuisé pour toute la session et plusieurs sites (Légifrance, Vie-publique, Conseil constitutionnel, Sénat) inaccessibles en lecture. L'absence de récépissé aujourd'hui, le contenu minimal du papier (je l'ai déduit de l'énoncé : date, lieu, motif) et les arguments pour/contre viennent de ma connaissance générale, non vérifiée. La page citée confirme seulement la distinction contrôle judiciaire/administratif et les études sur les contrôles discriminatoires. À sourcer : Défenseur des droits, Conseil d'État (décision 2023 sur les contrôles discriminatoires), expérimentations étrangères."
+ },
+ {
+  "id": "SEC-002",
+  "changement": "Le lanceur de balles de défense (LBD) est une arme à balles en caoutchouc, classée entre la matraque et l'arme à feu. La mesure l'interdirait lors des manifestations seulement, pas dans les autres missions. Le Défenseur des droits a déjà demandé son retrait du maintien de l'ordre. Selon l'AFP, 23 personnes ont perdu un œil lors des manifestations de 2018-2019.",
+  "pour": "Ses partisans estiment que, dans une foule en mouvement, le tir touche souvent une autre personne que celle visée, et que les blessures au visage sont graves et irréversibles. Pour eux, d'autres moyens de maintien de l'ordre suffisent.",
+  "contre": "Ses opposants estiment que le LBD est une réponse graduée entre la matraque et l'arme à feu, utile pour tenir à distance des groupes violents. Sans lui, disent-ils, il faudrait des moyens plus dangereux ou le contact direct.",
+  "sources": [
+   {
+    "url": "https://fr.wikipedia.org/wiki/Lanceur_de_balles_de_d%C3%A9fense",
+    "titre": "Lanceur de balles de défense — Wikipédia",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Aucune recherche web possible : quota de recherches épuisé pour toute la session et plusieurs sites (Légifrance, Vie-publique, Conseil constitutionnel, Sénat) inaccessibles en lecture. Chiffres et position du Défenseur des droits repris d'une page Wikipédia, à recouper avec le Défenseur des droits, le Conseil d'État (référés 2019-2020) et l'IGPN. Je n'ai pas pu vérifier l'état du droit en 2026 ni d'éventuelles évolutions de doctrine d'emploi."
+ },
+ {
+  "id": "SEC-003",
+  "changement": "La BRAV-M est une unité de la préfecture de police de Paris, créée en 2019. Elle intervient en binômes de motards (un pilote, un passager) lors des manifestations dans la région parisienne. La mesure supprimerait cette unité ; le maintien de l'ordre resterait assuré par les autres services. Une pétition demandant sa dissolution a dépassé 260 000 signatures sur le site de l'Assemblée nationale en 2023.",
+  "pour": "Ses partisans reprochent à cette unité des violences, relevées par des associations et des enquêtes de presse, et jugent que des policiers à moto, très mobiles et parfois sans numéro d'identification visible, sont difficiles à contrôler.",
+  "contre": "Ses opposants estiment que la rapidité de ces équipes est utile pour interpeller des casseurs au sein des cortèges, et que les fautes individuelles relèvent d'enquêtes et de sanctions, non de la suppression de toute l'unité.",
+  "sources": [
+   {
+    "url": "https://fr.wikipedia.org/wiki/Brigade_de_r%C3%A9pression_de_l%27action_violente_motoris%C3%A9e",
+    "titre": "Brigade de répression de l'action violente motorisée — Wikipédia",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Aucune recherche web possible : quota de recherches épuisé pour toute la session et plusieurs sites (Légifrance, Vie-publique, Conseil constitutionnel, Sénat) inaccessibles en lecture. Faits issus d'une page Wikipédia ; l'état 2026 de l'unité (existence, effectifs, suites judiciaires) n'est pas vérifié. À sourcer : préfecture de police, Assemblée nationale (pétition), rapports d'observateurs."
+ },
+ {
+  "id": "SEC-004",
+  "changement": "L'article L. 435-1 permet aux policiers et gendarmes de tirer dans des cas précis, sous conditions de nécessité absolue et de proportion, notamment sur un véhicule dont le conducteur ne s'arrête pas et pourrait mettre des vies en danger. Son abrogation retirerait ce cadre propre ; les agents relèveraient des règles générales du code pénal : légitime défense et état de nécessité. En 2022, 13 personnes sont mortes dans des refus d'obtempérer.",
+  "pour": "Ses partisans estiment que cet article a élargi les possibilités de tirer sur des véhicules en mouvement, et que les tirs sur des conducteurs en fuite, parfois mortels, ne devraient relever que de la légitime défense.",
+  "contre": "Ses opposants estiment que cet article protège des agents qui décident en quelques secondes face à un véhicule pouvant servir d'arme, et que, sans cadre précis, ils hésiteraient à intervenir ou s'exposeraient à des poursuites incertaines.",
+  "sources": [
+   {
+    "url": "https://fr.wikipedia.org/wiki/Refus_d%27obtemp%C3%A9rer",
+    "titre": "Refus d'obtempérer — Wikipédia",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Aucune recherche web possible : quota de recherches épuisé pour toute la session et plusieurs sites (Légifrance, Vie-publique, Conseil constitutionnel, Sénat) inaccessibles en lecture. Texte de L. 435-1 non relu sur Légifrance (accès refusé) : conditions décrites de mémoire. Le retour aux « règles générales » (et le régime antérieur des gendarmes) est à vérifier juridiquement. Le chiffre 2022 (13 morts) vient de Wikipédia ; l'évolution avant/après 2017 n'a pas pu être sourcée (IGPN, rapports parlementaires)."
+ },
+ {
+  "id": "SEC-005",
+  "changement": "L'IGPN (police) et l'IGGN (gendarmerie) sont des services d'inspection internes, placés sous l'autorité de la hiérarchie de chaque institution ; ils enquêtent notamment sur les manquements des agents, y compris à la demande de la justice. Le Défenseur des droits est une autorité indépendante prévue par la Constitution, qui peut déjà traiter les plaintes sur la déontologie des forces de l'ordre. La mesure transférerait ces enquêtes à un nouvel organisme rattaché à lui.",
+  "pour": "Ses partisans estiment qu'un service rattaché à la hiérarchie qu'il contrôle ne peut pas être perçu comme impartial, et qu'un organisme extérieur renforcerait la confiance dans les enquêtes sur les violences policières.",
+  "contre": "Ses opposants estiment que ces inspections connaissent les métiers de terrain, restent placées sous le contrôle de la justice, et qu'un organisme extérieur serait moins efficace et pourrait fragiliser la confiance des agents.",
+  "sources": [],
+  "reserves": "Aucune recherche web possible : quota de recherches épuisé pour toute la session et plusieurs sites (Légifrance, Vie-publique, Conseil constitutionnel, Sénat) inaccessibles en lecture. AUCUNE SOURCE CONSULTÉE pour cette question : tous les faits (statut de l'IGPN/IGGN, pouvoirs actuels du Défenseur des droits) viennent de ma connaissance générale. À sourcer en priorité : Vie-publique, site de l'IGPN, Défenseur des droits, Constitution art. 71-1."
+ },
+ {
+  "id": "SEC-006",
+  "changement": "Aujourd'hui, la loi prévoit déjà qu'une personne proche de la fin de sa peine peut la terminer hors de prison, avec un suivi (libération sous contrainte), sur décision d'un juge au cas par cas. La mesure rendrait ces sorties obligatoires dès qu'une prison dépasse 100 % de ses places, jusqu'à revenir à ce seuil. Le nombre de sorties dépendrait donc du taux d'occupation de l'établissement.",
+  "pour": "Ses partisans estiment qu'une prison trop pleine dégrade les conditions de détention et les chances de réinsertion, et qu'un seuil automatique obligerait l'État à traiter la surpopulation plutôt que de la tolérer.",
+  "contre": "Ses opposants estiment que le nombre de libérations ne devrait pas dépendre des places disponibles mais de la situation et de la dangerosité de chacun, et craignent que des condamnés sortent plus tôt que ne l'a décidé le tribunal.",
+  "sources": [
+   {
+    "url": "https://fr.wikipedia.org/wiki/Prison_en_France",
+    "titre": "Prison en France — Wikipédia",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Aucune recherche web possible : quota de recherches épuisé pour toute la session et plusieurs sites (Légifrance, Vie-publique, Conseil constitutionnel, Sénat) inaccessibles en lecture. Le dispositif actuel (libération sous contrainte, durée de fin de peine concernée) est décrit de mémoire et par une page Wikipédia peu précise ; seuil exact et conditions à vérifier sur Légifrance (code de procédure pénale) et auprès de l'administration pénitentiaire. Chiffres d'occupation : je m'en tiens à la Précision, non recoupée."
+ },
+ {
+  "id": "SEC-008",
+  "changement": "La police de proximité affecte des agents à un secteur fixe, pour qu'ils connaissent les habitants et traitent les petits problèmes du quotidien, plutôt que d'intervenir ponctuellement. La rétablir supposerait d'y affecter durablement des effectifs. Le dispositif national lancé à la fin des années 1990 a été largement arrêté en 2003.",
+  "pour": "Ses partisans estiment que la présence régulière d'agents connus des habitants restaure la confiance, améliore le renseignement et permet de calmer les tensions avant qu'elles ne s'aggravent.",
+  "contre": "Ses opposants estiment que des agents mobilisés sur le contact manquent aux missions d'intervention et d'enquête, et que le dispositif, coûteux, n'a pas démontré d'effet sur la délinquance.",
+  "sources": [
+   {
+    "url": "https://fr.wikipedia.org/wiki/Police_de_proximit%C3%A9",
+    "titre": "Police de proximité — Wikipédia",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Aucune recherche web possible : quota de recherches épuisé pour toute la session et plusieurs sites (Légifrance, Vie-publique, Conseil constitutionnel, Sénat) inaccessibles en lecture. La page citée confirme seulement l'expérimentation de 1998 et son arrêt en 2003 ; pas de bilan chiffré ni de coût. Je n'ai pas pu vérifier ce qui existe aujourd'hui (police de sécurité du quotidien, éventuels dispositifs 2025-2026). Arguments pour/contre de portée générale, à sourcer (Cour des comptes, travaux de chercheurs)."
+ },
+ {
+  "id": "SEC-009",
+  "changement": "Les consommateurs n'auraient plus ni casier judiciaire ni amende pour usage, et la police et la justice ne traiteraient plus ces affaires. La proposition de loi d'origine (n° 750, décembre 2024) ne prévoit rien à la place de la sanction : l'orientation vers les soins n'est évoquée que dans son exposé des motifs, et la détention reste punissable.",
+  "pour": "Ses partisans attendent la fin du casier et des amendes pour les usagers. Ils citent le Portugal, qui a remplacé les poursuites par des commissions orientant vers les soins en 2001, avec une forte baisse du nombre d'usagers d'héroïne.",
+  "contre": "Ses opposants y voient un signal de banalisation de la drogue et un frein à la lutte contre les trafics, d'autant que le texte d'origine ne prévoit aucun dispositif de soins à la place de la sanction.",
+  "sources": [
+   {
+    "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b0750_proposition-loi.pdf",
+    "titre": "Proposition de loi n° 750 (19 décembre 2024)",
+    "date_consultation": "2026-10-12",
+    "nature": "primaire"
+   }
+  ],
+  "reserves": "Texte déjà validé (impacts-deja-valides.md, SEC-009) repris et réparti dans les champs, forme seule retouchée. La dernière partie de « contre » (usagers sans accompagnement) est une reformulation de l'objection validée, à faire relire. Je n'ai pas moi-même consulté la proposition de loi n° 750 (accès non testé), l'URL provient du fichier validé."
+ },
+ {
+  "id": "SEC-010",
+  "changement": "Une association qui demande une subvention publique doit signer ce contrat, qui l'engage à respecter notamment la loi, la liberté de conscience, l'égalité, la dignité humaine et les symboles de la République. En cas de manquement constaté, la subvention peut être retirée et remboursée. La mesure supprimerait cette obligation.",
+  "pour": "Ses partisans estiment que les termes du contrat sont flous, qu'ils permettent de retirer des subventions à des associations critiques envers les pouvoirs publics, et que les lois existantes suffisent déjà à sanctionner celles qui les enfreignent.",
+  "contre": "Ses opposants estiment que l'argent public ne doit pas financer des associations qui ne respectent pas les principes de la République, et que le contrat donne à l'administration un moyen clair et rapide d'agir contre elles.",
+  "sources": [],
+  "reserves": "Aucune recherche web possible : quota de recherches épuisé pour toute la session et plusieurs sites (Légifrance, Vie-publique, Conseil constitutionnel, Sénat) inaccessibles en lecture. AUCUNE SOURCE CONSULTÉE : liste des engagements et mécanisme de retrait de subvention décrits de mémoire (loi du 24 août 2021, décret de décembre 2021). La Précision indique « depuis 2022 », non recoupé. À sourcer : Légifrance, Conseil d'État (2022), Vie-publique."
+ },
+ {
+  "id": "SEC-011",
+  "changement": "Un minimum de peine serait fixé par la loi pour une personne déjà condamnée qui récidive, et le juge devrait en principe le respecter. De 2007 à 2014, ces minimums allaient de 1 à 4 ans de prison pour les délits et de 5 à 15 ans pour les crimes, selon la peine maximale prévue. Le juge pouvait s'en écarter par une décision motivée, et la peine pouvait être assortie d'un sursis.",
+  "pour": "Ses partisans estiment que des minimums rendent la sanction plus prévisible et réduisent l'écart entre la peine prévue par la loi et celle réellement prononcée, ce qui dissuaderait la récidive.",
+  "contre": "Ses opposants estiment que ces minimums limitent la liberté du juge d'adapter la peine à chaque situation, peuvent produire des peines disproportionnées, et n'ont pas démontré d'effet dissuasif.",
+  "sources": [
+   {
+    "url": "https://fr.wikipedia.org/wiki/Peines_planchers",
+    "titre": "Peines planchers — Wikipédia",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Aucune recherche web possible : quota de recherches épuisé pour toute la session et plusieurs sites (Légifrance, Vie-publique, Conseil constitutionnel, Sénat) inaccessibles en lecture. Détail du dispositif 2007-2014 repris d'une page Wikipédia, à recouper avec Légifrance (loi du 10 août 2007) et un bilan officiel (ministère de la Justice, études sur la récidive). Je n'ai trouvé aucun bilan chiffré français de l'effet des peines planchers."
+ },
+ {
+  "id": "SEC-012",
+  "changement": "Pour les mineurs de 16 ans et plus, le juge peut déjà écarter la réduction de moitié dans certains cas, par une décision motivée. La mesure la supprimerait pour les récidivistes de cet âge. Le Conseil constitutionnel a reconnu le principe d'une responsabilité atténuée des mineurs comme garanti par la Constitution ; toute règle nouvelle devrait en tenir compte.",
+  "pour": "Ses partisans estiment qu'un mineur de 16 ou 17 ans déjà condamné a conscience de ses actes, et qu'une peine plus lourde protégerait les victimes et dissuaderait la récidive.",
+  "contre": "Ses opposants estiment que les mineurs sont plus facilement réinsérables, que leur responsabilité doit rester atténuée, et soulignent que ce principe est protégé par la Constitution.",
+  "sources": [
+   {
+    "url": "https://fr.wikipedia.org/wiki/Peines_planchers",
+    "titre": "Peines planchers — Wikipédia",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Aucune recherche web possible : quota de recherches épuisé pour toute la session et plusieurs sites (Légifrance, Vie-publique, Conseil constitutionnel, Sénat) inaccessibles en lecture. La page citée ne confirme que la réduction de moitié pour les mineurs dans l'ancien régime des peines planchers. La possibilité d'écarter la réduction (code de la justice pénale des mineurs) et la jurisprudence constitutionnelle de 2002 sont de mémoire. La décision 2025 du Conseil constitutionnel (mentionnée par la Précision) n'a pas pu être lue (pages inaccessibles). À sourcer en priorité."
+ },
+ {
+  "id": "SEC-013",
+  "changement": "Aujourd'hui, la loi pousse les juges à aménager les courtes peines dès le jugement : bracelet électronique, semi-liberté ou placement à l'extérieur, sous conditions, avec une obligation d'aménager les très courtes peines sauf impossibilité. La mesure ferait de la détention la règle pour les peines de moins d'un an, l'aménagement devenant une décision particulière du juge.",
+  "pour": "Ses partisans estiment qu'une peine qui n'est pas exécutée en prison perd sa crédibilité, et que l'exécution réelle des courtes peines renforcerait la dissuasion et la confiance dans la justice.",
+  "contre": "Ses opposants estiment que les courtes peines en prison désocialisent et favorisent la récidive, alors que l'aménagement permet de garder un emploi, et qu'elles aggraveraient la surpopulation carcérale.",
+  "sources": [
+   {
+    "url": "https://fr.wikipedia.org/wiki/Prison_en_France",
+    "titre": "Prison en France — Wikipédia",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Aucune recherche web possible : quota de recherches épuisé pour toute la session et plusieurs sites (Légifrance, Vie-publique, Conseil constitutionnel, Sénat) inaccessibles en lecture. Seuils exacts (peines de moins de six mois à aménager obligatoirement, jusqu'à un an possible, loi de 2019) donnés de mémoire ; la page citée liste seulement les types d'aménagements. À vérifier sur Légifrance (code pénal art. 132-25 s., code de procédure pénale) et Vie-publique. Reformulation de la mesure (« règle » vs « décision particulière ») à valider."
+ },
+ {
+  "id": "SEC-014",
+  "changement": "Passer à 85 000 places reviendrait à créer environ 22 000 places par rapport à l'existant, soit 7 000 de plus que les 15 000 du plan en cours. L'énoncé ne fixe ni délai ni mode de financement.",
+  "pour": "Ses partisans estiment qu'une peine ne peut être exécutée que si les places existent, et qu'il faut mettre fin à la surpopulation pour améliorer les conditions de détention et de travail du personnel.",
+  "contre": "Ses opposants estiment que construire coûte cher et que les places créées se remplissent aussitôt, et préfèrent développer les peines alternatives et la prévention plutôt que la détention.",
+  "sources": [],
+  "reserves": "Aucune recherche web possible : quota de recherches épuisé pour toute la session et plusieurs sites (Légifrance, Vie-publique, Conseil constitutionnel, Sénat) inaccessibles en lecture. AUCUNE SOURCE CONSULTÉE ; le calcul (85 000 − 63 000 ≈ 22 000 ; − 15 000 = 7 000) s'appuie uniquement sur les chiffres de la Précision, non recoupés. Pas de coût par place ni de calendrier du plan sourcés ; à compléter (ministère de la Justice, Cour des comptes, Sénat). L'effet « les places se remplissent » est un argument d'opposants, non établi ici."
+ },
+ {
+  "id": "SEC-015",
+  "changement": "La mesure inverserait la charge de la preuve : un tir de policier ou de gendarme serait présumé légal, et ce serait à la partie qui le conteste de démontrer le contraire. En droit commun, la présomption de légitime défense n'existe aujourd'hui que dans deux cas : l'intrusion de nuit dans un lieu habité et les vols commis avec violence.",
+  "pour": "Ses partisans estiment que les agents décident en quelques secondes pour protéger autrui, qu'ils ne devraient pas avoir à se justifier après chaque tir, et que cette présomption les protégerait de poursuites injustifiées.",
+  "contre": "Ses opposants estiment qu'une présomption rendrait plus difficile d'établir un tir illégal, notamment lorsque la victime est décédée, et affaiblirait le contrôle du juge sur l'usage de la force par l'État.",
+  "sources": [
+   {
+    "url": "https://fr.wikipedia.org/wiki/L%C3%A9gitime_d%C3%A9fense_en_droit_fran%C3%A7ais",
+    "titre": "Légitime défense en droit français — Wikipédia",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Aucune recherche web possible : quota de recherches épuisé pour toute la session et plusieurs sites (Légifrance, Vie-publique, Conseil constitutionnel, Sénat) inaccessibles en lecture. La page citée décrit seulement la légitime défense de droit commun. Le texte adopté par l'Assemblée le 7 juillet 2026 (cité par la Précision) n'a pas pu être lu ; sa rédaction exacte (champ, portée de la présomption, caractère simple ou irréfragable) est à vérifier sur assemblee-nationale.fr. La Précision n'a pas pu être contredite ni confirmée."
+ },
+ {
+  "id": "SEC-016",
+  "changement": "Les armes possibles pour un policier municipal vont du bâton et de l'aérosol au pistolet 9 mm et au pistolet à impulsion électrique. La mesure inverserait la règle actuelle : les agents seraient armés par défaut, le maire ne pouvant refuser qu'en motivant sa décision. Selon une source secondaire, plus de la moitié des quelque 24 000 policiers municipaux étaient armés en 2019, contre 43,6 % en 2016.",
+  "pour": "Ses partisans estiment que les policiers municipaux sont souvent les premiers sur place et exposés aux mêmes risques que les policiers nationaux, et qu'ils doivent pouvoir se protéger et protéger la population.",
+  "contre": "Ses opposants estiment que le maire, responsable de ses agents et connaissant sa commune, doit garder le choix, et que l'armement impose une formation et des coûts qui ne conviennent pas à toutes les communes.",
+  "sources": [
+   {
+    "url": "https://fr.wikipedia.org/wiki/Police_municipale_(France)",
+    "titre": "Police municipale (France) — Wikipédia",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Aucune recherche web possible : quota de recherches épuisé pour toute la session et plusieurs sites (Légifrance, Vie-publique, Conseil constitutionnel, Sénat) inaccessibles en lecture. Chiffres 2016 et 2019 issus de Wikipédia, donc anciens ; ils sont à actualiser (ministère de l'Intérieur) ainsi que toute loi récente sur la police municipale que je n'ai pas pu vérifier. Liste des armes de la source à valider sur Légifrance (art. R511-12 CSI)."
+ },
+ {
+  "id": "SEC-017",
+  "changement": "Les allocations familiales sont versées aux parents selon le nombre d'enfants à charge. La mesure les suspendrait dès qu'un mineur est condamné pour un délit ou un crime, quelle que soit la gravité de l'infraction. L'énoncé ne dit ni la durée de la suspension ni si elle serait définitive.",
+  "pour": "Ses partisans estiment que les parents ont une responsabilité dans l'éducation de leurs enfants, et qu'une sanction financière les inciterait à mieux les encadrer.",
+  "contre": "Ses opposants estiment qu'on ne peut faire peser sur les parents la faute d'un enfant, que la mesure fragiliserait des familles souvent modestes et pourrait aggraver la situation de l'enfant concerné.",
+  "sources": [],
+  "reserves": "Aucune recherche web possible : quota de recherches épuisé pour toute la session et plusieurs sites (Légifrance, Vie-publique, Conseil constitutionnel, Sénat) inaccessibles en lecture. AUCUNE SOURCE CONSULTÉE : règles actuelles d'attribution et de suspension (Caf, code de la sécurité sociale), dispositifs existants de responsabilisation des parents (loi 2025 sur la justice des mineurs ?) et éventuelles réserves constitutionnelles non vérifiés. Texte volontairement limité à l'énoncé ; à compléter."
+ },
+ {
+  "id": "SEC-018",
+  "changement": "Le port du voile est déjà interdit aux élèves des écoles, collèges et lycées publics (loi de 2004), et la dissimulation du visage est interdite dans l'espace public (loi de 2010). La mesure interdirait le voile à toute personne de moins de 18 ans dans la rue, les commerces et les transports, et non plus seulement à l'école.",
+  "pour": "Ses partisans estiment que le voile porté par des enfants et des adolescentes peut résulter d'une pression familiale ou sociale, et que l'interdiction protégerait leur liberté de choisir à l'âge adulte.",
+  "contre": "Ses opposants estiment qu'une telle interdiction porte atteinte à la liberté de religion et d'expression, stigmatiserait les familles musulmanes et pourrait conduire des jeunes filles à rester chez elles.",
+  "sources": [],
+  "reserves": "Aucune recherche web possible : quota de recherches épuisé pour toute la session et plusieurs sites (Légifrance, Vie-publique, Conseil constitutionnel, Sénat) inaccessibles en lecture. AUCUNE SOURCE CONSULTÉE : lois de 2004 et 2010 citées de mémoire. Pas vérifié : proposition de loi sénatoriale ou autre texte en cours, compatibilité avec la Constitution et la Convention européenne des droits de l'homme, jurisprudence du Conseil d'État. Définition du voile (foulard, hijab ?) non précisée par l'énoncé."
+ },
+ {
+  "id": "SEC-019",
+  "changement": "Aujourd'hui, ce sont les fédérations sportives qui décident de leurs règles : le Conseil d'État a jugé en 2023 que la fédération de football pouvait interdire les signes religieux lors de ses compétitions. La mesure imposerait cette interdiction par la loi, dans toutes les compétitions sportives.",
+  "pour": "Ses partisans estiment que les compétitions doivent rester neutres, que les règles doivent être les mêmes pour tous les sports, et que le sport doit rester à l'écart des appartenances religieuses.",
+  "contre": "Ses opposants estiment que cette interdiction exclurait des sportives et sportifs qui pratiquent leur religion, que le sport est un lieu d'ouverture, et qu'il ne revient pas à la loi de régler cette question à la place des fédérations.",
+  "sources": [],
+  "reserves": "Aucune recherche web possible : quota de recherches épuisé pour toute la session et plusieurs sites (Légifrance, Vie-publique, Conseil constitutionnel, Sénat) inaccessibles en lecture. AUCUNE SOURCE CONSULTÉE : décision du Conseil d'État de juin 2023 citée de mémoire (références exactes non vérifiées), ainsi que le fait que d'autres fédérations autorisent ou interdisent selon leurs règles. Pas vérifié : proposition de loi sénatoriale de 2025 et son sort, règles du CIO/FIFA, étendue de la mesure (spectateurs, bénévoles ?)."
+ },
+ {
+  "id": "SEC-020",
+  "changement": "Aujourd'hui, un traitement médicamenteux réduisant la libido peut être proposé à un condamné pour infraction sexuelle dans le cadre d'une injonction de soins, avec son accord. La mesure le rendrait obligatoire pour certains auteurs de crimes sexuels jugés les plus dangereux. L'effet des médicaments (anti-androgènes, analogues de la GnRH) est réversible à l'arrêt du traitement.",
+  "pour": "Ses partisans estiment qu'un traitement obligatoire réduirait le risque de nouveaux crimes de la part des condamnés les plus dangereux, et qu'un refus de soins ne devrait pas les laisser libres de récidiver.",
+  "contre": "Ses opposants estiment que l'efficacité n'est pas démontrée sans adhésion de la personne, qu'imposer un traitement médical pose un problème d'éthique et d'intégrité du corps, et qu'il peut entraîner des effets secondaires.",
+  "sources": [
+   {
+    "url": "https://fr.wikipedia.org/wiki/Castration_chimique",
+    "titre": "Castration chimique — Wikipédia",
+    "date_consultation": "2026-10-12",
+    "nature": "secondaire"
+   }
+  ],
+  "reserves": "Aucune recherche web possible : quota de recherches épuisé pour toute la session et plusieurs sites (Légifrance, Vie-publique, Conseil constitutionnel, Sénat) inaccessibles en lecture. Faits issus d'une page Wikipédia (dispositif de 1997-2001, consentement, absence de preuve d'efficacité) ; le critère « jugés les plus dangereux » n'est pas défini par l'énoncé. À sourcer : code de la santé publique (art. L. 3711-1 s.), Haute Autorité de santé, Conseil constitutionnel. Difficulté de neutralité : « castration chimique » est contesté comme terme."
+ },
+ {
+  "id": "SEC-021",
+  "changement": "Le règlement européen sur l'intelligence artificielle de 2024 interdit en principe aux forces de l'ordre l'identification biométrique à distance en temps réel dans l'espace public, sauf cas encadrés : recherche de victimes, menace imminente, suspects d'infractions graves. La mesure autoriserait cet usage pour le terrorisme et la criminalité organisée, ce qui supposerait une loi nationale conforme à ce règlement.",
+  "pour": "Ses partisans estiment que cette technologie permettrait de retrouver plus vite des suspects ou de prévenir un attentat dans une foule, et qu'un cadre strict, limité aux infractions les plus graves, protégerait les libertés.",
+  "contre": "Ses opposants estiment que la surveillance des visages dans l'espace public porte atteinte à la vie privée et à la liberté de manifester, que la technique peut se tromper, et que son usage s'étendrait ensuite à d'autres infractions.",
+  "sources": [],
+  "reserves": "Aucune recherche web possible : quota de recherches épuisé pour toute la session et plusieurs sites (Légifrance, Vie-publique, Conseil constitutionnel, Sénat) inaccessibles en lecture. AUCUNE SOURCE CONSULTÉE : contenu du règlement (UE) 2024/1689 (article 5) et de ses exceptions donné de mémoire, à vérifier sur EUR-Lex ; la loi française de 2023 sur les Jeux olympiques (vidéo algorithmique, sans reconnaissance faciale) et l'avis de la CNIL ne sont pas cités faute de lecture. Précision (expérimentation votée en 2023 par le Sénat) non recoupée."
+ }
+]

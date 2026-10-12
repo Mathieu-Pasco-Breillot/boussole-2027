@@ -18,10 +18,13 @@ for (const theme of ['dark', 'light'] as const) {
     await expect(page.getByRole('heading', { name: 'Ce que ça changerait' })).toBeVisible();
     await expect(page.getByRole('heading', { name: 'Ce qui fait débat' })).toBeVisible();
 
-    // Un seul encart ouvert à la fois.
-    await page.getByRole('button', { name: /^Précision/ }).click();
-    await expect(page.getByRole('heading', { name: 'Ce que ça changerait' })).toBeHidden();
-    await impact.click();
+    // Un seul encart ouvert à la fois (seulement si la proposition tirée a une Précision : certaines n'en ont pas).
+    const precision = page.getByRole('button', { name: /^Précision/ });
+    if ((await precision.count()) > 0) {
+      await precision.click();
+      await expect(page.getByRole('heading', { name: 'Ce que ça changerait' })).toBeHidden();
+      await impact.click();
+    }
     await page.getByText(/^Sources \(\d+\)/).click();
 
     const r = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();

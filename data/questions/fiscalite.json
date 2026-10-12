@@ -328,7 +328,7 @@
    "axe": "economie",
    "sens": 1,
    "enonce": "La CSG doit devenir progressive : son taux doit augmenter avec le revenu.",
-   "precision": "La CSG sur les revenus d'activité est aujourd'hui à taux unique (9,2 %). Seules les pensions de retraite ont des taux variables selon le revenu.",
+   "precision": "La CSG sur les revenus d'activité est aujourd'hui à taux unique (9,2 %). Les pensions de retraite et les allocations chômage ont des taux variables selon le revenu fiscal de référence.",
    "origine": {
     "description": "Programme commun de gauche des législatives de 2024",
     "source": {
@@ -341,7 +341,12 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": [],
+   "historique": [
+    {
+     "date": "2026-10-12",
+     "note": "Précision corrigée : l'ancienne formulation (« Seules les pensions de retraite ont des taux variables selon le revenu. ») omettait les allocations chômage, dont le taux de CSG varie aussi selon le revenu fiscal de référence (6,2 %, 3,8 % ou exonération ; articles L136-2 et L136-8 du code de la sécurité sociale, sources secondaires concordantes, instruction ministérielle non lue). Encart inchangé."
+    }
+   ],
    "impact": {
     "changement": "La CSG, qui a rapporté environ 154 milliards d'euros en 2024, plus que l'impôt sur le revenu, aurait un taux croissant avec le revenu. Elle varie déjà pour les retraités : 0, 3,8, 6,6 ou 8,3 % selon le revenu fiscal de référence du foyer. Les seuils, les taux et les revenus concernés par la mesure ne sont pas précisés dans l'énoncé.",
     "pour": "Ses partisans estiment qu'un taux quasi uniforme pèse relativement plus sur les revenus modestes et moyens, et qu'une CSG croissante rendrait plus équitable le financement de la protection sociale.",
@@ -375,7 +380,7 @@
    "axe": "economie",
    "sens": 1,
    "enonce": "L'« exit tax » doit être rétablie dans sa version de 2011.",
-   "precision": "L'« exit tax » impose les plus-values des contribuables qui transfèrent leur domicile fiscal à l'étranger. En 2011, elle s'appliquait si les titres étaient vendus dans les 15 ans ; depuis 2019, ce délai est de 2 à 5 ans.",
+   "precision": "L'« exit tax » impose les plus-values des contribuables qui transfèrent leur domicile fiscal à l'étranger. De 2011 à 2013, elle s'appliquait si les titres étaient vendus dans les 8 ans ; depuis 2019, ce délai est de 2 à 5 ans.",
    "origine": {
     "description": "Amendement adopté à l'Assemblée nationale le 3 novembre 2025, non repris dans la loi de finances pour 2026",
     "source": {
@@ -388,11 +393,16 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": [],
+   "historique": [
+    {
+     "date": "2026-10-12",
+     "note": "Précision et encart corrigés : l'ancienne formulation indiquait un délai de 15 ans en 2011. Selon impots.gouv.fr (« Je quitte la France, suis-je concerné par l'exit tax ? »), le délai était de 8 ans pour les transferts de 2011 à 2013, de 15 ans pour ceux de 2014 à 2018, et de 2 ans (5 ans au-delà de 2 570 000 € de titres) depuis le 1er janvier 2019. Dans l'encart, seule la durée attribuée à la version de 2011 est corrigée, y compris dans l'argument des opposants (8 ans au lieu de 15 ans)."
+    }
+   ],
    "impact": {
-    "changement": "Aujourd'hui, l'impôt sur la plus-value latente d'un contribuable qui part à l'étranger tombe si ses titres sont conservés 2 ans (5 ans au-delà de 2,57 millions d'euros). Le retour à la version de 2011 rétablirait un délai de 15 ans. Elle vise ceux qui ont résidé en France au moins six des dix dernières années et détiennent des titres de plus de 800 000 euros ou au moins 50 % d'une société. Le rendement est difficile à estimer.",
+    "changement": "Aujourd'hui, l'impôt sur la plus-value latente d'un contribuable qui part à l'étranger tombe si ses titres sont conservés 2 ans (5 ans au-delà de 2,57 millions d'euros). Le retour à la version de 2011 rétablirait un délai de 8 ans. Elle vise ceux qui ont résidé en France au moins six des dix dernières années et détiennent des titres de plus de 800 000 euros ou au moins 50 % d'une société. Le rendement est difficile à estimer.",
     "pour": "Ses partisans estiment qu'un délai long dissuade les départs motivés surtout par la vente de titres sans impôt, et que le délai actuel de 2 à 5 ans est trop court pour décourager ce type de départ.",
-    "contre": "Ses opposants estiment qu'un délai de 15 ans décourage la création et la direction d'entreprises en France, que l'impôt frappe un gain non encore réalisé, sans liquidités correspondantes, et que l'effet dissuasif du dispositif n'est pas établi.",
+    "contre": "Ses opposants estiment qu'un délai de 8 ans décourage la création et la direction d'entreprises en France, que l'impôt frappe un gain non encore réalisé, sans liquidités correspondantes, et que l'effet dissuasif du dispositif n'est pas établi.",
     "sources": [
      {
       "url": "https://www.dougs.fr/blog/exit-tax/",
