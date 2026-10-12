@@ -69,6 +69,33 @@
             }
           }
         },
+        "impact": {
+          "description": "Encart « Impact » (pilote du 12 octobre 2026) : ce que la mesure changerait et pourquoi elle est débattue. Arguments toujours attribués, aucun nom de candidat ni de parti.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["changement", "pour", "contre", "sources", "statut"],
+          "properties": {
+            "changement": { "type": "string", "minLength": 1 },
+            "pour": { "type": "string", "minLength": 1 },
+            "contre": { "type": "string", "minLength": 1 },
+            "statut": { "enum": ["pilote", "valide"] },
+            "sources": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["url", "titre", "date_consultation", "nature"],
+                "properties": {
+                  "url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+                  "titre": { "type": "string", "minLength": 1 },
+                  "date_consultation": { "$ref": "#/$defs/dateIso" },
+                  "nature": { "enum": ["primaire", "secondaire", "institutionnelle", "source syndicale"] }
+                }
+              }
+            }
+          }
+        },
         "statut": { "enum": ["active", "suspendue", "archivee"] },
         "alertes_neutralite": {
           "type": "array",
