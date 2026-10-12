@@ -14,6 +14,14 @@ export interface QuestionPaquet {
   statut: 'active';
   enonce: string;
   precision: string | null;
+  impact?: ImpactPaquet;
+}
+
+export interface ImpactPaquet {
+  changement: string;
+  pour: string;
+  contre: string;
+  sources: { titre: string; url: string }[];
 }
 
 export interface ExtraitPaquet {

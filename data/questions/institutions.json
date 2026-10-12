@@ -34,7 +34,39 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Chaque parti présenterait une liste par département, au lieu d'un candidat par circonscription. Les sièges du département seraient répartis entre les listes selon leur score, puis attribués dans l'ordre de la liste. En 1986, une liste devait obtenir au moins 5 % des voix pour avoir des élus. Une loi ordinaire suffirait, car le mode de scrutin ne figure pas dans la Constitution ; il ne peut toutefois pas être modifié dans l'année qui précède une élection.",
+    "pour": "Ses partisans estiment que l'Assemblée refléterait plus fidèlement les votes, que chaque voix compterait davantage et que les alliances se négocieraient après l'élection, autour de programmes.",
+    "contre": "Ses opposants estiment que le scrutin majoritaire produit des majorités plus stables et que le vote sur liste distendrait le lien entre chaque député et un territoire précis.",
+    "sources": [
+     {
+      "url": "https://www.leclubdesjuristes.com/politique/scrutin-proportionnel-pour-les-legislatives-pourquoi-et-comment-7376/",
+      "titre": "Scrutin proportionnel pour les législatives : pourquoi et comment ?",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.leclubdesjuristes.com/politique/scrutin-proportionnel-aux-legislatives-les-enjeux-pratiques-et-politiques-10525/",
+      "titre": "Scrutin proportionnel aux législatives : les enjeux pratiques… et politiques",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.publicsenat.fr/actualites/institutions/50-nuances-de-proportionnelle-les-ecueils-du-chantier-electoral-que-pourrait-lancer-michel-barnier",
+      "titre": "50 nuances de proportionnelle : les écueils du chantier électoral que pourrait lancer Michel Barnier",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.senat.fr/leg/ppl25-374.pdf",
+      "titre": "Proposition de loi organique visant à instaurer le mode de scrutin proportionnel aux élections législatives (Sénat, n° 374, 2025-2026)",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "valide"
+   }
   },
   {
    "id": "INS-002",
@@ -60,7 +92,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Le seuil passerait d'environ 4,9 millions de signatures (un dixième des inscrits) à environ 1 million (2 % des 50,2 millions d'inscrits en 2026), sans accord préalable de parlementaires, pour proposer ou abroger une loi. À titre de comparaison, l'Italie exige 500 000 signatures (environ 1 %). Aucune procédure actuelle n'a abouti à un référendum : celle de 2019 a réuni 1,09 million de soutiens. La mesure exigerait de réviser la Constitution.",
+    "pour": "Ses partisans estiment que la procédure actuelle est quasiment inutilisable et qu'un seuil abaissé permettrait aux citoyens d'agir directement entre deux élections sur les sujets qui les concernent.",
+    "contre": "Ses opposants estiment qu'un seuil facile à atteindre via les réseaux sociaux multiplierait les référendums, affaiblirait le Parlement et profiterait aux groupes les mieux organisés.",
+    "sources": [
+     {
+      "url": "https://www.insee.fr/fr/statistiques/8888278",
+      "titre": "Corps électoral 2026 : 48,7 millions d'électeurs inscrits pour les élections municipales 2026 (Insee Focus n° 378)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.conseil-constitutionnel.fr/referendum-d-initiative-partagee/referendum-d-initiative-partagee-rip-mode-d-emploi",
+      "titre": "Référendum d'initiative partagée (RIP) : mode d'emploi",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.senat.fr/rap/l23-099/l23-0996.html",
+      "titre": "Proposition de loi constitutionnelle visant à faciliter le déclenchement du référendum d'initiative partagée - Sénat",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "valide"
+   }
   },
   {
    "id": "INS-003",
@@ -86,7 +144,27 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Aujourd'hui, aucun élu ne peut être démis par les électeurs en cours de mandat ; seul le président peut être destitué, par le Parlement réuni en Haute Cour. La mesure créerait un vote, déclenché par une pétition d'électeurs, pouvant mettre fin au mandat d'un élu. Elle exigerait de réviser la Constitution, qui interdit d'imposer des consignes obligatoires aux élus (« mandat impératif »). Une proposition en ce sens a été rejetée en commission à l'Assemblée nationale en 2022.",
+    "pour": "Ses partisans estiment que les élus devraient rendre des comptes entre deux élections, ce qui pourrait renforcer la confiance des électeurs et recentrer les campagnes sur les engagements pris.",
+    "contre": "Ses opposants estiment que la menace d'une révocation installerait une campagne permanente, rendrait les élus dépendants des humeurs de l'opinion et fragiliserait les institutions.",
+    "sources": [
+     {
+      "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+      "titre": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/15/rapports/cion_lois/l15b4863_rapport-fond.pdf",
+      "titre": "Rapport n° 4863 sur la proposition de loi constitutionnelle visant à instaurer un droit de révocation des élus (n° 4751)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "valide"
+   }
   },
   {
    "id": "INS-004",
@@ -112,7 +190,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "La Constitution actuelle ne prévoit pas d'assemblée constituante. Elle se modifie par un vote identique des deux chambres, puis par référendum ou par un vote des 3/5 du Parlement réuni en Congrès ; elle a été révisée 25 fois depuis 1958. Convoquer une constituante passerait donc soit par cette procédure, qui suppose l'accord du Sénat, soit par un référendum décidé par le président, voie que plusieurs constitutionnalistes jugent contraire à la Constitution.",
+    "pour": "Ses partisans estiment que les institutions actuelles concentrent trop de pouvoirs chez le président et qu'un texte rédigé avec les citoyens puis approuvé par eux serait la voie la plus démocratique.",
+    "contre": "Ses opposants estiment que la Constitution peut déjà être réformée par révision et que convoquer une constituante par référendum contournerait les règles en vigueur et ouvrirait une période d'incertitude.",
+    "sources": [
+     {
+      "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+      "titre": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/contenu/telechargement/629140/file/Fiche%2055%20-%20R%C3%A9vision%20constitution_actualis%C3%A9e11032024.pdf",
+      "titre": "La révision de la Constitution (Fiche n° 55, Assemblée nationale)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.publicsenat.fr/actualites/politique/l-assemblee-constituante-voulue-par-jean-luc-melenchon-est-elle-possible-58777",
+      "titre": "L'Assemblée Constituante voulue par Jean-Luc Mélenchon est-elle possible ?",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "valide"
+   }
   },
   {
    "id": "INS-005",
@@ -133,7 +237,39 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Depuis 2008, cette procédure est limitée aux budgets de l'État et de la Sécurité sociale, plus un autre texte par session. Elle a été utilisée plus de 100 fois depuis 1958, dont trois fois pour le budget 2026. Si le Parlement ne se prononce pas à temps, la Constitution permet déjà de mettre en vigueur le budget de l'État par ordonnance après 70 jours, et celui de la Sécurité sociale après 50 jours. La suppression exigerait une révision de la Constitution.",
+    "pour": "Ses partisans estiment que cette procédure clôt le débat sans vote, prive le Parlement de son rôle et qu'un gouvernement sans majorité devrait négocier des compromis ou céder la place.",
+    "contre": "Ses opposants estiment qu'en l'absence de majorité absolue elle évite la paralysie, notamment pour le budget, et reste encadrée par la possibilité de renverser le gouvernement par une motion de censure.",
+    "sources": [
+     {
+      "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+      "titre": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.echodumardi.com/actualite/quels-premiers-ministres-ont-le-plus-utilise-le-49-3/?print=pdf",
+      "titre": "Quels Premiers ministres ont le plus utilisé le 49.3 ?",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.macommune.info/le-budget-2026-enfin-adopte-par-le-parlement-trois-49-3-plus-tard/",
+      "titre": "Le budget 2026 enfin adopté par le parlement, trois 49.3 plus tard",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/16/comptes-rendus/cion_lois/l16cion_lois2324063_compte-rendu.pdf",
+      "titre": "Commission des lois, compte rendu du 27 mars 2024 (proposition de loi constitutionnelle n° 940 pour un article 49 respectueux de la représentation nationale)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "valide"
+   }
   },
   {
    "id": "INS-006",
@@ -159,7 +295,39 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Le vote est réservé aux majeurs, soit 18 ans depuis 1974. La mesure l'ouvrirait aux 16-17 ans, soit environ 1,6 million de jeunes selon une proposition de loi de 2025. L'Autriche et Malte l'appliquent à toutes les élections, la Belgique aux européennes. Les juristes divergent sur la nécessité de réviser la Constitution, qui réserve le vote aux « majeurs ». L'Assemblée et le Sénat ont rejeté des textes en ce sens en 2020 et 2021.",
+    "pour": "Ses partisans estiment que les 16-17 ans peuvent déjà travailler et payer des impôts, et qu'un premier vote plus précoce ancrerait durablement l'habitude de voter.",
+    "contre": "Ses opposants estiment que le vote doit rester lié à la majorité civile et pénale fixée à 18 ans, et doutent que tous les adolescents aient la maturité nécessaire.",
+    "sources": [
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/15/rapports/cion_lois/l15b3392_rapport-fond.pdf",
+      "titre": "Rapport n° 3392 sur la proposition de loi instaurant le vote dès seize ans et l'inscription automatique sur les listes électorales",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/opendata/PIONANR5L17B2031.pdf",
+      "titre": "Proposition de loi visant à instaurer le droit de vote à seize ans aux élections municipales (n° 2031, XVIIe législature)",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.senat.fr/seances/s202112/s20211209/s20211209015.html",
+      "titre": "Séance du 9 décembre 2021 (compte rendu intégral, Sénat)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://youth.europa.eu/get-involved/democratic-participation/what-age-should-one-be-able-vote-elections_fr",
+      "titre": "À quel âge devrait-on pouvoir voter aux élections ? (Portail européen de la jeunesse)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "valide"
+   }
   },
   {
    "id": "INS-007",
@@ -185,7 +353,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Les bulletins blancs entreraient dans le total servant à calculer les pourcentages. Les scores des candidats baisseraient mécaniquement et les seuils (5 % aux européennes, 10 % pour se maintenir aux régionales et municipales, remboursement des frais de campagne) deviendraient plus durs à atteindre. Au second tour de 2022, environ 6 % des votants ont voté blanc ; avec blancs et nuls, le vainqueur aurait eu 54,7 % au lieu de 58,5 %. La présidentielle exigerait une révision constitutionnelle.",
+    "pour": "Ses partisans estiment que voter blanc est un choix distinct de l'abstention et du vote nul : l'électeur se déplace mais rejette l'offre proposée. Le compter donnerait enfin un poids réel à ce désaccord.",
+    "contre": "Ses opposants soulignent qu'à la présidentielle, il pourrait arriver qu'aucun candidat n'obtienne la majorité absolue exigée au second tour. Ils craignent aussi des seuils plus difficiles à franchir, compliquant l'attribution des sièges.",
+    "sources": [
+     {
+      "url": "https://questions.assemblee-nationale.fr/dyn/15/questions/QANR5L15QE1516.pdf",
+      "titre": "Question écrite n° 1516 – Reconnaissance du vote blanc (réponse du ministère de l'Intérieur, JO du 5 décembre 2017)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.publicsenat.fr/article/politique/presidentielle-quel-serait-le-score-du-second-tour-en-prenant-en-compte-les-votes",
+      "titre": "Présidentielle : quel serait le score du second tour en prenant en compte les votes blancs et nuls ?",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://conferenceconsensuslogement.senat.fr/leg/ppl22-301.pdf",
+      "titre": "Proposition de loi visant à renforcer la confiance démocratique par la reconnaissance du vote blanc et l'instauration du vote obligatoire (Sénat, n° 301, 2022-2023)",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "valide"
+   }
   },
   {
    "id": "INS-008",
@@ -206,7 +400,39 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Le gouvernement ne pourrait plus nommer un procureur contre l'avis du Conseil supérieur de la magistrature (CSM), comme c'est déjà le cas pour les juges. La réforme de 2016, dont le CSM a de nouveau demandé l'adoption en mars 2026, prévoyait aussi que le CSM décide lui-même des sanctions disciplinaires contre les procureurs. Le ministre de la Justice continuerait à proposer les candidats et à fixer la politique pénale par des instructions générales.",
+    "pour": "Pour ses partisans, la réforme mettrait les procureurs, qui dirigent l'essentiel des enquêtes, à l'abri des pressions politiques et répondrait aux critiques européennes sur leur indépendance. Elle graverait aussi une pratique déjà suivie.",
+    "contre": "Ses opposants estiment que le lien entre le gouvernement, responsable devant les électeurs, et les procureurs, qui appliquent sa politique pénale, ne doit pas être rompu. Pour eux, l'exécutif doit rester maître du choix des candidats.",
+    "sources": [
+     {
+      "url": "https://www.conseil-superieur-magistrature.fr/sites/default/files/pdf/Communiqu%C3%A9%20CSM%2027%20mars%202026.pdf",
+      "titre": "Unité du corps judiciaire français et réforme statutaire du parquet (communiqué du CSM, 27 mars 2026)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.justice.gouv.fr/node/3232",
+      "titre": "[Archives] La réforme du Conseil supérieur de la magistrature",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://transparency-france.org/wp-content/uploads/2024/02/Note-de-position_Revision-Constitutionnelle_Independance-justice_Transparency-France_220224.pdf",
+      "titre": "Révision constitutionnelle : une occasion de renforcer enfin l'indépendance des procureurs (Transparency International France, février 2024)",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.publicsenat.fr/actualites/politique/l-independance-du-parquet-relancee-par-la-reforme-de-la-justice-134166",
+      "titre": "L'indépendance du parquet relancée par la réforme de la Justice",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "valide"
+   }
   },
   {
    "id": "INS-009",
@@ -236,7 +462,45 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Un nouvel article de la Constitution permettrait à la Collectivité de Corse, si une loi d'application l'y autorise, d'adapter les lois nationales et de fixer ses propres règles dans ses compétences. Nationalité, justice, droit pénal, défense, sécurité, monnaie et droit électoral resteraient exclus. Les électeurs inscrits en Corse seraient consultés sur le statut. Restent un vote identique du Sénat, puis un référendum ou un vote du Congrès aux trois cinquièmes.",
+    "pour": "Ses partisans estiment que l'insularité et le relief de la Corse justifient des règles adaptées que l'État tarde à accorder : sur 72 demandes d'adaptation en quinze ans, seules 13 ont abouti, selon un rapport sénatorial.",
+    "contre": "Ses opposants y voient une atteinte à l'unité de la République et à l'égalité devant la loi. Ils jugent le contrôle prévu insuffisant pour un pouvoir de faire la loi et craignent un précédent pour d'autres régions.",
+    "sources": [
+     {
+      "url": "https://www.senat.fr/leg/pjl25-782.html",
+      "titre": "Une Corse autonome au sein de la République (PJLC) - Texte déposé - Sénat",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://conseil-etat.fr/avis-consultatifs/derniers-avis-rendus/au-gouvernement/avis-relatif-au-projet-de-loi-constitutionnelle-pour-une-corse-autonome-au-sein-de-la-republique",
+      "titre": "Avis relatif au projet de loi constitutionnelle pour une Corse autonome au sein de la République",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.maire-info.com/corse/autonomie-de-la-corse-le-projet-de-loi-adopte-en-premiere-lecture-mais-les-incertitudes-demeurent-sur-son-avenir-article-30919",
+      "titre": "Autonomie de la Corse : le projet de loi adopté en première lecture, mais les incertitudes demeurent sur son avenir",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.publicsenat.fr/actualites/politique/autonomie-de-la-corse-la-reforme-constitutionnelle-va-t-elle-sechouer-au-senat",
+      "titre": "Autonomie de la Corse : la réforme constitutionnelle va-t-elle s'échouer au Sénat ?",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2697/CION_LOIS/CL40",
+      "titre": "Amendement n° CL40 au projet de loi constitutionnelle pour une Corse autonome au sein de la République (n° 2697)",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "valide"
+   }
   },
   {
    "id": "INS-010",
@@ -244,7 +508,7 @@
    "axe": "institutions",
    "sens": 1,
    "enonce": "Toute personne condamnée pour corruption ou atteinte à la probité doit être interdite de candidature aux élections municipales.",
-   "precision": "Aujourd'hui, l'inéligibilité est une peine prononcée par le juge, au cas par cas.",
+   "precision": "Aujourd'hui, l'inéligibilité est une peine prononcée par le juge. Pour les atteintes à la probité, elle est en principe obligatoire depuis 2017, mais le juge peut l'écarter par une décision spécialement motivée.",
    "origine": {
     "description": "Proposition de loi n° 1934 du 14 octobre 2025 (limitée aux élections municipales)",
     "source": {
@@ -270,8 +534,38 @@
     {
      "date": "2026-10-03",
      "ancien_enonce": "Toute personne condamnée pour corruption ou atteinte à la probité doit être interdite de candidature aux élections."
+    },
+    {
+     "date": "2026-10-12",
+     "note": "Précision complétée : l'inéligibilité est en principe obligatoire pour les atteintes à la probité depuis 2017 (art. 131-26-2 du code pénal), le juge pouvant l'écarter par décision motivée. L'ancienne précision parlait d'une peine prononcée « au cas par cas »."
     }
-   ]
+   ],
+   "impact": {
+    "changement": "La mesure rendrait automatique l'interdiction de se présenter aux municipales pour toute personne condamnée pour corruption ou atteinte à la probité, sans que le juge puisse l'écarter. Son application supposerait de vérifier le casier des candidats : aux municipales de 2020, il n'a été demandé que pour 6 % des quelque 900 000 candidatures.",
+    "pour": "Pour ses défenseurs, un élu local gère de l'argent public et doit être irréprochable ; une règle automatique, identique pour tous, renforcerait la confiance des électeurs et éviterait des décisions variables d'un tribunal à l'autre.",
+    "contre": "Ses opposants rappellent que la Constitution impose d'adapter chaque peine à la personne et aux faits : une interdiction automatique risquerait d'être censurée et frapperait de la même façon une faute mineure et une corruption grave.",
+    "sources": [
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/15/textes/l15b0788_avis-conseil-etat",
+      "titre": "Avis du Conseil d'État sur la proposition de loi visant à renforcer l'intégrité des mandats électifs et de la représentation nationale (n° 788, séance du 14 février 2019)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://acteurspublics.fr/articles/moralisation-les-deputes-rejettent-le-casier-judiciaire-vierge-pour-les-elus/",
+      "titre": "Moralisation : les députés rejettent le casier judiciaire vierge pour les élus",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.senat.fr/lessentiel/ppl24-884.pdf",
+      "titre": "Proposition de loi visant à créer un fichier national des personnes inéligibles – L'essentiel (Sénat, n° 884, 2024-2025)",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "valide"
+   }
   },
   {
    "id": "INS-011",
@@ -301,7 +595,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Le président serait élu pour sept ans au lieu de cinq, sans pouvoir se représenter, ce qui suppose de modifier l'article 6 de la Constitution. Le septennat a existé de 1873 jusqu'à la réforme de 2000, adoptée par référendum. Les élections présidentielle et législatives ne coïncideraient plus : selon la commission des lois du Sénat (2014), cela ferait réapparaître la cohabitation, quand le président et la majorité des députés sont de camps opposés.",
+    "pour": "Ses partisans estiment qu'un président qui ne brigue pas de second mandat peut se consacrer au long terme et jouer un rôle d'arbitre au-dessus des partis, plutôt que de préparer sa réélection.",
+    "contre": "Ses opposants relèvent qu'un président non rééligible ne rend plus de comptes aux électeurs en fin de mandat. Ils jugent aussi sept ans trop longs face à un temps politique qui s'accélère.",
+    "sources": [
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b1781_proposition-loi.pdf",
+      "titre": "Proposition de loi constitutionnelle tendant à abroger la loi constitutionnelle n° 2000-964 du 2 octobre 2000 relative à la durée du mandat du Président de la République et à instaurer un septennat non renouvelable (n° 1781)",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.senat.fr/rap/l14-092/l14-0921.pdf",
+      "titre": "Rapport n° 92 (2014-2015) fait au nom de la commission des lois sur la proposition de loi constitutionnelle visant à rétablir à sept ans la durée du mandat du Président de la République",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://conferenceconsensuslogement.senat.fr/leg/ppl15-417.pdf",
+      "titre": "Proposition de loi constitutionnelle visant à rétablir à sept ans la durée du mandat du Président de la République et à le rendre non renouvelable (Sénat, n° 417, 2015-2016)",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "valide"
+   }
   },
   {
    "id": "INS-012",
@@ -322,7 +642,39 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Cela représenterait 227 députés et 148 sénateurs de moins, soit une baisse d'environ 40 % (de 925 à 550 parlementaires). Chaque circonscription serait plus vaste et compterait davantage d'habitants. Le nombre exact est fixé par une loi d'application, qui devrait être votée dans les mêmes termes par le Sénat. En 2018 puis en 2019, deux projets du gouvernement prévoyaient déjà des baisses moins fortes (404 puis 433 députés).",
+    "pour": "Ses partisans estiment que la France compte trop d'élus et que les parlementaires doivent donner l'exemple lorsque des efforts sont demandés ; les économies réalisées pourraient financer l'évaluation des politiques publiques.",
+    "contre": "Ses opposants craignent que des circonscriptions bien plus grandes éloignent les élus des habitants, notamment dans les départements peu peuplés, et qu'un nombre réduit de parlementaires ne suffise plus à la charge de travail.",
+    "sources": [
+     {
+      "url": "https://www.conseil-etat.fr/site/avis-consultatifs/derniers-avis-rendus/au-gouvernement/projet-de-loi-organique-et-projet-de-loi-pour-une-democratie-plus-representative-responsable-et-efficace",
+      "titre": "Projet de loi organique et projet de loi pour une démocratie plus représentative, responsable et efficace",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.info.gouv.fr/conseil-des-ministres/compte-rendu-du-conseil-des-ministres-du-28-08-2019",
+      "titre": "Compte rendu du Conseil des ministres du 28 août 2019",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.publicsenat.fr/actualites/politique/reduction-du-nombre-de-parlementaires-l-heure-des-interrogations-et-des-doutes",
+      "titre": "Réduction du nombre de parlementaires : l'heure des interrogations et des doutes chez LREM",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.ifrap.org/etat-et-collectivites/oui-la-reduction-du-nombre-de-parlementaires",
+      "titre": "Oui à la réduction du nombre de parlementaires !",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "valide"
+   }
   },
   {
    "id": "INS-013",
@@ -352,7 +704,39 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Aujourd'hui, un député ou un sénateur peut rester simple conseiller municipal, mais pas maire ni adjoint au maire. La mesure lèverait cette interdiction pour les maires des communes de moins de 10 000 habitants, soit environ 97 % des communes françaises. Un texte allant dans ce sens a été adopté par le Sénat puis rejeté par l'Assemblée nationale en 2021 ; un autre a été déposé à l'Assemblée en janvier 2025.",
+    "pour": "Ses partisans estiment que diriger une commune ancre le parlementaire dans la réalité du terrain et des services publics locaux, et qu'il en tire une connaissance concrète utile pour écrire la loi.",
+    "contre": "Ses opposants estiment que diriger une commune, même petite, demande un plein temps, et que le non-cumul a permis des élus nationaux plus disponibles et un renouvellement du personnel politique.",
+    "sources": [
+     {
+      "url": "https://www.amf.asso.fr/documents-non-cumul-mandats-land8217amf-rappelle-les-regles/24545",
+      "titre": "Non-cumul des mandats : l'AMF rappelle les règles",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.banquedesterritoires.fr/lassemblee-nationale-dit-non-au-retour-du-depute-maire-mais-le-debat-reste-ouvert",
+      "titre": "L'Assemblée nationale dit non au retour du député-maire mais le débat reste ouvert",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://lcp.fr/actualites/l-assemblee-nationale-refuse-de-modifier-la-loi-sur-le-non-cumul-des-mandats-90191",
+      "titre": "L'Assemblée nationale refuse de modifier la loi sur le non-cumul des mandats",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/retablir_cumul_mandats",
+      "titre": "Rétablir un cumul des mandats pour les députés et sénateurs exerçant une fonction de maire dans les communes de 10 000 habitants ou moins ou une fonction d'adjoint au maire",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "valide"
+   }
   },
   {
    "id": "INS-014",
@@ -378,7 +762,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Le CESE est inscrit dans la Constitution : le supprimer exigerait donc une révision de la Constitution. Il compte 175 membres depuis la réforme de 2021, contre 233 auparavant. Sa dotation de l'État est passée d'environ 45 millions d'euros jusqu'en 2024 à environ 34 millions en 2025. Il organise aussi des conventions citoyennes, comme celles sur le climat et sur la fin de vie.",
+    "pour": "Ses partisans estiment que ses avis, le plus souvent rédigés à sa propre initiative, sont peu utilisés par le gouvernement et le Parlement, et que son coût n'est pas justifié par son utilité.",
+    "contre": "Ses opposants estiment qu'il est le seul lieu où syndicats, entreprises et associations délibèrent ensemble, qu'il s'est déjà réformé et a réduit ses dépenses, et qu'il porte les conventions citoyennes.",
+    "sources": [
+     {
+      "url": "https://www.publicsenat.fr/actualites/institutions/le-senat-vote-une-baisse-de-15-du-budget-du-cese",
+      "titre": "Le Sénat vote une baisse de 15% du budget du Cese",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.ifrap.org/fonction-publique-et-administration/le-cese-sur-la-sellette",
+      "titre": "Le CESE sur la sellette",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.lecese.fr/sites/default/files/communiques/CP%20CESE_R%C3%A9action%20de%20CESE%20%C3%A0%20la%20publication%20du%20rapport%20de%20la%20cour%20des%20comptes_Juillet%202025.pdf",
+      "titre": "Réaction du CESE à la publication du rapport de la Cour des Comptes",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "valide"
+   }
   },
   {
    "id": "INS-015",
@@ -408,7 +818,33 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "L'État finance l'audiovisuel public avec une part de la TVA, à hauteur d'environ 3,9 milliards d'euros prévus pour 2026. France Télévisions en reçoit près des deux tiers, Radio France 17 %. Privatiser signifierait vendre ces entreprises à des acteurs privés, ce qui exigerait une loi, comme pour TF1 en 1987.",
+    "pour": "Ses partisans estiment que l'État n'a pas à posséder de chaînes et de radios, que cela libérerait près de 4 milliards d'euros par an et que l'audiovisuel public manque de neutralité politique.",
+    "contre": "Ses opposants estiment qu'un service public garantit une information indépendante des intérêts commerciaux, des programmes régionaux et culturels peu rentables, et le financement d'une grande partie de la création française.",
+    "sources": [
+     {
+      "url": "https://www.senat.fr/rap/l25-139-318/l25-139-318-syn.pdf",
+      "titre": "L'essentiel sur… le projet de loi de finances pour 2026 – Médias, livres et industries culturelles ; Avances à l'audiovisuel public",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://lcp.fr/actualites/audiovisuel-public-la-perennisation-du-mecanisme-de-financement-actuel-definitivement",
+      "titre": "Audiovisuel public : la pérennisation du mécanisme de financement actuel définitivement adoptée par l'Assemblée",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://fr.themedialeader.com/privatisation-de-laudiovisuel-public-les-difficultes-et-consequences/",
+      "titre": "Privatisation de l'audiovisuel public, les difficultés et conséquences",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     }
+    ],
+    "statut": "valide"
+   }
   },
   {
    "id": "INS-016",
@@ -438,7 +874,39 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Il faudrait ajouter l'immigration aux sujets que l'article 11 de la Constitution permet de soumettre à référendum. Une telle révision doit être votée dans les mêmes termes par l'Assemblée nationale et le Sénat, puis approuvée par référendum ou par les trois cinquièmes du Parlement réuni en Congrès. En avril 2024, le Conseil constitutionnel a écarté une demande de référendum d'initiative partagée portant sur des mesures liées à l'immigration.",
+    "pour": "Ses partisans estiment que l'immigration est un sujet majeur sur lequel les citoyens doivent pouvoir trancher directement, plutôt que de laisser la décision aux seuls élus et aux juges.",
+    "contre": "Ses opposants estiment qu'un référendum sur ce sujet pourrait écarter les droits fondamentaux et les engagements européens de la France, une loi adoptée par référendum échappant au contrôle du Conseil constitutionnel.",
+    "sources": [
+     {
+      "url": "https://www.publicsenat.fr/actualites/politique/immigration-pourquoi-la-proposition-des-lr-de-modifier-la-constitution-a-peu-de-chance-daboutir",
+      "titre": "Immigration : pourquoi la proposition des LR de modifier la Constitution a peu de chance d'aboutir",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.publicsenat.fr/actualites/politique/un-referendum-dinitiative-partagee-rip-sur-limmigration-pourquoi-la-proposition-des-lr-a-peu-de-chance-daboutir",
+      "titre": "Un référendum d'initiative partagée (RIP) sur l'immigration : pourquoi la proposition des LR a peu de chances d'aboutir",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.leclubdesjuristes.com/en-bref/rip-sur-limmigration-les-republicains-voient-leur-demande-rejetee-par-le-conseil-constitutitonnel-5662/",
+      "titre": "RIP sur l'immigration : Les Républicains voient leur demande rejetée par le Conseil constitutitonnel",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.senat.fr/rap/l25-091/l25-0911.pdf",
+      "titre": "Rapport n° 91 (2025-2026) sur la proposition de loi constitutionnelle visant à protéger la Constitution, en limitant sa révision à la voie de l'article 89",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "valide"
+   }
   },
   {
    "id": "INS-017",
@@ -468,7 +936,39 @@
     }
    ],
    "scrutins": [],
-   "historique": []
+   "historique": [],
+   "impact": {
+    "changement": "Avec la mesure, l'appel suspendrait toujours la peine d'inéligibilité jusqu'au nouveau jugement. Aujourd'hui, un élu local condamné avec exécution immédiate perd ses mandats sans attendre l'appel, alors qu'un parlementaire garde son mandat en cours. Le Conseil constitutionnel a jugé ce mécanisme conforme à la Constitution le 28 mars 2025. Un texte pour l'interdire a été vidé de son contenu par l'Assemblée nationale en juin 2025, puis retiré.",
+    "pour": "Ses partisans estiment qu'appliquer une inéligibilité avant l'appel porte atteinte à la présomption d'innocence et peut priver les électeurs d'un candidat de façon irréparable si la condamnation est ensuite annulée.",
+    "contre": "Ses opposants estiment que l'exécution immédiate garantit l'efficacité de la peine et l'exemplarité des élus, évite la récidive pendant l'appel, et qu'un élu ne doit pas bénéficier d'un régime plus favorable.",
+    "sources": [
+     {
+      "url": "https://www.seban-associes.avocat.fr/la-decision-du-conseil-constitutionnel-sur-les-consequences-de-lexecution-provisoire-de-la-peine-complementaire-dineligibilite-pour-les-elus-municipaux/",
+      "titre": "La décision du Conseil constitutionnel sur les conséquences de l'exécution provisoire de la peine complémentaire d'inéligibilité pour les élus municipaux",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://lcp.fr/actualites/execution-provisoire-des-peines-d-ineligibilite-eric-ciotti-retire-le-texte-vide-de-sa",
+      "titre": "Exécution provisoire des peines d'inéligibilité : Éric Ciotti retire le texte vidé de sa substance",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.leclubdesjuristes.com/justice/lexecution-provisoire-et-sa-justification-critique-et-clinique-10128/",
+      "titre": "L'exécution provisoire et sa justification : « critique et clinique »",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.senat.fr/leg/ppl24-538.html",
+      "titre": "Délits liés à l'exercice d'un mandat électif local (PPL) - Texte déposé - Sénat",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     }
+    ],
+    "statut": "valide"
+   }
   },
   {
    "id": "INS-018",
@@ -499,7 +999,45 @@
      "date": "2026-10-03",
      "note": "créée à côté de INS-007 (vote blanc) : deux mesures distinctes"
     }
-   ]
+   ],
+   "impact": {
+    "changement": "Aujourd'hui, voter est un droit mais pas une obligation, sauf pour les grands électeurs aux sénatoriales, passibles de 100 euros d'amende. La mesure sanctionnerait l'abstention sans motif valable : les textes déposés ces dernières années prévoyaient des amendes de 11 à 150 euros au plus. En Belgique et en Australie, où le vote est obligatoire, la participation avoisine 90 %.",
+    "pour": "Ses partisans estiment que le vote obligatoire renforcerait la légitimité des élus, obligerait les candidats à s'adresser à tous les électeurs et ferait du vote un devoir civique, le vote blanc restant possible.",
+    "contre": "Ses opposants estiment que s'abstenir est une liberté et parfois un message politique, que contraindre ne règle pas les causes de l'abstention et que l'amende pèserait surtout sur les plus modestes.",
+    "sources": [
+     {
+      "url": "https://www.interieur.gouv.fr/actualites/actualites-du-ministere/5-choses-que-vous-ignorez-peut-etre-sur-elections-senatoriales",
+      "titre": "5 choses que vous ignorez peut-être sur les élections sénatoriales",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://www.assemblee-nationale.fr/dyn/16/rapports/cion_lois/l16b1291_rapport-fond.pdf",
+      "titre": "Rapport n° 1291 sur la proposition de loi visant à renforcer l'engagement et la participation des citoyens à la vie démocratique",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     },
+     {
+      "url": "https://conferenceconsensuslogement.senat.fr/leg/ppl20-279.pdf",
+      "titre": "Proposition de loi visant à rendre obligatoire la participation au vote et pour la reconnaissance du vote blanc",
+      "date_consultation": "2026-10-12",
+      "nature": "primaire"
+     },
+     {
+      "url": "https://www.juritravail.com/code/code-penal/article/131-13",
+      "titre": "Article 131-13 du Code pénal",
+      "date_consultation": "2026-10-12",
+      "nature": "secondaire"
+     },
+     {
+      "url": "https://www.senat.fr/lc/lc301/lc301.html",
+      "titre": "Le vote obligatoire - Étude de législation comparée n° 301",
+      "date_consultation": "2026-10-12",
+      "nature": "institutionnelle"
+     }
+    ],
+    "statut": "valide"
+   }
   }
  ]
 }

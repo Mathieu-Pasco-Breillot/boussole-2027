@@ -43,6 +43,9 @@ export function construirePaquet() {
       statut: q.statut,
       enonce: q.enonce,
       precision: q.precision ?? null,
+      ...(q.impact
+        ? { impact: { changement: q.impact.changement, pour: q.impact.pour, contre: q.impact.contre, sources: q.impact.sources.map((s) => ({ titre: s.titre, url: s.url })) } }
+        : {}),
     }));
 
   const candidats = ds.candidats.candidats.map((c) => ({

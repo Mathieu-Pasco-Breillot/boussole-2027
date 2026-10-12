@@ -5,6 +5,7 @@ import type { Valeur } from '../../core/score/types.ts';
 import type { PartieDuel } from '../duel.ts';
 import { affiniteDePartie, enRevelation, positionSur } from '../duel.ts';
 import { questionCourante, situation } from '../jeu.ts';
+import { Depliants } from './Depliants.tsx';
 import { ECARTS, ECHELLE, libelleTheme, libelleValeur, NATURES } from '../libelles.ts';
 import { paquet } from '../paquet.ts';
 import { apresSource } from '../badges.ts';
@@ -33,10 +34,8 @@ export function QuizDuel({ partie, onRepondre, onSuivante, onModifier, onQuitter
   const saisie = partie.reponses[question.id];
   const revelation = enRevelation(partie);
   const [important, setImportant] = useState(saisie?.tresImportant ?? false);
-  const [precisionOuverte, setPrecisionOuverte] = useState(false);
   useEffect(() => {
     setImportant(saisie?.tresImportant ?? false);
-    setPrecisionOuverte(false);
   }, [question.id]); // eslint-disable-line react-hooks/exhaustive-deps
   // L'ancienne carte reste un instant à l'écran pendant sa sortie : ses boutons ne doivent plus rien enregistrer.
   const courante = useRef(question.id);
@@ -90,15 +89,7 @@ export function QuizDuel({ partie, onRepondre, onSuivante, onModifier, onQuitter
           </p>
           <p className="mt-3 text-sm text-sourdine">Êtes-vous d'accord ?</p>
           <h1 className="mt-1 font-serif text-3xl leading-snug font-semibold">{question.enonce}</h1>
-
-          {question.precision && (
-            <div className="mt-3">
-              <button type="button" aria-expanded={precisionOuverte} onClick={() => setPrecisionOuverte((o) => !o)} className="text-sm text-sourdine underline">
-                Précision {precisionOuverte ? '▴' : '▾'}
-              </button>
-              {precisionOuverte && <p className="mt-2 rounded-xl bg-nuit-clair p-3 text-sm leading-relaxed">{question.precision}</p>}
-            </div>
-          )}
+          <Depliants question={question} />
 
           {!revelation ? (
             <>

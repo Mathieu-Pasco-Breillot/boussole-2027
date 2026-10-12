@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import type { Valeur } from '../../core/score/types.ts';
 import type { Partie } from '../jeu.ts';
 import { questionCourante, situation } from '../jeu.ts';
+import { Depliants } from './Depliants.tsx';
 import { ECHELLE, libelleTheme } from '../libelles.ts';
 
 interface Props {
@@ -26,10 +27,8 @@ export function Quiz({ partie, onRepondre, onReculer, onQuitter }: Props) {
   const s = situation(partie);
   const deja = partie.reponses[question.id];
   const [important, setImportant] = useState(deja?.tresImportant ?? false);
-  const [precisionOuverte, setPrecisionOuverte] = useState(false);
   useEffect(() => {
     setImportant(deja?.tresImportant ?? false);
-    setPrecisionOuverte(false);
   }, [question.id]); // eslint-disable-line react-hooks/exhaustive-deps
   // L'ancienne carte reste un instant à l'écran pendant sa sortie : ses boutons ne doivent plus rien enregistrer.
   const courante = useRef(question.id);
@@ -94,20 +93,7 @@ export function Quiz({ partie, onRepondre, onReculer, onQuitter }: Props) {
           </p>
           <p className="mt-3 text-sm text-sourdine">Êtes-vous d'accord ?</p>
           <h1 className="mt-1 font-serif text-3xl leading-snug font-semibold">{question.enonce}</h1>
-
-          {question.precision && (
-            <div className="mt-3">
-              <button
-                type="button"
-                aria-expanded={precisionOuverte}
-                onClick={() => setPrecisionOuverte((o) => !o)}
-                className="text-sm text-sourdine underline"
-              >
-                Précision {precisionOuverte ? '▴' : '▾'}
-              </button>
-              {precisionOuverte && <p className="mt-2 rounded-xl bg-nuit-clair p-3 text-sm leading-relaxed">{question.precision}</p>}
-            </div>
-          )}
+          <Depliants question={question} />
 
           <div className="mt-6 flex flex-col gap-2">
             {echelle.map((e) => (

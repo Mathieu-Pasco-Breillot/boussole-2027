@@ -337,7 +337,8 @@ export namespace Journal {
         | 'recodage'
         | 'arbitrage'
         | 'changement_critere'
-        | 'recalcul';
+        | 'recalcul'
+        | 'ajout_impact';
       /**
        * @minItems 1
        */
@@ -498,6 +499,24 @@ export namespace Questions {
         date_consultation: DateIso;
         nature: 'primaire' | 'secondaire' | 'institutionnelle' | 'source syndicale';
       };
+    };
+    /**
+     * Encart « Impact » (pilote du 12 octobre 2026) : ce que la mesure changerait et pourquoi elle est débattue. Arguments toujours attribués, aucun nom de candidat ni de parti.
+     */
+    impact?: {
+      changement: string;
+      pour: string;
+      contre: string;
+      statut: 'pilote' | 'valide';
+      /**
+       * @minItems 1
+       */
+      sources: {
+        url: string;
+        titre: string;
+        date_consultation: DateIso;
+        nature: 'primaire' | 'secondaire' | 'institutionnelle' | 'source syndicale';
+      }[];
     };
     statut: 'active' | 'suspendue' | 'archivee';
     alertes_neutralite: {
