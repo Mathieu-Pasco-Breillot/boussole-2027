@@ -5,6 +5,7 @@ import type { Partie } from '../jeu.ts';
 import { questionCourante, situation } from '../jeu.ts';
 import { Depliants } from './Depliants.tsx';
 import { ECHELLE, libelleTheme } from '../libelles.ts';
+import { Texte } from '../glossaire/Texte.tsx';
 
 interface Props {
   partie: Partie;
@@ -92,7 +93,9 @@ export function Quiz({ partie, onRepondre, onReculer, onQuitter }: Props) {
             {s.dansChapitre + 1} sur {s.taille}
           </p>
           <p className="mt-3 text-sm text-sourdine">Êtes-vous d'accord ?</p>
-          <h1 className="mt-1 font-serif text-3xl leading-snug font-semibold">{question.enonce}</h1>
+          <h1 className="mt-1 font-serif text-3xl leading-snug font-semibold">
+            <Texte>{question.enonce}</Texte>
+          </h1>
           <Depliants question={question} />
 
           <div className="mt-6 flex flex-col gap-2">

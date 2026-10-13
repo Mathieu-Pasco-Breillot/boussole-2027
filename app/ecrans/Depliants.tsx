@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import type { QuestionPaquet } from '../paquet.ts';
+import { Texte } from '../glossaire/Texte.tsx';
 
 /**
  * Les deux encarts dépliables sous l'énoncé : « Précision » (état actuel) et « Impact » (ce que la mesure
@@ -28,24 +29,28 @@ export function Depliants({ question }: { question: QuestionPaquet }) {
       </div>
 
       {ouvert === 'precision' && question.precision && (
-        <p className="mt-1 rounded-xl bg-nuit-clair p-3 text-sm leading-relaxed">{question.precision}</p>
+        <p className="mt-1 rounded-xl bg-nuit-clair p-3 text-sm leading-relaxed">
+          <Texte>{question.precision}</Texte>
+        </p>
       )}
 
       {ouvert === 'impact' && question.impact && (
         <div className="mt-1 space-y-3 rounded-xl bg-nuit-clair p-3 text-sm leading-relaxed">
           <section>
             <h2 className="font-semibold">Ce que ça changerait</h2>
-            <p>{question.impact.changement}</p>
+            <p>
+              <Texte>{question.impact.changement}</Texte>
+            </p>
           </section>
           <section>
             <h2 className="font-semibold">Ce qui fait débat</h2>
             <p className="mt-1">
               <span className="text-sourdine">Pour : </span>
-              {question.impact.pour}
+              <Texte>{question.impact.pour}</Texte>
             </p>
             <p className="mt-1">
               <span className="text-sourdine">Contre : </span>
-              {question.impact.contre}
+              <Texte>{question.impact.contre}</Texte>
             </p>
           </section>
           <details>

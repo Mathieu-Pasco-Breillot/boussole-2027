@@ -5,6 +5,7 @@ import { paquet } from '../paquet.ts';
 import { Markdown } from './Markdown.tsx';
 import { chargerPages } from './donnees.ts';
 import type { Pages } from './donnees.ts';
+import { Texte } from '../glossaire/Texte.tsx';
 
 interface Props {
   onRetour: () => void;
@@ -112,7 +113,9 @@ export function Methode({ onRetour, graine, journal }: Props) {
             {[...pages.journal].reverse().map((e, i) => (
               <li key={i} className="rounded-xl bg-nuit-clair p-3 text-sm">
                 <p className="font-semibold">{e.date} · {e.type.replace(/_/g, ' ')}</p>
-                <p className="mt-1">{e.description}</p>
+                <p className="mt-1">
+                  <Texte>{e.description}</Texte>
+                </p>
                 <p className="mt-1 text-sourdine">{e.objets.join(', ')}</p>
               </li>
             ))}
