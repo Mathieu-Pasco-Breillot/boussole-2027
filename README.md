@@ -75,10 +75,15 @@ de commit ([conventional commits](#messages-de-commit)) :
 1. chaque push sur `develop` met à jour une **PR de release** qui propose les nouveaux numéros et les notes de version ;
 2. fusionner cette PR crée les tags et les [GitHub Releases](https://github.com/Mathieu-Pasco-Breillot/choose-your-candidate-2027/releases),
    puis avance la branche `main` sur le commit publié ;
-3. Railway déploie `main` en **production** (https://mon-isoloir.up.railway.app) et `develop` en **préproduction**,
-   signalée comme telle sur le site.
+3. Railway déploie :
+   - l'environnement `production` : service `prod`, branche `main`, https://mon-isoloir.up.railway.app ;
+   - l'environnement `preprod` : service `preprod`, branche `develop`, https://preprod-preprod-a4b2.up.railway.app,
+     signalé comme tel sur le site.
 
-L'image est construite avec le `Dockerfile` et servie par Caddy. Les tests de bout en bout tournent avec les mêmes
+Chaque PR ouvre un environnement éphémère `choose-your-candidate-2027-pr-<n°>` (PR Environments, créé depuis
+`preprod`), supprimé à la fermeture de la PR. Le déploiement attend le succès de la CI (« wait for CI »).
+
+L'image est construite avec le `Dockerfile` (imposé par `railway.json`) et servie par Caddy. Les tests de bout en bout tournent avec les mêmes
 en-têtes que le site en ligne, lus dans le `Caddyfile`. `main` ne reçoit jamais de commit direct.
 
 ### Messages de commit
