@@ -69,3 +69,30 @@ body {
   outline: 3px solid var(--color-or);
   outline-offset: 2px;
 }
+
+/*
+ * Glossaire (issue #7). Feuille du bas (< 1024 px) : <dialog> natif, collé en bas de l'écran, fond assombri.
+ * Le bouton « Glossaire » est fixe en bas à droite : sous 1024 px, une marge basse évite qu'il masque la fin d'une page.
+ */
+.feuille-glossaire {
+  margin: auto 0 0;
+  width: 100%;
+  max-width: 100%;
+  max-height: 85dvh;
+  overflow: hidden;
+  border: 0;
+  border-radius: 1rem 1rem 0 0;
+  padding: 0;
+  background: var(--color-nuit-clair);
+  color: var(--color-creme);
+}
+
+.feuille-glossaire::backdrop {
+  background: rgb(0 0 0 / 0.6);
+}
+
+@media (max-width: 1023.98px) {
+  body {
+    padding-bottom: 4.5rem;
+  }
+}
