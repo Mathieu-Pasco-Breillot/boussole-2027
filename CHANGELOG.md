@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.1.0](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/compare/application-v1.0.0...application-v1.1.0) (2026-10-13)
+
+
+### Nouveautés
+
+* enchaîner les propositions sans écran de fin de chapitre ([df332bc](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/commit/df332bc3fef17e96cf9a1ef7fcd35277845df450))
+* parler de thèmes plutôt que de chapitres dans l'interface ([4f6b17e](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/commit/4f6b17eefd68467b701808ccfc7631bb8f52b041))
+* refondre l'interface et ajouter une page d'accueil de présentation ([8e2ad06](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/commit/8e2ad06c299fd5da6437a68673e9ddf2721d3225))
+* retirer le choix des thèmes avant une partie ([7b65942](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/commit/7b659425d6a17579bcd40f97b52932f214bf5ecb))
+* **ui:** refondre l'interface selon le design V0 ([#14](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/issues/14)) ([2f659c8](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/commit/2f659c860e96c8c4935c99b986473432437c64d8)), closes [#13](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/issues/13)
+
 ## [1.0.0](https://github.com/Mathieu-Pasco-Breillot/choose-your-candidate-2027/compare/application-v0.1.0...application-v1.0.0) (2026-10-13)
 
 
