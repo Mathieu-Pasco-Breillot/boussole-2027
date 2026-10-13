@@ -1,17 +1,20 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test } from '@playwright/test';
 
-const AUTRES = ['Retraites', 'Fiscalité', 'Économie et dette', 'Santé', 'Éducation', 'Immigration', 'Sécurité', 'Défense', 'Union européenne', 'Écologie et énergie'];
-
 for (const theme of ['dark', 'light'] as const) {
   test(`encart Impact : ouverture, contenu, accessibilité (thème ${theme === 'dark' ? 'sombre' : 'clair'})`, async ({ page }, info) => {
     await page.emulateMedia({ colorScheme: theme });
     await page.goto('/');
     await page.getByRole('button', { name: /^Express ·/ }).click();
-    for (const t of AUTRES) await page.getByRole('radiogroup', { name: `Importance du thème ${t}` }).getByText('Écarter').click();
     await page.getByRole('button', { name: /^Lancer la partie/ }).click();
 
+    // Toutes les propositions n'ont pas encore d'encart Impact : on avance jusqu'à la première qui en a un.
     const impact = page.getByRole('button', { name: /^Impact/ });
+    for (let i = 0; i < 19 && (await impact.count()) === 0; i++) {
+      const avant = await page.getByRole('heading', { level: 1 }).first().innerText();
+      await page.getByRole('button', { name: "Plutôt d'accord" }).first().click();
+      await expect(page.getByRole('heading', { level: 1 }).first()).not.toHaveText(avant);
+    }
     await expect(impact).toHaveAttribute('aria-expanded', 'false');
     await impact.click();
     await expect(impact).toHaveAttribute('aria-expanded', 'true');

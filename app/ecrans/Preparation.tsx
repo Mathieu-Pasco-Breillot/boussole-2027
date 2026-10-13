@@ -5,33 +5,19 @@ import type { ModeJeu, Preparation as PreparationChoisie } from '../jeu.ts';
 import { paquet } from '../paquet.ts';
 import { lireVues } from '../stockage.ts';
 
-const stock: Record<string, number> = {};
-for (const q of paquet.questions) stock[q.theme] = (stock[q.theme] ?? 0) + 1;
-
 interface Props {
   mode: ModeJeu;
   onLancer: (p: PreparationChoisie) => void;
   onRetour: () => void;
 }
 
-const NIVEAUX: readonly { poids: PoidsTheme; libelle: string }[] = [
-  { poids: 0, libelle: 'Écarter' },
-  { poids: 1, libelle: 'Normal' },
-  { poids: 2, libelle: 'Important' },
-  { poids: 3, libelle: 'Prioritaire' },
-];
-
 const candidatsParNom = [...paquet.candidats].sort((a, b) => a.nom.localeCompare(b.nom, 'fr') || a.prenom.localeCompare(b.prenom, 'fr'));
 
 export function Preparation({ mode, onLancer, onRetour }: Props) {
-  const themes = Object.keys(THEMES);
-  const [poids, setPoids] = useState<Record<string, PoidsTheme>>(() => Object.fromEntries(themes.map((t) => [t, 1 as PoidsTheme])));
   const [affinites, setAffinites] = useState<string[]>([]);
-  const actifs = themes.filter((t) => poids[t] !== 0);
-  // Questions disponibles selon les poids (spécification § 6, ligne « Mode ») : un chapitre écarté retire ses questions.
   const [vues] = useState(() => new Set(lireVues().map((v) => v.id)));
-  const disponibles = actifs.reduce((n, t) => n + (stock[t] ?? 0), 0);
-  const nonVues = paquet.questions.filter((q) => actifs.includes(q.theme) && !vues.has(q.id)).length;
+  const disponibles = paquet.questions.length;
+  const nonVues = paquet.questions.filter((q) => !vues.has(q.id)).length;
   const prevues = Math.min(MODES[mode].questions, disponibles);
 
   const basculer = (id: string) =>
@@ -47,48 +33,13 @@ export function Preparation({ mode, onLancer, onRetour }: Props) {
           Mode {MODES[mode].nom} · {MODES[mode].questions} questions
         </p>
         <h1 className="titre-page mt-2">Préparation</h1>
-        <p className="mt-3 text-lg text-discret">Deux réglages facultatifs. Vous pouvez lancer la partie tel quel.</p>
-        <p className="carte mt-4 border-l-4 border-l-accent p-4 text-sm leading-relaxed" role="status" data-questions-disponibles={disponibles}>
-          Avec ces réglages : <strong>{disponibles} questions disponibles</strong>
-          {vues.size > 0 ? ` (dont ${nonVues} jamais vues sur cet appareil)` : ''}.{' '}
-          {prevues < MODES[mode].questions
-            ? `La partie comptera ${prevues} questions au lieu de ${MODES[mode].questions} : gardez plus de thèmes pour en avoir davantage.`
-            : `La partie comptera ${prevues} questions.`}
+        <p className="mt-3 text-lg text-discret">Un seul réglage, facultatif. Vous pouvez lancer la partie tel quel.</p>
+        <p className="carte mt-4 border-l-4 border-l-accent p-4 text-sm leading-relaxed" role="status">
+          <strong>{prevues} questions</strong> tirées au sort parmi {disponibles}
+          {vues.size > 0 ? ` (dont ${nonVues} jamais vues sur cet appareil)` : ''}, tous thèmes confondus. Les candidats ne sont pas
+          nommés pendant le quiz.
         </p>
       </header>
-
-      <section aria-labelledby="titre-poids">
-        <h2 id="titre-poids" className="font-titre text-2xl font-bold tracking-tight">
-          Ce qui compte pour vous
-        </h2>
-        <p className="mt-1 text-sm leading-relaxed text-discret">
-          Un thème « important » reçoit plus de questions et pèse plus dans le score ; « écarter » le retire de la partie
-          et du calcul. Les candidats ne sont pas nommés pendant le quiz.
-        </p>
-        <ul className="mt-4 grid gap-3 md:grid-cols-2">
-          {themes.map((t) => (
-            <li key={t} className="carte p-4">
-              <fieldset>
-                <legend className="font-titre text-lg font-bold">{THEMES[t]}</legend>
-                <div className="mt-2 grid grid-cols-4 gap-1" role="radiogroup" aria-label={`Importance du thème ${THEMES[t]}`}>
-                  {NIVEAUX.map((n) => (
-                    <label key={n.poids} className="segment">
-                      <input
-                        type="radio"
-                        className="sr-only"
-                        name={`poids-${t}`}
-                        checked={poids[t] === n.poids}
-                        onChange={() => setPoids((p) => ({ ...p, [t]: n.poids }))}
-                      />
-                      {n.libelle}
-                    </label>
-                  ))}
-                </div>
-              </fieldset>
-            </li>
-          ))}
-        </ul>
-      </section>
 
       <section aria-labelledby="titre-affinites">
         <h2 id="titre-affinites" className="font-titre text-2xl font-bold tracking-tight">
@@ -114,15 +65,15 @@ export function Preparation({ mode, onLancer, onRetour }: Props) {
       </section>
 
       <div data-barre-action className="barre-action">
+        {/* Tous les thèmes au même poids : pas de choix de thèmes, qui pourrait fausser le rapprochement (les candidats
+            ne sont pas codés sur le même nombre de questions dans chaque thème). */}
         <button
           type="button"
-          disabled={actifs.length === 0}
-          onClick={() => onLancer({ poids: Object.fromEntries(themes.map((t) => [t, poids[t]!])), affinites })}
+          onClick={() => onLancer({ poids: Object.fromEntries(Object.keys(THEMES).map((t) => [t, 1 as PoidsTheme])), affinites })}
           className="btn btn-primaire btn-grand w-full"
         >
-          Lancer la partie{actifs.length > 0 ? ` (${prevues} questions)` : ''}
+          Lancer la partie ({prevues} questions)
         </button>
-        {actifs.length === 0 && <p className="mt-2 text-sm text-discret">Gardez au moins un thème pour lancer la partie.</p>}
       </div>
     </main>
   );

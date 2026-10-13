@@ -79,7 +79,7 @@ export function Methode({ onRetour, graine, journal }: Props) {
             </p>
             <p>
               Les modes : {Object.values(MODES).map((m) => `${m.nom} (${m.questions} questions)`).join(', ')}. Les questions
-              sont tirées thème par thème selon vos poids, avec des questions « d'ancrage » choisies pour distinguer les
+              sont tirées dans tous les thèmes, à poids égal, avec des questions « d'ancrage » choisies pour distinguer les
               candidats, et en évitant celles que vous avez déjà vues.
             </p>
             <div className="carte p-5">

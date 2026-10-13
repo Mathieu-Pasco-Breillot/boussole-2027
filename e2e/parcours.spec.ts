@@ -98,20 +98,13 @@ test("le quiz s'enchaîne sans écran intermédiaire : le thème est rappelé au
   await expect(page.locator('main')).not.toContainText(/Chapitre/);
 });
 
-test('préparation : un chapitre écarté (poids 0) n’est pas posé, et le nombre de questions annoncé est tenu', async ({ page }) => {
+test('préparation : aucun choix de thèmes, seulement les affinités facultatives', async ({ page }) => {
   await page.goto('/');
   await page.getByRole('button', { name: /^Campagne ·/ }).click();
-  await page.getByRole('radiogroup', { name: 'Importance du thème Retraites' }).getByText('Écarter').click();
-  // Ne garder qu'un seul autre chapitre : moins de 60 questions disponibles.
-  for (const t of ['Fiscalité', 'Économie et dette', 'Santé', 'Éducation', 'Immigration', 'Sécurité', 'Défense', 'Union européenne', 'Institutions']) {
-    await page.getByRole('radiogroup', { name: `Importance du thème ${t}` }).getByText('Écarter').click();
-  }
-  const statut = page.locator('[data-questions-disponibles]');
-  const dispo = Number(await statut.getAttribute('data-questions-disponibles'));
-  expect(dispo).toBeGreaterThan(0);
-  expect(dispo).toBeLessThan(60);
-  await expect(statut).toContainText(`La partie comptera ${dispo} questions au lieu de 60`);
-  await page.getByRole('button', { name: `Lancer la partie (${dispo} questions)` }).click();
-  await expect(page.getByTestId('theme')).toHaveText('Écologie et énergie');
-  await expect(page.getByText(`1 / ${dispo}`)).toBeVisible();
+  await expect(page.getByRole('status')).toContainText('60 questions');
+  await expect(page.getByRole('radiogroup')).toHaveCount(0);
+  await expect(page.locator('main')).not.toContainText(/Écarter|Prioritaire/);
+  await expect(page.getByRole('heading', { name: /Vos affinités/ })).toBeVisible();
+  await page.getByRole('button', { name: 'Lancer la partie (60 questions)' }).click();
+  await expect(page.getByText('1 / 60')).toBeVisible();
 });
