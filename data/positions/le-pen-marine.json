@@ -85,7 +85,7 @@
     },
     {
       "question_id": "RET-002",
-      "code": -1,
+      "code": 1,
       "nature": "nuancee",
       "statut": "arbitre",
       "item_aveugle": "1f91eaf0",
@@ -146,7 +146,12 @@
         "motif": "60 ans pour une partie du public seulement (exemple de la grille)"
       },
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-13",
+        "resultat": "corrige",
+        "code_avant": -1,
+        "nature_avant": "nuancee",
+        "motif": "Recodé par la règle R5 (grille v1.4) avec 64 ans comme point de départ, choix validé par Mathieu le 13 octobre 2026 : âge légal de 62 ans, 60 ans pour les carrières commencées avant 20 ans, face à 60 ans dans l'énoncé, à partir de 64 ans (loi applicable en 2028) : au moins la moitié du chemin, d'où +1 nuancée."
       },
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
@@ -163,7 +168,7 @@
         }
       },
       "contestations": [],
-      "version": 2
+      "version": 3
     },
     {
       "question_id": "RET-003",

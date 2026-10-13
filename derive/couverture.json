@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "ac20c84eef02188dbdf374caf9e48011f47f0c706eec7ba0ca340ef633d3f454",
+  "empreinte_donnees": "d21c38eaf89bf7e290b1a015058522f011bfb65684673e0aba26b3662e3bc827",
   "provisoire": true,
   "questions_actives": 207,
   "seuil_evalue": 0.4,
@@ -1281,13 +1281,13 @@
       "taux_couverture": 0.400966,
       "seuil_evalue_atteint": true,
       "natures": {
-        "nette": 35,
-        "nuancee": 32,
+        "nette": 36,
+        "nuancee": 31,
         "imprecise": 16
       },
       "parts_natures": {
-        "nette": 0.421687,
-        "nuancee": 0.385542,
+        "nette": 0.433735,
+        "nuancee": 0.373494,
         "imprecise": 0.192771
       },
       "par_theme": {

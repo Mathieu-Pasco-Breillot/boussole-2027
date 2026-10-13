@@ -67,7 +67,7 @@
     },
     {
       "question_id": "RET-002",
-      "code": -1,
+      "code": 1,
       "nature": "nuancee",
       "statut": "arbitre",
       "item_aveugle": "821f1d1e",
@@ -114,7 +114,12 @@
         "motif": "R5 : maintien à 62 ans, ne va pas jusqu'à 60 ans"
       },
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-13",
+        "resultat": "corrige",
+        "code_avant": -1,
+        "nature_avant": "nuancee",
+        "motif": "Recodé par la règle R5 (grille v1.4) avec 64 ans comme point de départ, choix validé par Mathieu le 13 octobre 2026 : maintien à 62 ans face à 60 ans dans l'énoncé, à partir de 64 ans (loi applicable en 2028) : moitié du chemin, sans rejet explicite de 60 ans, d'où +1 nuancée."
       },
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
@@ -123,7 +128,7 @@
         "motif": "Il défend le maintien à 62 ans contre 64 ans, valeur qui va moins loin que les 60 ans de l'énoncé : R5, -1 nuancee. Le soutien aux 62 ans passe par le RIP qu'il porte."
       },
       "contestations": [],
-      "version": 1
+      "version": 2
     },
     {
       "question_id": "RET-003",

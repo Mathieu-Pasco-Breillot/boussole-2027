@@ -11,7 +11,7 @@
   "positions": [
     {
       "question_id": "RET-001",
-      "code": -1,
+      "code": 1,
       "nature": "nuancee",
       "statut": "arbitre",
       "item_aveugle": "01ee57fa",
@@ -58,7 +58,12 @@
         "motif": "R5 : 63 ans ne va pas jusqu'à 62 ans"
       },
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-13",
+        "resultat": "corrige",
+        "code_avant": -1,
+        "nature_avant": "nuancee",
+        "motif": "Recodé par la règle R5 (grille v1.4) avec 64 ans comme point de départ, choix validé par Mathieu le 13 octobre 2026 : âge minimal de 63 ans face à 62 ans dans l'énoncé, à partir de 64 ans (loi applicable en 2028) : moitié du chemin, d'où +1 nuancée."
       },
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
@@ -67,7 +72,7 @@
         "motif": "Il retient explicitement 63 ans comme âge minimal (avec décote), valeur qui va moins loin que les 62 ans de l'énoncé tout en étant en dessous de la cible de 64 ans de la loi : R5, -1 nuancee."
       },
       "contestations": [],
-      "version": 1
+      "version": 2
     },
     {
       "question_id": "RET-002",
@@ -131,8 +136,8 @@
     },
     {
       "question_id": "RET-003",
-      "code": -1,
-      "nature": "nuancee",
+      "code": -2,
+      "nature": "nette",
       "statut": "accord",
       "item_aveugle": "d50d9509",
       "extraits": [
@@ -172,7 +177,12 @@
       },
       "arbitrage": null,
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-13",
+        "resultat": "corrige",
+        "code_avant": -1,
+        "nature_avant": "nuancee",
+        "motif": "Recodé par la règle R5 (grille v1.4) avec 64 ans comme point de départ, choix validé par Mathieu le 13 octobre 2026 : âge minimal de 63 ans, en baisse par rapport aux 64 ans applicables en 2028 : direction opposée à un relèvement à 65 ans, d'où −2 nette."
       },
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
@@ -181,7 +191,7 @@
         "motif": "Il retient un âge minimal de 63 ans, moins que les 65 ans de l'énoncé (65 ans n'étant que l'âge du taux plein) : R5, −1 nuancee."
       },
       "contestations": [],
-      "version": 1
+      "version": 2
     },
     {
       "question_id": "RET-005",

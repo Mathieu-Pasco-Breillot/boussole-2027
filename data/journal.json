@@ -415,6 +415,19 @@
       "description": "Correction d'un encart vérifié par recherche, à la demande de Mathieu. ENV-004 : « uniquement pour la culture de noisettes » devient « pour certaines filières déterminées (betteraves, cerises, pommes, noisettes) », d'après le communiqué du ministère de l'Agriculture du 19 août 2026, ajouté aux sources de l'encart. Précision inchangée. Aucun code de position modifié.",
       "auteur": "Claude",
       "reference": "correction précisions écologie-énergie du 12 octobre 2026"
+    },
+    {
+      "date": "2026-10-13",
+      "type": "recodage",
+      "objets": [
+        "docs/grille-codage.md",
+        "data/positions/retailleau-bruno.json",
+        "data/positions/dupont-aignan-nicolas.json",
+        "data/positions/le-pen-marine.json"
+      ],
+      "description": "Grille v1.4, âges de départ : Mathieu retient comme point de départ de R5 la loi applicable pendant le prochain quinquennat (64 ans à partir de 2028), et non le gel à 62 ans et 9 mois de la suspension. Recodés : Retailleau RET-001 −1 → +1 nuancée (63 ans, moitié du chemin vers 62) et RET-003 −1 → −2 nette (63 ans, baisse face à 65) ; Dupont-Aignan RET-002 et Le Pen RET-002 −1 → +1 nuancée (62 ans, moitié du chemin vers 60). Inchangés : Glucksmann RET-002 (rejette explicitement 60 ans), Retailleau RET-002 (63 ans, un quart du chemin vers 60), Mikolajczak RET-006 (42 annuités, un tiers du chemin de 43 vers 40).",
+      "auteur": "Mathieu, avec Claude",
+      "reference": "retour testeur sur ECO-003, 12-13 octobre 2026"
     }
   ]
 }
