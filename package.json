@@ -25,8 +25,8 @@
     "e2e": "playwright test"
   },
   "dependencies": {
-    "@fontsource-variable/source-sans-3": "^5.3.0",
-    "@fontsource-variable/source-serif-4": "^5.3.0",
+    "@fontsource-variable/bricolage-grotesque": "^5.3.0",
+    "@fontsource-variable/figtree": "^5.3.0",
     "motion": "^14.0.0",
     "react": "^19.3.0",
     "react-dom": "^19.3.0"

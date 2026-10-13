@@ -26,7 +26,7 @@ export function Mascotte({ attitude = 'accueil', taille = 96, className = '' }: 
       data-mascotte={attitude}
     >
       {/* ombre */}
-      <ellipse cx="60" cy="112" rx="34" ry="5" className="fill-sourdine/25" />
+      <ellipse cx="60" cy="112" rx="34" ry="5" className="fill-discret/25" />
       <motion.g
         initial={false}
         animate={tombe ? { y: [0, 0, -7, 0] } : { y: 0 }}
@@ -44,19 +44,19 @@ export function Mascotte({ attitude = 'accueil', taille = 96, className = '' }: 
                 : { duration: 0 }
           }
         >
-          <rect x="45" y="12" width="30" height="21" rx="2.5" className="fill-papier stroke-or" strokeWidth="2.5" />
-          <path d="M46.5 14 L60 24.5 L73.5 14" fill="none" className="stroke-or" strokeWidth="2.5" strokeLinejoin="round" />
+          <rect x="45" y="12" width="30" height="21" rx="2.5" className="fill-papier stroke-soleil" strokeWidth="2.5" />
+          <path d="M46.5 14 L60 24.5 L73.5 14" fill="none" className="stroke-soleil" strokeWidth="2.5" strokeLinejoin="round" />
         </motion.g>
         {/* pieds */}
-        <rect x="30" y="100" width="14" height="8" rx="3" className="fill-or" />
-        <rect x="76" y="100" width="14" height="8" rx="3" className="fill-or" />
+        <rect x="30" y="100" width="14" height="8" rx="3" className="fill-soleil" />
+        <rect x="76" y="100" width="14" height="8" rx="3" className="fill-soleil" />
         {/* corps */}
-        <rect x="20" y="44" width="80" height="60" rx="11" className="fill-nuit-clair stroke-or" strokeWidth="3.5" />
+        <rect x="20" y="44" width="80" height="60" rx="11" className="fill-carte stroke-soleil" strokeWidth="3.5" />
         {/* couvercle et fente */}
-        <rect x="13" y="34" width="94" height="14" rx="6" className="fill-or" />
-        <rect x="42" y="38.5" width="36" height="5" rx="2.5" className="fill-nuit" />
+        <rect x="13" y="34" width="94" height="14" rx="6" className="fill-soleil" />
+        <rect x="42" y="38.5" width="36" height="5" rx="2.5" className="fill-fond" />
         {/* reflet de la paroi transparente */}
-        <path d="M30 56 L30 90" className="stroke-creme/25" strokeWidth="4" strokeLinecap="round" />
+        <path d="M30 56 L30 90" className="stroke-encre/25" strokeWidth="4" strokeLinecap="round" />
         {/* yeux : un clignement lent en attente */}
         <motion.g
           initial={false}
@@ -64,16 +64,16 @@ export function Mascotte({ attitude = 'accueil', taille = 96, className = '' }: 
           animate={attitude === 'attente' ? { scaleY: [1, 1, 0.1, 1] } : { scaleY: 1 }}
           transition={attitude === 'attente' ? { duration: 3.2, repeat: Infinity, times: [0, 0.9, 0.95, 1] } : { duration: 0 }}
         >
-          <ellipse cx="48" cy="72" rx="4.5" ry="5.5" className="fill-creme" />
-          <ellipse cx="72" cy="72" rx="4.5" ry="5.5" className="fill-creme" />
-          <circle cx="49.5" cy="70" r="1.5" className="fill-nuit-clair" />
-          <circle cx="73.5" cy="70" r="1.5" className="fill-nuit-clair" />
+          <ellipse cx="48" cy="72" rx="4.5" ry="5.5" className="fill-encre" />
+          <ellipse cx="72" cy="72" rx="4.5" ry="5.5" className="fill-encre" />
+          <circle cx="49.5" cy="70" r="1.5" className="fill-carte" />
+          <circle cx="73.5" cy="70" r="1.5" className="fill-carte" />
         </motion.g>
         {/* bouche : petit sourire, un peu plus grand à la fin d'un chapitre */}
         <path
           d={tombe ? 'M50 86 Q60 95 70 86' : 'M52 87 Q60 92 68 87'}
           fill="none"
-          className="stroke-creme"
+          className="stroke-encre"
           strokeWidth="3"
           strokeLinecap="round"
         />

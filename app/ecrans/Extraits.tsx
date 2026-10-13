@@ -12,7 +12,7 @@ export function Extraits({ extraits, className = 'mt-2' }: { extraits?: ExtraitP
   return (
     <div className={`${className} flex flex-col gap-3`} data-extraits>
       {extraits.map((e, i) => (
-        <div key={`${e.source.url}-${i}`} className="border-l-2 border-or/60 pl-3 [overflow-wrap:anywhere]">
+        <div key={`${e.source.url}-${i}`} className="border-l-2 border-accent/60 pl-3 [overflow-wrap:anywhere]">
           <p>
             <Texte>{e.reformulation}</Texte>
           </p>

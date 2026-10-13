@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from 'motion/react';
+import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import { useEffect, useRef, useState } from 'react';
 import type { Valeur } from '../../core/score/types.ts';
 import type { Partie } from '../jeu.ts';
@@ -16,11 +16,11 @@ interface Props {
 
 /** Une seule teinte (l'or), d'intensité croissante de part et d'autre du centre : ni bien ni mal. */
 export const INTENSITE: Record<number, string> = {
-  2: 'bg-or/45 border-or',
-  1: 'bg-or/25 border-or/70',
-  0: 'bg-or/8 border-or/40',
-  [-1]: 'bg-or/25 border-or/70',
-  [-2]: 'bg-or/45 border-or',
+  2: 'bg-accent/45 border-accent',
+  1: 'bg-accent/25 border-accent/70',
+  0: 'bg-accent/8 border-accent/40',
+  [-1]: 'bg-accent/25 border-accent/70',
+  [-2]: 'bg-accent/45 border-accent',
 };
 
 export function Quiz({ partie, onRepondre, onReculer, onQuitter }: Props) {
@@ -41,36 +41,21 @@ export function Quiz({ partie, onRepondre, onReculer, onQuitter }: Props) {
     if (courante.current === question.id) onReculer();
   };
   const total = partie.questions.length;
+  // Animations réduites : la carte suivante s'affiche d'un coup, sans fondu (texte lisible tout de suite).
+  const reduit = useReducedMotion();
   const echelle = partie.echelleInversee ? [...ECHELLE].reverse() : ECHELLE;
 
   return (
-    <main className="mx-auto flex min-h-dvh max-w-xl flex-col px-5 py-6">
-      <div className="flex items-center justify-between text-sm text-sourdine">
-        <button type="button" onClick={onQuitter} className="underline">
-          Quitter
-        </button>
-        <span aria-live="polite">
-          {partie.position + 1} / {total}
-        </span>
-      </div>
-      <div
-        className="mt-2 h-2 overflow-hidden rounded-full bg-nuit-clair"
-        role="progressbar"
-        aria-label="Progression"
-        aria-valuemin={0}
-        aria-valuemax={total}
-        aria-valuenow={partie.position}
-      >
-        <div className="h-full bg-or transition-[width]" style={{ width: `${(partie.position / total) * 100}%` }} />
-      </div>
+    <main className="mx-auto flex min-h-dvh w-full max-w-5xl flex-col px-5 pt-4 pb-6 md:px-8 md:pt-6">
+      <EnteteQuiz position={partie.position} total={total} avancement={partie.position} onQuitter={onQuitter} />
 
-      <ol className="mt-3 flex gap-2 overflow-x-auto pb-1" aria-label="Chapitres" tabIndex={0}>
+      <ol className="-mx-5 mt-4 flex gap-2 overflow-x-auto px-5 pb-1 md:mx-0 md:flex-wrap md:px-0" aria-label="Chapitres" tabIndex={0}>
         {partie.chapitres.map((c, i) => (
           <li
             key={c.theme}
             aria-current={i === s.chapitre ? 'step' : undefined}
-            className={`shrink-0 rounded-full border px-3 py-1 text-xs ${
-              i === s.chapitre ? 'border-or bg-or/20 text-creme' : 'border-sourdine/30 text-sourdine'
+            className={`shrink-0 rounded-full border px-3 py-1 text-xs font-medium ${
+              i === s.chapitre ? 'border-accent bg-accent/15 text-encre' : i < s.chapitre ? 'border-trait bg-carte text-discret' : 'border-trait text-discret'
             }`}
           >
             {i < s.chapitre ? '✓ ' : ''}
@@ -85,66 +70,75 @@ export function Quiz({ partie, onRepondre, onReculer, onQuitter }: Props) {
           initial={{ opacity: 0, x: 24 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -24 }}
-          transition={{ duration: 0.2 }}
-          className="mt-6 flex flex-1 flex-col"
+          transition={{ duration: reduit ? 0 : 0.2 }}
+          className="mt-5 grid flex-1 content-start gap-6 lg:mt-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12"
         >
-          <p className="text-xs font-semibold tracking-[0.18em] text-or uppercase">
-            Chapitre {s.chapitre + 1} sur {partie.chapitres.length} · {libelleTheme(s.theme)} · Proposition{' '}
-            {s.dansChapitre + 1} sur {s.taille}
-          </p>
-          <p className="mt-3 text-sm text-sourdine">Êtes-vous d'accord ?</p>
-          <h1 className="mt-1 font-serif text-3xl leading-snug font-semibold">
-            <Texte>{question.enonce}</Texte>
-          </h1>
-          <Depliants question={question} />
-
-          <div className="mt-6 flex flex-col gap-2">
-            {echelle.map((e) => (
-              <button
-                key={e.valeur}
-                type="button"
-                aria-pressed={deja?.valeur === e.valeur}
-                onClick={() => repondre(e.valeur, important)}
-                className={`rounded-xl border px-4 py-3 text-left text-lg ${INTENSITE[e.valeur]} ${
-                  deja?.valeur === e.valeur ? 'ring-2 ring-creme' : ''
-                }`}
-              >
-                {e.libelle}
-              </button>
-            ))}
+          <div>
+            <p className="surtitre">
+              Chapitre {s.chapitre + 1} sur {partie.chapitres.length} · {libelleTheme(s.theme)} · Proposition{' '}
+              {s.dansChapitre + 1} sur {s.taille}
+            </p>
+            <p className="mt-4 text-sm font-medium text-discret">Êtes-vous d'accord ?</p>
+            <h1 className="mt-1 font-titre text-[clamp(1.6rem,1.25rem+1.6vw,2.4rem)] leading-[1.18] font-bold tracking-[-0.015em]">
+              <Texte>{question.enonce}</Texte>
+            </h1>
+            <Depliants question={question} />
           </div>
 
-          <button
-            type="button"
-            aria-pressed={important}
-            onClick={() => setImportant((v) => !v)}
-            className={`mt-4 rounded-xl border px-4 py-3 text-left ${
-              important ? 'border-or bg-or/20' : 'border-sourdine/30 text-sourdine'
-            }`}
-          >
-            {important ? '★' : '☆'} Très important pour moi
-          </button>
+          <div className="flex flex-col lg:self-start lg:rounded-3xl lg:border lg:border-trait lg:bg-carte lg:p-6 lg:shadow-xl lg:shadow-black/5">
+            <div className="flex flex-col gap-2">
+              {echelle.map((e) => (
+                <button
+                  key={e.valeur}
+                  type="button"
+                  aria-pressed={deja?.valeur === e.valeur}
+                  onClick={() => repondre(e.valeur, important)}
+                  className={`reponse ${INTENSITE[e.valeur]} ${deja?.valeur === e.valeur ? 'ring-3 ring-encre' : ''}`}
+                >
+                  {e.libelle}
+                </button>
+              ))}
+            </div>
 
-          <button
-            type="button"
-            onClick={() => repondre('sans_avis', false)}
-            className="mt-2 rounded-xl px-4 py-2 text-left text-sm text-sourdine underline"
-          >
-            Sans avis
-          </button>
-
-          <div className="mt-auto pt-6">
             <button
               type="button"
-              onClick={reculer}
-              disabled={partie.position === 0}
-              className="text-sm text-sourdine underline disabled:opacity-30"
+              aria-pressed={important}
+              onClick={() => setImportant((v) => !v)}
+              className={`mt-4 min-h-12 rounded-xl border px-4 py-3 text-left font-medium ${
+                important ? 'border-accent bg-accent/15' : 'border-trait bg-carte text-discret lg:bg-fond'
+              }`}
             >
-              ← Proposition précédente
+              {important ? '★' : '☆'} Très important pour moi
             </button>
+
+            <div className="mt-2 flex items-center justify-between gap-3">
+              <button type="button" onClick={reculer} disabled={partie.position === 0} className="lien disabled:opacity-30">
+                ← Proposition précédente
+              </button>
+              <button type="button" onClick={() => repondre('sans_avis', false)} className="lien">
+                Sans avis
+              </button>
+            </div>
           </div>
         </motion.div>
       </AnimatePresence>
     </main>
+  );
+}
+
+/** Haut des écrans de quiz (classique et duel) : quitter, barre de progression, compteur. */
+export function EnteteQuiz({ position, total, avancement, onQuitter }: { position: number; total: number; avancement: number; onQuitter: () => void }) {
+  return (
+    <div className="flex items-center gap-4">
+      <button type="button" onClick={onQuitter} className="lien shrink-0">
+        Quitter
+      </button>
+      <div className="jauge flex-1" role="progressbar" aria-label="Progression" aria-valuemin={0} aria-valuemax={total} aria-valuenow={avancement}>
+        <div className="transition-[width] duration-300" style={{ width: `${(avancement / total) * 100}%` }} />
+      </div>
+      <span aria-live="polite" className="shrink-0 font-titre text-sm font-bold tabular-nums">
+        {position + 1} / {total}
+      </span>
+    </div>
   );
 }

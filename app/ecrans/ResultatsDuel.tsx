@@ -27,28 +27,28 @@ export function ResultatsDuel({ partie, onFiche, onAutreDuel, onAccueil, onViepr
   const taille = TAILLES_DUEL_INFO.find((t) => t.taille === partie.taille)!.nom;
 
   return (
-    <main className="mx-auto flex max-w-xl flex-col gap-6 px-5 py-8">
+    <main className="colonne flex max-w-3xl flex-col gap-6 py-8">
       <header>
-        <p className="text-xs font-semibold tracking-[0.2em] text-or uppercase">Résultat du duel</p>
-        <h1 className="mt-2 font-serif text-4xl font-semibold">{nom}</h1>
-        <p className="mt-2 text-sourdine">
+        <p className="surtitre">Résultat du duel</p>
+        <h1 className="titre-page mt-2">{nom}</h1>
+        <p className="mt-2 text-discret">
           {c.parti} · {taille} · {a.repondues} réponses sur {partie.questions.length} propositions · graine du tirage {partie.graine}
         </p>
       </header>
 
-      <section className="rounded-2xl border-l-4 border-or bg-nuit-clair p-5" aria-labelledby="titre-affinite">
-        <h2 id="titre-affinite" className="font-serif text-xl font-semibold">
+      <section className="carte border-l-4 border-l-accent p-5" aria-labelledby="titre-affinite">
+        <h2 id="titre-affinite" className="font-titre text-xl font-bold">
           Votre affinité avec ce programme
         </h2>
         {a.affichable && a.score.scoreArrondi !== null ? (
           <>
-            <p className="mt-2 font-serif text-5xl font-semibold" aria-label={`Affinité ${a.score.scoreArrondi} sur 100`}>
-              {a.score.scoreArrondi} <span className="text-xl text-sourdine">/ 100</span>
+            <p className="mt-2 font-titre text-6xl font-extrabold tracking-tight tabular-nums" aria-label={`Affinité ${a.score.scoreArrondi} sur 100`}>
+              {a.score.scoreArrondi} <span className="text-xl text-discret">/ 100</span>
             </p>
-            <div className="mt-3 h-2 overflow-hidden rounded-full bg-nuit">
-              <div data-barre-score className="h-full bg-or" style={{ width: `${a.score.scoreArrondi}%` }} />
+            <div className="jauge mt-3">
+              <div data-barre-score style={{ width: `${a.score.scoreArrondi}%` }} />
             </div>
-            <p className="mt-3 text-sm text-sourdine">
+            <p className="mt-3 text-sm text-discret">
               Fiabilité {a.fiabilite} · {a.score.codees} propositions comptées sur {a.repondues} répondues.
             </p>
           </>
@@ -58,7 +58,7 @@ export function ResultatsDuel({ partie, onFiche, onAutreDuel, onAccueil, onViepr
             que {nom} porte sur ces propositions, avec les sources.
           </p>
         )}
-        <p className="mt-3 text-sm leading-relaxed text-sourdine">
+        <p className="mt-3 text-sm leading-relaxed text-discret">
           Ce score mesure votre accord avec les propositions de {nom} que vous avez rencontrées. Il n'est comparable ni à celui d'un duel avec un autre
           candidat, ni au classement des autres modes : les propositions posées ne sont pas les mêmes. Ce n'est ni une victoire, ni un échec pour personne.
         </p>
@@ -67,7 +67,7 @@ export function ResultatsDuel({ partie, onFiche, onAutreDuel, onAccueil, onViepr
       {a.affichable && <Detail s={a} />}
 
       <section>
-        <button type="button" aria-expanded={toutes} onClick={() => setToutes((v) => !v)} className="min-h-11 font-serif text-xl font-semibold underline decoration-or/60 underline-offset-4">
+        <button type="button" aria-expanded={toutes} onClick={() => setToutes((v) => !v)} className="min-h-11 text-left font-titre text-xl font-bold underline decoration-accent/50 decoration-2 underline-offset-4">
           Toutes les propositions rencontrées ({a.repondues}) {toutes ? '▴' : '▾'}
         </button>
         {toutes && (
@@ -79,11 +79,11 @@ export function ResultatsDuel({ partie, onFiche, onAutreDuel, onAccueil, onViepr
                 const saisie = partie.reponses[id]!;
                 const p = positionSur(partie, id);
                 return (
-                  <li key={id} className="rounded-xl bg-nuit-clair p-3 text-sm leading-relaxed">
+                  <li key={id} className="carte p-4 text-sm leading-relaxed shadow-none">
                     <p className="font-semibold">
                       <Texte>{q.enonce}</Texte>
                     </p>
-                    <p className="text-sourdine">{libelleTheme(q.theme)}</p>
+                    <p className="text-discret">{libelleTheme(q.theme)}</p>
                     <p className="mt-1">
                       Votre réponse : <strong>{saisie.valeur === 'sans_avis' ? 'sans avis' : libelleValeur(saisie.valeur)}</strong>
                     </p>
@@ -101,7 +101,7 @@ export function ResultatsDuel({ partie, onFiche, onAutreDuel, onAccueil, onViepr
         )}
       </section>
 
-      <section className="rounded-2xl bg-nuit-clair p-5 text-sm leading-relaxed text-sourdine">
+      <section className="carte p-5 text-sm leading-relaxed text-discret">
         <p>Les votes au Parlement n'entrent ni dans le codage des positions ni dans le score. Indicateur de votes : pas encore disponible.</p>
         <p className="mt-2">
           Même graine et mêmes réponses redonnent les mêmes résultats. Méthode complète et données :{' '}
@@ -113,19 +113,19 @@ export function ResultatsDuel({ partie, onFiche, onAutreDuel, onAccueil, onViepr
       </section>
 
       <div className="flex flex-col gap-3">
-        <button type="button" onClick={onAutreDuel} className="rounded-2xl bg-or px-5 py-4 font-serif text-xl font-semibold text-nuit">
+        <button type="button" onClick={onAutreDuel} className="btn btn-primaire btn-grand">
           Faire un duel avec un autre candidat
         </button>
-        <button type="button" onClick={() => onFiche(partie.candidat)} className="min-h-11 rounded-2xl border border-or/60 px-5 py-3 font-serif text-lg">
+        <button type="button" onClick={() => onFiche(partie.candidat)} className="btn btn-secondaire">
           Fiche de {nom}
         </button>
-        <button type="button" onClick={onAccueil} className="min-h-11 rounded-2xl border border-or/60 px-5 py-3 font-serif text-lg">
+        <button type="button" onClick={onAccueil} className="btn btn-secondaire">
           Lancer une partie classique
         </button>
-        <button type="button" onClick={onVieprivee} className="min-h-11 text-sm text-sourdine underline">
+        <button type="button" onClick={onVieprivee} className="lien">
           Vie privée
         </button>
-        <button type="button" onClick={onToutEffacer} className="text-sm text-sourdine underline">
+        <button type="button" onClick={onToutEffacer} className="lien">
           Tout effacer sur cet appareil
         </button>
       </div>

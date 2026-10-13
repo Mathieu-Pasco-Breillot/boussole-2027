@@ -11,11 +11,11 @@ const actives = paquet.questions.length;
 function Ligne({ c, detail, onFiche }: { c: CandidatPaquet; detail: string; onFiche: (id: string) => void }) {
   return (
     <li>
-      <button type="button" onClick={() => onFiche(c.id)} className="min-h-11 w-full rounded-xl bg-nuit-clair px-4 py-2 text-left">
-        <span className="font-semibold">
+      <button type="button" onClick={() => onFiche(c.id)} className="carte flex min-h-16 w-full flex-col justify-center px-4 py-2.5 text-left hover:border-accent">
+        <span className="font-titre text-lg font-bold">
           {c.prenom} {c.nom}
         </span>
-        <span className="block text-xs text-sourdine">
+        <span className="block text-xs text-discret">
           {c.parti} · {detail}
         </span>
       </button>
@@ -26,9 +26,9 @@ function Ligne({ c, detail, onFiche }: { c: CandidatPaquet; detail: string; onFi
 function Groupe({ titre, explication, children }: { titre: string; explication: string; children: React.ReactNode }) {
   return (
     <section>
-      <h2 className="font-serif text-2xl font-semibold">{titre}</h2>
-      <p className="mt-1 text-sm leading-relaxed text-sourdine">{explication}</p>
-      <ul className="mt-3 flex flex-col gap-2">{children}</ul>
+      <h2 className="font-titre text-2xl font-bold tracking-tight">{titre}</h2>
+      <p className="mt-1 text-sm leading-relaxed text-discret">{explication}</p>
+      <ul className="mt-4 grid gap-2 sm:grid-cols-2">{children}</ul>
     </section>
   );
 }
@@ -41,17 +41,17 @@ export function Candidats({ onRetour, onFiche }: { onRetour: () => void; onFiche
   }, []);
 
   return (
-    <main className="mx-auto flex max-w-xl flex-col gap-6 px-5 py-8">
+    <main className="conteneur flex max-w-4xl flex-col gap-10 py-8">
       <header>
-        <button type="button" onClick={onRetour} className="min-h-11 text-sm text-sourdine underline">
+        <button type="button" onClick={onRetour} className="lien">
           ← Retour
         </button>
-        <h1 className="mt-2 font-serif text-4xl font-semibold">Candidats</h1>
-        <p className="mt-2 text-sourdine">Ordre alphabétique dans chaque groupe.</p>
+        <h1 className="titre-page mt-2">Candidats</h1>
+        <p className="mt-2 text-discret">Ordre alphabétique dans chaque groupe.</p>
       </header>
 
-      <section className="rounded-2xl border-l-4 border-or bg-nuit-clair p-5 text-sm leading-relaxed">
-        <h2 className="font-serif text-xl font-semibold">Le critère d'inclusion</h2>
+      <section className="carte border-l-4 border-l-accent p-5 text-sm leading-relaxed">
+        <h2 className="font-titre text-xl font-bold">Le critère d'inclusion</h2>
         <ul className="mt-2 flex list-disc flex-col gap-1 pl-5">
           <li>Aucun seuil de sondages : personne n'est écarté sur son poids électoral.</li>
           <li>
@@ -66,8 +66,8 @@ export function Candidats({ onRetour, onFiche }: { onRetour: () => void; onFiche
           </li>
         </ul>
         {critere && (
-          <details className="mt-3">
-            <summary className="min-h-11 cursor-pointer font-semibold underline">Lire le critère complet</summary>
+          <details className="depliant mt-3">
+            <summary className="font-semibold">Lire le critère complet</summary>
             <div className="mt-2">
               <Markdown source={critere} />
             </div>

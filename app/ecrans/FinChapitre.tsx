@@ -28,20 +28,20 @@ export function FinChapitre({ partie, onContinuer }: Props) {
   }, []);
 
   return (
-    <main className="mx-auto flex min-h-dvh max-w-xl flex-col items-center justify-center gap-5 px-5 py-10 text-center">
+    <main className="halo flex min-h-dvh flex-col items-center justify-center gap-5 px-5 py-10 text-center">
       <Mascotte attitude="chapitre" taille={132} />
-      <p className="text-xs font-semibold tracking-[0.2em] text-or uppercase">
+      <p className="surtitre">
         {fini} chapitre{fini > 1 ? 's' : ''} sur {total}
       </p>
-      <h1 className="font-serif text-4xl font-semibold" aria-live="polite">
+      <h1 className="titre-page max-w-xl" aria-live="polite">
         {titreFinChapitre(total - fini)}
       </h1>
-      <p className="text-lg leading-relaxed text-sourdine">{transition(fini - 1, partie.graine, suivant)}</p>
+      <p className="max-w-xl text-lg leading-relaxed text-discret">{transition(fini - 1, partie.graine, suivant)}</p>
       <ol className="flex flex-wrap justify-center gap-1.5" aria-label="Chapitres bouclés">
         {partie.chapitres.map((c, i) => (
           <li
             key={c.theme}
-            className={`size-3 rounded-full ${i < fini ? 'bg-or' : 'border border-sourdine/50'}`}
+            className={`h-2.5 w-7 rounded-full ${i < fini ? 'bg-accent' : 'bg-accent/15'}`}
           >
             <span className="sr-only">{`${libelleTheme(c.theme)} : ${i < fini ? 'bouclé' : 'à venir'}`}</span>
           </li>
@@ -51,7 +51,7 @@ export function FinChapitre({ partie, onContinuer }: Props) {
         ref={bouton}
         type="button"
         onClick={onContinuer}
-        className="mt-2 w-full rounded-2xl bg-or px-5 py-4 font-serif text-xl font-semibold text-nuit"
+        className="btn btn-primaire btn-grand mt-2 w-full max-w-md"
       >
         Continuer : {suivant}
       </button>

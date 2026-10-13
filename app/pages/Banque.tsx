@@ -13,13 +13,13 @@ export function Banque({ onRetour }: { onRetour: () => void }) {
   const horsJeu = pages?.horsJeu ?? [];
 
   return (
-    <main className="mx-auto flex max-w-xl flex-col gap-5 px-5 py-8 leading-relaxed">
+    <main className="conteneur flex max-w-4xl flex-col gap-4 py-8 leading-relaxed">
       <header>
-        <button type="button" onClick={onRetour} className="min-h-11 text-sm text-sourdine underline">
+        <button type="button" onClick={onRetour} className="lien">
           ← Retour
         </button>
-        <h1 className="mt-2 font-serif text-4xl font-semibold">Banque de questions</h1>
-        <p className="mt-2 text-sourdine">
+        <h1 className="titre-page mt-2">Banque de questions</h1>
+        <p className="mt-2 text-discret">
           {paquet.questions.length} questions actives, posées dans le quiz. Les questions suspendues ou archivées sont listées
           avec leur statut mais ne sont jamais posées.
         </p>
@@ -29,18 +29,20 @@ export function Banque({ onRetour }: { onRetour: () => void }) {
         const actives = paquet.questions.filter((q) => q.theme === t);
         const autres = horsJeu.filter((q) => q.theme === t);
         return (
-          <details key={t} className="rounded-xl bg-nuit-clair p-3">
-            <summary className="min-h-11 cursor-pointer font-serif text-xl font-semibold">
-              {libelleTheme(t)} <span className="text-sm font-normal text-sourdine">· {actives.length} actives{autres.length ? `, ${autres.length} hors jeu` : ''}</span>
+          <details key={t} className="depliant carte px-5 py-2">
+            <summary className="font-titre text-xl font-bold">
+              <span>
+              {libelleTheme(t)} <span className="text-sm font-normal text-discret">· {actives.length} actives{autres.length ? `, ${autres.length} hors jeu` : ''}</span>
+              </span>
             </summary>
-            <ul className="mt-2 flex flex-col gap-2 text-sm">
+            <ul className="mt-1 mb-3 flex flex-col gap-2.5 border-t border-trait pt-3 text-[0.95rem]">
               {actives.map((q) => (
                 <li key={q.id}>
-                  <span className="text-sourdine">{q.id}</span> · <Texte>{q.enonce}</Texte>
+                  <span className="text-discret">{q.id}</span> · <Texte>{q.enonce}</Texte>
                 </li>
               ))}
               {autres.map((q) => (
-                <li key={q.id} className="text-sourdine">
+                <li key={q.id} className="text-discret">
                   {q.id} · <strong>{q.statut === 'suspendue' ? 'Suspendue' : 'Archivée'}</strong> · <Texte>{q.enonce}</Texte>
                 </li>
               ))}

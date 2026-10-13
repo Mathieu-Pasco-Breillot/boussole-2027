@@ -18,7 +18,7 @@ async function installerPuisCouper(page: Page, erreurs: string[]): Promise<void>
   expect(reseau).toBe('coupe');
   erreurs.length = 0; // l'échec attendu de cette sonde n'est pas une erreur du site
   await page.reload();
-  await expect(page.getByRole('heading', { name: 'Mon Isoloir', level: 1 })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Quels candidats pensent comme vous/, level: 1 })).toBeVisible();
 }
 
 function fichiers(dossier: string): string[] {

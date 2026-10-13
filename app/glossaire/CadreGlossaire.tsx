@@ -20,7 +20,7 @@ export function CadreGlossaire({ children }: { children: ReactNode }) {
         type="button"
         aria-expanded={etat.ouvert}
         onClick={(e) => basculer(e.currentTarget)}
-        className="fixed right-4 bottom-4 z-50 min-h-11 rounded-full border border-or/60 bg-nuit-clair px-5 font-semibold text-creme shadow-lg"
+        className="bouton-glossaire fixed right-4 bottom-4 z-50 min-h-11 rounded-full border border-accent/60 bg-carte px-5 font-titre font-bold text-encre shadow-lg"
       >
         Glossaire
       </button>

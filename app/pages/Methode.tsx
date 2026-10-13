@@ -39,16 +39,16 @@ export function Methode({ onRetour, graine, journal }: Props) {
   }, []);
 
   return (
-    <main className="mx-auto flex max-w-xl flex-col gap-5 px-5 py-8">
+    <main className="conteneur flex max-w-4xl flex-col gap-6 py-8">
       <header>
-        <button type="button" onClick={onRetour} className="min-h-11 text-sm text-sourdine underline">
+        <button type="button" onClick={onRetour} className="lien">
           ← Retour
         </button>
-        <h1 className="mt-2 font-serif text-4xl font-semibold">Méthode</h1>
-        <p className="mt-2 text-sourdine">Tout est public : textes, données et code sont dans le dépôt du projet.</p>
+        <h1 className="titre-page mt-2">Méthode</h1>
+        <p className="mt-2 text-discret">Tout est public : textes, données et code sont dans le dépôt du projet.</p>
       </header>
 
-      <div role="tablist" aria-label="Pages de méthode" className="flex flex-wrap gap-2">
+      <div role="tablist" aria-label="Pages de méthode" className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 md:mx-0 md:flex-wrap md:px-0">
         {ONGLETS.map((o) => (
           <button
             key={o.id}
@@ -56,14 +56,14 @@ export function Methode({ onRetour, graine, journal }: Props) {
             type="button"
             aria-selected={onglet === o.id}
             onClick={() => setOnglet(o.id)}
-            className={`min-h-11 rounded-xl px-3 text-sm ${onglet === o.id ? 'bg-or font-semibold text-nuit' : 'bg-nuit-clair'}`}
+            className={`min-h-11 shrink-0 rounded-full border px-4 text-sm font-semibold ${onglet === o.id ? 'border-accent bg-accent text-fond' : 'border-trait bg-carte text-discret'}`}
           >
             {o.libelle}
           </button>
         ))}
       </div>
 
-      <section role="tabpanel" className="leading-relaxed">
+      <section role="tabpanel" className="text-[1.0625rem] leading-relaxed">
         {onglet === 'principe' && (
           <div className="flex flex-col gap-4">
             <p>
@@ -82,10 +82,10 @@ export function Methode({ onRetour, graine, journal }: Props) {
               sont tirées chapitre par chapitre selon vos poids, avec des questions « d'ancrage » choisies pour distinguer les
               candidats, et en évitant celles que vous avez déjà vues.
             </p>
-            <div className="rounded-xl bg-nuit-clair p-4">
-              <h2 className="font-serif text-xl font-semibold">Votre partie</h2>
+            <div className="carte p-5">
+              <h2 className="font-titre text-xl font-bold">Votre partie</h2>
               {graine === null ? (
-                <p className="mt-1 text-sm text-sourdine">Aucune partie sur cet appareil. La graine du tirage s'affiche ici dès qu'une partie est lancée.</p>
+                <p className="mt-1 text-sm text-discret">Aucune partie sur cet appareil. La graine du tirage s'affiche ici dès qu'une partie est lancée.</p>
               ) : (
                 <>
                   <p className="mt-1 text-sm">
@@ -94,7 +94,7 @@ export function Methode({ onRetour, graine, journal }: Props) {
                   {journal && (
                     <details className="mt-2 text-sm">
                       <summary className="min-h-11 cursor-pointer underline">Comment ces questions ont été tirées</summary>
-                      <ul className="mt-2 flex flex-col gap-1 text-sourdine">
+                      <ul className="mt-2 flex flex-col gap-1 text-discret">
                         {journal.map((l, i) => <li key={i}>{l}</li>)}
                       </ul>
                     </details>
@@ -105,7 +105,7 @@ export function Methode({ onRetour, graine, journal }: Props) {
           </div>
         )}
 
-        {onglet !== 'principe' && !pages && <p className="text-sourdine" role="status">Chargement…</p>}
+        {onglet !== 'principe' && !pages && <p className="text-discret" role="status">Chargement…</p>}
         {pages && onglet === 'methodologie' && <Markdown source={pages.docs.methodologie} />}
         {pages && onglet === 'grille' && <Markdown source={pages.docs.grille} />}
         {pages && onglet === 'critere' && <Markdown source={pages.docs.critere} />}
@@ -113,12 +113,12 @@ export function Methode({ onRetour, graine, journal }: Props) {
         {pages && onglet === 'journal' && (
           <ol className="mt-4 flex flex-col gap-3">
             {[...pages.journal].reverse().map((e, i) => (
-              <li key={i} className="rounded-xl bg-nuit-clair p-3 text-sm">
+              <li key={i} className="carte p-4 text-sm">
                 <p className="font-semibold">{e.date} · {e.type.replace(/_/g, ' ')}</p>
                 <p className="mt-1">
                   <Texte>{e.description}</Texte>
                 </p>
-                <p className="mt-1 text-sourdine">{e.objets.join(', ')}</p>
+                <p className="mt-1 text-discret">{e.objets.join(', ')}</p>
               </li>
             ))}
           </ol>
@@ -126,7 +126,7 @@ export function Methode({ onRetour, graine, journal }: Props) {
         {pages && onglet === 'neutralite' && (
           <div className="flex flex-col gap-4">
             {pages.neutralite.provisoire && (
-              <p className="rounded-xl border-l-4 border-or bg-nuit-clair p-3">
+              <p className="rounded-xl border-l-4 border-accent bg-carte p-3">
                 <strong>Rapport provisoire.</strong> Il est calculé sur des codages encore partiels et en attente de validation humaine : à lire comme un contrôle de méthode, pas comme un résultat.
               </p>
             )}
@@ -144,17 +144,17 @@ export function Methode({ onRetour, graine, journal }: Props) {
                   </caption>
                   <thead>
                     <tr>
-                      <th scope="col" className="border-b border-or/40 px-2 py-1">Candidat</th>
-                      <th scope="col" className="border-b border-or/40 px-2 py-1">Classé dans</th>
-                      <th scope="col" className="border-b border-or/40 px-2 py-1">Questions codées (moy.)</th>
+                      <th scope="col" className="border-b border-accent/40 px-2 py-1">Candidat</th>
+                      <th scope="col" className="border-b border-accent/40 px-2 py-1">Classé dans</th>
+                      <th scope="col" className="border-b border-accent/40 px-2 py-1">Questions codées (moy.)</th>
                     </tr>
                   </thead>
                   <tbody>
                     {Object.entries(m.candidats).map(([id, c]) => (
                       <tr key={id}>
-                        <th scope="row" className="border-b border-nuit px-2 py-1 font-normal">{nom(id)}</th>
-                        <td className="border-b border-nuit px-2 py-1">{pct(c.part_atteint_seuils)} des parties</td>
-                        <td className="border-b border-nuit px-2 py-1">{c.questions_codees_moyenne.toFixed(1)}</td>
+                        <th scope="row" className="border-b border-trait px-2 py-1 font-normal">{nom(id)}</th>
+                        <td className="border-b border-trait px-2 py-1">{pct(c.part_atteint_seuils)} des parties</td>
+                        <td className="border-b border-trait px-2 py-1">{c.questions_codees_moyenne.toFixed(1)}</td>
                       </tr>
                     ))}
                   </tbody>

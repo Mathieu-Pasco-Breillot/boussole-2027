@@ -21,17 +21,17 @@ export function FicheCandidat({ id, onRetour, libelleRetour = '← Retour' }: { 
   const q = (qid: string) => questionsParId.get(qid);
 
   return (
-    <main className="mx-auto flex max-w-xl flex-col gap-5 px-5 py-8 leading-relaxed">
+    <main className="conteneur flex max-w-4xl flex-col gap-4 py-8 leading-relaxed">
       <header>
-        <button type="button" onClick={onRetour} className="min-h-11 text-sm text-sourdine underline">
+        <button type="button" onClick={onRetour} className="lien">
           {libelleRetour}
         </button>
-        <h1 className="mt-2 font-serif text-4xl font-semibold">{c.prenom} {c.nom}</h1>
-        <p className="text-sourdine">{c.parti}</p>
+        <h1 className="titre-page mt-2">{c.prenom} {c.nom}</h1>
+        <p className="mt-1 text-lg text-discret">{c.parti}</p>
       </header>
 
-      <section className="rounded-xl bg-nuit-clair p-4 text-sm">
-        <h2 className="font-serif text-xl font-semibold">Statut et couverture</h2>
+      <section className="carte p-5 text-sm">
+        <h2 className="font-titre text-xl font-bold">Statut et couverture</h2>
         <ul className="mt-2 flex flex-col gap-1">
           <li>
             Statut :{' '}
@@ -44,7 +44,7 @@ export function FicheCandidat({ id, onRetour, libelleRetour = '← Retour' }: { 
             </strong>
             {c.motifNonEvaluation ? ` (${MOTIFS_NON_EVALUATION[c.motifNonEvaluation] ?? c.motifNonEvaluation})` : ''}
           </li>
-          <li className="text-sourdine">
+          <li className="text-discret">
             {c.statutEvaluation === 'non_evalue'
               ? EXPLICATIONS_MOTIFS[c.motifNonEvaluation ?? 'motif_non_renseigne']
               : c.statutEvaluation === 'evalue'
@@ -55,7 +55,7 @@ export function FicheCandidat({ id, onRetour, libelleRetour = '← Retour' }: { 
           </li>
           <li data-testid="couverture">
             Questions actives codées : <strong>{publiees.length}</strong> sur {actives}, soit <strong>{pourcentage(publiees.length / actives)}</strong>{' '}
-            <span className="text-sourdine">(seuil du statut « évalué » : {pourcentage(SEUIL_EVALUE)})</span>
+            <span className="text-discret">(seuil du statut « évalué » : {pourcentage(SEUIL_EVALUE)})</span>
           </li>
           {publiees.length > 0 && (
             <li>
@@ -69,19 +69,21 @@ export function FicheCandidat({ id, onRetour, libelleRetour = '← Retour' }: { 
       </section>
 
       {publiees.length === 0 ? (
-        <p className="text-sourdine">Aucune position n'est encore publiée pour ce candidat.</p>
+        <p className="text-discret">Aucune position n'est encore publiée pour ce candidat.</p>
       ) : (
         Object.keys(THEMES).map((t) => {
           const liste = publiees.filter((p) => q(p.questionId)?.theme === t && p.code !== null);
           if (liste.length === 0) return null;
           return (
-            <details key={t} className="rounded-xl bg-nuit-clair p-3">
-              <summary className="min-h-11 cursor-pointer font-serif text-xl font-semibold">
-                {libelleTheme(t)} <span className="text-sm font-normal text-sourdine">· {liste.length} positions</span>
+            <details key={t} className="depliant carte px-5 py-2">
+              <summary className="font-titre text-xl font-bold">
+                <span>
+                {libelleTheme(t)} <span className="text-sm font-normal text-discret">· {liste.length} positions</span>
+                </span>
               </summary>
-              <ul className="mt-2 flex flex-col gap-3 text-sm">
+              <ul className="mt-1 mb-3 flex flex-col gap-3 text-[0.95rem]">
                 {liste.map((p) => (
-                  <li key={p.questionId} className="rounded-lg bg-nuit p-3">
+                  <li key={p.questionId} className="rounded-xl border border-trait bg-fond p-4">
                     <p className="font-semibold">
                       <Texte>{q(p.questionId)?.enonce}</Texte>
                     </p>

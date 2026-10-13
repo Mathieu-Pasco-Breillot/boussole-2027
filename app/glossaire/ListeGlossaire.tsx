@@ -24,12 +24,12 @@ export function ListeGlossaire({ entree, demande, defiler }: { entree: string | 
             key={e.sigle}
             id={idAncre(e.sigle)}
             aria-current={demandee ? 'true' : undefined}
-            className={`scroll-mt-2 rounded-xl p-3 ${demandee ? 'border-l-4 border-or bg-or/15' : 'bg-nuit'}`}
+            className={`scroll-mt-2 rounded-xl p-3 ${demandee ? 'border-l-4 border-accent bg-accent/15' : 'bg-fond'}`}
           >
             <p>
               <strong>{e.sigle}</strong> — {e.developpe}
             </p>
-            <p className="mt-1 text-sm text-sourdine">{e.explication}</p>
+            <p className="mt-1 text-sm text-discret">{e.explication}</p>
           </li>
         );
       })}
@@ -42,7 +42,7 @@ export function DefinitionGlossaire({ sigle }: { sigle: string }) {
   const e = ENTREES.get(sigle);
   if (!e) return null;
   return (
-    <section data-definition-demandee aria-label={`Définition de ${e.sigle}`} className="mb-4 rounded-xl border-l-4 border-or bg-nuit p-3">
+    <section data-definition-demandee aria-label={`Définition de ${e.sigle}`} className="mb-4 rounded-xl border-l-4 border-accent bg-fond p-3">
       <p className="font-semibold">
         {e.sigle} — {e.developpe}
       </p>

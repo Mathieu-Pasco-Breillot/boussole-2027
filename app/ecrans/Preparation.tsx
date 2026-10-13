@@ -38,17 +38,17 @@ export function Preparation({ mode, onLancer, onRetour }: Props) {
     setAffinites((a) => (a.includes(id) ? a.filter((x) => x !== id) : [...a, id]));
 
   return (
-    <main className="mx-auto flex max-w-xl flex-col gap-6 px-5 py-8">
+    <main className="colonne flex max-w-3xl flex-col gap-8 pt-6">
       <header>
-        <button type="button" onClick={onRetour} className="min-h-11 text-sm text-sourdine underline">
+        <button type="button" onClick={onRetour} className="lien">
           ← Retour
         </button>
-        <p className="mt-2 text-xs font-semibold tracking-[0.2em] text-or uppercase">
+        <p className="surtitre mt-2">
           Mode {MODES[mode].nom} · {MODES[mode].questions} questions
         </p>
-        <h1 className="mt-2 font-serif text-4xl font-semibold">Préparation</h1>
-        <p className="mt-2 text-sourdine">Deux réglages facultatifs. Vous pouvez lancer la partie tel quel.</p>
-        <p className="mt-3 rounded-xl bg-nuit-clair p-3 text-sm leading-relaxed" role="status" data-questions-disponibles={disponibles}>
+        <h1 className="titre-page mt-2">Préparation</h1>
+        <p className="mt-3 text-lg text-discret">Deux réglages facultatifs. Vous pouvez lancer la partie tel quel.</p>
+        <p className="carte mt-4 border-l-4 border-l-accent p-4 text-sm leading-relaxed" role="status" data-questions-disponibles={disponibles}>
           Avec ces réglages : <strong>{disponibles} questions disponibles</strong>
           {vues.size > 0 ? ` (dont ${nonVues} jamais vues sur cet appareil)` : ''}.{' '}
           {prevues < MODES[mode].questions
@@ -58,26 +58,21 @@ export function Preparation({ mode, onLancer, onRetour }: Props) {
       </header>
 
       <section aria-labelledby="titre-poids">
-        <h2 id="titre-poids" className="font-serif text-2xl font-semibold">
+        <h2 id="titre-poids" className="font-titre text-2xl font-bold tracking-tight">
           Ce qui compte pour vous
         </h2>
-        <p className="mt-1 text-sm leading-relaxed text-sourdine">
+        <p className="mt-1 text-sm leading-relaxed text-discret">
           Un chapitre « important » reçoit plus de questions et pèse plus dans le score ; « écarter » le retire de la partie
           et du calcul. Les candidats ne sont pas nommés pendant le quiz.
         </p>
-        <ul className="mt-4 flex flex-col gap-3">
+        <ul className="mt-4 grid gap-3 md:grid-cols-2">
           {themes.map((t) => (
-            <li key={t} className="rounded-xl bg-nuit-clair p-3">
+            <li key={t} className="carte p-4">
               <fieldset>
-                <legend className="font-semibold">{THEMES[t]}</legend>
+                <legend className="font-titre text-lg font-bold">{THEMES[t]}</legend>
                 <div className="mt-2 grid grid-cols-4 gap-1" role="radiogroup" aria-label={`Importance du chapitre ${THEMES[t]}`}>
                   {NIVEAUX.map((n) => (
-                    <label
-                      key={n.poids}
-                      className={`flex min-h-11 cursor-pointer items-center justify-center rounded-lg px-1 text-center text-sm has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-or ${
-                        poids[t] === n.poids ? 'bg-or font-semibold text-nuit' : 'bg-nuit text-creme'
-                      }`}
-                    >
+                    <label key={n.poids} className="segment">
                       <input
                         type="radio"
                         className="sr-only"
@@ -96,21 +91,21 @@ export function Preparation({ mode, onLancer, onRetour }: Props) {
       </section>
 
       <section aria-labelledby="titre-affinites">
-        <h2 id="titre-affinites" className="font-serif text-2xl font-semibold">
+        <h2 id="titre-affinites" className="font-titre text-2xl font-bold tracking-tight">
           Vos affinités (facultatif)
         </h2>
-        <p className="mt-1 text-sm leading-relaxed text-sourdine">
+        <p className="mt-1 text-sm leading-relaxed text-discret">
           Cochez les candidats dont vous vous sentez proche. <strong>Les affinités n'entrent pas dans le score</strong> et
           n'influencent pas le choix des questions : elles servent seulement, à la fin, à situer ces candidats dans vos résultats.
         </p>
-        <ul className="mt-4 grid grid-cols-1 gap-2">
+        <ul className="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2">
           {candidatsParNom.map((c) => (
             <li key={c.id}>
-              <label className="flex min-h-11 cursor-pointer items-center gap-3 rounded-xl bg-nuit-clair px-3 py-2 has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-or">
-                <input type="checkbox" className="size-5 accent-or" checked={affinites.includes(c.id)} onChange={() => basculer(c.id)} />
+              <label className="carte flex min-h-14 cursor-pointer items-center gap-3 rounded-xl px-4 py-2 shadow-none has-[:checked]:border-accent has-[:checked]:bg-accent/10 has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-accent">
+                <input type="checkbox" className="size-5 accent-accent" checked={affinites.includes(c.id)} onChange={() => basculer(c.id)} />
                 <span>
                   {c.prenom} {c.nom}
-                  <span className="block text-xs text-sourdine">{c.parti}</span>
+                  <span className="block text-xs text-discret">{c.parti}</span>
                 </span>
               </label>
             </li>
@@ -118,16 +113,16 @@ export function Preparation({ mode, onLancer, onRetour }: Props) {
         </ul>
       </section>
 
-      <div className="flex flex-col gap-2">
+      <div data-barre-action className="barre-action">
         <button
           type="button"
           disabled={actifs.length === 0}
           onClick={() => onLancer({ poids: Object.fromEntries(themes.map((t) => [t, poids[t]!])), affinites })}
-          className="rounded-2xl bg-or px-5 py-4 font-serif text-xl font-semibold text-nuit disabled:opacity-50"
+          className="btn btn-primaire btn-grand w-full"
         >
           Lancer la partie{actifs.length > 0 ? ` (${prevues} questions)` : ''}
         </button>
-        {actifs.length === 0 && <p className="text-sm text-sourdine">Gardez au moins un chapitre pour lancer la partie.</p>}
+        {actifs.length === 0 && <p className="mt-2 text-sm text-discret">Gardez au moins un chapitre pour lancer la partie.</p>}
       </div>
     </main>
   );

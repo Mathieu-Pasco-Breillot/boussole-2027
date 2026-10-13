@@ -29,14 +29,14 @@ export function Defi({ graine, onRejouer, onQuitter }: Props) {
 
   if (total === 0) {
     return (
-      <main className="mx-auto flex max-w-xl flex-col gap-4 px-5 py-8">
+      <main className="colonne flex flex-col items-start gap-4 py-10">
         <Mascotte attitude="attente" taille={88} />
-        <h1 className="font-serif text-4xl font-semibold">Qui a dit ça ?</h1>
+        <h1 className="titre-page">Qui a dit ça ?</h1>
         <p className="leading-relaxed">
           Le défi n'est pas disponible pour l'instant : trop peu de positions nettes et sourcées sont publiées pour proposer des
           manches équilibrées entre candidats.
         </p>
-        <button type="button" onClick={onQuitter} className="min-h-11 rounded-2xl bg-or px-5 py-3 font-serif text-lg font-semibold text-nuit">
+        <button type="button" onClick={onQuitter} className="btn btn-primaire">
           Retour
         </button>
       </main>
@@ -45,20 +45,20 @@ export function Defi({ graine, onRejouer, onQuitter }: Props) {
 
   if (!manche) {
     return (
-      <main className="mx-auto flex max-w-xl flex-col gap-5 px-5 py-8">
-        <p className="text-xs font-semibold tracking-[0.2em] text-or uppercase">Qui a dit ça ?</p>
-        <h1 className="font-serif text-4xl font-semibold" role="status">
+      <main className="colonne flex flex-col gap-5 py-8">
+        <p className="surtitre">Qui a dit ça ?</p>
+        <h1 className="titre-page" role="status">
           {bonnes} bonne{bonnes > 1 ? 's' : ''} réponse{bonnes > 1 ? 's' : ''} sur {total}
         </h1>
-        <p className="leading-relaxed text-sourdine">
+        <p className="leading-relaxed text-discret">
           Ce jeu ne compare pas les candidats entre eux et n'a aucun lien avec votre résultat. Chaque position vient d'une source
           publique que vous pouvez ouvrir.
         </p>
         <div className="flex flex-col gap-3">
-          <button type="button" onClick={onRejouer} className="min-h-11 rounded-2xl bg-or px-5 py-4 font-serif text-xl font-semibold text-nuit">
+          <button type="button" onClick={onRejouer} className="btn btn-primaire btn-grand">
             Rejouer
           </button>
-          <button type="button" onClick={onQuitter} className="min-h-11 rounded-2xl border border-or/60 px-5 py-3 font-serif text-lg">
+          <button type="button" onClick={onQuitter} className="btn btn-secondaire">
             Retour
           </button>
         </div>
@@ -70,22 +70,22 @@ export function Defi({ graine, onRejouer, onQuitter }: Props) {
   const juste = repondu === manche.bonne_reponse;
 
   return (
-    <main className="mx-auto flex max-w-xl flex-col gap-5 px-5 py-8">
+    <main className="colonne flex flex-col gap-5 py-8">
       <header>
-        <button type="button" onClick={onQuitter} className="min-h-11 text-sm text-sourdine underline">
+        <button type="button" onClick={onQuitter} className="lien">
           ← Quitter le défi
         </button>
-        <p className="mt-2 text-xs font-semibold tracking-[0.2em] text-or uppercase">
+        <p className="mt-2 surtitre">
           Qui a dit ça ? · manche {numero + 1} sur {total}
         </p>
       </header>
 
-      <section className="rounded-2xl border-l-4 border-or bg-nuit-clair p-5 leading-relaxed" aria-labelledby="titre-position">
-        <p className="text-sm text-sourdine">{themeDeQuestion(manche.question_id)}</p>
-        <p className="mt-1 font-semibold">
+      <section className="carte border-l-4 border-l-accent p-5 leading-relaxed" aria-labelledby="titre-position">
+        <p className="text-sm text-discret">{themeDeQuestion(manche.question_id)}</p>
+        <p className="mt-1 font-titre text-xl leading-snug font-bold">
           <Texte>{manche.enonce}</Texte>
         </p>
-        <h2 id="titre-position" className="mt-4 font-serif text-xl font-semibold">
+        <h2 id="titre-position" className="surtitre mt-5">
           Un candidat a pris cette position :
         </h2>
         <p className="mt-2">
@@ -105,7 +105,7 @@ export function Defi({ graine, onRejouer, onQuitter }: Props) {
               <button
                 type="button"
                 onClick={() => setChoix((c) => ({ ...c, [numero]: id }))}
-                className="min-h-11 w-full rounded-xl bg-nuit-clair px-4 py-3 text-left font-semibold"
+                className="carte min-h-14 w-full px-5 py-3 text-left font-titre text-lg font-bold hover:border-accent"
               >
                 {nom(id)}
               </button>
@@ -114,7 +114,7 @@ export function Defi({ graine, onRejouer, onQuitter }: Props) {
         </ul>
       ) : (
         <section className="flex flex-col gap-3" aria-live="polite">
-          <p className="font-serif text-xl font-semibold">
+          <p className="font-titre text-xl font-bold">
             {juste ? 'Bonne réponse : ' : `Ce n'était pas ${nom(repondu)}, c'était `}
             {nom(manche.bonne_reponse)}.
           </p>
@@ -128,7 +128,7 @@ export function Defi({ graine, onRejouer, onQuitter }: Props) {
           <button
             type="button"
             onClick={() => setNumero(numero + 1)}
-            className="min-h-11 rounded-2xl bg-or px-5 py-3 font-serif text-lg font-semibold text-nuit"
+            className="btn btn-primaire"
           >
             {numero + 1 < total ? 'Manche suivante' : 'Voir le total'}
           </button>

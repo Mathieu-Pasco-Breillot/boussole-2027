@@ -43,11 +43,11 @@ function LigneAccord({ candidatId, a }: { candidatId: string; a: AccordDesaccord
   const q = questionsParId.get(a.questionId);
   const position = paquet.positions[candidatId]?.find((p) => p.questionId === a.questionId);
   return (
-    <li className="rounded-xl bg-nuit p-3 text-sm leading-relaxed">
+    <li className="rounded-xl border border-trait bg-fond p-4 text-sm leading-relaxed">
       <p className="font-semibold">
         <Texte>{q?.enonce}</Texte>
       </p>
-      <p className="mt-1 text-sourdine">{libelleTheme(a.theme)}</p>
+      <p className="mt-1 text-discret">{libelleTheme(a.theme)}</p>
       <p className="mt-2">
         Votre réponse : <strong>{libelleValeur(a.reponse as Valeur)}</strong>
       </p>
@@ -63,20 +63,20 @@ export function Detail({ s }: { s: ScoreCandidat }) {
   return (
     <div className="mt-3 flex flex-col gap-4">
       {s.score.scoreBrut !== null && (
-        <p className="text-sm text-sourdine">
+        <p className="text-sm text-discret">
           Score brut : {Math.round(s.score.scoreBrut)} sur 100 · coefficient de couverture c = {s.score.c.toFixed(2)} (plus
           il est bas, plus le score est ramené vers 50).
         </p>
       )}
       {s.arbitragesEnAttente > 0 && (
-        <p className="text-sm text-sourdine">
+        <p className="text-sm text-discret">
           {s.arbitragesEnAttente} position(s) en attente d'arbitrage : traitée(s) comme « non connu ».
         </p>
       )}
       <section>
-        <h4 className="font-semibold">Accords les plus forts</h4>
+        <h4 className="font-titre text-lg font-bold">Accords les plus forts</h4>
         {s.accords.length === 0 ? (
-          <p className="text-sm text-sourdine">Aucun accord fort sur les questions codées.</p>
+          <p className="text-sm text-discret">Aucun accord fort sur les questions codées.</p>
         ) : (
           <ul className="mt-2 flex flex-col gap-2">
             {s.accords.map((a) => (
@@ -86,9 +86,9 @@ export function Detail({ s }: { s: ScoreCandidat }) {
         )}
       </section>
       <section>
-        <h4 className="font-semibold">Désaccords les plus forts</h4>
+        <h4 className="font-titre text-lg font-bold">Désaccords les plus forts</h4>
         {s.desaccords.length === 0 ? (
-          <p className="text-sm text-sourdine">Aucun désaccord fort sur les questions codées.</p>
+          <p className="text-sm text-discret">Aucun désaccord fort sur les questions codées.</p>
         ) : (
           <ul className="mt-2 flex flex-col gap-2">
             {s.desaccords.map((a) => (
@@ -98,12 +98,12 @@ export function Detail({ s }: { s: ScoreCandidat }) {
         )}
       </section>
       <section>
-        <h4 className="font-semibold">Par chapitre</h4>
+        <h4 className="font-titre text-lg font-bold">Par chapitre</h4>
         <ul className="mt-2 text-sm">
           {s.themes.map((t) => (
-            <li key={t.theme} className="flex justify-between border-b border-sourdine/20 py-1">
+            <li key={t.theme} className="flex justify-between border-b border-trait py-1">
               <span>{libelleTheme(t.theme)}</span>
-              <span className="text-sourdine">
+              <span className="text-discret">
                 {t.affichage === 'affiche' && t.score.scoreArrondi !== null ? `${t.score.scoreArrondi} / 100` : 'trop peu de questions'}
               </span>
             </li>
@@ -120,40 +120,48 @@ function CarteCandidat({ s, rang, exAequo, visible = true, onFiche }: { s: Score
   const motif = (s as HorsClassement).motif;
   return (
     <motion.li
-      className="rounded-2xl border border-sourdine/20 bg-nuit-clair p-4"
+      className="carte p-4 md:p-5"
       initial={false}
       animate={visible ? { opacity: 1, y: 0 } : { opacity: 0, y: 16 }}
       transition={{ duration: 0.35 }}
       aria-hidden={!visible}
     >
-      <div className="flex items-baseline justify-between gap-3">
-        <div>
-          <h3 className="font-serif text-xl font-semibold">
-            {classe && <span className="mr-2 text-or">{exAequo ? `${rang} ex æquo` : rang}</span>}
+      <div className="flex items-center gap-3">
+        {classe && (
+          <span className="grid size-11 shrink-0 place-items-center rounded-full bg-accent/12 font-titre text-lg font-extrabold text-accent">
+            <span className="sr-only">Rang </span>
+            {rang}
+          </span>
+        )}
+        <div className="min-w-0 flex-1">
+          <h3 className="font-titre text-xl leading-tight font-bold">
             <button
               type="button"
               onClick={() => onFiche(s.candidatId)}
               tabIndex={visible ? undefined : -1}
-              className="text-left underline decoration-or/60 decoration-2 underline-offset-4"
+              className="text-left underline decoration-accent/50 decoration-2 underline-offset-4"
             >
               {nomComplet(s.candidatId)}
               <span className="sr-only"> : ouvrir la fiche</span>
             </button>
           </h3>
-          <p className="text-sm text-sourdine">{partiDe(s.candidatId)}</p>
+          <p className="text-sm text-discret">
+            {exAequo ? 'ex æquo · ' : ''}
+            {partiDe(s.candidatId)}
+          </p>
         </div>
         {classe && s.score.scoreArrondi !== null && (
-          <p className="font-serif text-3xl font-semibold" aria-label={`Score ${s.score.scoreArrondi} sur 100`}>
+          <p className="shrink-0 font-titre text-4xl font-extrabold tracking-tight tabular-nums" aria-label={`Score ${s.score.scoreArrondi} sur 100`}>
             {s.score.scoreArrondi}
           </p>
         )}
       </div>
       {classe ? (
         <>
-          <div className="mt-2 h-2 overflow-hidden rounded-full bg-nuit">
-            <div data-barre-score className="h-full bg-or" style={{ width: `${s.score.scoreArrondi ?? 0}%` }} />
+          <div className="jauge mt-3">
+            <div data-barre-score style={{ width: `${s.score.scoreArrondi ?? 0}%` }} />
           </div>
-          <p className="mt-2 text-sm text-sourdine">
+          <p className="mt-2 text-sm text-discret">
             Fiabilité {FIABILITE[s.fiabilite]} · codé sur {s.score.codees} de vos {s.score.repondues} questions
           </p>
         </>
@@ -173,7 +181,7 @@ function CarteCandidat({ s, rang, exAequo, visible = true, onFiche }: { s: Score
           }
           setOuvert((o) => !o);
         }}
-        className="mt-3 text-sm underline"
+        className="lien mt-1 text-encre"
       >
         {ouvert ? 'Masquer le détail' : 'Voir le détail et les sources'} {ouvert ? '▴' : '▾'}
       </button>
@@ -191,20 +199,20 @@ function SectionBadges() {
   }, []);
   const badges = badgesDe(etat);
   return (
-    <section className="rounded-2xl bg-nuit-clair p-5" aria-labelledby="titre-badges">
-      <h2 id="titre-badges" className="font-serif text-2xl font-semibold">
+    <section className="carte p-5" aria-labelledby="titre-badges">
+      <h2 id="titre-badges" className="font-titre text-2xl font-bold tracking-tight">
         Vos badges
       </h2>
-      <p className="mt-1 text-sm text-sourdine">Ils récompensent l'usage de l'outil, jamais le sens de vos réponses. Ils restent sur votre téléphone.</p>
-      <ul className="mt-3 flex flex-col gap-2">
+      <p className="mt-1 text-sm text-discret">Ils récompensent l'usage de l'outil, jamais le sens de vos réponses. Ils restent sur votre téléphone.</p>
+      <ul className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-1">
         {badges.map((b) => (
-          <li key={b.id} className={`rounded-xl border p-3 text-sm ${b.obtenu ? 'border-or bg-or/15' : 'border-sourdine/30'}`}>
+          <li key={b.id} className={`rounded-xl border p-3 text-sm ${b.obtenu ? 'border-soleil bg-soleil/15' : 'border-trait'}`}>
             <p className="font-semibold">
-              <span aria-hidden="true">{b.obtenu ? '★ ' : '☆ '}</span>
+              <span aria-hidden="true" className={b.obtenu ? 'text-soleil' : ''}>{b.obtenu ? '★ ' : '☆ '}</span>
               {b.nom}
               <span className="sr-only">{b.obtenu ? ' (obtenu)' : ' (pas encore obtenu)'}</span>
             </p>
-            <p className="text-sourdine">
+            <p className="text-discret">
               {b.description}
               {!b.obtenu && b.avancement ? ` Avancement : ${b.avancement}.` : ''}
             </p>
@@ -246,125 +254,138 @@ export function Resultats({ partie, dejaRevele, onRevele, onFiche, onNouvelle, o
   }, [revelees]);
 
   return (
-    <main className="mx-auto flex max-w-xl flex-col gap-6 px-5 py-8">
-      <header>
-        <p className="text-xs font-semibold tracking-[0.2em] text-or uppercase">Vos résultats</p>
-        <h1 className="mt-2 font-serif text-4xl font-semibold">Mon Isoloir</h1>
-        <p className="mt-2 text-sourdine">
-          Mode {MODES[partie.mode].nom} · {r.repondues} réponses sur {total} questions · graine du tirage {partie.graine}
-        </p>
+    <main className="conteneur flex flex-col gap-8 pt-8 pb-10">
+      <header className="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <p className="surtitre">Vos résultats</p>
+          <h1 className="titre-page mt-2">Mon Isoloir</h1>
+          <p className="mt-2 text-discret">
+            Mode {MODES[partie.mode].nom} · {r.repondues} réponses sur {total} questions · graine du tirage {partie.graine}
+          </p>
+        </div>
+        <button type="button" onClick={onNouvelle} className="btn btn-secondaire hidden lg:inline-flex">
+          Retour à l'accueil
+        </button>
       </header>
 
-      {fini && r.affinites.length > 0 && (
-        <section className="rounded-2xl bg-nuit-clair p-5 leading-relaxed">
-          <h2 className="font-serif text-xl font-semibold">Vos affinités</h2>
-          <p className="mt-1 text-sm text-sourdine">Les affinités n'entrent pas dans le score : elles servent seulement à situer ces candidats.</p>
-          <ul className="mt-3 flex flex-col gap-1">
-            {r.affinites.map((a) => (
-              <li key={a.candidatId}>
-                <strong>{nomComplet(a.candidatId)}</strong> :{' '}
-                {a.situation === 'classe'
-                  ? `${a.exAequo ? 'ex aequo, ' : ''}${a.rang}${a.rang === 1 ? 'er' : 'e'} du classement, score ${a.score}`
-                  : a.situation === 'hors_classement'
-                    ? `hors classement (${a.motif.texte})`
-                    : a.situation === 'non_evalue'
-                      ? `non évalué (${MOTIFS_NON_EVALUATION[a.motif] ?? a.motif})`
-                      : 'candidat inconnu'}
-              </li>
-            ))}
-          </ul>
-        </section>
-      )}
+      <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-start">
+        <div className="flex min-w-0 flex-col gap-8">
+          {classement.length === 0 && (
+            <section className="carte border-l-4 border-l-accent p-5 leading-relaxed">
+              <h2 className="font-titre text-xl font-bold">Aucun candidat n'est classé pour l'instant</h2>
+              <p className="mt-2">
+                Pour classer un candidat, il faut qu'il soit codé sur au moins {SEUIL_CLASSEMENT_QUESTIONS} de vos questions. Le codage des positions n'est pas terminé : aujourd'hui, les candidats ne sont codés que sur un petit
+                nombre de questions. Ce n'est ni une victoire, ni un échec pour personne.
+              </p>
+              <p className="mt-2">
+                Vous pouvez tout de même consulter, candidat par candidat, vos accords et désaccords sur les questions déjà
+                codées, avec les sources.
+              </p>
+            </section>
+          )}
 
-      {classement.length === 0 && (
-        <section className="rounded-2xl border-l-4 border-or bg-nuit-clair p-5 leading-relaxed">
-          <h2 className="font-serif text-xl font-semibold">Aucun candidat n'est classé pour l'instant</h2>
-          <p className="mt-2">
-            Pour classer un candidat, il faut qu'il soit codé sur au moins {SEUIL_CLASSEMENT_QUESTIONS} de vos questions. Le codage des positions n'est pas terminé : aujourd'hui, les candidats ne sont codés que sur un petit
-            nombre de questions. Ce n'est ni une victoire, ni un échec pour personne.
-          </p>
-          <p className="mt-2">
-            Vous pouvez tout de même consulter, candidat par candidat, vos accords et désaccords sur les questions déjà
-            codées, avec les sources.
-          </p>
-        </section>
-      )}
+          {classement.length > 0 && (
+            <section>
+              <h2 className="font-titre text-2xl font-bold tracking-tight">Classement</h2>
+              {!fini && (
+                <div className="mt-2 flex items-center justify-between gap-3 text-sm text-discret">
+                  <p role="status">{revelees < 0 ? 'Calcul de votre rapprochement…' : 'Voici le classement…'}</p>
+                  <button type="button" className="lien" onClick={() => setRevelees(n)}>
+                    Passer l'animation
+                  </button>
+                </div>
+              )}
+              <ol className="mt-3 flex flex-col gap-3">
+                {classement.map((c, i) => (
+                  <CarteCandidat key={c.candidatId} s={c} rang={c.rang} exAequo={c.exAequo} visible={i >= n - Math.max(revelees, 0)} onFiche={onFiche} />
+                ))}
+              </ol>
+            </section>
+          )}
 
-      {classement.length > 0 && (
-        <section>
-          <h2 className="font-serif text-2xl font-semibold">Classement</h2>
-          {!fini && (
-            <div className="mt-2 flex items-center justify-between gap-3 text-sm text-sourdine">
-              <p role="status">{revelees < 0 ? 'Calcul de votre rapprochement…' : 'Voici le classement…'}</p>
-              <button type="button" className="min-h-11 underline" onClick={() => setRevelees(n)}>
-                Passer l'animation
+          {fini && horsClassement.length > 0 && (
+            <section>
+              <h2 className="font-titre text-2xl font-bold tracking-tight">Hors classement</h2>
+              <p className="mt-1 text-sm text-discret">Ordre tiré au sort à chaque partie.</p>
+              <ul className="mt-3 flex flex-col gap-3">
+                {horsClassement.map((c) => (
+                  <CarteCandidat key={c.candidatId} s={c} onFiche={onFiche} />
+                ))}
+              </ul>
+            </section>
+          )}
+
+          {fini && r.nonEvalues.length > 0 && (
+            <section>
+              <h2 className="font-titre text-2xl font-bold tracking-tight">Non évalués</h2>
+              <p className="mt-1 text-sm text-discret">
+                Ces personnes ne remplissent pas encore le critère d'inclusion. Le critère est public dans le dépôt du projet.
+              </p>
+              {groupesParMotif(r.nonEvalues).map(([motif, liste]) => (
+                <div key={motif} className="mt-3">
+                  <h3 className="font-semibold">{MOTIFS_NON_EVALUATION[motif] ?? motif}</h3>
+                  <p className="text-sm text-discret">{liste.map((n) => nomComplet(n.candidatId)).join(', ')}</p>
+                </div>
+              ))}
+            </section>
+          )}
+        </div>
+
+        <aside aria-label="Autour de vos résultats" className="flex min-w-0 flex-col gap-6">
+          {fini && r.affinites.length > 0 && (
+            <section className="carte p-5 leading-relaxed">
+              <h2 className="font-titre text-xl font-bold">Vos affinités</h2>
+              <p className="mt-1 text-sm text-discret">Les affinités n'entrent pas dans le score : elles servent seulement à situer ces candidats.</p>
+              <ul className="mt-3 flex flex-col gap-1">
+                {r.affinites.map((a) => (
+                  <li key={a.candidatId}>
+                    <strong>{nomComplet(a.candidatId)}</strong> :{' '}
+                    {a.situation === 'classe'
+                      ? `${a.exAequo ? 'ex aequo, ' : ''}${a.rang}${a.rang === 1 ? 'er' : 'e'} du classement, score ${a.score}`
+                      : a.situation === 'hors_classement'
+                        ? `hors classement (${a.motif.texte})`
+                        : a.situation === 'non_evalue'
+                          ? `non évalué (${MOTIFS_NON_EVALUATION[a.motif] ?? a.motif})`
+                          : 'candidat inconnu'}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
+          {fini && <CartePartage mode={partie.mode} graine={partie.graine} classement={classement} nom={nomComplet} />}
+
+          {fini && <SectionBadges />}
+
+          <section className="carte p-5 text-sm leading-relaxed text-discret">
+            <p>Les écarts entre candidats comptent plus que les valeurs : répondre « ni d'accord, ni pas d'accord » partout donne au moins 50 avec tout le monde.</p>
+            <p className="mt-2">Les votes au Parlement n'entrent ni dans le codage des positions ni dans le score. Indicateur de votes : pas encore disponible.</p>
+            <p className="mt-2">
+              Même graine et mêmes réponses redonnent les mêmes résultats. Méthode complète et données :{' '}
+              <a className="underline" href="https://github.com/Mathieu-Pasco-Breillot/choose-your-candidate-2027" rel="noopener noreferrer">
+                dépôt du projet
+              </a>
+              .
+            </p>
+          </section>
+
+          <div className="flex flex-col gap-3">
+            <button type="button" onClick={onNouvelle} className="btn btn-primaire btn-grand">
+              Nouvelle partie, nouvelles questions
+            </button>
+            <button type="button" onClick={onDefi} className="btn btn-secondaire">
+              Jouer au défi « Qui a dit ça ? »
+            </button>
+            <div className="flex flex-wrap justify-center gap-x-6">
+              <button type="button" onClick={onVieprivee} className="lien">
+                Vie privée
+              </button>
+              <button type="button" onClick={onToutEffacer} className="lien">
+                Tout effacer sur cet appareil
               </button>
             </div>
-          )}
-          <ol className="mt-3 flex flex-col gap-3">
-            {classement.map((c, i) => (
-              <CarteCandidat key={c.candidatId} s={c} rang={c.rang} exAequo={c.exAequo} visible={i >= n - Math.max(revelees, 0)} onFiche={onFiche} />
-            ))}
-          </ol>
-        </section>
-      )}
-
-      {fini && <SectionBadges />}
-
-      {fini && <CartePartage mode={partie.mode} graine={partie.graine} classement={classement} nom={nomComplet} />}
-
-      {fini && horsClassement.length > 0 && (
-        <section>
-          <h2 className="font-serif text-2xl font-semibold">Hors classement</h2>
-          <p className="mt-1 text-sm text-sourdine">Ordre tiré au sort à chaque partie.</p>
-          <ul className="mt-3 flex flex-col gap-3">
-            {horsClassement.map((c) => (
-              <CarteCandidat key={c.candidatId} s={c} onFiche={onFiche} />
-            ))}
-          </ul>
-        </section>
-      )}
-
-      {fini && r.nonEvalues.length > 0 && (
-        <section>
-          <h2 className="font-serif text-2xl font-semibold">Non évalués</h2>
-          <p className="mt-1 text-sm text-sourdine">
-            Ces personnes ne remplissent pas encore le critère d'inclusion. Le critère est public dans le dépôt du projet.
-          </p>
-          {groupesParMotif(r.nonEvalues).map(([motif, liste]) => (
-            <div key={motif} className="mt-3">
-              <h3 className="font-semibold">{MOTIFS_NON_EVALUATION[motif] ?? motif}</h3>
-              <p className="text-sm text-sourdine">{liste.map((n) => nomComplet(n.candidatId)).join(', ')}</p>
-            </div>
-          ))}
-        </section>
-      )}
-
-      <section className="rounded-2xl bg-nuit-clair p-5 text-sm leading-relaxed text-sourdine">
-        <p>Les écarts entre candidats comptent plus que les valeurs : répondre « ni d'accord, ni pas d'accord » partout donne au moins 50 avec tout le monde.</p>
-        <p className="mt-2">Les votes au Parlement n'entrent ni dans le codage des positions ni dans le score. Indicateur de votes : pas encore disponible.</p>
-        <p className="mt-2">
-          Même graine et mêmes réponses redonnent les mêmes résultats. Méthode complète et données :{' '}
-          <a className="underline" href="https://github.com/Mathieu-Pasco-Breillot/choose-your-candidate-2027" rel="noopener noreferrer">
-            dépôt du projet
-          </a>
-          .
-        </p>
-      </section>
-
-      <div className="flex flex-col gap-3">
-        <button type="button" onClick={onNouvelle} className="rounded-2xl bg-or px-5 py-4 font-serif text-xl font-semibold text-nuit">
-          Nouvelle partie, nouvelles questions
-        </button>
-        <button type="button" onClick={onDefi} className="min-h-11 rounded-2xl border border-or/60 px-5 py-3 font-serif text-lg">
-          Jouer au défi « Qui a dit ça ? »
-        </button>
-        <button type="button" onClick={onVieprivee} className="min-h-11 text-sm text-sourdine underline">
-          Vie privée
-        </button>
-        <button type="button" onClick={onToutEffacer} className="text-sm text-sourdine underline">
-          Tout effacer sur cet appareil
-        </button>
+          </div>
+        </aside>
       </div>
     </main>
   );

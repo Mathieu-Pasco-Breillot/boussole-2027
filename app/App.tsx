@@ -1,5 +1,8 @@
 import { MotionConfig } from 'motion/react';
-import { lazy, Suspense, useCallback, useRef, useState } from 'react';
+import { lazy, Suspense, useCallback, useEffect, useRef, useState } from 'react';
+import type { ReactNode } from 'react';
+import { Site } from './cadre/Site.tsx';
+import type { Rubrique } from './cadre/Site.tsx';
 import type { Valeur } from '../core/score/types.ts';
 import type { ModeJeu, Partie, Preparation as PreparationChoisie } from './jeu.ts';
 import { estTerminee, marquerVues, nouvelleGraine, nouvellePartie, reculer, repondre, situation } from './jeu.ts';
@@ -55,17 +58,41 @@ export function App() {
   const [ficheDepuis, setFicheDepuis] = useState<'candidats' | 'resultats' | 'resultatsDuel'>('candidats');
   const [revelationVue, setRevelationVue] = useState(false);
   const defilement = useRef(0);
+  // À chaque changement d'écran, la page repart du haut ; sauf au retour d'une fiche (hauteur d'avant) et vers
+  // « Jouer » (le choix du format, sur l'accueil).
+  const cible = useRef<'haut' | 'restaurer' | 'jouer'>('haut');
   const ouvrirFiche = (id: string, depuis: 'candidats' | 'resultats' | 'resultatsDuel') => {
     defilement.current = window.scrollY;
     setFiche(id);
     setFicheDepuis(depuis);
     setEcran('fiche');
-    window.scrollTo(0, 0);
   };
   const retourDeFiche = () => {
+    cible.current = 'restaurer';
     setEcran(ficheDepuis);
-    requestAnimationFrame(() => window.scrollTo(0, defilement.current));
   };
+  useEffect(() => {
+    const vers = cible.current;
+    cible.current = 'haut';
+    if (vers === 'restaurer') requestAnimationFrame(() => window.scrollTo({ top: defilement.current, behavior: 'instant' }));
+    else if (vers === 'jouer') requestAnimationFrame(() => document.getElementById('jouer')?.scrollIntoView({ block: 'start' }));
+    else window.scrollTo({ top: 0, behavior: 'instant' });
+  }, [ecran]);
+
+  const aller = (r: Rubrique) => {
+    if (r === 'jouer') {
+      if (ecran === 'accueil') document.getElementById('jouer')?.scrollIntoView({ block: 'start' });
+      else cible.current = 'jouer';
+      setEcran('accueil');
+    } else if (r === ecran) window.scrollTo({ top: 0 });
+    else setEcran(r);
+  };
+  /** Pages du site : en-tête, pied de page et barre d'onglets autour de l'écran. */
+  const site = (actif: Rubrique | null, contenu: ReactNode, accueil = false) => (
+    <Site actif={actif} onAller={aller} onVieprivee={() => setEcran('vieprivee')} onToutEffacer={accueil ? effacer : undefined}>
+      {contenu}
+    </Site>
+  );
   const [mode, setMode] = useState<ModeJeu>('express');
   // Fin de chapitre (J1) : affichée juste après la dernière réponse d'un chapitre, jamais à la reprise d'une partie.
   const [entracte, setEntracte] = useState(false);
@@ -166,23 +193,35 @@ export function App() {
       ) : ecran === 'preparation' ? (
         <Preparation mode={mode} onLancer={lancer} onRetour={() => setEcran('accueil')} />
       ) : ecran === 'methode' ? (
-        <Suspense fallback={<Chargement />}>
+        site(
+          'methode',
+          <Suspense fallback={<Chargement />}>
           <Methode onRetour={() => setEcran('accueil')} graine={partie?.graine ?? null} journal={partie?.journal ?? null} />
-        </Suspense>
+        </Suspense>,
+        )
       ) : ecran === 'banque' ? (
-        <Suspense fallback={<Chargement />}>
+        site(
+          'banque',
+          <Suspense fallback={<Chargement />}>
           <Banque onRetour={() => setEcran('accueil')} />
-        </Suspense>
+        </Suspense>,
+        )
       ) : ecran === 'candidats' ? (
-        <Suspense fallback={<Chargement />}>
+        site(
+          'candidats',
+          <Suspense fallback={<Chargement />}>
           <Candidats onRetour={() => setEcran('accueil')} onFiche={(id) => ouvrirFiche(id, 'candidats')} />
-        </Suspense>
+        </Suspense>,
+        )
       ) : ecran === 'fiche' ? (
-        <Suspense fallback={<Chargement />}>
+        site(
+          'candidats',
+          <Suspense fallback={<Chargement />}>
           <FicheCandidat id={fiche} onRetour={retourDeFiche} libelleRetour={ficheDepuis !== 'candidats' ? '← Retour aux résultats' : '← Retour'} />
-        </Suspense>
+        </Suspense>,
+        )
       ) : ecran === 'vieprivee' ? (
-        <Vieprivee onRetour={() => setEcran('accueil')} onToutEffacer={effacer} />
+        site(null, <Vieprivee onRetour={() => setEcran('accueil')} onToutEffacer={effacer} />)
       ) : ecran === 'defi' ? (
         <Defi graine={graineDefi} onRejouer={() => setGraineDefi(nouvelleGraine())} onQuitter={() => setEcran('accueil')} />
       ) : ecran === 'resultats' && partie && estTerminee(partie) ? (
@@ -193,26 +232,28 @@ export function App() {
           onFiche={(id) => ouvrirFiche(id, 'resultats')}
           onNouvelle={() => setEcran('accueil')} onDefi={jouerDefi} onVieprivee={() => setEcran('vieprivee')} onToutEffacer={effacer} />
       ) : (
-        <Accueil
-          key={generation}
-          enCours={!!partie && !estTerminee(partie)}
-          terminee={!!partie && estTerminee(partie)}
-          onCommencer={choisirMode}
-          onDefi={jouerDefi}
-          onVieprivee={() => setEcran('vieprivee')}
-          onNaviguer={(e) => setEcran(e)}
-          onReprendre={() => {
-            setEntracte(false);
-            setEcran('quiz');
-          }}
-          onVoirResultats={() => setEcran('resultats')}
-          onToutEffacer={effacer}
-          duelEnCours={!!duel && !estTerminee(duel)}
-          duelTermine={!!duel && estTerminee(duel)}
-          onDuel={() => setEcran('preparationDuel')}
-          onReprendreDuel={() => setEcran('duel')}
-          onVoirResultatsDuel={() => setEcran('resultatsDuel')}
-        />
+        site(
+          'accueil',
+          <Accueil
+            key={generation}
+            enCours={!!partie && !estTerminee(partie)}
+            terminee={!!partie && estTerminee(partie)}
+            onCommencer={choisirMode}
+            onDefi={jouerDefi}
+            onNaviguer={(e) => setEcran(e)}
+            onReprendre={() => {
+              setEntracte(false);
+              setEcran('quiz');
+            }}
+            onVoirResultats={() => setEcran('resultats')}
+            duelEnCours={!!duel && !estTerminee(duel)}
+            duelTermine={!!duel && estTerminee(duel)}
+            onDuel={() => setEcran('preparationDuel')}
+            onReprendreDuel={() => setEcran('duel')}
+            onVoirResultatsDuel={() => setEcran('resultatsDuel')}
+          />,
+          true,
+        )
       )}
       </CadreGlossaire>
     </MotionConfig>

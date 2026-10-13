@@ -1,4 +1,4 @@
-import { AnimatePresence, motion } from 'motion/react';
+import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
 import { Extraits } from './Extraits.tsx';
 import { useEffect, useRef, useState } from 'react';
 import { qualifierEcart } from '../../core/duel/index.ts';
@@ -9,7 +9,7 @@ import { questionCourante, situation } from '../jeu.ts';
 import { Depliants } from './Depliants.tsx';
 import { ECARTS, ECHELLE, libelleTheme, libelleValeur, NATURES } from '../libelles.ts';
 import { paquet } from '../paquet.ts';
-import { INTENSITE } from './Quiz.tsx';
+import { EnteteQuiz, INTENSITE } from './Quiz.tsx';
 import { Texte } from '../glossaire/Texte.tsx';
 
 interface Props {
@@ -44,6 +44,8 @@ export function QuizDuel({ partie, onRepondre, onSuivante, onModifier, onQuitter
     if (courante.current === question.id) onRepondre(valeur, tresImportant);
   };
   const total = partie.questions.length;
+  // Animations réduites : la carte suivante s'affiche d'un coup, sans fondu (texte lisible tout de suite).
+  const reduit = useReducedMotion();
   const echelle = partie.echelleInversee ? [...ECHELLE].reverse() : ECHELLE;
   const repondues = Object.keys(partie.reponses).length;
 
@@ -52,27 +54,12 @@ export function QuizDuel({ partie, onRepondre, onSuivante, onModifier, onQuitter
   const derniere = partie.position === total - 1;
 
   return (
-    <main className="mx-auto flex min-h-dvh max-w-xl flex-col px-5 py-6">
-      <div className="flex items-center justify-between text-sm text-sourdine">
-        <button type="button" onClick={onQuitter} className="underline">
-          Quitter
-        </button>
-        <span aria-live="polite">
-          {partie.position + 1} / {total}
+    <main className="mx-auto flex min-h-dvh w-full max-w-5xl flex-col px-5 pt-4 pb-6 md:px-8 md:pt-6">
+      <EnteteQuiz position={partie.position} total={total} avancement={repondues} onQuitter={onQuitter} />
+      <p className="pilule mt-4 w-fit text-discret">
+        <span>
+          Duel avec <strong className="text-encre">{nom}</strong> · {c.parti}
         </span>
-      </div>
-      <div
-        className="mt-2 h-2 overflow-hidden rounded-full bg-nuit-clair"
-        role="progressbar"
-        aria-label="Progression"
-        aria-valuemin={0}
-        aria-valuemax={total}
-        aria-valuenow={repondues}
-      >
-        <div className="h-full bg-or transition-[width]" style={{ width: `${(repondues / total) * 100}%` }} />
-      </div>
-      <p className="mt-3 text-sm text-sourdine">
-        Duel avec <strong className="text-creme">{nom}</strong> · {c.parti}
       </p>
 
       <AnimatePresence mode="wait">
@@ -81,27 +68,29 @@ export function QuizDuel({ partie, onRepondre, onSuivante, onModifier, onQuitter
           initial={{ opacity: 0, x: 24 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -24 }}
-          transition={{ duration: 0.2 }}
-          className="mt-5 flex flex-1 flex-col"
+          transition={{ duration: reduit ? 0 : 0.2 }}
+          className="mt-5 grid flex-1 content-start gap-6 lg:mt-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12"
         >
-          <p className="text-xs font-semibold tracking-[0.18em] text-or uppercase">
+          <div>
+          <p className="surtitre">
             Chapitre {s.chapitre + 1} sur {partie.chapitres.length} · {libelleTheme(s.theme)} · Proposition {s.dansChapitre + 1} sur {s.taille}
           </p>
-          <p className="mt-3 text-sm text-sourdine">Êtes-vous d'accord ?</p>
-          <h1 className="mt-1 font-serif text-3xl leading-snug font-semibold">
+          <p className="mt-4 text-sm font-medium text-discret">Êtes-vous d'accord ?</p>
+          <h1 className="mt-1 font-titre text-[clamp(1.6rem,1.25rem+1.6vw,2.4rem)] leading-[1.18] font-bold tracking-[-0.015em]">
             <Texte>{question.enonce}</Texte>
           </h1>
           <Depliants question={question} />
+          </div>
 
           {!revelation ? (
-            <>
-              <div className="mt-6 flex flex-col gap-2">
+            <div className="flex flex-col lg:self-start lg:rounded-3xl lg:border lg:border-trait lg:bg-carte lg:p-6 lg:shadow-xl lg:shadow-black/5">
+              <div className="flex flex-col gap-2">
                 {echelle.map((e) => (
                   <button
                     key={e.valeur}
                     type="button"
                     onClick={() => repondre(e.valeur, important)}
-                    className={`rounded-xl border px-4 py-3 text-left text-lg ${INTENSITE[e.valeur]}`}
+                    className={`reponse ${INTENSITE[e.valeur]}`}
                   >
                     {e.libelle}
                   </button>
@@ -111,18 +100,18 @@ export function QuizDuel({ partie, onRepondre, onSuivante, onModifier, onQuitter
                 type="button"
                 aria-pressed={important}
                 onClick={() => setImportant((v) => !v)}
-                className={`mt-4 rounded-xl border px-4 py-3 text-left ${important ? 'border-or bg-or/20' : 'border-sourdine/30 text-sourdine'}`}
+                className={`mt-4 min-h-12 rounded-xl border px-4 py-3 text-left font-medium ${important ? 'border-accent bg-accent/15' : 'border-trait bg-carte text-discret lg:bg-fond'}`}
               >
                 {important ? '★' : '☆'} Très important pour moi
               </button>
-              <button type="button" onClick={() => repondre('sans_avis', false)} className="mt-2 rounded-xl px-4 py-2 text-left text-sm text-sourdine underline">
+              <button type="button" onClick={() => repondre('sans_avis', false)} className="lien mt-2 self-end">
                 Sans avis
               </button>
-            </>
+            </div>
           ) : (
-            <section className="mt-6 flex flex-col gap-4" aria-label={`Position de ${nom}`} data-revelation>
-              <div className="rounded-2xl border-l-4 border-or bg-nuit-clair p-4 leading-relaxed">
-                <p className="text-xs font-semibold tracking-[0.18em] text-or uppercase">Ce que porte {nom}</p>
+            <section className="flex flex-col gap-4" aria-label={`Position de ${nom}`} data-revelation>
+              <div className="carte border-l-4 border-l-accent p-5 leading-relaxed">
+                <p className="surtitre">Ce que porte {nom}</p>
                 <p className="mt-2">
                   Votre réponse : <strong>{saisie!.valeur === 'sans_avis' ? 'sans avis' : libelleValeur(saisie!.valeur)}</strong>
                   {saisie!.tresImportant ? ' (très important)' : ''}
@@ -130,11 +119,11 @@ export function QuizDuel({ partie, onRepondre, onSuivante, onModifier, onQuitter
                 {position && position.code !== null && (
                   <p>
                     Sa position : <strong>{libelleValeur(position.code)}</strong>{' '}
-                    <span className="text-sourdine">({position.nature ? (NATURES[position.nature] ?? position.nature) : ''})</span>
+                    <span className="text-discret">({position.nature ? (NATURES[position.nature] ?? position.nature) : ''})</span>
                   </p>
                 )}
                 {position && position.code !== null && saisie!.valeur !== 'sans_avis' && (
-                  <p className="mt-1 text-sm text-sourdine">
+                  <p className="mt-1 text-sm text-discret">
                     {ECARTS[qualifierEcart(4 - Math.abs(saisie!.valeur - position.code))]}
                   </p>
                 )}
@@ -142,23 +131,23 @@ export function QuizDuel({ partie, onRepondre, onSuivante, onModifier, onQuitter
               </div>
 
               {affinite && (
-                <div className="rounded-2xl bg-nuit-clair p-4" role="status" data-affinite>
+                <div className="carte p-5" role="status" data-affinite>
                   {affinite.affichable && affinite.score.scoreArrondi !== null ? (
                     <>
-                      <p className="text-sm text-sourdine">Affinité en direct avec {nom}</p>
-                      <p className="font-serif text-4xl font-semibold" aria-label={`Affinité ${affinite.score.scoreArrondi} sur 100`}>
-                        {affinite.score.scoreArrondi} <span className="text-lg text-sourdine">/ 100</span>
+                      <p className="text-sm text-discret">Affinité en direct avec {nom}</p>
+                      <p className="font-titre text-5xl font-extrabold tracking-tight" aria-label={`Affinité ${affinite.score.scoreArrondi} sur 100`}>
+                        {affinite.score.scoreArrondi} <span className="text-lg text-discret">/ 100</span>
                       </p>
-                      <div className="mt-2 h-2 overflow-hidden rounded-full bg-nuit">
-                        <div className="h-full bg-or" style={{ width: `${affinite.score.scoreArrondi}%` }} />
+                      <div className="jauge mt-2">
+                        <div style={{ width: `${affinite.score.scoreArrondi}%` }} />
                       </div>
-                      <p className="mt-2 text-sm text-sourdine">
+                      <p className="mt-2 text-sm text-discret">
                         Fiabilité {affinite.fiabilite} · {affinite.score.codees} propositions comptées. Ce score n'est comparable ni à celui d'un autre candidat, ni au
                         classement des autres modes.
                       </p>
                     </>
                   ) : (
-                    <p className="text-sm text-sourdine">
+                    <p className="text-sm text-discret">
                       Affinité en cours de calcul : encore {affinite.avantAffichage} réponse{affinite.avantAffichage > 1 ? 's' : ''} avant de
                       l'afficher (sous 8 propositions, un score ne voudrait rien dire).
                     </p>
@@ -166,10 +155,10 @@ export function QuizDuel({ partie, onRepondre, onSuivante, onModifier, onQuitter
                 </div>
               )}
 
-              <button type="button" onClick={onSuivante} className="rounded-2xl bg-or px-5 py-4 font-serif text-xl font-semibold text-nuit">
+              <button type="button" onClick={onSuivante} className="btn btn-primaire btn-grand">
                 {derniere ? 'Voir mon résultat' : 'Proposition suivante →'}
               </button>
-              <button type="button" onClick={onModifier} className="min-h-11 text-left text-sm text-sourdine underline">
+              <button type="button" onClick={onModifier} className="lien text-left">
                 Modifier ma réponse (vous avez déjà vu sa position)
               </button>
             </section>

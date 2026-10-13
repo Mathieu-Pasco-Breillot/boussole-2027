@@ -2,8 +2,8 @@ import { expect, test, type Page } from '@playwright/test';
 import { lancer, repondreATout, surveillerErreurs, surveillerReseau } from './outils.ts';
 
 const fond = (page: Page) => page.evaluate(`getComputedStyle(document.documentElement).backgroundColor`);
-const SOMBRE = 'rgb(14, 26, 51)';
-const CLAIR = 'rgb(244, 239, 227)';
+const SOMBRE = 'rgb(13, 20, 40)';
+const CLAIR = 'rgb(245, 243, 238)';
 
 test.describe('téléphone réglé en clair', () => {
   test.use({ colorScheme: 'light' });

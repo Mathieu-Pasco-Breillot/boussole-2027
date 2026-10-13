@@ -21,17 +21,17 @@ export function CartePartage({ mode, graine, classement, nom }: Props) {
   if (classement.length === 0) return null;
 
   return (
-    <section className="rounded-2xl bg-nuit-clair p-5" aria-labelledby="titre-carte">
-      <h2 id="titre-carte" className="font-serif text-2xl font-semibold">
+    <section className="carte p-5" aria-labelledby="titre-carte">
+      <h2 id="titre-carte" className="font-titre text-xl font-bold">
         Carte à partager
       </h2>
-      <p className="mt-1 text-sm text-sourdine">
+      <p className="mt-1 text-sm text-discret">
         L'image est dessinée sur votre téléphone ; rien n'est envoyé. Elle montre le podium et la fiabilité, jamais vos réponses.
       </p>
       <canvas ref={ref} className="mt-3 w-full rounded-xl" role="img" aria-label="Aperçu de la carte de résultat" />
       <button
         type="button"
-        className="mt-3 min-h-11 w-full rounded-2xl bg-or px-5 py-3 font-serif text-lg font-semibold text-nuit"
+        className="mt-3 min-h-11 w-full rounded-2xl bg-accent px-5 py-3 font-titre text-lg font-semibold text-fond"
         onClick={async () => {
           if (!ref.current) return;
           const r = await partagerCarte(ref.current);
@@ -40,7 +40,7 @@ export function CartePartage({ mode, graine, classement, nom }: Props) {
       >
         Partager ou télécharger l'image
       </button>
-      <p className="mt-2 text-sm text-sourdine" role="status">
+      <p className="mt-2 text-sm text-discret" role="status">
         {message}
       </p>
     </section>

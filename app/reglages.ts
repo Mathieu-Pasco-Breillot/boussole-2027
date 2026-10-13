@@ -8,7 +8,7 @@ import { CLE_APPARENCE, CLE_SON } from './stockage.ts';
 export type Apparence = 'auto' | 'clair' | 'sombre';
 
 /** Couleur de la barre d'état du téléphone, alignée sur le fond de chaque thème (app/index.css). */
-const BARRE: Record<'clair' | 'sombre', string> = { sombre: '#0e1a33', clair: '#f4efe3' };
+const BARRE: Record<'clair' | 'sombre', string> = { sombre: '#0d1428', clair: '#f5f3ee' };
 
 function lire(cle: string): string | null {
   try {

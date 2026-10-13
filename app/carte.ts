@@ -56,46 +56,46 @@ export function dessinerCarte(canvas: HTMLCanvasElement, d: DonneesCarte): void 
   canvas.height = HAUTEUR_CARTE;
   const ctx = canvas.getContext('2d');
   if (!ctx) return;
-  const serif = "'Source Serif 4 Variable', Georgia, serif";
-  const sans = "'Source Sans 3 Variable', system-ui, sans-serif";
-  ctx.fillStyle = '#0e1a33';
+  const titre = "'Bricolage Grotesque Variable', 'Trebuchet MS', sans-serif";
+  const sans = "'Figtree Variable', system-ui, sans-serif";
+  ctx.fillStyle = '#0d1428';
   ctx.fillRect(0, 0, LARGEUR_CARTE, HAUTEUR_CARTE);
-  ctx.fillStyle = '#e2b85c';
+  ctx.fillStyle = '#93a5ff';
   ctx.fillRect(0, 0, 18, HAUTEUR_CARTE);
 
   ctx.textBaseline = 'alphabetic';
-  ctx.fillStyle = '#e2b85c';
-  ctx.font = `600 34px ${sans}`;
+  ctx.fillStyle = '#93a5ff';
+  ctx.font = `700 34px ${sans}`;
   ctx.fillText('PRÉSIDENTIELLE 2027', 80, 120);
-  ctx.fillStyle = '#f4ecd8';
-  ctx.font = `600 96px ${serif}`;
+  ctx.fillStyle = '#eef0f7';
+  ctx.font = `700 96px ${titre}`;
   ctx.fillText('Mon Isoloir', 80, 230);
-  ctx.fillStyle = '#aab4c8';
+  ctx.fillStyle = '#a6aec4';
   ctx.font = `400 38px ${sans}`;
   ctx.fillText(`Mode ${MODES[d.mode].nom} · ${MODES[d.mode].questions} questions`, 80, 295);
 
   let y = 400;
   for (const l of d.podium) {
-    ctx.fillStyle = '#17284a';
+    ctx.fillStyle = '#161f3a';
     ctx.fillRect(80, y - 70, LARGEUR_CARTE - 160, 170);
-    ctx.fillStyle = '#e2b85c';
-    ctx.font = `600 80px ${serif}`;
+    ctx.fillStyle = '#93a5ff';
+    ctx.font = `700 80px ${titre}`;
     ctx.fillText(String(l.rang), 115, y + 35);
-    ctx.fillStyle = '#f4ecd8';
-    ctx.font = `600 50px ${serif}`;
+    ctx.fillStyle = '#eef0f7';
+    ctx.font = `700 50px ${titre}`;
     ctx.fillText(l.nom, 200, y + 15);
-    ctx.fillStyle = '#aab4c8';
+    ctx.fillStyle = '#a6aec4';
     ctx.font = `400 34px ${sans}`;
     ctx.fillText(`${l.exAequo ? 'ex aequo · ' : ''}fiabilité ${l.fiabilite.toLowerCase()}`, 200, y + 65);
-    ctx.fillStyle = '#e2b85c';
-    ctx.font = `600 70px ${serif}`;
+    ctx.fillStyle = '#93a5ff';
+    ctx.font = `700 70px ${titre}`;
     ctx.textAlign = 'right';
     ctx.fillText(String(d.podium.length ? l.score : ''), LARGEUR_CARTE - 115, y + 35);
     ctx.textAlign = 'left';
     y += 210;
   }
 
-  ctx.fillStyle = '#aab4c8';
+  ctx.fillStyle = '#a6aec4';
   ctx.font = `400 32px ${sans}`;
   const pied = 'Comparateur indépendant, méthode publique. Un score est un rapprochement avec des positions publiques sourcées, pas une consigne de vote. Les candidats peu codés ne sont pas classés.';
   let yy = 1090;
@@ -103,8 +103,8 @@ export function dessinerCarte(canvas: HTMLCanvasElement, d: DonneesCarte): void 
     ctx.fillText(l, 80, yy);
     yy += 44;
   }
-  ctx.fillStyle = '#f4ecd8';
-  ctx.font = `600 40px ${sans}`;
+  ctx.fillStyle = '#eef0f7';
+  ctx.font = `700 40px ${sans}`;
   ctx.fillText(ADRESSE, 80, 1290);
 }
 

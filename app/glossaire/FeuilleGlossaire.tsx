@@ -29,11 +29,11 @@ export function FeuilleGlossaire() {
       }}
     >
       <div className="flex max-h-[85dvh] flex-col">
-        <header className="flex items-center justify-between gap-3 border-b border-or/30 px-4 py-3">
-          <h2 id="titre-feuille-glossaire" className="font-serif text-2xl font-semibold">
+        <header className="flex items-center justify-between gap-3 border-b border-accent/30 px-4 py-3">
+          <h2 id="titre-feuille-glossaire" className="font-titre text-2xl font-bold tracking-tight">
             Glossaire
           </h2>
-          <button type="button" onClick={fermer} className="min-h-11 text-sm text-sourdine underline">
+          <button type="button" onClick={fermer} className="lien">
             Fermer le glossaire
           </button>
         </header>

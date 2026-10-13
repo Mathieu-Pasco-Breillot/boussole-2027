@@ -14,16 +14,16 @@ const HEBERGEUR =
 
 export function Vieprivee({ onRetour, onToutEffacer }: Props) {
   return (
-    <main className="mx-auto flex max-w-xl flex-col gap-5 px-5 py-8 leading-relaxed">
+    <main className="colonne flex max-w-3xl flex-col gap-8 py-8 text-[1.0625rem] leading-relaxed">
       <header>
-        <button type="button" onClick={onRetour} className="min-h-11 text-sm text-sourdine underline">
+        <button type="button" onClick={onRetour} className="lien">
           ← Retour
         </button>
-        <h1 className="mt-2 font-serif text-4xl font-semibold">Vie privée</h1>
+        <h1 className="titre-page mt-2">Vie privée</h1>
       </header>
 
       <section>
-        <h2 className="font-serif text-2xl font-semibold">Ce qui reste sur votre téléphone</h2>
+        <h2 className="font-titre text-2xl font-bold tracking-tight">Ce qui reste sur votre téléphone</h2>
         <p className="mt-2">
           Vos réponses, la partie en cours, votre dernier résultat, vos badges (de simples compteurs d'usage, sans nom de candidat ni réponse), vos réglages (apparence, son) et la liste des questions déjà vues (pour ne pas vous les
           reposer) sont enregistrés dans le stockage de votre navigateur, sur votre appareil seulement. Le calcul des résultats
@@ -33,14 +33,14 @@ export function Vieprivee({ onRetour, onToutEffacer }: Props) {
       </section>
 
       <section>
-        <h2 className="font-serif text-2xl font-semibold">Ce que voit l'hébergeur</h2>
+        <h2 className="font-titre text-2xl font-bold tracking-tight">Ce que voit l'hébergeur</h2>
         <p className="mt-2">
           <Texte>{HEBERGEUR}</Texte>
         </p>
       </section>
 
       <section>
-        <h2 className="font-serif text-2xl font-semibold">Partage</h2>
+        <h2 className="font-titre text-2xl font-bold tracking-tight">Partage</h2>
         <p className="mt-2">
           Il n'existe pas de lien de partage, car un lien porterait vos réponses. La carte de résultat est une image créée sur
           votre téléphone ; vous l'envoyez vous-même si vous le souhaitez.
@@ -48,9 +48,9 @@ export function Vieprivee({ onRetour, onToutEffacer }: Props) {
       </section>
 
       <section>
-        <h2 className="font-serif text-2xl font-semibold">Tout effacer</h2>
+        <h2 className="font-titre text-2xl font-bold tracking-tight">Tout effacer</h2>
         <p className="mt-2">Ce bouton supprime de cet appareil la partie, le résultat, l'historique des questions vues, les badges et vos réglages (apparence, son).</p>
-        <button type="button" onClick={onToutEffacer} className="mt-3 min-h-11 rounded-2xl border border-or/60 px-5 py-3 font-serif text-lg">
+        <button type="button" onClick={onToutEffacer} className="btn btn-secondaire mt-4">
           Tout effacer sur cet appareil
         </button>
       </section>
