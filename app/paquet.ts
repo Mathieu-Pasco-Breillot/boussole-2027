@@ -2,7 +2,7 @@
  * Le paquet de données allégé (produit par `npm run bundle` à partir de data/ et derive/).
  * L'application ne lit que ce fichier : aucun appel réseau pour obtenir des données.
  */
-import type { DeriveAncrage, DeriveDiscriminance, Questions } from '../core/types.generated.ts';
+import type { DeriveAncrage, DeriveDiscriminance, Glossaire, Questions } from '../core/types.generated.ts';
 import type { EtatPosition, Valeur } from '../core/score/types.ts';
 import brut from './donnees/paquet.json';
 
@@ -56,6 +56,8 @@ export interface Paquet {
   defi: Record<string, unknown[]>;
   discriminance: DeriveDiscriminance.DeriveDiscriminance;
   ancrage: DeriveAncrage.DeriveAncrage;
+  /** Glossaire des sigles, par ordre alphabétique français (scripts/lib/glossaire.ts). */
+  glossaire: Glossaire.EntreeGlossaire[];
 }
 
 export const paquet = brut as unknown as Paquet;

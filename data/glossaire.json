@@ -1,0 +1,22 @@
+[
+  {
+    "sigle": "OTAN",
+    "developpe": "Organisation du traité de l'Atlantique Nord",
+    "explication": "Alliance militaire fondée en 1949 entre des pays d'Amérique du Nord et d'Europe, qui s'engagent à se défendre mutuellement."
+  },
+  {
+    "sigle": "PIB",
+    "developpe": "Produit intérieur brut",
+    "explication": "Valeur de ce qui est produit dans un pays en un an ; il sert à mesurer la taille d'une économie."
+  },
+  {
+    "sigle": "TVA",
+    "developpe": "Taxe sur la valeur ajoutée",
+    "explication": "Impôt sur la consommation, compris dans le prix payé par l'acheteur ; son taux normal est de 20 % en France."
+  },
+  {
+    "sigle": "UE",
+    "developpe": "Union européenne",
+    "explication": "Union politique et économique de 27 États européens, dotée d'institutions et d'un marché communs."
+  }
+]

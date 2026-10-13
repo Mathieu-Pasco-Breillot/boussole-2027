@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "FichierGlossaire",
+  "description": "data/glossaire.json — glossaire des sigles affichés dans l'application (issue #7). Une entrée par sigle, sans nom de personne. N'entre pas dans l'empreinte des données : le glossaire n'a aucun effet sur les scores.",
+  "type": "array",
+  "minItems": 1,
+  "items": { "$ref": "#/$defs/entree" },
+  "$defs": {
+    "entree": {
+      "title": "EntreeGlossaire",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sigle", "developpe", "explication"],
+      "properties": {
+        "sigle": {
+          "description": "Le sigle tel qu'il s'écrit dans les textes : majuscule initiale, puis au moins une majuscule ou un chiffre. Unique.",
+          "type": "string",
+          "pattern": "^\\p{Lu}[\\p{Lu}\\p{N}]+$"
+        },
+        "developpe": { "description": "Forme développée exacte (nom officiel).", "type": "string", "minLength": 1 },
+        "explication": { "description": "Une phrase factuelle et neutre, 25 mots au plus (contrôlé par scripts/lib/validate.ts).", "type": "string", "minLength": 1 },
+        "formes": {
+          "description": "Autres écritures à reconnaître dans les textes (casse, variante chiffrée). Chacune n'appartient qu'à une entrée.",
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^\\p{L}[\\p{L}\\p{N}]+$" }
+        }
+      }
+    }
+  }
+}

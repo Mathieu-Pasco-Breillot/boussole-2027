@@ -26,7 +26,8 @@
               "arbitrage",
               "changement_critere",
               "recalcul",
-              "ajout_impact"
+              "ajout_impact",
+              "ajout_glossaire"
             ]
           },
           "objets": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
