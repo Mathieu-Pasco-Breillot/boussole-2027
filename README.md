@@ -76,12 +76,12 @@ de commit ([conventional commits](#messages-de-commit)) :
 2. fusionner cette PR crée les tags et les [GitHub Releases](https://github.com/Mathieu-Pasco-Breillot/choose-your-candidate-2027/releases),
    puis avance la branche `main` sur le commit publié ;
 3. Railway déploie :
-   - l'environnement `production` : service `prod`, branche `main`, https://mon-isoloir.up.railway.app ;
-   - l'environnement `preprod` : service `preprod`, branche `develop`, https://preprod-preprod-a4b2.up.railway.app,
+   - l'environnement `production` : service `prod`, branche `main`, https://boussole-2027.up.railway.app ;
+   - l'environnement `preprod` : service `preprod`, branche `develop`, https://preprod-boussole-2027.up.railway.app,
      signalé comme tel sur le site.
 
-Chaque PR ouvre un environnement éphémère `choose-your-candidate-2027-pr-<n°>` (PR Environments, créé depuis
-`preprod`), supprimé à la fermeture de la PR. Le déploiement attend le succès de la CI (« wait for CI »).
+Chaque PR ouvre un environnement éphémère, créé depuis la config du projet, avec son URL de preview, supprimé à la
+fermeture de la PR. Le déploiement attend le succès de la CI (« wait for CI »).
 
 L'image est construite avec le `Dockerfile` (imposé par `railway.json`) et servie par Caddy. Les tests de bout en bout tournent avec les mêmes
 en-têtes que le site en ligne, lus dans le `Caddyfile`. `main` ne reçoit jamais de commit direct.

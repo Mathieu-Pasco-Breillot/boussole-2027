@@ -13,7 +13,7 @@ import type { ModeJeu } from './jeu.ts';
 
 export const LARGEUR_CARTE = 1080;
 export const HAUTEUR_CARTE = 1350;
-const ADRESSE = 'mon-isoloir.up.railway.app';
+const ADRESSE = 'boussole-2027.up.railway.app';
 
 /** Jetons de app/index.css (--color-*), sans lien avec un parti. */
 const COULEURS = {
