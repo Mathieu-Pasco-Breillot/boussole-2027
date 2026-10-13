@@ -13,6 +13,9 @@ import { Extraits } from './Extraits.tsx';
 import { SEUIL_CLASSEMENT_QUESTIONS } from '../../core/score/parametres.ts';
 import { jouer } from '../son.ts';
 import { Texte } from '../glossaire/Texte.tsx';
+import { Bouton } from '../ui/Bouton.tsx';
+import { Carte } from '../ui/Carte.tsx';
+import { EnteteParcours } from '../ui/EnteteParcours.tsx';
 
 interface Props {
   partie: Partie;
@@ -43,7 +46,7 @@ function LigneAccord({ candidatId, a }: { candidatId: string; a: AccordDesaccord
   const q = questionsParId.get(a.questionId);
   const position = paquet.positions[candidatId]?.find((p) => p.questionId === a.questionId);
   return (
-    <li className="rounded-xl border border-trait bg-fond p-4 text-sm leading-relaxed">
+    <li className="ligne-position">
       <p className="font-semibold">
         <Texte>{q?.enonce}</Texte>
       </p>
@@ -74,7 +77,7 @@ export function Detail({ s }: { s: ScoreCandidat }) {
         </p>
       )}
       <section>
-        <h4 className="font-titre text-lg font-bold">Accords les plus forts</h4>
+        <h4 className="titre-carte">Accords les plus forts</h4>
         {s.accords.length === 0 ? (
           <p className="text-sm text-discret">Aucun accord fort sur les questions codées.</p>
         ) : (
@@ -86,7 +89,7 @@ export function Detail({ s }: { s: ScoreCandidat }) {
         )}
       </section>
       <section>
-        <h4 className="font-titre text-lg font-bold">Désaccords les plus forts</h4>
+        <h4 className="titre-carte">Désaccords les plus forts</h4>
         {s.desaccords.length === 0 ? (
           <p className="text-sm text-discret">Aucun désaccord fort sur les questions codées.</p>
         ) : (
@@ -98,7 +101,7 @@ export function Detail({ s }: { s: ScoreCandidat }) {
         )}
       </section>
       <section>
-        <h4 className="font-titre text-lg font-bold">Par thème</h4>
+        <h4 className="titre-carte">Par thème</h4>
         <ul className="mt-2 text-sm">
           {s.themes.map((t) => (
             <li key={t.theme} className="flex justify-between border-b border-trait py-1">
@@ -128,19 +131,14 @@ function CarteCandidat({ s, rang, exAequo, visible = true, onFiche }: { s: Score
     >
       <div className="flex items-center gap-3">
         {classe && (
-          <span className="grid size-11 shrink-0 place-items-center rounded-full bg-accent/12 font-titre text-lg font-extrabold text-accent">
+          <span className="rang">
             <span className="sr-only">Rang </span>
             {rang}
           </span>
         )}
         <div className="min-w-0 flex-1">
-          <h3 className="font-titre text-xl leading-tight font-bold">
-            <button
-              type="button"
-              onClick={() => onFiche(s.candidatId)}
-              tabIndex={visible ? undefined : -1}
-              className="text-left underline decoration-accent/50 decoration-2 underline-offset-4"
-            >
+          <h3 className="titre-carte">
+            <button type="button" onClick={() => onFiche(s.candidatId)} tabIndex={visible ? undefined : -1} className="lien-titre">
               {nomComplet(s.candidatId)}
               <span className="sr-only"> : ouvrir la fiche</span>
             </button>
@@ -151,16 +149,14 @@ function CarteCandidat({ s, rang, exAequo, visible = true, onFiche }: { s: Score
           </p>
         </div>
         {classe && s.score.scoreArrondi !== null && (
-          <p className="shrink-0 font-titre text-4xl font-extrabold tracking-tight tabular-nums" aria-label={`Score ${s.score.scoreArrondi} sur 100`}>
+          <p className="score" aria-label={`Score ${s.score.scoreArrondi} sur 100`}>
             {s.score.scoreArrondi}
           </p>
         )}
       </div>
       {classe ? (
         <>
-          <div className="jauge mt-3">
-            <div data-barre-score style={{ width: `${s.score.scoreArrondi ?? 0}%` }} />
-          </div>
+          <progress className="barre barre-epaisse mt-3" data-barre-score aria-label="Score sur 100" max={100} value={s.score.scoreArrondi ?? 0} />
           <p className="mt-2 text-sm text-discret">
             Fiabilité {FIABILITE[s.fiabilite]} · codé sur {s.score.codees} de vos {s.score.repondues} questions
           </p>
@@ -181,7 +177,7 @@ function CarteCandidat({ s, rang, exAequo, visible = true, onFiche }: { s: Score
           }
           setOuvert((o) => !o);
         }}
-        className="lien mt-1 text-encre"
+        className="lien mt-1"
       >
         {ouvert ? 'Masquer le détail' : 'Voir le détail et les sources'} {ouvert ? '▴' : '▾'}
       </button>
@@ -199,16 +195,18 @@ function SectionBadges() {
   }, []);
   const badges = badgesDe(etat);
   return (
-    <section className="carte p-5" aria-labelledby="titre-badges">
-      <h2 id="titre-badges" className="font-titre text-2xl font-bold tracking-tight">
+    <Carte as="section" className="p-5" aria-labelledby="titre-badges">
+      <h2 id="titre-badges" className="titre-carte">
         Vos badges
       </h2>
       <p className="mt-1 text-sm text-discret">Ils récompensent l'usage de l'outil, jamais le sens de vos réponses. Ils restent sur votre téléphone.</p>
       <ul className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-1">
         {badges.map((b) => (
-          <li key={b.id} className={`rounded-xl border p-3 text-sm ${b.obtenu ? 'border-soleil bg-soleil/15' : 'border-trait'}`}>
+          <li key={b.id} className="badge-ligne" data-obtenu={b.obtenu}>
             <p className="font-semibold">
-              <span aria-hidden="true" className={b.obtenu ? 'text-soleil' : ''}>{b.obtenu ? '★ ' : '☆ '}</span>
+              <span aria-hidden="true" className="badge-etoile">
+                {b.obtenu ? '★ ' : '☆ '}
+              </span>
               {b.nom}
               <span className="sr-only">{b.obtenu ? ' (obtenu)' : ' (pas encore obtenu)'}</span>
             </p>
@@ -219,7 +217,7 @@ function SectionBadges() {
           </li>
         ))}
       </ul>
-    </section>
+    </Carte>
   );
 }
 
@@ -254,25 +252,26 @@ export function Resultats({ partie, dejaRevele, onRevele, onFiche, onNouvelle, o
   }, [revelees]);
 
   return (
-    <main className="conteneur flex flex-col gap-8 pt-8 pb-10">
-      <header className="flex flex-wrap items-end justify-between gap-4">
-        <div>
-          <p className="surtitre">Vos résultats</p>
-          <h1 className="titre-page mt-2">Mon Isoloir</h1>
-          <p className="mt-2 text-discret">
-            Mode {MODES[partie.mode].nom} · {r.repondues} réponses sur {total} questions · graine du tirage {partie.graine}
-          </p>
-        </div>
-        <button type="button" onClick={onNouvelle} className="btn btn-secondaire hidden lg:inline-flex">
+    <main className="conteneur flex flex-col gap-8 pt-4 pb-10">
+      <EnteteParcours>
+        <Bouton variante="lien" onClick={onNouvelle}>
           Retour à l'accueil
-        </button>
+        </Bouton>
+      </EnteteParcours>
+
+      <header>
+        <p className="surtitre surtitre-point">Vos résultats</p>
+        <h1 className="titre-page mt-3">Mon Isoloir</h1>
+        <p className="mt-3 text-discret">
+          Mode {MODES[partie.mode].nom} · {r.repondues} réponses sur {total} questions · graine du tirage {partie.graine}
+        </p>
       </header>
 
       <div className="grid gap-8 lg:grid-cols-[minmax(0,1fr)_22rem] lg:items-start">
         <div className="flex min-w-0 flex-col gap-8">
           {classement.length === 0 && (
-            <section className="carte border-l-4 border-l-accent p-5 leading-relaxed">
-              <h2 className="font-titre text-xl font-bold">Aucun candidat n'est classé pour l'instant</h2>
+            <Carte as="section" note className="p-5 leading-relaxed">
+              <h2 className="titre-carte">Aucun candidat n'est classé pour l'instant</h2>
               <p className="mt-2">
                 Pour classer un candidat, il faut qu'il soit codé sur au moins {SEUIL_CLASSEMENT_QUESTIONS} de vos questions. Le codage des positions n'est pas terminé : aujourd'hui, les candidats ne sont codés que sur un petit
                 nombre de questions. Ce n'est ni une victoire, ni un échec pour personne.
@@ -281,18 +280,18 @@ export function Resultats({ partie, dejaRevele, onRevele, onFiche, onNouvelle, o
                 Vous pouvez tout de même consulter, candidat par candidat, vos accords et désaccords sur les questions déjà
                 codées, avec les sources.
               </p>
-            </section>
+            </Carte>
           )}
 
           {classement.length > 0 && (
             <section>
-              <h2 className="font-titre text-2xl font-bold tracking-tight">Classement</h2>
+              <h2 className="titre-section">Classement</h2>
               {!fini && (
                 <div className="mt-2 flex items-center justify-between gap-3 text-sm text-discret">
                   <p role="status">{revelees < 0 ? 'Calcul de votre rapprochement…' : 'Voici le classement…'}</p>
-                  <button type="button" className="lien" onClick={() => setRevelees(n)}>
+                  <Bouton variante="lien" onClick={() => setRevelees(n)}>
                     Passer l'animation
-                  </button>
+                  </Bouton>
                 </div>
               )}
               <ol className="mt-3 flex flex-col gap-3">
@@ -305,7 +304,7 @@ export function Resultats({ partie, dejaRevele, onRevele, onFiche, onNouvelle, o
 
           {fini && horsClassement.length > 0 && (
             <section>
-              <h2 className="font-titre text-2xl font-bold tracking-tight">Hors classement</h2>
+              <h2 className="titre-section">Hors classement</h2>
               <p className="mt-1 text-sm text-discret">Ordre tiré au sort à chaque partie.</p>
               <ul className="mt-3 flex flex-col gap-3">
                 {horsClassement.map((c) => (
@@ -317,13 +316,13 @@ export function Resultats({ partie, dejaRevele, onRevele, onFiche, onNouvelle, o
 
           {fini && r.nonEvalues.length > 0 && (
             <section>
-              <h2 className="font-titre text-2xl font-bold tracking-tight">Non évalués</h2>
+              <h2 className="titre-section">Non évalués</h2>
               <p className="mt-1 text-sm text-discret">
                 Ces personnes ne remplissent pas encore le critère d'inclusion. Le critère est public dans le dépôt du projet.
               </p>
               {groupesParMotif(r.nonEvalues).map(([motif, liste]) => (
                 <div key={motif} className="mt-3">
-                  <h3 className="font-semibold">{MOTIFS_NON_EVALUATION[motif] ?? motif}</h3>
+                  <h3 className="font-semibold text-marine">{MOTIFS_NON_EVALUATION[motif] ?? motif}</h3>
                   <p className="text-sm text-discret">{liste.map((n) => nomComplet(n.candidatId)).join(', ')}</p>
                 </div>
               ))}
@@ -333,8 +332,8 @@ export function Resultats({ partie, dejaRevele, onRevele, onFiche, onNouvelle, o
 
         <aside aria-label="Autour de vos résultats" className="flex min-w-0 flex-col gap-6">
           {fini && r.affinites.length > 0 && (
-            <section className="carte p-5 leading-relaxed">
-              <h2 className="font-titre text-xl font-bold">Vos affinités</h2>
+            <Carte as="section" className="p-5 leading-relaxed">
+              <h2 className="titre-carte">Vos affinités</h2>
               <p className="mt-1 text-sm text-discret">Les affinités n'entrent pas dans le score : elles servent seulement à situer ces candidats.</p>
               <ul className="mt-3 flex flex-col gap-1">
                 {r.affinites.map((a) => (
@@ -350,39 +349,39 @@ export function Resultats({ partie, dejaRevele, onRevele, onFiche, onNouvelle, o
                   </li>
                 ))}
               </ul>
-            </section>
+            </Carte>
           )}
 
           {fini && <CartePartage mode={partie.mode} graine={partie.graine} classement={classement} nom={nomComplet} />}
 
           {fini && <SectionBadges />}
 
-          <section className="carte p-5 text-sm leading-relaxed text-discret">
+          <Carte as="section" douce className="p-5 text-sm leading-relaxed text-discret">
             <p>Les écarts entre candidats comptent plus que les valeurs : répondre « ni d'accord, ni pas d'accord » partout donne au moins 50 avec tout le monde.</p>
             <p className="mt-2">Les votes au Parlement n'entrent ni dans le codage des positions ni dans le score. Indicateur de votes : pas encore disponible.</p>
             <p className="mt-2">
               Même graine et mêmes réponses redonnent les mêmes résultats. Méthode complète et données :{' '}
-              <a className="underline" href="https://github.com/Mathieu-Pasco-Breillot/choose-your-candidate-2027" rel="noopener noreferrer">
+              <a className="lien-texte" href="https://github.com/Mathieu-Pasco-Breillot/choose-your-candidate-2027" rel="noopener noreferrer">
                 dépôt du projet
               </a>
               .
             </p>
-          </section>
+          </Carte>
 
           <div className="flex flex-col gap-3">
-            <button type="button" onClick={onNouvelle} className="btn btn-primaire btn-grand">
+            <Bouton grand pleine fleche onClick={onNouvelle}>
               Nouvelle partie, nouvelles questions
-            </button>
-            <button type="button" onClick={onDefi} className="btn btn-secondaire">
+            </Bouton>
+            <Bouton variante="secondaire" pleine onClick={onDefi}>
               Jouer au défi « Qui a dit ça ? »
-            </button>
+            </Bouton>
             <div className="flex flex-wrap justify-center gap-x-6">
-              <button type="button" onClick={onVieprivee} className="lien">
+              <Bouton variante="lien" onClick={onVieprivee}>
                 Vie privée
-              </button>
-              <button type="button" onClick={onToutEffacer} className="lien">
+              </Bouton>
+              <Bouton variante="lien" onClick={onToutEffacer}>
                 Tout effacer sur cet appareil
-              </button>
+              </Bouton>
             </div>
           </div>
         </aside>

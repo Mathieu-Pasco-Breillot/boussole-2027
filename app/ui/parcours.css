@@ -73,6 +73,11 @@
     background: var(--color-accent);
   }
 
+  /* Variante plus épaisse : score d'un candidat ou d'un duel. */
+  .barre-epaisse {
+    height: 0.625rem;
+  }
+
   .question-titre {
     margin-top: 0.25rem;
     color: var(--color-marine);

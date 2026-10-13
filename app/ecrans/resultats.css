@@ -1,0 +1,67 @@
+/* Résultats (classique et duel) et défi : rang, score, lignes de détail, badges. */
+@layer components {
+  /* Rang dans le classement : pastille ronde, décorative (le mot « Rang » est lu à part). */
+  .rang {
+    display: grid;
+    flex: none;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 9999px;
+    background: var(--color-accent-doux);
+    color: var(--color-accent);
+    font-family: var(--font-titre);
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
+
+  /* Score sur 100 : un nombre, jamais une couleur de camp. */
+  .score {
+    flex: none;
+    color: var(--color-marine);
+    font-family: var(--font-titre);
+    font-size: 2.25rem;
+    font-weight: 650;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+
+  .score-grand {
+    font-size: 3.75rem;
+  }
+
+  .score-unite {
+    color: var(--color-discret);
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+
+  /* Ligne de détail : une position (accord ou désaccord) ou une proposition rencontrée. */
+  .ligne-position {
+    border: 1px solid var(--color-trait);
+    border-radius: var(--radius-md);
+    background: var(--color-fond-bas);
+    padding: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+
+  /* Badge : l'usage de l'outil, jamais le sens des réponses. Obtenu = teinte d'accent. */
+  .badge-ligne {
+    border: 1px solid var(--color-trait);
+    border-radius: var(--radius-md);
+    padding: 0.75rem;
+    font-size: 0.875rem;
+  }
+
+  .badge-ligne[data-obtenu='true'] {
+    border-color: var(--color-accent);
+    background: var(--color-accent-doux);
+  }
+
+  .badge-ligne[data-obtenu='true'] .badge-etoile {
+    color: var(--color-accent);
+  }
+}

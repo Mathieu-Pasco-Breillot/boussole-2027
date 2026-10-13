@@ -1,4 +1,4 @@
-/* Surfaces et petits éléments : cartes, pastilles, jauge, choix segmenté, encarts dépliables. */
+/* Surfaces et petits éléments : cartes, pilules, choix segmenté, encarts dépliables. */
 @layer components {
   .carte {
     border: 1px solid var(--color-trait);
@@ -28,6 +28,25 @@
     padding: 0.3rem 0.85rem;
     font-size: 0.875rem;
     font-weight: 500;
+  }
+
+  /* Pilule qui déplie un encart (Précision, Impact) : cible de 44 px, teinte d'accent quand l'encart est ouvert. */
+  .pilule[aria-expanded] {
+    min-height: 2.75rem;
+    cursor: pointer;
+    color: var(--color-discret);
+  }
+
+  @media (hover: hover) {
+    .pilule[aria-expanded]:hover {
+      border-color: var(--color-accent);
+    }
+  }
+
+  .pilule[aria-expanded='true'] {
+    border-color: var(--color-accent);
+    background: var(--color-accent-doux);
+    color: var(--color-accent);
   }
 
   /* Choix segmenté (radios masquées dans des étiquettes) : importance d'un thème, taille d'un duel. */
@@ -94,20 +113,6 @@
 
   .depliant[open] > summary::after {
     content: '–' / '';
-  }
-
-  /* Barres de score : une seule couleur. */
-  .jauge {
-    height: 0.625rem;
-    overflow: hidden;
-    border-radius: 9999px;
-    background: color-mix(in oklab, var(--color-accent) 14%, transparent);
-  }
-
-  .jauge > * {
-    height: 100%;
-    border-radius: 9999px;
-    background: var(--color-accent);
   }
 }
 

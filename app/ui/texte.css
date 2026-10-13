@@ -42,4 +42,14 @@
     letter-spacing: -0.025em;
     color: var(--color-marine);
   }
+
+  /* Titre d'une carte ou d'un bloc de détail. */
+  .titre-carte {
+    font-family: var(--font-titre);
+    font-weight: 650;
+    font-size: 1.25rem;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    color: var(--color-marine);
+  }
 }

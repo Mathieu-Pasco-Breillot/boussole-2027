@@ -57,7 +57,7 @@ test("une seule teinte pour l'échelle de réponse (aucune couleur d'accord ou d
 
   await repondreATout(page, 20);
   await page.getByRole('button', { name: "Passer l'animation" }).click({ timeout: 1000 }).catch(() => undefined);
-  const barres = (await page.evaluate(`[...document.querySelectorAll('[data-barre-score]')].map((b) => getComputedStyle(b).backgroundColor)`)) as string[];
+  const barres = (await page.evaluate(`[...document.querySelectorAll('[data-barre-score]')].map((b) => getComputedStyle(b).color)`)) as string[];
   expect(barres.length).toBeGreaterThan(0);
   expect(new Set(barres).size).toBe(1);
 });

@@ -6,6 +6,10 @@ import { libelleTheme } from '../libelles.ts';
 import { paquet } from '../paquet.ts';
 import { Mascotte } from './Mascotte.tsx';
 import { Texte } from '../glossaire/Texte.tsx';
+import { Bouton } from '../ui/Bouton.tsx';
+import { Carte } from '../ui/Carte.tsx';
+import { EnteteParcours } from '../ui/EnteteParcours.tsx';
+import { ProgressionParcours } from '../ui/ProgressionParcours.tsx';
 
 interface Props {
   graine: number;
@@ -29,38 +33,42 @@ export function Defi({ graine, onRejouer, onQuitter }: Props) {
 
   if (total === 0) {
     return (
-      <main className="colonne flex flex-col items-start gap-4 py-10">
-        <Mascotte attitude="attente" taille={88} />
+      <main className="parcours gap-4">
+        <EnteteParcours />
+        <Mascotte attitude="attente" taille={88} className="mt-6" />
         <h1 className="titre-page">Qui a dit ça ?</h1>
         <p className="leading-relaxed">
           Le défi n'est pas disponible pour l'instant : trop peu de positions nettes et sourcées sont publiées pour proposer des
           manches équilibrées entre candidats.
         </p>
-        <button type="button" onClick={onQuitter} className="btn btn-primaire">
+        <Bouton onClick={onQuitter} className="self-start">
           Retour
-        </button>
+        </Bouton>
       </main>
     );
   }
 
   if (!manche) {
     return (
-      <main className="colonne flex flex-col gap-5 py-8">
-        <p className="surtitre">Qui a dit ça ?</p>
-        <h1 className="titre-page" role="status">
-          {bonnes} bonne{bonnes > 1 ? 's' : ''} réponse{bonnes > 1 ? 's' : ''} sur {total}
-        </h1>
+      <main className="parcours gap-5">
+        <EnteteParcours />
+        <header className="mt-6">
+          <p className="surtitre surtitre-point">Qui a dit ça ?</p>
+          <h1 className="titre-page mt-3" role="status">
+            {bonnes} bonne{bonnes > 1 ? 's' : ''} réponse{bonnes > 1 ? 's' : ''} sur {total}
+          </h1>
+        </header>
         <p className="leading-relaxed text-discret">
           Ce jeu ne compare pas les candidats entre eux et n'a aucun lien avec votre résultat. Chaque position vient d'une source
           publique que vous pouvez ouvrir.
         </p>
         <div className="flex flex-col gap-3">
-          <button type="button" onClick={onRejouer} className="btn btn-primaire btn-grand">
+          <Bouton grand pleine fleche onClick={onRejouer}>
             Rejouer
-          </button>
-          <button type="button" onClick={onQuitter} className="btn btn-secondaire">
+          </Bouton>
+          <Bouton variante="secondaire" pleine onClick={onQuitter}>
             Retour
-          </button>
+          </Bouton>
         </div>
       </main>
     );
@@ -68,45 +76,40 @@ export function Defi({ graine, onRejouer, onQuitter }: Props) {
 
   const repondu = choix[numero];
   const juste = repondu === manche.bonne_reponse;
+  const position = repondu ? manche.revelation : manche.indice;
 
   return (
-    <main className="colonne flex flex-col gap-5 py-8">
-      <header>
-        <button type="button" onClick={onQuitter} className="lien">
+    <main className="parcours gap-5">
+      <EnteteParcours>
+        <Bouton variante="lien" onClick={onQuitter}>
           ← Quitter le défi
-        </button>
-        <p className="mt-2 surtitre">
-          Qui a dit ça ? · manche {numero + 1} sur {total}
-        </p>
-      </header>
+        </Bouton>
+      </EnteteParcours>
+      <ProgressionParcours etiquette="Qui a dit ça ? · manche" position={numero} total={total} avancement={repondu ? numero + 1 : numero} />
 
-      <section className="carte border-l-4 border-l-accent p-5 leading-relaxed" aria-labelledby="titre-position">
+      <Carte as="section" note className="p-5 leading-relaxed" aria-labelledby="titre-position">
         <p className="text-sm text-discret">{themeDeQuestion(manche.question_id)}</p>
-        <p className="mt-1 font-titre text-xl leading-snug font-bold">
+        <p className="titre-carte mt-1 text-[1.35rem]">
           <Texte>{manche.enonce}</Texte>
         </p>
         <h2 id="titre-position" className="surtitre mt-5">
           Un candidat a pris cette position :
         </h2>
         <p className="mt-2">
-          <Texte>{repondu ? manche.revelation.reformulation : manche.indice.reformulation}</Texte>
+          <Texte>{position.reformulation}</Texte>
         </p>
-        {(repondu ? manche.revelation.citation : manche.indice.citation) && (
+        {position.citation && (
           <p className="mt-2 italic">
-            « <Texte>{repondu ? manche.revelation.citation : manche.indice.citation}</Texte> »
+            « <Texte>{position.citation}</Texte> »
           </p>
         )}
-      </section>
+      </Carte>
 
       {!repondu ? (
-        <ul className="flex flex-col gap-2" aria-label="Candidats proposés">
+        <ul className="reponses" aria-label="Candidats proposés">
           {manche.propositions.map((id) => (
             <li key={id}>
-              <button
-                type="button"
-                onClick={() => setChoix((c) => ({ ...c, [numero]: id }))}
-                className="carte min-h-14 w-full px-5 py-3 text-left font-titre text-lg font-bold hover:border-accent"
-              >
+              <button type="button" onClick={() => setChoix((c) => ({ ...c, [numero]: id }))} className="reponse">
                 {nom(id)}
               </button>
             </li>
@@ -114,24 +117,20 @@ export function Defi({ graine, onRejouer, onQuitter }: Props) {
         </ul>
       ) : (
         <section className="flex flex-col gap-3" aria-live="polite">
-          <p className="font-titre text-xl font-bold">
+          <p className="titre-carte">
             {juste ? 'Bonne réponse : ' : `Ce n'était pas ${nom(repondu)}, c'était `}
             {nom(manche.bonne_reponse)}.
           </p>
           <p className="text-sm [overflow-wrap:anywhere]">
             Source :{' '}
-            <a className="underline" href={manche.revelation.source.url} target="_blank" rel="noopener noreferrer" onClick={() => majBadges((b) => apresSource(b, manche.revelation.source.url))}>
+            <a className="lien-texte" href={manche.revelation.source.url} target="_blank" rel="noopener noreferrer" onClick={() => majBadges((b) => apresSource(b, manche.revelation.source.url))}>
               {manche.revelation.source.titre}
             </a>
             {manche.revelation.source.date_publication ? ` (${manche.revelation.source.date_publication})` : ''}
           </p>
-          <button
-            type="button"
-            onClick={() => setNumero(numero + 1)}
-            className="btn btn-primaire"
-          >
+          <Bouton grand pleine fleche onClick={() => setNumero(numero + 1)}>
             {numero + 1 < total ? 'Manche suivante' : 'Voir le total'}
-          </button>
+          </Bouton>
         </section>
       )}
     </main>

@@ -91,4 +91,30 @@
       color: var(--color-accent);
     }
   }
+
+  /* Lien dans une phrase (source, dépôt) : pas de hauteur imposée, la cible est le texte. */
+  .lien-texte {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+
+  @media (hover: hover) {
+    .lien-texte:hover {
+      color: var(--color-accent-fonce);
+    }
+  }
+
+  /* Bouton-titre : le nom d'un candidat ouvre sa fiche. */
+  .lien-titre {
+    display: inline-flex;
+    min-height: 2.75rem;
+    cursor: pointer;
+    align-items: center;
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-color: color-mix(in oklab, var(--color-accent) 50%, transparent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.25em;
+  }
 }
