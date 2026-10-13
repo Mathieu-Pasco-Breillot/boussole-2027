@@ -71,7 +71,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -118,7 +118,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -175,7 +175,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -257,7 +257,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -304,7 +304,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -345,7 +345,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -396,7 +396,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -459,7 +459,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -500,7 +500,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -509,7 +509,7 @@
    "axe": "economie",
    "sens": -1,
    "enonce": "Les régimes spéciaux de retraite doivent être fermés aussi pour les salariés déjà en poste.",
-   "precision": "La loi de 2023 a fermé cinq régimes spéciaux (RATP, industries électriques et gazières, clercs de notaires, Banque de France, CESE) aux seules personnes recrutées à partir du 1er septembre 2023.",
+   "precision": "La loi n° 2023-270 du 14 avril 2023 (article 1er) a fermé aux nouveaux entrants les régimes spéciaux de la RATP, des industries électriques et gazières, des clercs et employés de notaires, et de la Banque de France, ainsi que celui des membres du Conseil économique, social et environnemental. Seules les personnes entrées à compter du 1er septembre 2023 sont concernées ; les agents en poste conservent leur régime.",
    "origine": {
     "description": "Loi n° 2023-270 du 14 avril 2023, article 1er ; décrets n° 2023-689, 690, 692 et 693 du 28 juillet 2023",
     "source": {
@@ -531,7 +531,12 @@
     }
    ],
    "scrutins": [],
-   "historique": [],
+   "historique": [
+    {
+     "date": "2026-10-13",
+     "note": "Précision précédente : « La loi de 2023 a fermé cinq régimes spéciaux (RATP, industries électriques et gazières, clercs de notaires, Banque de France, CESE) aux seules personnes recrutées à partir du 1er septembre 2023. » Raison : le nombre « cinq » n'est pas confirmé par le COR et « recrutées » est inexact pour le CESE."
+    }
+   ],
    "impact": {
     "changement": "La fermeture des principaux régimes spéciaux, aujourd'hui limitée aux personnes recrutées depuis septembre 2023, s'étendrait aux salariés en poste, qui relèveraient du régime général ; l'énoncé ne dit rien de leurs droits acquis. Début 2023, selon le directeur de la caisse de retraite de la RATP : 42 000 salariés sous statut, près de 52 000 pensionnés, 80 % du personnel en « catégorie active » (départ anticipé), et 780 millions d'euros versés par l'État en 2022.",
     "pour": "Ses partisans estiment que les règles de retraite ne doivent pas dépendre de l'employeur, et qu'une extinction par les seuls recrutements pèse longtemps sur l'État : selon la caisse de la RATP, ses pensions seraient versées 80 ans.",
@@ -556,7 +561,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -608,7 +613,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -659,7 +664,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -704,7 +709,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -751,7 +756,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -797,7 +802,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -848,7 +853,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -901,7 +906,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -959,7 +964,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -1071,7 +1076,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   }
  ]

@@ -57,7 +57,7 @@
             "nature": "primaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -98,7 +98,7 @@
             "nature": "primaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -155,7 +155,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -213,7 +213,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -259,7 +259,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -305,7 +305,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -340,7 +340,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -375,7 +375,7 @@
             "nature": "primaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -416,7 +416,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -462,7 +462,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -473,7 +473,7 @@
       "enonce": "Deux jours fériés doivent être supprimés.",
       "precision": null,
       "origine": {
-        "description": "Annonce du Premier ministre du 15 juillet 2025, retirée en septembre 2025",
+        "description": "Annonce du Premier ministre le 15 juillet 2025 (projet de budget 2026) ; retrait annoncé en septembre 2025 par le Premier ministre alors en fonction (le titulaire avait changé entre-temps).",
         "source": {
           "url": "https://www.legifiscal.fr/actualites-fiscales/4234-sebastien-lecornu-renonce-suppression-2-jours-feries.html",
           "titre": "Sébastien Lecornu renonce à la suppression de 2 jours fériés",
@@ -484,7 +484,12 @@
       "statut": "active",
       "alertes_neutralite": [],
       "scrutins": [],
-      "historique": [],
+      "historique": [
+        {
+          "date": "2026-10-13",
+          "note": "Description d'origine précédente : « Annonce du Premier ministre du 15 juillet 2025, retirée en septembre 2025 » Raison : le Premier ministre n'était pas le même aux deux dates."
+        }
+      ],
       "impact": {
         "changement": "Le plan de juillet 2025 visait le lundi de Pâques et le 8 mai : ils deviendraient des jours travaillés sans rémunération supplémentaire, dans le public comme dans le privé. Les employeurs privés verseraient une contribution à l'État. Le gouvernement de l'époque en attendait 4,2 milliards d'euros par an, mais l'Insee évalue le gain d'un jour travaillé à environ 1,6 milliard d'euros.",
         "pour": "Ses partisans estiment que deux jours travaillés de plus augmenteraient l'activité (0,5 % selon les services du Premier ministre de l'époque) et les recettes sans créer d'impôt au sens strict.",
@@ -503,7 +508,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -549,7 +554,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -601,7 +606,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -642,7 +647,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -688,7 +693,7 @@
             "nature": "institutionnelle"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -729,7 +734,7 @@
             "nature": "primaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -770,7 +775,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -810,7 +815,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -857,7 +862,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -898,7 +903,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     }
   ]
