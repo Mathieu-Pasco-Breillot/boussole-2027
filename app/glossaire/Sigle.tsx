@@ -1,4 +1,4 @@
-import { useEffect, useId, useState } from 'react';
+import { useEffect, useId, useLayoutEffect, useRef, useState } from 'react';
 import { ENTREES } from './donnees.ts';
 import { useGlossaire } from './GlossaireProvider.tsx';
 import { useMedia } from './media.ts';
@@ -8,7 +8,11 @@ import { useMedia } from './media.ts';
  * son entrée. Sur un appareil avec survol, une bulle (role="tooltip") s'affiche au survol et au focus (WCAG 1.4.13) :
  * survolable (elle est dans la zone survolée), persistante tant que le pointeur ou le focus reste, fermée par Échap.
  * Sans survol (tactile), pas de bulle ; le (i) de la première occurrence est dessiné en CSS (index.css).
+ * La bulle s'ouvre au-dessus, alignée à gauche ; si elle sortirait de l'écran (titre en haut de page, sigle près du
+ * bord droit), elle passe dessous ou s'aligne à droite (classes, pas de style en ligne : CSP).
  */
+const PAR_DEFAUT = { dessous: false, droite: false };
+
 export function Sigle({ texte, sigle, premiere }: { texte: string; sigle: string; premiere: boolean }) {
   const { ouvrir } = useGlossaire();
   const survolable = useMedia('(hover: hover)');
@@ -16,9 +20,21 @@ export function Sigle({ texte, sigle, premiere }: { texte: string; sigle: string
   const [focus, setFocus] = useState(false);
   // Échap masque la bulle jusqu'au prochain survol ou focus.
   const [masquee, setMasquee] = useState(false);
+  const [placement, setPlacement] = useState(PAR_DEFAUT);
+  const bulle = useRef<HTMLSpanElement>(null);
   const id = useId();
   const entree = ENTREES.get(sigle);
   const visible = survolable && (survol || focus) && !masquee && entree !== undefined;
+
+  // Avant la peinture : on mesure la bulle à sa place par défaut, puis on la déplace si elle déborde (pas de saut visible).
+  useLayoutEffect(() => {
+    if (!visible) {
+      setPlacement(PAR_DEFAUT);
+      return;
+    }
+    const r = bulle.current?.getBoundingClientRect();
+    if (r) setPlacement({ dessous: r.top < 0, droite: r.right > document.documentElement.clientWidth });
+  }, [visible]);
 
   useEffect(() => {
     if (!visible) return;
@@ -54,7 +70,12 @@ export function Sigle({ texte, sigle, premiere }: { texte: string; sigle: string
         {texte}
       </button>
       {visible && (
-        <span role="tooltip" id={id} className="bulle">
+        <span
+          ref={bulle}
+          role="tooltip"
+          id={id}
+          className={`bulle${placement.dessous ? ' bulle-dessous' : ''}${placement.droite ? ' bulle-droite' : ''}`}
+        >
           <span className="bulle-contenu">
             <strong>{entree.sigle}</strong> — {entree.developpe}. {entree.explication}
           </span>
