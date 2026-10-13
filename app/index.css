@@ -84,10 +84,11 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* Bandeau tricolore en haut de chaque écran : sous le panneau du glossaire (z-40), au-dessus de l'en-tête (z-30). */
+/* Bandeau tricolore, toujours visible en haut de l'écran (fixe, sur tous les écrans) : sous le panneau du glossaire
+   (z-40), au-dessus de l'en-tête (z-30). Purement décoratif : il ne capte aucun clic. */
 body::before {
   content: '';
-  position: absolute;
+  position: fixed;
   inset: 0 0 auto;
   z-index: 35;
   height: 5px;
