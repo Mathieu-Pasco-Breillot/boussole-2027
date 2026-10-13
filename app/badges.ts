@@ -64,8 +64,8 @@ export function badgesDe(b: EtatBadges): Badge[] {
   return [
     {
       id: 'chapitres',
-      nom: 'Tous les chapitres explorés',
-      description: `Avoir rencontré les ${nThemes} chapitres dans vos parties.`,
+      nom: 'Tous les thèmes explorés',
+      description: `Avoir rencontré les ${nThemes} thèmes dans vos parties.`,
       obtenu: explores >= nThemes,
       avancement: `${explores} sur ${nThemes}`,
     },

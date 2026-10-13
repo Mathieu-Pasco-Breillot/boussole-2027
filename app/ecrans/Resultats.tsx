@@ -98,7 +98,7 @@ export function Detail({ s }: { s: ScoreCandidat }) {
         )}
       </section>
       <section>
-        <h4 className="font-titre text-lg font-bold">Par chapitre</h4>
+        <h4 className="font-titre text-lg font-bold">Par thème</h4>
         <ul className="mt-2 text-sm">
           {s.themes.map((t) => (
             <li key={t.theme} className="flex justify-between border-b border-trait py-1">

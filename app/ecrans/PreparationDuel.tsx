@@ -143,7 +143,7 @@ export function PreparationDuel({ onLancer, onRetour }: Props) {
           Ce qui compte pour vous
         </h2>
         <p className="mt-1 text-sm leading-relaxed text-discret">
-          Un chapitre « important » reçoit plus de propositions et pèse plus dans l'affinité ; « écarter » le retire du duel et
+          Un thème « important » reçoit plus de propositions et pèse plus dans l'affinité ; « écarter » le retire du duel et
           du calcul.
         </p>
         <ul className="mt-4 grid gap-3 md:grid-cols-2">
@@ -153,7 +153,7 @@ export function PreparationDuel({ onLancer, onRetour }: Props) {
                 <legend className="font-titre text-lg font-bold">
                   {libelleTheme(t)} <span className="text-sm font-normal text-discret">({parChapitre.get(t)} propositions)</span>
                 </legend>
-                <div className="mt-2 grid grid-cols-4 gap-1" role="radiogroup" aria-label={`Importance du chapitre ${libelleTheme(t)}`}>
+                <div className="mt-2 grid grid-cols-4 gap-1" role="radiogroup" aria-label={`Importance du thème ${libelleTheme(t)}`}>
                   {NIVEAUX.map((n) => (
                     <label key={n.poids} className="segment">
                       <input
@@ -182,7 +182,7 @@ export function PreparationDuel({ onLancer, onRetour }: Props) {
         >
           Lancer le duel{actifs.length > 0 ? ` (${prevues} propositions)` : ''}
         </button>
-        {actifs.length === 0 && <p className="mt-2 text-sm text-discret">Gardez au moins un chapitre pour lancer le duel.</p>}
+        {actifs.length === 0 && <p className="mt-2 text-sm text-discret">Gardez au moins un thème pour lancer le duel.</p>}
       </div>
     </main>
   );

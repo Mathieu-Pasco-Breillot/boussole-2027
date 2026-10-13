@@ -52,7 +52,7 @@ export function Preparation({ mode, onLancer, onRetour }: Props) {
           Avec ces réglages : <strong>{disponibles} questions disponibles</strong>
           {vues.size > 0 ? ` (dont ${nonVues} jamais vues sur cet appareil)` : ''}.{' '}
           {prevues < MODES[mode].questions
-            ? `La partie comptera ${prevues} questions au lieu de ${MODES[mode].questions} : gardez plus de chapitres pour en avoir davantage.`
+            ? `La partie comptera ${prevues} questions au lieu de ${MODES[mode].questions} : gardez plus de thèmes pour en avoir davantage.`
             : `La partie comptera ${prevues} questions.`}
         </p>
       </header>
@@ -62,7 +62,7 @@ export function Preparation({ mode, onLancer, onRetour }: Props) {
           Ce qui compte pour vous
         </h2>
         <p className="mt-1 text-sm leading-relaxed text-discret">
-          Un chapitre « important » reçoit plus de questions et pèse plus dans le score ; « écarter » le retire de la partie
+          Un thème « important » reçoit plus de questions et pèse plus dans le score ; « écarter » le retire de la partie
           et du calcul. Les candidats ne sont pas nommés pendant le quiz.
         </p>
         <ul className="mt-4 grid gap-3 md:grid-cols-2">
@@ -70,7 +70,7 @@ export function Preparation({ mode, onLancer, onRetour }: Props) {
             <li key={t} className="carte p-4">
               <fieldset>
                 <legend className="font-titre text-lg font-bold">{THEMES[t]}</legend>
-                <div className="mt-2 grid grid-cols-4 gap-1" role="radiogroup" aria-label={`Importance du chapitre ${THEMES[t]}`}>
+                <div className="mt-2 grid grid-cols-4 gap-1" role="radiogroup" aria-label={`Importance du thème ${THEMES[t]}`}>
                   {NIVEAUX.map((n) => (
                     <label key={n.poids} className="segment">
                       <input
@@ -122,7 +122,7 @@ export function Preparation({ mode, onLancer, onRetour }: Props) {
         >
           Lancer la partie{actifs.length > 0 ? ` (${prevues} questions)` : ''}
         </button>
-        {actifs.length === 0 && <p className="mt-2 text-sm text-discret">Gardez au moins un chapitre pour lancer la partie.</p>}
+        {actifs.length === 0 && <p className="mt-2 text-sm text-discret">Gardez au moins un thème pour lancer la partie.</p>}
       </div>
     </main>
   );

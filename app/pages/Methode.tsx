@@ -79,7 +79,7 @@ export function Methode({ onRetour, graine, journal }: Props) {
             </p>
             <p>
               Les modes : {Object.values(MODES).map((m) => `${m.nom} (${m.questions} questions)`).join(', ')}. Les questions
-              sont tirées chapitre par chapitre selon vos poids, avec des questions « d'ancrage » choisies pour distinguer les
+              sont tirées thème par thème selon vos poids, avec des questions « d'ancrage » choisies pour distinguer les
               candidats, et en évitant celles que vous avez déjà vues.
             </p>
             <div className="carte p-5">
@@ -131,7 +131,7 @@ export function Methode({ onRetour, graine, journal }: Props) {
               </p>
             )}
             <p>
-              Pour chaque mode, {pages.neutralite.parametres.tirages_par_mode.toLocaleString('fr-FR')} parties simulées (poids de chapitres
+              Pour chaque mode, {pages.neutralite.parametres.tirages_par_mode.toLocaleString('fr-FR')} parties simulées (poids de thèmes
               aléatoires, toutes questions répondues) mesurent la part des parties où chaque candidat atteint le seuil de classement
               ({pages.neutralite.parametres.seuil_questions_codees} questions codées). Un écart important entre
               candidats signale un déséquilibre de couverture, pas une préférence.

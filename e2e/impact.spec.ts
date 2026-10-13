@@ -8,7 +8,7 @@ for (const theme of ['dark', 'light'] as const) {
     await page.emulateMedia({ colorScheme: theme });
     await page.goto('/');
     await page.getByRole('button', { name: /^Express ·/ }).click();
-    for (const t of AUTRES) await page.getByRole('radiogroup', { name: `Importance du chapitre ${t}` }).getByText('Écarter').click();
+    for (const t of AUTRES) await page.getByRole('radiogroup', { name: `Importance du thème ${t}` }).getByText('Écarter').click();
     await page.getByRole('button', { name: /^Lancer la partie/ }).click();
 
     const impact = page.getByRole('button', { name: /^Impact/ });

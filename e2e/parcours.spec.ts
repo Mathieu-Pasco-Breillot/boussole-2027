@@ -101,10 +101,10 @@ test("le quiz s'enchaîne sans écran intermédiaire : le thème est rappelé au
 test('préparation : un chapitre écarté (poids 0) n’est pas posé, et le nombre de questions annoncé est tenu', async ({ page }) => {
   await page.goto('/');
   await page.getByRole('button', { name: /^Campagne ·/ }).click();
-  await page.getByRole('radiogroup', { name: 'Importance du chapitre Retraites' }).getByText('Écarter').click();
+  await page.getByRole('radiogroup', { name: 'Importance du thème Retraites' }).getByText('Écarter').click();
   // Ne garder qu'un seul autre chapitre : moins de 60 questions disponibles.
   for (const t of ['Fiscalité', 'Économie et dette', 'Santé', 'Éducation', 'Immigration', 'Sécurité', 'Défense', 'Union européenne', 'Institutions']) {
-    await page.getByRole('radiogroup', { name: `Importance du chapitre ${t}` }).getByText('Écarter').click();
+    await page.getByRole('radiogroup', { name: `Importance du thème ${t}` }).getByText('Écarter').click();
   }
   const statut = page.locator('[data-questions-disponibles]');
   const dispo = Number(await statut.getAttribute('data-questions-disponibles'));
