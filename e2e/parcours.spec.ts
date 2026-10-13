@@ -41,10 +41,12 @@ test('le défi « Qui a dit ça ? » se joue de bout en bout', async ({ page }) 
 test("une partie interrompue est reprise là où elle s'est arrêtée", async ({ page }) => {
   await lancer(page, 'Express');
   await repondreQuelques(page, 3);
-  const avant = (await page.getByText(/Chapitre \d+ sur \d+/).first().textContent()) ?? '';
+  await expect(page.getByText('4 / 20')).toBeVisible();
+  const avant = await page.getByRole('heading', { level: 1 }).first().innerText();
   await page.reload();
   await page.getByRole('button', { name: /Reprendre la partie/ }).click();
-  await expect(page.getByText(/Chapitre \d+ sur \d+/).first()).toHaveText(avant);
+  await expect(page.getByText('4 / 20')).toBeVisible();
+  await expect(page.getByRole('heading', { level: 1 }).first()).toHaveText(avant);
 });
 
 test('la carte de résultat se télécharge sans requête externe', async ({ page }) => {
@@ -80,30 +82,23 @@ test('les badges : Campagne terminée, puis « tout effacer » les retire', asyn
   expect(await page.evaluate(() => localStorage.getItem('isoloir:badges'))).toBeNull();
 });
 
-test('fin de chapitre : progression et mascotte seulement, aucun nom, aucun score, pas à la reprise', async ({ page }) => {
+test("le quiz s'enchaîne sans écran intermédiaire : le thème est rappelé au-dessus de chaque proposition", async ({ page }) => {
   await lancer(page, 'Express');
-  const bandeau = page.getByRole('list', { name: 'Chapitres' });
-  // Taille du premier chapitre : « Proposition 1 sur N ».
-  const surtitre = (await page.getByText(/Proposition 1 sur \d+/).first().textContent()) ?? '';
-  const taille = Number(/Proposition 1 sur (\d+)/.exec(surtitre)![1]);
-  await expect(bandeau).toBeVisible();
-  for (let i = 0; i < taille; i++) {
+  const themes = new Set<string>();
+  for (let i = 1; i <= 19; i++) {
+    await expect(page.getByText(`${i} / 20`)).toBeVisible();
+    themes.add(await page.getByTestId('theme').innerText());
     const avant = await page.getByRole('heading', { level: 1 }).first().innerText();
     await page.getByRole('button', { name: "Plutôt d'accord" }).first().click();
+    // Une réponse mène tout droit à la proposition suivante, y compris au changement de thème.
+    await expect(page.getByText(`${i + 1} / 20`)).toBeVisible();
     await expect(page.getByRole('heading', { level: 1 }).first()).not.toHaveText(avant);
   }
-  await expect(page.getByRole('heading', { level: 1 })).toHaveText(/Chapitre bouclé ! Plus (que \d+|qu’un)\./);
-  await expect(page.locator('[data-mascotte="chapitre"]')).toBeVisible();
-  const texte = await page.locator('main').innerText();
-  expect(texte).not.toMatch(/Le Pen|Mélenchon|Philippe|Retailleau|Attal|Roussel|Arthaud|Lisnard|Dupont-Aignan|Rassemblement|score|\/ 100|%/i);
-  // Reprise : la partie reprend sur la question, sans repasser par la fin de chapitre.
-  await page.reload();
-  await page.getByRole('button', { name: /Reprendre la partie/ }).click();
-  await expect(page.getByRole('button', { name: "Plutôt d'accord" })).toBeVisible();
-  await expect(page.getByText(/Proposition 1 sur \d+/).first()).toBeVisible();
+  expect(themes.size).toBeGreaterThan(1);
+  await expect(page.locator('main')).not.toContainText(/Chapitre/);
 });
 
-test('préparation : un chapitre écarté (poids 0) disparaît du bandeau, et le nombre de questions annoncé est tenu', async ({ page }) => {
+test('préparation : un chapitre écarté (poids 0) n’est pas posé, et le nombre de questions annoncé est tenu', async ({ page }) => {
   await page.goto('/');
   await page.getByRole('button', { name: /^Campagne ·/ }).click();
   await page.getByRole('radiogroup', { name: 'Importance du chapitre Retraites' }).getByText('Écarter').click();
@@ -117,9 +112,6 @@ test('préparation : un chapitre écarté (poids 0) disparaît du bandeau, et le
   expect(dispo).toBeLessThan(60);
   await expect(statut).toContainText(`La partie comptera ${dispo} questions au lieu de 60`);
   await page.getByRole('button', { name: `Lancer la partie (${dispo} questions)` }).click();
-  const bandeau = page.getByRole('list', { name: 'Chapitres' });
-  await expect(bandeau.getByRole('listitem')).toHaveCount(1);
-  await expect(bandeau).toContainText('Écologie et énergie');
-  await expect(bandeau).not.toContainText('Retraites');
+  await expect(page.getByTestId('theme')).toHaveText('Écologie et énergie');
   await expect(page.getByText(`1 / ${dispo}`)).toBeVisible();
 });

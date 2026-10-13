@@ -49,21 +49,6 @@ export function Quiz({ partie, onRepondre, onReculer, onQuitter }: Props) {
     <main className="mx-auto flex min-h-dvh w-full max-w-5xl flex-col px-5 pt-4 pb-6 md:px-8 md:pt-6">
       <EnteteQuiz position={partie.position} total={total} avancement={partie.position} onQuitter={onQuitter} />
 
-      <ol className="-mx-5 mt-4 flex gap-2 overflow-x-auto px-5 pb-1 md:mx-0 md:flex-wrap md:px-0" aria-label="Chapitres" tabIndex={0}>
-        {partie.chapitres.map((c, i) => (
-          <li
-            key={c.theme}
-            aria-current={i === s.chapitre ? 'step' : undefined}
-            className={`shrink-0 rounded-full border px-3 py-1 text-xs font-medium ${
-              i === s.chapitre ? 'border-accent bg-accent/15 text-encre' : i < s.chapitre ? 'border-trait bg-carte text-discret' : 'border-trait text-discret'
-            }`}
-          >
-            {i < s.chapitre ? '✓ ' : ''}
-            {libelleTheme(c.theme)}
-          </li>
-        ))}
-      </ol>
-
       <AnimatePresence mode="wait">
         <motion.div
           key={question.id}
@@ -71,12 +56,12 @@ export function Quiz({ partie, onRepondre, onReculer, onQuitter }: Props) {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -24 }}
           transition={{ duration: reduit ? 0 : 0.2 }}
-          className="mt-5 grid flex-1 content-start gap-6 lg:mt-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12"
+          className="mt-6 grid flex-1 content-start gap-6 lg:mt-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12"
         >
           <div>
-            <p className="surtitre">
-              Chapitre {s.chapitre + 1} sur {partie.chapitres.length} · {libelleTheme(s.theme)} · Proposition{' '}
-              {s.dansChapitre + 1} sur {s.taille}
+            {/* Le thème, à titre indicatif : le quiz s'enchaîne sans écran intermédiaire entre deux thèmes. */}
+            <p className="pilule surtitre" data-testid="theme">
+              {libelleTheme(s.theme)}
             </p>
             <p className="mt-4 text-sm font-medium text-discret">Êtes-vous d'accord ?</p>
             <h1 className="mt-1 font-titre text-[clamp(1.6rem,1.25rem+1.6vw,2.4rem)] leading-[1.18] font-bold tracking-[-0.015em]">

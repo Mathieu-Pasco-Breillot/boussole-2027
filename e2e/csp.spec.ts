@@ -35,7 +35,7 @@ for (const theme of ['dark', 'light'] as const) {
       const reponse = await page.goto('/');
       expect(reponse?.headers()['content-security-policy']).toContain("script-src 'self'");
 
-      // Accueil : son activé, puis préparation, quiz avec fins de chapitre et résultats.
+      // Accueil : son activé, puis préparation, quiz et résultats.
       await page.getByRole('button', { name: /Effets sonores/ }).click();
       await expect(page.getByRole('button', { name: /Effets sonores/ })).toHaveAttribute('aria-pressed', 'true');
       await page.getByRole('button', { name: /^Express ·/ }).click();

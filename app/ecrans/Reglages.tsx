@@ -55,7 +55,7 @@ export function Reglages() {
           <span aria-hidden="true">{son ? '♪ ' : '· '}</span>
           Effets sonores : <strong>{son ? 'activés' : 'coupés'}</strong>
         </button>
-        <p className="mt-1.5 text-xs text-discret">Un petit son à la fin d'un chapitre et à l'affichage des résultats. Coupés par défaut.</p>
+        <p className="mt-1.5 text-xs text-discret">Un petit son à l'affichage des résultats. Coupés par défaut.</p>
       </div>
     </section>
   );

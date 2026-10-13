@@ -1,6 +1,5 @@
 import { mkdirSync } from 'node:fs';
 import { expect, test, type Page } from '@playwright/test';
-import { passerFinDeChapitre } from './outils.ts';
 
 // Captures des écrans principaux (maquette a posteriori, lot 5f) : 390 px de large, thème sombre et clair.
 // Hors CI : `CAPTURES=1 npx playwright test captures` après `npm run build` ; images dans captures/.
@@ -35,13 +34,8 @@ for (const [theme, colorScheme] of [['sombre', 'dark'], ['clair', 'light']] as c
       const precision = page.getByRole('button', { name: 'Précision ▾' });
       if (await precision.isVisible()) await precision.click();
       await capturer(page, theme, '03-question', false);
-      while (!(await page.getByRole('button', { name: /^Continuer/ }).isVisible())) await repondre(page);
-      await capturer(page, theme, '04-fin-de-chapitre', false);
-      for (let i = 0; i < 40 && !(await page.getByText('Vos résultats').isVisible()); i++) {
-        await passerFinDeChapitre(page);
-        if (await page.getByText('Vos résultats').isVisible()) break;
-        await repondre(page);
-      }
+      for (let i = 0; i < 20; i++) await repondre(page);
+      await expect(page.getByText('Vos résultats')).toBeVisible();
       await capturer(page, theme, '05-resultats');
       // Détail d'un candidat déplié, avec ses sources.
       await page.getByRole('button', { name: /Voir le détail/ }).first().click();

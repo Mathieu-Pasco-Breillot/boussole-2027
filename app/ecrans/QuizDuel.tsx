@@ -72,8 +72,8 @@ export function QuizDuel({ partie, onRepondre, onSuivante, onModifier, onQuitter
           className="mt-5 grid flex-1 content-start gap-6 lg:mt-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12"
         >
           <div>
-          <p className="surtitre">
-            Chapitre {s.chapitre + 1} sur {partie.chapitres.length} · {libelleTheme(s.theme)} · Proposition {s.dansChapitre + 1} sur {s.taille}
+          <p className="pilule surtitre" data-testid="theme">
+            {libelleTheme(s.theme)}
           </p>
           <p className="mt-4 text-sm font-medium text-discret">Êtes-vous d'accord ?</p>
           <h1 className="mt-1 font-titre text-[clamp(1.6rem,1.25rem+1.6vw,2.4rem)] leading-[1.18] font-bold tracking-[-0.015em]">

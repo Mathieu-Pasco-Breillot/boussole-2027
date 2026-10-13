@@ -5,7 +5,7 @@ import { Site } from './cadre/Site.tsx';
 import type { Rubrique } from './cadre/Site.tsx';
 import type { Valeur } from '../core/score/types.ts';
 import type { ModeJeu, Partie, Preparation as PreparationChoisie } from './jeu.ts';
-import { estTerminee, marquerVues, nouvelleGraine, nouvellePartie, reculer, repondre, situation } from './jeu.ts';
+import { estTerminee, marquerVues, nouvelleGraine, nouvellePartie, reculer, repondre } from './jeu.ts';
 import { apresPartie } from './badges.ts';
 import { ecrireDuel, ecrirePartie, ecrireVues, lireDuel, lirePartie, lireVues, majBadges, toutEffacer } from './stockage.ts';
 import type { TailleDuel } from '../core/duel/index.ts';
@@ -18,7 +18,6 @@ import { Accueil } from './ecrans/Accueil.tsx';
 import { appliquerApparence } from './reglages.ts';
 import { Vieprivee } from './ecrans/Vieprivee.tsx';
 import { Defi } from './ecrans/Defi.tsx';
-import { FinChapitre } from './ecrans/FinChapitre.tsx';
 import { Chargement } from './ecrans/Chargement.tsx';
 import { Preparation } from './ecrans/Preparation.tsx';
 import { Quiz } from './ecrans/Quiz.tsx';
@@ -94,8 +93,6 @@ export function App() {
     </Site>
   );
   const [mode, setMode] = useState<ModeJeu>('express');
-  // Fin de chapitre (J1) : affichée juste après la dernière réponse d'un chapitre, jamais à la reprise d'une partie.
-  const [entracte, setEntracte] = useState(false);
   const [graineDefi, setGraineDefi] = useState<number>(() => nouvelleGraine());
 
   const choisirMode = (m: ModeJeu) => {
@@ -105,7 +102,6 @@ export function App() {
 
   const lancer = (preparation: PreparationChoisie) => {
     changer(nouvellePartie(mode, lireVues(), nouvelleGraine(), preparation));
-    setEntracte(false);
     setRevelationVue(false);
     setEcran('quiz');
   };
@@ -139,9 +135,6 @@ export function App() {
     if (!partie) return;
     const suivante = repondre(partie, { valeur, tresImportant });
     changer(suivante);
-    if (!estTerminee(suivante) && situation(suivante).dansChapitre === 0 && situation(suivante).chapitre > situation(partie).chapitre) {
-      setEntracte(true);
-    }
     if (estTerminee(suivante)) {
       ecrireVues(marquerVues(lireVues(), suivante, aujourdhui()));
       majBadges((b) => apresPartie(b, suivante));
@@ -181,8 +174,6 @@ export function App() {
           onVieprivee={() => setEcran('vieprivee')}
           onToutEffacer={effacer}
         />
-      ) : ecran === 'quiz' && partie && !estTerminee(partie) && entracte ? (
-        <FinChapitre partie={partie} onContinuer={() => setEntracte(false)} />
       ) : ecran === 'quiz' && partie && !estTerminee(partie) ? (
         <Quiz
           partie={partie}
@@ -241,10 +232,7 @@ export function App() {
             onCommencer={choisirMode}
             onDefi={jouerDefi}
             onNaviguer={(e) => setEcran(e)}
-            onReprendre={() => {
-              setEntracte(false);
-              setEcran('quiz');
-            }}
+            onReprendre={() => setEcran('quiz')}
             onVoirResultats={() => setEcran('resultats')}
             duelEnCours={!!duel && !estTerminee(duel)}
             duelTermine={!!duel && estTerminee(duel)}

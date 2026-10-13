@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test';
-import { lancer, passerFinDeChapitre, repondreATout } from './outils.ts';
+import { lancer, repondreATout } from './outils.ts';
 
 // Ici les animations sont activées (le reste de la suite les réduit).
 test.use({ reducedMotion: 'no-preference' });
@@ -16,9 +16,6 @@ test("un second tap sur l'ancienne carte, pendant sa sortie, ne remplace pas la 
     pasdutout.click();
   })()`);
 
-  // Si le premier chapitre n'a qu'une question, le premier tap mène à la fin de chapitre (l'ancienne carte a disparu).
-  await expect(page.getByText('2 / 20').or(page.getByRole('button', { name: /^Continuer/ }))).toBeVisible();
-  await passerFinDeChapitre(page);
   await expect(page.getByText('2 / 20')).toBeVisible();
   await page.getByRole('button', { name: '← Proposition précédente' }).click();
   await expect(page.getByRole('button', { name: "Plutôt d'accord" })).toHaveAttribute('aria-pressed', 'true');
