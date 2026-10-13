@@ -1,0 +1,38 @@
+/* Colonnes et barre d'action. Tout est dans la couche « components » : une classe utilitaire (mt-4, w-full…) l'emporte. */
+@layer components {
+  /* Colonne de lecture (écrans de parcours) et colonne large (pages du site). */
+  .colonne {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 42rem;
+    padding-inline: 1.25rem;
+  }
+
+  .conteneur {
+    margin-inline: auto;
+    width: 100%;
+    max-width: 72rem;
+    padding-inline: 1.25rem;
+  }
+
+  @media (min-width: 768px) {
+    .conteneur {
+      padding-inline: 2rem;
+    }
+  }
+
+  /*
+   * Barre d'action des écrans de préparation : le bouton « Lancer » reste à portée de pouce pendant qu'on règle les
+   * options. Elle colle au bas de l'écran ; le bouton « Glossaire » se place au-dessus d'elle (glossaire.css).
+   */
+  .barre-action {
+    position: sticky;
+    bottom: 0;
+    z-index: 20;
+    margin-inline: -1.25rem;
+    border-top: 1px solid var(--color-trait);
+    background: color-mix(in oklab, var(--color-fond) 94%, transparent);
+    padding: 0.75rem 1.25rem 1rem;
+    backdrop-filter: blur(10px);
+  }
+}

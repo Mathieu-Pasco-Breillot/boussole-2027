@@ -3,6 +3,9 @@ import { EXPLICATIONS_MOTIFS, libelleTheme, libelleValeur, MOTIFS_NON_EVALUATION
 import { questionsParId } from '../jeu.ts';
 import { paquet } from '../paquet.ts';
 import { Texte } from '../glossaire/Texte.tsx';
+import { Carte } from '../ui/Carte.tsx';
+import { EntetePage } from '../ui/EntetePage.tsx';
+import { PastilleCandidat } from '../ui/PastilleCandidat.tsx';
 
 const STATUTS: Record<string, string> = {
   evalue: 'Évalué',
@@ -21,17 +24,18 @@ export function FicheCandidat({ id, onRetour, libelleRetour = '← Retour' }: { 
   const q = (qid: string) => questionsParId.get(qid);
 
   return (
-    <main className="conteneur flex max-w-4xl flex-col gap-4 py-8 leading-relaxed">
-      <header>
-        <button type="button" onClick={onRetour} className="lien">
-          {libelleRetour}
-        </button>
-        <h1 className="titre-page mt-2">{c.prenom} {c.nom}</h1>
-        <p className="mt-1 text-lg text-discret">{c.parti}</p>
-      </header>
+    <main className="page gap-5">
+      <EntetePage
+        titre={`${c.prenom} ${c.nom}`}
+        onRetour={onRetour}
+        libelleRetour={libelleRetour}
+        repere={<PastilleCandidat prenom={c.prenom} nom={c.nom} grande />}
+      >
+        <p className="text-lg">{c.parti}</p>
+      </EntetePage>
 
-      <section className="carte p-5 text-sm">
-        <h2 className="font-titre text-xl font-bold">Statut et couverture</h2>
+      <Carte as="section" className="p-5 text-sm leading-relaxed">
+        <h2 className="titre-carte">Statut et couverture</h2>
         <ul className="mt-2 flex flex-col gap-1">
           <li>
             Statut :{' '}
@@ -66,7 +70,7 @@ export function FicheCandidat({ id, onRetour, libelleRetour = '← Retour' }: { 
           <li>Programme : pas de document de programme rattaché à la fiche pour l'instant.</li>
           <li>Indicateur de votes : pas encore disponible.</li>
         </ul>
-      </section>
+      </Carte>
 
       {publiees.length === 0 ? (
         <p className="text-discret">Aucune position n'est encore publiée pour ce candidat.</p>
@@ -76,14 +80,14 @@ export function FicheCandidat({ id, onRetour, libelleRetour = '← Retour' }: { 
           if (liste.length === 0) return null;
           return (
             <details key={t} className="depliant carte px-5 py-2">
-              <summary className="font-titre text-xl font-bold">
+              <summary className="titre-carte">
                 <span>
-                {libelleTheme(t)} <span className="text-sm font-normal text-discret">· {liste.length} positions</span>
+                  {libelleTheme(t)} <span className="text-sm font-normal text-discret">· {liste.length} positions</span>
                 </span>
               </summary>
-              <ul className="mt-1 mb-3 flex flex-col gap-3 text-[0.95rem]">
+              <ul className="depliant-contenu">
                 {liste.map((p) => (
-                  <li key={p.questionId} className="rounded-xl border border-trait bg-fond p-4">
+                  <li key={p.questionId} className="ligne-position">
                     <p className="font-semibold">
                       <Texte>{q(p.questionId)?.enonce}</Texte>
                     </p>

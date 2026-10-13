@@ -4,7 +4,9 @@ import { surveillerErreurs, surveillerReseau } from './outils.ts';
 /** Ouvre le mode duel, choisit le premier candidat proposé et une taille de 20, lance. Renvoie le nom du candidat. */
 async function lancerDuel(page: Page): Promise<string> {
   await page.goto('/');
-  await page.getByRole('button', { name: /^Duel avec un candidat/ }).click();
+  // Sur l'accueil, le duel est le second onglet du choix de mode.
+  await page.getByRole('tab', { name: /^Duel avec un candidat/ }).click();
+  await page.getByRole('button', { name: 'Choisir un candidat' }).click();
   const premier = page.getByRole('list').filter({ hasText: 'propositions' }).first().getByRole('button').first();
   const nom = ((await premier.locator('span.font-semibold').first().textContent()) ?? '').trim();
   await premier.click();

@@ -8,6 +8,9 @@ import { ECARTS, libelleTheme, libelleValeur, NATURES, TAILLES_DUEL_INFO } from 
 import { paquet } from '../paquet.ts';
 import { Detail } from './Resultats.tsx';
 import { Texte } from '../glossaire/Texte.tsx';
+import { Bouton } from '../ui/Bouton.tsx';
+import { Carte } from '../ui/Carte.tsx';
+import { EnteteParcours } from '../ui/EnteteParcours.tsx';
 
 interface Props {
   partie: PartieDuel;
@@ -27,27 +30,27 @@ export function ResultatsDuel({ partie, onFiche, onAutreDuel, onAccueil, onViepr
   const taille = TAILLES_DUEL_INFO.find((t) => t.taille === partie.taille)!.nom;
 
   return (
-    <main className="colonne flex max-w-3xl flex-col gap-6 py-8">
+    <main className="parcours gap-6">
+      <EnteteParcours />
+
       <header>
-        <p className="surtitre">Résultat du duel</p>
-        <h1 className="titre-page mt-2">{nom}</h1>
-        <p className="mt-2 text-discret">
+        <p className="surtitre surtitre-point">Résultat du duel</p>
+        <h1 className="titre-page mt-3">{nom}</h1>
+        <p className="mt-3 text-discret">
           {c.parti} · {taille} · {a.repondues} réponses sur {partie.questions.length} propositions · graine du tirage {partie.graine}
         </p>
       </header>
 
-      <section className="carte border-l-4 border-l-accent p-5" aria-labelledby="titre-affinite">
-        <h2 id="titre-affinite" className="font-titre text-xl font-bold">
+      <Carte as="section" note className="p-5" aria-labelledby="titre-affinite">
+        <h2 id="titre-affinite" className="titre-carte">
           Votre affinité avec ce programme
         </h2>
         {a.affichable && a.score.scoreArrondi !== null ? (
           <>
-            <p className="mt-2 font-titre text-6xl font-extrabold tracking-tight tabular-nums" aria-label={`Affinité ${a.score.scoreArrondi} sur 100`}>
-              {a.score.scoreArrondi} <span className="text-xl text-discret">/ 100</span>
+            <p className="score score-grand mt-3" aria-label={`Affinité ${a.score.scoreArrondi} sur 100`}>
+              {a.score.scoreArrondi} <span className="score-unite">/ 100</span>
             </p>
-            <div className="jauge mt-3">
-              <div data-barre-score style={{ width: `${a.score.scoreArrondi}%` }} />
-            </div>
+            <progress className="barre barre-epaisse mt-3" data-barre-score aria-hidden="true" max={100} value={a.score.scoreArrondi} />
             <p className="mt-3 text-sm text-discret">
               Fiabilité {a.fiabilite} · {a.score.codees} propositions comptées sur {a.repondues} répondues.
             </p>
@@ -62,12 +65,12 @@ export function ResultatsDuel({ partie, onFiche, onAutreDuel, onAccueil, onViepr
           Ce score mesure votre accord avec les propositions de {nom} que vous avez rencontrées. Il n'est comparable ni à celui d'un duel avec un autre
           candidat, ni au classement des autres modes : les propositions posées ne sont pas les mêmes. Ce n'est ni une victoire, ni un échec pour personne.
         </p>
-      </section>
+      </Carte>
 
       {a.affichable && <Detail s={a} />}
 
       <section>
-        <button type="button" aria-expanded={toutes} onClick={() => setToutes((v) => !v)} className="min-h-11 text-left font-titre text-xl font-bold underline decoration-accent/50 decoration-2 underline-offset-4">
+        <button type="button" aria-expanded={toutes} onClick={() => setToutes((v) => !v)} className="lien-titre titre-carte">
           Toutes les propositions rencontrées ({a.repondues}) {toutes ? '▴' : '▾'}
         </button>
         {toutes && (
@@ -79,7 +82,7 @@ export function ResultatsDuel({ partie, onFiche, onAutreDuel, onAccueil, onViepr
                 const saisie = partie.reponses[id]!;
                 const p = positionSur(partie, id);
                 return (
-                  <li key={id} className="carte p-4 text-sm leading-relaxed shadow-none">
+                  <li key={id} className="ligne-position">
                     <p className="font-semibold">
                       <Texte>{q.enonce}</Texte>
                     </p>
@@ -101,33 +104,35 @@ export function ResultatsDuel({ partie, onFiche, onAutreDuel, onAccueil, onViepr
         )}
       </section>
 
-      <section className="carte p-5 text-sm leading-relaxed text-discret">
+      <Carte as="section" douce className="p-5 text-sm leading-relaxed text-discret">
         <p>Les votes au Parlement n'entrent ni dans le codage des positions ni dans le score. Indicateur de votes : pas encore disponible.</p>
         <p className="mt-2">
           Même graine et mêmes réponses redonnent les mêmes résultats. Méthode complète et données :{' '}
-          <a className="underline" href="https://github.com/Mathieu-Pasco-Breillot/choose-your-candidate-2027" rel="noopener noreferrer">
+          <a className="lien-texte" href="https://github.com/Mathieu-Pasco-Breillot/choose-your-candidate-2027" rel="noopener noreferrer">
             dépôt du projet
           </a>
           .
         </p>
-      </section>
+      </Carte>
 
       <div className="flex flex-col gap-3">
-        <button type="button" onClick={onAutreDuel} className="btn btn-primaire btn-grand">
+        <Bouton grand pleine fleche onClick={onAutreDuel}>
           Faire un duel avec un autre candidat
-        </button>
-        <button type="button" onClick={() => onFiche(partie.candidat)} className="btn btn-secondaire">
+        </Bouton>
+        <Bouton variante="secondaire" pleine onClick={() => onFiche(partie.candidat)}>
           Fiche de {nom}
-        </button>
-        <button type="button" onClick={onAccueil} className="btn btn-secondaire">
+        </Bouton>
+        <Bouton variante="secondaire" pleine onClick={onAccueil}>
           Lancer une partie classique
-        </button>
-        <button type="button" onClick={onVieprivee} className="lien">
-          Vie privée
-        </button>
-        <button type="button" onClick={onToutEffacer} className="lien">
-          Tout effacer sur cet appareil
-        </button>
+        </Bouton>
+        <div className="flex flex-wrap justify-center gap-x-6">
+          <Bouton variante="lien" onClick={onVieprivee}>
+            Vie privée
+          </Bouton>
+          <Bouton variante="lien" onClick={onToutEffacer}>
+            Tout effacer sur cet appareil
+          </Bouton>
+        </div>
       </div>
     </main>
   );

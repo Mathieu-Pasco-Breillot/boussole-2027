@@ -1,0 +1,153 @@
+/* Accueil : illustration du haut de page, drapeau miniature, bandeau de chiffres, entrée en cascade. */
+
+/* Drapeau miniature : trois bandes, sans nom ni emblème. Décoratif. */
+.tricolore {
+  display: inline-flex;
+  flex: none;
+  width: 1.8rem;
+  height: 1.2rem;
+  overflow: hidden;
+  border: 1px solid rgb(30 49 82 / 0.15);
+  border-radius: 3px;
+}
+
+.tricolore > i {
+  flex: 1;
+}
+
+.tricolore > i:first-child,
+.drapeau-grand > i:first-child {
+  background: var(--color-france-bleu);
+}
+
+.tricolore > i:nth-child(2),
+.drapeau-grand > i:nth-child(2) {
+  background: #fff;
+}
+
+.tricolore > i:last-child,
+.drapeau-grand > i:last-child {
+  background: var(--color-france-rouge);
+}
+
+/* Illustration : deux orbites, la carte du drapeau et la mascotte. Purement décorative (aria-hidden côté JSX). */
+.accueil-art {
+  position: relative;
+  display: grid;
+  min-height: 19rem;
+  place-items: center;
+  isolation: isolate;
+}
+
+.accueil-orbite {
+  position: absolute;
+  z-index: -1;
+  width: 19rem;
+  height: 19rem;
+  border: 1px solid var(--color-trait);
+  border-radius: 9999px;
+}
+
+.accueil-orbite-interne {
+  width: 15rem;
+  height: 15rem;
+  border-style: dashed;
+}
+
+.accueil-drapeau {
+  display: flex;
+  width: 15rem;
+  height: 13.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.3rem;
+  border: 1px solid var(--color-trait);
+  border-radius: var(--radius-xl);
+  background: var(--color-carte);
+  box-shadow: var(--shadow-flottant);
+  transform: rotate(-3deg);
+}
+
+.drapeau-grand {
+  display: flex;
+  width: 8.5rem;
+  height: 5.7rem;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 6px 18px rgb(28 55 100 / 0.12);
+}
+
+.drapeau-grand > i {
+  flex: 1;
+}
+
+.accueil-mascotte {
+  position: absolute;
+  right: 0;
+  bottom: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 640px) {
+  .accueil-mascotte {
+    right: 6%;
+  }
+}
+
+.accueil-art-note {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: var(--color-discret);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Bandeau de chiffres : un filet tricolore en haut, comme dans le design. */
+.accueil-chiffres {
+  position: relative;
+  border-bottom: 1px solid var(--color-trait);
+  background: var(--color-fond-bas);
+}
+
+.accueil-chiffres::before {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: var(--degrade-tricolore);
+}
+
+/* Entrée en cascade du haut de l'accueil (coupée si le téléphone demande des animations réduites). */
+@media (prefers-reduced-motion: no-preference) {
+  .entree > * {
+    animation: entree 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+
+  .entree > :nth-child(2) {
+    animation-delay: 0.06s;
+  }
+
+  .entree > :nth-child(3) {
+    animation-delay: 0.12s;
+  }
+
+  .entree > :nth-child(4) {
+    animation-delay: 0.18s;
+  }
+
+  .entree > :nth-child(5) {
+    animation-delay: 0.24s;
+  }
+
+  @keyframes entree {
+    from {
+      opacity: 0;
+      transform: translateY(14px);
+    }
+  }
+}

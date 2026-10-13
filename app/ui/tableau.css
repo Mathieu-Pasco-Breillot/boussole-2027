@@ -1,0 +1,47 @@
+/* Tableaux de données (rapport de neutralité, tableaux des documents) : défilent à l'horizontale sur petit écran. */
+@layer components {
+  .tableau-defilant {
+    overflow-x: auto;
+    border: 1px solid var(--color-trait);
+    border-radius: var(--radius-md);
+    background: var(--color-carte);
+  }
+
+  .tableau {
+    width: 100%;
+    min-width: 28rem;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  .tableau caption {
+    padding: 0.75rem 0.85rem;
+    color: var(--color-marine);
+    font-weight: 700;
+    text-align: left;
+  }
+
+  .tableau thead th {
+    border-bottom: 1px solid var(--color-trait);
+    background: var(--color-fond-bas);
+    color: var(--color-marine);
+    font-weight: 700;
+    vertical-align: bottom;
+  }
+
+  .tableau th,
+  .tableau td {
+    padding: 0.55rem 0.85rem;
+    vertical-align: top;
+  }
+
+  .tableau tbody tr + tr > * {
+    border-top: 1px solid var(--color-trait);
+  }
+
+  .tableau tbody th {
+    font-weight: 600;
+  }
+}

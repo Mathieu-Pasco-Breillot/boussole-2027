@@ -1,0 +1,122 @@
+/* Pages du site (candidats, fiche, questions, méthode, vie privée) : colonne, en-tête, listes. */
+@layer components {
+  .page {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-inline: auto;
+    width: 100%;
+    max-width: 56rem;
+    padding: 2rem 1.25rem 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .page {
+      padding-inline: 2rem;
+    }
+  }
+
+  /* Page de lecture (vie privée) : lignes plus courtes. */
+  .page-etroite {
+    max-width: 46rem;
+  }
+
+  .entete-page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .entete-page-titre {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .entete-page-intro {
+    max-width: 42rem;
+    color: var(--color-discret);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+  }
+
+  /* Texte courant d'une page de lecture. */
+  .texte-page {
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+
+  /* Candidat dans une liste : bouton-carte vers sa fiche. */
+  .carte-lien {
+    display: flex;
+    min-height: 4rem;
+    width: 100%;
+    cursor: pointer;
+    align-items: center;
+    gap: 0.85rem;
+    padding: 0.7rem 1rem;
+    text-align: left;
+    transition: border-color 0.16s ease;
+  }
+
+  @media (hover: hover) {
+    .carte-lien:hover {
+      border-color: var(--color-accent);
+    }
+  }
+
+  /* Liste de questions ou de positions, dans un encart dépliant. */
+  .depliant-contenu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-block: 0.25rem 0.75rem;
+    border-top: 1px solid var(--color-trait);
+    padding-top: 0.85rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  /* Onglets de la page Méthode : pilules qui défilent sur petit écran. */
+  .onglets {
+    display: flex;
+    gap: 0.5rem;
+    margin-inline: -1.25rem;
+    overflow-x: auto;
+    padding: 0 1.25rem 0.25rem;
+  }
+
+  @media (min-width: 768px) {
+    .onglets {
+      flex-wrap: wrap;
+      margin-inline: 0;
+      padding-inline: 0;
+    }
+  }
+
+  .onglet {
+    flex: none;
+    min-height: 2.75rem;
+    cursor: pointer;
+    border: 1px solid var(--color-trait);
+    border-radius: 9999px;
+    background: var(--color-carte);
+    padding-inline: 1rem;
+    color: var(--color-discret);
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  @media (hover: hover) {
+    .onglet:hover {
+      border-color: var(--color-accent);
+    }
+  }
+
+  .onglet[aria-selected='true'] {
+    border-color: var(--color-accent);
+    background: var(--color-accent);
+    color: var(--color-carte);
+  }
+}

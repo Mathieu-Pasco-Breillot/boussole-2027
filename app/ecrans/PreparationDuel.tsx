@@ -7,6 +7,10 @@ import type { PreparationDuel as PreparationChoisie } from '../duel.ts';
 import { nouvelleGraine } from '../jeu.ts';
 import { libelleTheme, TAILLES_DUEL_INFO } from '../libelles.ts';
 import { lireVues } from '../stockage.ts';
+import { Bouton } from '../ui/Bouton.tsx';
+import { Carte } from '../ui/Carte.tsx';
+import { EnteteParcours } from '../ui/EnteteParcours.tsx';
+import { PastilleCandidat } from '../ui/PastilleCandidat.tsx';
 
 interface Props {
   onLancer: (candidat: string, taille: TailleDuel, preparation: PreparationChoisie) => void;
@@ -33,43 +37,42 @@ export function PreparationDuel({ onLancer, onRetour }: Props) {
 
   if (choix === null) {
     return (
-      <main className="colonne flex max-w-3xl flex-col gap-8 pt-6 pb-10">
-        <header>
+      <main className="parcours gap-7 pb-10">
+        <EnteteParcours>
           <button type="button" onClick={onRetour} className="lien">
             ← Retour
           </button>
-          <p className="mt-2 surtitre">Mode Duel</p>
-          <h1 className="titre-page mt-2">Duel avec un candidat</h1>
+        </EnteteParcours>
+        <header>
+          <p className="surtitre surtitre-point">Mode Duel</p>
+          <h1 className="titre-page mt-3">Duel avec un candidat</h1>
           <p className="mt-3 leading-relaxed text-discret">
             Choisissez un candidat. On vous propose ses positions une par une ; après chacune de vos réponses, vous
             découvrez ce qu'il ou elle porte, avec la source, et votre affinité se met à jour.
           </p>
-          <p className="carte mt-4 p-4 text-sm leading-relaxed">
+          <Carte as="p" note className="mt-4 p-4 text-sm leading-relaxed">
             Ce mode ne dit pas pour qui voter. Les propositions posées dépendent du candidat : <strong>le score d'un duel n'est
             comparable ni à celui d'un autre candidat, ni au classement des autres modes.</strong>
-          </p>
+          </Carte>
         </header>
 
         <section aria-labelledby="titre-candidats">
-          <h2 id="titre-candidats" className="font-titre text-2xl font-bold tracking-tight">
+          <h2 id="titre-candidats" className="font-titre text-2xl font-semibold tracking-tight text-marine">
             Avec quel candidat ?
           </h2>
           <p className="mt-1 text-sm text-discret">Ordre tiré au sort à chaque ouverture de cet écran.</p>
           <ul className="mt-4 grid gap-2 sm:grid-cols-2">
             {disponibles.map(({ candidat, propositions }) => (
               <li key={candidat.id}>
-                <button
-                  type="button"
-                  onClick={() => setChoix(candidat.id)}
-                  className="carte flex min-h-16 w-full items-center justify-between gap-3 px-4 py-3 text-left hover:border-accent"
-                >
-                  <span>
+                <button type="button" onClick={() => setChoix(candidat.id)} className="option-candidat w-full justify-between">
+                  <PastilleCandidat prenom={candidat.prenom} nom={candidat.nom} />
+                  <span className="min-w-0 flex-1">
                     <span className="block font-semibold">
                       {candidat.prenom} {candidat.nom}
                     </span>
                     <span className="block text-xs text-discret">{candidat.parti}</span>
                   </span>
-                  <span className="pilule shrink-0 bg-fond text-discret">{propositions} propositions</span>
+                  <span className="pilule shrink-0 bg-fond text-xs text-discret">{propositions} propositions</span>
                 </button>
               </li>
             ))}
@@ -107,24 +110,29 @@ export function PreparationDuel({ onLancer, onRetour }: Props) {
   const prevues = taille === 'tout' ? disponiblesApresReglage : Math.min(taille, disponiblesApresReglage);
 
   return (
-    <main className="colonne flex max-w-3xl flex-col gap-8 pt-6">
-      <header>
+    <main className="parcours gap-7">
+      <EnteteParcours>
         <button type="button" onClick={() => setChoix(null)} className="lien">
           ← Choisir un autre candidat
         </button>
-        <p className="mt-2 surtitre">Mode Duel</p>
-        <h1 className="titre-page mt-2">
-          {fiche.candidat.prenom} {fiche.candidat.nom}
-        </h1>
-        <p className="mt-1 text-discret">{fiche.candidat.parti} · {fiche.propositions} propositions disponibles</p>
-        <p className="carte mt-4 p-4 text-sm leading-relaxed" role="status" data-propositions-prevues={prevues}>
+      </EnteteParcours>
+      <header>
+        <p className="surtitre surtitre-point">Mode Duel</p>
+        <div className="mt-3 flex items-center gap-3">
+          <PastilleCandidat prenom={fiche.candidat.prenom} nom={fiche.candidat.nom} grande />
+          <h1 className="titre-page">
+            {fiche.candidat.prenom} {fiche.candidat.nom}
+          </h1>
+        </div>
+        <p className="mt-2 text-discret">{fiche.candidat.parti} · {fiche.propositions} propositions disponibles</p>
+        <Carte as="p" note className="mt-4 p-4 text-sm leading-relaxed" role="status" data-propositions-prevues={prevues}>
           Avec ces réglages : <strong>{disponiblesApresReglage} propositions disponibles</strong>
           {vues.size > 0 ? ' (celles déjà vues sur cet appareil passent en dernier)' : ''}. Le duel comptera <strong>{prevues}</strong> propositions.
-        </p>
+        </Carte>
       </header>
 
       <section aria-labelledby="titre-taille">
-        <h2 id="titre-taille" className="font-titre text-2xl font-bold tracking-tight">
+        <h2 id="titre-taille" className="font-titre text-2xl font-semibold tracking-tight text-marine">
           Combien de propositions ?
         </h2>
         <div className="mt-3 flex flex-col gap-2" role="radiogroup" aria-label="Nombre de propositions">
@@ -139,7 +147,7 @@ export function PreparationDuel({ onLancer, onRetour }: Props) {
       </section>
 
       <section aria-labelledby="titre-poids">
-        <h2 id="titre-poids" className="font-titre text-2xl font-bold tracking-tight">
+        <h2 id="titre-poids" className="font-titre text-2xl font-semibold tracking-tight text-marine">
           Ce qui compte pour vous
         </h2>
         <p className="mt-1 text-sm leading-relaxed text-discret">
@@ -148,9 +156,9 @@ export function PreparationDuel({ onLancer, onRetour }: Props) {
         </p>
         <ul className="mt-4 grid gap-3 md:grid-cols-2">
           {chapitres.map((t) => (
-            <li key={t} className="carte p-4">
+            <Carte as="li" key={t} className="p-4">
               <fieldset>
-                <legend className="font-titre text-lg font-bold">
+                <legend className="font-titre text-lg font-semibold text-marine">
                   {libelleTheme(t)} <span className="text-sm font-normal text-discret">({parChapitre.get(t)} propositions)</span>
                 </legend>
                 <div className="mt-2 grid grid-cols-4 gap-1" role="radiogroup" aria-label={`Importance du thème ${libelleTheme(t)}`}>
@@ -168,20 +176,21 @@ export function PreparationDuel({ onLancer, onRetour }: Props) {
                   ))}
                 </div>
               </fieldset>
-            </li>
+            </Carte>
           ))}
         </ul>
       </section>
 
-      <div data-barre-action className="barre-action">
-        <button
-          type="button"
+      <div data-barre-action className="barre-action mt-auto">
+        <Bouton
+          grand
+          pleine
+          fleche
           disabled={actifs.length === 0}
           onClick={() => onLancer(choix, taille, { poids: Object.fromEntries(chapitres.map((t) => [t, poidsDe(t)])) })}
-          className="btn btn-primaire btn-grand w-full"
         >
           Lancer le duel{actifs.length > 0 ? ` (${prevues} propositions)` : ''}
-        </button>
+        </Bouton>
         {actifs.length === 0 && <p className="mt-2 text-sm text-discret">Gardez au moins un thème pour lancer le duel.</p>}
       </div>
     </main>

@@ -1,5 +1,8 @@
 import type { ReactNode } from 'react';
 import { LigneVersions } from '../ecrans/Versions.tsx';
+import { Bouton } from '../ui/Bouton.tsx';
+import { EnTete, LienNav } from '../ui/EnTete.tsx';
+import { Logo } from '../ui/Marque.tsx';
 
 /** Rubriques de la navigation principale. « Jouer » mène au choix du format, sur l'accueil. */
 export type Rubrique = 'accueil' | 'jouer' | 'candidats' | 'banque' | 'methode';
@@ -50,21 +53,6 @@ function Picto({ id }: { id: Rubrique }) {
   );
 }
 
-/** Marque : une petite urne et son bulletin, dans les couleurs de la mascotte. */
-export function Marque({ taille = 30 }: { taille?: number }) {
-  return (
-    <svg viewBox="0 0 32 32" width={taille} height={taille} aria-hidden="true" focusable="false" className="shrink-0">
-      <rect x="11" y="2.5" width="10" height="8" rx="1.2" className="fill-papier stroke-soleil" strokeWidth="1.6" />
-      <rect x="5" y="12" width="22" height="17" rx="4" className="fill-carte stroke-soleil" strokeWidth="2.2" />
-      <rect x="3" y="9" width="26" height="5.5" rx="2.5" className="fill-soleil" />
-      <rect x="11" y="10.8" width="10" height="1.9" rx="0.95" className="fill-fond" />
-      <circle cx="12.5" cy="20" r="1.7" className="fill-encre" />
-      <circle cx="19.5" cy="20" r="1.7" className="fill-encre" />
-      <path d="M13 24.300q3 2 6 0" fill="none" className="stroke-encre" strokeWidth="1.5" strokeLinecap="round" />
-    </svg>
-  );
-}
-
 interface Props {
   /** Rubrique mise en avant dans la navigation (aucune sur la page « Vie privée »). */
   actif: Rubrique | null;
@@ -84,50 +72,36 @@ interface Props {
 export function Site({ actif, onAller, onVieprivee, onToutEffacer, children }: Props) {
   return (
     <div className="flex min-h-dvh flex-col">
-      <header className="sticky top-0 z-30 border-b border-trait bg-fond/90 backdrop-blur-md">
-        <div className="conteneur flex h-14 items-center justify-between gap-4 md:h-16">
-          <button type="button" onClick={() => onAller('accueil')} className="flex min-h-11 items-center gap-2.5 font-titre text-xl font-bold tracking-tight" aria-label="Mon Isoloir : retour à l'accueil">
-            <Marque />
-            <span>
-              Mon <span className="text-accent">Isoloir</span>
-            </span>
+      <EnTete
+        logo={
+          <button type="button" onClick={() => onAller('accueil')} className="flex min-h-11 items-center" aria-label="Mon Isoloir : retour à l'accueil">
+            <Logo />
           </button>
+        }
+        navigation={
           <nav aria-label="Navigation principale" className="hidden md:block">
             <ul className="flex items-center gap-1">
               {RUBRIQUES.filter((r) => r.id !== 'jouer').map((r) => (
                 <li key={r.id}>
-                  <button
-                    type="button"
-                    onClick={() => onAller(r.id)}
-                    aria-current={actif === r.id ? 'page' : undefined}
-                    className={`min-h-11 rounded-full px-4 text-[0.95rem] font-semibold transition-colors ${
-                      actif === r.id ? 'bg-accent/12 text-accent' : 'text-discret hover:text-encre'
-                    }`}
-                  >
+                  <LienNav actif={actif === r.id} onClick={() => onAller(r.id)}>
                     {r.libelle}
-                  </button>
+                  </LienNav>
                 </li>
               ))}
-              <li className="ml-2">
-                <button type="button" onClick={() => onAller('jouer')} className="btn btn-primaire min-h-11 px-5 py-2 text-base">
-                  Jouer
-                </button>
+              <li className="ml-3">
+                <Bouton onClick={() => onAller('jouer')}>Jouer</Bouton>
               </li>
             </ul>
           </nav>
-          <p className="pilule text-xs md:hidden">Présidentielle 2027</p>
-        </div>
-      </header>
+        }
+      />
 
       <div className="flex-1">{children}</div>
 
       <footer className="mt-16 border-t border-trait bg-fond-bas">
         <div className="conteneur grid gap-8 py-10 text-sm text-discret md:grid-cols-[1.4fr_1fr]">
           <div className="flex flex-col gap-3">
-            <p className="flex items-center gap-2 font-titre text-lg font-bold text-encre">
-              <Marque taille={26} />
-              Mon Isoloir
-            </p>
+            <Logo petit />
             <p className="max-w-prose leading-relaxed">
               Version de démonstration : les positions des candidats sont codées au fil de l'eau, thème par thème. Pour
               l'instant, le codage est partiel : les résultats sont à lire avec prudence.

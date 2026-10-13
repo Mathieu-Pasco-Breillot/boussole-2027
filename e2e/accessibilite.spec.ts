@@ -7,10 +7,6 @@ async function verifier(page: Page, nom: string): Promise<void> {
   expect(r.violations.map((v) => `${nom} : ${v.id} (${v.nodes.length})`), nom).toEqual([]);
 }
 
-for (const theme of ['dark', 'light'] as const) {
-test.describe(`thème ${theme === 'dark' ? 'sombre' : 'clair'}`, () => {
-test.use({ colorScheme: theme });
-
 test('accueil, vie privée, méthode, candidats, questions', async ({ page }) => {
   await page.goto('/');
   await verifier(page, 'accueil');
@@ -48,8 +44,6 @@ test('préparation, question, résultats, défi', async ({ page }) => {
   await verifier(page, 'défi (révélation)');
 });
 
-});
-}
 
 test('lancer() atteint bien la première question', async ({ page }) => {
   await lancer(page, 'Express');

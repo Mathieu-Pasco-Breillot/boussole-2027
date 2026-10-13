@@ -23,7 +23,7 @@ export function Extraits({ extraits, className = 'mt-2' }: { extraits?: ExtraitP
           )}
           <p className="mt-1 text-sm">
             <a
-              className="underline"
+              className="lien-texte"
               href={e.source.url}
               target="_blank"
               rel="noopener noreferrer"

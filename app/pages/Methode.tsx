@@ -7,6 +7,8 @@ import { Markdown } from './Markdown.tsx';
 import { chargerPages } from './donnees.ts';
 import type { Pages } from './donnees.ts';
 import { Texte } from '../glossaire/Texte.tsx';
+import { Carte } from '../ui/Carte.tsx';
+import { EntetePage } from '../ui/EntetePage.tsx';
 
 interface Props {
   onRetour: () => void;
@@ -39,31 +41,20 @@ export function Methode({ onRetour, graine, journal }: Props) {
   }, []);
 
   return (
-    <main className="conteneur flex max-w-4xl flex-col gap-6 py-8">
-      <header>
-        <button type="button" onClick={onRetour} className="lien">
-          ← Retour
-        </button>
-        <h1 className="titre-page mt-2">Méthode</h1>
-        <p className="mt-2 text-discret">Tout est public : textes, données et code sont dans le dépôt du projet.</p>
-      </header>
+    <main className="page gap-6">
+      <EntetePage titre="Méthode" onRetour={onRetour}>
+        <p>Tout est public : textes, données et code sont dans le dépôt du projet.</p>
+      </EntetePage>
 
-      <div role="tablist" aria-label="Pages de méthode" className="-mx-5 flex gap-2 overflow-x-auto px-5 pb-1 md:mx-0 md:flex-wrap md:px-0">
+      <div role="tablist" aria-label="Pages de méthode" className="onglets">
         {ONGLETS.map((o) => (
-          <button
-            key={o.id}
-            role="tab"
-            type="button"
-            aria-selected={onglet === o.id}
-            onClick={() => setOnglet(o.id)}
-            className={`min-h-11 shrink-0 rounded-full border px-4 text-sm font-semibold ${onglet === o.id ? 'border-accent bg-accent text-fond' : 'border-trait bg-carte text-discret'}`}
-          >
+          <button key={o.id} role="tab" type="button" aria-selected={onglet === o.id} onClick={() => setOnglet(o.id)} className="onglet">
             {o.libelle}
           </button>
         ))}
       </div>
 
-      <section role="tabpanel" className="text-[1.0625rem] leading-relaxed">
+      <section role="tabpanel" className="texte-page">
         {onglet === 'principe' && (
           <div className="flex flex-col gap-4">
             <p>
@@ -82,8 +73,8 @@ export function Methode({ onRetour, graine, journal }: Props) {
               sont tirées dans tous les thèmes, à poids égal, avec des questions « d'ancrage » choisies pour distinguer les
               candidats, et en évitant celles que vous avez déjà vues.
             </p>
-            <div className="carte p-5">
-              <h2 className="font-titre text-xl font-bold">Votre partie</h2>
+            <Carte className="p-5">
+              <h2 className="titre-carte">Votre partie</h2>
               {graine === null ? (
                 <p className="mt-1 text-sm text-discret">Aucune partie sur cet appareil. La graine du tirage s'affiche ici dès qu'une partie est lancée.</p>
               ) : (
@@ -93,7 +84,7 @@ export function Methode({ onRetour, graine, journal }: Props) {
                   </p>
                   {journal && (
                     <details className="mt-2 text-sm">
-                      <summary className="min-h-11 cursor-pointer underline">Comment ces questions ont été tirées</summary>
+                      <summary className="min-h-11 cursor-pointer text-accent underline">Comment ces questions ont été tirées</summary>
                       <ul className="mt-2 flex flex-col gap-1 text-discret">
                         {journal.map((l, i) => <li key={i}>{l}</li>)}
                       </ul>
@@ -101,7 +92,7 @@ export function Methode({ onRetour, graine, journal }: Props) {
                   )}
                 </>
               )}
-            </div>
+            </Carte>
           </div>
         )}
 
@@ -113,22 +104,22 @@ export function Methode({ onRetour, graine, journal }: Props) {
         {pages && onglet === 'journal' && (
           <ol className="mt-4 flex flex-col gap-3">
             {[...pages.journal].reverse().map((e, i) => (
-              <li key={i} className="carte p-4 text-sm">
-                <p className="font-semibold">{e.date} · {e.type.replace(/_/g, ' ')}</p>
+              <Carte as="li" key={i} className="p-4 text-sm">
+                <p className="font-semibold text-marine">{e.date} · {e.type.replace(/_/g, ' ')}</p>
                 <p className="mt-1">
                   <Texte>{e.description}</Texte>
                 </p>
                 <p className="mt-1 text-discret">{e.objets.join(', ')}</p>
-              </li>
+              </Carte>
             ))}
           </ol>
         )}
         {pages && onglet === 'neutralite' && (
           <div className="flex flex-col gap-4">
             {pages.neutralite.provisoire && (
-              <p className="rounded-xl border-l-4 border-accent bg-carte p-3">
+              <Carte as="p" note className="p-4">
                 <strong>Rapport provisoire.</strong> Il est calculé sur des codages encore partiels et en attente de validation humaine : à lire comme un contrôle de méthode, pas comme un résultat.
-              </p>
+              </Carte>
             )}
             <p>
               Pour chaque mode, {pages.neutralite.parametres.tirages_par_mode.toLocaleString('fr-FR')} parties simulées (poids de thèmes
@@ -137,24 +128,24 @@ export function Methode({ onRetour, graine, journal }: Props) {
               candidats signale un déséquilibre de couverture, pas une préférence.
             </p>
             {Object.entries(pages.neutralite.modes).map(([mode, m]) => (
-              <div key={mode} className="overflow-x-auto">
-                <table className="w-full border-collapse text-left text-sm">
-                  <caption className="pb-1 text-left font-semibold">
+              <div key={mode} className="tableau-defilant" tabIndex={0}>
+                <table className="tableau">
+                  <caption>
                     Mode {MODES[mode as keyof typeof MODES]?.nom ?? mode} · {m.N} questions · écart maximal entre candidats : {pct(m.ecart_parts_atteint_seuils)}
                   </caption>
                   <thead>
                     <tr>
-                      <th scope="col" className="border-b border-accent/40 px-2 py-1">Candidat</th>
-                      <th scope="col" className="border-b border-accent/40 px-2 py-1">Classé dans</th>
-                      <th scope="col" className="border-b border-accent/40 px-2 py-1">Questions codées (moy.)</th>
+                      <th scope="col">Candidat</th>
+                      <th scope="col">Classé dans</th>
+                      <th scope="col">Questions codées (moy.)</th>
                     </tr>
                   </thead>
                   <tbody>
                     {Object.entries(m.candidats).map(([id, c]) => (
                       <tr key={id}>
-                        <th scope="row" className="border-b border-trait px-2 py-1 font-normal">{nom(id)}</th>
-                        <td className="border-b border-trait px-2 py-1">{pct(c.part_atteint_seuils)} des parties</td>
-                        <td className="border-b border-trait px-2 py-1">{c.questions_codees_moyenne.toFixed(1)}</td>
+                        <th scope="row">{nom(id)}</th>
+                        <td>{pct(c.part_atteint_seuils)} des parties</td>
+                        <td>{c.questions_codees_moyenne.toFixed(1)}</td>
                       </tr>
                     ))}
                   </tbody>

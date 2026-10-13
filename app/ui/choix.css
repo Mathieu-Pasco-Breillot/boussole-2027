@@ -1,0 +1,178 @@
+/* Composants de choix : onglets de mode, grille de formats, options de candidat, pastille d'initiales. */
+@layer components {
+  /* Onglets de mode (quiz ou duel). */
+  .choix-mode {
+    display: flex;
+    gap: 1rem;
+    padding-inline: 1.25rem;
+    border-bottom: 1px solid var(--color-trait);
+  }
+
+  @media (min-width: 640px) {
+    .choix-mode {
+      gap: 1.5rem;
+      padding-inline: 1.75rem;
+    }
+  }
+
+  .choix-mode > [role='tab'] {
+    position: relative;
+    display: inline-flex;
+    min-width: 0;
+    min-height: 3.25rem;
+    cursor: pointer;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-discret);
+    font-size: 0.9375rem;
+    text-align: left;
+    font-weight: 600;
+  }
+
+  .choix-mode > [role='tab'][aria-selected='true'] {
+    color: var(--color-accent);
+  }
+
+  .choix-mode > [role='tab'][aria-selected='true']::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 -1px;
+    height: 2px;
+    background: var(--color-accent);
+  }
+
+  .panneau-mode {
+    padding: 1.5rem 1.25rem 1.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .panneau-mode {
+      padding: 1.75rem;
+    }
+  }
+
+  /* Grille de formats : chaque case est une action (elle ouvre la préparation du format). */
+  .format-grille {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+
+  @media (min-width: 560px) {
+    .format-grille {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .format {
+    display: flex;
+    min-width: 0;
+    min-height: 5.5rem;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+    border: 1px solid var(--color-trait);
+    border-radius: var(--radius-md);
+    background: var(--color-carte);
+    padding: 0.8rem 0.9rem;
+    text-align: left;
+    transition:
+      border-color 0.16s ease,
+      transform 0.16s ease;
+  }
+
+  @media (hover: hover) {
+    .format:hover {
+      border-color: var(--color-accent);
+      transform: translateY(-1px);
+    }
+  }
+
+  .format-ligne {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.5rem;
+  }
+
+  .format-titre {
+    color: var(--color-marine);
+    font-family: var(--font-titre);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+
+  .format-titre b {
+    font-size: 1.15rem;
+    color: var(--color-accent);
+  }
+
+  .format-detail {
+    color: var(--color-discret);
+    font-size: 0.8125rem;
+  }
+
+  .format-repere {
+    margin-top: auto;
+    border-radius: 9999px;
+    background: var(--color-accent-doux);
+    padding: 0.1rem 0.55rem;
+    color: var(--color-accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  /* Ligne d'un candidat à cocher ou à choisir. */
+  .option-candidat {
+    display: flex;
+    min-height: 3.5rem;
+    cursor: pointer;
+    align-items: center;
+    gap: 0.75rem;
+    border: 1px solid var(--color-trait);
+    border-radius: var(--radius-md);
+    background: var(--color-carte);
+    padding: 0.4rem 0.75rem;
+    text-align: left;
+  }
+
+  @media (hover: hover) {
+    .option-candidat:hover {
+      border-color: var(--color-accent);
+    }
+  }
+
+  .option-candidat:has(:checked) {
+    border-color: var(--color-accent);
+    background: var(--color-accent-doux);
+  }
+
+  .option-candidat:has(:focus-visible) {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  /* Pastille d'initiales : une seule teinte, aucune couleur n'est liée à un camp. */
+  .pastille {
+    display: inline-grid;
+    flex: none;
+    place-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: var(--radius-md);
+    background: var(--color-accent-doux);
+    color: var(--color-accent);
+    font-family: var(--font-titre);
+    font-size: 0.8125rem;
+    font-weight: 700;
+  }
+
+  .pastille-grande {
+    width: 2.75rem;
+    height: 2.75rem;
+    font-size: 1rem;
+  }
+}

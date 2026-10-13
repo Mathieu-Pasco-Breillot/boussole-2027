@@ -1,0 +1,120 @@
+/* Boutons et liens. Cibles tactiles de 44 px au moins. */
+@layer components {
+  .btn {
+    display: inline-flex;
+    min-height: 2.75rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    border: 1px solid transparent;
+    border-radius: var(--radius-md);
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    transition:
+      transform 0.16s ease,
+      background-color 0.16s ease,
+      border-color 0.16s ease;
+  }
+
+  .btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.45;
+  }
+
+  .btn:not(:disabled):active {
+    transform: translateY(1px);
+  }
+
+  @media (hover: hover) {
+    .btn:not(:disabled):hover {
+      transform: translateY(-1px);
+    }
+  }
+
+  .btn-primaire {
+    border-color: var(--color-accent);
+    background: var(--color-accent);
+    color: var(--color-carte);
+  }
+
+  @media (hover: hover) {
+    .btn-primaire:not(:disabled):hover {
+      border-color: var(--color-accent-fonce);
+      background: var(--color-accent-fonce);
+    }
+  }
+
+  .btn-secondaire {
+    border-color: var(--color-trait);
+    background: var(--color-carte);
+    color: var(--color-accent);
+  }
+
+  @media (hover: hover) {
+    .btn-secondaire:not(:disabled):hover {
+      border-color: var(--color-accent);
+      background: var(--color-accent-doux);
+    }
+  }
+
+  /* Sur un fond d'accent (bandeau d'appel final). */
+  .btn-inverse {
+    border-color: var(--color-carte);
+    background: var(--color-carte);
+    color: var(--color-accent);
+  }
+
+  .btn-grand {
+    min-height: 3.25rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .lien {
+    display: inline-flex;
+    min-height: 2.75rem;
+    cursor: pointer;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--color-discret);
+    font-size: 0.875rem;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+
+  @media (hover: hover) {
+    .lien:hover {
+      color: var(--color-accent);
+    }
+  }
+
+  /* Lien dans une phrase (source, dépôt) : pas de hauteur imposée, la cible est le texte. */
+  .lien-texte {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+
+  @media (hover: hover) {
+    .lien-texte:hover {
+      color: var(--color-accent-fonce);
+    }
+  }
+
+  /* Bouton-titre : le nom d'un candidat ouvre sa fiche. */
+  .lien-titre {
+    display: inline-flex;
+    min-height: 2.75rem;
+    cursor: pointer;
+    align-items: center;
+    text-align: left;
+    text-decoration: underline;
+    text-decoration-color: color-mix(in oklab, var(--color-accent) 50%, transparent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.25em;
+  }
+}

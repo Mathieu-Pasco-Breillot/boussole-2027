@@ -15,7 +15,6 @@ import { PreparationDuel } from './ecrans/PreparationDuel.tsx';
 import { QuizDuel } from './ecrans/QuizDuel.tsx';
 import { ResultatsDuel } from './ecrans/ResultatsDuel.tsx';
 import { Accueil } from './ecrans/Accueil.tsx';
-import { appliquerApparence } from './reglages.ts';
 import { Vieprivee } from './ecrans/Vieprivee.tsx';
 import { Defi } from './ecrans/Defi.tsx';
 import { Chargement } from './ecrans/Chargement.tsx';
@@ -144,7 +143,6 @@ export function App() {
 
   const effacer = () => {
     toutEffacer();
-    appliquerApparence('auto');
     setGeneration((g) => g + 1);
     setPartie(null);
     setDuel(null);

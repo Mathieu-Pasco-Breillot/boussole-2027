@@ -1,69 +1,72 @@
 @import 'tailwindcss';
 @import '@fontsource-variable/bricolage-grotesque';
 @import '@fontsource-variable/figtree';
+@import './ui/mise-en-page.css';
+@import './ui/texte.css';
+@import './ui/boutons.css';
+@import './ui/surfaces.css';
+@import './ui/navigation.css';
+@import './ui/choix.css';
+@import './ui/parcours.css';
+@import './ui/tableau.css';
+@import './ecrans/accueil.css';
+@import './ecrans/resultats.css';
+@import './pages/pages.css';
+@import './pages/markdown.css';
+@import './glossaire/glossaire.css';
 
 /*
- * Identité visuelle (refonte d'octobre 2026) : papier clair, encre marine, un seul accent bleu encre, et le jaune
- * d'Urnie réservé à la mascotte et aux récompenses. Titres en Bricolage Grotesque, texte en Figtree.
+ * Identité visuelle : thème clair unique, repris du design V0 (palette bleu encre sur papier, tricolore discret,
+ * rayons doux). Ce fichier est la source unique des jetons : couleurs, rayons, ombres, polices. Les composants du kit
+ * (app/ui/) et les écrans n'écrivent aucune couleur en dur ; ils lisent ces variables (les classes Tailwind aussi :
+ * pas de `@theme inline`, donc les opacités comme bg-accent/45 restent valables).
  *
- * Couleurs : chaque couleur est une variable CSS redéfinie pour le thème clair, plus bas. Les classes Tailwind lisent
- * la variable à l'exécution (pas de `@theme inline`) : les opacités (bg-accent/45) suivent donc le thème.
- * Rôles : fond = fond de page, carte = surface, encre = texte, discret = texte secondaire, trait = filets et
- * bordures, accent = couleur d'action unique, soleil = mascotte et récompenses (jamais du texte).
- * Aucune couleur n'est associée à un camp ou à un candidat ; l'échelle de réponse et les barres de score
- * n'utilisent que l'accent, à différentes intensités, dans les deux thèmes.
+ * Rôles : fond = fond de page, fond-bas = bandes et surfaces en retrait, carte = surface, encre = texte,
+ * marine = titres, discret = texte secondaire, trait = filets et bordures, accent = couleur d'action unique
+ * (accent-fonce au survol, accent-doux en teinte de fond), france-bleu et france-rouge = bandeau tricolore seulement,
+ * soleil et papier = mascotte (jamais du texte).
+ * Aucune couleur n'est associée à un camp ou à un candidat : l'échelle de réponse est d'une seule teinte, et les
+ * barres de score n'utilisent que l'accent.
+ *
+ * Contrastes (WCAG AA) : encre sur fond 13,7 ; discret sur fond 5,5, sur carte 5,8, sur accent-doux 5,1 ;
+ * accent sur fond 8,4 ; carte sur accent 8,8.
  */
 @theme {
+  /* Polices : Bricolage Grotesque pour les titres et les boutons, Figtree pour le texte (empaquetées, pas de CDN). */
   --font-titre: 'Bricolage Grotesque Variable', 'Trebuchet MS', system-ui, sans-serif;
   --font-sans: 'Figtree Variable', system-ui, sans-serif;
-  --color-fond: #0d1428;
-  --color-carte: #161f3a;
-  --color-accent: #93a5ff;
-  --color-accent-fonce: #6377dd;
-  --color-encre: #eef0f7;
-  --color-discret: #a6aec4;
-  --color-trait: #2a3558;
-  --color-fond-bas: #0a0f20;
-  --color-soleil: #f2b53c;
-  /* Papier de l'enveloppe de la mascotte : identique dans les deux thèmes. */
+
+  /* Palette V0 (noms V0 entre parenthèses). */
+  --color-fond: #f7f8fb; /* background */
+  --color-fond-bas: #f0f2f7; /* muted, sidebar */
+  --color-carte: #fffefa; /* card, popover */
+  --color-encre: #202a37; /* foreground */
+  --color-marine: #1e3152; /* titres */
+  --color-discret: #5b6577; /* muted-foreground, assombri pour le contraste AA */
+  --color-trait: #e1e5ed; /* border, input */
+  --color-accent: #244889; /* primary */
+  --color-accent-fonce: #193a78;
+  --color-accent-doux: #e9eef7; /* accent, secondary */
+  --color-france-bleu: #183b82;
+  --color-france-rouge: #e24b50;
+  --color-soleil: #e9a520;
   --color-papier: #fbf6ea;
+
+  /* Rayons V0 : --radius 0.8rem, déclinés comme dans globals.css. */
+  --radius-sm: 0.48rem;
+  --radius-md: 0.64rem;
+  --radius-lg: 0.8rem;
+  --radius-xl: 1.12rem;
+  --radius-2xl: 1.44rem;
+
+  --shadow-carte: 0 8px 28px rgb(28 55 100 / 0.045);
+  --shadow-flottant: 0 20px 45px rgb(28 55 100 / 0.09);
 }
 
 :root {
-  color-scheme: dark;
-}
-
-/*
- * Thème clair : papier, encre marine, bleu encre. Contrastes (WCAG AA) : encre sur papier 15,6 ; texte secondaire
- * sur papier 5,6 et sur carte 6,2 ; accent sur papier 7,0 ; papier sur bouton accent 7,0. Choisi par le réglage
- * manuel (data-theme="clair" sur <html>) ou, en automatique (pas d'attribut), par prefers-color-scheme.
- */
-:root[data-theme='clair'] {
   color-scheme: light;
-  --color-fond: #f5f3ee;
-  --color-carte: #ffffff;
-  --color-accent: #3348c8;
-  --color-accent-fonce: #22318f;
-  --color-encre: #121a33;
-  --color-discret: #596173;
-  --color-trait: #dcd8cf;
-  --color-fond-bas: #ece9e1;
-  --color-soleil: #e9a520;
-}
-
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme='sombre']) {
-    color-scheme: light;
-    --color-fond: #f5f3ee;
-    --color-carte: #ffffff;
-    --color-accent: #3348c8;
-    --color-accent-fonce: #22318f;
-    --color-encre: #121a33;
-    --color-discret: #596173;
-    --color-trait: #dcd8cf;
-    --color-fond-bas: #ece9e1;
-    --color-soleil: #e9a520;
-  }
+  /* Bandeau tricolore : le drapeau, sans rien d'autre (bandeau du haut, souligné de la navigation, filets). */
+  --degrade-tricolore: linear-gradient(90deg, var(--color-france-bleu) 0 33.333%, #fff 33.333% 66.666%, var(--color-france-rouge) 66.666%);
 }
 
 html {
@@ -72,11 +75,30 @@ html {
 }
 
 body {
+  position: relative;
   background: var(--color-fond);
   color: var(--color-encre);
   font-family: var(--font-sans);
   min-height: 100dvh;
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Bandeau tricolore, toujours visible en haut de l'écran (fixe, sur tous les écrans) : sous le panneau du glossaire
+   (z-40), au-dessus de l'en-tête (z-30). Purement décoratif : il ne capte aucun clic. */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 35;
+  height: 5px;
+  background: var(--degrade-tricolore);
+  pointer-events: none;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--color-accent) 20%, transparent);
+  color: var(--color-marine);
 }
 
 :focus-visible {
@@ -90,430 +112,12 @@ body {
   }
 }
 
-/* ───────────────────────── Composants communs ───────────────────────── */
-
-@layer components {
-  /* Colonne de lecture (écrans de parcours) et colonne large (pages du site). */
-  .colonne {
-    margin-inline: auto;
-    width: 100%;
-    max-width: 42rem;
-    padding-inline: 1.25rem;
-  }
-
-  .conteneur {
-    margin-inline: auto;
-    width: 100%;
-    max-width: 72rem;
-    padding-inline: 1.25rem;
-  }
-
-  @media (min-width: 768px) {
-    .conteneur {
-      padding-inline: 2rem;
-    }
-  }
-
-  .surtitre {
-    font-size: 0.75rem;
-    line-height: 1.4;
-    font-weight: 700;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--color-accent);
-  }
-
-  .titre-page {
-    font-family: var(--font-titre);
-    font-weight: 700;
-    font-size: clamp(2rem, 1.4rem + 2.6vw, 3rem);
-    line-height: 1.08;
-    letter-spacing: -0.025em;
-  }
-
-  .titre-section {
-    font-family: var(--font-titre);
-    font-weight: 700;
-    font-size: clamp(1.5rem, 1.25rem + 1.1vw, 2rem);
-    line-height: 1.15;
-    letter-spacing: -0.02em;
-  }
-
-  .carte {
-    border: 1px solid var(--color-trait);
-    border-radius: 1.25rem;
-    background: var(--color-carte);
-    box-shadow:
-      0 1px 2px rgb(10 15 32 / 0.04),
-      0 6px 20px -8px rgb(10 15 32 / 0.12);
-  }
-
-  .pilule {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    border: 1px solid var(--color-trait);
-    border-radius: 9999px;
-    background: var(--color-carte);
-    padding: 0.3rem 0.85rem;
-    font-size: 0.875rem;
-    font-weight: 500;
-  }
-
-  /* Boutons : le bouton principal « s'enfonce » au clic (relief plein, pas de flou) : c'est un jeu. */
-  .btn {
-    display: inline-flex;
-    min-height: 3rem;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    border-radius: 1rem;
-    padding: 0.7rem 1.4rem;
-    font-family: var(--font-titre);
-    font-size: 1.0625rem;
-    font-weight: 700;
-    line-height: 1.2;
-    text-align: center;
-    transition:
-      transform 0.08s ease,
-      box-shadow 0.08s ease,
-      background-color 0.15s ease;
-  }
-
-  .btn:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
-
-  .btn-primaire {
-    background: var(--color-accent);
-    color: var(--color-fond);
-    box-shadow: 0 4px 0 var(--color-accent-fonce);
-  }
-
-  .btn-primaire:not(:disabled):active {
-    transform: translateY(3px);
-    box-shadow: 0 1px 0 var(--color-accent-fonce);
-  }
-
-  .btn-secondaire {
-    border: 1.5px solid var(--color-trait);
-    background: var(--color-carte);
-    color: var(--color-encre);
-    box-shadow: 0 3px 0 var(--color-trait);
-  }
-
-  .btn-secondaire:not(:disabled):active {
-    transform: translateY(2px);
-    box-shadow: 0 1px 0 var(--color-trait);
-  }
-
-  @media (hover: hover) {
-    .btn-secondaire:not(:disabled):hover {
-      border-color: var(--color-accent);
-    }
-  }
-
-  .btn-grand {
-    min-height: 3.5rem;
-    padding: 0.9rem 1.6rem;
-    font-size: 1.1875rem;
-  }
-
-  .lien {
-    display: inline-flex;
-    min-height: 2.75rem;
-    cursor: pointer;
-    align-items: center;
-    color: var(--color-discret);
-    font-size: 0.875rem;
-    text-decoration: underline;
-    text-underline-offset: 0.2em;
-  }
-
-  @media (hover: hover) {
-    .lien:hover {
-      color: var(--color-encre);
-    }
-  }
-
-  /* Choix segmenté (radios masquées dans des étiquettes) : importance d'un chapitre, apparence. */
-  .segment {
-    display: flex;
-    min-height: 2.75rem;
-    cursor: pointer;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--color-trait);
-    border-radius: 0.75rem;
-    background: var(--color-fond);
-    padding-inline: 0.25rem;
-    color: var(--color-encre);
-    font-size: 0.875rem;
-    text-align: center;
-  }
-
-  .segment:has(:checked) {
-    border-color: var(--color-accent);
-    background: var(--color-accent);
-    color: var(--color-fond);
-    font-weight: 700;
-  }
-
-  .segment:has(:focus-visible) {
-    outline: 3px solid var(--color-accent);
-    outline-offset: 2px;
-  }
-
-  /* Encart replié/déplié (<details>) : chapitres de la banque, fiches, questions fréquentes. */
-  .depliant > summary {
-    display: flex;
-    min-height: 2.75rem;
-    cursor: pointer;
-    list-style: none;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.75rem;
-  }
-
-  .depliant > summary::-webkit-details-marker {
-    display: none;
-  }
-
-  .depliant > summary::after {
-    content: '+' / '';
-    flex: none;
-    width: 1.75rem;
-    height: 1.75rem;
-    border: 1px solid var(--color-trait);
-    border-radius: 9999px;
-    color: var(--color-accent);
-    font: 700 1.1rem/1.6rem var(--font-titre);
-    text-align: center;
-  }
-
-  .depliant[open] > summary::after {
-    content: '–' / '';
-  }
-
-  /* Barre de progression et barres de score : une seule couleur. */
-  .jauge {
-    height: 0.625rem;
-    overflow: hidden;
-    border-radius: 9999px;
-    background: color-mix(in oklab, var(--color-accent) 14%, transparent);
-  }
-
-  .jauge > * {
-    height: 100%;
-    border-radius: 9999px;
-    background: var(--color-accent);
-  }
-}
-
-/* Halo discret derrière le haut de l'accueil : une lumière, pas un dégradé de marque. */
-.halo {
-  background:
-    radial-gradient(60rem 28rem at 85% -10%, color-mix(in oklab, var(--color-accent) 16%, transparent), transparent 70%),
-    radial-gradient(40rem 22rem at 0% 0%, color-mix(in oklab, var(--color-soleil) 12%, transparent), transparent 70%);
-}
-
-/* Entrée en cascade du haut de l'accueil (coupée si le téléphone demande des animations réduites). */
-@media (prefers-reduced-motion: no-preference) {
-  .entree > * {
-    animation: entree 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
-  }
-
-  .entree > :nth-child(2) {
-    animation-delay: 0.06s;
-  }
-
-  .entree > :nth-child(3) {
-    animation-delay: 0.12s;
-  }
-
-  .entree > :nth-child(4) {
-    animation-delay: 0.18s;
-  }
-
-  .entree > :nth-child(5) {
-    animation-delay: 0.24s;
-  }
-
-  @keyframes entree {
-    from {
-      opacity: 0;
-      transform: translateY(14px);
-    }
-  }
-}
-
-/*
- * Glossaire (issue #7). Feuille du bas (< 1024 px) : <dialog> natif, collé en bas de l'écran, fond assombri.
- * Le bouton « Glossaire » est fixe en bas à droite : sous 1024 px, une marge basse évite qu'il masque la fin d'une page.
- * Sur les pages du site, la barre d'onglets du téléphone (< 768 px) occupe le bas de l'écran : le bouton se place
- * au-dessus d'elle, et la marge basse grandit d'autant.
- */
-.feuille-glossaire {
-  margin: auto 0 0;
-  width: 100%;
-  max-width: 100%;
-  max-height: 85dvh;
-  overflow: hidden;
-  border: 0;
-  border-radius: 1.25rem 1.25rem 0 0;
-  padding: 0;
-  background: var(--color-carte);
-  color: var(--color-encre);
-}
-
-.feuille-glossaire::backdrop {
-  background: rgb(0 0 0 / 0.6);
-}
-
-@media (max-width: 1023.98px) {
-  body {
-    padding-bottom: 4.5rem;
-  }
-}
-
-@media (max-width: 767.98px) {
-  body:has([data-onglets]) {
-    padding-bottom: calc(9rem + env(safe-area-inset-bottom));
-  }
-
-  body:has([data-onglets]) .bouton-glossaire {
-    bottom: calc(5rem + env(safe-area-inset-bottom));
-  }
-}
-
-/*
- * Sigle du glossaire : bouton au soulignement pointillé, dans le flux du texte (police, taille et graisse héritées).
- * Bulle au-dessus du sigle ; sa marge basse transparente fait pont avec le sigle, pour qu'on puisse la survoler.
- */
-.sigle {
-  position: relative;
-}
-
-.sigle-bouton {
-  font: inherit;
-  color: inherit;
-  cursor: help;
-  text-decoration-line: underline;
-  text-decoration-style: dotted;
-  text-decoration-color: var(--color-accent);
-  text-decoration-thickness: 2px;
-  text-underline-offset: 0.2em;
-}
-
-/* Le (i) : décoratif, absent du nom accessible et du texte (texte de remplacement vide), appareils sans survol. */
-@media (hover: none) {
-  .sigle-bouton[data-premiere]::after {
-    content: 'i' / '';
-    display: inline-block;
-    margin-left: 0.15em;
-    width: 1.1em;
-    height: 1.1em;
-    border-radius: 9999px;
-    background: var(--color-accent);
-    color: var(--color-fond);
-    font: italic 700 0.65em/1.1em Georgia, serif;
-    letter-spacing: 0;
-    text-align: center;
-    vertical-align: super;
-  }
-}
-
-.bulle {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-  /* Au-dessus du panneau latéral (z-40), sous le bouton « Glossaire » (z-50) : sinon une bulle qui déborde passe dessous. */
-  z-index: 45;
-  width: max-content;
-  /* Au plus la moitié de l'écran : aligné à gauche ou à droite du sigle (Sigle.tsx), la bulle tient toujours dans l'écran. */
-  max-width: min(20rem, 50vw);
-  padding-bottom: 0.375rem;
-}
-
-/* Variantes quand la bulle sortirait de l'écran (voir Sigle.tsx) : sous le sigle, ou alignée sur son bord droit. */
-.bulle-dessous {
-  top: 100%;
-  bottom: auto;
-  padding-top: 0.375rem;
-  padding-bottom: 0;
-}
-
-.bulle-droite {
-  right: 0;
-  left: auto;
-}
-
-.bulle-contenu {
-  display: block;
-  border: 1px solid var(--color-accent);
-  border-radius: 0.75rem;
-  padding: 0.5rem 0.75rem;
-  background: var(--color-carte);
-  color: var(--color-encre);
-  font: 400 0.875rem/1.4 var(--font-sans);
-  font-style: normal;
-  letter-spacing: normal;
-  text-transform: none;
-  text-align: left;
-  box-shadow: 0 6px 20px rgb(0 0 0 / 0.35);
-}
-
-/*
- * Boutons de réponse : grands, pleine largeur, à portée de pouce. La couleur (une seule teinte, plus ou moins
- * intense) vient des classes INTENSITE de Quiz.tsx.
- */
-.reponse {
-  display: block;
-  min-height: 3.25rem;
-  width: 100%;
-  cursor: pointer;
-  border-width: 1.5px;
-  border-radius: 1rem;
-  padding: 0.8rem 1.1rem;
-  font-size: 1.0625rem;
-  font-weight: 600;
-  text-align: left;
-  transition: transform 0.08s ease;
-}
-
-.reponse:active {
-  transform: scale(0.985);
-}
-
-@media (hover: hover) {
-  .reponse:hover {
-    border-color: var(--color-encre);
-  }
-}
-
-/*
- * Barre d'action des écrans de préparation : le bouton « Lancer » reste à portée de pouce pendant qu'on règle les
- * chapitres. Elle colle au bas de l'écran ; le bouton « Glossaire » se place au-dessus d'elle (sous 1024 px).
- */
-.barre-action {
-  position: sticky;
-  bottom: 0;
-  z-index: 20;
-  margin-inline: -1.25rem;
-  border-top: 1px solid var(--color-trait);
-  background: color-mix(in oklab, var(--color-fond) 94%, transparent);
-  padding: 0.75rem 1.25rem 1rem;
-  backdrop-filter: blur(10px);
-}
-
-@media (max-width: 1023.98px) {
-  body:has([data-barre-action]) {
-    padding-bottom: 0;
-  }
-
-  body:has([data-barre-action]) .bouton-glossaire {
-    bottom: calc(6rem + env(safe-area-inset-bottom));
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
   }
 }
