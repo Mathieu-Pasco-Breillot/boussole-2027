@@ -23,7 +23,8 @@
         { "type": "test", "section": "Tests", "hidden": true },
         { "type": "build", "section": "Construction", "hidden": true },
         { "type": "ci", "section": "Intégration continue", "hidden": true },
-        { "type": "chore", "section": "Maintenance", "hidden": true }
+        { "type": "chore", "section": "Maintenance", "hidden": true },
+        { "type": "ops", "section": "Exploitation", "hidden": true }
       ]
     },
     "data": {
@@ -36,7 +37,8 @@
         { "type": "revert", "section": "Retours en arrière" },
         { "type": "docs", "section": "Méthode et documentation" },
         { "type": "refactor", "section": "Réorganisation", "hidden": true },
-        { "type": "chore", "section": "Maintenance", "hidden": true }
+        { "type": "chore", "section": "Maintenance", "hidden": true },
+        { "type": "ops", "section": "Exploitation", "hidden": true }
       ]
     }
   }
