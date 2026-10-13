@@ -10,10 +10,10 @@ export function PanneauGlossaire() {
   return (
     <aside
       aria-labelledby="titre-panneau-glossaire"
-      className="fixed inset-y-0 right-0 z-40 flex w-96 flex-col border-l border-accent/40 bg-carte text-encre"
+      className="fixed inset-y-0 right-0 z-40 flex w-96 flex-col border-l border-trait bg-carte text-encre shadow-flottant"
     >
-      <header className="flex items-center justify-between gap-3 border-b border-accent/30 px-4 py-3">
-        <h2 id="titre-panneau-glossaire" className="font-titre text-2xl font-bold tracking-tight">
+      <header className="flex items-center justify-between gap-3 border-b border-trait px-4 py-3">
+        <h2 id="titre-panneau-glossaire" className="titre-carte text-2xl">
           Glossaire
         </h2>
         <button type="button" onClick={fermer} className="lien">

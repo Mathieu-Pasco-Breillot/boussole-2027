@@ -8,8 +8,11 @@
 @import './ui/navigation.css';
 @import './ui/choix.css';
 @import './ui/parcours.css';
+@import './ui/tableau.css';
 @import './ecrans/accueil.css';
 @import './ecrans/resultats.css';
+@import './pages/pages.css';
+@import './pages/markdown.css';
 @import './glossaire/glossaire.css';
 
 /*
@@ -46,11 +49,6 @@
   --color-accent-doux: #e9eef7; /* accent, secondary */
   --color-france-bleu: #183b82;
   --color-france-rouge: #e24b50;
-  /* Teintes facultatives des pastilles d'initiales (PastilleCandidat) : aucune n'est liée à un camp. */
-  --color-sauge: #355a42;
-  --color-sauge-doux: #e3ebe1;
-  --color-peche: #8a5240;
-  --color-peche-doux: #f2e5dc;
   --color-soleil: #e9a520;
   --color-papier: #fbf6ea;
 

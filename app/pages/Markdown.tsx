@@ -14,12 +14,12 @@ function enLigne(texte: string): ReactNode[] {
   const sigles = (morceau: string) => <Segments segments={decouper(morceau, vus)} />;
   return texte.split(motif).map((morceau, i) => {
     if (/^\*\*.+\*\*$/.test(morceau)) return <strong key={i}>{sigles(morceau.slice(2, -2))}</strong>;
-    if (/^`.+`$/.test(morceau)) return <code key={i} className="rounded bg-fond px-1 text-[0.9em]">{morceau.slice(1, -1)}</code>;
+    if (/^`.+`$/.test(morceau)) return <code key={i}>{morceau.slice(1, -1)}</code>;
     if (/^\*.+\*$/.test(morceau)) return <em key={i}>{sigles(morceau.slice(1, -1))}</em>;
     const lien = /^\[([^\]]+)\]\(([^)]+)\)$/.exec(morceau);
     if (lien) {
       return /^https?:\/\//.test(lien[2]!) ? (
-        <a key={i} className="underline" href={lien[2]} target="_blank" rel="noopener noreferrer">
+        <a key={i} className="lien-texte" href={lien[2]} target="_blank" rel="noopener noreferrer">
           {lien[1]}
         </a>
       ) : (
@@ -43,7 +43,7 @@ export function Markdown({ source }: { source: string }) {
     const titre = /^(#{1,4})\s+(.*)$/.exec(l);
     if (titre) {
       const n = titre[1]!.length;
-      const classe = n === 1 ? 'mt-2 font-titre text-3xl font-semibold' : n === 2 ? 'mt-4 font-titre text-2xl font-bold tracking-tight' : 'mt-3 font-titre text-xl font-bold';
+      const classe = n === 1 ? 'titre-section mt-2' : n === 2 ? 'titre-carte mt-4 text-2xl' : 'titre-carte mt-3';
       blocs.push(n === 1 ? <h2 key={i} className={classe}>{enLigne(titre[2]!)}</h2> : <h3 key={i} className={classe}>{enLigne(titre[2]!)}</h3>);
       i++; continue;
     }
@@ -52,13 +52,13 @@ export function Markdown({ source }: { source: string }) {
       while (i < lignes.length && lignes[i]!.trim().startsWith('|')) bloc.push(lignes[i++]!);
       const [entete, , ...corps] = bloc;
       blocs.push(
-        <div key={i} className="overflow-x-auto">
-          <table className="w-full border-collapse text-left text-sm">
+        <div key={i} className="tableau-defilant" tabIndex={0}>
+          <table className="tableau">
             <thead>
-              <tr>{cellules(entete!).map((c, k) => <th key={k} scope="col" className="border-b border-accent/40 px-2 py-1 align-bottom">{enLigne(c)}</th>)}</tr>
+              <tr>{cellules(entete!).map((c, k) => <th key={k} scope="col">{enLigne(c)}</th>)}</tr>
             </thead>
             <tbody>
-              {corps.map((r, a) => <tr key={a}>{cellules(r).map((c, k) => <td key={k} className="border-b border-trait px-2 py-1 align-top">{enLigne(c)}</td>)}</tr>)}
+              {corps.map((r, a) => <tr key={a}>{cellules(r).map((c, k) => <td key={k}>{enLigne(c)}</td>)}</tr>)}
             </tbody>
           </table>
         </div>,
@@ -70,18 +70,18 @@ export function Markdown({ source }: { source: string }) {
       const items: string[] = [];
       while (i < lignes.length && /^\s*([-*]|\d+\.)\s+/.test(lignes[i]!)) items.push(lignes[i++]!.replace(/^\s*([-*]|\d+\.)\s+/, ''));
       const Liste = ordonnee ? 'ol' : 'ul';
-      blocs.push(<Liste key={i} className={`${ordonnee ? 'list-decimal' : 'list-disc'} ml-6 flex flex-col gap-1`}>{items.map((t, k) => <li key={k}>{enLigne(t)}</li>)}</Liste>);
+      blocs.push(<Liste key={i}>{items.map((t, k) => <li key={k}>{enLigne(t)}</li>)}</Liste>);
       continue;
     }
     if (l.startsWith('>')) {
       const citation: string[] = [];
       while (i < lignes.length && lignes[i]!.startsWith('>')) citation.push(lignes[i++]!.replace(/^>\s?/, ''));
-      blocs.push(<blockquote key={i} className="border-l-2 border-accent/60 pl-3 text-discret">{enLigne(citation.join(' '))}</blockquote>);
+      blocs.push(<blockquote key={i}>{enLigne(citation.join(' '))}</blockquote>);
       continue;
     }
     const para: string[] = [];
     while (i < lignes.length && lignes[i]!.trim() !== '' && !/^(#{1,4}\s|\||>|\s*([-*]|\d+\.)\s)/.test(lignes[i]!)) para.push(lignes[i++]!);
     blocs.push(<p key={i}>{enLigne(para.join(' '))}</p>);
   }
-  return <div className="flex flex-col gap-3 leading-relaxed">{blocs}</div>;
+  return <div className="markdown">{blocs}</div>;
 }

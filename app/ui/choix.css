@@ -155,7 +155,7 @@
     outline-offset: 2px;
   }
 
-  /* Pastille d'initiales. La teinte est une classe (data-teinte), jamais un style en ligne (CSP). */
+  /* Pastille d'initiales : une seule teinte, aucune couleur n'est liée à un camp. */
   .pastille {
     display: inline-grid;
     flex: none;
@@ -168,16 +168,6 @@
     font-family: var(--font-titre);
     font-size: 0.8125rem;
     font-weight: 700;
-  }
-
-  .pastille[data-teinte='sauge'] {
-    background: var(--color-sauge-doux);
-    color: var(--color-sauge);
-  }
-
-  .pastille[data-teinte='peche'] {
-    background: var(--color-peche-doux);
-    color: var(--color-peche);
   }
 
   .pastille-grande {
