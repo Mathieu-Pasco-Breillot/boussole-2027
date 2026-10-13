@@ -77,7 +77,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -144,7 +144,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -153,7 +153,7 @@
    "axe": "securite",
    "sens": -1,
    "enonce": "Un service militaire obligatoire doit être rétabli.",
-   "precision": "Un service national volontaire de dix mois existe depuis le 31 août 2026. Le service obligatoire a été suspendu en 1997. La proposition de loi prévoit un appel obligatoire mais sélectif : tous sont recensés, une partie seulement est appelée.",
+   "precision": "Le service national obligatoire a été suspendu par la loi n° 97-1019 du 28 octobre 1997, avec effet progressif jusqu'en 2002 ; la journée défense et citoyenneté lui a succédé. Un service national volontaire de dix mois, ouvert aux 18-25 ans, a été lancé à la rentrée 2026 (date de début non confirmée). La proposition de loi n° 1210 (1er avril 2025) vise à rétablir un appel obligatoire, présenté comme sélectif : tous seraient recensés, une partie seulement appelée. Le texte n'a pas été adopté à ce jour.",
    "origine": {
     "description": "Proposition de loi n° 1210 du 1er avril 2025 (appel obligatoire mais sélectif)",
     "source": {
@@ -175,7 +175,12 @@
     }
    ],
    "scrutins": [],
-   "historique": [],
+   "historique": [
+    {
+     "date": "2026-10-13",
+     "note": "Précision précédente : « Un service national volontaire de dix mois existe depuis le 31 août 2026. Le service obligatoire a été suspendu en 1997. La proposition de loi prévoit un appel obligatoire mais sélectif : tous sont recensés, une partie seulement est appelée. » Raison : « suspendu en 1997 » imprécis (loi de 1997, effet jusqu'en 2002) ; date de début du service volontaire non confirmée. Phrase retirée (durée et critères renvoyés à un décret) : redite de l'encart retirée."
+    }
+   ],
    "impact": {
     "changement": "La proposition de loi n° 1210 (avril 2025) viserait les Français nés après le 31 décembre 2006. La durée et les critères de sélection seraient fixés par décret ; le texte cite le modèle finlandais, où les armées fixent des quotas annuels. Son coût n'est pas chiffré ; une taxe sur le tabac le compenserait. Le service volontaire actuel prévoit 29 500 volontaires sur 2026-2030, pour environ 2,3 milliards d'euros de coût affiché, plus élevé en réalité selon le Sénat.",
     "pour": "Ses partisans estiment que la dégradation de la situation en Europe, avec la guerre en Ukraine, justifie de reconstituer des forces et une réserve. Ils y voient aussi un moyen de renforcer le lien entre les armées et la nation.",
@@ -212,7 +217,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -264,7 +269,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -316,7 +321,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -374,7 +379,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -432,7 +437,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -472,7 +477,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -528,7 +533,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -592,7 +597,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -639,7 +644,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -686,7 +691,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -743,7 +748,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -795,7 +800,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {

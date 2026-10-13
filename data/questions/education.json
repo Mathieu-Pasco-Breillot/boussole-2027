@@ -76,7 +76,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -122,7 +122,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -179,7 +179,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -226,7 +226,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -266,7 +266,7 @@
             "nature": "primaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -301,7 +301,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -358,7 +358,7 @@
             "nature": "institutionnelle"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -404,7 +404,7 @@
             "nature": "primaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -462,7 +462,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -514,7 +514,7 @@
             "nature": "institutionnelle"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -549,7 +549,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -611,7 +611,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -663,7 +663,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -727,7 +727,7 @@
             "nature": "institutionnelle"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -785,7 +785,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -825,7 +825,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -834,7 +834,7 @@
       "axe": "economie",
       "sens": -1,
       "enonce": "Des groupes de niveau doivent être obligatoires en français et en mathématiques au collège.",
-      "precision": "Rendus obligatoires en 2024, ces groupes sont devenus facultatifs depuis un arrêté du 10 mars 2026.",
+      "precision": "Des groupes de besoins en français et en mathématiques, obligatoires en 6e et 5e, ont été mis en place à la rentrée 2024 (arrêté du 15 mars 2024). Le Conseil d'État a annulé cet arrêté en novembre 2024 pour incompétence, mais les groupes ont été maintenus jusqu'à la fin de 2024-2025, puis rétablis par décret et arrêté du 4 avril 2025. Un arrêté du 10 mars 2026 (JO du 12 mars) a supprimé cette obligation : un « accompagnement pédagogique renforcé », facultatif, peut organiser des groupes à effectifs réduits ou selon les besoins. Le Conseil d'État a rejeté le recours contre le décret le 27 février 2026.",
       "origine": {
         "description": "Arrêté du 10 mars 2026 ; proposition de groupes de niveau rapportée en 2026",
         "source": {
@@ -852,7 +852,12 @@
         }
       ],
       "scrutins": [],
-      "historique": [],
+      "historique": [
+        {
+          "date": "2026-10-13",
+          "note": "Précision précédente : « Rendus obligatoires en 2024, ces groupes sont devenus facultatifs depuis un arrêté du 10 mars 2026. » Raison : historique 2024-2025 des groupes de besoins non rendu."
+        }
+      ],
       "impact": {
         "changement": "Ces groupes ne concernaient que la sixième et la cinquième. Ils sont remplacés par un « accompagnement pédagogique renforcé » en français et en mathématiques, que les établissements peuvent organiser en groupes à effectifs réduits, en groupes de besoins ou autrement, sur tout ou partie de l'horaire. La mesure rétablirait l'obligation de ces groupes ; l'énoncé ne précise pas si elle s'étendrait à la quatrième et à la troisième.",
         "pour": "Ses partisans estiment que des élèves arrivent au collège avec de lourdes lacunes, que la plupart de ceux en grande difficulté en sixième le restent jusqu'à la fin, et qu'un enseignement ajusté évite l'ennui et prévient le décrochage.",
@@ -877,7 +882,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -923,7 +928,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     },
     {
@@ -963,7 +968,7 @@
       "axe": "economie",
       "sens": 1,
       "enonce": "Le nombre de postes d'enseignants doit être maintenu malgré la baisse du nombre d'élèves.",
-      "precision": "La loi de finances pour 2026 supprime 3 256 postes d'enseignants à la rentrée 2026 (1 891 dans le premier degré, 1 365 dans le second), en invoquant la baisse démographique.",
+      "precision": "Le projet de loi de finances pour 2026 prévoyait 4 018 suppressions d'emplois d'enseignants titulaires à la rentrée 2026 (1 891 dans le premier degré public, 1 365 dans le second degré public, 482 et 280 dans le privé sous contrat), en invoquant la baisse démographique. Le 28 janvier 2026, le ministère a annulé 438 emplois du second degré public, réinjectés dans les académies. Les chiffres de la loi adoptée et leur mise en œuvre à la rentrée n'ont pas été vérifiés.",
       "origine": {
         "description": "Débat sur la loi de finances 2026 ; propositions de candidats qui veulent utiliser la baisse démographique pour alléger les classes plutôt que supprimer des postes (rapportées en août 2026)",
         "source": {
@@ -989,12 +994,20 @@
         {
           "date": "2026-10-12",
           "note": "activée après codage de tous les candidats codés : 5 extraits, 4 codes publiés (Attal, Ruffin, Tondelier +2 ; Glucksmann +1 imprécise)"
+        },
+        {
+          "date": "2026-10-13",
+          "note": "Précision précédente : « La loi de finances pour 2026 supprime 3 256 postes d'enseignants à la rentrée 2026 (1 891 dans le premier degré, 1 365 dans le second), en invoquant la baisse démographique. » Raison : les 3 256 postes (public seulement) ne se retrouvent pas dans la loi n° 2026-103 ; chiffres contradictoires."
+        },
+        {
+          "date": "2026-10-13",
+          "note": "Encart (contre) : chiffre en pourcentage retiré, incohérent avec la Précision corrigée du 13 octobre (4 018 suppressions prévues, 438 annulées). Ancien contre : « Ses opposants font valoir que les suppressions de cette année (0,5 % des postes) sont inférieures à la baisse des élèves (1,5 %). » ; retiré : pourcentages incohérents avec la Précision corrigée, argument ramené à une comparaison en proportion."
         }
       ],
       "impact": {
         "changement": "Selon une projection du ministère de l'Éducation citée par la presse, l'école compterait 1 676 800 élèves de moins d'ici 2035 (−14,2 %), dont 160 000 à la rentrée 2026. Pour le primaire, l'Institut des politiques publiques estime que garder tous les postes ferait passer la taille moyenne des classes de 22,4 élèves en 2024 à 18,2 en 2034. À taille de classe constante, environ 50 000 postes seraient supprimables : près de 3,4 milliards d'euros par an en 2034.",
         "pour": "Ses partisans estiment que la baisse démographique offre l'occasion d'alléger les classes et d'éviter des fermetures en zone rurale. Selon l'Institut des politiques publiques, dans le primaire, ce choix rapporterait davantage à la société, à terme, que des suppressions.",
-        "contre": "Ses opposants font valoir que les suppressions de cette année (0,5 % des postes) sont inférieures à la baisse des élèves (1,5 %). Dans un budget contraint, ils veulent adapter les moyens et doutent que des classes plus petites suffisent.",
+        "contre": "Ses opposants font valoir que les suppressions prévues sont proportionnellement inférieures à la baisse du nombre d'élèves. Dans un budget contraint, ils veulent adapter les moyens et doutent que des classes plus petites suffisent.",
         "sources": [
           {
             "url": "https://www.ipp.eu/en/publication/class-sizes-and-regional-inequalities-what-strategy-should-be-adopted-in-the-face-of-population-decline/",
@@ -1027,7 +1040,7 @@
             "nature": "secondaire"
           }
         ],
-        "statut": "pilote"
+        "statut": "valide"
       }
     }
   ]

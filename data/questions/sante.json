@@ -53,7 +53,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -99,7 +99,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -143,7 +143,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -195,7 +195,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -236,7 +236,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -271,7 +271,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -317,7 +317,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -326,7 +326,7 @@
    "axe": "economie",
    "sens": 1,
    "enonce": "Les médecins doivent être obligés d'exercer jusqu'à deux jours par mois dans une zone qui manque de médecins.",
-   "precision": "Ce dispositif existe depuis septembre 2025 sur la base du volontariat.",
+   "precision": "Une proposition de loi sénatoriale, adoptée par le Sénat le 13 mai 2025 et transmise à l'Assemblée nationale le 14 mai 2025, prévoit une participation obligatoire à cette mission ; elle n'était pas définitivement adoptée au 13 octobre 2026.",
    "origine": {
     "description": "Proposition de loi visant à améliorer l'accès aux soins dans les territoires, adoptée par le Sénat le 13 mai 2025",
     "source": {
@@ -344,7 +344,12 @@
     }
    ],
    "scrutins": [],
-   "historique": [],
+   "historique": [
+    {
+     "date": "2026-10-13",
+     "note": "Précision précédente : « Ce dispositif existe depuis septembre 2025 sur la base du volontariat. » Raison : l'entrée en vigueur annoncée n'est pas confirmée par une source officielle et la proposition de loi n'est pas adoptée. Redite de l'encart retirée : description du pacte gouvernemental supprimée de la Précision."
+    }
+   ],
    "impact": {
     "changement": "Un pacte gouvernemental du 25 avril 2025, modifié le 2 mai 2025, prévoit que des médecins consacrent jusqu'à deux jours par mois à des consultations dans les zones les plus en difficulté. La mesure rendrait cette participation obligatoire pour tous ; l'énoncé ne précise ni les zones ni les dispenses. Selon un rapport du Sénat publié en mai 2026, 6,4 millions de personnes n'avaient pas de médecin traitant en 2025.",
     "pour": "Ses partisans estiment qu'une obligation répartirait l'effort entre tous les médecins et apporterait vite des consultations aux zones en difficulté, sans interdire l'installation ailleurs.",
@@ -357,7 +362,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -366,9 +371,9 @@
    "axe": "economie",
    "sens": 1,
    "enonce": "Un prix minimum de vente de l'alcool doit être fixé à 0,50 euro par unité d'alcool.",
-   "precision": "Cela correspond à environ 3,50 euros pour une bouteille de vin.",
+   "precision": "Cela correspond à environ 3,50 à 3,60 euros pour une bouteille de vin de 75 cl à 12 % (7,2 unités d'alcool).",
    "origine": {
-    "description": "Amendement transpartisan au Sénat, rejeté en novembre 2023 puis en novembre 2024",
+    "description": "Amendements de sénateurs de plusieurs groupes instaurant un prix minimum de l'alcool, rejetés au Sénat lors de l'examen de textes budgétaires en novembre 2023 et en novembre 2025.",
     "source": {
      "url": "https://www.publicsenat.fr/actualites/parlementaire/prix-minium-de-lalcool-le-senat-rejette-la-mesure-ses-defenseurs-veulent-ouvrir-le-debat",
      "titre": "Prix minimum de l'alcool : le Sénat rejette la mesure, ses défenseurs veulent « ouvrir le débat »",
@@ -384,7 +389,12 @@
     }
    ],
    "scrutins": [],
-   "historique": [],
+   "historique": [
+    {
+     "date": "2026-10-13",
+     "note": "Précision précédente : « Cela correspond à environ 3,50 euros pour une bouteille de vin. » Raison : précision du format de la bouteille. Description d'origine précédente : « Amendement transpartisan au Sénat, rejeté en novembre 2023 puis en novembre 2024 » Raison : années et textes des rejets précisés."
+    }
+   ],
    "impact": {
     "changement": "Aucune boisson alcoolisée ne pourrait être vendue à moins de 0,50 euro par unité d'alcool (un verre standard, soit 10 grammes d'alcool pur) : les boissons les moins chères au regard de leur teneur en alcool seraient les plus concernées. Santé publique France attribue à l'alcool 41 000 décès par an (estimation portant sur 2015). L'Observatoire français des drogues et des tendances addictives relève 595 000 séjours hospitaliers liés à l'alcool en 2023, pour 308 000 patients.",
     "pour": "Ses partisans estiment qu'un prix plancher vise l'alcool le moins cher pour sa teneur, consommé selon eux par les plus gros buveurs, et réduirait ainsi les dommages sanitaires.",
@@ -403,7 +413,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -447,7 +457,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -493,7 +503,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -502,9 +512,9 @@
    "axe": "economie",
    "sens": -1,
    "enonce": "Un jour de carence non indemnisé, que l'employeur n'aurait pas le droit de compenser, doit être créé pour les arrêts maladie des salariés du privé.",
-   "precision": "Les salariés du privé ont trois jours de carence, le plus souvent compensés par l'employeur ou la prévoyance.",
+   "precision": "Pour les salariés du privé, les indemnités journalières de la Sécurité sociale sont versées après un délai de carence de trois jours.",
    "origine": {
-    "description": "Proposition du rapporteur général du budget de la Sécurité sociale, octobre 2024",
+    "description": "Proposition du rapporteur général du budget de la Sécurité sociale pour le PLFSS 2025 (commission des affaires sociales de l'Assemblée nationale, octobre 2024).",
     "source": {
      "url": "https://www.previssima.fr/actualite/plfss-2025-vers-la-mise-en-place-dun-jour-de-carence-dordre-public-finance-par-les-salaries.html",
      "titre": "PLFSS 2025 : vers la mise en place d'un jour de carence d'ordre public financé par les salariés ?",
@@ -515,7 +525,12 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": [],
+   "historique": [
+    {
+     "date": "2026-10-13",
+     "note": "Précision précédente : « Les salariés du privé ont trois jours de carence, le plus souvent compensés par l'employeur ou la prévoyance. » Raison : affirmation « le plus souvent compensés » non sourcée. Seconde phrase retirée : redite de l'encart et complément employeur soumis à des conditions d'ancienneté non précisées. Description d'origine précédente : « Proposition du rapporteur général du budget de la Sécurité sociale, octobre 2024 » Raison : source de l'origine complétée."
+    }
+   ],
    "impact": {
     "changement": "Aujourd'hui, l'employeur doit compléter les indemnités journalières de la Sécurité sociale à partir du 8e jour d'arrêt, sauf convention collective plus favorable. La mesure créerait un jour sans aucune indemnisation, que ni l'employeur ni un accord collectif ne pourraient compenser. L'énoncé ne dit pas si ce jour s'ajouterait aux trois jours de carence actuels ou en ferait partie.",
     "pour": "Ses partisans estiment qu'un jour non indemnisé limiterait les arrêts courts qu'ils jugent injustifiés, réduirait les dépenses d'indemnités et responsabiliserait salariés et employeurs.",
@@ -528,7 +543,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -563,7 +578,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -640,7 +655,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -692,7 +707,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -727,7 +742,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -795,7 +810,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -852,7 +867,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -892,7 +907,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   }
  ]

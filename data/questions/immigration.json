@@ -81,7 +81,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -137,7 +137,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -189,7 +189,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -245,7 +245,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -304,7 +304,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -359,7 +359,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -405,7 +405,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -455,7 +455,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -506,7 +506,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -551,7 +551,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -592,7 +592,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -601,7 +601,7 @@
    "axe": "frontieres",
    "sens": -1,
    "enonce": "Les Français doivent être prioritaires sur les étrangers pour l'attribution des logements sociaux.",
-   "precision": "Mesure souvent appelée « priorité nationale ». Elle suppose de réviser la Constitution.",
+   "precision": "Mesure souvent appelée « priorité nationale » : donner aux Français une priorité sur les étrangers pour l'attribution des logements sociaux.",
    "origine": {
     "description": "Proposition de loi constitutionnelle n° 2120 du 25 janvier 2024",
     "source": {
@@ -623,7 +623,12 @@
     }
    ],
    "scrutins": [],
-   "historique": [],
+   "historique": [
+    {
+     "date": "2026-10-13",
+     "note": "Précision précédente : « Mesure souvent appelée « priorité nationale ». Elle suppose de réviser la Constitution. » Raison : l'affirmation « elle suppose de réviser la Constitution » n'est pas vérifiée. Seconde phrase retirée (titre de séjour et priorités légales) : redite de l'encart retirée."
+    }
+   ],
    "impact": {
     "changement": "Aujourd'hui, un étranger peut demander un logement social avec un titre de séjour ou un récépissé, sans aucune priorité liée à la nationalité. En 1993, le Conseil constitutionnel a admis que la loi traite différemment les étrangers, placés dans une situation différente, mais leur a reconnu un droit à la protection sociale lorsqu'ils résident de manière stable et régulière. La mesure classerait les demandeurs en règle selon leur nationalité.",
     "pour": "Ses partisans estiment que les logements sociaux, financés par la collectivité et en nombre limité, doivent aller d'abord aux nationaux, alors que la demande dépasse largement l'offre.",
@@ -642,7 +647,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -694,7 +699,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -757,7 +762,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -803,7 +808,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -849,7 +854,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -908,7 +913,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -967,7 +972,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -1002,7 +1007,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -1042,7 +1047,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -1099,7 +1104,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   }
  ]
