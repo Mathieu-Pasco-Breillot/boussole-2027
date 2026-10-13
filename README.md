@@ -61,8 +61,8 @@ du site.
 
 ## Versions et mise en ligne
 
-Les **données** (`data/`, avec `derive/` et `docs/`) et l'**application** ont chacune leur numéro de version
-([versionnage sémantique](https://semver.org/lang/fr/)), affiché en pied de page et sur la page Méthode du site :
+Les **données** (`data/`) et l'**application** ont chacune leur numéro de version
+([versionnage sémantique](https://semver.org/lang/fr/)), affiché en pied de page et sur la page Méthode du site. `derive/` et `docs/` n'ont pas de version propre : leurs changements suivent la règle ci-dessous (entrée dans `data/journal.json`) :
 
 | Composant | Tag | Correctif (x.y.**Z**) | Mineure (x.**Y**.0) | Majeure (**X**.0.0) |
 |---|---|---|---|---|
@@ -83,7 +83,16 @@ de commit ([conventional commits](#messages-de-commit)) :
 Chaque PR ouvre un environnement éphémère, créé depuis la config du projet, avec son URL de preview, supprimé à la
 fermeture de la PR. Le déploiement attend le succès de la CI (« wait for CI »).
 
-L'image est construite avec le `Dockerfile` (imposé par `railway.json`) et servie par Caddy. Les tests de bout en bout tournent avec les mêmes
+L'image est construite avec le `Dockerfile` (imposé par `railway.json`) et servie par Caddy. Deux variables lues à la **compilation** (déclarées
+par `ARG` dans le `Dockerfile`) pilotent l'affichage des versions :
+
+| Variable | Rôle |
+|---|---|
+| `CANAL` | `preprod` active le bandeau « Préproduction » sur le site (pied de page et page Méthode). Absente, vide ou toute autre valeur : « production ». |
+| `RAILWAY_GIT_COMMIT_SHA` | fournie par Railway, tronquée à 7 caractères ; le commit n'est affiché qu'en préproduction. |
+
+`CANAL=preprod` se définit dans l'environnement **`preprod`** de Railway (branche suivie : `develop`), jamais dans
+l'environnement de production (branche `main`). Les tests de bout en bout tournent avec les mêmes
 en-têtes que le site en ligne, lus dans le `Caddyfile`. `main` ne reçoit jamais de commit direct.
 
 ### Messages de commit
@@ -99,11 +108,18 @@ feat(quiz): encart « Impact » dépliable
 fix(duel): la position s'affiche après la réponse
 docs(donnees): précision de la méthodologie § 4
 chore: mise à jour des dépendances               ← n'apparaît pas dans les notes de version
+ops: variable CANAL définie sur Railway            ← exploitation (déploiement, CI) ; absent des notes de version
 ```
 
-Le composant qui change de version dépend des fichiers touchés : un commit qui modifie `data/` fait évoluer la
-version des données, un commit qui modifie autre chose que `data/`, `derive/` et `docs/` fait évoluer celle de
-l'application. Toute modification de méthode passe par `data/journal.json`, donc par `data/`.
+Le composant qui change de version dépend des fichiers touchés, et son niveau (correctif, mineure, majeure) du type du
+commit (`fix`, `feat`, `feat!` ou pied `BREAKING CHANGE:`) :
+
+- la version des **données** suit les commits qui touchent `data/` ; `docs/` et `derive/` n'entraînent aucune version à
+  eux seuls (release-please n'accepte qu'un chemin par composant) ;
+- un changement de méthode (`docs/methodologie.md`) ou de `derive/` qui modifie les résultats doit donc s'accompagner
+  d'une entrée dans `data/journal.json`, c'est-à-dire d'un commit qui touche `data/` ;
+- un changement du calcul des scores dans `core/`, ou de l'application, fait avancer la version de l'**application**,
+  pas celle des données.
 
 ## Licences
 
