@@ -21,6 +21,7 @@
     "check": "npm run data:validate && npm run derive:check && npm run bundle:check && npm run types:check && npm run typecheck && npm test && vite build",
     "bundle": "tsx scripts/bundle.ts",
     "bundle:check": "tsx scripts/bundle.ts --check",
+    "glossaire:inventaire": "tsx scripts/inventaire-glossaire.ts",
     "e2e": "playwright test"
   },
   "dependencies": {

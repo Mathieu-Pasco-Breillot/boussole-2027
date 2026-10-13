@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "ac20c84eef02188dbdf374caf9e48011f47f0c706eec7ba0ca340ef633d3f454",
+  "empreinte_donnees": "e91e5c4de409e3069c65d4d9f877517c914c8b6fd6e9b0b6c95f5e73b8f4688b",
   "provisoire": true,
   "parametres": {
     "nombre_ancres": 10,
@@ -19,19 +19,19 @@
       "theme": "retraites",
       "axe": "economie",
       "sens": 1,
-      "D": 2.243056,
+      "D": 2.1875,
       "couverture": 1,
       "candidats_codes": 12
     },
     {
       "rang": 2,
-      "question_id": "RET-001",
+      "question_id": "RET-003",
       "theme": "retraites",
       "axe": "economie",
-      "sens": 1,
-      "D": 2.076389,
-      "couverture": 1,
-      "candidats_codes": 12
+      "sens": -1,
+      "D": 2.075,
+      "couverture": 0.833333,
+      "candidats_codes": 10
     },
     {
       "rang": 3,
@@ -55,13 +55,13 @@
     },
     {
       "rang": 5,
-      "question_id": "RET-003",
+      "question_id": "RET-001",
       "theme": "retraites",
       "axe": "economie",
-      "sens": -1,
-      "D": 2,
-      "couverture": 0.833333,
-      "candidats_codes": 10
+      "sens": 1,
+      "D": 1.909722,
+      "couverture": 1,
+      "candidats_codes": 12
     },
     {
       "rang": 6,
@@ -105,15 +105,15 @@
     }
   ],
   "ancres": [
-    "IMM-001",
     "RET-003",
+    "IMM-001",
     "FIS-001",
     "ENV-002",
     "EDU-007"
   ],
   "ancres_express": [
-    "IMM-001",
     "RET-003",
+    "IMM-001",
     "FIS-001",
     "ENV-002"
   ],

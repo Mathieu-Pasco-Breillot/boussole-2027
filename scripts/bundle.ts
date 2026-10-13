@@ -5,8 +5,9 @@
  *   npm run bundle:check    échoue si le fichier committé n'est pas à jour
  *
  * Le paquet ne contient que ce que le quiz et les résultats affichent : questions actives, candidats,
- * positions publiées avec tous leurs extraits et leurs sources, et les fichiers de derive/ nécessaires
- * au tirage. Les justifications des codeurs et les textes anonymisés restent consultables dans le dépôt.
+ * positions publiées avec tous leurs extraits et leurs sources, les fichiers de derive/ nécessaires
+ * au tirage et le glossaire des sigles. Les justifications des codeurs et les textes anonymisés restent
+ * consultables dans le dépôt.
  */
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -14,6 +15,7 @@ import { fileURLToPath } from 'node:url';
 import { estAdmiseDansDefi } from '../core/defi/index.ts';
 import { etatDePosition } from '../core/score/codee.ts';
 import { chargerDataset } from './lib/dataset.ts';
+import { paquetGlossaire } from './lib/glossaire.ts';
 import { validerDataset } from './lib/validate.ts';
 
 const racine = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -123,6 +125,7 @@ export function construirePaquet() {
     defi,
     discriminance,
     ancrage,
+    glossaire: paquetGlossaire(ds.glossaire),
   };
 }
 

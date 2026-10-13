@@ -1,3 +1,5 @@
+import { cpSync, mkdtempSync, rmSync, writeFileSync } from 'node:fs';
+import { tmpdir } from 'node:os';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { describe, expect, it } from 'vitest';
@@ -140,5 +142,58 @@ describe('règle : correction par le contrôle humain', () => {
     const ds = copie(reel);
     delete eco003(ds).controle_humain.code_avant;
     expect(regles(ds)).toContain('position-incoherente');
+  });
+});
+
+describe('glossaire', () => {
+  const entree = (sigle: string, explication = 'Une phrase courte.', formes?: string[]) => ({
+    sigle,
+    developpe: `${sigle} en toutes lettres`,
+    explication,
+    ...(formes ? { formes } : {}),
+  });
+
+  it('données réelles : le glossaire est chargé et non vide', () => {
+    expect(reel.glossaire.length).toBeGreaterThan(0);
+  });
+  it('schéma : propriété inconnue refusée', () => {
+    const ds = copie(jeuSynthetique());
+    ds.glossaire[0].source = 'https://exemple.fr';
+    expect(regles(ds)).toContain('schema');
+  });
+  it('schéma : sigle qui ne commence pas par deux majuscules ou chiffres refusé', () => {
+    const ds = copie(jeuSynthetique());
+    ds.glossaire[0].sigle = 'Ue';
+    expect(regles(ds)).toContain('schema');
+  });
+  it('sigle défini deux fois', () => {
+    const ds = copie(jeuSynthetique());
+    ds.glossaire.push(entree('UE'));
+    expect(regles(ds)).toContain('sigle-glossaire-reutilise');
+  });
+  it('écriture reconnue pour deux sigles', () => {
+    const ds = copie(jeuSynthetique());
+    ds.glossaire.push(entree('UEM', 'Une phrase courte.', ['UE']));
+    expect(regles(ds)).toContain('forme-glossaire-reutilisee');
+  });
+  it('explication de plus de 25 mots', () => {
+    const ds = copie(jeuSynthetique());
+    ds.glossaire[0].explication = Array.from({ length: 26 }, () => 'mot').join(' ');
+    expect(regles(ds)).toContain('explication-glossaire-trop-longue');
+  });
+  it('explication de 25 mots acceptée', () => {
+    const ds = copie(jeuSynthetique());
+    ds.glossaire[0].explication = Array.from({ length: 25 }, () => 'mot').join(' ');
+    expect(regles(ds)).toEqual([]);
+  });
+  it('n’entre pas dans l’empreinte : le modifier ne rend pas derive/ obsolète', () => {
+    const dossier = mkdtempSync(join(tmpdir(), 'glossaire-'));
+    try {
+      cpSync(join(racine, 'data'), join(dossier, 'data'), { recursive: true });
+      writeFileSync(join(dossier, 'data', 'glossaire.json'), `${JSON.stringify([entree('ZZZ')], null, 2)}\n`);
+      expect(chargerDataset(dossier).empreinte).toBe(reel.empreinte);
+    } finally {
+      rmSync(dossier, { recursive: true, force: true });
+    }
   });
 });

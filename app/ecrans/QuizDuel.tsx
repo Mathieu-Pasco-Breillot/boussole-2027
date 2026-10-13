@@ -10,6 +10,7 @@ import { Depliants } from './Depliants.tsx';
 import { ECARTS, ECHELLE, libelleTheme, libelleValeur, NATURES } from '../libelles.ts';
 import { paquet } from '../paquet.ts';
 import { INTENSITE } from './Quiz.tsx';
+import { Texte } from '../glossaire/Texte.tsx';
 
 interface Props {
   partie: PartieDuel;
@@ -87,7 +88,9 @@ export function QuizDuel({ partie, onRepondre, onSuivante, onModifier, onQuitter
             Chapitre {s.chapitre + 1} sur {partie.chapitres.length} · {libelleTheme(s.theme)} · Proposition {s.dansChapitre + 1} sur {s.taille}
           </p>
           <p className="mt-3 text-sm text-sourdine">Êtes-vous d'accord ?</p>
-          <h1 className="mt-1 font-serif text-3xl leading-snug font-semibold">{question.enonce}</h1>
+          <h1 className="mt-1 font-serif text-3xl leading-snug font-semibold">
+            <Texte>{question.enonce}</Texte>
+          </h1>
           <Depliants question={question} />
 
           {!revelation ? (

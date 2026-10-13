@@ -13,7 +13,7 @@ des questions (lot 5d) et l'interface (lot 5e) suivent.
 
 | Dossier | Rôle |
 |---|---|
-| `data/` | Source de vérité : candidats, axes, questions, positions codées, journal. Données uniquement, aucun code. |
+| `data/` | Source de vérité : candidats, axes, questions, positions codées, glossaire des sigles, journal. Données uniquement, aucun code. |
 | `schemas/` | JSON Schema de chaque entité, alignés sur les fichiers réels. |
 | `derive/` | Fichiers **générés** (discriminance, ancrage, couverture, accord entre codeurs). Ne jamais les éditer à la main. |
 | `docs/` | Méthodologie, grille de codage, critère d'inclusion des candidats. |
@@ -33,6 +33,7 @@ npm run data:validate   # valide les données
 npm run derive          # recalcule derive/ (puis committer le résultat)
 npm run derive:check    # échoue si derive/ n'est pas à jour
 npm run types:generate  # régénère core/types.generated.ts depuis schemas/
+npm run glossaire:inventaire  # mots en capitales des textes affichés et leur statut au glossaire (docs/glossaire/README.md)
 npm test
 npm run dev
 npm run build           # valide, vérifie les types, compile
@@ -49,6 +50,7 @@ le passage qui la fonde (reformulation, ou citation de 14 mots maximum). Une con
 - Avant toute proposition : `npm run data:validate` et `npm test` doivent passer. La CI les exécute.
 - Chaque modification de `data/` est tracée dans `data/journal.json`.
 - Messages de commit au format conventional commits : voir [Messages de commit](#messages-de-commit).
+- Un nouveau sigle dans un texte affiché exige son entrée dans `data/glossaire.json`, ou une exception justifiée dans `app/glossaire/exceptions.ts` : `npm test` échoue sinon (voir `docs/glossaire/README.md`).
 
 ## Vie privée
 

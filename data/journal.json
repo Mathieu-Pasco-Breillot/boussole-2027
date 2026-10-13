@@ -415,6 +415,128 @@
       "description": "Correction d'un encart vérifié par recherche, à la demande de Mathieu. ENV-004 : « uniquement pour la culture de noisettes » devient « pour certaines filières déterminées (betteraves, cerises, pommes, noisettes) », d'après le communiqué du ministère de l'Agriculture du 19 août 2026, ajouté aux sources de l'encart. Précision inchangée. Aucun code de position modifié.",
       "auteur": "Claude",
       "reference": "correction précisions écologie-énergie du 12 octobre 2026"
+    },
+    {
+      "date": "2026-10-13",
+      "type": "recodage",
+      "objets": [
+        "docs/grille-codage.md",
+        "data/positions/retailleau-bruno.json",
+        "data/positions/dupont-aignan-nicolas.json",
+        "data/positions/le-pen-marine.json"
+      ],
+      "description": "Grille v1.4, âges de départ : Mathieu retient comme point de départ de R5 la loi applicable pendant le prochain quinquennat (64 ans à partir de 2028), et non le gel à 62 ans et 9 mois de la suspension. Recodés : Retailleau RET-001 −1 → +1 nuancée (63 ans, moitié du chemin vers 62) et RET-003 −1 → −2 nette (63 ans, baisse face à 65) ; Dupont-Aignan RET-002 et Le Pen RET-002 −1 → +1 nuancée (62 ans, moitié du chemin vers 60). Inchangés : Glucksmann RET-002 (rejette explicitement 60 ans), Retailleau RET-002 (63 ans, un quart du chemin vers 60), Mikolajczak RET-006 (42 annuités, un tiers du chemin de 43 vers 40).",
+      "auteur": "Mathieu, avec Claude",
+      "reference": "retour testeur sur ECO-003, 12-13 octobre 2026"
+    },
+    {
+      "date": "2026-10-13",
+      "type": "reformulation",
+      "objets": [
+        "data/questions/defense.json"
+      ],
+      "description": "Correction d'une Précision vérifiée par recherche, à la demande de Mathieu. DEF-003 : « suspendu en 1997 » devient « suspendu par la loi n° 97-1019 du 28 octobre 1997, avec effet progressif jusqu'en 2002 » ; le service national volontaire est « lancé à la rentrée 2026 » (date de début non confirmée, au lieu de « depuis le 31 août 2026 ») ; proposition de loi n° 1210 du 1er avril 2025 présentée comme non adoptée. Encart inchangé. Aucun code de position modifié.",
+      "auteur": "Claude",
+      "reference": "correction précisions défense du 13 octobre 2026"
+    },
+    {
+      "date": "2026-10-13",
+      "type": "reformulation",
+      "objets": [
+        "data/questions/education.json"
+      ],
+      "description": "Correction de Précisions vérifiées par recherche, à la demande de Mathieu. EDU-017 : historique 2024-2025 des groupes de besoins rendu (arrêté du 15 mars 2024, annulation par le Conseil d'État en novembre 2024, rétablissement par décret et arrêté du 4 avril 2025, arrêté du 10 mars 2026, recours rejeté le 27 février 2026). EDU-020 : les 3 256 postes (public seulement) ne se retrouvant pas dans la loi n° 2026-103, la Précision cite le projet de loi de finances (4 018 suppressions, 438 emplois annulés le 28 janvier 2026) et indique que les chiffres de la loi adoptée n'ont pas été vérifiés ; description d'origine d'EDU-020 inchangée, toujours signalée. EDU-020 (encart, contre) : chiffre en pourcentage retiré, incohérent avec la Précision corrigée ; argument des opposants ramené à une comparaison en proportion. Autres encarts inchangés. Aucun code de position modifié.",
+      "auteur": "Claude",
+      "reference": "correction précisions éducation du 13 octobre 2026"
+    },
+    {
+      "date": "2026-10-13",
+      "type": "reformulation",
+      "objets": [
+        "data/questions/retraites.json"
+      ],
+      "description": "Correction d'une Précision vérifiée par recherche, à la demande de Mathieu. RET-011 : le nombre « cinq » régimes n'étant pas confirmé par le COR et « recrutées » étant inexact pour le CESE, la Précision cite la loi n° 2023-270 du 14 avril 2023 (article 1er) et précise que seules les personnes entrées à compter du 1er septembre 2023 sont concernées. Encart inchangé. Aucun code de position modifié.",
+      "auteur": "Claude",
+      "reference": "correction précisions retraites du 13 octobre 2026"
+    },
+    {
+      "date": "2026-10-13",
+      "type": "reformulation",
+      "objets": [
+        "data/questions/sante.json"
+      ],
+      "description": "Correction de Précisions et d'origines vérifiées par recherche, à la demande de Mathieu. SAN-008 : l'entrée en vigueur du dispositif n'étant pas confirmée par une source officielle et la proposition de loi n'étant pas adoptée, la Précision ne décrit plus que la proposition de loi sénatoriale (participation obligatoire), le pacte gouvernemental du 25 avril 2025 étant retiré (redite de l'encart). SAN-009 : format de la bouteille précisé (75 cl à 12 %, 3,50 à 3,60 euros) ; description d'origine corrigée (amendements rejetés lors de l'examen de textes budgétaires en novembre 2023 et en novembre 2025). SAN-012 : l'affirmation « le plus souvent compensés » n'étant pas sourcée, la Précision décrit le droit en vigueur sans sa seconde phrase (redite de l'encart retirée) ; origine complétée (PLFSS 2025, commission des affaires sociales de l'Assemblée nationale). Encarts inchangés. Aucun code de position modifié.",
+      "auteur": "Claude",
+      "reference": "correction précisions santé du 13 octobre 2026"
+    },
+    {
+      "date": "2026-10-13",
+      "type": "reformulation",
+      "objets": [
+        "data/questions/immigration.json"
+      ],
+      "description": "Correction d'une Précision à la demande de Mathieu. IMM-012 : l'affirmation « elle suppose de réviser la Constitution » n'étant pas vérifiée, la Précision ne décrit plus que la mesure (phrase sur le titre de séjour et les priorités légales retirée, redite de l'encart). Description d'origine et encart inchangés. Aucun code de position modifié.",
+      "auteur": "Claude",
+      "reference": "correction précisions immigration du 13 octobre 2026"
+    },
+    {
+      "date": "2026-10-13",
+      "type": "reformulation",
+      "objets": [
+        "data/questions/securite.json"
+      ],
+      "description": "Correction de Précisions et d'origines vérifiées par recherche, à la demande de Mathieu. SEC-006 : description d'origine ramenée à l'intitulé et à la date d'enregistrement de la proposition de loi n° 440 (le détail « six mois ou moins, avec exclusions » n'est pas vérifié) ; Précision inchangée (chiffres du 1er août 2026 confirmés). SEC-021 : « sans suite à l'Assemblée nationale » n'étant pas vérifiable, la Précision indique la transmission du 23 juillet 2024 et l'absence d'étape postérieure visible sur le site du Sénat. Encarts inchangés. Aucun code de position modifié.",
+      "auteur": "Claude",
+      "reference": "correction précisions sécurité du 13 octobre 2026"
+    },
+    {
+      "date": "2026-10-13",
+      "type": "reformulation",
+      "objets": [
+        "data/questions/economie-dette.json"
+      ],
+      "description": "Correction d'une description d'origine, à la demande de Mathieu. ECO-011 : le Premier ministre n'étant pas le même à la date de l'annonce (15 juillet 2025) et à celle du retrait (septembre 2025), l'origine l'indique sans nommer personne. Précision (null) et encart inchangés. Aucun code de position modifié.",
+      "auteur": "Claude",
+      "reference": "correction origine économie-dette du 13 octobre 2026"
+    },
+    {
+      "date": "2026-10-13",
+      "type": "reformulation",
+      "objets": [
+        "data/questions/union-europeenne.json"
+      ],
+      "description": "Correction d'un encart, à la demande de Mathieu. EUR-001 : « selon la presse spécialisée » devient « selon la presse (Eunews, 14 juillet 2026) ». Précision inchangée. Aucun code de position modifié.",
+      "auteur": "Claude",
+      "reference": "correction encart union-européenne du 13 octobre 2026"
+    },
+    {
+      "date": "2026-10-13",
+      "type": "ajout_impact",
+      "objets": [
+        "data/questions/defense.json",
+        "data/questions/ecologie-energie.json",
+        "data/questions/economie-dette.json",
+        "data/questions/education.json",
+        "data/questions/fiscalite.json",
+        "data/questions/immigration.json",
+        "data/questions/retraites.json",
+        "data/questions/sante.json",
+        "data/questions/securite.json",
+        "data/questions/union-europeenne.json"
+      ],
+      "description": "Passage de 10 thèmes de pilote à validé par Mathieu (12-13 octobre 2026) : encart Impact des 188 questions actives encore en pilote (ENV-018 était déjà validée) de Défense, Écologie et énergie, Économie et dette, Éducation, Fiscalité, Immigration, Retraites, Santé, Sécurité et Union européenne (statut « valide »), après les corrections de Précisions du 12 et du 13 octobre. Les points non vérifiables restent listés dans docs/impact/README.md.",
+      "auteur": "Claude, validé par Mathieu",
+      "reference": "validation impact des 10 thèmes du 13 octobre 2026"
+    },
+    {
+      "date": "2026-10-13",
+      "type": "ajout_glossaire",
+      "objets": [
+        "data/glossaire.json"
+      ],
+      "description": "Création du glossaire des sigles : 104 entrées (forme développée et explication neutre d’une phrase), proposées en bulle, en panneau ou en feuille partout où un sigle apparaît. Rédaction puis relecture aveugle par un second agent ; trace dans docs/glossaire/relecture.json.",
+      "auteur": "Claude, à la demande de Mathieu",
+      "reference": "création du glossaire des sigles (issue #7)"
     }
   ]
 }

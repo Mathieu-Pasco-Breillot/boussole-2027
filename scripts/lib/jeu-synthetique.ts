@@ -110,6 +110,7 @@ export function jeuSynthetique(codesParQuestion?: Record<string, (number | null)
     questions,
     positions,
     journal: { _note: '', entrees: [] },
+    glossaire: [{ sigle: 'UE', developpe: 'Union européenne', explication: 'Union politique et économique de 27 États européens.' }],
     empreinte: '0'.repeat(64),
   } as unknown as Dataset;
 }

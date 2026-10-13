@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "ac20c84eef02188dbdf374caf9e48011f47f0c706eec7ba0ca340ef633d3f454",
+  "empreinte_donnees": "e91e5c4de409e3069c65d4d9f877517c914c8b6fd6e9b0b6c95f5e73b8f4688b",
   "provisoire": true,
   "population": [
     "arthaud-nathalie",
@@ -18,7 +18,7 @@
   ],
   "candidats_evalues": 12,
   "seuil_candidats_codes": 4,
-  "d_max": 2.243056,
+  "d_max": 2.1875,
   "questions": {
     "DEF-001": {
       "theme": "defense",
@@ -1367,8 +1367,8 @@
       "sens": 1,
       "candidats_codes": 12,
       "couverture": 1,
-      "variance": 2.076389,
-      "D": 2.076389
+      "variance": 1.909722,
+      "D": 1.909722
     },
     "RET-002": {
       "theme": "retraites",
@@ -1376,8 +1376,8 @@
       "sens": 1,
       "candidats_codes": 12,
       "couverture": 1,
-      "variance": 2.243056,
-      "D": 2.243056
+      "variance": 2.1875,
+      "D": 2.1875
     },
     "RET-003": {
       "theme": "retraites",
@@ -1385,8 +1385,8 @@
       "sens": -1,
       "candidats_codes": 10,
       "couverture": 0.833333,
-      "variance": 2.4,
-      "D": 2
+      "variance": 2.49,
+      "D": 2.075
     },
     "RET-005": {
       "theme": "retraites",

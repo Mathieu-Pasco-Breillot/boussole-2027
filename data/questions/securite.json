@@ -57,7 +57,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -107,7 +107,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -147,7 +147,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -192,7 +192,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -233,7 +233,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -244,7 +244,7 @@
    "enonce": "Lorsqu'une prison dépasse 100 % d'occupation, des détenus en fin de peine doivent être libérés sous contrainte pour revenir à ce seuil.",
    "precision": "Au 1er août 2026, les prisons françaises comptaient 89 668 détenus pour 63 303 places.",
    "origine": {
-    "description": "Proposition de loi n° 440 du 15 octobre 2024 (détenus à qui il reste six mois ou moins, avec exclusions)",
+    "description": "Proposition de loi n° 440, « visant à la création d'un mécanisme de régulation carcérale », enregistrée à l'Assemblée nationale le 15 octobre 2024.",
     "source": {
      "url": "https://questions.assemblee-nationale.fr/dyn/17/textes/l17b0440_proposition-loi.pdf",
      "titre": "Proposition de loi visant à la création d'un mécanisme de régulation carcérale",
@@ -255,7 +255,12 @@
    "statut": "active",
    "alertes_neutralite": [],
    "scrutins": [],
-   "historique": [],
+   "historique": [
+    {
+     "date": "2026-10-13",
+     "note": "Description d'origine précédente : « Proposition de loi n° 440 du 15 octobre 2024 (détenus à qui il reste six mois ou moins, avec exclusions) » Raison : détail « six mois ou moins, avec exclusions » du dispositif non vérifié."
+    }
+   ],
    "impact": {
     "changement": "La mesure rendrait obligatoire la sortie anticipée, avec un suivi, de détenus en fin de peine dès qu'une prison dépasse ses places, jusqu'à revenir à 100 %. Selon le ministère de la Justice, la densité carcérale de l'ensemble des prisons était de 135,6 % au 1er décembre 2025 et de 139,1 % au 1er avril 2026, avec alors 26 458 détenus en surnombre. Le nombre de sorties dépendrait de l'occupation de chaque établissement.",
     "pour": "Ses partisans estiment qu'une prison trop pleine dégrade les conditions de détention et les chances de réinsertion, et qu'un seuil automatique obligerait l'État à traiter la surpopulation plutôt qu'à la tolérer.",
@@ -274,7 +279,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -353,7 +358,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -404,7 +409,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -448,7 +453,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -500,7 +505,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -535,7 +540,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -580,7 +585,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -626,7 +631,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -678,7 +683,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -713,7 +718,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -757,7 +762,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -807,7 +812,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -847,7 +852,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -887,7 +892,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -896,7 +901,7 @@
    "axe": "securite",
    "sens": -1,
    "enonce": "La police doit pouvoir utiliser la reconnaissance faciale en temps réel dans l'espace public pour le terrorisme et la criminalité organisée.",
-   "precision": "La reconnaissance faciale n'est pas autorisée aujourd'hui. Une expérimentation de trois ans a été votée par le Sénat en 2023, sans suite à l'Assemblée nationale.",
+   "precision": "La reconnaissance faciale en temps réel dans l'espace public n'est pas autorisée aujourd'hui. La proposition de loi n° 505 (2022-2023), adoptée par le Sénat le 12 juin 2023 (226 voix contre 117), prévoit une expérimentation de trois ans pour le terrorisme, les atteintes aux intérêts fondamentaux de la nation et la criminalité organisée. Transmise à l'Assemblée nationale le 23 juillet 2024, elle n'a pas d'étape postérieure visible sur le site du Sénat (mise à jour du 30 janvier 2025).",
    "origine": {
     "description": "Proposition de loi adoptée par le Sénat le 12 juin 2023 (226 voix contre 117)",
     "source": {
@@ -918,6 +923,10 @@
     {
      "date": "2026-10-03",
      "note": "créée en remplacement de SEC-007"
+    },
+    {
+     "date": "2026-10-13",
+     "note": "Précision précédente : « La reconnaissance faciale n'est pas autorisée aujourd'hui. Une expérimentation de trois ans a été votée par le Sénat en 2023, sans suite à l'Assemblée nationale. » Raison : « sans suite à l'Assemblée nationale » non vérifiable (transmission de juillet 2024, aucune décision connue)."
     }
    ],
    "impact": {
@@ -932,7 +941,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   }
  ]

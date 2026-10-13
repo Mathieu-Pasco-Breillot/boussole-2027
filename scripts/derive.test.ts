@@ -106,7 +106,7 @@ describe('reproduit les chiffres publiés de la phase 4 (vagues 1 à 3, 11 thèm
     expect(accord.arbitrages.rendus).toBe(214);
     expect(accord.controle_humain.tires_au_sort).toBe(91);
     // + 10 revues humaines de Mathieu sur Glucksmann le 12 octobre 2026 (6 contrôles tirés, 4 autres décisions).
-    expect(accord.controle_humain.effectues).toBe(38); // + 4 corrections Arthaud (R1 au lieu de R3) et 7 recodages R5 v1.4 le 12 octobre 2026 ; // + Ruffin × EDU-020, puis 7 autres revues de Mathieu sur Glucksmann
+    expect(accord.controle_humain.effectues).toBe(42); // + 4 corrections Arthaud (R1 au lieu de R3), 7 recodages R5 v1.4 le 12 octobre et 4 sur les âges le 13 octobre 2026 ; // + Ruffin × EDU-020, puis 7 autres revues de Mathieu sur Glucksmann
   });
 
   it.each([
@@ -136,7 +136,7 @@ describe('reproduit les chiffres publiés de la phase 4 (vagues 1 à 3, 11 thèm
     ['lisnard-david', 88, 80, 29, 34, 17, 5],
     ['melenchon-jean-luc', 104, 97, 48, 24, 25, 5],
     ['philippe-edouard', 57, 47, 12, 20, 15, 4],
-    ['retailleau-bruno', 90, 83, 35, 32, 16, 5],
+    ['retailleau-bruno', 90, 83, 36, 31, 16, 5],
     ['roussel-fabien', 76, 71, 31, 26, 14, 2],
   ])('couverture de %s : %i extraits, %i codes, natures %i/%i/%i, %i R4', (id, extraits, codes, nette, nuancee, imprecise, r4) => {
     const c = (calculerCouverture(reel).candidats as Record<string, never>)[id] as {
@@ -203,7 +203,7 @@ describe('ancrage', () => {
     // Règle de stabilité : les ancres déjà publiées qui restent dans les 20 premières sont conservées
     // (c'est la liste publiée dans derive/ancrage.json après la vague 3).
     expect(calculerAncrage(reel, ['RET-003', 'IMM-001', 'FIS-001', 'INS-009', 'EDU-007', 'ENV-002']).ancres).toEqual([
-      'IMM-001', 'RET-003', 'FIS-001', 'ENV-002', 'EDU-007',
+      'RET-003', 'IMM-001', 'FIS-001', 'ENV-002', 'EDU-007',
     ]);
   });
 

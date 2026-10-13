@@ -2,13 +2,15 @@
 
 L'encart « Impact » s'affiche à côté de « Précision » sous chaque proposition du quiz : ce que la mesure changerait concrètement, puis ce qui fait débat (arguments des partisans et des opposants, attribués), avec ses sources. Le champ est `impact` dans `data/questions/<thème>.json` (schéma : `schemas/questions.schema.json`).
 
-## État au 12 octobre 2026
+## État au 13 octobre 2026
 
 | Thèmes | Questions actives | État |
 |---|---|---|
-| Institutions | 18 | En ligne, **validé** par Mathieu (rédaction Opus 5.5, relecture aveugle Sonnet 5.5) |
-| Défense, Écologie et énergie, Économie et dette, Éducation, Fiscalité | 95 | En ligne, statut **pilote** (rédaction et relecture aveugle Sonnet 5.5 : 37 ok, 57 corrigées, 0 bloquant ; EDU-020, rédigée ensuite, Opus 5.5 et relecture aveugle Sonnet 5.5 : corrigée, 0 bloquant) |
-| Immigration, Retraites, Santé, Sécurité, Union européenne | 94 | En ligne, statut **pilote** (rédaction Opus 5.5, relecture aveugle Sonnet 5.5 : 0 bloquant) |
+| Institutions | 18 | En ligne, **validé** par Mathieu le 12 octobre (rédaction Opus 5.5, relecture aveugle Sonnet 5.5) |
+| Défense, Écologie et énergie, Économie et dette, Éducation, Fiscalité | 95 | En ligne, **validé** par Mathieu (12-13 octobre) (rédaction et relecture aveugle Sonnet 5.5 : 37 ok, 57 corrigées, 0 bloquant ; EDU-020, rédigée ensuite, Opus 5.5 et relecture aveugle Sonnet 5.5 : corrigée, 0 bloquant) |
+| Immigration, Retraites, Santé, Sécurité, Union européenne | 94 | En ligne, **validé** par Mathieu (12-13 octobre) (rédaction Opus 5.5, relecture aveugle Sonnet 5.5 : 0 bloquant) |
+
+Les 207 encarts des questions actives ont le statut « valide ». Les encarts n'ont pas été relus question par question hors des corrections ci-dessous ; les points non vérifiables sont listés dans « Reste à faire ».
 
 Détail de la vague 2 (questions actives ; ok / corrigées à la relecture) :
 
@@ -22,32 +24,34 @@ Détail de la vague 2 (questions actives ; ok / corrigées à la relecture) :
 
 ## Reste à faire
 
-- **Validation par Mathieu** pour passer les 10 thèmes pilotes (vagues 1 et 2) du statut « pilote » à « validé ».
-- **Précisions signalées comme inexactes ou périmées, non modifiées** : liste ci-dessous. Chaque correction exigera une entrée `historique` sur la question et une entrée de journal.
-- **Sources à vérifier à la main** : Légifrance, Dalloz et consilium.europa.eu étaient inaccessibles aux agents (403 / anti-bot). À vérifier : SEC-004 (art. L.435-1), SEC-013 (art. 132-25), SEC-015 (art. 122-6), EUR-001 (communiqué du Conseil du 14/07/2026).
+Points non vérifiables ou à reprendre (Légifrance, Dalloz et consilium.europa.eu étaient inaccessibles aux agents ; plusieurs PDF n'ont été lus que par résumé). Toute correction de Précision s'accompagne d'une entrée `historique` sur la question et d'une entrée de journal.
 
-## Précisions signalées comme inexactes ou périmées (restant à traiter)
+- **SEC-004** : formulation exacte du 4° de l'article L.435-1 du code de la sécurité intérieure.
+- **SEC-009** : la loi n° 2026-798 du 18 août 2026 ajoute (art. 7, art. L.224-7 du code de la route) une suspension du permis de conduire pour usage de stupéfiants : décision du préfet, suspension provisoire de six mois au plus, usage répété, sans exigence de conduite. Sources secondaires seulement ; non ajoutée à l'encart validé.
+- **SEC-013** : règle pour les peines de six mois ou moins (art. 132-25 du code pénal), non vérifiable sur Légifrance.
+- **SEC-015** : formulation « c'est à eux de démontrer » (art. 122-6 du code pénal) non vérifiée ; la transmission au Sénat (proposition n° 866, 7 juillet 2026) n'est pas mentionnée dans la Précision.
+- **SEC-006, SEC-021** : chiffres et dates lus via un résumé de PDF (ministère de la Justice ; site du Sénat, mise à jour du 30 janvier 2025). SEC-021 : l'énoncé omet les « atteintes aux intérêts fondamentaux de la nation » prévues par la proposition de loi.
+- **EUR-001** : clusters 2 à 5 de la négociation et Précision (majorité des trois cinquièmes, 3/5) non vérifiés.
+- **EDU-020** : chiffres de la loi n° 2026-103 du 19 février 2026 non vérifiés (Précision : projet de loi de finances) ; description d'origine (« propositions… août 2026 ») non étayée.
+- **DEF-003** : date de début du service national volontaire non confirmée ; proposition de loi n° 1210 (contenu et absence d'adoption) non recontrôlés.
+- **SAN-008, SAN-012** : suite des textes non vérifiée (SAN-008 : proposition de loi sénatoriale transmise à l'Assemblée nationale le 14 mai 2025 ; SAN-012 : texte du PLFSS 2025) ; la source caducee.net de l'encart de SAN-008 est à confirmer.
+- **IMM-012** : l'origine cite toujours la proposition de loi constitutionnelle n° 2120 et l'encart s'appuie sur la décision du Conseil constitutionnel du 13 août 1993 ; ni l'un ni l'autre n'affirme qu'une révision constitutionnelle est nécessaire.
+- **ENV-024** : « blocage refusé au printemps 2026 » non vérifiable.
 
-Vague 1, restant à traiter (détail dans le bilan de la vague 1, projet Claude `phase-3/impact/bilan-vague-1.md`) :
-- **DEF-003** : « suspendu en 1997 » est imprécis (appels jusqu'en 2001) ; « 31 août 2026 » et « appel sélectif » non vérifiés.
-- **EDU-017** : Précision incomplète, l'historique 2024-2025 des groupes de besoins n'est pas rendu ; la formulation proposée par la recherche n'est pas retenue faute de lecture du texte.
-- **EDU-020** : les 3 256 postes publics ne sont pas retrouvés dans la loi n° 2026-103 du 19 février 2026 (lue partiellement) ; chiffres contradictoires entre sources ; la description d'origine (« propositions… août 2026 ») n'est pas étayée.
+Glossaire des sigles (`data/glossaire.json`, issue #7), points non tranchés :
 
-Vague 2 (d'après les brouillons et les relectures) :
-- **RET-011** : la Précision cite cinq régimes fermés dont celui du CESE ; le COR n'en cite que quatre.
-- **SEC-006** : chiffres du 1er août non relus dans le PDF du ministère.
-- **SEC-021** : « sans suite à l'Assemblée nationale » non vérifiable ; la proposition de loi a été retransmise à l'Assemblée nationale en juillet 2024, statut ultérieur inconnu.
-- Autres Précisions signalées par les relectures, sans détail ici : SAN-008, SAN-009, SAN-012 (non vérifiables) ; IMM-012 (non vérifiable) (le détail figure dans `vague-2/relecture-<thème>.json`).
+- **BRAV** : forme officielle (singulier ou pluriel, « BRAV-M ») et existence actuelle de l'unité non vérifiées.
+- **ZFE** : statut juridique en 2026 non vérifié (suppression censurée par le Conseil constitutionnel le 21 mai 2026, selon des sources secondaires) ; intitulé exact « Zone à faibles émissions-mobilité » non vérifié sur Légifrance.
+- **SNU** : statut juridique en 2026 non vérifié ; l'explication n'affirme rien sur le statut.
+- **PPE3, SAFE** : intitulé du décret n° 2026-76 repris d'un cabinet d'avocats (PPE3) ; sources secondaires seulement (SAFE).
+- **SAMP** : développé « Sol-air moyenne portée/Terrestre (SAMP/T) » à confirmer.
+- **CHSCT** : date de 2020 pour le privé non confirmée par une source primaire.
 
-Corrigées le 12 octobre 2026 après vérification (historique de la question et journal, type `reformulation`) : RET-001 (âge de 62 ans et 9 mois limité aux générations 1963 et 1964), RET-008 (« fin des années 1980 »), SAN-015 (votée en février 2025), IMM-001 (voie de l'article L. 435-4 du Ceseda), IMM-014 (titulaires d'un titre autorisant à travailler et réfugiés), EUR-002 (unanimité « en principe », sauf cas prévus par le traité), EUR-003 (26 à 38 milliards d'euros par an en moyenne, estimation de la direction générale du Trésor), SEC-009 (amende forfaitaire de 500 € depuis la loi n° 2026-798 du 18 août 2026), SEC-013 (règle pour les peines de six mois ou moins, sauf impossibilité). Encarts retouchés : RET-001 et SAN-019 (extension de l'accord préalable du contrôle médical).
+Corrigées le 12 octobre 2026 après vérification (historique de la question et journal, type `reformulation`) : RET-001 (âge de 62 ans et 9 mois limité aux générations 1963 et 1964), RET-008 (« fin des années 1980 »), SAN-015 (votée en février 2025), IMM-001 (voie de l'article L. 435-4 du Ceseda), IMM-014 (titulaires d'un titre autorisant à travailler et réfugiés), EUR-002 (unanimité « en principe », sauf cas prévus par le traité), EUR-003 (26 à 38 milliards d'euros par an en moyenne, estimation de la direction générale du Trésor), SEC-009 (amende forfaitaire de 500 € depuis la loi n° 2026-798 du 18 août 2026), SEC-013 (règle pour les peines de six mois ou moins, sauf impossibilité), FIS-008 (CSG à taux variables pour les pensions de retraite et les allocations chômage), FIS-009 (délai de 8 ans de 2011 à 2013), ENV-004 (encart : filières betteraves, cerises, pommes et noisettes). Encarts retouchés : RET-001, SAN-019 (extension de l'accord préalable du contrôle médical), FIS-009, ENV-004.
 
-Corrigées le 12 octobre 2026 (lot fiscalité et écologie, type `reformulation`) : FIS-008 (CSG à taux variables pour les pensions de retraite et les allocations chômage), FIS-009 (délai de 8 ans de 2011 à 2013, Précision et encart, y compris l'argument « contre » ; vérifié sur impots.gouv.fr), ENV-004 (encart : filières betteraves, cerises, pommes et noisettes, d'après le communiqué du ministère de l'Agriculture).
+Corrigées le 13 octobre 2026 (type `reformulation`) : Précisions de DEF-003, EDU-017, EDU-020, RET-011, SAN-008, SAN-009, SAN-012, IMM-012 et SEC-021 ; descriptions d'origine de SAN-009, SAN-012, SEC-006 et ECO-011 (sans nom de Premier ministre) ; EUR-001 (encart : attribution « selon la presse (Eunews, 14 juillet 2026) »), EDU-020 (encart, contre : chiffre en pourcentage retiré).
 
-À examiner par Mathieu : l'origine d'ECO-011 cite un Premier ministre, à vérifier (sa Précision est `null`, rien à corriger) ; la loi n° 2026-798 ajoute une suspension du permis de conduire pour usage de stupéfiants, non mentionnée dans l'encart validé de SEC-009.
-
-Vérifiées exactes le 12 octobre 2026, non modifiées : RET-005, RET-006, SAN-006, SAN-016, SAN-019 (Précision), IMM-005, IMM-011, IMM-018, EUR-010, EUR-012, EUR-015, SEC-008, SEC-014, DEF-001, DEF-002, ECO-009, FIS-016, ENV-004 (Précision ; encart corrigé, voir ci-dessus), ENV-024 (première phrase exacte ; « blocage refusé au printemps 2026 » non vérifiable).
-
-Toute correction de Précision s'accompagne d'une entrée `historique` sur la question et d'une entrée de journal.
+Vérifiées exactes le 12 octobre 2026, non modifiées : RET-005, RET-006, SAN-006, SAN-016, SAN-019 (Précision), IMM-005, IMM-011, IMM-018, EUR-010, EUR-012, EUR-015, SEC-008, SEC-014, DEF-001, DEF-002, ECO-009, FIS-016, ENV-004 (Précision), ENV-024 (première phrase exacte).
 
 ## Fichiers
 

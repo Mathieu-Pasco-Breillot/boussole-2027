@@ -1,6 +1,7 @@
 import { apresSource } from '../badges.ts';
 import type { ExtraitPaquet } from '../paquet.ts';
 import { majBadges } from '../stockage.ts';
+import { Texte } from '../glossaire/Texte.tsx';
 
 /**
  * Tous les extraits qui fondent une position, pas seulement le premier : un code se comprend souvent
@@ -12,8 +13,14 @@ export function Extraits({ extraits, className = 'mt-2' }: { extraits?: ExtraitP
     <div className={`${className} flex flex-col gap-3`} data-extraits>
       {extraits.map((e, i) => (
         <div key={`${e.source.url}-${i}`} className="border-l-2 border-or/60 pl-3 [overflow-wrap:anywhere]">
-          <p>{e.reformulation}</p>
-          {e.citation && <p className="mt-1 italic">« {e.citation} »</p>}
+          <p>
+            <Texte>{e.reformulation}</Texte>
+          </p>
+          {e.citation && (
+            <p className="mt-1 italic">
+              « <Texte>{e.citation}</Texte> »
+            </p>
+          )}
           <p className="mt-1 text-sm">
             <a
               className="underline"

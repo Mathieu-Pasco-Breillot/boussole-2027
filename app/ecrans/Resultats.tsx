@@ -12,6 +12,7 @@ import { CartePartage } from './CartePartage.tsx';
 import { Extraits } from './Extraits.tsx';
 import { SEUIL_CLASSEMENT_QUESTIONS } from '../../core/score/parametres.ts';
 import { jouer } from '../son.ts';
+import { Texte } from '../glossaire/Texte.tsx';
 
 interface Props {
   partie: Partie;
@@ -43,7 +44,9 @@ function LigneAccord({ candidatId, a }: { candidatId: string; a: AccordDesaccord
   const position = paquet.positions[candidatId]?.find((p) => p.questionId === a.questionId);
   return (
     <li className="rounded-xl bg-nuit p-3 text-sm leading-relaxed">
-      <p className="font-semibold">{q?.enonce}</p>
+      <p className="font-semibold">
+        <Texte>{q?.enonce}</Texte>
+      </p>
       <p className="mt-1 text-sourdine">{libelleTheme(a.theme)}</p>
       <p className="mt-2">
         Votre réponse : <strong>{libelleValeur(a.reponse as Valeur)}</strong>

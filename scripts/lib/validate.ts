@@ -27,6 +27,9 @@ const DOSSIER_SCHEMAS = new URL('../../schemas/', import.meta.url);
 /** Nombre maximal de mots d'une citation courte (grille de codage v1.2, § 5). */
 export const MOTS_CITATION_MAX = 14;
 
+/** Nombre maximal de mots de l'explication d'un sigle du glossaire (spécification du glossaire, § 3.1). */
+export const MOTS_EXPLICATION_GLOSSAIRE_MAX = 25;
+
 let validateursEnCache: Record<string, ValidateFunction> | undefined;
 
 /** Compile une fois les schémas de données. Les schémas derive-* sont chargés par charger le script derive. */
@@ -40,6 +43,7 @@ export function validateurs(): Record<string, ValidateFunction> {
     'questions',
     'positions',
     'journal',
+    'glossaire',
     'derive-discriminance',
     'derive-ancrage',
     'derive-couverture',
@@ -77,7 +81,8 @@ const CODES_PUBLIES = new Set(['accord', 'arbitre']);
  *  - une question active sans source ;
  *  - un code sans extrait ;
  *  - un identifiant réutilisé (question, candidat, enregistrement de position, item aveugle) ;
- *  - toute violation d'un schéma, tout renvoi vers un objet inexistant, toute incohérence entre un code et ses codeurs.
+ *  - toute violation d'un schéma, tout renvoi vers un objet inexistant, toute incohérence entre un code et ses codeurs ;
+ *  - au glossaire : un sigle défini deux fois, une écriture reconnue pour deux sigles, une explication de plus de 25 mots.
  * Avertissements (affichés, non bloquants) : dettes connues des données, par exemple les dates de publication
  * des sources de questions, encore absentes.
  */
@@ -95,6 +100,7 @@ export function validerDataset(ds: Dataset): Rapport {
   schemas('axes', ds.axes, 'data/axes.json');
   schemas('candidats', ds.candidats, 'data/candidats.json');
   schemas('journal', ds.journal, 'data/journal.json');
+  schemas('glossaire', ds.glossaire, 'data/glossaire.json');
   for (const [theme, f] of Object.entries(ds.questions)) schemas('questions', f, `data/questions/${theme}.json`);
   for (const [cand, f] of Object.entries(ds.positions)) schemas('positions', f, `data/positions/${cand}.json`);
 
@@ -308,6 +314,30 @@ export function validerDataset(ds: Dataset): Rapport {
     }
   }
 
+  // 6. Glossaire (issue #7) : un sigle par entrée, chaque écriture reconnue pour un seul sigle, explications courtes.
+  const glossaire = (Array.isArray(ds.glossaire) ? ds.glossaire : []).filter((e) => e && typeof e.sigle === 'string');
+  const siglesVus = new Set<string>();
+  const sigleDeForme = new Map<string, string>();
+  for (const e of glossaire) {
+    if (siglesVus.has(e.sigle)) erreur('sigle-glossaire-reutilise', 'data/glossaire.json', `sigle « ${e.sigle} » défini deux fois`);
+    siglesVus.add(e.sigle);
+    for (const forme of [e.sigle, ...(e.formes ?? [])]) {
+      const deja = sigleDeForme.get(forme);
+      if (deja !== undefined && deja !== e.sigle) {
+        erreur('forme-glossaire-reutilisee', 'data/glossaire.json', `« ${forme} » serait reconnu à la fois pour ${deja} et pour ${e.sigle}`);
+      } else {
+        sigleDeForme.set(forme, e.sigle);
+      }
+    }
+    if (typeof e.explication === 'string' && compterMots(e.explication) > MOTS_EXPLICATION_GLOSSAIRE_MAX) {
+      erreur(
+        'explication-glossaire-trop-longue',
+        'data/glossaire.json',
+        `${e.sigle} : explication de ${compterMots(e.explication)} mots (maximum ${MOTS_EXPLICATION_GLOSSAIRE_MAX})`,
+      );
+    }
+  }
+
   const erreurs = problemes.filter((p) => p.niveau === 'erreur');
   const avertissements = problemes.filter((p) => p.niveau === 'avertissement');
   return {
@@ -322,6 +352,7 @@ export function validerDataset(ds: Dataset): Rapport {
       fichiers_positions: Object.keys(ds.positions).length,
       positions: nbPositions,
       codes_publies: nbCodesPublies,
+      sigles_glossaire: glossaire.length,
     },
   };
 }

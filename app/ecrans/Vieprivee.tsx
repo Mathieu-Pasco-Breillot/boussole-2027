@@ -1,7 +1,16 @@
+import { Texte } from '../glossaire/Texte.tsx';
+
 interface Props {
   onRetour: () => void;
   onToutEffacer: () => void;
 }
+
+const HEBERGEUR =
+  "Le site est hébergé chez Railway. Comme tout hébergeur, il voit les requêtes de chargement du site : adresse IP, " +
+  "page demandée, type de navigateur. Le serveur du projet n'écrit aucun journal, mais Railway conserve ses propres " +
+  "journaux, pour une durée qui dépend de son offre (de 3 à 90 jours selon l'offre). Le service tourne dans un centre " +
+  "de données européen (Pays-Bas) ; votre requête peut cependant passer par un point d'entrée du réseau Railway situé " +
+  'ailleurs. Vos réponses au quiz, elles, ne transitent jamais par le serveur.';
 
 export function Vieprivee({ onRetour, onToutEffacer }: Props) {
   return (
@@ -26,11 +35,7 @@ export function Vieprivee({ onRetour, onToutEffacer }: Props) {
       <section>
         <h2 className="font-serif text-2xl font-semibold">Ce que voit l'hébergeur</h2>
         <p className="mt-2">
-          Le site est hébergé chez Railway. Comme tout hébergeur, il voit les requêtes de chargement du site : adresse IP,
-          page demandée, type de navigateur. Le serveur du projet n'écrit aucun journal, mais Railway conserve ses propres
-          journaux, pour une durée qui dépend de son offre (de 3 à 90 jours selon l'offre). Le service tourne dans un centre
-          de données européen (Pays-Bas) ; votre requête peut cependant passer par un point d'entrée du réseau Railway situé
-          ailleurs. Vos réponses au quiz, elles, ne transitent jamais par le serveur.
+          <Texte>{HEBERGEUR}</Texte>
         </p>
       </section>
 

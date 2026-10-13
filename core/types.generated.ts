@@ -319,6 +319,37 @@ export namespace DeriveRapportNeutralite {
   }
 }
 
+// ── glossaire.schema.json
+export namespace Glossaire {
+  /**
+   * data/glossaire.json — glossaire des sigles affichés dans l'application (issue #7). Une entrée par sigle, sans nom de personne. N'entre pas dans l'empreinte des données : le glossaire n'a aucun effet sur les scores.
+   *
+   * @minItems 1
+   */
+  export type FichierGlossaire = EntreeGlossaire[];
+
+  export interface EntreeGlossaire {
+    /**
+     * Le sigle tel qu'il s'écrit dans les textes : majuscule initiale, puis au moins une majuscule ou un chiffre. Unique.
+     */
+    sigle: string;
+    /**
+     * Forme développée exacte (nom officiel).
+     */
+    developpe: string;
+    /**
+     * Une phrase factuelle et neutre, 25 mots au plus (contrôlé par scripts/lib/validate.ts).
+     */
+    explication: string;
+    /**
+     * Autres écritures à reconnaître dans les textes (casse, variante chiffrée). Chacune n'appartient qu'à une entrée.
+     *
+     * @minItems 1
+     */
+    formes?: string[];
+  }
+}
+
 // ── journal.schema.json
 export namespace Journal {
   /**
@@ -338,7 +369,8 @@ export namespace Journal {
         | 'arbitrage'
         | 'changement_critere'
         | 'recalcul'
-        | 'ajout_impact';
+        | 'ajout_impact'
+        | 'ajout_glossaire';
       /**
        * @minItems 1
        */

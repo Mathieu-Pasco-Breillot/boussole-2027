@@ -3,6 +3,7 @@ import { libelleTheme, THEMES } from '../libelles.ts';
 import { paquet } from '../paquet.ts';
 import { chargerPages } from './donnees.ts';
 import type { Pages } from './donnees.ts';
+import { Texte } from '../glossaire/Texte.tsx';
 
 export function Banque({ onRetour }: { onRetour: () => void }) {
   const [pages, setPages] = useState<Pages | null>(null);
@@ -35,12 +36,12 @@ export function Banque({ onRetour }: { onRetour: () => void }) {
             <ul className="mt-2 flex flex-col gap-2 text-sm">
               {actives.map((q) => (
                 <li key={q.id}>
-                  <span className="text-sourdine">{q.id}</span> · {q.enonce}
+                  <span className="text-sourdine">{q.id}</span> · <Texte>{q.enonce}</Texte>
                 </li>
               ))}
               {autres.map((q) => (
                 <li key={q.id} className="text-sourdine">
-                  {q.id} · <strong>{q.statut === 'suspendue' ? 'Suspendue' : 'Archivée'}</strong> · {q.enonce}
+                  {q.id} · <strong>{q.statut === 'suspendue' ? 'Suspendue' : 'Archivée'}</strong> · <Texte>{q.enonce}</Texte>
                 </li>
               ))}
             </ul>

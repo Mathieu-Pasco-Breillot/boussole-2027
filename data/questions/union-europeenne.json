@@ -42,7 +42,7 @@
    "scrutins": [],
    "historique": [],
    "impact": {
-    "changement": "L'adhésion d'un pays est décidée à l'unanimité des États membres réunis au Conseil, après approbation du Parlement européen à la majorité de ses membres. Le traité d'adhésion doit ensuite être ratifié par chacun des États. Pour l'Ukraine et la Moldavie, le premier groupe de chapitres de négociation, dit « fondamentaux », a été ouvert le 15 juin 2026, et celui des relations extérieures le 14 juillet 2026, selon la presse spécialisée.",
+    "changement": "L'adhésion d'un pays est décidée à l'unanimité des États membres réunis au Conseil, après approbation du Parlement européen à la majorité de ses membres. Le traité d'adhésion doit ensuite être ratifié par chacun des États. Pour l'Ukraine et la Moldavie, le premier groupe de chapitres de négociation, dit « fondamentaux », a été ouvert le 15 juin 2026, et celui des relations extérieures le 14 juillet 2026, selon la presse (Eunews, 14 juillet 2026).",
     "pour": "Ses partisans estiment que l'adhésion ancrerait durablement l'Ukraine à l'Union, renforcerait la sécurité du continent face à la Russie et élargirait le marché commun européen.",
     "contre": "Ses opposants jugent que l'Ukraine, en guerre, est loin de remplir les critères d'adhésion, et craignent un coût élevé pour le budget européen ainsi qu'une concurrence agricole accrue.",
     "sources": [
@@ -71,7 +71,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -111,7 +111,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -162,7 +162,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -214,7 +214,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -260,7 +260,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -301,7 +301,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -353,7 +353,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -393,7 +393,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -433,7 +433,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -479,7 +479,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -525,7 +525,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -578,7 +578,7 @@
       "nature": "secondaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -681,7 +681,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -728,7 +728,7 @@
       "nature": "primaire"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   },
   {
@@ -796,7 +796,7 @@
       "nature": "institutionnelle"
      }
     ],
-    "statut": "pilote"
+    "statut": "valide"
    }
   }
  ]
