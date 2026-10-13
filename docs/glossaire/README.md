@@ -25,4 +25,12 @@ Les sigles des textes affichés (énoncés, Précision, encart Impact, extraits 
 - Les titres de sources (liens), les libellés de boutons, les `<summary>` et les `<label>` ne sont pas annotés : un bouton ne peut pas être placé dans un autre contrôle.
 - Le champ « origine » des questions n'est pas dans le paquet de l'application : il n'est ni affiché ni annoté.
 - Une bulle dans un tableau Markdown à défilement horizontal peut être rognée par le tableau.
-- Le (i) est calculé par bloc de texte rendu : dans un paragraphe Markdown mêlant gras et texte normal, chaque morceau compte comme un bloc.
+- Le (i) est calculé par bloc : un appel à `<Texte>` est un bloc, et un paragraphe, un item, une cellule ou un titre Markdown est un bloc, quel que soit le style en ligne (gras, italique). Deux `<Texte>` dans un même `<p>` comptent donc pour deux blocs.
+- Sous 1024 px, une marge basse de 4,5 rem réserve la place du bouton « Glossaire » : elle ajoute 72 px de défilement aux écrans pleine hauteur, mais sans elle le bouton masquerait les actions du bas.
+- Au redimensionnement, le glossaire bascule entre panneau et feuille (rotation d'iPad, 768 ↔ 1024 px) : l'état reste juste, mais le focus retombe sur la page.
+- Une sélection de texte par glisser peut fermer la feuille (clic sur le fond), surtout dans une fenêtre de bureau étroite.
+- La bulle n'est mesurée qu'à l'ouverture et son débordement vers le bas n'est pas géré.
+- Chaque `Sigle` lit tout le contexte du glossaire : tous se re-rendent à l'ouverture et à la fermeture, et chacun s'abonne à son propre `matchMedia`.
+- Le titre de question (`h1`) contient la bulle : son nom accessible inclut la définition tant que la bulle est visible.
+- Échap ne ferme pas le panneau latéral (non modal) ; seuls la bulle et la feuille réagissent.
+- Le test des mentions neutres de partis (`app/glossaire.test.ts`) ne couvre qu'une liste de 5 sigles ; pour un nouveau parti, la consigne de rédaction fait foi.
