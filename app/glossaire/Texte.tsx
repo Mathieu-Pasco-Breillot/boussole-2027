@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { segmenter } from '../../core/glossaire/index.ts';
+import { segmenter, type Segment } from '../../core/glossaire/index.ts';
 import { INDEX } from './donnees.ts';
 import { Sigle } from './Sigle.tsx';
 
@@ -10,9 +10,21 @@ import { Sigle } from './Sigle.tsx';
  */
 export function Texte({ children }: { children: string | null | undefined }) {
   if (!children) return null;
+  return <Segments segments={segmenter(children, INDEX)} />;
+}
+
+/**
+ * Découpe d'un texte en un bloc : pour un bloc rendu en plusieurs morceaux (Markdown : gras, italique, texte brut),
+ * découper chaque morceau avec le même `vus` (segmenter, INDEX) et rendre le résultat ici.
+ */
+export function decouper(morceau: string, vus: Set<string>): Segment[] {
+  return segmenter(morceau, INDEX, vus);
+}
+
+export function Segments({ segments }: { segments: readonly Segment[] }) {
   return (
     <>
-      {segmenter(children, INDEX).map((s, i) =>
+      {segments.map((s, i) =>
         s.type === 'texte' ? <Fragment key={i}>{s.texte}</Fragment> : <Sigle key={i} texte={s.texte} sigle={s.sigle} premiere={s.premiere} />,
       )}
     </>

@@ -41,11 +41,14 @@ export function indexer(entrees: readonly EntreeASegmenter[]): IndexGlossaire {
   return { motif, sigleDeForme };
 }
 
-export function segmenter(texte: string, index: IndexGlossaire): Segment[] {
+/**
+ * `vus` : sigles déjà rencontrés plus tôt dans le même bloc de texte, quand celui-ci est découpé en plusieurs morceaux
+ * (paragraphe Markdown mêlant gras, italique et texte brut) ; il est complété par l'appel. Par défaut, un appel = un bloc.
+ */
+export function segmenter(texte: string, index: IndexGlossaire, vus: Set<string> = new Set()): Segment[] {
   if (texte === '') return [];
   if (!index.motif) return [{ type: 'texte', texte }];
   const segments: Segment[] = [];
-  const vus = new Set<string>();
   let curseur = 0;
   for (const m of texte.matchAll(index.motif)) {
     const debut = m.index;

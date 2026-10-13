@@ -96,6 +96,13 @@ describe('segmenter : première occurrence', () => {
     const premieres = segmenter('TVA, UE, TVA, UE, OTAN', index).flatMap((s) => (s.type === 'sigle' ? [s.premiere] : []));
     expect(premieres).toEqual([true, true, false, false, true]);
   });
+  it('un bloc découpé en plusieurs morceaux partage ses sigles déjà vus', () => {
+    const vus = new Set<string>();
+    const premieres = ['la TVA et l’UE', ' puis la TVA', ' et l’OTAN, l’UE']
+      .flatMap((morceau) => segmenter(morceau, index, vus))
+      .flatMap((s) => (s.type === 'sigle' ? [`${s.sigle}:${s.premiere}`] : []));
+    expect(premieres).toEqual(['TVA:true', 'UE:true', 'TVA:false', 'OTAN:true', 'UE:false']);
+  });
   it('chaque appel repart de zéro', () => {
     expect(segmenter('TVA', index)).toEqual(segmenter('TVA', index));
     expect(segmenter('TVA', index)[0]).toMatchObject({ premiere: true });
