@@ -18,7 +18,7 @@ const reducteur = (etat: EtatGlossaire, action: ActionGlossaire): EtatGlossaire 
 /** État du glossaire pour toute l'application (branché dans App.tsx). */
 export function GlossaireProvider({ children }: { children: ReactNode }) {
   const [etat, envoyer] = useReducer(reducteur, ETAT_INITIAL);
-  // Élément qui a ouvert le glossaire : il reprend le focus à la fermeture (feuille modale surtout).
+  // Dernier élément qui a ouvert le glossaire ou en a changé l'entrée : il reprend le focus à la fermeture.
   const declencheur = useRef<HTMLElement | null>(null);
   const ouvert = useRef(etat.ouvert);
   useEffect(() => {
@@ -30,8 +30,10 @@ export function GlossaireProvider({ children }: { children: ReactNode }) {
     ouvert.current = etat.ouvert;
   }, [etat.ouvert]);
 
+  // Toujours le dernier déclencheur : le panneau (non modal) reste ouvert quand on change d'écran ou clique un autre
+  // sigle ; le premier peut alors ne plus exister, et le dernier est là où l'utilisateur se trouvait.
   const memoriser = useCallback((element: HTMLElement | null) => {
-    if (!ouvert.current) declencheur.current = element;
+    declencheur.current = element;
   }, []);
   const ouvrir = useCallback(
     (sigle: string, element: HTMLElement | null) => {
