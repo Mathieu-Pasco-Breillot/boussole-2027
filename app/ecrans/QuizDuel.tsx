@@ -9,8 +9,13 @@ import { questionCourante, situation } from '../jeu.ts';
 import { Depliants } from './Depliants.tsx';
 import { ECARTS, ECHELLE, libelleTheme, libelleValeur, NATURES } from '../libelles.ts';
 import { paquet } from '../paquet.ts';
-import { EnteteQuiz, INTENSITE } from './Quiz.tsx';
 import { Texte } from '../glossaire/Texte.tsx';
+import { Bouton } from '../ui/Bouton.tsx';
+import { Carte } from '../ui/Carte.tsx';
+import { EnteteParcours } from '../ui/EnteteParcours.tsx';
+import { NoteConfiance } from '../ui/NoteConfiance.tsx';
+import { PastilleCandidat } from '../ui/PastilleCandidat.tsx';
+import { ProgressionParcours } from '../ui/ProgressionParcours.tsx';
 
 interface Props {
   partie: PartieDuel;
@@ -54,13 +59,22 @@ export function QuizDuel({ partie, onRepondre, onSuivante, onModifier, onQuitter
   const derniere = partie.position === total - 1;
 
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-5xl flex-col px-5 pt-4 pb-6 md:px-8 md:pt-6">
-      <EnteteQuiz position={partie.position} total={total} avancement={repondues} onQuitter={onQuitter} />
-      <p className="pilule mt-4 w-fit text-discret">
-        <span>
-          Duel avec <strong className="text-encre">{nom}</strong> · {c.parti}
-        </span>
-      </p>
+    <main className="parcours">
+      <EnteteParcours>
+        <button type="button" onClick={onQuitter} className="lien">
+          Quitter
+        </button>
+      </EnteteParcours>
+      <ProgressionParcours etiquette="Proposition" position={partie.position} total={total} avancement={repondues} />
+      <div className="mt-5 flex items-center gap-3">
+        <PastilleCandidat prenom={c.prenom} nom={c.nom} />
+        <p className="flex flex-col leading-tight">
+          <span className="surtitre">Duel avec</span>
+          <span>
+            <strong className="text-marine">{nom}</strong> · <span className="text-discret">{c.parti}</span>
+          </span>
+        </p>
+      </div>
 
       <AnimatePresence mode="wait">
         <motion.div
@@ -69,48 +83,36 @@ export function QuizDuel({ partie, onRepondre, onSuivante, onModifier, onQuitter
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -24 }}
           transition={{ duration: reduit ? 0 : 0.2 }}
-          className="mt-5 grid flex-1 content-start gap-6 lg:mt-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12"
+          className="mt-6 flex-1"
         >
-          <div>
-          <p className="pilule surtitre" data-testid="theme">
+          <p className="surtitre surtitre-point" data-testid="theme">
             {libelleTheme(s.theme)}
           </p>
-          <p className="mt-4 text-sm font-medium text-discret">Êtes-vous d'accord ?</p>
-          <h1 className="mt-1 font-titre text-[clamp(1.6rem,1.25rem+1.6vw,2.4rem)] leading-[1.18] font-bold tracking-[-0.015em]">
+          <p className="question-aide">Êtes-vous d'accord ?</p>
+          <h1 className="question-titre">
             <Texte>{question.enonce}</Texte>
           </h1>
           <Depliants question={question} />
-          </div>
 
           {!revelation ? (
-            <div className="flex flex-col lg:self-start lg:rounded-3xl lg:border lg:border-trait lg:bg-carte lg:p-6 lg:shadow-xl lg:shadow-black/5">
-              <div className="flex flex-col gap-2">
+            <>
+              <div role="group" aria-label="Votre réponse" className="reponses mt-6">
                 {echelle.map((e) => (
-                  <button
-                    key={e.valeur}
-                    type="button"
-                    onClick={() => repondre(e.valeur, important)}
-                    className={`reponse ${INTENSITE[e.valeur]}`}
-                  >
+                  <button key={e.valeur} type="button" onClick={() => repondre(e.valeur, important)} className="reponse">
                     {e.libelle}
                   </button>
                 ))}
               </div>
-              <button
-                type="button"
-                aria-pressed={important}
-                onClick={() => setImportant((v) => !v)}
-                className={`mt-4 min-h-12 rounded-xl border px-4 py-3 text-left font-medium ${important ? 'border-accent bg-accent/15' : 'border-trait bg-carte text-discret lg:bg-fond'}`}
-              >
+              <button type="button" aria-pressed={important} onClick={() => setImportant((v) => !v)} className="bascule mt-3">
                 {important ? '★' : '☆'} Très important pour moi
               </button>
-              <button type="button" onClick={() => repondre('sans_avis', false)} className="lien mt-2 self-end">
+              <button type="button" onClick={() => repondre('sans_avis', false)} className="lien mt-2 ml-auto flex">
                 Sans avis
               </button>
-            </div>
+            </>
           ) : (
-            <section className="flex flex-col gap-4" aria-label={`Position de ${nom}`} data-revelation>
-              <div className="carte border-l-4 border-l-accent p-5 leading-relaxed">
+            <section className="mt-6 flex flex-col gap-4" aria-label={`Position de ${nom}`} data-revelation>
+              <Carte note className="p-5 leading-relaxed">
                 <p className="surtitre">Ce que porte {nom}</p>
                 <p className="mt-2">
                   Votre réponse : <strong>{saisie!.valeur === 'sans_avis' ? 'sans avis' : libelleValeur(saisie!.valeur)}</strong>
@@ -128,19 +130,17 @@ export function QuizDuel({ partie, onRepondre, onSuivante, onModifier, onQuitter
                   </p>
                 )}
                 <Extraits extraits={position?.extraits} className="mt-3" />
-              </div>
+              </Carte>
 
               {affinite && (
-                <div className="carte p-5" role="status" data-affinite>
+                <Carte douce className="p-5" role="status" data-affinite>
                   {affinite.affichable && affinite.score.scoreArrondi !== null ? (
                     <>
                       <p className="text-sm text-discret">Affinité en direct avec {nom}</p>
-                      <p className="font-titre text-5xl font-extrabold tracking-tight" aria-label={`Affinité ${affinite.score.scoreArrondi} sur 100`}>
+                      <p className="font-titre text-5xl font-semibold tracking-tight text-accent" aria-label={`Affinité ${affinite.score.scoreArrondi} sur 100`}>
                         {affinite.score.scoreArrondi} <span className="text-lg text-discret">/ 100</span>
                       </p>
-                      <div className="jauge mt-2">
-                        <div style={{ width: `${affinite.score.scoreArrondi}%` }} />
-                      </div>
+                      <progress className="barre mt-2" aria-label="Affinité sur 100" max={100} value={affinite.score.scoreArrondi} />
                       <p className="mt-2 text-sm text-discret">
                         Fiabilité {affinite.fiabilite} · {affinite.score.codees} propositions comptées. Ce score n'est comparable ni à celui d'un autre candidat, ni au
                         classement des autres modes.
@@ -152,12 +152,12 @@ export function QuizDuel({ partie, onRepondre, onSuivante, onModifier, onQuitter
                       l'afficher (sous 8 propositions, un score ne voudrait rien dire).
                     </p>
                   )}
-                </div>
+                </Carte>
               )}
 
-              <button type="button" onClick={onSuivante} className="btn btn-primaire btn-grand">
+              <Bouton grand onClick={onSuivante}>
                 {derniere ? 'Voir mon résultat' : 'Proposition suivante →'}
-              </button>
+              </Bouton>
               <button type="button" onClick={onModifier} className="lien text-left">
                 Modifier ma réponse (vous avez déjà vu sa position)
               </button>
@@ -165,6 +165,8 @@ export function QuizDuel({ partie, onRepondre, onSuivante, onModifier, onQuitter
           )}
         </motion.div>
       </AnimatePresence>
+
+      <NoteConfiance className="mt-8 justify-center">Vos réponses restent sur votre appareil.</NoteConfiance>
     </main>
   );
 }

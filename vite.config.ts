@@ -21,9 +21,9 @@ export default defineConfig({
         short_name: 'Mon Isoloir',
         description: "Comparateur des positions des candidats à l'élection présidentielle de 2027.",
         lang: 'fr',
-        // Couleurs du thème sombre, thème de référence (spécification § 5.1) : barre d'état et écran de lancement.
-        theme_color: '#0d1428',
-        background_color: '#0d1428',
+        // Fond de page du thème clair (app/index.css, --color-fond) : barre d'état et écran de lancement.
+        theme_color: '#f7f8fb',
+        background_color: '#f7f8fb',
         display: 'standalone',
         start_url: '/',
         icons: [

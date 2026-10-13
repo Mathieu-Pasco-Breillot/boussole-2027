@@ -1,12 +1,20 @@
+import { useState } from 'react';
 import type { ReactNode } from 'react';
-import { ECHELLE, MODES, MOTIFS_NON_EVALUATION, THEMES } from '../libelles.ts';
+import { MODES, MOTIFS_NON_EVALUATION, THEMES } from '../libelles.ts';
 import type { ModeJeu } from '../jeu.ts';
 import { Reglages } from './Reglages.tsx';
 import { NOM_MASCOTTE } from '../habillage.ts';
 import { Mascotte } from './Mascotte.tsx';
 import { groupesCandidats, nomComplet } from '../listes.ts';
 import { paquet } from '../paquet.ts';
-import { INTENSITE } from './Quiz.tsx';
+import { Bouton } from '../ui/Bouton.tsx';
+import { Carte } from '../ui/Carte.tsx';
+import { ChoixMode } from '../ui/ChoixMode.tsx';
+import { IconeBalance, IconeCoche, IconeDuel, IconeFleche, IconeQuestion, IconeQuiz } from '../ui/Icones.tsx';
+import { NoteConfiance } from '../ui/NoteConfiance.tsx';
+import { idOnglet, idPanneau } from '../ui/onglets.ts';
+import { SelecteurFormat } from '../ui/SelecteurFormat.tsx';
+import type { OptionFormat } from '../ui/SelecteurFormat.tsx';
 
 const groupes = groupesCandidats();
 
@@ -21,8 +29,20 @@ const CHIFFRES: readonly { valeur: string; libelle: string }[] = [
   { valeur: SOURCES.toLocaleString('fr-FR'), libelle: 'sources à ouvrir' },
 ];
 
-const COURTS: readonly ModeJeu[] = ['express', 'debat', 'campagne'];
-const LONGS: readonly ModeJeu[] = ['semi', 'marathon', 'ultra'];
+/** Les six formats de partie, du plus court au plus long. */
+const ORDRE_MODES: readonly ModeJeu[] = ['express', 'debat', 'campagne', 'semi', 'marathon', 'ultra'];
+const FORMATS: readonly OptionFormat[] = ORDRE_MODES.map((m, i) => ({
+  id: m,
+  nom: MODES[m].nom,
+  nombre: MODES[m].questions,
+  unite: 'questions',
+  detail: MODES[m].duree,
+  niveau: i + 1,
+  repere: m === 'express' ? 'Idéal pour commencer' : undefined,
+}));
+
+type ModeAccueil = 'quiz' | 'duel';
+const BASE_JOUER = 'jouer';
 
 interface Props {
   enCours: boolean;
@@ -47,45 +67,41 @@ function Reprise({ titre, detail, onClick }: { titre: string; detail?: string; o
   return (
     <button type="button" onClick={onClick} className="carte flex w-full items-center justify-between gap-4 border-accent/60 p-4 text-left">
       <span>
-        <span className="block font-titre text-lg font-bold">{titre}</span>
+        <span className="block font-titre text-lg font-bold text-marine">{titre}</span>
         {detail && <span className="text-sm text-discret">{detail}</span>}
       </span>
-      <span aria-hidden="true" className="grid size-10 shrink-0 place-items-center rounded-full bg-accent font-titre text-xl font-bold text-fond">
-        →
+      <span aria-hidden="true" className="grid size-10 shrink-0 place-items-center rounded-full bg-accent text-carte">
+        <IconeFleche />
       </span>
     </button>
   );
 }
 
 /**
- * Aperçu d'une proposition, à droite du titre : purement décoratif (masqué aux lecteurs d'écran, rien de cliquable).
- * L'énoncé est remplacé par des traits : aucun thème ni aucune mesure n'est mis en avant sur l'accueil.
+ * Illustration du haut de page, à droite du titre : purement décorative (masquée aux lecteurs d'écran, rien de cliquable).
+ * Le drapeau n'a aucun emblème, la mascotte ne montre aucun thème ni aucune mesure : rien n'est mis en avant.
  */
-function Apercu() {
+function Illustration() {
   return (
-    <div aria-hidden="true" className="carte relative mx-auto w-full max-w-sm rotate-1 p-5 select-none">
-      <div className="flex items-center justify-between text-xs font-semibold text-discret">
-        <span>7 / 20</span>
-        <span className="jauge w-2/3">
-          <span className="block w-1/3" />
-        </span>
+    <div aria-hidden="true" className="accueil-art select-none">
+      <div className="accueil-orbite" />
+      <div className="accueil-orbite accueil-orbite-interne" />
+      <div className="accueil-drapeau">
+        <div className="drapeau-grand">
+          <i />
+          <i />
+          <i />
+        </div>
+        <div className="flex flex-col items-center gap-1">
+          <span className="surtitre text-[0.6875rem]">Élection présidentielle</span>
+          <strong className="font-titre text-lg font-semibold text-marine">France · 2027</strong>
+        </div>
       </div>
-      <div className="mt-5 flex flex-col gap-2">
-        <span className="h-3.5 w-11/12 rounded-full bg-encre/80" />
-        <span className="h-3.5 w-full rounded-full bg-encre/80" />
-        <span className="h-3.5 w-3/5 rounded-full bg-encre/80" />
-      </div>
-      <div className="mt-5 flex flex-col gap-1.5">
-        {ECHELLE.map((e) => (
-          <span key={e.valeur} className={`rounded-xl border px-3 py-2 text-sm font-medium ${INTENSITE[e.valeur]}`}>
-            {e.libelle}
-          </span>
-        ))}
-      </div>
-      <figure className="absolute -top-12 -right-3 flex flex-col items-center sm:-right-8">
-        <Mascotte attitude="accueil" taille={92} />
+      <figure className="accueil-mascotte">
+        <Mascotte attitude="accueil" taille={84} />
         <figcaption className="pilule -mt-1 px-2.5 py-0.5 text-xs">{NOM_MASCOTTE}</figcaption>
       </figure>
+      <span className="accueil-art-note">Comprendre avant de choisir</span>
     </div>
   );
 }
@@ -94,7 +110,7 @@ function Section({ id, surtitre, titre, intro, children, bande = false }: { id?:
   return (
     <section id={id} aria-labelledby={id ? `titre-${id}` : undefined} className={`scroll-mt-20 py-12 md:py-16 ${bande ? 'border-y border-trait bg-fond-bas' : ''}`}>
       <div className="conteneur">
-        <p className="surtitre">{surtitre}</p>
+        <p className="surtitre surtitre-point">{surtitre}</p>
         <h2 id={id ? `titre-${id}` : undefined} className="titre-section mt-2 max-w-2xl">
           {titre}
         </h2>
@@ -102,19 +118,6 @@ function Section({ id, surtitre, titre, intro, children, bande = false }: { id?:
         <div className="mt-8">{children}</div>
       </div>
     </section>
-  );
-}
-
-const HAUTEURS = ['h-1.5', 'h-2.5', 'h-3.5', 'h-4.5', 'h-5.5', 'h-6.5'] as const;
-
-/** Longueur d'un format, en barres : un repère visuel, sans valeur (décoratif). */
-function Longueur({ niveau }: { niveau: number }) {
-  return (
-    <span aria-hidden="true" className="flex items-end gap-0.5">
-      {[1, 2, 3, 4, 5, 6].map((n) => (
-        <span key={n} className={`w-1.5 rounded-full bg-current ${n <= niveau ? '' : 'opacity-25'} ${HAUTEURS[n - 1]}`} />
-      ))}
-    </span>
   );
 }
 
@@ -182,41 +185,23 @@ const QUESTIONS_FREQUENTES: readonly { question: string; reponse: string }[] = [
 
 export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, onReprendre, onVoirResultats, duelEnCours, duelTermine, onDuel, onReprendreDuel, onVoirResultatsDuel }: Props) {
   const reprises = enCours || terminee || duelEnCours || duelTermine;
-
-  const carteMode = (mode: ModeJeu, niveau: number, vedette = false) => (
-    <li key={mode}>
-      <button
-        type="button"
-        onClick={() => onCommencer(mode)}
-        className={`flex h-full w-full flex-col gap-3 rounded-2xl p-5 text-left transition-transform active:translate-y-0.5 ${
-          vedette ? 'bg-accent text-fond shadow-[0_5px_0_var(--color-accent-fonce)]' : 'carte hover:border-accent'
-        }`}
-      >
-        <span className="flex items-start justify-between gap-3">
-          <span className="font-titre text-2xl leading-tight font-bold">
-            {MODES[mode].nom} · {MODES[mode].questions} questions
-          </span>
-          <span className={vedette ? '' : 'text-accent'}>
-            <Longueur niveau={niveau} />
-          </span>
-        </span>
-        <span className={vedette ? '' : 'text-discret'}>{MODES[mode].duree}</span>
-        {vedette && <span className="mt-auto w-fit rounded-full bg-fond px-3 py-1 text-sm font-bold text-accent">Idéal pour commencer</span>}
-      </button>
-    </li>
-  );
+  const [mode, setMode] = useState<ModeAccueil>('quiz');
 
   return (
     <main>
       {/* ── Haut de page ── */}
-      <section className="halo">
-        <div className="conteneur grid items-center gap-14 pt-8 pb-14 md:pt-14 md:pb-20 lg:grid-cols-[1.15fr_0.85fr]">
+      <section>
+        <div className="conteneur grid items-center gap-10 pt-8 pb-12 md:pt-14 md:pb-16 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="entree flex flex-col items-start gap-5">
-            <p className="pilule">
-              <span aria-hidden="true" className="size-2 rounded-full bg-accent" />
+            <p className="surtitre flex items-center gap-2.5">
+              <span aria-hidden="true" className="tricolore">
+                <i />
+                <i />
+                <i />
+              </span>
               Présidentielle 2027 · comparateur indépendant
             </p>
-            <h1 className="font-titre text-[clamp(2.4rem,1.4rem+5vw,4.25rem)] leading-[1.02] font-extrabold tracking-[-0.035em]">
+            <h1 className="font-titre text-[clamp(2.4rem,1.4rem+5vw,4.25rem)] leading-[1.04] font-semibold tracking-[-0.035em] text-marine">
               Quels candidats pensent comme vous ? <span className="text-accent">Vérifiez à l'abri des regards.</span>
             </h1>
             <p className="max-w-xl text-lg leading-relaxed text-discret md:text-xl">
@@ -224,33 +209,29 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
               candidats. Chaque position est sourcée, et rien ne quitte votre téléphone.
             </p>
             <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
-              <button type="button" onClick={() => allerA('jouer')} className="btn btn-primaire btn-grand">
+              <Bouton grand fleche onClick={() => allerA('jouer')}>
                 Commencer le test
-              </button>
-              <button type="button" onClick={() => allerA('principe')} className="btn btn-secondaire btn-grand">
+              </Bouton>
+              <Bouton grand variante="secondaire" onClick={() => allerA('principe')}>
                 Comment ça marche
-              </button>
+              </Bouton>
             </div>
             <ul className="flex flex-wrap gap-x-5 gap-y-1 text-sm font-medium text-discret">
               {['Gratuit, sans inscription', 'Aucune réponse envoyée', 'Méthode et code publics'].map((t) => (
                 <li key={t} className="flex items-center gap-1.5">
-                  <span aria-hidden="true" className="text-accent">
-                    ✓
-                  </span>
+                  <IconeCoche />
                   {t}
                 </li>
               ))}
             </ul>
           </div>
-          <div className="pt-10 lg:pt-0">
-            <Apercu />
-          </div>
+          <Illustration />
         </div>
       </section>
 
       {/* ── Parties enregistrées sur cet appareil ── */}
       {reprises && (
-        <section aria-label="Vos parties sur cet appareil" className="conteneur -mt-4 mb-10 grid gap-3 md:grid-cols-2">
+        <section aria-label="Vos parties sur cet appareil" className="conteneur mb-10 grid gap-3 md:grid-cols-2">
           {enCours && <Reprise titre="Reprendre la partie en cours" detail="Vous retrouvez vos réponses là où vous les avez laissées." onClick={onReprendre} />}
           {terminee && <Reprise titre="Revoir mon dernier résultat" onClick={onVoirResultats} />}
           {duelEnCours && <Reprise titre="Reprendre le duel en cours" detail="Vous retrouvez vos réponses là où vous les avez laissées." onClick={onReprendreDuel} />}
@@ -259,12 +240,12 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
       )}
 
       {/* ── Chiffres ── */}
-      <section aria-label="Le comparateur en chiffres" className="border-y border-trait bg-fond-bas">
+      <section aria-label="Le comparateur en chiffres" className="accueil-chiffres">
         <dl className="conteneur grid grid-cols-2 gap-x-6 gap-y-6 py-8 md:grid-cols-4">
           {CHIFFRES.map((c) => (
             <div key={c.libelle} className="flex flex-col-reverse">
               <dt className="text-sm text-discret">{c.libelle}</dt>
-              <dd className="font-titre text-4xl font-extrabold tracking-tight md:text-5xl">{c.valeur}</dd>
+              <dd className="font-titre text-4xl font-semibold tracking-tight text-marine md:text-5xl">{c.valeur}</dd>
             </div>
           ))}
         </dl>
@@ -279,13 +260,13 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
       >
         <ol className="grid gap-4 md:grid-cols-3">
           {ETAPES.map((e, i) => (
-            <li key={e.titre} className="carte p-6">
-              <span aria-hidden="true" className="grid size-11 place-items-center rounded-full bg-accent/12 font-titre text-xl font-extrabold text-accent">
-                {i + 1}
+            <Carte as="li" key={e.titre} douce className="p-6">
+              <span aria-hidden="true" className="font-titre text-lg font-bold text-accent">
+                {String(i + 1).padStart(2, '0')}
               </span>
-              <h3 className="mt-4 font-titre text-xl font-bold">{e.titre}</h3>
+              <h3 className="mt-2 font-titre text-xl font-semibold text-marine">{e.titre}</h3>
               <p className="mt-2 leading-relaxed text-discret">{e.texte}</p>
-            </li>
+            </Carte>
           ))}
         </ol>
       </Section>
@@ -295,27 +276,59 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
         id="jouer"
         bande
         surtitre="Jouer"
-        titre="Choisissez votre format."
+        titre="Choisissez votre façon de jouer."
         intro="Plus la partie est longue, plus le rapprochement est fin. Vous pouvez vous arrêter à tout moment et reprendre plus tard."
       >
-        <ul className="grid gap-4 md:grid-cols-3">
-          {COURTS.map((m, i) => carteMode(m, i + 1, i === 0))}
-        </ul>
-        <h3 className="mt-8 font-titre text-lg font-bold">Pour les endurants</h3>
-        <ul className="mt-3 grid gap-4 md:grid-cols-3">
-          {LONGS.map((m, i) => carteMode(m, i + 4))}
-        </ul>
+        <div className="grid items-start gap-4 lg:grid-cols-[minmax(0,1.5fr)_minmax(16rem,0.9fr)]">
+          <Carte className="overflow-hidden">
+            <ChoixMode
+              base={BASE_JOUER}
+              libelle="Choisir un mode de jeu"
+              options={[
+                { id: 'quiz', libelle: 'Le quiz', icone: <IconeQuiz /> },
+                { id: 'duel', libelle: 'Duel avec un candidat', icone: <IconeDuel /> },
+              ]}
+              valeur={mode}
+              onChange={setMode}
+            />
+            <div role="tabpanel" id={idPanneau(BASE_JOUER, 'quiz')} aria-labelledby={idOnglet(BASE_JOUER, 'quiz')} hidden={mode !== 'quiz'} className="panneau-mode">
+              <SelecteurFormat legende="Choisissez votre format" options={FORMATS} onChoisir={(id) => onCommencer(id as ModeJeu)} />
+              <NoteConfiance className="mt-4">Vos réponses restent sur votre appareil.</NoteConfiance>
+            </div>
+            <div role="tabpanel" id={idPanneau(BASE_JOUER, 'duel')} aria-labelledby={idOnglet(BASE_JOUER, 'duel')} hidden={mode !== 'duel'} className="panneau-mode">
+              <p className="surtitre surtitre-point">Comparaison en direct</p>
+              <h3 className="mt-3 font-titre text-2xl font-semibold tracking-tight text-marine">Un candidat. Une position à la fois.</h3>
+              <p className="mt-3 max-w-prose leading-relaxed text-discret">
+                Choisissez un candidat et découvrez son programme au fil de vos réponses, avec les sources.
+              </p>
+              <Bouton pleine fleche onClick={onDuel} className="mt-6">
+                Choisir un candidat
+              </Bouton>
+              <NoteConfiance className="mt-4">Ce mode ne dit pas pour qui voter.</NoteConfiance>
+            </div>
+          </Carte>
 
-        <h3 className="mt-10 font-titre text-lg font-bold">Deux autres façons de jouer</h3>
-        <div className="mt-3 grid gap-4 md:grid-cols-2">
-          <button type="button" onClick={onDuel} className="carte flex flex-col gap-2 p-5 text-left hover:border-accent">
-            <span className="font-titre text-2xl font-bold">Duel avec un candidat</span>
-            <span className="leading-relaxed text-discret">Choisissez un candidat et découvrez son programme au fil de vos réponses, avec les sources.</span>
-          </button>
-          <button type="button" onClick={onDefi} className="carte flex flex-col gap-2 p-5 text-left hover:border-accent">
-            <span className="font-titre text-2xl font-bold">Défi « Qui a dit ça ? »</span>
-            <span className="leading-relaxed text-discret">Cinq positions sourcées, sans les noms. Un jeu à part, sans lien avec votre résultat.</span>
-          </button>
+          <aside className="flex flex-col gap-3">
+            <button type="button" onClick={onDefi} className="carte flex items-center gap-3 p-4 text-left hover:border-accent">
+              <span aria-hidden="true" className="grid size-10 shrink-0 place-items-center rounded-md bg-accent-doux text-accent">
+                <IconeQuestion taille={20} />
+              </span>
+              <span>
+                <span className="block font-titre text-lg font-semibold text-marine">Défi « Qui a dit ça ? »</span>
+                <span className="block text-sm leading-relaxed text-discret">Cinq positions sourcées, sans les noms. Un jeu à part, sans lien avec votre résultat.</span>
+              </span>
+              <IconeFleche className="ml-auto shrink-0 text-discret" />
+            </button>
+            <Carte douce className="flex items-start gap-3 p-4">
+              <span aria-hidden="true" className="grid size-10 shrink-0 place-items-center rounded-md bg-accent-doux text-accent">
+                <IconeBalance taille={20} />
+              </span>
+              <div>
+                <p className="font-titre text-lg font-semibold text-marine">Pas une consigne de vote.</p>
+                <p className="text-sm leading-relaxed text-discret">Un score rapproche vos réponses de positions publiques : il ne vous dit pas pour qui voter.</p>
+              </div>
+            </Carte>
+          </aside>
         </div>
       </Section>
 
@@ -323,22 +336,22 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
       <Section id="engagements" surtitre="Nos engagements" titre="Un comparateur que vous pouvez vérifier.">
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {ENGAGEMENTS.map((e) => (
-            <li key={e.titre} className="carte border-t-4 border-t-accent p-5">
-              <h3 className="font-titre text-xl font-bold">{e.titre}</h3>
+            <Carte as="li" key={e.titre} className="border-t-4 border-t-accent p-5">
+              <h3 className="font-titre text-xl font-semibold text-marine">{e.titre}</h3>
               <p className="mt-2 leading-relaxed text-discret">{e.texte}</p>
-            </li>
+            </Carte>
           ))}
         </ul>
-        <div className="carte mt-4 grid gap-4 p-6 md:grid-cols-[auto_1fr] md:items-center md:gap-8">
-          <h3 className="font-titre text-xl font-bold">Ce que l'outil ne fait pas</h3>
+        <Carte douce className="mt-4 grid gap-4 p-6 md:grid-cols-[auto_1fr] md:items-center md:gap-8">
+          <h3 className="font-titre text-xl font-semibold text-marine">Ce que l'outil ne fait pas</h3>
           <p className="leading-relaxed text-discret">
             Il ne vous dit pas pour qui voter. Il ne tient compte ni des personnalités, ni des sondages, ni des votes au
             Parlement. Un candidat dont les positions sont encore trop peu codées n'est pas classé : l'outil l'indique.
           </p>
-        </div>
-        <button type="button" onClick={() => onNaviguer('methode')} className="lien mt-4 text-base">
+        </Carte>
+        <Bouton variante="lien" onClick={() => onNaviguer('methode')} className="mt-4 text-base">
           Lire la méthode complète
-        </button>
+        </Bouton>
       </Section>
 
       {/* ── Candidats ── */}
@@ -351,7 +364,7 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
       >
         <dl className="flex flex-col gap-6">
           <div>
-            <dt className="font-titre text-lg font-bold">Comparés dans les résultats ({groupes.compares.length})</dt>
+            <dt className="font-titre text-lg font-semibold text-marine">Comparés dans les résultats ({groupes.compares.length})</dt>
             <dd className="mt-3 flex flex-wrap gap-2">
               {groupes.compares.map((c) => (
                 <span key={c.id} className="pilule">
@@ -375,9 +388,9 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
             </div>
           ))}
         </dl>
-        <button type="button" onClick={() => onNaviguer('candidats')} className="btn btn-secondaire mt-8">
+        <Bouton variante="secondaire" onClick={() => onNaviguer('candidats')} className="mt-8">
           Fiches et critère d'inclusion
-        </button>
+        </Bouton>
       </Section>
 
       {/* ── Questions fréquentes ── */}
@@ -385,7 +398,7 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
         <div className="grid gap-3 lg:grid-cols-2 lg:items-start">
           {QUESTIONS_FREQUENTES.map((q) => (
             <details key={q.question} className="depliant carte px-5 py-2">
-              <summary className="font-titre text-lg font-bold">{q.question}</summary>
+              <summary className="font-titre text-lg font-semibold text-marine">{q.question}</summary>
               <p className="pt-1 pb-3 leading-relaxed text-discret">{q.reponse}</p>
             </details>
           ))}
@@ -394,12 +407,12 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
 
       {/* ── Dernier appel et réglages ── */}
       <section className="conteneur grid gap-4 lg:grid-cols-[1.3fr_1fr]">
-        <div className="flex flex-col items-start justify-center gap-4 rounded-3xl bg-accent p-8 text-fond md:p-10">
-          <h2 className="titre-section">Cinq minutes suffisent pour une première idée.</h2>
+        <div className="flex flex-col items-start justify-center gap-4 rounded-xl bg-accent p-8 text-carte md:p-10">
+          <h2 className="titre-section text-carte">Cinq minutes suffisent pour une première idée.</h2>
           <p className="max-w-md text-lg leading-relaxed">Vingt propositions, puis votre rapprochement avec les candidats, sources à l'appui.</p>
-          <button type="button" onClick={() => allerA('jouer')} className="btn btn-grand bg-fond text-encre shadow-[0_4px_0_var(--color-accent-fonce)] active:translate-y-0.5">
+          <Bouton grand variante="inverse" onClick={() => allerA('jouer')}>
             Choisir un format
-          </button>
+          </Bouton>
         </div>
         <Reglages />
       </section>

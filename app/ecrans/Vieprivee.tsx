@@ -25,7 +25,7 @@ export function Vieprivee({ onRetour, onToutEffacer }: Props) {
       <section>
         <h2 className="font-titre text-2xl font-bold tracking-tight">Ce qui reste sur votre téléphone</h2>
         <p className="mt-2">
-          Vos réponses, la partie en cours, votre dernier résultat, vos badges (de simples compteurs d'usage, sans nom de candidat ni réponse), vos réglages (apparence, son) et la liste des questions déjà vues (pour ne pas vous les
+          Vos réponses, la partie en cours, votre dernier résultat, vos badges (de simples compteurs d'usage, sans nom de candidat ni réponse), votre réglage du son et la liste des questions déjà vues (pour ne pas vous les
           reposer) sont enregistrés dans le stockage de votre navigateur, sur votre appareil seulement. Le calcul des résultats
           se fait entièrement sur votre téléphone. Aucune réponse n'est envoyée, et aucune mesure d'audience, aucun traceur,
           aucun script ou police externe n'est utilisé.
@@ -49,7 +49,7 @@ export function Vieprivee({ onRetour, onToutEffacer }: Props) {
 
       <section>
         <h2 className="font-titre text-2xl font-bold tracking-tight">Tout effacer</h2>
-        <p className="mt-2">Ce bouton supprime de cet appareil la partie, le résultat, l'historique des questions vues, les badges et vos réglages (apparence, son).</p>
+        <p className="mt-2">Ce bouton supprime de cet appareil la partie, le résultat, l'historique des questions vues, les badges et votre réglage du son.</p>
         <button type="button" onClick={onToutEffacer} className="btn btn-secondaire mt-4">
           Tout effacer sur cet appareil
         </button>

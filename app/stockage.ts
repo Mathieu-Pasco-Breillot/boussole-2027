@@ -15,9 +15,10 @@ const CLE_DUEL = 'isoloir:duel';
 const CLE_VUES = 'isoloir:vues';
 const CLE_BADGES = 'isoloir:badges';
 export const EVENEMENT_BADGES = 'isoloir:badges';
-/** Réglages de l'appareil (lus et écrits par reglages.ts) ; effacés eux aussi par « tout effacer ». */
-export const CLE_APPARENCE = 'isoloir:apparence';
+/** Réglage de l'appareil (lu et écrit par reglages.ts) ; effacé lui aussi par « tout effacer ». */
 export const CLE_SON = 'isoloir:son';
+/** Ancien réglage d'apparence (thème sombre retiré) : plus lu, mais encore effacé chez ceux qui l'avaient enregistré. */
+const CLE_APPARENCE_RETIREE = 'isoloir:apparence';
 
 function lire(cle: string): unknown {
   try {
@@ -98,7 +99,7 @@ export function toutEffacer(): void {
     localStorage.removeItem(CLE_DUEL);
     localStorage.removeItem(CLE_VUES);
     localStorage.removeItem(CLE_BADGES);
-    localStorage.removeItem(CLE_APPARENCE);
+    localStorage.removeItem(CLE_APPARENCE_RETIREE);
     localStorage.removeItem(CLE_SON);
   } catch {
     /* rien à effacer */

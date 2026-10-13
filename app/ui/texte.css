@@ -1,0 +1,45 @@
+/* Typographie : surtitres (« eyebrows ») et titres. Titres en police d'affichage, couleur marine, serrés. */
+@layer components {
+  .surtitre {
+    font-size: 0.75rem;
+    line-height: 1.4;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--color-discret);
+  }
+
+  /* Surtitre à puce : la puce est décorative. */
+  .surtitre-point {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+  }
+
+  .surtitre-point::before {
+    content: '';
+    flex: none;
+    width: 0.45rem;
+    height: 0.45rem;
+    border-radius: 9999px;
+    background: var(--color-accent);
+  }
+
+  .titre-page {
+    font-family: var(--font-titre);
+    font-weight: 650;
+    font-size: clamp(2rem, 1.4rem + 2.6vw, 3rem);
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    color: var(--color-marine);
+  }
+
+  .titre-section {
+    font-family: var(--font-titre);
+    font-weight: 650;
+    font-size: clamp(1.5rem, 1.25rem + 1.1vw, 2rem);
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+    color: var(--color-marine);
+  }
+}

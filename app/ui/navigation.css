@@ -1,0 +1,99 @@
+/* Marque, en-tête du site et liens de navigation. */
+@layer components {
+  .marque {
+    display: grid;
+    flex: none;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.7rem;
+    background: var(--color-accent);
+  }
+
+  .marque > svg {
+    width: 72%;
+    height: 72%;
+  }
+
+  .marque-petite {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 0.55rem;
+  }
+
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: var(--color-marine);
+    font-family: var(--font-titre);
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+  }
+
+  .logo-petit {
+    font-size: 1rem;
+  }
+
+  .logo-annee {
+    margin-left: 0.35rem;
+    color: var(--color-discret);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    vertical-align: 0.15em;
+  }
+
+  .entete {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    border-bottom: 1px solid var(--color-trait);
+    background: color-mix(in oklab, var(--color-fond) 92%, transparent);
+    backdrop-filter: blur(10px);
+  }
+
+  .entete-interieur {
+    display: flex;
+    height: 3.75rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  @media (min-width: 768px) {
+    .entete-interieur {
+      height: 4.25rem;
+    }
+  }
+
+  .lien-nav {
+    position: relative;
+    display: inline-flex;
+    min-height: 2.75rem;
+    cursor: pointer;
+    align-items: center;
+    padding-inline: 0.9rem;
+    color: var(--color-discret);
+    font-size: 0.9375rem;
+    font-weight: 600;
+  }
+
+  @media (hover: hover) {
+    .lien-nav:hover {
+      color: var(--color-encre);
+    }
+  }
+
+  .lien-nav[aria-current='page'] {
+    color: var(--color-accent);
+  }
+
+  .lien-nav[aria-current='page']::after {
+    content: '';
+    position: absolute;
+    inset: auto 0.9rem -0.25rem;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-france-bleu) 0 33.333%, var(--color-trait) 33.333% 66.666%, var(--color-france-rouge) 66.666%);
+  }
+}

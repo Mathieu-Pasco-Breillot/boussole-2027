@@ -6,6 +6,9 @@ import { questionCourante, situation } from '../jeu.ts';
 import { Depliants } from './Depliants.tsx';
 import { ECHELLE, libelleTheme } from '../libelles.ts';
 import { Texte } from '../glossaire/Texte.tsx';
+import { EnteteParcours } from '../ui/EnteteParcours.tsx';
+import { NoteConfiance } from '../ui/NoteConfiance.tsx';
+import { ProgressionParcours } from '../ui/ProgressionParcours.tsx';
 
 interface Props {
   partie: Partie;
@@ -13,15 +16,6 @@ interface Props {
   onReculer: () => void;
   onQuitter: () => void;
 }
-
-/** Une seule teinte (l'or), d'intensité croissante de part et d'autre du centre : ni bien ni mal. */
-export const INTENSITE: Record<number, string> = {
-  2: 'bg-accent/45 border-accent',
-  1: 'bg-accent/25 border-accent/70',
-  0: 'bg-accent/8 border-accent/40',
-  [-1]: 'bg-accent/25 border-accent/70',
-  [-2]: 'bg-accent/45 border-accent',
-};
 
 export function Quiz({ partie, onRepondre, onReculer, onQuitter }: Props) {
   const question = questionCourante(partie);
@@ -46,8 +40,13 @@ export function Quiz({ partie, onRepondre, onReculer, onQuitter }: Props) {
   const echelle = partie.echelleInversee ? [...ECHELLE].reverse() : ECHELLE;
 
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-5xl flex-col px-5 pt-4 pb-6 md:px-8 md:pt-6">
-      <EnteteQuiz position={partie.position} total={total} avancement={partie.position} onQuitter={onQuitter} />
+    <main className="parcours">
+      <EnteteParcours>
+        <button type="button" onClick={onQuitter} className="lien">
+          Quitter
+        </button>
+      </EnteteParcours>
+      <ProgressionParcours etiquette="Proposition" position={partie.position} total={total} avancement={partie.position} />
 
       <AnimatePresence mode="wait">
         <motion.div
@@ -56,74 +55,42 @@ export function Quiz({ partie, onRepondre, onReculer, onQuitter }: Props) {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -24 }}
           transition={{ duration: reduit ? 0 : 0.2 }}
-          className="mt-6 grid flex-1 content-start gap-6 lg:mt-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-12"
+          className="mt-8 flex-1"
         >
-          <div>
-            {/* Le thème, à titre indicatif : le quiz s'enchaîne sans écran intermédiaire entre deux thèmes. */}
-            <p className="pilule surtitre" data-testid="theme">
-              {libelleTheme(s.theme)}
-            </p>
-            <p className="mt-4 text-sm font-medium text-discret">Êtes-vous d'accord ?</p>
-            <h1 className="mt-1 font-titre text-[clamp(1.6rem,1.25rem+1.6vw,2.4rem)] leading-[1.18] font-bold tracking-[-0.015em]">
-              <Texte>{question.enonce}</Texte>
-            </h1>
-            <Depliants question={question} />
+          {/* Le thème, à titre indicatif : le quiz s'enchaîne sans écran intermédiaire entre deux thèmes. */}
+          <p className="surtitre surtitre-point" data-testid="theme">
+            {libelleTheme(s.theme)}
+          </p>
+          <p className="question-aide">Êtes-vous d'accord ?</p>
+          <h1 className="question-titre">
+            <Texte>{question.enonce}</Texte>
+          </h1>
+          <Depliants question={question} />
+
+          <div role="group" aria-label="Votre réponse" className="reponses mt-6">
+            {echelle.map((e) => (
+              <button key={e.valeur} type="button" aria-pressed={deja?.valeur === e.valeur} onClick={() => repondre(e.valeur, important)} className="reponse">
+                {e.libelle}
+              </button>
+            ))}
           </div>
 
-          <div className="flex flex-col lg:self-start lg:rounded-3xl lg:border lg:border-trait lg:bg-carte lg:p-6 lg:shadow-xl lg:shadow-black/5">
-            <div className="flex flex-col gap-2">
-              {echelle.map((e) => (
-                <button
-                  key={e.valeur}
-                  type="button"
-                  aria-pressed={deja?.valeur === e.valeur}
-                  onClick={() => repondre(e.valeur, important)}
-                  className={`reponse ${INTENSITE[e.valeur]} ${deja?.valeur === e.valeur ? 'ring-3 ring-encre' : ''}`}
-                >
-                  {e.libelle}
-                </button>
-              ))}
-            </div>
+          <button type="button" aria-pressed={important} onClick={() => setImportant((v) => !v)} className="bascule mt-3">
+            {important ? '★' : '☆'} Très important pour moi
+          </button>
 
-            <button
-              type="button"
-              aria-pressed={important}
-              onClick={() => setImportant((v) => !v)}
-              className={`mt-4 min-h-12 rounded-xl border px-4 py-3 text-left font-medium ${
-                important ? 'border-accent bg-accent/15' : 'border-trait bg-carte text-discret lg:bg-fond'
-              }`}
-            >
-              {important ? '★' : '☆'} Très important pour moi
+          <div className="mt-2 flex items-center justify-between gap-3">
+            <button type="button" onClick={reculer} disabled={partie.position === 0} className="lien disabled:opacity-30">
+              ← Proposition précédente
             </button>
-
-            <div className="mt-2 flex items-center justify-between gap-3">
-              <button type="button" onClick={reculer} disabled={partie.position === 0} className="lien disabled:opacity-30">
-                ← Proposition précédente
-              </button>
-              <button type="button" onClick={() => repondre('sans_avis', false)} className="lien">
-                Sans avis
-              </button>
-            </div>
+            <button type="button" onClick={() => repondre('sans_avis', false)} className="lien">
+              Sans avis
+            </button>
           </div>
         </motion.div>
       </AnimatePresence>
-    </main>
-  );
-}
 
-/** Haut des écrans de quiz (classique et duel) : quitter, barre de progression, compteur. */
-export function EnteteQuiz({ position, total, avancement, onQuitter }: { position: number; total: number; avancement: number; onQuitter: () => void }) {
-  return (
-    <div className="flex items-center gap-4">
-      <button type="button" onClick={onQuitter} className="lien shrink-0">
-        Quitter
-      </button>
-      <div className="jauge flex-1" role="progressbar" aria-label="Progression" aria-valuemin={0} aria-valuemax={total} aria-valuenow={avancement}>
-        <div className="transition-[width] duration-300" style={{ width: `${(avancement / total) * 100}%` }} />
-      </div>
-      <span aria-live="polite" className="shrink-0 font-titre text-sm font-bold tabular-nums">
-        {position + 1} / {total}
-      </span>
-    </div>
+      <NoteConfiance className="mt-8 justify-center">Vos réponses restent sur votre appareil.</NoteConfiance>
+    </main>
   );
 }

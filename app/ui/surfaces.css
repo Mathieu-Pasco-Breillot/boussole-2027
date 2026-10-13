@@ -1,0 +1,129 @@
+/* Surfaces et petits éléments : cartes, pastilles, jauge, choix segmenté, encarts dépliables. */
+@layer components {
+  .carte {
+    border: 1px solid var(--color-trait);
+    border-radius: var(--radius-lg);
+    background: var(--color-carte);
+    box-shadow: var(--shadow-carte);
+  }
+
+  /* Carte en retrait : fond de bande, sans ombre (« Comment ça marche », encarts éditoriaux). */
+  .carte-douce {
+    background: var(--color-fond-bas);
+    box-shadow: none;
+  }
+
+  /* Carte d'information : liseré d'accent à gauche. */
+  .carte-note {
+    border-left: 4px solid var(--color-accent);
+  }
+
+  .pilule {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid var(--color-trait);
+    border-radius: 9999px;
+    background: var(--color-carte);
+    padding: 0.3rem 0.85rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+  /* Choix segmenté (radios masquées dans des étiquettes) : importance d'un thème, taille d'un duel. */
+  .segment {
+    display: flex;
+    min-height: 2.75rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--color-trait);
+    border-radius: var(--radius-md);
+    background: var(--color-carte);
+    padding-inline: 0.25rem;
+    color: var(--color-encre);
+    font-size: 0.875rem;
+    text-align: center;
+  }
+
+  @media (hover: hover) {
+    .segment:hover {
+      border-color: var(--color-accent);
+    }
+  }
+
+  .segment:has(:checked) {
+    border-color: var(--color-accent);
+    background: var(--color-accent-doux);
+    box-shadow: inset 0 0 0 1px var(--color-accent);
+    color: var(--color-accent);
+    font-weight: 700;
+  }
+
+  .segment:has(:focus-visible) {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+
+  /* Encart replié/déplié (<details>) : thèmes de la banque, fiches, questions fréquentes. */
+  .depliant > summary {
+    display: flex;
+    min-height: 2.75rem;
+    cursor: pointer;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+
+  .depliant > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .depliant > summary::after {
+    content: '+' / '';
+    flex: none;
+    width: 1.75rem;
+    height: 1.75rem;
+    border: 1px solid var(--color-trait);
+    border-radius: 9999px;
+    color: var(--color-accent);
+    font: 700 1.1rem/1.6rem var(--font-titre);
+    text-align: center;
+  }
+
+  .depliant[open] > summary::after {
+    content: '–' / '';
+  }
+
+  /* Barres de score : une seule couleur. */
+  .jauge {
+    height: 0.625rem;
+    overflow: hidden;
+    border-radius: 9999px;
+    background: color-mix(in oklab, var(--color-accent) 14%, transparent);
+  }
+
+  .jauge > * {
+    height: 100%;
+    border-radius: 9999px;
+    background: var(--color-accent);
+  }
+}
+
+@layer components {
+  /* Rappel de confiance (bouclier + phrase) : engagements de vie privée et de neutralité. */
+  .note-confiance {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-discret);
+    font-size: 0.8125rem;
+    line-height: 1.4;
+  }
+
+  .note-confiance > svg {
+    flex: none;
+    color: var(--color-accent);
+  }
+}
