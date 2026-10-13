@@ -1,6 +1,6 @@
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Locator, type Page } from '@playwright/test';
-import { lancer } from './outils.ts';
+import { lancer, repondreQuelques } from './outils.ts';
 
 /**
  * Glossaire des sigles (issue #7). Téléphone : projet par défaut (Pixel 7, écran tactile, sans survol) ; feuille du
@@ -197,5 +197,157 @@ test.describe('sigles dans les textes', () => {
       await expect(panneau).toBeHidden();
       await expect(apres).toBeFocused();
     });
+  });
+});
+
+test.describe('bulle, panneau et feuille sur un sigle', () => {
+  test('téléphone : (i) à la première occurrence d’un bloc seulement ; tap, feuille, retour du focus', async ({ page }) => {
+    await ouvrirFicheDepliee(page);
+    // Reformulation de FIS-019 sur la fiche : « TVA » deux fois dans le même paragraphe.
+    const bloc = page.locator('[data-extraits] p', { hasText: 'veut instaurer une TVA à 0 %' }).first();
+    const tva = bloc.locator('.sigle-bouton[data-sigle="TVA"]');
+    expect(await tva.count()).toBeGreaterThanOrEqual(2);
+    const contenus = await tva.evaluateAll((els) => els.map((e) => e.ownerDocument.defaultView!.getComputedStyle(e, '::after').content));
+    expect(contenus[0]).not.toBe('none');
+    expect(contenus.slice(1)).toEqual(contenus.slice(1).map(() => 'none'));
+
+    const feuille = page.getByRole('dialog', { name: 'Glossaire' });
+    await tva.nth(1).tap();
+    await expect(feuille.locator('[data-definition-demandee]')).toContainText('Taxe sur la valeur ajoutée');
+    await expect(page.getByRole('tooltip')).toHaveCount(0);
+    await verifierAxe(page, 'feuille ouverte sur un sigle');
+    await page.keyboard.press('Escape');
+    await expect(feuille).toBeHidden();
+    await expect(tva.nth(1)).toBeFocused();
+
+    await tva.first().tap();
+    await feuille.getByRole('button', { name: 'Fermer le glossaire' }).tap();
+    await expect(feuille).toBeHidden();
+    await expect(tva.first()).toBeFocused();
+
+    await tva.first().tap();
+    await expect(feuille).toBeVisible();
+    await page.touchscreen.tap(200, 20);
+    await expect(feuille).toBeHidden();
+    await expect(tva.first()).toBeFocused();
+  });
+
+  test.describe('ordinateur', () => {
+    test.use(ORDINATEUR);
+
+    test('la bulle : au focus et au survol, survolable, fermée par Échap ; pas de (i)', async ({ page }) => {
+      const tva = await ouvrirBanqueFiscalite(page);
+      expect(await tva.evaluate((e) => e.ownerDocument.defaultView!.getComputedStyle(e, '::after').content)).toBe('none');
+      const bulle = page.getByRole('tooltip');
+      await tva.focus();
+      await expect(bulle).toContainText('Taxe sur la valeur ajoutée');
+      await expect(tva).toHaveAttribute('aria-describedby', (await bulle.getAttribute('id'))!);
+      await verifierAxe(page, 'bulle ouverte');
+      await page.keyboard.press('Escape');
+      await expect(bulle).toHaveCount(0);
+      await expect(tva).toBeFocused();
+      await expect(tva).not.toHaveAttribute('aria-describedby');
+      await tva.blur();
+      await page.mouse.move(0, 0);
+      await tva.hover();
+      await expect(bulle).toBeVisible();
+      // WCAG 1.4.13 : le pointeur passe du sigle à la bulle sans la fermer.
+      await bulle.hover();
+      await expect(bulle).toBeVisible();
+      await page.mouse.move(0, 0);
+      await expect(bulle).toHaveCount(0);
+    });
+
+    test('le clic ouvre le panneau sur l’entrée, l’amène dans la vue, et y revient à chaque clic', async ({ page }) => {
+      const tva = await ouvrirBanqueFiscalite(page);
+      await tva.click();
+      const panneau = page.getByRole('complementary', { name: 'Glossaire' });
+      const entree = panneau.locator('#glossaire-TVA');
+      await expect(entree).toHaveAttribute('aria-current', 'true');
+      await expect(entree).toBeInViewport();
+      await expect(tva).toBeFocused();
+      await verifierAxe(page, 'panneau ouvert sur une entrée');
+      // Remonter la liste puis recliquer : le défilement repart.
+      await panneau.getByRole('region', { name: 'Liste du glossaire' }).hover();
+      await page.mouse.wheel(0, -100_000);
+      await expect(entree).not.toBeInViewport();
+      await tva.click();
+      await expect(entree).toBeInViewport();
+      // Échap ferme la bulle, pas le panneau (non modal).
+      await page.mouse.move(0, 0);
+      await tva.hover();
+      await expect(page.getByRole('tooltip')).toBeVisible();
+      await page.keyboard.press('Escape');
+      await expect(page.getByRole('tooltip')).toHaveCount(0);
+      await expect(panneau).toBeVisible();
+      await page.getByRole('button', { name: 'Glossaire', exact: true }).click();
+      await expect(panneau).toBeHidden();
+    });
+
+    test.describe('animations permises', () => {
+      test.use({ reducedMotion: 'no-preference' });
+
+      test('le défilement doux amène aussi l’entrée dans la vue', async ({ page }) => {
+        const tva = await ouvrirBanqueFiscalite(page);
+        await tva.click();
+        await expect(page.getByRole('complementary', { name: 'Glossaire' }).locator('#glossaire-TVA')).toBeInViewport();
+      });
+    });
+  });
+});
+
+test.describe('bulle dans le titre d’une question', () => {
+  // 360 px avec survol : le pire cas pour une bulle de 20 rem ancrée à gauche du sigle.
+  test.use({ viewport: { width: 360, height: 780 }, isMobile: false, hasTouch: false });
+
+  test('la bulle ne déborde pas de l’écran et ne casse pas l’accessibilité', async ({ page }) => {
+    test.setTimeout(120_000);
+    await lancer(page, 'Ultra');
+    const sigle = page.getByRole('heading', { level: 1 }).first().locator('.sigle-bouton');
+    // Une question sur dix environ contient un sigle : on avance jusqu'à en trouver une.
+    for (let i = 0; i < 100 && (await sigle.count()) === 0; i++) await repondreQuelques(page, 1);
+    expect(await sigle.count(), 'aucune question à sigle trouvée').toBeGreaterThan(0);
+    for (const s of await sigle.all()) {
+      await s.focus();
+      const bulle = page.getByRole('tooltip');
+      await expect(bulle).toBeVisible();
+      const b = (await bulle.boundingBox())!;
+      expect(b.x).toBeGreaterThanOrEqual(0);
+      expect(b.x + b.width).toBeLessThanOrEqual(360);
+      expect(b.y).toBeGreaterThanOrEqual(0);
+      expect(await page.evaluate('document.documentElement.scrollWidth')).toBeLessThanOrEqual(360);
+      await verifierAxe(page, 'bulle dans le titre h1');
+      await page.keyboard.press('Escape');
+      await expect(bulle).toHaveCount(0);
+    }
+  });
+});
+
+test.describe('un seul (i) par sigle et par bloc de texte', () => {
+  test('documents Markdown : jamais deux (i) pour un même sigle dans un paragraphe, une cellule ou un item', async ({ page }) => {
+    await page.goto('/');
+    await page.getByRole('button', { name: 'Méthode', exact: true }).click();
+    let sigles = 0;
+    for (const onglet of ['Méthodologie', 'Grille de codage', "Critère d'inclusion", 'Journal des modifications']) {
+      await page.getByRole('tab', { name: onglet }).click();
+      await expect(page.getByRole('tabpanel')).not.toContainText('Chargement…');
+      // Un bloc = le plus proche paragraphe, item, cellule, titre ou citation ; gras et italique n'en font pas un autre.
+      const marques = await page
+        .getByRole('tabpanel')
+        .locator('.sigle-bouton')
+        .evaluateAll((els) =>
+          els.map((e) => ({
+            sigle: e.getAttribute('data-sigle')!,
+            premiere: e.hasAttribute('data-premiere'),
+            bloc: [...e.ownerDocument.querySelectorAll('p, li, td, th, h2, h3, blockquote')].indexOf(e.closest('p, li, td, th, h2, h3, blockquote')!),
+          })),
+        );
+      sigles += marques.length;
+      const parBloc = new Map<string, number>();
+      for (const m of marques) if (m.premiere) parBloc.set(`${m.bloc}/${m.sigle}`, (parBloc.get(`${m.bloc}/${m.sigle}`) ?? 0) + 1);
+      expect([...parBloc].filter(([, n]) => n > 1).map(([k]) => `${onglet} : ${k}`)).toEqual([]);
+    }
+    // Le test ne vaut que si les documents contiennent des sigles.
+    expect(sigles).toBeGreaterThan(0);
   });
 });
