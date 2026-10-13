@@ -137,7 +137,8 @@ body {
   position: absolute;
   bottom: 100%;
   left: 0;
-  z-index: 30;
+  /* Au-dessus du panneau latéral (z-40), sous le bouton « Glossaire » (z-50) : sinon une bulle qui déborde passe dessous. */
+  z-index: 45;
   width: max-content;
   /* Au plus la moitié de l'écran : aligné à gauche ou à droite du sigle (Sigle.tsx), la bulle tient toujours dans l'écran. */
   max-width: min(20rem, 50vw);

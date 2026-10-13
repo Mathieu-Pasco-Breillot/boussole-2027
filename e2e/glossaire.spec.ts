@@ -284,6 +284,30 @@ test.describe('bulle, panneau et feuille sur un sigle', () => {
       await expect(panneau).toBeHidden();
     });
 
+    test('panneau ouvert : une bulle qui déborde sur le panneau reste au-dessus de lui', async ({ page }) => {
+      // 1024 px : le contenu ne garde que 640 px, une bulle de 20 rem ancrée à droite de la ligne recouvre le panneau.
+      await page.setViewportSize({ width: 1024, height: 800 });
+      await ouvrirBanqueFiscalite(page);
+      await page.getByRole('button', { name: 'Glossaire', exact: true }).click();
+      const panneau = page.getByRole('complementary', { name: 'Glossaire' });
+      await expect(panneau).toBeVisible();
+      const gauchePanneau = (await panneau.boundingBox())!.x;
+      const bulle = page.getByRole('tooltip');
+      let recouvrante = 0;
+      for (const sigle of await page.locator('details[open] .sigle-bouton:visible').all()) {
+        await page.mouse.move(0, 0);
+        await sigle.hover();
+        await expect(bulle).toBeVisible();
+        const b = (await bulle.boundingBox())!;
+        if (b.x + b.width <= gauchePanneau + 1) continue;
+        recouvrante += 1;
+        // Un point de la bulle dans la zone du panneau : c'est la bulle qui est dessus, pas le panneau.
+        const point = { x: (Math.max(b.x, gauchePanneau) + b.x + b.width) / 2, y: b.y + b.height / 2 };
+        expect(await bulle.evaluate((e, p) => e.ownerDocument.elementFromPoint(p.x, p.y)?.closest('[role="tooltip"]') !== null, point)).toBe(true);
+      }
+      expect(recouvrante, 'au moins une bulle recouvre le panneau').toBeGreaterThan(0);
+    });
+
     test.describe('animations permises', () => {
       test.use({ reducedMotion: 'no-preference' });
 
