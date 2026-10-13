@@ -49,6 +49,7 @@ le passage qui la fonde (reformulation, ou citation de 14 mots maximum). Une con
 - Les règles de codage sont dans `docs/grille-codage.md`, le calcul dans `docs/methodologie.md`.
 - Avant toute proposition : `npm run data:validate` et `npm test` doivent passer. La CI les exécute.
 - Chaque modification de `data/` est tracée dans `data/journal.json`.
+- Messages de commit au format conventional commits : voir [Messages de commit](#messages-de-commit).
 - Un nouveau sigle dans un texte affiché exige son entrée dans `data/glossaire.json`, ou une exception justifiée dans `app/glossaire/exceptions.ts` : `npm test` échoue sinon (voir `docs/glossaire/README.md`).
 
 ## Vie privée
@@ -58,11 +59,46 @@ simple serveur de fichiers statiques, configuré sans journal d'accès (`Caddyfi
 sécurité de contenu stricte. L'hébergeur (Railway) conserve ses propres journaux : voir la page « Vie privée »
 du site.
 
-## Mise en ligne
+## Versions et mise en ligne
 
-Le site est servi par Railway (https://mon-isoloir.up.railway.app) depuis la branche `develop` : chaque push
-sur `develop` déclenche un déploiement automatique (image construite avec le `Dockerfile`, servie par Caddy).
-Les tests de bout en bout tournent avec les mêmes en-têtes que le site en ligne, lus dans le `Caddyfile`.
+Les **données** (`data/`, avec `derive/` et `docs/`) et l'**application** ont chacune leur numéro de version
+([versionnage sémantique](https://semver.org/lang/fr/)), affiché en pied de page et sur la page Méthode du site :
+
+| Composant | Tag | Correctif (x.y.**Z**) | Mineure (x.**Y**.0) | Majeure (**X**.0.0) |
+|---|---|---|---|---|
+| Données | `donnees-vX.Y.Z` | corrections de codage | candidats, questions, codages ajoutés | changement de méthode : résultats non comparables |
+| Application | `application-vX.Y.Z` | corrections | nouvelles fonctions | rupture (anciennes parties illisibles…) |
+
+Les numéros sont calculés par [release-please](https://github.com/googleapis/release-please) à partir des messages
+de commit ([conventional commits](#messages-de-commit)) :
+
+1. chaque push sur `develop` met à jour une **PR de release** qui propose les nouveaux numéros et les notes de version ;
+2. fusionner cette PR crée les tags et les [GitHub Releases](https://github.com/Mathieu-Pasco-Breillot/choose-your-candidate-2027/releases),
+   puis avance la branche `main` sur le commit publié ;
+3. Railway déploie `main` en **production** (https://mon-isoloir.up.railway.app) et `develop` en **préproduction**,
+   signalée comme telle sur le site.
+
+L'image est construite avec le `Dockerfile` et servie par Caddy. Les tests de bout en bout tournent avec les mêmes
+en-têtes que le site en ligne, lus dans le `Caddyfile`. `main` ne reçoit jamais de commit direct.
+
+### Messages de commit
+
+Format [conventional commits](https://www.conventionalcommits.org/fr/) : type et portée en anglais ou en code,
+description en français. La CI refuse les messages qui ne le respectent pas.
+
+```
+fix(donnees): Arthaud × ECO-003 passe de −1 à +1 (R1)
+feat(donnees): codage de Raphaël Glucksmann (60 codes)
+feat(donnees)!: grille v2, scores recalculés      ← majeure, avec un pied « BREAKING CHANGE: … »
+feat(quiz): encart « Impact » dépliable
+fix(duel): la position s'affiche après la réponse
+docs(donnees): précision de la méthodologie § 4
+chore: mise à jour des dépendances               ← n'apparaît pas dans les notes de version
+```
+
+Le composant qui change de version dépend des fichiers touchés : un commit qui modifie `data/` fait évoluer la
+version des données, un commit qui modifie autre chose que `data/`, `derive/` et `docs/` fait évoluer celle de
+l'application. Toute modification de méthode passe par `data/journal.json`, donc par `data/`.
 
 ## Licences
 

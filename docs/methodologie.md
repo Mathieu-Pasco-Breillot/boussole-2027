@@ -163,6 +163,7 @@ Indicateur **séparé du score**. Chaque question est reliée aux scrutins perti
 - Ajout d'un candidat : procédure en 5 étapes (couverture de la banque, codage de tous sur les nouvelles questions, codage du candidat, recalcul de D et des ancres, journal).
 - Changement de position d'un candidat : recodage sur la source la plus récente, ancien code archivé.
 - Toute modification est consignée dans `journal.json`.
+- Les données publiées portent un numéro de version (« données vX.Y.Z »), affiché sur le site : le dernier chiffre change pour des corrections de codage, celui du milieu pour des ajouts (candidats, questions, codages), le premier pour un changement de méthode qui rend les résultats non comparables avec les versions précédentes. Chaque version a des notes publiques ; le journal reste le détail de référence.
 
 ## 10. Limites
 

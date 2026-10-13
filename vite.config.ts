@@ -3,8 +3,11 @@ import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 import { lireEntetesCaddy } from './scripts/lib/entetes-caddy.ts';
+import { lireVersions } from './scripts/lib/versions.ts';
 
 export default defineConfig({
+  // Versions des données et de l'application (manifeste release-please et CHANGELOG), affichées sur le site.
+  define: { __VERSIONS__: JSON.stringify(lireVersions(import.meta.dirname)) },
   plugins: [
     react(),
     tailwindcss(),

@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { SEUIL_CLASSEMENT_QUESTIONS } from '../../core/score/parametres.ts';
 import { MODES } from '../libelles.ts';
 import { paquet } from '../paquet.ts';
+import { EncadreVersions } from '../ecrans/Versions.tsx';
 import { Markdown } from './Markdown.tsx';
 import { chargerPages } from './donnees.ts';
 import type { Pages } from './donnees.ts';
@@ -108,8 +109,9 @@ export function Methode({ onRetour, graine, journal }: Props) {
         {pages && onglet === 'methodologie' && <Markdown source={pages.docs.methodologie} />}
         {pages && onglet === 'grille' && <Markdown source={pages.docs.grille} />}
         {pages && onglet === 'critere' && <Markdown source={pages.docs.critere} />}
+        {onglet === 'journal' && <EncadreVersions />}
         {pages && onglet === 'journal' && (
-          <ol className="flex flex-col gap-3">
+          <ol className="mt-4 flex flex-col gap-3">
             {[...pages.journal].reverse().map((e, i) => (
               <li key={i} className="rounded-xl bg-nuit-clair p-3 text-sm">
                 <p className="font-semibold">{e.date} · {e.type.replace(/_/g, ' ')}</p>

@@ -5,6 +5,7 @@ import { NOM_MASCOTTE } from '../habillage.ts';
 import { Mascotte } from './Mascotte.tsx';
 import { groupesCandidats, nomComplet } from '../listes.ts';
 import { MOTIFS_NON_EVALUATION } from '../libelles.ts';
+import { LigneVersions } from './Versions.tsx';
 
 const groupes = groupesCandidats();
 const noms = (l: readonly Parameters<typeof nomComplet>[0][]): string => l.map(nomComplet).join(', ');
@@ -180,6 +181,7 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onVieprivee, o
         <button type="button" onClick={onToutEffacer} className="w-fit underline">
           Tout effacer sur cet appareil
         </button>
+        <LigneVersions />
       </footer>
     </main>
   );
