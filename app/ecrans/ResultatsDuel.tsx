@@ -7,6 +7,7 @@ import { questionsParId } from '../jeu.ts';
 import { ECARTS, libelleTheme, libelleValeur, NATURES, TAILLES_DUEL_INFO } from '../libelles.ts';
 import { paquet } from '../paquet.ts';
 import { Detail } from './Resultats.tsx';
+import { Texte } from '../glossaire/Texte.tsx';
 
 interface Props {
   partie: PartieDuel;
@@ -79,7 +80,9 @@ export function ResultatsDuel({ partie, onFiche, onAutreDuel, onAccueil, onViepr
                 const p = positionSur(partie, id);
                 return (
                   <li key={id} className="rounded-xl bg-nuit-clair p-3 text-sm leading-relaxed">
-                    <p className="font-semibold">{q.enonce}</p>
+                    <p className="font-semibold">
+                      <Texte>{q.enonce}</Texte>
+                    </p>
                     <p className="text-sourdine">{libelleTheme(q.theme)}</p>
                     <p className="mt-1">
                       Votre réponse : <strong>{saisie.valeur === 'sans_avis' ? 'sans avis' : libelleValeur(saisie.valeur)}</strong>

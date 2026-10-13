@@ -28,7 +28,8 @@ for (const p of avertissements) console.warn(`! [${p.regle}] ${p.fichier} — ${
 const s = statistiques;
 console.log(
   `\n${s.candidats} candidats · ${s.themes} thèmes · ${s.questions} questions (${s.questions_actives} actives) · ` +
-    `${s.fichiers_positions} fichiers de positions · ${s.positions} positions · ${s.codes_publies} codes publiés`,
+    `${s.fichiers_positions} fichiers de positions · ${s.positions} positions · ${s.codes_publies} codes publiés · ` +
+    `${s.sigles_glossaire} sigles au glossaire`,
 );
 
 if (erreurs.length > 0) {

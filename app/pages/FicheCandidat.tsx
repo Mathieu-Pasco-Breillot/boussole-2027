@@ -2,6 +2,7 @@ import { Extraits } from '../ecrans/Extraits.tsx';
 import { EXPLICATIONS_MOTIFS, libelleTheme, libelleValeur, MOTIFS_NON_EVALUATION, NATURES, pourcentage, SEUIL_EVALUE, THEMES } from '../libelles.ts';
 import { questionsParId } from '../jeu.ts';
 import { paquet } from '../paquet.ts';
+import { Texte } from '../glossaire/Texte.tsx';
 
 const STATUTS: Record<string, string> = {
   evalue: 'Évalué',
@@ -81,7 +82,9 @@ export function FicheCandidat({ id, onRetour, libelleRetour = '← Retour' }: { 
               <ul className="mt-2 flex flex-col gap-3 text-sm">
                 {liste.map((p) => (
                   <li key={p.questionId} className="rounded-lg bg-nuit p-3">
-                    <p className="font-semibold">{q(p.questionId)?.enonce}</p>
+                    <p className="font-semibold">
+                      <Texte>{q(p.questionId)?.enonce}</Texte>
+                    </p>
                     <p className="mt-1">Position : <strong>{libelleValeur(p.code!)}</strong> ({NATURES[p.nature ?? ''] ?? p.nature})</p>
                     <Extraits extraits={p.extraits} className="mt-2" />
                   </li>

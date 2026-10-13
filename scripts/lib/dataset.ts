@@ -1,13 +1,14 @@
 import { createHash } from 'node:crypto';
 import { existsSync, readdirSync, readFileSync } from 'node:fs';
 import { basename, join, relative } from 'node:path';
-import type { Axes, Candidats, Journal, Positions, Questions } from '../../core/types.generated.ts';
+import type { Axes, Candidats, Glossaire, Journal, Positions, Questions } from '../../core/types.generated.ts';
 
 type FichierAxes = Axes.FichierAxes;
 type FichierCandidats = Candidats.FichierCandidats;
 type FichierJournal = Journal.FichierJournal;
 type FichierPositions = Positions.FichierPositions;
 type FichierQuestions = Questions.FichierQuestions;
+type FichierGlossaire = Glossaire.FichierGlossaire;
 
 /** Ensemble des fichiers de données, chargés en mémoire. */
 export interface Dataset {
@@ -18,9 +19,11 @@ export interface Dataset {
   /** Clé : identifiant du candidat = nom du fichier sans extension. */
   positions: Record<string, FichierPositions>;
   journal: FichierJournal;
+  /** Glossaire des sigles (issue #7). Hors empreinte, comme le journal : il n'a aucun effet sur les scores. */
+  glossaire: FichierGlossaire;
   /**
    * Empreinte SHA-256 des fichiers qui alimentent les calculs (candidats, axes, questions, positions).
-   * Le journal n'en fait pas partie : y ajouter une ligne ne doit pas invalider derive/.
+   * Le journal et le glossaire n'en font pas partie : les modifier ne doit pas invalider derive/.
    */
   empreinte: string;
 }
@@ -69,6 +72,7 @@ export function chargerDataset(racine: string): Dataset {
     positions[basename(f, '.json')] = calcul<FichierPositions>(join(data, 'positions', f));
   }
   const { valeur: journal } = lireJson<FichierJournal>(join(data, 'journal.json'), racine);
+  const { valeur: glossaire } = lireJson<FichierGlossaire>(join(data, 'glossaire.json'), racine);
 
-  return { axes, candidats, questions, positions, journal, empreinte: hash.digest('hex') };
+  return { axes, candidats, questions, positions, journal, glossaire, empreinte: hash.digest('hex') };
 }

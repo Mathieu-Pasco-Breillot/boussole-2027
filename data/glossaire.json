@@ -1,0 +1,528 @@
+[
+  {
+    "sigle": "AAH",
+    "developpe": "Allocation aux adultes handicapés",
+    "explication": "Prestation versée aux personnes handicapées disposant de faibles ressources, pour leur assurer un revenu minimum."
+  },
+  {
+    "sigle": "AASM",
+    "developpe": "Armement air-sol modulaire",
+    "explication": "Bombe guidée française, aussi appelée Hammer, larguée depuis un avion pour atteindre une cible au sol."
+  },
+  {
+    "sigle": "ADEME",
+    "developpe": "Agence de la transition écologique (à l'origine Agence de l'environnement et de la maîtrise de l'énergie)",
+    "explication": "Établissement public qui finance et conseille des projets d'économies d'énergie, de gestion des déchets et de protection de l'environnement."
+  },
+  {
+    "sigle": "AESH",
+    "developpe": "Accompagnant d'élèves en situation de handicap",
+    "explication": "Personne employée par l'Éducation nationale pour aider des élèves handicapés à suivre leur scolarité."
+  },
+  {
+    "sigle": "AFER",
+    "developpe": "Association française d'épargne et de retraite",
+    "explication": "Association d'épargnants qui souscrit des contrats d'assurance-vie collectifs au profit de ses adhérents."
+  },
+  {
+    "sigle": "AFP",
+    "developpe": "Agence France-Presse",
+    "explication": "Agence de presse française."
+  },
+  {
+    "sigle": "AME",
+    "developpe": "Aide médicale de l'État",
+    "explication": "Prise en charge des soins des étrangers en situation irrégulière résidant en France depuis plus de trois mois, sous condition de ressources."
+  },
+  {
+    "sigle": "APL",
+    "developpe": "Aide personnalisée au logement",
+    "explication": "Aide versée selon les ressources pour réduire le loyer ou les mensualités d'emprunt de la résidence principale."
+  },
+  {
+    "sigle": "ARS",
+    "developpe": "Agence régionale de santé",
+    "explication": "Établissement public qui pilote l'organisation de la santé et des soins dans chaque région."
+  },
+  {
+    "sigle": "BFM",
+    "developpe": "BFM (à l'origine Business FM)",
+    "explication": "Marque de médias d'information (télévision, radio, sites), dont la chaîne BFMTV."
+  },
+  {
+    "sigle": "BFMTV",
+    "developpe": "BFMTV (de BFM, à l'origine Business FM, et TV pour télévision)",
+    "explication": "Chaîne de télévision d'information en continu."
+  },
+  {
+    "sigle": "BIRD",
+    "developpe": "Banque internationale pour la reconstruction et le développement",
+    "explication": "Institution du groupe de la Banque mondiale qui prête aux États à revenu intermédiaire pour financer leur développement."
+  },
+  {
+    "sigle": "BRAV",
+    "developpe": "Brigade de répression de l'action violente motorisée (BRAV-M)",
+    "explication": "Unités de policiers à moto de la préfecture de police de Paris, engagées dans le maintien de l'ordre lors des manifestations."
+  },
+  {
+    "sigle": "BTP",
+    "developpe": "Bâtiment et travaux publics",
+    "explication": "Secteur économique de la construction : bâtiments, routes, ouvrages d'art et réseaux."
+  },
+  {
+    "sigle": "C3S",
+    "developpe": "Contribution sociale de solidarité des sociétés",
+    "explication": "Contribution annuelle des entreprises dont le chiffre d'affaires dépasse 19 millions d'euros."
+  },
+  {
+    "sigle": "CAP",
+    "developpe": "Certificat d'aptitude professionnelle",
+    "explication": "Diplôme de l'enseignement professionnel qui prépare à un métier précis, en général en deux ans après la classe de troisième."
+  },
+  {
+    "sigle": "CDI",
+    "developpe": "Contrat à durée indéterminée",
+    "explication": "Contrat de travail conclu sans date de fin."
+  },
+  {
+    "sigle": "CE1",
+    "developpe": "Cours élémentaire première année",
+    "explication": "Deuxième année de l'école élémentaire, suivie en général vers 7 ans."
+  },
+  {
+    "sigle": "CE2",
+    "developpe": "Cours élémentaire deuxième année",
+    "explication": "Troisième année de l'école élémentaire, suivie en général vers 8 ans."
+  },
+  {
+    "sigle": "CEDH",
+    "developpe": "Cour européenne des droits de l'homme",
+    "explication": "Juridiction du Conseil de l'Europe, à Strasbourg, qui juge les violations de la Convention européenne des droits de l'homme par les États signataires."
+  },
+  {
+    "sigle": "CEE",
+    "developpe": "Certificats d'économies d'énergie",
+    "explication": "Dispositif qui oblige les fournisseurs d'énergie, dont les vendeurs de carburants, à financer des économies d'énergie."
+  },
+  {
+    "sigle": "CESE",
+    "developpe": "Conseil économique, social et environnemental",
+    "explication": "Assemblée consultative qui représente syndicats, entreprises et associations, et rend des avis au gouvernement et au Parlement."
+  },
+  {
+    "sigle": "CETA",
+    "developpe": "Comprehensive Economic and Trade Agreement (Accord économique et commercial global)",
+    "explication": "Accord de libre-échange entre l'Union européenne et le Canada, appliqué à titre provisoire depuis 2017."
+  },
+  {
+    "sigle": "CFE",
+    "developpe": "Cotisation foncière des entreprises",
+    "explication": "Impôt local payé par les entreprises, calculé sur la valeur locative des biens immobiliers qu'elles utilisent."
+  },
+  {
+    "sigle": "CHSCT",
+    "developpe": "Comité d'hygiène, de sécurité et des conditions de travail",
+    "explication": "N'existe plus dans le privé, fondu dans le CSE depuis 2020 ; dans la fonction publique, remplacé par une formation spécialisée du CSA depuis 2023."
+  },
+  {
+    "sigle": "CJUE",
+    "developpe": "Cour de justice de l'Union européenne",
+    "explication": "Juridiction de l'Union européenne, à Luxembourg, qui veille à l'application uniforme du droit européen dans les États membres."
+  },
+  {
+    "sigle": "CM2",
+    "developpe": "Cours moyen deuxième année",
+    "explication": "Cinquième et dernière année de l'école élémentaire, suivie en général vers 10 ans."
+  },
+  {
+    "sigle": "CO2",
+    "developpe": "Dioxyde de carbone",
+    "explication": "Gaz rejeté notamment par la combustion du charbon, du pétrole et du gaz ; principal gaz à effet de serre émis par les activités humaines."
+  },
+  {
+    "sigle": "COR",
+    "developpe": "Conseil d'orientation des retraites",
+    "explication": "Organisme public d'expertise qui analyse le système de retraite français et projette son évolution."
+  },
+  {
+    "sigle": "CP",
+    "developpe": "Cours préparatoire",
+    "explication": "Première année de l'école élémentaire, suivie en général vers 6 ans."
+  },
+  {
+    "sigle": "CRE",
+    "developpe": "Commission de régulation de l'énergie",
+    "explication": "Autorité administrative indépendante qui régule les marchés de l'électricité et du gaz en France."
+  },
+  {
+    "sigle": "CROSS",
+    "developpe": "Centre régional opérationnel de surveillance et de sauvetage",
+    "explication": "Centre de l'État qui coordonne les secours en mer et surveille la navigation au large des côtes françaises."
+  },
+  {
+    "sigle": "CSG",
+    "developpe": "Contribution sociale généralisée",
+    "explication": "Prélèvement sur la plupart des revenus (salaires, pensions, revenus du patrimoine) qui finance la Sécurité sociale."
+  },
+  {
+    "sigle": "CSM",
+    "developpe": "Conseil supérieur de la magistrature",
+    "explication": "Institution prévue par la Constitution, qui intervient dans la nomination et la discipline des magistrats."
+  },
+  {
+    "sigle": "CVAE",
+    "developpe": "Cotisation sur la valeur ajoutée des entreprises",
+    "explication": "Impôt de production payé par les entreprises au-delà d'un certain chiffre d'affaires, calculé sur la valeur ajoutée qu'elles produisent."
+  },
+  {
+    "sigle": "DEPP",
+    "developpe": "Direction de l'évaluation, de la prospective et de la performance",
+    "explication": "Service statistique du ministère de l'Éducation nationale."
+  },
+  {
+    "sigle": "DGA",
+    "developpe": "Direction générale de l'armement",
+    "explication": "Administration du ministère des Armées qui conduit les programmes d'armement et achète les équipements des forces."
+  },
+  {
+    "sigle": "DPE",
+    "developpe": "Diagnostic de performance énergétique",
+    "explication": "Évaluation de la consommation d'énergie et des émissions de gaz à effet de serre d'un logement, classée de A à G."
+  },
+  {
+    "sigle": "EDF",
+    "developpe": "Électricité de France",
+    "explication": "Entreprise détenue par l'État qui produit et fournit de l'électricité, et exploite les centrales nucléaires françaises."
+  },
+  {
+    "sigle": "EDIP",
+    "developpe": "European Defence Industry Programme (programme européen pour l'industrie de la défense)",
+    "explication": "Programme de l'Union européenne qui finance le renforcement de l'industrie de défense européenne."
+  },
+  {
+    "sigle": "EPR",
+    "developpe": "Evolutionary Power Reactor (à l'origine European Pressurized Reactor)",
+    "explication": "Modèle de réacteur nucléaire de grande puissance, à eau sous pression, dont un exemplaire fonctionne à Flamanville."
+  },
+  {
+    "sigle": "EPR2",
+    "developpe": "Evolutionary Power Reactor 2",
+    "explication": "Version révisée de l'EPR, conçue pour être plus simple à construire ; six réacteurs de ce modèle sont prévus en France."
+  },
+  {
+    "sigle": "ETI",
+    "developpe": "Entreprise de taille intermédiaire",
+    "explication": "Entreprise de moins de 5 000 salariés, hors PME, avec un chiffre d'affaires d'au plus 1,5 milliard d'euros ou un bilan d'au plus 2 milliards."
+  },
+  {
+    "sigle": "FNSEA",
+    "developpe": "Fédération nationale des syndicats d'exploitants agricoles",
+    "explication": "Syndicat professionnel d'exploitants agricoles."
+  },
+  {
+    "sigle": "GAFAM",
+    "developpe": "Google, Apple, Facebook, Amazon, Microsoft",
+    "explication": "Désigne les grandes entreprises américaines du numérique ; la « taxe GAFAM » est la taxe française sur certains services numériques."
+  },
+  {
+    "sigle": "GW",
+    "developpe": "Gigawatt",
+    "explication": "Unité de puissance égale à un milliard de watts, utilisée notamment pour mesurer la capacité des installations électriques."
+  },
+  {
+    "sigle": "IA",
+    "developpe": "Intelligence artificielle",
+    "explication": "Ensemble de techniques permettant à des programmes informatiques d'accomplir des tâches associées à l'intelligence humaine."
+  },
+  {
+    "sigle": "IFI",
+    "developpe": "Impôt sur la fortune immobilière",
+    "explication": "Impôt annuel sur le patrimoine immobilier net des ménages lorsqu'il dépasse 1,3 million d'euros, en vigueur depuis 2018."
+  },
+  {
+    "sigle": "IGGN",
+    "developpe": "Inspection générale de la gendarmerie nationale",
+    "explication": "Service de contrôle interne de la gendarmerie, chargé notamment des enquêtes sur les manquements des gendarmes."
+  },
+  {
+    "sigle": "IGPN",
+    "developpe": "Inspection générale de la police nationale",
+    "explication": "Service de contrôle interne de la police, chargé notamment des enquêtes sur les manquements des policiers."
+  },
+  {
+    "sigle": "IP",
+    "developpe": "Internet Protocol (protocole Internet)",
+    "explication": "Une adresse IP est le numéro qui identifie un appareil connecté à Internet."
+  },
+  {
+    "sigle": "IREF",
+    "developpe": "Institut de recherches économiques et fiscales",
+    "explication": "Institut d'études consacré aux questions économiques et fiscales."
+  },
+  {
+    "sigle": "ISF",
+    "developpe": "Impôt de solidarité sur la fortune",
+    "explication": "Impôt annuel sur le patrimoine des ménages au-delà d'un seuil, remplacé en 2018 par l'impôt sur la fortune immobilière."
+  },
+  {
+    "sigle": "JDD",
+    "developpe": "Le Journal du dimanche",
+    "explication": "Hebdomadaire d'information paraissant le dimanche."
+  },
+  {
+    "sigle": "JORF",
+    "developpe": "Journal officiel de la République française",
+    "explication": "Publication de l'État où paraissent les lois, décrets et arrêtés, qui entrent en vigueur après cette publication.",
+    "formes": [
+      "JO"
+    ]
+  },
+  {
+    "sigle": "LBD",
+    "developpe": "Lanceur de balles de défense",
+    "explication": "Arme des forces de l'ordre qui tire des projectiles en caoutchouc ; LBD40 désigne le modèle de calibre 40 mm.",
+    "formes": [
+      "LBD40"
+    ]
+  },
+  {
+    "sigle": "LCI",
+    "developpe": "La Chaîne Info",
+    "explication": "Chaîne de télévision d'information en continu."
+  },
+  {
+    "sigle": "LCP",
+    "developpe": "La Chaîne parlementaire",
+    "explication": "Chaîne de télévision partagée entre l'Assemblée nationale et le Sénat, consacrée à la vie parlementaire."
+  },
+  {
+    "sigle": "LFI",
+    "developpe": "La France insoumise",
+    "explication": "Mouvement politique."
+  },
+  {
+    "sigle": "NFP",
+    "developpe": "Nouveau Front populaire",
+    "explication": "Mouvement politique."
+  },
+  {
+    "sigle": "OCDE",
+    "developpe": "Organisation de coopération et de développement économiques",
+    "explication": "Organisation internationale de pays surtout développés, qui publie des études et des comparaisons économiques et sociales."
+  },
+  {
+    "sigle": "OFB",
+    "developpe": "Office français de la biodiversité",
+    "explication": "Établissement public créé en 2020, chargé de la protection de la biodiversité, y compris de missions de police de l'environnement."
+  },
+  {
+    "sigle": "OIT",
+    "developpe": "Organisation internationale du Travail",
+    "explication": "Agence des Nations unies qui élabore les normes internationales du travail."
+  },
+  {
+    "sigle": "ONG",
+    "developpe": "Organisation non gouvernementale",
+    "explication": "Organisation à but non lucratif, indépendante des États, qui agit pour des causes humanitaires, sociales ou environnementales."
+  },
+  {
+    "sigle": "ONU",
+    "developpe": "Organisation des Nations unies",
+    "explication": "Organisation internationale créée en 1945, qui réunit presque tous les États du monde pour la paix et la coopération."
+  },
+  {
+    "sigle": "OQTF",
+    "developpe": "Obligation de quitter le territoire français",
+    "explication": "Décision administrative ordonnant à un étranger de quitter la France, notamment lorsqu'il n'a pas de titre de séjour valable."
+  },
+  {
+    "sigle": "OTAN",
+    "developpe": "Organisation du traité de l'Atlantique Nord",
+    "explication": "Alliance militaire fondée en 1949 entre des pays d'Amérique du Nord et d'Europe, qui s'engagent à se défendre mutuellement."
+  },
+  {
+    "sigle": "PAC",
+    "developpe": "Politique agricole commune",
+    "explication": "Politique de l'Union européenne qui soutient les agriculteurs, principalement par des aides financières, et encadre les marchés agricoles."
+  },
+  {
+    "sigle": "PCF",
+    "developpe": "Parti communiste français",
+    "explication": "Parti politique."
+  },
+  {
+    "sigle": "PDG",
+    "developpe": "Président-directeur général",
+    "explication": "Dirigeant d'une société anonyme qui préside son conseil d'administration et en assure la direction générale."
+  },
+  {
+    "sigle": "PFAS",
+    "developpe": "Substances per- et polyfluoroalkylées",
+    "explication": "Famille de milliers de composés chimiques très persistants, utilisés notamment pour leurs propriétés antiadhésives et imperméabilisantes."
+  },
+  {
+    "sigle": "PIB",
+    "developpe": "Produit intérieur brut",
+    "explication": "Valeur de ce qui est produit dans un pays en un an ; il sert à mesurer la taille d'une économie."
+  },
+  {
+    "sigle": "PLFSS",
+    "developpe": "Projet de loi de financement de la sécurité sociale",
+    "explication": "Texte présenté chaque automne par le gouvernement au Parlement pour fixer les recettes et les dépenses de la Sécurité sociale."
+  },
+  {
+    "sigle": "PME",
+    "developpe": "Petite et moyenne entreprise",
+    "explication": "Entreprise de moins de 250 salariés, dont le chiffre d'affaires annuel ne dépasse pas 50 millions d'euros ou le bilan 43 millions."
+  },
+  {
+    "sigle": "POC",
+    "developpe": "Proof of concept (preuve de concept)",
+    "explication": "Version d'essai réalisée pour montrer qu'une idée fonctionne, avant un éventuel développement complet."
+  },
+  {
+    "sigle": "PPE3",
+    "developpe": "Troisième programmation pluriannuelle de l'énergie",
+    "explication": "Feuille de route de l'État qui fixe les objectifs de production et de consommation d'énergie de la France pour les années à venir."
+  },
+  {
+    "sigle": "PS",
+    "developpe": "Parti socialiste",
+    "explication": "Parti politique."
+  },
+  {
+    "sigle": "RATP",
+    "developpe": "Régie autonome des transports parisiens",
+    "explication": "Entreprise publique qui exploite le métro, des lignes de bus et de tramway en Île-de-France."
+  },
+  {
+    "sigle": "REP",
+    "developpe": "Réseau d'éducation prioritaire",
+    "explication": "Réseau d'un collège et des écoles de son secteur recevant des moyens supplémentaires en raison de difficultés sociales ; REP+ désigne les plus concernés."
+  },
+  {
+    "sigle": "RIC",
+    "developpe": "Référendum d'initiative citoyenne",
+    "explication": "Référendum déclenché par une pétition de citoyens, sans décision préalable des pouvoirs publics ; la Constitution ne le prévoit pas."
+  },
+  {
+    "sigle": "RMC",
+    "developpe": "RMC (à l'origine Radio Monte-Carlo)",
+    "explication": "Station de radio."
+  },
+  {
+    "sigle": "RN",
+    "developpe": "Rassemblement national",
+    "explication": "Parti politique."
+  },
+  {
+    "sigle": "RSA",
+    "developpe": "Revenu de solidarité active",
+    "explication": "Allocation versée aux personnes sans ressources ou à faibles ressources pour leur garantir un revenu minimum."
+  },
+  {
+    "sigle": "RTE",
+    "developpe": "Réseau de transport d'électricité",
+    "explication": "Entreprise qui gère le réseau français de lignes électriques à haute et très haute tension."
+  },
+  {
+    "sigle": "RTL",
+    "developpe": "Radio Télé Luxembourg",
+    "explication": "Station de radio."
+  },
+  {
+    "sigle": "SAFE",
+    "developpe": "Security Action for Europe (action pour la sécurité de l'Europe)",
+    "explication": "Instrument de l'Union européenne qui prête aux États jusqu'à 150 milliards d'euros pour leurs achats d'équipements de défense."
+  },
+  {
+    "sigle": "SAMP",
+    "developpe": "Sol-air moyenne portée/Terrestre (SAMP/T)",
+    "explication": "Système de défense antiaérienne franco-italien, aussi appelé Mamba, qui intercepte avions et missiles."
+  },
+  {
+    "sigle": "SCALP",
+    "developpe": "Système de croisière conventionnel autonome à longue portée",
+    "explication": "Missile de croisière franco-britannique tiré depuis un avion, appelé Storm Shadow au Royaume-Uni."
+  },
+  {
+    "sigle": "SMIC",
+    "developpe": "Salaire minimum interprofessionnel de croissance",
+    "explication": "Salaire horaire minimal fixé par l'État, revalorisé au moins chaque 1er janvier."
+  },
+  {
+    "sigle": "SMR",
+    "developpe": "Small modular reactor (petit réacteur modulaire)",
+    "explication": "Réacteur nucléaire de faible puissance, conçu pour être fabriqué en série en usine."
+  },
+  {
+    "sigle": "SNU",
+    "developpe": "Service national universel",
+    "explication": "Dispositif public expérimenté depuis 2019 pour les 15-17 ans : séjour de cohésion et mission d'intérêt général."
+  },
+  {
+    "sigle": "SP95",
+    "developpe": "Sans plomb 95",
+    "explication": "Essence sans plomb d'indice d'octane 95 ; le SP95-E10 contient jusqu'à 10 % d'éthanol."
+  },
+  {
+    "sigle": "T2A",
+    "developpe": "Tarification à l'activité",
+    "explication": "Mode de financement des hôpitaux et cliniques selon le nombre et la nature des actes et séjours réalisés."
+  },
+  {
+    "sigle": "TF1",
+    "developpe": "TF1 (à l'origine Télévision française 1)",
+    "explication": "Chaîne de télévision généraliste."
+  },
+  {
+    "sigle": "TGV",
+    "developpe": "Train à grande vitesse",
+    "explication": "Train de voyageurs à grande vitesse, qui circule en grande partie sur des lignes construites à cet effet."
+  },
+  {
+    "sigle": "THC",
+    "developpe": "Tétrahydrocannabinol",
+    "explication": "Principale substance psychoactive du cannabis."
+  },
+  {
+    "sigle": "TICPE",
+    "developpe": "Taxe intérieure de consommation sur les produits énergétiques",
+    "explication": "Taxe sur les carburants et combustibles fossiles, incluse dans leur prix ; désormais appelée accise sur les énergies."
+  },
+  {
+    "sigle": "TPE",
+    "developpe": "Très petite entreprise",
+    "explication": "Entreprise de moins de 10 salariés, dont le chiffre d'affaires annuel ou le bilan ne dépasse pas 2 millions d'euros."
+  },
+  {
+    "sigle": "TTC",
+    "developpe": "Toutes taxes comprises",
+    "explication": "Se dit d'un prix qui inclut les taxes, dont la TVA, tel que le paie le consommateur."
+  },
+  {
+    "sigle": "TVA",
+    "developpe": "Taxe sur la valeur ajoutée",
+    "explication": "Impôt sur la consommation, compris dans le prix payé par l'acheteur ; son taux normal est de 20 % en France."
+  },
+  {
+    "sigle": "UE",
+    "developpe": "Union européenne",
+    "explication": "Union politique et économique de 27 États européens, dotée d'institutions et d'un marché communs."
+  },
+  {
+    "sigle": "UFE",
+    "developpe": "Union française de l'électricité",
+    "explication": "Association professionnelle qui représente les entreprises du secteur de l'électricité."
+  },
+  {
+    "sigle": "ZAN",
+    "developpe": "Zéro artificialisation nette",
+    "explication": "Objectif fixé par la loi Climat et résilience de 2021 : ne plus réduire, en solde net, les espaces naturels, agricoles et forestiers d'ici 2050."
+  },
+  {
+    "sigle": "ZFE",
+    "developpe": "Zone à faibles émissions mobilité",
+    "explication": "Périmètre urbain où la circulation des véhicules les plus polluants, identifiés par la vignette Crit'Air, est restreinte."
+  }
+]

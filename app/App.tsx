@@ -20,6 +20,8 @@ import { Chargement } from './ecrans/Chargement.tsx';
 import { Preparation } from './ecrans/Preparation.tsx';
 import { Quiz } from './ecrans/Quiz.tsx';
 import { Resultats } from './ecrans/Resultats.tsx';
+import { CadreGlossaire } from './glossaire/CadreGlossaire.tsx';
+import { GlossaireProvider } from './glossaire/GlossaireProvider.tsx';
 
 type Ecran = 'accueil' | 'preparation' | 'quiz' | 'resultats' | 'preparationDuel' | 'duel' | 'resultatsDuel' | 'defi' | 'vieprivee' | 'methode' | 'banque' | 'candidats' | 'fiche';
 
@@ -130,7 +132,9 @@ export function App() {
   };
 
   return (
+    <GlossaireProvider>
     <MotionConfig reducedMotion="user">
+      <CadreGlossaire>
       {ecran === 'duel' && duel && !estTerminee(duel) ? (
         <QuizDuel
           partie={duel}
@@ -210,6 +214,8 @@ export function App() {
           onVoirResultatsDuel={() => setEcran('resultatsDuel')}
         />
       )}
+      </CadreGlossaire>
     </MotionConfig>
+    </GlossaireProvider>
   );
 }

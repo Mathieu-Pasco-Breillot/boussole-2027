@@ -38,6 +38,15 @@ Points non vérifiables ou à reprendre (Légifrance, Dalloz et consilium.europa
 - **IMM-012** : l'origine cite toujours la proposition de loi constitutionnelle n° 2120 et l'encart s'appuie sur la décision du Conseil constitutionnel du 13 août 1993 ; ni l'un ni l'autre n'affirme qu'une révision constitutionnelle est nécessaire.
 - **ENV-024** : « blocage refusé au printemps 2026 » non vérifiable.
 
+Glossaire des sigles (`data/glossaire.json`, issue #7), points non tranchés :
+
+- **BRAV** : forme officielle (singulier ou pluriel, « BRAV-M ») et existence actuelle de l'unité non vérifiées.
+- **ZFE** : statut juridique en 2026 non vérifié (suppression censurée par le Conseil constitutionnel le 21 mai 2026, selon des sources secondaires) ; intitulé exact « Zone à faibles émissions-mobilité » non vérifié sur Légifrance.
+- **SNU** : statut juridique en 2026 non vérifié ; l'explication n'affirme rien sur le statut.
+- **PPE3, SAFE** : intitulé du décret n° 2026-76 repris d'un cabinet d'avocats (PPE3) ; sources secondaires seulement (SAFE).
+- **SAMP** : développé « Sol-air moyenne portée/Terrestre (SAMP/T) » à confirmer.
+- **CHSCT** : date de 2020 pour le privé non confirmée par une source primaire.
+
 Corrigées le 12 octobre 2026 après vérification (historique de la question et journal, type `reformulation`) : RET-001 (âge de 62 ans et 9 mois limité aux générations 1963 et 1964), RET-008 (« fin des années 1980 »), SAN-015 (votée en février 2025), IMM-001 (voie de l'article L. 435-4 du Ceseda), IMM-014 (titulaires d'un titre autorisant à travailler et réfugiés), EUR-002 (unanimité « en principe », sauf cas prévus par le traité), EUR-003 (26 à 38 milliards d'euros par an en moyenne, estimation de la direction générale du Trésor), SEC-009 (amende forfaitaire de 500 € depuis la loi n° 2026-798 du 18 août 2026), SEC-013 (règle pour les peines de six mois ou moins, sauf impossibilité), FIS-008 (CSG à taux variables pour les pensions de retraite et les allocations chômage), FIS-009 (délai de 8 ans de 2011 à 2013), ENV-004 (encart : filières betteraves, cerises, pommes et noisettes). Encarts retouchés : RET-001, SAN-019 (extension de l'accord préalable du contrôle médical), FIS-009, ENV-004.
 
 Corrigées le 13 octobre 2026 (type `reformulation`) : Précisions de DEF-003, EDU-017, EDU-020, RET-011, SAN-008, SAN-009, SAN-012, IMM-012 et SEC-021 ; descriptions d'origine de SAN-009, SAN-012, SEC-006 et ECO-011 (sans nom de Premier ministre) ; EUR-001 (encart : attribution « selon la presse (Eunews, 14 juillet 2026) »), EDU-020 (encart, contre : chiffre en pourcentage retiré).

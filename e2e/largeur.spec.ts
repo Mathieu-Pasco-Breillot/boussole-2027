@@ -21,10 +21,10 @@ test('toutes les fiches candidat, chapitres dépliés, tiennent dans 360 px', as
   await page.goto('/');
   await page.getByRole('button', { name: 'Candidats', exact: true }).click();
   await expect(page.getByRole('heading', { name: /^Comparés/ })).toBeVisible();
-  const n = await page.locator('main ul li button').count();
+  const n = await page.locator('main > section > ul > li > button').count();
   expect(n).toBeGreaterThan(0);
   for (let i = 0; i < n; i++) {
-    await page.locator('main ul li button').nth(i).click();
+    await page.locator('main > section > ul > li > button').nth(i).click();
     await expect(page.getByRole('button', { name: '← Retour' })).toBeVisible();
     for (const s of await page.locator('summary').all()) await s.click();
     expect(await largeur(page), await page.getByRole('heading', { level: 1 }).innerText()).toBeLessThanOrEqual(360);

@@ -5,6 +5,7 @@ import { nouveauDefi } from '../defi.ts';
 import { libelleTheme } from '../libelles.ts';
 import { paquet } from '../paquet.ts';
 import { Mascotte } from './Mascotte.tsx';
+import { Texte } from '../glossaire/Texte.tsx';
 
 interface Props {
   graine: number;
@@ -81,13 +82,19 @@ export function Defi({ graine, onRejouer, onQuitter }: Props) {
 
       <section className="rounded-2xl border-l-4 border-or bg-nuit-clair p-5 leading-relaxed" aria-labelledby="titre-position">
         <p className="text-sm text-sourdine">{themeDeQuestion(manche.question_id)}</p>
-        <p className="mt-1 font-semibold">{manche.enonce}</p>
+        <p className="mt-1 font-semibold">
+          <Texte>{manche.enonce}</Texte>
+        </p>
         <h2 id="titre-position" className="mt-4 font-serif text-xl font-semibold">
           Un candidat a pris cette position :
         </h2>
-        <p className="mt-2">{repondu ? manche.revelation.reformulation : manche.indice.reformulation}</p>
+        <p className="mt-2">
+          <Texte>{repondu ? manche.revelation.reformulation : manche.indice.reformulation}</Texte>
+        </p>
         {(repondu ? manche.revelation.citation : manche.indice.citation) && (
-          <p className="mt-2 italic">« {repondu ? manche.revelation.citation : manche.indice.citation} »</p>
+          <p className="mt-2 italic">
+            « <Texte>{repondu ? manche.revelation.citation : manche.indice.citation}</Texte> »
+          </p>
         )}
       </section>
 

@@ -1,15 +1,21 @@
 /**
  * Rendu Markdown minimal (titres, paragraphes, listes, citations, tableaux, gras, italique, code, liens http).
  * Écrit pour les documents du dépôt ; pas de HTML brut, donc rien d'injecté dans la page.
+ * Les sigles du glossaire sont annotés (<Segments>). Un paragraphe, un item, une cellule ou un titre forme un bloc :
+ * le (i) ne marque que la première occurrence d'un sigle par bloc, gras et italique compris.
  */
-import type { ReactNode } from 'react';
+import { Fragment, type ReactNode } from 'react';
+import { decouper, Segments } from '../glossaire/Texte.tsx';
 
 function enLigne(texte: string): ReactNode[] {
   const motif = /(\*\*[^*]+\*\*|`[^`]+`|\*[^*\s][^*]*\*|\[[^\]]+\]\([^)]+\))/g;
+  const vus = new Set<string>();
+  // Les morceaux sont découpés ici, dans l'ordre, et non au rendu des enfants : le rendu doit rester pur.
+  const sigles = (morceau: string) => <Segments segments={decouper(morceau, vus)} />;
   return texte.split(motif).map((morceau, i) => {
-    if (/^\*\*.+\*\*$/.test(morceau)) return <strong key={i}>{morceau.slice(2, -2)}</strong>;
+    if (/^\*\*.+\*\*$/.test(morceau)) return <strong key={i}>{sigles(morceau.slice(2, -2))}</strong>;
     if (/^`.+`$/.test(morceau)) return <code key={i} className="rounded bg-nuit px-1 text-[0.9em]">{morceau.slice(1, -1)}</code>;
-    if (/^\*.+\*$/.test(morceau)) return <em key={i}>{morceau.slice(1, -1)}</em>;
+    if (/^\*.+\*$/.test(morceau)) return <em key={i}>{sigles(morceau.slice(1, -1))}</em>;
     const lien = /^\[([^\]]+)\]\(([^)]+)\)$/.exec(morceau);
     if (lien) {
       return /^https?:\/\//.test(lien[2]!) ? (
@@ -20,7 +26,8 @@ function enLigne(texte: string): ReactNode[] {
         <span key={i}>{lien[1]}</span>
       );
     }
-    return morceau;
+    // Texte brut : sigles annotés. Le code et les titres de liens ne le sont pas (pas de bouton dans un lien).
+    return <Fragment key={i}>{sigles(morceau)}</Fragment>;
   });
 }
 

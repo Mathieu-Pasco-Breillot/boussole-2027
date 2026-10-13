@@ -527,6 +527,16 @@
       "description": "Passage de 10 thèmes de pilote à validé par Mathieu (12-13 octobre 2026) : encart Impact des 188 questions actives encore en pilote (ENV-018 était déjà validée) de Défense, Écologie et énergie, Économie et dette, Éducation, Fiscalité, Immigration, Retraites, Santé, Sécurité et Union européenne (statut « valide »), après les corrections de Précisions du 12 et du 13 octobre. Les points non vérifiables restent listés dans docs/impact/README.md.",
       "auteur": "Claude, validé par Mathieu",
       "reference": "validation impact des 10 thèmes du 13 octobre 2026"
+    },
+    {
+      "date": "2026-10-13",
+      "type": "ajout_glossaire",
+      "objets": [
+        "data/glossaire.json"
+      ],
+      "description": "Création du glossaire des sigles : 104 entrées (forme développée et explication neutre d’une phrase), proposées en bulle, en panneau ou en feuille partout où un sigle apparaît. Rédaction puis relecture aveugle par un second agent ; trace dans docs/glossaire/relecture.json.",
+      "auteur": "Claude, à la demande de Mathieu",
+      "reference": "création du glossaire des sigles (issue #7)"
     }
   ]
 }
