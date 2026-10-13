@@ -27,4 +27,6 @@ export const EXCEPTIONS_GLOSSAIRE: ReadonlyMap<string, string> = new Map([
   ['GP', 'fragment du nom propre d’un média (« GP-TV »)'],
   ['TV', 'fragment du nom propre d’un média (« GP-TV »)'],
   ['README', 'nom de fichier du dépôt'],
+  ['ICI', 'nom propre d’un réseau de radios, pas un sigle (« ICI Gironde »)'],
+  ['C3E', 'coquille de C3S dans un programme cité'],
 ]);
