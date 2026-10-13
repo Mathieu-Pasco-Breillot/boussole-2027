@@ -50,7 +50,7 @@ export function ResultatsDuel({ partie, onFiche, onAutreDuel, onAccueil, onViepr
             <p className="score score-grand mt-3" aria-label={`Affinité ${a.score.scoreArrondi} sur 100`}>
               {a.score.scoreArrondi} <span className="score-unite">/ 100</span>
             </p>
-            <progress className="barre barre-epaisse mt-3" data-barre-score aria-label="Affinité sur 100" max={100} value={a.score.scoreArrondi} />
+            <progress className="barre barre-epaisse mt-3" data-barre-score aria-hidden="true" max={100} value={a.score.scoreArrondi} />
             <p className="mt-3 text-sm text-discret">
               Fiabilité {a.fiabilite} · {a.score.codees} propositions comptées sur {a.repondues} répondues.
             </p>

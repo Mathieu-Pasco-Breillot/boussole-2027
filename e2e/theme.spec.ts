@@ -57,7 +57,9 @@ test("une seule teinte pour l'échelle de réponse (aucune couleur d'accord ou d
 
   await repondreATout(page, 20);
   await page.getByRole('button', { name: "Passer l'animation" }).click({ timeout: 1000 }).catch(() => undefined);
-  const barres = (await page.evaluate(`[...document.querySelectorAll('[data-barre-score]')].map((b) => getComputedStyle(b).color)`)) as string[];
+  // Le remplissage d'un <progress> est porté par son pseudo-élément (Chromium) : c'est lui qu'on lit.
+  const barres = (await page.evaluate(`[...document.querySelectorAll('[data-barre-score]')].map((b) => getComputedStyle(b, '::-webkit-progress-value').backgroundColor)`)) as string[];
   expect(barres.length).toBeGreaterThan(0);
   expect(new Set(barres).size).toBe(1);
+  expect(barres[0]).not.toMatch(/transparent|rgba\(0, 0, 0, 0\)/);
 });

@@ -156,7 +156,7 @@ function CarteCandidat({ s, rang, exAequo, visible = true, onFiche }: { s: Score
       </div>
       {classe ? (
         <>
-          <progress className="barre barre-epaisse mt-3" data-barre-score aria-label="Score sur 100" max={100} value={s.score.scoreArrondi ?? 0} />
+          <progress className="barre barre-epaisse mt-3" data-barre-score aria-hidden="true" max={100} value={s.score.scoreArrondi ?? 0} />
           <p className="mt-2 text-sm text-discret">
             Fiabilité {FIABILITE[s.fiabilite]} · codé sur {s.score.codees} de vos {s.score.repondues} questions
           </p>
