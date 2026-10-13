@@ -50,10 +50,13 @@ export function EncadreVersions() {
         {ligne('Application', versions.application)}
       </ul>
       <p className="mt-2 text-discret">
-        Les données (candidats, questions, positions codées, méthode) et l'application ont chacune leur numéro de version.
-        Un numéro qui change au dernier chiffre signale des corrections de codage ; au chiffre du milieu, des ajouts
-        (candidats, questions) ; au premier, un changement de méthode qui rend les résultats non comparables avec les
-        versions précédentes. Le détail de chaque modification reste dans le journal ci-dessous.{' '}
+        Les données (candidats, questions, positions codées) et l'application ont chacune leur numéro de version. Pour les
+        données, un numéro qui change au dernier chiffre signale des corrections de codage ; au chiffre du milieu, des
+        ajouts (candidats, questions) ; au premier, un changement de méthode qui rend les résultats non comparables avec
+        les versions précédentes. Un changement de méthode qui modifie les résultats est consigné dans le journal : il
+        fait donc avancer la version des données. Un changement du calcul des scores dans l'application fait avancer la
+        version de l'application, pas celle des données. Le détail de chaque modification reste dans le journal
+        ci-dessous.{' '}
         <a className="lien-texte" href={LIEN_VERSIONS} rel="noopener noreferrer">
           Toutes les versions
         </a>
