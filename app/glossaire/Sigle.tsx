@@ -3,6 +3,8 @@ import { ENTREES } from './donnees.ts';
 import { useGlossaire } from './GlossaireProvider.tsx';
 import { useMedia } from './media.ts';
 
+const PAR_DEFAUT = { dessous: false, droite: false };
+
 /**
  * Un sigle du glossaire dans un texte : un seul bouton, souligné en pointillé. Clic ou tap : ouvre le glossaire sur
  * son entrée. Sur un appareil avec survol, une bulle (role="tooltip") s'affiche au survol et au focus (WCAG 1.4.13) :
@@ -11,8 +13,6 @@ import { useMedia } from './media.ts';
  * La bulle s'ouvre au-dessus, alignée à gauche ; si elle sortirait de l'écran (titre en haut de page, sigle près du
  * bord droit), elle passe dessous ou s'aligne à droite (classes, pas de style en ligne : CSP).
  */
-const PAR_DEFAUT = { dessous: false, droite: false };
-
 export function Sigle({ texte, sigle, premiere }: { texte: string; sigle: string; premiere: boolean }) {
   const { ouvrir } = useGlossaire();
   const survolable = useMedia('(hover: hover)');
