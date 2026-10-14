@@ -7,10 +7,11 @@ import { NOM_MASCOTTE } from '../habillage.ts';
 import { Mascotte } from './Mascotte.tsx';
 import { groupesCandidats, nomComplet } from '../listes.ts';
 import { paquet } from '../paquet.ts';
-import { BandeauCalendrier } from '../ui/BandeauCalendrier.tsx';
 import { Bouton } from '../ui/Bouton.tsx';
 import { Carte } from '../ui/Carte.tsx';
 import { ChoixMode } from '../ui/ChoixMode.tsx';
+import { CompteARebours } from '../ui/CompteARebours.tsx';
+import { EncartCalendrier } from '../ui/EncartCalendrier.tsx';
 import { IconeBalance, IconeCoche, IconeDuel, IconeFleche, IconeQuestion, IconeQuiz } from '../ui/Icones.tsx';
 import { NoteConfiance } from '../ui/NoteConfiance.tsx';
 import { idOnglet, idPanneau } from '../ui/onglets.ts';
@@ -190,6 +191,9 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
 
   return (
     <main>
+      {/* ── Compte à rebours avant le tour ── */}
+      <CompteARebours />
+
       {/* ── Haut de page ── */}
       <section>
         <div className="conteneur grid items-center gap-10 pt-8 pb-12 md:pt-14 md:pb-16 lg:grid-cols-[1.1fr_0.9fr]">
@@ -231,7 +235,7 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
       </section>
 
       {/* ── Calendrier de l'élection ── */}
-      <BandeauCalendrier />
+      <EncartCalendrier />
 
       {/* ── Parties enregistrées sur cet appareil ── */}
       {reprises && (
