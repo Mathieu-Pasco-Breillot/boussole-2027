@@ -1,13 +1,28 @@
-/* Accueil : illustration du haut de page, drapeau miniature, bandeau de chiffres, entrée en cascade. */
+/* Accueil : titre, drapeau miniature, illustration (sceau), trois temps, cartes de mode, chiffres, entrée en cascade. */
 
-/* Drapeau miniature : trois bandes, sans nom ni emblème. Décoratif. */
+/* Titre de l'accueil (maquette V0) : serif en graisse normale, « avant » en italique adouci. */
+.titre-accueil {
+  color: var(--color-marine);
+  font-family: var(--font-titre);
+  font-size: clamp(2.6rem, 1.6rem + 4.6vw, 4.25rem);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+}
+
+.titre-accueil em {
+  color: var(--color-accent);
+  font-weight: 400;
+}
+
+/* Drapeau miniature du surtitre (maquette V0, .tricolore) : trois bandes, sans nom ni emblème. Décoratif. */
 .tricolore {
   display: inline-flex;
   flex: none;
   width: 1.8rem;
   height: 1.2rem;
   overflow: hidden;
-  border: 1px solid rgb(30 49 82 / 0.15);
+  border: 1px solid rgb(40 53 44 / 0.1);
   border-radius: 3px;
 }
 
@@ -15,22 +30,19 @@
   flex: 1;
 }
 
-.tricolore > i:first-child,
-.drapeau-grand > i:first-child {
+.tricolore > i:first-child {
   background: var(--color-france-bleu);
 }
 
-.tricolore > i:nth-child(2),
-.drapeau-grand > i:nth-child(2) {
-  background: #fff;
+.tricolore > i:nth-child(2) {
+  background: var(--color-carte);
 }
 
-.tricolore > i:last-child,
-.drapeau-grand > i:last-child {
+.tricolore > i:last-child {
   background: var(--color-france-rouge);
 }
 
-/* Illustration : deux orbites, la carte du drapeau et la mascotte. Purement décorative (aria-hidden côté JSX). */
+/* Illustration : deux orbites, le sceau et la mascotte. Purement décorative (aria-hidden côté JSX). */
 .accueil-art {
   position: relative;
   display: grid;
@@ -54,32 +66,78 @@
   border-style: dashed;
 }
 
-.accueil-drapeau {
+/* Sceau de l'élection (maquette V0, .welcome-stamp) : un cercle incliné de 7°, en CSS pur. */
+.sceau {
   display: flex;
-  width: 15rem;
-  height: 13.5rem;
+  width: 11rem;
+  height: 11rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.3rem;
   border: 1px solid var(--color-trait);
-  border-radius: var(--radius-xl);
+  border-radius: 9999px;
   background: var(--color-carte);
   box-shadow: var(--shadow-flottant);
-  transform: rotate(-3deg);
+  color: var(--color-discret);
+  transform: rotate(7deg);
 }
 
-.drapeau-grand {
-  display: flex;
-  width: 8.5rem;
-  height: 5.7rem;
-  overflow: hidden;
-  border-radius: 4px;
-  box-shadow: 0 6px 18px rgb(28 55 100 / 0.12);
+.sceau-mention {
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
 }
 
-.drapeau-grand > i {
-  flex: 1;
+.sceau-annee {
+  margin-block: 0.4rem;
+  color: var(--color-accent);
+  font-family: var(--font-titre);
+  font-size: 3.25rem;
+  line-height: 1;
+}
+
+/* Téléphone : illustration réduite, sous le texte. */
+@media (max-width: 639.98px) {
+  .accueil-art {
+    min-height: 15rem;
+  }
+
+  .accueil-orbite {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .accueil-orbite-interne {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .sceau {
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .sceau-annee {
+    font-size: 2.6rem;
+  }
+}
+
+/* Le sceau tourne lentement ; immobile (incliné de 7°) si le téléphone demande des animations réduites. */
+@media (prefers-reduced-motion: no-preference) {
+  .sceau {
+    animation: sceau-tourne 60s linear infinite;
+  }
+
+  @keyframes sceau-tourne {
+    from {
+      transform: rotate(7deg);
+    }
+
+    to {
+      transform: rotate(367deg);
+    }
+  }
 }
 
 .accueil-mascotte {
@@ -107,19 +165,108 @@
   text-transform: uppercase;
 }
 
-/* Bandeau de chiffres : un filet tricolore en haut, comme dans le design. */
-.accueil-chiffres {
+/* Trois temps (maquette V0, .landing-proof) : bande filetée, un filet tricolore en haut. */
+.accueil-etapes {
   position: relative;
-  border-bottom: 1px solid var(--color-trait);
-  background: var(--color-fond-bas);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-block: 1px solid var(--color-trait);
+  padding-block: 1.25rem;
 }
 
-.accueil-chiffres::before {
+.accueil-etapes::before {
   content: '';
   position: absolute;
-  inset: 0 0 auto;
+  inset: -1px 0 auto;
   height: 3px;
   background: var(--degrade-tricolore);
+}
+
+.etape {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.etape-numero {
+  padding-top: 0.1rem;
+  color: var(--color-accent);
+  font-family: var(--font-titre);
+}
+
+@media (min-width: 768px) {
+  .etape {
+    padding-inline: 1.4rem;
+    border-left: 1px solid var(--color-trait);
+  }
+
+  .etape:first-child {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+
+/* Cartes de mode (maquette V0, .landing-mode-card) : toute la carte est un bouton. */
+.carte-mode {
+  display: flex;
+  min-height: 6.8rem;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px solid var(--color-trait);
+  border-radius: var(--radius-lg);
+  background: var(--color-carte);
+  padding: 1rem;
+  text-align: left;
+  transition:
+    transform 0.16s ease,
+    border-color 0.16s ease;
+}
+
+@media (hover: hover) {
+  .carte-mode:hover {
+    transform: translateY(-2px);
+    border-color: var(--color-accent);
+  }
+}
+
+.carte-mode-icone {
+  display: grid;
+  width: 2.4rem;
+  height: 2.4rem;
+  flex: none;
+  place-items: center;
+  border-radius: var(--radius-md);
+  background: var(--color-accent-doux);
+  color: var(--color-accent);
+}
+
+.carte-mode-texte {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.carte-mode-texte > strong {
+  color: var(--color-marine);
+  font-family: var(--font-titre);
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.carte-mode-texte > span:last-child {
+  color: var(--color-discret);
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+/* Bandeau de chiffres. */
+.accueil-chiffres {
+  border-block: 1px solid var(--color-trait);
+  background: var(--color-fond-bas);
 }
 
 /* Entrée en cascade du haut de l'accueil (coupée si le téléphone demande des animations réduites). */

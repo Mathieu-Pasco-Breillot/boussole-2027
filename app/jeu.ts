@@ -113,6 +113,17 @@ export function repondre<T extends Parcours>(p: T, reponse: ReponseSaisie): T {
   };
 }
 
+/**
+ * Passe la question en cours : sa réponse éventuelle est retirée (la question redevient non répondue, donc comptée
+ * « sans avis » par resultatsDePartie) et la position avance d'une case, comme après repondre.
+ */
+export function passer<T extends Parcours>(p: T): T {
+  if (estTerminee(p)) return p;
+  const reponses = { ...p.reponses };
+  delete reponses[p.questions[p.position]!];
+  return { ...p, reponses, position: p.position + 1 };
+}
+
 export function reculer<T extends Parcours>(p: T): T {
   return p.position > 0 ? { ...p, position: p.position - 1 } : p;
 }

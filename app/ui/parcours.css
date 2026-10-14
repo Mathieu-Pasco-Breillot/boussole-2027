@@ -45,6 +45,23 @@
     font-variant-numeric: tabular-nums;
   }
 
+  /* Progression du duel (maquette V0, .duel-progress) : « SUJET 01 / 20 » en petites capitales, barre dessous. */
+  .progression-duel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+    color: var(--color-accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .progression-duel-total {
+    color: var(--color-discret);
+  }
+
   /* Barre native (<progress>) : progression d'un parcours, affinité d'un duel. */
   .barre {
     display: block;
@@ -83,7 +100,7 @@
     color: var(--color-marine);
     font-family: var(--font-titre);
     font-size: clamp(1.6rem, 1.25rem + 1.6vw, 2.25rem);
-    font-weight: 600;
+    font-weight: 400;
     line-height: 1.2;
     letter-spacing: -0.02em;
   }
@@ -121,7 +138,7 @@
     transition:
       border-color 0.16s ease,
       background-color 0.16s ease,
-      transform 0.08s ease;
+      transform 0.16s ease;
   }
 
   .reponse::before {
@@ -166,6 +183,18 @@
     content: '✓' / '';
     margin-left: auto;
     font-weight: 700;
+  }
+
+  /* « Sans avis » : une réponse, mais hors de l'échelle d'accord. Ni lettre ni couleur pleine, bordure tiretée. */
+  .reponse-sans-avis {
+    min-height: 2.75rem;
+    border-style: dashed;
+    background: var(--color-fond-bas);
+    color: var(--color-discret);
+  }
+
+  .reponse-sans-avis::before {
+    content: none;
   }
 
   /* Bascule « Très important pour moi ». */

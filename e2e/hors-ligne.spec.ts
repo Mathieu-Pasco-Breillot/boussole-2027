@@ -18,7 +18,7 @@ async function installerPuisCouper(page: Page, erreurs: string[]): Promise<void>
   expect(reseau).toBe('coupe');
   erreurs.length = 0; // l'échec attendu de cette sonde n'est pas une erreur du site
   await page.reload();
-  await expect(page.getByRole('heading', { name: /Quels candidats pensent comme vous/, level: 1 })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Et si vous faisiez le point avant 2027/, level: 1 })).toBeVisible();
 }
 
 function fichiers(dossier: string): string[] {
@@ -41,8 +41,8 @@ test('le précache contient tous les fichiers du site, paquet de données et pag
   const dist = join(import.meta.dirname, '..', 'dist');
   const attendus = fichiers(dist)
     .map((f) => '/' + relative(dist, f).split('\\').join('/'))
-    // Exclus volontairement (vite.config.ts) : le service worker lui-même et les polices non latines.
-    .filter((f) => !/^\/(sw\.js|workbox-[\w-]+\.js)$/.test(f) && !/-(cyrillic|cyrillic-ext|greek|greek-ext|vietnamese)-.*\.woff2$/.test(f));
+    // Exclu volontairement : le service worker lui-même.
+    .filter((f) => !/^\/(sw\.js|workbox-[\w-]+\.js)$/.test(f));
   const manquants = attendus.filter((f) => !precache.includes(f));
   expect(manquants).toEqual([]);
 });
@@ -67,7 +67,7 @@ test('hors connexion : une partie Express complète, puis le défi', async ({ pa
 test('hors connexion : les pages Méthode, Candidats et Questions se chargent', async ({ page }) => {
   const erreurs = surveillerErreurs(page);
   await installerPuisCouper(page, erreurs);
-  await page.getByRole('button', { name: 'Méthode', exact: true }).click();
+  await page.getByRole('button', { name: 'Notre méthode', exact: true }).click();
   await page.getByRole('tab', { name: 'Méthodologie' }).click();
   await expect(page.getByRole('tabpanel')).not.toBeEmpty();
   await expect(page.getByRole('tabpanel').getByRole('heading').first()).toBeVisible();

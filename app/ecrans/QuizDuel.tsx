@@ -15,7 +15,6 @@ import { Carte } from '../ui/Carte.tsx';
 import { EnteteParcours } from '../ui/EnteteParcours.tsx';
 import { NoteConfiance } from '../ui/NoteConfiance.tsx';
 import { PastilleCandidat } from '../ui/PastilleCandidat.tsx';
-import { ProgressionParcours } from '../ui/ProgressionParcours.tsx';
 
 interface Props {
   partie: PartieDuel;
@@ -26,6 +25,7 @@ interface Props {
 }
 
 const candidat = (id: string) => paquet.candidats.find((c) => c.id === id)!;
+const deuxChiffres = (n: number) => String(n).padStart(2, '0');
 
 /**
  * Quiz du duel. Deux temps par proposition : la réponse, puis la révélation de la position du candidat
@@ -65,7 +65,6 @@ export function QuizDuel({ partie, onRepondre, onSuivante, onModifier, onQuitter
           Quitter
         </button>
       </EnteteParcours>
-      <ProgressionParcours etiquette="Proposition" position={partie.position} total={total} avancement={repondues} />
       <div className="mt-5 flex items-center gap-3">
         <PastilleCandidat prenom={c.prenom} nom={c.nom} />
         <p className="flex flex-col leading-tight">
@@ -74,6 +73,18 @@ export function QuizDuel({ partie, onRepondre, onSuivante, onModifier, onQuitter
             <strong className="text-marine">{nom}</strong> · <span className="text-discret">{c.parti}</span>
           </span>
         </p>
+      </div>
+      {/* Barre « SUJET 01 / 20 » (maquette V0) : position réelle dans la partie, barre native (CSP sans style en ligne). */}
+      <div className="progression-duel">
+        <span aria-live="polite">
+          <span aria-hidden="true">
+            SUJET {deuxChiffres(partie.position + 1)} <span className="progression-duel-total">/ {deuxChiffres(total)}</span>
+          </span>
+          <span className="sr-only">
+            Sujet {partie.position + 1} sur {total}
+          </span>
+        </span>
+        <progress className="barre" aria-label="Progression du duel" max={total} value={repondues} />
       </div>
 
       <AnimatePresence mode="wait">
@@ -137,7 +148,7 @@ export function QuizDuel({ partie, onRepondre, onSuivante, onModifier, onQuitter
                   {affinite.affichable && affinite.score.scoreArrondi !== null ? (
                     <>
                       <p className="text-sm text-discret">Affinité en direct avec {nom}</p>
-                      <p className="font-titre text-5xl font-semibold tracking-tight text-accent" aria-label={`Affinité ${affinite.score.scoreArrondi} sur 100`}>
+                      <p className="font-titre text-5xl font-normal tracking-tight text-accent" aria-label={`Affinité ${affinite.score.scoreArrondi} sur 100`}>
                         {affinite.score.scoreArrondi} <span className="text-lg text-discret">/ 100</span>
                       </p>
                       <progress className="barre mt-2" aria-label="Affinité sur 100" max={100} value={affinite.score.scoreArrondi} />

@@ -1,6 +1,4 @@
 @import 'tailwindcss';
-@import '@fontsource-variable/bricolage-grotesque';
-@import '@fontsource-variable/figtree';
 @import './ui/mise-en-page.css';
 @import './ui/texte.css';
 @import './ui/boutons.css';
@@ -16,56 +14,62 @@
 @import './glossaire/glossaire.css';
 
 /*
- * Identité visuelle : thème clair unique, repris du design V0 (palette bleu encre sur papier, tricolore discret,
- * rayons doux). Ce fichier est la source unique des jetons : couleurs, rayons, ombres, polices. Les composants du kit
- * (app/ui/) et les écrans n'écrivent aucune couleur en dur ; ils lisent ces variables (les classes Tailwind aussi :
- * pas de `@theme inline`, donc les opacités comme bg-accent/45 restent valables).
+ * Identité visuelle « Boussole » : thème clair unique, repris de la maquette V0 (vert sapin sur papier, titres serif,
+ * tricolore discret, rayons doux). Ce fichier est la source unique des jetons : couleurs, rayons, ombres, polices. Les
+ * composants du kit (app/ui/) et les écrans n'écrivent aucune couleur en dur ; ils lisent ces variables (les classes
+ * Tailwind aussi : pas de `@theme inline`, donc les opacités comme bg-accent/45 restent valables).
  *
  * Rôles : fond = fond de page, fond-bas = bandes et surfaces en retrait, carte = surface, encre = texte,
- * marine = titres, discret = texte secondaire, trait = filets et bordures, accent = couleur d'action unique
- * (accent-fonce au survol, accent-doux en teinte de fond), france-bleu et france-rouge = bandeau tricolore seulement,
- * soleil et papier = mascotte (jamais du texte).
+ * marine = titres (vert très sombre, le nom est historique), discret = texte secondaire, trait = filets et bordures,
+ * accent = couleur d'action unique, vert (bouton principal, sélection, barres de score ; accent-fonce au survol,
+ * accent-doux en teinte de fond), lien = liens dans le texte et anneau de focus (lien-fonce au survol),
+ * france-bleu et france-rouge = drapeau tricolore seulement (filets, drapeau miniature), soleil et papier = mascotte
+ * (jamais du texte).
  * Aucune couleur n'est associée à un camp ou à un candidat : l'échelle de réponse est d'une seule teinte, et les
  * barres de score n'utilisent que l'accent.
  *
- * Contrastes (WCAG AA) : encre sur fond 13,7 ; discret sur fond 5,5, sur carte 5,8, sur accent-doux 5,1 ;
- * accent sur fond 8,4 ; carte sur accent 8,8.
+ * Contrastes (WCAG AA) : encre sur fond 13,7 ; marine sur fond 11,9 ; discret sur fond 5,5, sur carte 5,8, sur
+ * accent-doux 5,3 ; accent sur fond 9,0 ; carte sur accent 9,5 (11,8 au survol) ; lien sur fond 8,4.
  */
 @theme {
-  /* Polices : Bricolage Grotesque pour les titres et les boutons, Figtree pour le texte (empaquetées, pas de CDN). */
-  --font-titre: 'Bricolage Grotesque Variable', 'Trebuchet MS', system-ui, sans-serif;
-  --font-sans: 'Figtree Variable', system-ui, sans-serif;
+  /* Polices de la maquette, piles système (rien à télécharger) : Georgia pour les titres, Arial pour le texte. */
+  --font-titre: Georgia, 'Times New Roman', Times, serif;
+  --font-sans: Arial, Helvetica, system-ui, sans-serif;
 
-  /* Palette V0 (noms V0 entre parenthèses). */
-  --color-fond: #f7f8fb; /* background */
-  --color-fond-bas: #f0f2f7; /* muted, sidebar */
-  --color-carte: #fffefa; /* card, popover */
-  --color-encre: #202a37; /* foreground */
-  --color-marine: #1e3152; /* titres */
-  --color-discret: #5b6577; /* muted-foreground, assombri pour le contraste AA */
-  --color-trait: #e1e5ed; /* border, input */
-  --color-accent: #244889; /* primary */
-  --color-accent-fonce: #193a78;
-  --color-accent-doux: #e9eef7; /* accent, secondary */
+  /* Palette de la maquette V0. */
+  --color-fond: #f7f8fb;
+  --color-fond-bas: #f0f2f7;
+  --color-carte: #fffefa;
+  --color-encre: #202a37;
+  --color-marine: #23372e;
+  --color-discret: #5b6577; /* assombri pour le contraste AA */
+  --color-trait: #e1e5ed;
+  --color-accent: #294c3d;
+  --color-accent-fonce: #1e3d30;
+  --color-accent-doux: #f1f5ef;
+  --color-lien: #244889;
+  --color-lien-fonce: #17356d;
   --color-france-bleu: #183b82;
   --color-france-rouge: #e24b50;
   --color-soleil: #e9a520;
   --color-papier: #fbf6ea;
 
-  /* Rayons V0 : --radius 0.8rem, déclinés comme dans globals.css. */
+  /* Rayons V0 : --radius 0.8rem, déclinés comme dans la maquette. */
   --radius-sm: 0.48rem;
   --radius-md: 0.64rem;
   --radius-lg: 0.8rem;
   --radius-xl: 1.12rem;
   --radius-2xl: 1.44rem;
 
-  --shadow-carte: 0 8px 28px rgb(28 55 100 / 0.045);
-  --shadow-flottant: 0 20px 45px rgb(28 55 100 / 0.09);
+  /* Ombres de la maquette : carte posée, élément flottant, dialogue (feuille, bulle). */
+  --shadow-carte: 0 8px 28px rgb(34 52 40 / 0.035);
+  --shadow-flottant: 0 20px 45px rgb(31 56 41 / 0.08);
+  --shadow-dialogue: 0 20px 80px rgb(21 35 27 / 0.16);
 }
 
 :root {
   color-scheme: light;
-  /* Bandeau tricolore : le drapeau, sans rien d'autre (bandeau du haut, souligné de la navigation, filets). */
+  /* Filet tricolore : le drapeau, sans rien d'autre (haut de page, dialogue « À propos », filet des trois temps). */
   --degrade-tricolore: linear-gradient(90deg, var(--color-france-bleu) 0 33.333%, #fff 33.333% 66.666%, var(--color-france-rouge) 66.666%);
 }
 
@@ -84,16 +88,22 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* Bandeau tricolore, toujours visible en haut de l'écran (fixe, sur tous les écrans) : sous le panneau du glossaire
-   (z-40), au-dessus de l'en-tête (z-30). Purement décoratif : il ne capte aucun clic. */
+/* Filet tricolore en haut de la page (maquette V0, .app-shell::before) : il défile avec la page, au-dessus de
+   l'en-tête tant que celui-ci n'est pas collé. Purement décoratif : il ne capte aucun clic. */
 body::before {
   content: '';
-  position: fixed;
+  position: absolute;
   inset: 0 0 auto;
   z-index: 35;
   height: 5px;
   background: var(--degrade-tricolore);
   pointer-events: none;
+}
+
+@media (max-width: 720px) {
+  body::before {
+    height: 4px;
+  }
 }
 
 ::selection {
@@ -102,8 +112,14 @@ body::before {
 }
 
 :focus-visible {
-  outline: 3px solid var(--color-accent);
+  outline: 3px solid var(--color-lien);
   outline-offset: 2px;
+}
+
+/* Hors de @layer comme la règle ci-dessus (sinon elle l'emporte) : sur le bandeau vert (.btn-inverse), l'anneau bleu
+   des liens ne se voit presque pas (environ 1,2:1) ; il reprend le blanc du bouton (environ 9,5:1). */
+.btn-inverse:focus-visible {
+  outline-color: var(--color-carte);
 }
 
 @media (prefers-reduced-motion: no-preference) {

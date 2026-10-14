@@ -56,7 +56,7 @@ test('la CSP du Caddyfile est servie, et un parcours complet ne la viole jamais'
 
   // Pages chargées à la demande : Méthode, Candidats.
   await page.goto('/');
-  await page.getByRole('button', { name: 'Méthode', exact: true }).click();
+  await page.getByRole('button', { name: 'Notre méthode', exact: true }).click();
   await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
   await page.goto('/');
   await page.getByRole('button', { name: 'Candidats', exact: true }).click();

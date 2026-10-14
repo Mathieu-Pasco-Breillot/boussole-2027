@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { ECHELLE } from './libelles.ts';
-import { estTerminee, marquerVues, nouvellePartie, questionCourante, questionsParId, reculer, repondre, resultatsDePartie, situation } from './jeu.ts';
+import { estTerminee, marquerVues, nouvellePartie, passer, questionCourante, questionsParId, reculer, repondre, resultatsDePartie, situation } from './jeu.ts';
 import type { Partie } from './jeu.ts';
 
 function jouer(p: Partie, choix: (i: number) => number | 'sans_avis'): Partie {
@@ -70,6 +70,52 @@ describe('déroulement', () => {
   it('« sans avis » ne garde jamais « très important »', () => {
     const p = repondre(nouvellePartie('express', [], 3), { valeur: 'sans_avis', tresImportant: true });
     expect(Object.values(p.reponses)[0]).toEqual({ valeur: 'sans_avis', tresImportant: false });
+  });
+
+  it('passer avance d’une position sans rien enregistrer pour une question jamais répondue', () => {
+    const p = nouvellePartie('express', [], 3);
+    const q = passer(p);
+    expect(q.position).toBe(1);
+    expect(q.reponses).toEqual({});
+    expect(p.position).toBe(0);
+  });
+
+  it('passer efface la réponse déjà donnée à la question courante (répondre, reculer, passer)', () => {
+    let p = nouvellePartie('express', [], 3);
+    const premiere = questionCourante(p).id;
+    p = repondre(p, { valeur: 2, tresImportant: true });
+    p = reculer(p);
+    p = passer(p);
+    expect(p.position).toBe(1);
+    expect(premiere in p.reponses).toBe(false);
+  });
+
+  it('passer la dernière question termine la partie ; une partie terminée ne bouge plus', () => {
+    const p = nouvellePartie('express', [], 3);
+    const derniere = { ...p, position: p.questions.length - 1 };
+    const fin = passer(derniere);
+    expect(estTerminee(fin)).toBe(true);
+    expect(fin.position).toBe(p.questions.length);
+    expect(passer(fin)).toBe(fin);
+  });
+
+  it('une question passée compte comme « sans avis » : même résultat qu’une réponse absente ou « sans avis »', () => {
+    const p = nouvellePartie('express', [], 11);
+    const choix = (i: number) => ECHELLE[(i * 3) % 5]!.valeur;
+    let avecPasse = p;
+    let avecSansAvis = p;
+    for (let i = 0; !estTerminee(avecPasse); i++) {
+      const passee = i % 4 === 1;
+      // Pour la variante « passée », on répond d’abord puis on revient passer : la réponse doit disparaître.
+      if (passee) {
+        avecPasse = passer(reculer(repondre(avecPasse, { valeur: choix(i), tresImportant: true })));
+        avecSansAvis = repondre(avecSansAvis, { valeur: 'sans_avis', tresImportant: false });
+      } else {
+        avecPasse = repondre(avecPasse, { valeur: choix(i), tresImportant: false });
+        avecSansAvis = repondre(avecSansAvis, { valeur: choix(i), tresImportant: false });
+      }
+    }
+    expect(resultatsDePartie(avecPasse)).toEqual(resultatsDePartie(avecSansAvis));
   });
 
   it('la situation suit les chapitres', () => {

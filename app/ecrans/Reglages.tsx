@@ -9,7 +9,7 @@ export function Reglages() {
 
   return (
     <Carte as="section" aria-labelledby="titre-reglages" className="p-6">
-      <h2 id="titre-reglages" className="font-titre text-xl font-bold text-marine">
+      <h2 id="titre-reglages" className="font-titre text-xl text-marine">
         Réglages
       </h2>
       <button

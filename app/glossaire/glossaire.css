@@ -1,8 +1,6 @@
 /*
  * Glossaire (issue #7). Feuille du bas (< 1024 px) : <dialog> natif, collé en bas de l'écran, fond assombri.
  * Le bouton « Glossaire » est fixe en bas à droite : sous 1024 px, une marge basse évite qu'il masque la fin d'une page.
- * Sur les pages du site, la barre d'onglets du téléphone (< 768 px) occupe le bas de l'écran : le bouton se place
- * au-dessus d'elle, et la marge basse grandit d'autant.
  */
 .feuille-glossaire {
   margin: auto 0 0;
@@ -15,25 +13,16 @@
   padding: 0;
   background: var(--color-carte);
   color: var(--color-encre);
+  box-shadow: var(--shadow-dialogue);
 }
 
 .feuille-glossaire::backdrop {
-  background: rgb(25 42 72 / 0.38);
+  background: rgb(27 41 33 / 0.36);
 }
 
 @media (max-width: 1023.98px) {
   body {
     padding-bottom: 4.5rem;
-  }
-}
-
-@media (max-width: 767.98px) {
-  body:has([data-onglets]) {
-    padding-bottom: calc(9rem + env(safe-area-inset-bottom));
-  }
-
-  body:has([data-onglets]) .bouton-glossaire {
-    bottom: calc(5rem + env(safe-area-inset-bottom));
   }
 }
 
@@ -122,5 +111,5 @@
   letter-spacing: normal;
   text-transform: none;
   text-align: left;
-  box-shadow: 0 6px 20px rgb(28 55 100 / 0.2);
+  box-shadow: 0 6px 20px rgb(21 35 27 / 0.2);
 }

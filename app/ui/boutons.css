@@ -15,9 +15,9 @@
     line-height: 1.2;
     text-align: center;
     transition:
-      transform 0.16s ease,
-      background-color 0.16s ease,
-      border-color 0.16s ease;
+      transform 0.18s ease,
+      background-color 0.18s ease,
+      border-color 0.18s ease;
   }
 
   .btn:disabled {
@@ -88,20 +88,20 @@
 
   @media (hover: hover) {
     .lien:hover {
-      color: var(--color-accent);
+      color: var(--color-lien);
     }
   }
 
   /* Lien dans une phrase (source, dépôt) : pas de hauteur imposée, la cible est le texte. */
   .lien-texte {
-    color: var(--color-accent);
+    color: var(--color-lien);
     text-decoration: underline;
     text-underline-offset: 0.2em;
   }
 
   @media (hover: hover) {
     .lien-texte:hover {
-      color: var(--color-accent-fonce);
+      color: var(--color-lien-fonce);
     }
   }
 
@@ -113,7 +113,7 @@
     align-items: center;
     text-align: left;
     text-decoration: underline;
-    text-decoration-color: color-mix(in oklab, var(--color-accent) 50%, transparent);
+    text-decoration-color: color-mix(in oklab, var(--color-lien) 50%, transparent);
     text-decoration-thickness: 2px;
     text-underline-offset: 0.25em;
   }

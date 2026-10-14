@@ -1,5 +1,5 @@
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
 import type { Valeur } from '../../core/score/types.ts';
 import type { Partie } from '../jeu.ts';
 import { questionCourante, situation } from '../jeu.ts';
@@ -13,11 +13,13 @@ import { ProgressionParcours } from '../ui/ProgressionParcours.tsx';
 interface Props {
   partie: Partie;
   onRepondre: (valeur: Valeur | 'sans_avis', tresImportant: boolean) => void;
+  /** Laisse la question sans réponse (efface celle déjà donnée) et passe à la suivante. */
+  onPasser: () => void;
   onReculer: () => void;
   onQuitter: () => void;
 }
 
-export function Quiz({ partie, onRepondre, onReculer, onQuitter }: Props) {
+export function Quiz({ partie, onRepondre, onPasser, onReculer, onQuitter }: Props) {
   const question = questionCourante(partie);
   const s = situation(partie);
   const deja = partie.reponses[question.id];
@@ -34,6 +36,10 @@ export function Quiz({ partie, onRepondre, onReculer, onQuitter }: Props) {
   const reculer = () => {
     if (courante.current === question.id) onReculer();
   };
+  const passer = () => {
+    if (courante.current === question.id) onPasser();
+  };
+  const aidePasser = useId();
   const total = partie.questions.length;
   // Animations réduites : la carte suivante s'affiche d'un coup, sans fondu (texte lisible tout de suite).
   const reduit = useReducedMotion();
@@ -67,25 +73,33 @@ export function Quiz({ partie, onRepondre, onReculer, onQuitter }: Props) {
           </h1>
           <Depliants question={question} />
 
+          {/* « Sans avis » est une réponse : elle figure dans le groupe des réponses, à part des cinq degrés. */}
           <div role="group" aria-label="Votre réponse" className="reponses mt-6">
             {echelle.map((e) => (
               <button key={e.valeur} type="button" aria-pressed={deja?.valeur === e.valeur} onClick={() => repondre(e.valeur, important)} className="reponse">
                 {e.libelle}
               </button>
             ))}
+            <button type="button" aria-pressed={deja?.valeur === 'sans_avis'} onClick={() => repondre('sans_avis', false)} className="reponse reponse-sans-avis">
+              Sans avis
+            </button>
           </div>
 
           <button type="button" aria-pressed={important} onClick={() => setImportant((v) => !v)} className="bascule mt-3">
             {important ? '★' : '☆'} Très important pour moi
           </button>
 
+          {/* Navigation : revenir en arrière, ou passer sans répondre (la question reste sans réponse). */}
           <div className="mt-2 flex items-center justify-between gap-3">
             <button type="button" onClick={reculer} disabled={partie.position === 0} className="lien disabled:opacity-30">
               ← Proposition précédente
             </button>
-            <button type="button" onClick={() => repondre('sans_avis', false)} className="lien">
-              Sans avis
+            <button type="button" onClick={passer} aria-describedby={aidePasser} className="lien">
+              Passer la question <span aria-hidden="true">→</span>
             </button>
+            <span id={aidePasser} hidden>
+              Laisse cette proposition sans réponse et affiche la suivante.
+            </span>
           </div>
         </motion.div>
       </AnimatePresence>

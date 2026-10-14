@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react';
 
-/** En-tête collant du site : emplacement pour la marque, la navigation et les actions. Le contenu vient de l'appelant. */
+/** En-tête du site (collant à partir de 768 px) : emplacements pour la marque, la navigation et les actions. Le contenu vient de l'appelant. */
 export function EnTete({ logo, navigation, actions }: { logo: ReactNode; navigation?: ReactNode; actions?: ReactNode }) {
   return (
     <header className="entete">

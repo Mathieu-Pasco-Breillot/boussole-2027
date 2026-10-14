@@ -17,8 +17,8 @@ export default defineConfig({
       injectRegister: 'script',
       includeAssets: ['favicon.svg', 'apple-touch-icon.png'],
       manifest: {
-        name: 'Mon Isoloir',
-        short_name: 'Mon Isoloir',
+        name: 'Boussole 2027',
+        short_name: 'Boussole',
         description: "Comparateur des positions des candidats à l'élection présidentielle de 2027.",
         lang: 'fr',
         // Fond de page du thème clair (app/index.css, --color-fond) : barre d'état et écran de lancement.
@@ -29,15 +29,13 @@ export default defineConfig({
         icons: [
           { src: 'icon-192.png', sizes: '192x192', type: 'image/png' },
           { src: 'icon-512.png', sizes: '512x512', type: 'image/png' },
-          // Icône « maskable » : fond plein et urne réduite dans la zone sûre (80 % central), pour les icônes rognées.
+          // Icône « maskable » : fond plein et boussole réduite dans la zone sûre (80 % central), pour les icônes rognées.
           { src: 'icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
         ],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,png,woff2,json}'],
-        // Polices : le site est en français, seuls les sous-ensembles latin et latin étendu servent hors connexion.
-        // Les autres restent servis en ligne si un caractère en a besoin (unicode-range), sans peser sur le précache.
-        globIgnores: ['**/*-{cyrillic,cyrillic-ext,greek,greek-ext,vietnamese}-*.woff2'],
+        // Polices système (app/index.css) : aucun fichier de police à précacher.
+        globPatterns: ['**/*.{js,css,html,svg,png,json}'],
         // Le bundle principal embarque le paquet de données (plus de 1,6 Mo). Au-delà de cette limite, Workbox
         // exclurait le fichier du précache sans erreur et le site ne marcherait plus hors connexion :
         // e2e/hors-ligne.spec.ts vérifie que tout fichier utile de dist/ est bien précaché.

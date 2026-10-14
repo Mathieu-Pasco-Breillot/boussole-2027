@@ -57,7 +57,7 @@ export function PreparationDuel({ onLancer, onRetour }: Props) {
         </header>
 
         <section aria-labelledby="titre-candidats">
-          <h2 id="titre-candidats" className="font-titre text-2xl font-semibold tracking-tight text-marine">
+          <h2 id="titre-candidats" className="font-titre text-2xl font-normal tracking-tight text-marine">
             Avec quel candidat ?
           </h2>
           <p className="mt-1 text-sm text-discret">Ordre tiré au sort à chaque ouverture de cet écran.</p>
@@ -132,7 +132,7 @@ export function PreparationDuel({ onLancer, onRetour }: Props) {
       </header>
 
       <section aria-labelledby="titre-taille">
-        <h2 id="titre-taille" className="font-titre text-2xl font-semibold tracking-tight text-marine">
+        <h2 id="titre-taille" className="font-titre text-2xl font-normal tracking-tight text-marine">
           Combien de propositions ?
         </h2>
         <div className="mt-3 flex flex-col gap-2" role="radiogroup" aria-label="Nombre de propositions">
@@ -147,7 +147,7 @@ export function PreparationDuel({ onLancer, onRetour }: Props) {
       </section>
 
       <section aria-labelledby="titre-poids">
-        <h2 id="titre-poids" className="font-titre text-2xl font-semibold tracking-tight text-marine">
+        <h2 id="titre-poids" className="font-titre text-2xl font-normal tracking-tight text-marine">
           Ce qui compte pour vous
         </h2>
         <p className="mt-1 text-sm leading-relaxed text-discret">
@@ -158,7 +158,7 @@ export function PreparationDuel({ onLancer, onRetour }: Props) {
           {chapitres.map((t) => (
             <Carte as="li" key={t} className="p-4">
               <fieldset>
-                <legend className="font-titre text-lg font-semibold text-marine">
+                <legend className="font-titre text-lg font-normal text-marine">
                   {libelleTheme(t)} <span className="text-sm font-normal text-discret">({parChapitre.get(t)} propositions)</span>
                 </legend>
                 <div className="mt-2 grid grid-cols-4 gap-1" role="radiogroup" aria-label={`Importance du thème ${libelleTheme(t)}`}>

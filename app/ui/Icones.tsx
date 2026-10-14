@@ -73,3 +73,16 @@ export const IconeBalance = (p: Props) => (
     <path d="m5 7-3 7a3.5 3.5 0 0 0 6 0L5 7ZM19 7l-3 7a3.5 3.5 0 0 0 6 0L19 7Z" />
   </Icone>
 );
+
+/** Flèche oblique : une carte qui mène ailleurs. */
+export const IconeFlecheOblique = (p: Props) => (
+  <Icone {...p}>
+    <path d="M7 17 17 7M8 7h9v9" />
+  </Icone>
+);
+
+export const IconeCroix = (p: Props) => (
+  <Icone {...p}>
+    <path d="M6 6l12 12M18 6 6 18" />
+  </Icone>
+);

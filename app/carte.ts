@@ -21,9 +21,9 @@ const COULEURS = {
   carte: '#fffefa',
   trait: '#e1e5ed',
   encre: '#202a37',
-  marine: '#1e3152',
+  marine: '#23372e',
   discret: '#5b6577',
-  accent: '#244889',
+  accent: '#294c3d',
   bleu: '#183b82',
   blanc: '#ffffff',
   rouge: '#e24b50',
@@ -70,11 +70,11 @@ export function dessinerCarte(canvas: HTMLCanvasElement, d: DonneesCarte): void 
   canvas.height = HAUTEUR_CARTE;
   const ctx = canvas.getContext('2d');
   if (!ctx) return;
-  const titre = "'Bricolage Grotesque Variable', 'Trebuchet MS', sans-serif";
-  const sans = "'Figtree Variable', system-ui, sans-serif";
+  const titre = "Georgia, 'Times New Roman', Times, serif";
+  const sans = 'Arial, Helvetica, system-ui, sans-serif';
   ctx.fillStyle = COULEURS.fond;
   ctx.fillRect(0, 0, LARGEUR_CARTE, HAUTEUR_CARTE);
-  // Bandeau tricolore du haut, comme sur le site.
+  // Filet tricolore du haut : celui de la page (body::before, --degrade-tricolore), épaissi à l'échelle de la carte.
   const tiers = LARGEUR_CARTE / 3;
   [COULEURS.bleu, COULEURS.blanc, COULEURS.rouge].forEach((c, i) => {
     ctx.fillStyle = c;
@@ -87,7 +87,7 @@ export function dessinerCarte(canvas: HTMLCanvasElement, d: DonneesCarte): void 
   ctx.fillText('PRÉSIDENTIELLE 2027', 80, 120);
   ctx.fillStyle = COULEURS.marine;
   ctx.font = `700 96px ${titre}`;
-  ctx.fillText('Mon Isoloir', 80, 230);
+  ctx.fillText('Boussole', 80, 230);
   ctx.fillStyle = COULEURS.discret;
   ctx.font = `400 38px ${sans}`;
   ctx.fillText(`Mode ${MODES[d.mode].nom} · ${MODES[d.mode].questions} questions`, 80, 295);
@@ -133,10 +133,10 @@ export function dessinerCarte(canvas: HTMLCanvasElement, d: DonneesCarte): void 
 export async function partagerCarte(canvas: HTMLCanvasElement): Promise<'partage' | 'telecharge' | 'echec'> {
   const blob = await new Promise<Blob | null>((ok) => canvas.toBlob(ok, 'image/png'));
   if (!blob) return 'echec';
-  const fichier = new File([blob], 'mon-isoloir.png', { type: 'image/png' });
+  const fichier = new File([blob], 'boussole-2027.png', { type: 'image/png' });
   try {
     if (navigator.canShare?.({ files: [fichier] })) {
-      await navigator.share({ files: [fichier], title: 'Mon Isoloir' });
+      await navigator.share({ files: [fichier], title: 'Boussole 2027' });
       return 'partage';
     }
   } catch {
@@ -145,7 +145,7 @@ export async function partagerCarte(canvas: HTMLCanvasElement): Promise<'partage
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'mon-isoloir.png';
+  a.download = 'boussole-2027.png';
   a.click();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
   return 'telecharge';

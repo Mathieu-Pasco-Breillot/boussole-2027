@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import type { ReactNode } from 'react';
 import { MODES, MOTIFS_NON_EVALUATION, THEMES } from '../libelles.ts';
 import type { ModeJeu } from '../jeu.ts';
@@ -10,7 +9,7 @@ import { paquet } from '../paquet.ts';
 import { Bouton } from '../ui/Bouton.tsx';
 import { Carte } from '../ui/Carte.tsx';
 import { ChoixMode } from '../ui/ChoixMode.tsx';
-import { IconeBalance, IconeCoche, IconeDuel, IconeFleche, IconeQuestion, IconeQuiz } from '../ui/Icones.tsx';
+import { IconeBalance, IconeBouclier, IconeDuel, IconeFleche, IconeFlecheOblique, IconeQuestion, IconeQuiz } from '../ui/Icones.tsx';
 import { NoteConfiance } from '../ui/NoteConfiance.tsx';
 import { idOnglet, idPanneau } from '../ui/onglets.ts';
 import { SelecteurFormat } from '../ui/SelecteurFormat.tsx';
@@ -40,8 +39,9 @@ const FORMATS: readonly OptionFormat[] = ORDRE_MODES.map((m, i) => ({
   niveau: i + 1,
   repere: m === 'express' ? 'Idéal pour commencer' : undefined,
 }));
+const TAILLES = ORDRE_MODES.map((m) => MODES[m].questions);
 
-type ModeAccueil = 'quiz' | 'duel';
+export type ModeAccueil = 'quiz' | 'duel';
 const BASE_JOUER = 'jouer';
 
 interface Props {
@@ -58,6 +58,9 @@ interface Props {
   onDuel: () => void;
   onReprendreDuel: () => void;
   onVoirResultatsDuel: () => void;
+  /** Onglet du sélecteur de mode, tenu par l'appelant : l'en-tête (« Le quiz ») peut aussi le commander. */
+  mode: ModeAccueil;
+  onMode: (mode: ModeAccueil) => void;
 }
 
 const allerA = (id: string) => document.getElementById(id)?.scrollIntoView({ block: 'start' });
@@ -67,7 +70,7 @@ function Reprise({ titre, detail, onClick }: { titre: string; detail?: string; o
   return (
     <button type="button" onClick={onClick} className="carte flex w-full items-center justify-between gap-4 border-accent/60 p-4 text-left">
       <span>
-        <span className="block font-titre text-lg font-bold text-marine">{titre}</span>
+        <span className="block font-titre text-lg text-marine">{titre}</span>
         {detail && <span className="text-sm text-discret">{detail}</span>}
       </span>
       <span aria-hidden="true" className="grid size-10 shrink-0 place-items-center rounded-full bg-accent text-carte">
@@ -78,24 +81,19 @@ function Reprise({ titre, detail, onClick }: { titre: string; detail?: string; o
 }
 
 /**
- * Illustration du haut de page, à droite du titre : purement décorative (masquée aux lecteurs d'écran, rien de cliquable).
- * Le drapeau n'a aucun emblème, la mascotte ne montre aucun thème ni aucune mesure : rien n'est mis en avant.
+ * Illustration du haut de page : deux orbites, le sceau de l'élection (CSS pur, il tourne lentement sauf si le téléphone
+ * demande des animations réduites) et la mascotte. Purement décorative (masquée aux lecteurs d'écran, rien de
+ * cliquable) : le sceau n'a aucun emblème, la mascotte ne montre aucun thème ni aucune mesure.
  */
 function Illustration() {
   return (
     <div aria-hidden="true" className="accueil-art select-none">
       <div className="accueil-orbite" />
       <div className="accueil-orbite accueil-orbite-interne" />
-      <div className="accueil-drapeau">
-        <div className="drapeau-grand">
-          <i />
-          <i />
-          <i />
-        </div>
-        <div className="flex flex-col items-center gap-1">
-          <span className="surtitre text-[0.6875rem]">Élection présidentielle</span>
-          <strong className="font-titre text-lg font-semibold text-marine">France · 2027</strong>
-        </div>
+      <div data-sceau className="sceau">
+        <span className="sceau-mention">Élections</span>
+        <span className="sceau-annee">2027</span>
+        <span className="sceau-mention">France · présidentielle</span>
       </div>
       <figure className="accueil-mascotte">
         <Mascotte attitude="accueil" taille={84} />
@@ -121,20 +119,29 @@ function Section({ id, surtitre, titre, intro, children, bande = false }: { id?:
   );
 }
 
+/** Les trois temps d'une partie, textes de la maquette V0. */
 const ETAPES: readonly { titre: string; texte: string }[] = [
-  {
-    titre: 'Vous réagissez',
-    texte: "Des propositions concrètes défilent une par une, sans nom de candidat ni de parti. Vous dites si vous êtes d'accord, sur cinq crans.",
-  },
-  {
-    titre: 'Vous pondérez',
-    texte: "Une proposition compte beaucoup pour vous ? Marquez-la « très important ». Aucun avis ? Passez : elle sort du calcul.",
-  },
-  {
-    titre: 'Vous comparez',
-    texte: 'À la fin, vos réponses sont rapprochées des positions publiques des candidats. Chaque position renvoie à sa source.',
-  },
+  { titre: 'Vous répondez.', texte: 'À votre rythme, sans bonne ou mauvaise réponse.' },
+  { titre: 'On compare.', texte: 'Vos réponses aux positions publiques des candidats, sources à l’appui.' },
+  { titre: 'Vous explorez.', texte: 'Les sujets d’accord, de nuance et de désaccord.' },
 ];
+
+/** Carte d'un mode de jeu (quiz ou duel) : toute la carte est un bouton. */
+function CarteMode({ nom, titre, texte, icone, onClick }: { nom: string; titre: string; texte: string; icone: ReactNode; onClick: () => void }) {
+  return (
+    <button type="button" onClick={onClick} className="carte-mode">
+      <span aria-hidden="true" className="carte-mode-icone">
+        {icone}
+      </span>
+      <span className="carte-mode-texte">
+        <span className="surtitre block">{nom}</span>
+        <strong>{titre}</strong>
+        <span>{texte}</span>
+      </span>
+      <IconeFlecheOblique className="ml-auto shrink-0 text-discret" />
+    </button>
+  );
+}
 
 const ENGAGEMENTS: readonly { titre: string; texte: string }[] = [
   {
@@ -183,15 +190,19 @@ const QUESTIONS_FREQUENTES: readonly { question: string; reponse: string }[] = [
   },
 ];
 
-export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, onReprendre, onVoirResultats, duelEnCours, duelTermine, onDuel, onReprendreDuel, onVoirResultatsDuel }: Props) {
+export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, onReprendre, onVoirResultats, duelEnCours, duelTermine, onDuel, onReprendreDuel, onVoirResultatsDuel, mode, onMode }: Props) {
   const reprises = enCours || terminee || duelEnCours || duelTermine;
-  const [mode, setMode] = useState<ModeAccueil>('quiz');
+  /** Vers le choix du format : onglet du quiz ouvert, section « Jouer » en haut de l'écran. */
+  const allerAuQuiz = () => {
+    onMode('quiz');
+    allerA('jouer');
+  };
 
   return (
     <main>
       {/* ── Haut de page ── */}
-      <section>
-        <div className="conteneur grid items-center gap-10 pt-8 pb-12 md:pt-14 md:pb-16 lg:grid-cols-[1.1fr_0.9fr]">
+      <section aria-labelledby="titre-accueil">
+        <div className="conteneur grid items-center gap-8 pt-10 pb-10 md:pt-14 md:pb-14 lg:grid-cols-[1fr_0.92fr]">
           <div className="entree flex flex-col items-start gap-5">
             <p className="surtitre flex items-center gap-2.5">
               <span aria-hidden="true" className="tricolore">
@@ -199,39 +210,59 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
                 <i />
                 <i />
               </span>
-              Présidentielle 2027 · comparateur indépendant
+              Un outil citoyen, indépendant
             </p>
-            <h1 className="font-titre text-[clamp(2.4rem,1.4rem+5vw,4.25rem)] leading-[1.04] font-semibold tracking-[-0.035em] text-marine">
-              Quels candidats pensent comme vous ? <span className="text-accent">Vérifiez à l'abri des regards.</span>
+            <h1 id="titre-accueil" className="titre-accueil">
+              Et si vous faisiez <br className="hidden sm:inline" />
+              le point <em>avant</em> 2027&nbsp;?
             </h1>
-            <p className="max-w-xl text-lg leading-relaxed text-discret md:text-xl">
-              Mon Isoloir vous soumet des propositions concrètes, puis compare vos réponses aux positions publiques des
-              candidats. Chaque position est sourcée, et rien ne quitte votre téléphone.
+            <p className="max-w-xl text-lg leading-relaxed text-discret">
+              Un quiz politique pour explorer vos convictions et comprendre ce qui vous rapproche — ou vous éloigne — des
+              propositions des candidats.
             </p>
-            <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
-              <Bouton grand fleche onClick={() => allerA('jouer')}>
-                Commencer le test
+            <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:flex-wrap">
+              <Bouton grand fleche onClick={allerAuQuiz}>
+                Trouver mes affinités
               </Bouton>
-              <Bouton grand variante="secondaire" onClick={() => allerA('principe')}>
-                Comment ça marche
+              <Bouton grand variante="secondaire" onClick={onDuel}>
+                <IconeDuel />
+                Duel avec un candidat
               </Bouton>
             </div>
-            <ul className="flex flex-wrap gap-x-5 gap-y-1 text-sm font-medium text-discret">
-              {['Gratuit, sans inscription', 'Aucune réponse envoyée', 'Méthode et code publics'].map((t) => (
-                <li key={t} className="flex items-center gap-1.5">
-                  <IconeCoche />
-                  {t}
-                </li>
-              ))}
-            </ul>
+            <p className="flex items-center gap-2 text-sm text-discret">
+              <IconeBouclier taille={16} className="shrink-0 text-accent" />
+              Pas de bonne réponse. Pas de consigne de vote.
+            </p>
           </div>
           <Illustration />
         </div>
       </section>
 
+      {/* ── Comment ça marche : trois temps ── */}
+      <section aria-labelledby="titre-etapes" className="conteneur">
+        <div className="accueil-etapes">
+          <h2 id="titre-etapes" className="surtitre">
+            Comment ça marche ?
+          </h2>
+          <ol className="grid gap-4 md:grid-cols-3 md:gap-0">
+            {ETAPES.map((e, i) => (
+              <li key={e.titre} className="etape">
+                <span aria-hidden="true" className="etape-numero">
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+                <span>
+                  <strong className="block text-marine">{e.titre}</strong>
+                  <span className="mt-1 block text-sm leading-relaxed text-discret">{e.texte}</span>
+                </span>
+              </li>
+            ))}
+          </ol>
+        </div>
+      </section>
+
       {/* ── Parties enregistrées sur cet appareil ── */}
       {reprises && (
-        <section aria-label="Vos parties sur cet appareil" className="conteneur mb-10 grid gap-3 md:grid-cols-2">
+        <section aria-label="Vos parties sur cet appareil" className="conteneur mt-8 grid gap-3 md:grid-cols-2">
           {enCours && <Reprise titre="Reprendre la partie en cours" detail="Vous retrouvez vos réponses là où vous les avez laissées." onClick={onReprendre} />}
           {terminee && <Reprise titre="Revoir mon dernier résultat" onClick={onVoirResultats} />}
           {duelEnCours && <Reprise titre="Reprendre le duel en cours" detail="Vous retrouvez vos réponses là où vous les avez laissées." onClick={onReprendreDuel} />}
@@ -239,37 +270,42 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
         </section>
       )}
 
+      {/* ── Votre parcours : les deux modes ── */}
+      <section aria-labelledby="titre-parcours" className="conteneur grid items-center gap-3 py-12 md:grid-cols-[0.85fr_1fr_1fr] md:py-14">
+        <div className="mb-2 md:mb-0">
+          <p className="surtitre surtitre-point">Votre parcours</p>
+          <h2 id="titre-parcours" className="titre-section mt-3">
+            Deux façons de <br className="hidden md:inline" />
+            vous situer.
+          </h2>
+        </div>
+        <CarteMode
+          nom="Le quiz"
+          titre={`À votre rythme, de ${Math.min(...TAILLES)} à ${Math.max(...TAILLES)} questions.`}
+          texte="Comparez vos réponses aux positions publiques disponibles."
+          icone={<IconeQuiz taille={21} />}
+          onClick={allerAuQuiz}
+        />
+        <CarteMode
+          nom="Le duel"
+          titre="Une question, un candidat, une source."
+          texte="Découvrez sa position après chacune de vos réponses."
+          icone={<IconeDuel taille={21} />}
+          onClick={onDuel}
+        />
+      </section>
+
       {/* ── Chiffres ── */}
       <section aria-label="Le comparateur en chiffres" className="accueil-chiffres">
         <dl className="conteneur grid grid-cols-2 gap-x-6 gap-y-6 py-8 md:grid-cols-4">
           {CHIFFRES.map((c) => (
             <div key={c.libelle} className="flex flex-col-reverse">
               <dt className="text-sm text-discret">{c.libelle}</dt>
-              <dd className="font-titre text-4xl font-semibold tracking-tight text-marine md:text-5xl">{c.valeur}</dd>
+              <dd className="font-titre text-4xl tracking-tight text-marine md:text-5xl">{c.valeur}</dd>
             </div>
           ))}
         </dl>
       </section>
-
-      {/* ── Le principe ── */}
-      <Section
-        id="principe"
-        surtitre="Le principe"
-        titre="Trois temps, à votre rythme."
-        intro="Pas de profil à créer, pas de question piège. Vous réagissez, l'outil rapproche, vous vérifiez."
-      >
-        <ol className="grid gap-4 md:grid-cols-3">
-          {ETAPES.map((e, i) => (
-            <Carte as="li" key={e.titre} douce className="p-6">
-              <span aria-hidden="true" className="font-titre text-lg font-bold text-accent">
-                {String(i + 1).padStart(2, '0')}
-              </span>
-              <h3 className="mt-2 font-titre text-xl font-semibold text-marine">{e.titre}</h3>
-              <p className="mt-2 leading-relaxed text-discret">{e.texte}</p>
-            </Carte>
-          ))}
-        </ol>
-      </Section>
 
       {/* ── Jouer ── */}
       <Section
@@ -289,7 +325,7 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
                 { id: 'duel', libelle: 'Duel avec un candidat', icone: <IconeDuel /> },
               ]}
               valeur={mode}
-              onChange={setMode}
+              onChange={onMode}
             />
             <div role="tabpanel" id={idPanneau(BASE_JOUER, 'quiz')} aria-labelledby={idOnglet(BASE_JOUER, 'quiz')} hidden={mode !== 'quiz'} className="panneau-mode">
               <SelecteurFormat legende="Choisissez votre format" options={FORMATS} onChoisir={(id) => onCommencer(id as ModeJeu)} />
@@ -297,7 +333,7 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
             </div>
             <div role="tabpanel" id={idPanneau(BASE_JOUER, 'duel')} aria-labelledby={idOnglet(BASE_JOUER, 'duel')} hidden={mode !== 'duel'} className="panneau-mode">
               <p className="surtitre surtitre-point">Comparaison en direct</p>
-              <h3 className="mt-3 font-titre text-2xl font-semibold tracking-tight text-marine">Un candidat. Une position à la fois.</h3>
+              <h3 className="mt-3 font-titre text-2xl tracking-tight text-marine">Un candidat. Une position à la fois.</h3>
               <p className="mt-3 max-w-prose leading-relaxed text-discret">
                 Choisissez un candidat et découvrez son programme au fil de vos réponses, avec les sources.
               </p>
@@ -314,7 +350,7 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
                 <IconeQuestion taille={20} />
               </span>
               <span>
-                <span className="block font-titre text-lg font-semibold text-marine">Défi « Qui a dit ça ? »</span>
+                <span className="block font-titre text-lg text-marine">Défi « Qui a dit ça ? »</span>
                 <span className="block text-sm leading-relaxed text-discret">Cinq positions sourcées, sans les noms. Un jeu à part, sans lien avec votre résultat.</span>
               </span>
               <IconeFleche className="ml-auto shrink-0 text-discret" />
@@ -324,7 +360,7 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
                 <IconeBalance taille={20} />
               </span>
               <div>
-                <p className="font-titre text-lg font-semibold text-marine">Pas une consigne de vote.</p>
+                <p className="font-titre text-lg text-marine">Pas une consigne de vote.</p>
                 <p className="text-sm leading-relaxed text-discret">Un score rapproche vos réponses de positions publiques : il ne vous dit pas pour qui voter.</p>
               </div>
             </Carte>
@@ -337,13 +373,13 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
         <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {ENGAGEMENTS.map((e) => (
             <Carte as="li" key={e.titre} className="border-t-4 border-t-accent p-5">
-              <h3 className="font-titre text-xl font-semibold text-marine">{e.titre}</h3>
+              <h3 className="font-titre text-xl text-marine">{e.titre}</h3>
               <p className="mt-2 leading-relaxed text-discret">{e.texte}</p>
             </Carte>
           ))}
         </ul>
         <Carte douce className="mt-4 grid gap-4 p-6 md:grid-cols-[auto_1fr] md:items-center md:gap-8">
-          <h3 className="font-titre text-xl font-semibold text-marine">Ce que l'outil ne fait pas</h3>
+          <h3 className="font-titre text-xl text-marine">Ce que l'outil ne fait pas</h3>
           <p className="leading-relaxed text-discret">
             Il ne vous dit pas pour qui voter. Il ne tient compte ni des personnalités, ni des sondages, ni des votes au
             Parlement. Un candidat dont les positions sont encore trop peu codées n'est pas classé : l'outil l'indique.
@@ -364,7 +400,7 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
       >
         <dl className="flex flex-col gap-6">
           <div>
-            <dt className="font-titre text-lg font-semibold text-marine">Comparés dans les résultats ({groupes.compares.length})</dt>
+            <dt className="font-titre text-lg text-marine">Comparés dans les résultats ({groupes.compares.length})</dt>
             <dd className="mt-3 flex flex-wrap gap-2">
               {groupes.compares.map((c) => (
                 <span key={c.id} className="pilule">
@@ -398,7 +434,7 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
         <div className="grid gap-3 lg:grid-cols-2 lg:items-start">
           {QUESTIONS_FREQUENTES.map((q) => (
             <details key={q.question} className="depliant carte px-5 py-2">
-              <summary className="font-titre text-lg font-semibold text-marine">{q.question}</summary>
+              <summary className="font-titre text-lg text-marine">{q.question}</summary>
               <p className="pt-1 pb-3 leading-relaxed text-discret">{q.reponse}</p>
             </details>
           ))}
@@ -410,7 +446,7 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
         <div className="flex flex-col items-start justify-center gap-4 rounded-xl bg-accent p-8 text-carte md:p-10">
           <h2 className="titre-section text-carte">Cinq minutes suffisent pour une première idée.</h2>
           <p className="max-w-md text-lg leading-relaxed">Vingt propositions, puis votre rapprochement avec les candidats, sources à l'appui.</p>
-          <Bouton grand variante="inverse" onClick={() => allerA('jouer')}>
+          <Bouton grand variante="inverse" onClick={allerAuQuiz}>
             Choisir un format
           </Bouton>
         </div>
