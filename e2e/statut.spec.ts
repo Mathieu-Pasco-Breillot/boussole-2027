@@ -12,7 +12,7 @@ async function ouvrirFiche(page: Page, nom: string) {
 test('un candidat codé sur au moins 40 % des questions est « Évalué », avec sa part codée', async ({ page }) => {
   await ouvrirFiche(page, 'Jean-Luc Mélenchon');
   await expect(page.getByText('Statut :')).toContainText('Évalué');
-  await expect(page.getByTestId('couverture')).toContainText(/46,9\s%/);
+  await expect(page.getByTestId('couverture')).toContainText(/67,1\s%/); // 139 sur 207 depuis la passe programme du 14 octobre 2026
   await expect(page.getByTestId('couverture')).toContainText(/40,0\s%/);
 });
 
