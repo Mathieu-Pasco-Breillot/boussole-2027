@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.0](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/compare/donnees-v1.1.0...donnees-v1.2.0) (2026-10-14)
+
+
+### Ajouts (candidats, questions, codages)
+
+* **donnees:** passe programme sur les positions de David Lisnard ([486649c](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/commit/486649c3fe54e929648779a68b036fe0a9699d4a))
+* **donnees:** passe programme sur les positions de Gabriel Attal ([#26](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/issues/26)) ([7b91a9d](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/commit/7b91a9dcebbe2fac967b4cf6d2bf6b8834105ad7))
+* **donnees:** passe programme sur les positions de Jean-Luc Mélenchon ([#25](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/issues/25)) ([9823f66](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/commit/9823f66f9be4802441e1c9e74a6edfe746ae12d1))
+
 ## [1.1.0](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/compare/donnees-v1.0.0...donnees-v1.1.0) (2026-10-14)
 
 

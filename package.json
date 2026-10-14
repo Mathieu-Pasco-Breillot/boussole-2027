@@ -1,6 +1,6 @@
 {
   "name": "choose-your-candidate-2027",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "private": true,
   "description": "Comparateur indépendant des programmes pour la présidentielle de 2027 : données ouvertes, méthode publique, calcul dans le navigateur.",
   "type": "module",
