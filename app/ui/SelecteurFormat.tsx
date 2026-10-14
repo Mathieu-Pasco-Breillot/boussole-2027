@@ -1,14 +1,11 @@
-const HAUTEURS = ['h-1.5', 'h-2.5', 'h-3.5', 'h-4.5', 'h-5.5', 'h-6.5'] as const;
+import type { CSSProperties } from 'react';
 
-/** Longueur d'un format, en barres : un repère visuel, sans valeur (décoratif). */
-function Longueur({ niveau }: { niveau: number }) {
-  return (
-    <span aria-hidden="true" className="flex items-end gap-0.5 text-accent">
-      {HAUTEURS.map((h, i) => (
-        <span key={h} className={`w-1.5 rounded-full bg-current ${i < niveau ? '' : 'opacity-25'} ${h}`} />
-      ))}
-    </span>
-  );
+/**
+ * Durée d'un format, en cadran de minuteur : le disque se remplit selon la part du format le plus long. Un repère de
+ * temps à passer, pas un niveau de difficulté (décoratif, sans valeur).
+ */
+function Cadran({ part }: { part: number }) {
+  return <span aria-hidden="true" className="format-cadran" style={{ '--part': `${part * 360}deg` } as CSSProperties} />;
 }
 
 export interface OptionFormat {
@@ -18,8 +15,8 @@ export interface OptionFormat {
   unite: string;
   /** Ligne secondaire (durée estimée). */
   detail: string;
-  /** Longueur relative, de 1 à 6 : barres décoratives. */
-  niveau: number;
+  /** Part de la durée maximale, entre 0 et 1 : cadran décoratif. */
+  part: number;
   /** Mention facultative sur la case (« Idéal pour commencer »). */
   repere?: string;
 }
@@ -46,7 +43,7 @@ export function SelecteurFormat({ legende, options, onChoisir }: Props) {
               <span className="format-titre">
                 {o.nom} · <b>{o.nombre}</b> {o.unite}
               </span>
-              <Longueur niveau={o.niveau} />
+              <Cadran part={o.part} />
             </span>
             <span className="format-detail">{o.detail}</span>
             {o.repere && <span className="format-repere">{o.repere}</span>}

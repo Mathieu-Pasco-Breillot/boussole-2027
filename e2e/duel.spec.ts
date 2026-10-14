@@ -5,7 +5,7 @@ import { surveillerErreurs, surveillerReseau } from './outils.ts';
 async function lancerDuel(page: Page): Promise<string> {
   await page.goto('/');
   // Sur l'accueil, le duel est le second onglet du choix de mode.
-  await page.getByRole('tab', { name: /^Duel avec un candidat/ }).click();
+  await page.getByRole('tab', { name: /^Comparer à un candidat/ }).click();
   await page.getByRole('button', { name: 'Choisir un candidat' }).click();
   const premier = page.getByRole('list').filter({ hasText: 'propositions' }).first().getByRole('button').first();
   const nom = ((await premier.locator('span.font-semibold').first().textContent()) ?? '').trim();

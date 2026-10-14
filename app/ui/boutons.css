@@ -74,6 +74,38 @@
     font-size: 1rem;
   }
 
+  /* Bouton discret (Quitter, Retour, Sans avis…) : une pilule claire qui passe à l'accent au survol. */
+  .btn-discret {
+    display: inline-flex;
+    min-height: 2.75rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    gap: 0.375rem;
+    border: 1px solid var(--color-trait);
+    border-radius: 9999px;
+    background: var(--color-carte);
+    padding: 0 1rem;
+    color: var(--color-discret);
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition:
+      border-color 0.16s ease,
+      color 0.16s ease;
+  }
+
+  .btn-discret:disabled {
+    cursor: not-allowed;
+    opacity: 0.3;
+  }
+
+  @media (hover: hover) {
+    .btn-discret:not(:disabled):hover {
+      border-color: var(--color-accent);
+      color: var(--color-accent);
+    }
+  }
+
   .lien {
     display: inline-flex;
     min-height: 2.75rem;

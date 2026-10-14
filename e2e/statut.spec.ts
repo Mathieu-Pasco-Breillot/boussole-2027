@@ -22,7 +22,7 @@ test('un candidat sous le seuil reste comparé, codage en cours, avec sa part co
   await expect(page.getByTestId('couverture')).toContainText(/22,7\s%/);
 });
 
-test('la mascotte porte son nom sur l’accueil', async ({ page }) => {
+test('l’accueil n’affiche plus de mascotte', async ({ page }) => {
   await page.goto('/');
-  await expect(page.locator('figure figcaption')).toHaveText('Urnie');
+  await expect(page.locator('figure figcaption')).toHaveCount(0);
 });

@@ -30,7 +30,7 @@
   background: var(--color-france-rouge);
 }
 
-/* Illustration : deux orbites, la carte du drapeau et la mascotte. Purement décorative (aria-hidden côté JSX). */
+/* Illustration : deux orbites et la carte du drapeau. Purement décorative (aria-hidden côté JSX). */
 .accueil-art {
   position: relative;
   display: grid;
@@ -80,21 +80,6 @@
 
 .drapeau-grand > i {
   flex: 1;
-}
-
-.accueil-mascotte {
-  position: absolute;
-  right: 0;
-  bottom: 4%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-@media (min-width: 640px) {
-  .accueil-mascotte {
-    right: 6%;
-  }
 }
 
 .accueil-art-note {

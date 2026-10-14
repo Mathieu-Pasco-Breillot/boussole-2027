@@ -87,7 +87,7 @@ export function dessinerCarte(canvas: HTMLCanvasElement, d: DonneesCarte): void 
   ctx.fillText('PRÉSIDENTIELLE 2027', 80, 120);
   ctx.fillStyle = COULEURS.marine;
   ctx.font = `700 96px ${titre}`;
-  ctx.fillText('Mon Isoloir', 80, 230);
+  ctx.fillText('Boussole 2027', 80, 230);
   ctx.fillStyle = COULEURS.discret;
   ctx.font = `400 38px ${sans}`;
   ctx.fillText(`Mode ${MODES[d.mode].nom} · ${MODES[d.mode].questions} questions`, 80, 295);
@@ -133,10 +133,10 @@ export function dessinerCarte(canvas: HTMLCanvasElement, d: DonneesCarte): void 
 export async function partagerCarte(canvas: HTMLCanvasElement): Promise<'partage' | 'telecharge' | 'echec'> {
   const blob = await new Promise<Blob | null>((ok) => canvas.toBlob(ok, 'image/png'));
   if (!blob) return 'echec';
-  const fichier = new File([blob], 'mon-isoloir.png', { type: 'image/png' });
+  const fichier = new File([blob], 'boussole-2027.png', { type: 'image/png' });
   try {
     if (navigator.canShare?.({ files: [fichier] })) {
-      await navigator.share({ files: [fichier], title: 'Mon Isoloir' });
+      await navigator.share({ files: [fichier], title: 'Boussole 2027' });
       return 'partage';
     }
   } catch {
@@ -145,7 +145,7 @@ export async function partagerCarte(canvas: HTMLCanvasElement): Promise<'partage
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = 'mon-isoloir.png';
+  a.download = 'boussole-2027.png';
   a.click();
   setTimeout(() => URL.revokeObjectURL(url), 1000);
   return 'telecharge';

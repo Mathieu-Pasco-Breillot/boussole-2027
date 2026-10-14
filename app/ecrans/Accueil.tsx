@@ -3,8 +3,6 @@ import type { ReactNode } from 'react';
 import { MODES, MOTIFS_NON_EVALUATION, THEMES } from '../libelles.ts';
 import type { ModeJeu } from '../jeu.ts';
 import { Reglages } from './Reglages.tsx';
-import { NOM_MASCOTTE } from '../habillage.ts';
-import { Mascotte } from './Mascotte.tsx';
 import { groupesCandidats, nomComplet } from '../listes.ts';
 import { paquet } from '../paquet.ts';
 import { Bouton } from '../ui/Bouton.tsx';
@@ -34,13 +32,13 @@ const CHIFFRES: readonly { valeur: string; libelle: string }[] = [
 
 /** Les six formats de partie, du plus court au plus long. */
 const ORDRE_MODES: readonly ModeJeu[] = ['express', 'debat', 'campagne', 'semi', 'marathon', 'ultra'];
-const FORMATS: readonly OptionFormat[] = ORDRE_MODES.map((m, i) => ({
+const FORMATS: readonly OptionFormat[] = ORDRE_MODES.map((m) => ({
   id: m,
   nom: MODES[m].nom,
   nombre: MODES[m].questions,
   unite: 'questions',
   detail: MODES[m].duree,
-  niveau: i + 1,
+  part: MODES[m].questions / MODES.ultra.questions,
   repere: m === 'express' ? 'Idéal pour commencer' : undefined,
 }));
 
@@ -100,10 +98,6 @@ function Illustration() {
           <strong className="font-titre text-lg font-semibold text-marine">France · 2027</strong>
         </div>
       </div>
-      <figure className="accueil-mascotte">
-        <Mascotte attitude="accueil" taille={84} />
-        <figcaption className="pilule -mt-1 px-2.5 py-0.5 text-xs">{NOM_MASCOTTE}</figcaption>
-      </figure>
       <span className="accueil-art-note">Comprendre avant de choisir</span>
     </div>
   );
@@ -211,7 +205,7 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
               Quels candidats pensent comme vous ? <span className="text-accent">Vérifiez à l'abri des regards.</span>
             </h1>
             <p className="max-w-xl text-lg leading-relaxed text-discret md:text-xl">
-              Mon Isoloir vous soumet des propositions concrètes, puis compare vos réponses aux positions publiques des
+              Boussole 2027 vous soumet des propositions concrètes, puis compare vos réponses aux positions publiques des
               candidats. Chaque position est sourcée, et rien ne quitte votre téléphone.
             </p>
             <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
@@ -280,22 +274,22 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
         </ol>
       </Section>
 
-      {/* ── Jouer ── */}
+      {/* ── Le test ── */}
       <Section
         id="jouer"
         bande
-        surtitre="Jouer"
-        titre="Choisissez votre façon de jouer."
+        surtitre="Le test"
+        titre="Choisissez votre façon de répondre."
         intro="Plus la partie est longue, plus le rapprochement est fin. Vous pouvez vous arrêter à tout moment et reprendre plus tard."
       >
         <div className="grid items-start gap-4 lg:grid-cols-[minmax(0,1.5fr)_minmax(16rem,0.9fr)]">
           <Carte className="overflow-hidden">
             <ChoixMode
               base={BASE_JOUER}
-              libelle="Choisir un mode de jeu"
+              libelle="Choisir une façon de répondre"
               options={[
                 { id: 'quiz', libelle: 'Le quiz', icone: <IconeQuiz /> },
-                { id: 'duel', libelle: 'Duel avec un candidat', icone: <IconeDuel /> },
+                { id: 'duel', libelle: 'Comparer à un candidat', icone: <IconeDuel /> },
               ]}
               valeur={mode}
               onChange={setMode}
@@ -411,7 +405,7 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
       </Section>
 
       {/* ── Questions fréquentes ── */}
-      <Section id="faq" surtitre="Questions fréquentes" titre="Avant d'entrer dans l'isoloir.">
+      <Section id="faq" surtitre="Questions fréquentes" titre="Avant de suivre la boussole.">
         <div className="grid gap-3 lg:grid-cols-2 lg:items-start">
           {QUESTIONS_FREQUENTES.map((q) => (
             <details key={q.question} className="depliant carte px-5 py-2">

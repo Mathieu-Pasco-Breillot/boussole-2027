@@ -17,8 +17,8 @@ export default defineConfig({
       injectRegister: 'script',
       includeAssets: ['favicon.svg', 'apple-touch-icon.png'],
       manifest: {
-        name: 'Mon Isoloir',
-        short_name: 'Mon Isoloir',
+        name: 'Boussole 2027',
+        short_name: 'Boussole 2027',
         description: "Comparateur des positions des candidats à l'élection présidentielle de 2027.",
         lang: 'fr',
         // Fond de page du thème clair (app/index.css, --color-fond) : barre d'état et écran de lancement.
