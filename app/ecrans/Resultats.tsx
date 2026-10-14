@@ -16,6 +16,7 @@ import { Texte } from '../glossaire/Texte.tsx';
 import { Bouton } from '../ui/Bouton.tsx';
 import { Carte } from '../ui/Carte.tsx';
 import { EnteteParcours } from '../ui/EnteteParcours.tsx';
+import { SectionNonEvalues } from '../ui/SectionNonEvalues.tsx';
 
 interface Props {
   partie: Partie;
@@ -315,9 +316,8 @@ export function Resultats({ partie, dejaRevele, onRevele, onFiche, onNouvelle, o
           )}
 
           {fini && r.nonEvalues.length > 0 && (
-            <section>
-              <h2 className="titre-section">Non évalués</h2>
-              <p className="mt-1 text-sm text-discret">
+            <SectionNonEvalues nombre={r.nonEvalues.length}>
+              <p className="text-sm text-discret">
                 Ces personnes ne remplissent pas encore le critère d'inclusion. Le critère est public dans le dépôt du projet.
               </p>
               {groupesParMotif(r.nonEvalues).map(([motif, liste]) => (
@@ -326,7 +326,7 @@ export function Resultats({ partie, dejaRevele, onRevele, onFiche, onNouvelle, o
                   <p className="text-sm text-discret">{liste.map((n) => nomComplet(n.candidatId)).join(', ')}</p>
                 </div>
               ))}
-            </section>
+            </SectionNonEvalues>
           )}
         </div>
 
