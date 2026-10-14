@@ -41,7 +41,7 @@ test("l'encart garde ses quatre dates, juste après le haut de page", async ({ p
   await expect(encart.getByRole('listitem')).toHaveCount(4);
   await expect(encart).toContainText('12 mars 2027, 18 h');
   await expect(encart.getByText('officiel', { exact: true })).toHaveCount(2);
-  await expect(encart.getByText("calculé d'après la loi, à confirmer")).toHaveCount(2);
+  await expect(encart.getByText("calculé d'après la loi", { exact: true })).toHaveCount(2);
   // Après le haut de page (h1), pas avant le compte à rebours.
   const [h1, e] = [await page.getByRole('heading', { level: 1 }).boundingBox(), await encart.boundingBox()];
   expect(e!.y).toBeGreaterThan(h1!.y);

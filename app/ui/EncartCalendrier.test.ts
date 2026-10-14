@@ -19,7 +19,7 @@ describe('EncartCalendrier', () => {
     expect(html).toContain('dimanche 2 mai 2027');
     expect(html.match(/<li/g)).toHaveLength(4);
     expect(html.match(/>officiel</g)).toHaveLength(2);
-    expect(html.match(/calculé d'après la loi, à confirmer/g)).toHaveLength(2);
+    expect(html.match(/>calculé d'après la loi</g)).toHaveLength(2);
   });
   it('met les dates sur une colonne, puis deux à partir du breakpoint desktop', () => {
     const html = rendre('2027-03-01T10:00:00Z');

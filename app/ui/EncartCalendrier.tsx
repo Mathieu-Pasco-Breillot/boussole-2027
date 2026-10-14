@@ -7,7 +7,7 @@ import { ExposantOrdinal } from './ExposantOrdinal.tsx';
 function Etiquette({ statut }: { statut: Jalon['statut'] }) {
   return (
     <span className={cx('pilule px-2.5 py-0.5 text-xs', statut === 'calculé' && 'border-dashed')}>
-      {statut === 'officiel' ? 'officiel' : "calculé d'après la loi, à confirmer"}
+      {statut === 'officiel' ? 'officiel' : "calculé d'après la loi"}
     </span>
   );
 }
