@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.2.0](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/compare/application-v1.1.0...application-v1.2.0) (2026-10-14)
+
+
+### Nouveautés
+
+* **app:** afficher le calendrier de l'élection et le décompte avant le 1er tour ([56cf951](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/commit/56cf951b0df9c9b4b369273773597ad3811d55fb)), closes [#22](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/issues/22)
+* **app:** renommer en Boussole 2027 et reprendre la maquette mobile ([#21](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/issues/21)) ([cfdda0f](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/commit/cfdda0f48f6c5715c0d4d37e0383ffb530754dc2))
+* **app:** replier par défaut la section des candidats non évalués ([#20](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/issues/20)) ([1d77dea](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/commit/1d77dead124749b31eeb4040c3b51dde0a260504))
+
+
+### Corrections
+
+* **versions:** aligner le texte de l'encadré sur la règle de version des données ([362a54e](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/commit/362a54e95e80e451f88ca214e33578d09ab99e49)), closes [#10](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/issues/10)
+
 ## [1.1.0](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/compare/application-v1.0.0...application-v1.1.0) (2026-10-13)
 
 
