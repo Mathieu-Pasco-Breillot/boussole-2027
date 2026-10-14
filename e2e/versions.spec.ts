@@ -14,7 +14,7 @@ test("l'accueil affiche la version des données et celle de l'application", asyn
 
 test('la page Méthode détaille les versions dans l’onglet du journal', async ({ page }) => {
   await page.goto('/');
-  await page.getByRole('button', { name: 'Méthode', exact: true }).click();
+  await page.getByRole('button', { name: 'Notre méthode', exact: true }).click();
   await page.getByRole('tab', { name: 'Journal des modifications' }).click();
   const encadre = page.getByTestId('encadre-versions');
   await expect(encadre).toContainText(`Données : v${manifeste.data}`);

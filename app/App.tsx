@@ -78,14 +78,15 @@ export function App() {
   }, [ecran]);
 
   const aller = (r: Rubrique) => {
-    if (r === 'jouer') {
+    if (r === 'duel') setEcran('preparationDuel');
+    else if (r === 'jouer') {
       if (ecran === 'accueil') document.getElementById('jouer')?.scrollIntoView({ block: 'start' });
       else cible.current = 'jouer';
       setEcran('accueil');
     } else if (r === ecran) window.scrollTo({ top: 0 });
     else setEcran(r);
   };
-  /** Pages du site : en-tête, pied de page et barre d'onglets autour de l'écran. */
+  /** Pages du site : en-tête et pied de page autour de l'écran. */
   const site = (actif: Rubrique | null, contenu: ReactNode, accueil = false) => (
     <Site actif={actif} onAller={aller} onVieprivee={() => setEcran('vieprivee')} onToutEffacer={accueil ? effacer : undefined}>
       {contenu}

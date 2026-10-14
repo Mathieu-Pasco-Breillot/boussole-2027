@@ -119,7 +119,7 @@ test.describe('sigles dans les textes', () => {
     await expect(page.locator(IMBRIQUES)).toHaveCount(0);
 
     await page.goto('/');
-    await page.getByRole('button', { name: 'Méthode', exact: true }).click();
+    await page.getByRole('button', { name: 'Notre méthode', exact: true }).click();
     for (const onglet of ['Méthodologie', 'Grille de codage', "Critère d'inclusion", 'Journal des modifications']) {
       await page.getByRole('tab', { name: onglet }).click();
       await expect(page.getByRole('tabpanel')).not.toContainText('Chargement…');
@@ -346,7 +346,7 @@ test.describe('bulle dans le titre d’une question', () => {
 test.describe('un seul (i) par sigle et par bloc de texte', () => {
   test('documents Markdown : jamais deux (i) pour un même sigle dans un paragraphe, une cellule ou un item', async ({ page }) => {
     await page.goto('/');
-    await page.getByRole('button', { name: 'Méthode', exact: true }).click();
+    await page.getByRole('button', { name: 'Notre méthode', exact: true }).click();
     let sigles = 0;
     for (const onglet of ['Méthodologie', 'Grille de codage', "Critère d'inclusion", 'Journal des modifications']) {
       await page.getByRole('tab', { name: onglet }).click();

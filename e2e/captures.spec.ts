@@ -45,7 +45,7 @@ test('écrans principaux', async ({ page }) => {
   await page.getByRole('list', { name: 'Candidats proposés' }).getByRole('button').first().click();
   await capturer(page, '09-defi-revelation', false);
   await page.goto('/');
-  await page.getByRole('button', { name: 'Méthode', exact: true }).click();
+  await page.getByRole('button', { name: 'Notre méthode', exact: true }).click();
   await expect(page.getByRole('tab', { name: 'En bref' })).toBeVisible();
   await capturer(page, '10-methode');
   await page.goto('/');

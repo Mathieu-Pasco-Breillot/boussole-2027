@@ -23,7 +23,8 @@
  * marine = titres (vert très sombre, le nom est historique), discret = texte secondaire, trait = filets et bordures,
  * accent = couleur d'action unique, vert (bouton principal, sélection, barres de score ; accent-fonce au survol,
  * accent-doux en teinte de fond), lien = liens dans le texte et anneau de focus (lien-fonce au survol),
- * france-bleu et france-rouge = bandeau tricolore seulement, soleil et papier = mascotte (jamais du texte).
+ * france-bleu et france-rouge = drapeau tricolore seulement (filets, drapeau miniature), soleil et papier = mascotte
+ * (jamais du texte).
  * Aucune couleur n'est associée à un camp ou à un candidat : l'échelle de réponse est d'une seule teinte, et les
  * barres de score n'utilisent que l'accent.
  *
@@ -68,7 +69,7 @@
 
 :root {
   color-scheme: light;
-  /* Bandeau tricolore : le drapeau, sans rien d'autre (bandeau du haut, souligné de la navigation, filets). */
+  /* Filet tricolore : le drapeau, sans rien d'autre (haut de page, dialogue « À propos », filet des trois temps). */
   --degrade-tricolore: linear-gradient(90deg, var(--color-france-bleu) 0 33.333%, #fff 33.333% 66.666%, var(--color-france-rouge) 66.666%);
 }
 
@@ -87,16 +88,22 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/* Bandeau tricolore, toujours visible en haut de l'écran (fixe, sur tous les écrans) : sous le panneau du glossaire
-   (z-40), au-dessus de l'en-tête (z-30). Purement décoratif : il ne capte aucun clic. */
+/* Filet tricolore en haut de la page (maquette V0, .app-shell::before) : il défile avec la page, au-dessus de
+   l'en-tête tant que celui-ci n'est pas collé. Purement décoratif : il ne capte aucun clic. */
 body::before {
   content: '';
-  position: fixed;
+  position: absolute;
   inset: 0 0 auto;
   z-index: 35;
   height: 5px;
   background: var(--degrade-tricolore);
   pointer-events: none;
+}
+
+@media (max-width: 720px) {
+  body::before {
+    height: 4px;
+  }
 }
 
 ::selection {

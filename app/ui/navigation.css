@@ -1,4 +1,4 @@
-/* Marque, en-tête du site et liens de navigation. */
+/* Marque, en-tête du site, liens de navigation et dialogue « À propos ». */
 @layer components {
   .marque {
     display: grid;
@@ -44,26 +44,74 @@
     vertical-align: 0.15em;
   }
 
+  /* En-tête : collé en haut à partir de 768 px. Sur téléphone, il défile avec la page (deux rangées : la marque et
+     « À propos », puis les quatre rubriques). */
   .entete {
-    position: sticky;
-    top: 0;
-    z-index: 30;
     border-bottom: 1px solid var(--color-trait);
     background: color-mix(in oklab, var(--color-fond) 92%, transparent);
-    backdrop-filter: blur(10px);
   }
 
   .entete-interieur {
     display: flex;
-    height: 3.75rem;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
+    column-gap: 1rem;
+    padding-top: 0.5rem;
+  }
+
+  .entete-nav {
+    order: 3;
+    width: 100%;
+  }
+
+  .entete-nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   @media (min-width: 768px) {
+    .entete {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      backdrop-filter: blur(10px);
+    }
+
     .entete-interieur {
       height: 4.25rem;
+      flex-wrap: nowrap;
+      padding-top: 0;
+    }
+
+    .entete-nav {
+      order: 0;
+      width: auto;
+    }
+
+    .entete-nav > ul {
+      gap: 0.5rem;
+    }
+  }
+
+  /* « À propos » : ouvre le dialogue (maquette V0, .header-help). */
+  .entete-a-propos {
+    display: inline-flex;
+    min-height: 2.75rem;
+    cursor: pointer;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-accent);
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+
+  @media (hover: hover) {
+    .entete-a-propos:hover {
+      color: var(--color-accent-fonce);
+      text-decoration: underline;
+      text-underline-offset: 0.2em;
     }
   }
 
@@ -73,10 +121,18 @@
     min-height: 2.75rem;
     cursor: pointer;
     align-items: center;
-    padding-inline: 0.9rem;
+    padding-inline: 0.4rem;
     color: var(--color-discret);
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     font-weight: 600;
+    white-space: nowrap;
+  }
+
+  @media (min-width: 768px) {
+    .lien-nav {
+      padding-inline: 0.9rem;
+      font-size: 0.9375rem;
+    }
   }
 
   @media (hover: hover) {
@@ -92,8 +148,94 @@
   .lien-nav[aria-current='page']::after {
     content: '';
     position: absolute;
-    inset: auto 0.9rem -0.25rem;
+    inset: auto 0.4rem 0;
     height: 3px;
     background: linear-gradient(90deg, var(--color-france-bleu) 0 33.333%, var(--color-trait) 33.333% 66.666%, var(--color-france-rouge) 66.666%);
+  }
+
+  /* Dialogue « À propos » (maquette V0, .about-dialog) : filet tricolore en haut, fond assombri et flouté. */
+  .a-propos {
+    margin: auto;
+    width: min(100% - 2.5rem, 28rem);
+    max-width: none;
+    max-height: calc(100dvh - 2.5rem);
+    overflow: auto;
+    border: 1px solid var(--color-trait);
+    border-radius: var(--radius-xl);
+    padding: 0;
+    background: var(--color-carte);
+    color: var(--color-encre);
+    box-shadow: var(--shadow-dialogue);
+  }
+
+  .a-propos::before {
+    content: '';
+    position: absolute;
+    inset: 0 0 auto;
+    height: 5px;
+    background: var(--degrade-tricolore);
+  }
+
+  .a-propos::backdrop {
+    background: rgb(27 41 33 / 0.36);
+    backdrop-filter: blur(3px);
+  }
+
+  .a-propos-contenu {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1.4rem 1.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .a-propos-contenu {
+      padding: 2rem;
+    }
+  }
+
+  .a-propos-fermer {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: grid;
+    width: 2.75rem;
+    height: 2.75rem;
+    cursor: pointer;
+    place-items: center;
+    border-radius: var(--radius-md);
+    background: var(--color-fond-bas);
+    color: var(--color-discret);
+  }
+
+  .a-propos-icone {
+    display: grid;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1.25rem;
+    place-items: center;
+    border-radius: var(--radius-lg);
+    background: var(--color-accent-doux);
+    color: var(--color-accent);
+  }
+
+  .a-propos-points {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-block: 1.3rem 1.4rem;
+    border-block: 1px solid var(--color-trait);
+    padding-block: 1rem;
+    color: var(--color-discret);
+    font-size: 0.9375rem;
+    line-height: 1.5;
+  }
+
+  .a-propos-points > li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
   }
 }

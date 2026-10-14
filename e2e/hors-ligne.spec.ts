@@ -18,7 +18,7 @@ async function installerPuisCouper(page: Page, erreurs: string[]): Promise<void>
   expect(reseau).toBe('coupe');
   erreurs.length = 0; // l'échec attendu de cette sonde n'est pas une erreur du site
   await page.reload();
-  await expect(page.getByRole('heading', { name: /Quels candidats pensent comme vous/, level: 1 })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Et si vous faisiez le point avant 2027/, level: 1 })).toBeVisible();
 }
 
 function fichiers(dossier: string): string[] {
@@ -67,7 +67,7 @@ test('hors connexion : une partie Express complète, puis le défi', async ({ pa
 test('hors connexion : les pages Méthode, Candidats et Questions se chargent', async ({ page }) => {
   const erreurs = surveillerErreurs(page);
   await installerPuisCouper(page, erreurs);
-  await page.getByRole('button', { name: 'Méthode', exact: true }).click();
+  await page.getByRole('button', { name: 'Notre méthode', exact: true }).click();
   await page.getByRole('tab', { name: 'Méthodologie' }).click();
   await expect(page.getByRole('tabpanel')).not.toBeEmpty();
   await expect(page.getByRole('tabpanel').getByRole('heading').first()).toBeVisible();

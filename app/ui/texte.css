@@ -27,7 +27,7 @@
 
   .titre-page {
     font-family: var(--font-titre);
-    font-weight: 650;
+    font-weight: 400;
     font-size: clamp(2rem, 1.4rem + 2.6vw, 3rem);
     line-height: 1.08;
     letter-spacing: -0.03em;
@@ -36,7 +36,7 @@
 
   .titre-section {
     font-family: var(--font-titre);
-    font-weight: 650;
+    font-weight: 400;
     font-size: clamp(1.5rem, 1.25rem + 1.1vw, 2rem);
     line-height: 1.15;
     letter-spacing: -0.025em;
@@ -46,7 +46,7 @@
   /* Titre d'une carte ou d'un bloc de détail. */
   .titre-carte {
     font-family: var(--font-titre);
-    font-weight: 650;
+    font-weight: 400;
     font-size: 1.25rem;
     line-height: 1.25;
     letter-spacing: -0.02em;

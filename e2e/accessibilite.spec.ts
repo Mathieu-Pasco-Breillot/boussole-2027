@@ -13,7 +13,7 @@ test('accueil, vie privée, méthode, candidats, questions', async ({ page }) =>
   await page.getByRole('button', { name: 'Vie privée' }).click();
   await verifier(page, 'vie privée');
   await page.getByRole('button', { name: '← Retour' }).click();
-  await page.getByRole('button', { name: 'Méthode', exact: true }).click();
+  await page.getByRole('button', { name: 'Notre méthode', exact: true }).click();
   await verifier(page, 'méthode (en bref)');
   await page.getByRole('tab', { name: 'Méthodologie' }).click();
   await verifier(page, 'méthodologie');
