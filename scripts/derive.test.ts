@@ -59,11 +59,11 @@ describe('désaccord non arbitré = « non connu » (D8)', () => {
     expect(estPublie({ ...(position('candidat-a', 'RET-001', 1) as object), code: 1 } as never)).toBe(true);
   });
 
-  it('sur les données réelles (phase 4, vagues 1 à 3 et Glucksmann, 20 candidats, recodage EDU-001, ajout EDU-020, ECO-003 passé à null par Mathieu, recodage Tondelier sur son programme définitif et passes programme Lisnard et Mélenchon le 14 octobre 2026) : 1045 codes publiés, aucun arbitrage en attente', () => {
+  it('sur les données réelles (phase 4, vagues 1 à 3 et Glucksmann, 20 candidats, recodage EDU-001, ajout EDU-020, ECO-003 passé à null par Mathieu, recodage Tondelier sur son programme définitif et passes programme Lisnard et Mélenchon le 14 octobre 2026, IMM-018 de Mélenchon passé à null par Mathieu) : 1044 codes publiés, aucun arbitrage en attente', () => {
     const couverture = calculerCouverture(reel) as { candidats: Record<string, { codes_publies: number; arbitrages_en_attente: number }> };
     const total = Object.values(couverture.candidats).reduce((s, c) => s + c.codes_publies, 0);
     const attente = Object.values(couverture.candidats).reduce((s, c) => s + c.arbitrages_en_attente, 0);
-    expect(total).toBe(1045);
+    expect(total).toBe(1044);
     expect(attente).toBe(0);
   });
 });
@@ -110,7 +110,7 @@ describe('reproduit les chiffres publiés de la phase 4 (vagues 1 à 3, 11 thèm
     expect(accord.arbitrages.rendus).toBe(243);
     expect(accord.controle_humain.tires_au_sort).toBe(114);
     // + 10 revues humaines de Mathieu sur Glucksmann le 12 octobre 2026 (6 contrôles tirés, 4 autres décisions).
-    expect(accord.controle_humain.effectues).toBe(42); // + 4 corrections Arthaud (R1 au lieu de R3), 7 recodages R5 v1.4 le 12 octobre et 4 sur les âges le 13 octobre 2026 ; // + Ruffin × EDU-020, puis 7 autres revues de Mathieu sur Glucksmann
+    expect(accord.controle_humain.effectues).toBe(57); // + 15 revues de Mathieu sur Mélenchon le 14 octobre 2026 (12 validés, 3 corrigés) ; // + 4 corrections Arthaud (R1 au lieu de R3), 7 recodages R5 v1.4 le 12 octobre et 4 sur les âges le 13 octobre 2026 ; // + Ruffin × EDU-020, puis 7 autres revues de Mathieu sur Glucksmann
   });
 
   it.each([
@@ -138,7 +138,7 @@ describe('reproduit les chiffres publiés de la phase 4 (vagues 1 à 3, 11 thèm
     ['dupont-aignan-nicolas', 83, 82, 40, 31, 11, 1],
     ['le-pen-marine', 97, 94, 36, 45, 13, 1],
     ['lisnard-david', 94, 88, 33, 37, 18, 4],
-    ['melenchon-jean-luc', 144, 139, 77, 40, 22, 4],
+    ['melenchon-jean-luc', 144, 138, 78, 39, 21, 5],
     ['philippe-edouard', 57, 47, 12, 20, 15, 4],
     ['retailleau-bruno', 90, 83, 36, 31, 16, 5],
     ['roussel-fabien', 76, 71, 31, 26, 14, 2],

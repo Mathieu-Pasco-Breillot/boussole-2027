@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "47088acfbd57f397150951dc2ac0488a6a23f94fe635adc875f15bdfcfe9c5ac",
+  "empreinte_donnees": "8613084044db871d9fb2ff2feefd6e1440b3aa351a0a758bc3a95fcfff47d130",
   "provisoire": true,
   "questions_actives": 207,
   "seuil_evalue": 0.4,
@@ -959,20 +959,20 @@
       "positions_disponibles": true,
       "questions_avec_position": 207,
       "avec_extrait": 144,
-      "codes_publies": 139,
+      "codes_publies": 138,
       "arbitrages_en_attente": 0,
-      "non_connu_apres_accord": 4,
-      "taux_couverture": 0.671498,
+      "non_connu_apres_accord": 5,
+      "taux_couverture": 0.666667,
       "seuil_evalue_atteint": true,
       "natures": {
-        "nette": 77,
-        "nuancee": 40,
-        "imprecise": 22
+        "nette": 78,
+        "nuancee": 39,
+        "imprecise": 21
       },
       "parts_natures": {
-        "nette": 0.553957,
-        "nuancee": 0.28777,
-        "imprecise": 0.158273
+        "nette": 0.565217,
+        "nuancee": 0.282609,
+        "imprecise": 0.152174
       },
       "par_theme": {
         "defense": {
@@ -1002,8 +1002,8 @@
         },
         "immigration": {
           "questions_actives": 21,
-          "codes_publies": 11,
-          "taux_couverture": 0.52381
+          "codes_publies": 10,
+          "taux_couverture": 0.47619
         },
         "institutions": {
           "questions_actives": 18,

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "47088acfbd57f397150951dc2ac0488a6a23f94fe635adc875f15bdfcfe9c5ac",
+  "empreinte_donnees": "8613084044db871d9fb2ff2feefd6e1440b3aa351a0a758bc3a95fcfff47d130",
   "provisoire": true,
   "population": [
     "arthaud-nathalie",
@@ -1167,10 +1167,10 @@
       "theme": "immigration",
       "axe": "frontieres",
       "sens": -1,
-      "candidats_codes": 7,
-      "couverture": 0.583333,
-      "variance": 1.102041,
-      "D": 0.642857
+      "candidats_codes": 6,
+      "couverture": 0.5,
+      "variance": 0,
+      "D": 0
     },
     "IMM-019": {
       "theme": "immigration",
@@ -1565,8 +1565,8 @@
       "sens": 1,
       "candidats_codes": 4,
       "couverture": 0.333333,
-      "variance": 3.1875,
-      "D": 1.0625
+      "variance": 2.6875,
+      "D": 0.895833
     },
     "SAN-005": {
       "theme": "sante",

@@ -246,8 +246,8 @@
       "arbitrage": null,
       "controle_humain": {
         "tire_au_sort": true,
-        "date": null,
-        "resultat": null
+        "date": "2026-10-14",
+        "resultat": "valide par Mathieu (-2 nette)"
       },
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
@@ -770,8 +770,8 @@
       },
       "controle_humain": {
         "tire_au_sort": true,
-        "date": null,
-        "resultat": null
+        "date": "2026-10-14",
+        "resultat": "valide par Mathieu (-1 nuancee)"
       },
       "contestations": [],
       "version": 1,
@@ -2144,8 +2144,8 @@
       "version": 2,
       "controle_humain": {
         "tire_au_sort": true,
-        "date": null,
-        "resultat": null
+        "date": "2026-10-14",
+        "resultat": "valide par Mathieu (+2 nette)"
       },
       "item_aveugle": "a0069bb6",
       "extraits": [
@@ -2540,8 +2540,8 @@
       "version": 1,
       "controle_humain": {
         "tire_au_sort": true,
-        "date": null,
-        "resultat": null
+        "date": "2026-10-14",
+        "resultat": "valide par Mathieu (-2 nette)"
       },
       "code": -2,
       "nature": "nette",
@@ -3066,8 +3066,8 @@
       "version": 1,
       "controle_humain": {
         "tire_au_sort": true,
-        "date": null,
-        "resultat": null
+        "date": "2026-10-14",
+        "resultat": "valide par Mathieu (+1 nuancee)"
       },
       "code": 1,
       "nature": "nuancee",
@@ -3250,8 +3250,8 @@
       "version": 2,
       "controle_humain": {
         "tire_au_sort": true,
-        "date": null,
-        "resultat": null
+        "date": "2026-10-14",
+        "resultat": "valide par Mathieu (+1 imprecise)"
       },
       "item_aveugle": "cbbf20fd",
       "extraits": [
@@ -3927,13 +3927,16 @@
     {
       "question_id": "SAN-004",
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": true,
-        "date": null,
-        "resultat": null
+        "date": "2026-10-14",
+        "resultat": "corrige",
+        "code_avant": -1,
+        "nature_avant": "nuancee",
+        "motif": "Corrigé par Mathieu lors de la revue du 14 octobre 2026 : abroger la hausse des franchises de 2024 va dans le sens de leur suppression, sans aller jusqu'au bout ; il retient +1 nuancée plutôt que −1 (R5, autre mesure plus douce)."
       },
-      "code": -1,
+      "code": 1,
       "nature": "nuancee",
       "statut": "arbitre",
       "extraits": [
@@ -4343,11 +4346,14 @@
         "motif": "Il rejette les jours de carence non maintenus au motif qu'ils forcent les malades à travailler et propose de réduire les arrêts par la prévention : −1 nuancee (R3) défendable, la critique visant une proposition à deux jours."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": true,
-        "date": null,
-        "resultat": null
+        "date": "2026-10-14",
+        "resultat": "corrige",
+        "code_avant": -1,
+        "nature_avant": "nuancee",
+        "motif": "Corrigé par Mathieu lors de la revue du 14 octobre 2026 : le candidat rejette clairement les jours de carence que ni la Sécurité sociale ni l'employeur ne compensent, d'où −2 nette."
       },
       "item_aveugle": "210311f3",
       "extraits": [
@@ -4385,8 +4391,8 @@
         },
         "accord": true
       },
-      "code": -1,
-      "nature": "nuancee",
+      "code": -2,
+      "nature": "nette",
       "statut": "accord",
       "arbitrage": null
     },
@@ -4742,8 +4748,8 @@
       "version": 3,
       "controle_humain": {
         "tire_au_sort": true,
-        "date": null,
-        "resultat": null
+        "date": "2026-10-14",
+        "resultat": "valide par Mathieu (+2 nette)"
       },
       "item_aveugle": "fe1ba2fd",
       "extraits": [
@@ -5002,8 +5008,8 @@
       "version": 2,
       "controle_humain": {
         "tire_au_sort": true,
-        "date": null,
-        "resultat": null
+        "date": "2026-10-14",
+        "resultat": "valide par Mathieu (+2 nette)"
       },
       "item_aveugle": "254dfd87",
       "extraits": [
@@ -5337,11 +5343,14 @@
         "motif": "Le communiqué juge l'accord de 1968 « déjà complètement vidé de sa substance » et dit que les attaques contre lui alimentent des « fantasmes irresponsables » : opposition perceptible à la dénonciation, sans position formelle, -1 imprecise."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": true,
-        "date": null,
-        "resultat": null
+        "date": "2026-10-14",
+        "resultat": "corrige",
+        "code_avant": -1,
+        "nature_avant": "imprecise",
+        "motif": "Corrigé par Mathieu lors de la revue du 14 octobre 2026 : le communiqué du groupe, auquel le candidat s'associe, ne prend pas position sur la dénonciation de l'accord (sujet voisin), d'où null."
       },
       "item_aveugle": "77502e45",
       "extraits": [
@@ -5379,8 +5388,8 @@
         },
         "accord": true
       },
-      "code": -1,
-      "nature": "imprecise",
+      "code": null,
+      "nature": "non_connu",
       "statut": "accord",
       "arbitrage": null
     },
@@ -7414,8 +7423,8 @@
       "version": 1,
       "controle_humain": {
         "tire_au_sort": true,
-        "date": null,
-        "resultat": null
+        "date": "2026-10-14",
+        "resultat": "valide par Mathieu (-1 nuancee)"
       },
       "item_aveugle": "a7603fb3",
       "extraits": [
@@ -7620,8 +7629,8 @@
       "version": 1,
       "controle_humain": {
         "tire_au_sort": true,
-        "date": null,
-        "resultat": null
+        "date": "2026-10-14",
+        "resultat": "valide par Mathieu (-2 nette)"
       },
       "code": -2,
       "nature": "nette",
@@ -7872,8 +7881,8 @@
       "version": 1,
       "controle_humain": {
         "tire_au_sort": true,
-        "date": null,
-        "resultat": null
+        "date": "2026-10-14",
+        "resultat": "valide par Mathieu (-1 nuancee)"
       },
       "item_aveugle": "6f084711",
       "extraits": [
@@ -8882,8 +8891,8 @@
       "version": 2,
       "controle_humain": {
         "tire_au_sort": true,
-        "date": null,
-        "resultat": null
+        "date": "2026-10-14",
+        "resultat": "valide par Mathieu (-2 nette)"
       },
       "item_aveugle": "d407f3d0",
       "extraits": [

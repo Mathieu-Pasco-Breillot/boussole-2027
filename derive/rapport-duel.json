@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "47088acfbd57f397150951dc2ac0488a6a23f94fe635adc875f15bdfcfe9c5ac",
+  "empreinte_donnees": "8613084044db871d9fb2ff2feefd6e1440b3aa351a0a758bc3a95fcfff47d130",
   "proposition_min": 8,
   "questions_actives": 207,
   "candidats": [
@@ -265,8 +265,8 @@
     },
     {
       "candidat": "melenchon-jean-luc",
-      "propositions": 139,
-      "couverture_banque": 0.671498,
+      "propositions": 138,
+      "couverture_banque": 0.666667,
       "duel_disponible": true,
       "par_theme": {
         "defense": 11,
@@ -274,7 +274,7 @@
         "economie-dette": 10,
         "education": 14,
         "fiscalite": 16,
-        "immigration": 11,
+        "immigration": 10,
         "institutions": 13,
         "retraites": 12,
         "sante": 11,
@@ -283,10 +283,10 @@
       },
       "par_sens": {
         "plus": 90,
-        "moins": 49
+        "moins": 48
       },
-      "positions_imprecises": 22,
-      "part_imprecise": 0.158273
+      "positions_imprecises": 21,
+      "part_imprecise": 0.152174
     },
     {
       "candidat": "mikolajczak-antoine",
