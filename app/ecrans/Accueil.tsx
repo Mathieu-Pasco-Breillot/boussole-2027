@@ -7,6 +7,7 @@ import { NOM_MASCOTTE } from '../habillage.ts';
 import { Mascotte } from './Mascotte.tsx';
 import { groupesCandidats, nomComplet } from '../listes.ts';
 import { paquet } from '../paquet.ts';
+import { BandeauCalendrier } from '../ui/BandeauCalendrier.tsx';
 import { Bouton } from '../ui/Bouton.tsx';
 import { Carte } from '../ui/Carte.tsx';
 import { ChoixMode } from '../ui/ChoixMode.tsx';
@@ -228,6 +229,9 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
           <Illustration />
         </div>
       </section>
+
+      {/* ── Calendrier de l'élection ── */}
+      <BandeauCalendrier />
 
       {/* ── Parties enregistrées sur cet appareil ── */}
       {reprises && (
