@@ -1,33 +1,390 @@
-name: Contester ou corriger une position
-description: Signaler un code erroné, un extrait mal compris ou une position manquante. Une source est obligatoire.
-title: "[Position] <candidat> × <identifiant de la question>"
-labels: ["contestation"]
+name: Contester une position codée
+description: Un code, une nature ou un extrait paraît erroné pour un candidat sur une question. Une source publique est obligatoire.
+title: "[Position] <candidat> × <question>"
+labels: ["contestation", "position"]
 body:
-  - type: input
+  - type: markdown
+    attributes:
+      value: |
+        ## Avant de commencer
+
+        Les positions codées sont publiques et contestables. Une contestation est examinée selon la [grille de codage](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/blob/develop/docs/grille-codage.md) (§ 5 et § 6).
+
+        **Exigences**
+
+        - **Une source publique est obligatoire.** Une contestation sans source est refusée.
+        - **Sources admises** (§ 5) : programme officiel 2027 du candidat ; texte signé par le candidat (livre, tribune, proposition de loi dont il est premier signataire) ; discours ou déclaration publique rapportée par un média national, entretien ; programme du parti, uniquement si le candidat en est investi et pour un texte adopté après son investiture.
+        - **Sources non admises** : source non publique ; source antérieure au 1er janvier 2022 ; agrégateur ou analyse tierce ; inférence depuis l'étiquette, le parti, les alliés ou les positions passées du parti ; programme d'un parti dont le candidat n'est pas investi ; vote parlementaire (les votes ne servent pas au codage, § 5).
+        - **Citation de 14 mots au plus**, exacte, retrouvée mot à mot dans la page source.
+        - **Le code est relatif à l'énoncé de la question tel qu'il est écrit**, jamais à un camp ni à un axe (§ 1). Une question formulée à rebours (« Il ne faut pas… ») se code toujours par rapport à son énoncé.
+        - **Valeur sur l'échelle de −2 à +2** (§ 2), en tenant compte des règles d'application R1 à R6. Un 0 n'est jamais un code par défaut.
+        - **Nature** : `nette`, `nuancee`, `imprecise` ou `non_connu` (§ 3).
+        - **Sources contradictoires** : deux sources contradictoires à moins de six mois d'écart conduisent à la nature `imprecise` ; entre deux sources de dates différentes, la plus récente l'emporte.
+        - **Un seul candidat et une seule question par issue.**
+
+        ## Critères d'acceptation
+
+        **Contestation** (grille de codage, § 6.6) : issue GitHub avec source. Un code n'est modifié que sur présentation d'un extrait admissible au sens du § 5.
+
+        **Pour être recevable**, l'issue contient une source publique et datée d'un type admis, un extrait de 14 mots au plus retrouvable dans cette source, et une argumentation qui rattache l'extrait à l'énoncé de la question.
+
+        **Si la contestation est recevable** :
+
+        1. la position est recodée sur la source la plus récente, et l'ancien code est archivé (méthodologie, § 9) ;
+        2. la version de la position augmente de 1 ;
+        3. une entrée de type `recodage` est ajoutée à `data/journal.json` ;
+        4. `npm run check` doit passer.
+
+        **Sinon**, l'issue est close avec le motif : position maintenue, ou contestation irrecevable.
+  - type: dropdown
     id: candidat
     attributes:
       label: Candidat
-    validations: { required: true }
-  - type: input
+      description: Liste générée depuis data/candidats.json. Si le candidat est absent, choisir « Autre / absent de la liste » et le nommer dans l'argumentation.
+      options:
+        # BEGIN GENERATED:candidats
+        - "Autre / absent de la liste"
+        - "Nathalie Arthaud (arthaud-nathalie)"
+        - "François Asselineau (asselineau-francois)"
+        - "Gabriel Attal (attal-gabriel)"
+        - "Delphine Batho (batho-delphine)"
+        - "Olivier Becht (becht-olivier)"
+        - "Xavier Bertrand (bertrand-xavier)"
+        - "Karim Bouamrane (bouamrane-karim)"
+        - "Dominique de Villepin (villepin-dominique-de)"
+        - "Nicolas Dupont-Aignan (dupont-aignan-nicolas)"
+        - "Clara Egger (egger-clara)"
+        - "Olivier Faure (faure-olivier)"
+        - "Raphaël Glucksmann (glucksmann-raphael)"
+        - "Jérôme Guedj (guedj-jerome)"
+        - "Francis Lalanne (lalanne-francis)"
+        - "Marine Le Pen (le-pen-marine)"
+        - "David Lisnard (lisnard-david)"
+        - "Emmanuel Maurel (maurel-emmanuel)"
+        - "Jean-Luc Mélenchon (melenchon-jean-luc)"
+        - "Antoine Mikolajczak (mikolajczak-antoine)"
+        - "Édouard Philippe (philippe-edouard)"
+        - "Florian Philippot (philippot-florian)"
+        - "Bruno Retailleau (retailleau-bruno)"
+        - "Fabien Roussel (roussel-fabien)"
+        - "Ségolène Royal (royal-segolene)"
+        - "François Ruffin (ruffin-francois)"
+        - "Marine Tondelier (tondelier-marine)"
+        - "Laurent Wauquiez (wauquiez-laurent)"
+        - "Éric Zemmour (zemmour-eric)"
+        # END GENERATED:candidats
+    validations:
+      required: true
+  - type: dropdown
     id: question
     attributes:
-      label: Identifiant de la question (ex. RET-003)
-    validations: { required: true }
-  - type: textarea
-    id: probleme
+      label: Question
+      description: Questions actives, générées depuis data/questions/. Si la question est absente, choisir « Autre / absent de la liste » et en donner l'identifiant ou l'énoncé dans l'argumentation.
+      options:
+        # BEGIN GENERATED:questions
+        - "Autre / absent de la liste"
+        - "DEF-001 · Le budget de la défense doit atteindre au moins 3 % du PIB dès 2030."
+        - "DEF-002 · L'objectif de dépenses militaires en pourcentage du PIB doit être supprimé de l…"
+        - "DEF-003 · Un service militaire obligatoire doit être rétabli."
+        - "DEF-004 · La France doit quitter le commandement militaire intégré de l'OTAN."
+        - "DEF-005 · La France doit quitter l'OTAN."
+        - "DEF-006 · Des soldats français doivent être déployés en Ukraine après un cessez-le-feu po…"
+        - "DEF-007 · Les avoirs russes gelés en Europe doivent être utilisés pour financer l'Ukraine."
+        - "DEF-008 · La France doit étendre la protection de sa dissuasion nucléaire à ses partenair…"
+        - "DEF-009 · La France doit cesser toute exportation de matériel militaire vers Israël."
+        - "DEF-010 · Le Parlement doit pouvoir s'opposer à un contrat d'exportation d'armes."
+        - "DEF-011 · L'Union européenne doit emprunter en commun pour financer la défense."
+        - "DEF-012 · Un pôle public de l'armement doit être créé pour produire les équipements milit…"
+        - "DEF-013 · Les armées françaises doivent s'équiper en priorité de matériel fabriqué en Fra…"
+        - "DEF-014 · L'aide militaire à l'Ukraine doit être limitée aux équipements défensifs."
+        - "ECO-001 · Le SMIC doit être porté à 1 600 euros net par mois."
+        - "ECO-002 · Tous les salaires doivent être indexés automatiquement sur l'inflation."
+        - "ECO-003 · Face à une flambée des prix, l'État doit bloquer temporairement les prix des bi…"
+        - "ECO-004 · La durée légale du travail doit être ramenée à 32 heures par semaine dans les m…"
+        - "ECO-005 · Une entreprise qui délocalise dans les deux ans après avoir reçu une aide publi…"
+        - "ECO-006 · ArcelorMittal France doit être nationalisé."
+        - "ECO-007 · L'écart entre le plus bas et le plus haut salaire d'une même entreprise doit êt…"
+        - "ECO-008 · Une sixième semaine de congés payés doit être accordée à tous les salariés."
+        - "ECO-009 · Le point d'indice des fonctionnaires doit être relevé de 10 %."
+        - "ECO-010 · L'obligation de 15 heures d'activité par semaine pour les allocataires du RSA d…"
+        - "ECO-011 · Deux jours fériés doivent être supprimés."
+        - "ECO-012 · Les prestations sociales doivent être gelées pendant un an."
+        - "ECO-013 · Une règle imposant l'équilibre du budget de l'État doit être inscrite dans la C…"
+        - "ECO-014 · Un fonctionnaire de l'État sur trois partant à la retraite ne doit pas être rem…"
+        - "ECO-015 · La durée légale annuelle du travail doit être portée de 1 607 à 1 623 heures."
+        - "ECO-016 · Le cumul du RSA et des aides au logement doit être plafonné à 70 % du SMIC."
+        - "ECO-017 · Le RSA doit être limité à deux ans pour les personnes aptes au travail."
+        - "ECO-018 · Les fonctionnaires en arrêt maladie doivent avoir trois jours de carence au lie…"
+        - "ECO-019 · Les salariés doivent pouvoir renoncer à leur cinquième semaine de congés payés…"
+        - "ECO-020 · Un tiers des agences et opérateurs de l'État, hors universités, doit être fusio…"
+        - "EDU-001 · Parcoursup doit être supprimé ou intégralement retravaillé."
+        - "EDU-002 · La cantine, les fournitures, les transports et les activités périscolaires doiv…"
+        - "EDU-003 · Le nombre d'élèves par classe doit être ramené à 19 en moyenne."
+        - "EDU-004 · Le financement public d'un établissement privé sous contrat doit être réduit s'…"
+        - "EDU-005 · Tous les étudiants de 18 à 25 ans doivent recevoir une allocation de 1 078 euro…"
+        - "EDU-006 · Les accompagnants d'élèves en situation de handicap (AESH) doivent devenir fonc…"
+        - "EDU-007 · Le salaire des enseignants doit être augmenté de 20 % en cinq ans."
+        - "EDU-008 · Le nombre d'élèves par classe doit être limité à 12 dans les écoles et collèges…"
+        - "EDU-009 · 160 000 personnes doivent être recrutées dans l'Éducation nationale."
+        - "EDU-010 · L'uniforme doit être obligatoire à l'école primaire et au collège."
+        - "EDU-011 · Les allocations familiales doivent être suspendues lorsqu'un élève perturbe gra…"
+        - "EDU-012 · Les élèves en difficulté doivent être orientés vers une voie professionnelle ou…"
+        - "EDU-013 · Un examen doit conditionner l'entrée en sixième."
+        - "EDU-014 · L'État doit financer à égalité l'école publique et l'école privée choisie par l…"
+        - "EDU-015 · La carte scolaire doit être supprimée."
+        - "EDU-016 · Les parents qui accompagnent les sorties scolaires doivent avoir l'interdiction…"
+        - "EDU-017 · Des groupes de niveau doivent être obligatoires en français et en mathématiques…"
+        - "EDU-018 · Les chefs d'établissement doivent pouvoir recruter eux-mêmes leurs enseignants."
+        - "EDU-020 · Le nombre de postes d'enseignants doit être maintenu malgré la baisse du nombre…"
+        - "ENV-001 · La vente de voitures neuves à essence ou diesel doit être interdite en 2035, sa…"
+        - "ENV-002 · La France doit sortir du nucléaire d'ici 2050."
+        - "ENV-003 · Le glyphosate doit être interdit."
+        - "ENV-004 · L'autorisation dérogatoire de l'acétamipride, rétablie en août 2026, doit être…"
+        - "ENV-005 · La construction de grandes retenues d'eau agricoles doit être suspendue pendant…"
+        - "ENV-006 · Tous les nouveaux projets d'autoroutes doivent être suspendus."
+        - "ENV-007 · Les vols intérieurs doivent être interdits lorsqu'un trajet en train de moins d…"
+        - "ENV-008 · L'élevage en cages doit être interdit."
+        - "ENV-009 · La Constitution doit interdire de prélever sur la nature plus que ce qu'elle pe…"
+        - "ENV-010 · Les premiers mètres cubes d'eau indispensables à chaque personne doivent être g…"
+        - "ENV-011 · L'État doit cesser de soutenir financièrement toute nouvelle installation éolie…"
+        - "ENV-012 · Les zones à faibles émissions doivent être supprimées."
+        - "ENV-013 · L'obligation de réduire de moitié l'artificialisation des sols d'ici 2031 doit…"
+        - "ENV-014 · La recherche et l'exploitation de pétrole et de gaz doivent être de nouveau aut…"
+        - "ENV-015 · L'Agence de la transition écologique (Ademe) doit être supprimée."
+        - "ENV-016 · L'Office français de la biodiversité (OFB) doit être supprimé."
+        - "ENV-017 · L'interdiction de louer les logements les plus mal isolés doit être supprimée."
+        - "ENV-018 · La France doit sortir des règles du marché européen de l'électricité pour fixer…"
+        - "ENV-022 · L'État doit cesser de soutenir financièrement toute nouvelle installation solai…"
+        - "ENV-023 · Huit réacteurs nucléaires supplémentaires doivent être construits, en plus des…"
+        - "ENV-024 · L'État doit bloquer le prix du gaz en cas de forte hausse."
+        - "ENV-025 · L'État doit bloquer le prix des carburants en cas de forte hausse."
+        - "ENV-026 · Les aides publiques à l'achat d'une voiture électrique doivent être réservées a…"
+        - "EUR-001 · L'Ukraine doit adhérer à l'Union européenne."
+        - "EUR-002 · Les décisions de politique étrangère de l'Union européenne doivent pouvoir être…"
+        - "EUR-003 · Le budget de l'Union européenne pour 2028-2034 doit être porté à 2 000 milliard…"
+        - "EUR-004 · Une taxe européenne sur les grandes entreprises du numérique doit être créée po…"
+        - "EUR-005 · L'Union européenne doit accueillir de nouveaux États membres d'ici 2030."
+        - "EUR-006 · Les marchés publics doivent donner la priorité aux produits fabriqués dans l'Un…"
+        - "EUR-007 · Le taux de la taxe française sur les services numériques doit être porté de 3 %…"
+        - "EUR-008 · La France doit quitter l'Union européenne."
+        - "EUR-009 · La France doit abandonner l'euro et rétablir une monnaie nationale."
+        - "EUR-010 · La Constitution doit affirmer que le droit français prime sur le droit européen."
+        - "EUR-011 · La contribution de la France au budget de l'Union européenne doit être ramenée…"
+        - "EUR-012 · Les étrangers non européens doivent être contrôlés aux frontières françaises, m…"
+        - "EUR-014 · La France doit refuser d'appliquer les règles européennes qui empêchent la mise…"
+        - "EUR-015 · Le Pacte vert européen doit être suspendu."
+        - "EUR-016 · La France doit refuser d'appliquer l'accord commercial entre l'Union européenne…"
+        - "FIS-001 · L'impôt de solidarité sur la fortune (ISF) doit être rétabli."
+        - "FIS-002 · Un impôt minimal de 2 % par an doit être instauré sur les patrimoines supérieur…"
+        - "FIS-003 · Le prélèvement forfaitaire unique sur les revenus du capital doit être supprimé…"
+        - "FIS-004 · Le barème de l'impôt sur le revenu doit passer de 5 à 14 tranches."
+        - "FIS-005 · La part d'un héritage qui dépasse 12 millions d'euros doit être intégralement p…"
+        - "FIS-006 · Les Français qui s'installent dans un pays à fiscalité très faible doivent cont…"
+        - "FIS-007 · L'exonération de droits accordée aux transmissions d'entreprises (pacte Dutreil…"
+        - "FIS-008 · La CSG doit devenir progressive : son taux doit augmenter avec le revenu."
+        - "FIS-009 · L'« exit tax » doit être rétablie dans sa version de 2011."
+        - "FIS-010 · L'abattement fiscal de 10 % sur les pensions de retraite doit être remplacé par…"
+        - "FIS-011 · La cotisation sur la valeur ajoutée des entreprises (CVAE) doit être supprimée…"
+        - "FIS-013 · L'abattement sur les successions entre parents et enfants doit être porté de 10…"
+        - "FIS-014 · Les parents doivent pouvoir donner 100 000 euros à chaque enfant sans droits to…"
+        - "FIS-015 · La TVA doit être augmentée en contrepartie d'une baisse des cotisations sociale…"
+        - "FIS-016 · Les heures supplémentaires doivent être totalement exonérées d'impôt sur le rev…"
+        - "FIS-017 · Les moins de 30 ans doivent être exonérés d'impôt sur le revenu."
+        - "FIS-018 · Les transmissions d'entreprises familiales doivent être totalement exonérées de…"
+        - "FIS-019 · La TVA doit être ramenée à 0 % sur un panier de cent produits de première néces…"
+        - "FIS-020 · La TVA sur l'électricité, le gaz et les carburants doit être abaissée de 20 % à…"
+        - "IMM-001 · Les travailleurs étrangers en situation irrégulière doivent être régularisés."
+        - "IMM-002 · La loi immigration du 26 janvier 2024 doit être abrogée."
+        - "IMM-003 · Les étrangers non européens doivent pouvoir voter aux élections municipales."
+        - "IMM-004 · La carte de séjour de dix ans doit devenir le titre de séjour normal des étrang…"
+        - "IMM-005 · Les demandeurs d'asile doivent pouvoir travailler dès le dépôt de leur demande."
+        - "IMM-006 · Un statut de déplacé climatique doit être créé pour accueillir les personnes co…"
+        - "IMM-007 · Une agence publique de sauvetage des migrants en mer doit être créée."
+        - "IMM-008 · Tout enfant né en France doit être français dès sa naissance."
+        - "IMM-009 · Les parents en situation irrégulière d'enfants scolarisés en France doivent êtr…"
+        - "IMM-010 · Les étudiants étrangers en situation irrégulière doivent être régularisés."
+        - "IMM-011 · Le droit du sol doit être supprimé : la nationalité française ne s'obtiendrait…"
+        - "IMM-012 · Les Français doivent être prioritaires sur les étrangers pour l'attribution des…"
+        - "IMM-013 · Les Français doivent être prioritaires sur les étrangers pour l'accès à l'emplo…"
+        - "IMM-014 · Les étrangers doivent résider en France depuis au moins deux ans pour toucher l…"
+        - "IMM-015 · Le séjour irrégulier en France doit redevenir un délit."
+        - "IMM-016 · Le Parlement doit voter chaque année un nombre maximal d'étrangers admis à s'in…"
+        - "IMM-017 · Les demandes d'asile doivent être déposées uniquement dans les ambassades et co…"
+        - "IMM-018 · La France doit dénoncer l'accord franco-algérien de 1968."
+        - "IMM-019 · Une personne en situation irrégulière ne doit pas pouvoir se marier en France."
+        - "IMM-020 · Tout étranger condamné pour un crime ou un délit doit être expulsé."
+        - "IMM-021 · Les étrangers doivent avoir résidé et travaillé légalement en France pendant ci…"
+        - "INS-001 · Les députés doivent être élus à la proportionnelle dans chaque département."
+        - "INS-002 · Les citoyens doivent pouvoir déclencher un référendum pour proposer ou abroger…"
+        - "INS-003 · Les citoyens doivent pouvoir révoquer un élu en cours de mandat par référendum."
+        - "INS-004 · Une assemblée constituante doit être convoquée pour rédiger une nouvelle Consti…"
+        - "INS-005 · L'article 49.3 de la Constitution doit être supprimé."
+        - "INS-006 · Le droit de vote doit être accordé à partir de 16 ans."
+        - "INS-007 · Les bulletins blancs doivent être comptés comme des suffrages exprimés."
+        - "INS-008 · Les procureurs ne doivent plus pouvoir être nommés sans l'accord du Conseil sup…"
+        - "INS-009 · La Corse doit obtenir un statut d'autonomie inscrit dans la Constitution."
+        - "INS-010 · Toute personne condamnée pour corruption ou atteinte à la probité doit être int…"
+        - "INS-011 · Le président de la République doit être élu pour un mandat unique de sept ans."
+        - "INS-012 · Le nombre de parlementaires doit être ramené à 350 députés et 200 sénateurs."
+        - "INS-013 · Un député ou un sénateur doit pouvoir être en même temps maire d'une commune de…"
+        - "INS-014 · Le Conseil économique, social et environnemental doit être supprimé."
+        - "INS-015 · L'audiovisuel public doit être privatisé."
+        - "INS-016 · La Constitution doit être révisée pour permettre un référendum sur l'immigratio…"
+        - "INS-017 · Une peine d'inéligibilité ne doit plus pouvoir s'appliquer avant le jugement en…"
+        - "INS-018 · Le vote doit devenir obligatoire."
+        - "RET-001 · L'âge légal de départ à la retraite doit être fixé à 62 ans."
+        - "RET-002 · L'âge légal de départ à la retraite doit être fixé à 60 ans."
+        - "RET-003 · L'âge légal de départ à la retraite doit être porté à 65 ans."
+        - "RET-005 · La durée de cotisation requise pour une retraite à taux plein doit être portée…"
+        - "RET-006 · La durée de cotisation requise pour une retraite à taux plein doit être ramenée…"
+        - "RET-007 · Une part de retraite par capitalisation obligatoire doit être introduite pour l…"
+        - "RET-008 · Les pensions de retraite doivent être indexées sur l'évolution des salaires plu…"
+        - "RET-009 · Les pensions de retraite doivent être gelées pendant au moins un an."
+        - "RET-010 · La pension minimale pour une carrière complète doit être portée au niveau du SM…"
+        - "RET-011 · Les régimes spéciaux de retraite doivent être fermés aussi pour les salariés dé…"
+        - "RET-012 · Un régime universel de retraite par points doit remplacer les régimes existants."
+        - "RET-013 · Les cotisations retraite versées par les employeurs doivent être augmentées."
+        - "RET-014 · Les cotisations retraite des salariés doivent être réduites."
+        - "RET-015 · Toute personne ayant commencé à travailler avant 20 ans doit pouvoir partir à l…"
+        - "RET-016 · Le port de charges lourdes, les postures pénibles et les vibrations mécaniques…"
+        - "RET-017 · L'âge auquel la retraite est versée sans décote, quelle que soit la durée cotis…"
+        - "RET-018 · La pension de réversion doit être soumise à une condition de ressources dans to…"
+        - "RET-019 · La pension des fonctionnaires doit être calculée sur les 25 meilleures années e…"
+        - "RET-022 · Les dividendes versés par les entreprises doivent être soumis aux cotisations r…"
+        - "SAN-001 · L'installation d'un médecin dans une zone déjà bien dotée doit être soumise à a…"
+        - "SAN-002 · Les dépassements d'honoraires des médecins doivent être plafonnés."
+        - "SAN-003 · L'assurance maladie doit rembourser à 100 % les soins prescrits, les mutuelles…"
+        - "SAN-004 · Les franchises médicales doivent être supprimées."
+        - "SAN-005 · Un établissement public chargé de produire des médicaments doit être créé."
+        - "SAN-006 · Tous les médecins doivent être obligés de participer aux gardes de nuit et de w…"
+        - "SAN-007 · La tarification à l'activité doit être supprimée à l'hôpital."
+        - "SAN-008 · Les médecins doivent être obligés d'exercer jusqu'à deux jours par mois dans un…"
+        - "SAN-009 · Un prix minimum de vente de l'alcool doit être fixé à 0,50 euro par unité d'alc…"
+        - "SAN-010 · Le cannabis à usage récréatif doit être légalisé."
+        - "SAN-011 · L'aide médicale de l'État doit être remplacée par une aide limitée aux soins ur…"
+        - "SAN-012 · Un jour de carence non indemnisé, que l'employeur n'aurait pas le droit de comp…"
+        - "SAN-013 · Un premier arrêt maladie prescrit par un médecin de ville doit être limité à 15…"
+        - "SAN-015 · Un patient qui n'honore pas un rendez-vous médical sans prévenir doit payer une…"
+        - "SAN-016 · Les agences régionales de santé doivent être supprimées et leurs missions confi…"
+        - "SAN-017 · Les plafonds annuels des franchises médicales doivent être portés à 100 euros c…"
+        - "SAN-018 · La loi du 18 août 2026 créant un droit à l'aide à mourir doit être abrogée."
+        - "SAN-019 · Les soins non urgents pris en charge par l'aide médicale de l'État doivent être…"
+        - "SAN-020 · La part d'une consultation médicale remboursée par l'assurance maladie doit pas…"
+        - "SEC-001 · Les policiers doivent remettre un récépissé à chaque personne dont ils contrôle…"
+        - "SEC-002 · L'usage des lanceurs de balles de défense (LBD) doit être interdit lors des man…"
+        - "SEC-003 · Les brigades de policiers à moto chargées du maintien de l'ordre (BRAV-M) doive…"
+        - "SEC-004 · La loi de 2017 qui fixe les cas où policiers et gendarmes peuvent faire usage d…"
+        - "SEC-005 · Les inspections internes de la police et de la gendarmerie (IGPN, IGGN) doivent…"
+        - "SEC-006 · Lorsqu'une prison dépasse 100 % d'occupation, des détenus en fin de peine doive…"
+        - "SEC-008 · Une police de proximité doit être rétablie."
+        - "SEC-009 · Consommer de la drogue, quelle qu'elle soit (cannabis, cocaïne, héroïne…), ne d…"
+        - "SEC-010 · Le contrat d'engagement républicain imposé aux associations subventionnées doit…"
+        - "SEC-011 · Des peines minimales de prison doivent être imposées aux récidivistes."
+        - "SEC-012 · Les mineurs de 16 ans et plus en récidive doivent encourir les mêmes peines que…"
+        - "SEC-013 · Les peines de prison ferme de moins d'un an ne doivent plus être aménagées auto…"
+        - "SEC-014 · Le nombre de places de prison doit être porté à 85 000."
+        - "SEC-015 · Les policiers et gendarmes qui font usage de leur arme doivent être présumés av…"
+        - "SEC-016 · Les policiers municipaux doivent être armés, sauf refus motivé du maire."
+        - "SEC-017 · Les allocations familiales doivent être suspendues pour les parents d'un mineur…"
+        - "SEC-018 · Le port du voile doit être interdit aux mineures dans l'espace public."
+        - "SEC-019 · Le port de signes religieux doit être interdit dans les compétitions sportives."
+        - "SEC-020 · La castration chimique doit être imposée aux auteurs de crimes sexuels jugés le…"
+        - "SEC-021 · La police doit pouvoir utiliser la reconnaissance faciale en temps réel dans l'…"
+        # END GENERATED:questions
+    validations:
+      required: true
+  - type: dropdown
+    id: code_actuel
     attributes:
-      label: Ce qui est contesté
-      description: Le code attribué, l'extrait retenu, ou l'absence de position.
-    validations: { required: true }
+      label: Code actuel
+      description: Le code affiché pour ce candidat sur cette question.
+      options:
+        - "−2"
+        - "−1"
+        - "0"
+        - "+1"
+        - "+2"
+        - "non connu"
+    validations:
+      required: true
+  - type: dropdown
+    id: code_propose
+    attributes:
+      label: Code proposé
+      description: Le code qui devrait s'appliquer, relatif à l'énoncé tel qu'il est écrit (grille de codage, § 2, règles R1 à R6).
+      options:
+        - "−2"
+        - "−1"
+        - "0"
+        - "+1"
+        - "+2"
+        - "non connu"
+    validations:
+      required: true
+  - type: checkboxes
+    id: motifs
+    attributes:
+      label: Motif de la contestation
+      description: Un ou plusieurs motifs.
+      options:
+        - label: "Citation hors contexte ou non retrouvée dans la source"
+        - label: "Source irrecevable au sens du § 5 de la grille"
+        - label: "Valeur mal située sur l'échelle (règles R1 à R6 comprises)"
+        - label: "Nature erronée (nette, nuancée, imprécise, non connu)"
+        - label: "Source plus récente contradictoire"
+        - label: "Autre (à préciser dans l'argumentation)"
+  - type: textarea
+    id: argumentation
+    attributes:
+      label: Argumentation
+      description: Pourquoi le code actuel est erroné et pourquoi le code proposé convient, par rapport à l'énoncé tel qu'il est écrit. Si la nature est contestée, indiquer la nature proposée (nette, nuancée, imprécise ou non connu).
+    validations:
+      required: true
   - type: input
-    id: source
+    id: source_url
     attributes:
       label: Source (URL)
-      description: Obligatoire. Une contestation sans source ne peut pas être traitée. Préférer une source primaire (programme, déclaration, vote).
-    validations: { required: true }
-  - type: textarea
+      description: Obligatoire. Une page publique d'un type admis (voir ci-dessus). Une contestation sans source ne peut pas être traitée.
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: source_date
+    attributes:
+      label: Date de publication de la source
+      description: Au format AAAA-MM-JJ. Seules comptent les sources postérieures au 1er janvier 2022.
+      placeholder: AAAA-MM-JJ
+    validations:
+      required: true
+  - type: dropdown
+    id: source_type
+    attributes:
+      label: Type de source
+      options:
+        - "Programme officiel 2027 du candidat"
+        - "Texte signé par le candidat (livre, tribune, proposition de loi dont il est premier signataire)"
+        - "Discours ou déclaration publique rapportée par un média national, entretien"
+        - "Programme du parti (candidat investi, texte adopté après l'investiture)"
+        - "Autre (hors des types admis au § 5)"
+    validations:
+      required: true
+  - type: input
     id: passage
     attributes:
-      label: Passage de la source qui fonde la contestation
-      description: Reformulation ou citation courte (14 mots maximum).
-    validations: { required: true }
+      label: Passage cité
+      description: Citation exacte de 14 mots au plus, retrouvée mot à mot dans la source.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: "La source est publique et datée."
+          required: true
+        - label: "La source n'est pas un vote parlementaire."
+          required: true
+        - label: "L'extrait cité est exact et compte 14 mots au plus."
+          required: true
+        - label: "L'issue porte sur une seule position (un candidat et une question)."
+          required: true

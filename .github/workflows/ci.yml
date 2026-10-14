@@ -45,6 +45,8 @@ jobs:
         run: npm run derive:check
       - name: Le paquet de données de l'application est à jour
         run: npm run bundle:check
+      - name: Les formulaires d'issue sont à jour
+        run: npm run forms:check
       - name: Les types générés sont à jour
         run: npm run types:check
       - name: Vérification des types
