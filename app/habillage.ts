@@ -24,7 +24,7 @@ export const TRANSITIONS: readonly string[] = [
   'Vous tenez le rythme. Chapitre suivant : {suivant}.',
   'Un café ? Pas le temps : {suivant} vous attend.',
   'Chapitre rangé, enveloppe scellée. Direction : {suivant}.',
-  'L’isoloir est toujours à vous. On continue avec {suivant}.',
+  'Le cap reste le vôtre. On continue avec {suivant}.',
   'Un chapitre de plus au compteur. À suivre : {suivant}.',
   'On tourne la page. Voici {suivant}.',
   'Toujours là ? Parfait, {suivant} arrive.',

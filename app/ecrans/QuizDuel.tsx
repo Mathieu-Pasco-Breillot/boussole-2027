@@ -61,7 +61,7 @@ export function QuizDuel({ partie, onRepondre, onSuivante, onModifier, onQuitter
   return (
     <main className="parcours">
       <EnteteParcours>
-        <button type="button" onClick={onQuitter} className="lien">
+        <button type="button" onClick={onQuitter} className="btn-discret">
           Quitter
         </button>
       </EnteteParcours>

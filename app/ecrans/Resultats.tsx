@@ -255,14 +255,14 @@ export function Resultats({ partie, dejaRevele, onRevele, onFiche, onNouvelle, o
   return (
     <main className="conteneur flex flex-col gap-8 pt-4 pb-10">
       <EnteteParcours>
-        <Bouton variante="lien" onClick={onNouvelle}>
+        <Bouton variante="discret" onClick={onNouvelle}>
           Retour à l'accueil
         </Bouton>
       </EnteteParcours>
 
       <header>
         <p className="surtitre surtitre-point">Vos résultats</p>
-        <h1 className="titre-page mt-3">Mon Isoloir</h1>
+        <h1 className="titre-page mt-3">Boussole 2027</h1>
         <p className="mt-3 text-discret">
           Mode {MODES[partie.mode].nom} · {r.repondues} réponses sur {total} questions · graine du tirage {partie.graine}
         </p>

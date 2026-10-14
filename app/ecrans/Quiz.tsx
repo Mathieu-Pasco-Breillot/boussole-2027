@@ -42,7 +42,7 @@ export function Quiz({ partie, onRepondre, onReculer, onQuitter }: Props) {
   return (
     <main className="parcours">
       <EnteteParcours>
-        <button type="button" onClick={onQuitter} className="lien">
+        <button type="button" onClick={onQuitter} className="btn-discret">
           Quitter
         </button>
       </EnteteParcours>
@@ -79,11 +79,11 @@ export function Quiz({ partie, onRepondre, onReculer, onQuitter }: Props) {
             {important ? '★' : '☆'} Très important pour moi
           </button>
 
-          <div className="mt-2 flex items-center justify-between gap-3">
-            <button type="button" onClick={reculer} disabled={partie.position === 0} className="lien disabled:opacity-30">
+          <div className="mt-6 flex items-center justify-between gap-3">
+            <button type="button" onClick={reculer} disabled={partie.position === 0} className="btn-discret">
               ← Proposition précédente
             </button>
-            <button type="button" onClick={() => repondre('sans_avis', false)} className="lien">
+            <button type="button" onClick={() => repondre('sans_avis', false)} className="btn-discret">
               Sans avis
             </button>
           </div>

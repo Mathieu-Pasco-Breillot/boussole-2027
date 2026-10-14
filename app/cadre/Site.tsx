@@ -4,14 +4,14 @@ import { Bouton } from '../ui/Bouton.tsx';
 import { EnTete, LienNav } from '../ui/EnTete.tsx';
 import { Logo } from '../ui/Marque.tsx';
 
-/** Rubriques de la navigation principale. « Jouer » mène au choix du format, sur l'accueil. */
+/** Rubriques de la navigation principale. « Test » mène au choix du format, sur l'accueil. */
 export type Rubrique = 'accueil' | 'jouer' | 'candidats' | 'banque' | 'methode';
 
 const DEPOT = 'https://github.com/Mathieu-Pasco-Breillot/choose-your-candidate-2027';
 
 const RUBRIQUES: readonly { id: Rubrique; libelle: string }[] = [
   { id: 'accueil', libelle: 'Accueil' },
-  { id: 'jouer', libelle: 'Jouer' },
+  { id: 'jouer', libelle: 'Test' },
   { id: 'candidats', libelle: 'Candidats' },
   { id: 'banque', libelle: 'Questions' },
   { id: 'methode', libelle: 'Méthode' },
@@ -23,8 +23,8 @@ function Picto({ id }: { id: Rubrique }) {
     accueil: <path d="M4 11.5 12 5l8 6.5M6.5 10v9h11v-9" />,
     jouer: (
       <>
-        <rect x="4" y="10" width="16" height="10" rx="2.5" />
-        <path d="M9 10V6.5h6V10M9.5 14.5h5" />
+        <circle cx="12" cy="12" r="9" />
+        <path d="m15.5 8.5-2 5-5 2 2-5 5-2Z" />
       </>
     ),
     candidats: (
@@ -74,7 +74,7 @@ export function Site({ actif, onAller, onVieprivee, onToutEffacer, children }: P
     <div className="flex min-h-dvh flex-col">
       <EnTete
         logo={
-          <button type="button" onClick={() => onAller('accueil')} className="flex min-h-11 items-center" aria-label="Mon Isoloir : retour à l'accueil">
+          <button type="button" onClick={() => onAller('accueil')} className="flex min-h-11 items-center" aria-label="Boussole 2027 : retour à l'accueil">
             <Logo />
           </button>
         }
@@ -89,7 +89,7 @@ export function Site({ actif, onAller, onVieprivee, onToutEffacer, children }: P
                 </li>
               ))}
               <li className="ml-3">
-                <Bouton onClick={() => onAller('jouer')}>Jouer</Bouton>
+                <Bouton onClick={() => onAller('jouer')}>Commencer le test</Bouton>
               </li>
             </ul>
           </nav>
