@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "c017cf9495668095b2352e79879ebca15568cddd6b9c633b5f2c73355ce639ca",
+  "empreinte_donnees": "d1076b6ecb631c88cfa3ef02b9bcd6bfa5c1abd5b35f54382dde761e4d732213",
   "provisoire": true,
   "parametres": {
     "nombre_ancres": 10,
@@ -65,6 +65,16 @@
     },
     {
       "rang": 6,
+      "question_id": "FIS-001",
+      "theme": "fiscalite",
+      "axe": "economie",
+      "sens": 1,
+      "D": 1.875,
+      "couverture": 0.833333,
+      "candidats_codes": 10
+    },
+    {
+      "rang": 7,
       "question_id": "DEF-008",
       "theme": "defense",
       "axe": "europe",
@@ -74,22 +84,12 @@
       "candidats_codes": 10
     },
     {
-      "rang": 7,
+      "rang": 8,
       "question_id": "FIS-002",
       "theme": "fiscalite",
       "axe": "economie",
       "sens": 1,
       "D": 1.833333,
-      "couverture": 0.833333,
-      "candidats_codes": 10
-    },
-    {
-      "rang": 8,
-      "question_id": "FIS-001",
-      "theme": "fiscalite",
-      "axe": "economie",
-      "sens": 1,
-      "D": 1.7,
       "couverture": 0.833333,
       "candidats_codes": 10
     },
@@ -119,7 +119,7 @@
       "theme": "institutions",
       "axe": "institutions",
       "sens": 1,
-      "D": 1.175,
+      "D": 1.366667,
       "couverture": 0.833333,
       "candidats_codes": 10
     },
@@ -137,8 +137,8 @@
   "ancres": [
     "IMM-001",
     "RET-003",
-    "DEF-008",
     "FIS-001",
+    "DEF-008",
     "ENV-002",
     "INS-001",
     "EDU-007"
@@ -146,8 +146,8 @@
   "ancres_express": [
     "IMM-001",
     "RET-003",
-    "DEF-008",
-    "FIS-001"
+    "FIS-001",
+    "DEF-008"
   ],
   "ancres_completes": false,
   "express_complet": false

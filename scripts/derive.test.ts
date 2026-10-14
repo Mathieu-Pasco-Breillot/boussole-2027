@@ -59,11 +59,11 @@ describe('désaccord non arbitré = « non connu » (D8)', () => {
     expect(estPublie({ ...(position('candidat-a', 'RET-001', 1) as object), code: 1 } as never)).toBe(true);
   });
 
-  it('sur les données réelles (phase 4, vagues 1 à 3 et Glucksmann, 20 candidats, recodage EDU-001, ajout EDU-020, ECO-003 passé à null par Mathieu, recodage Tondelier sur son programme définitif et passes programme Lisnard et Attal le 14 octobre 2026) : 1006 codes publiés, aucun arbitrage en attente', () => {
+  it('sur les données réelles (phase 4, vagues 1 à 3 et Glucksmann, 20 candidats, recodage EDU-001, ajout EDU-020, ECO-003 passé à null par Mathieu, recodage Tondelier sur son programme définitif et passes programme Lisnard, Attal et Mélenchon le 14 octobre 2026, IMM-018 de Mélenchon passé à null par Mathieu) : 1047 codes publiés, aucun arbitrage en attente', () => {
     const couverture = calculerCouverture(reel) as { candidats: Record<string, { codes_publies: number; arbitrages_en_attente: number }> };
     const total = Object.values(couverture.candidats).reduce((s, c) => s + c.codes_publies, 0);
     const attente = Object.values(couverture.candidats).reduce((s, c) => s + c.arbitrages_en_attente, 0);
-    expect(total).toBe(1006);
+    expect(total).toBe(1047);
     expect(attente).toBe(0);
   });
 });
@@ -93,10 +93,10 @@ describe('kappa pondéré quadratique', () => {
 describe('reproduit les chiffres publiés de la phase 4 (vagues 1 à 3, 11 thèmes, 4 octobre 2026)', () => {
   const accord = calculerAccordCodeurs(reel);
 
-  it('accord global : 1 080 couples, 847 accords (78,4 %), code seul 85,9 %, kappa 0,96', () => {
-    expect(accord.global.couples_codes).toBe(1080);
-    expect(accord.global.accord_code_et_nature).toBe(847);
-    expect(arrondi3(accord.global.taux_accord)).toBe(0.784);
+  it('accord global : 1 120 couples, 879 accords (78,5 %), code seul 85,9 %, kappa 0,96', () => {
+    expect(accord.global.couples_codes).toBe(1120);
+    expect(accord.global.accord_code_et_nature).toBe(879);
+    expect(arrondi3(accord.global.taux_accord)).toBe(0.785);
     expect(arrondi3(accord.global.taux_accord_code_seul)).toBe(0.859);
     expect(arrondi3(accord.global.kappa_pondere_quadratique)).toBe(0.96);
     // 12 arbitrages du pilote + 121 (vague 1) + 18 (vague 2) + 17 (vague 3) arbitrages provisoires par un troisième modèle, validation humaine en attente ;
@@ -106,12 +106,14 @@ describe('reproduit les chiffres publiés de la phase 4 (vagues 1 à 3, 11 thèm
     expect(accord.arbitrages.en_attente).toBe(0);
     // Passe programme Lisnard (14 octobre 2026) : 54 questions recodées, ses arbitrages passent de 19 à 18.
     // Passe programme Attal (14 octobre 2026) : 30 questions recodées, 8 arbitrages remplacent 10 anciens.
-    expect(accord.arbitrages.rendus).toBe(233);
-    expect(accord.controle_humain.tires_au_sort).toBe(104);
+    // Passe programme Mélenchon (14 octobre 2026) : 116 questions recodées, ses arbitrages passent de 25 à 33 ;
+    // 12 contrôles tirés au sort, 2 anciens tirages en attente remplacés.
+    expect(accord.arbitrages.rendus).toBe(241);
+    expect(accord.controle_humain.tires_au_sort).toBe(114);
     // + 10 revues humaines de Mathieu sur Glucksmann le 12 octobre 2026 (6 contrôles tirés, 4 autres décisions).
     // − Attal × RET-009 (confirmé le 3 octobre 2026), dont la nature change à la passe programme du 14 octobre 2026.
     // + 2 revues de Mathieu sur la passe Attal (IMM-001, RET-001), 14 octobre 2026.
-    expect(accord.controle_humain.effectues).toBe(43); // + 4 corrections Arthaud (R1 au lieu de R3), 7 recodages R5 v1.4 le 12 octobre et 4 sur les âges le 13 octobre 2026 ; // + Ruffin × EDU-020, puis 7 autres revues de Mathieu sur Glucksmann
+    expect(accord.controle_humain.effectues).toBe(58); // + 15 revues de Mathieu sur Mélenchon le 14 octobre 2026 (12 validés, 3 corrigés) ; // + 4 corrections Arthaud (R1 au lieu de R3), 7 recodages R5 v1.4 le 12 octobre et 4 sur les âges le 13 octobre 2026 ; // + Ruffin × EDU-020, puis 7 autres revues de Mathieu sur Glucksmann
   });
 
   it.each([
@@ -120,7 +122,7 @@ describe('reproduit les chiffres publiés de la phase 4 (vagues 1 à 3, 11 thèm
     ['dupont-aignan-nicolas', 83, 67, 0.936, 0],
     ['le-pen-marine', 97, 75, 0.946, 0],
     ['lisnard-david', 94, 76, 0.974, 0],
-    ['melenchon-jean-luc', 104, 79, 0.959, 0],
+    ['melenchon-jean-luc', 144, 111, 0.96, 0],
     ['philippe-edouard', 57, 42, 0.982, 0],
     ['retailleau-bruno', 90, 71, 0.945, 0],
     ['roussel-fabien', 76, 62, 0.971, 0],
@@ -139,7 +141,7 @@ describe('reproduit les chiffres publiés de la phase 4 (vagues 1 à 3, 11 thèm
     ['dupont-aignan-nicolas', 83, 82, 40, 31, 11, 1],
     ['le-pen-marine', 97, 94, 36, 45, 13, 1],
     ['lisnard-david', 94, 88, 33, 37, 18, 4],
-    ['melenchon-jean-luc', 104, 97, 48, 24, 25, 5],
+    ['melenchon-jean-luc', 144, 138, 78, 39, 21, 5],
     ['philippe-edouard', 57, 47, 12, 20, 15, 4],
     ['retailleau-bruno', 90, 83, 36, 31, 16, 5],
     ['roussel-fabien', 76, 71, 31, 26, 14, 2],
@@ -206,11 +208,12 @@ describe('ancrage', () => {
     // (6 avant l'entrée de Glucksmann, non codé sur INS-009, dans la population de référence le 12 octobre 2026) ;
     // 7 depuis le recodage de Tondelier sur son programme définitif (14 octobre 2026), qui fait passer DEF-008 et INS-001 au-dessus de 80 % ;
     // IMM-001 passe devant RET-002 après la passe programme Attal (14 octobre 2026), qui le recode à −1.
-    expect(a.ancres).toEqual(['IMM-001', 'RET-002', 'ENV-011', 'DEF-008', 'FIS-002', 'INS-001', 'EDU-007']);
+    // FIS-001 passe devant FIS-002 (même thème) après la passe programme Mélenchon (14 octobre 2026).
+    expect(a.ancres).toEqual(['IMM-001', 'RET-002', 'ENV-011', 'FIS-001', 'DEF-008', 'INS-001', 'EDU-007']);
     // Règle de stabilité : les ancres déjà publiées qui restent dans les 20 premières sont conservées
     // (c'est la liste publiée dans derive/ancrage.json après la vague 3).
     expect(calculerAncrage(reel, ['RET-003', 'IMM-001', 'FIS-001', 'INS-009', 'EDU-007', 'ENV-002']).ancres).toEqual([
-      'IMM-001', 'RET-003', 'DEF-008', 'FIS-001', 'ENV-002', 'INS-009', 'EDU-007',
+      'IMM-001', 'RET-003', 'FIS-001', 'DEF-008', 'ENV-002', 'INS-009', 'EDU-007',
     ]);
   });
 

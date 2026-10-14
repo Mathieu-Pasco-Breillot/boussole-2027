@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "c017cf9495668095b2352e79879ebca15568cddd6b9c633b5f2c73355ce639ca",
+  "empreinte_donnees": "d1076b6ecb631c88cfa3ef02b9bcd6bfa5c1abd5b35f54382dde761e4d732213",
   "provisoire": true,
   "codeurs": {
     "codeur_1": [
@@ -11,24 +11,24 @@
     ]
   },
   "global": {
-    "couples_codes": 1080,
-    "accord_code_et_nature": 847,
-    "taux_accord": 0.784259,
-    "accord_code_seul": 928,
-    "taux_accord_code_seul": 0.859259,
-    "couples_pour_kappa": 989,
-    "kappa_pondere_quadratique": 0.960214,
+    "couples_codes": 1120,
+    "accord_code_et_nature": 879,
+    "taux_accord": 0.784821,
+    "accord_code_seul": 962,
+    "taux_accord_code_seul": 0.858929,
+    "couples_pour_kappa": 1031,
+    "kappa_pondere_quadratique": 0.960259,
     "arbitrages_en_attente": 0
   },
   "par_vague": {
     "1": {
-      "couples_codes": 747,
-      "accord_code_et_nature": 583,
-      "taux_accord": 0.780455,
-      "accord_code_seul": 629,
-      "taux_accord_code_seul": 0.842035,
-      "couples_pour_kappa": 683,
-      "kappa_pondere_quadratique": 0.95335,
+      "couples_codes": 787,
+      "accord_code_et_nature": 615,
+      "taux_accord": 0.781449,
+      "accord_code_seul": 663,
+      "taux_accord_code_seul": 0.84244,
+      "couples_pour_kappa": 725,
+      "kappa_pondere_quadratique": 0.954001,
       "arbitrages_en_attente": 0
     },
     "2": {
@@ -174,13 +174,13 @@
       "arbitrages_en_attente": 0
     },
     "melenchon-jean-luc": {
-      "couples_codes": 104,
-      "accord_code_et_nature": 79,
-      "taux_accord": 0.759615,
-      "accord_code_seul": 87,
-      "taux_accord_code_seul": 0.836538,
-      "couples_pour_kappa": 95,
-      "kappa_pondere_quadratique": 0.959008,
+      "couples_codes": 144,
+      "accord_code_et_nature": 111,
+      "taux_accord": 0.770833,
+      "accord_code_seul": 121,
+      "taux_accord_code_seul": 0.840278,
+      "couples_pour_kappa": 137,
+      "kappa_pondere_quadratique": 0.959576,
       "arbitrages_en_attente": 0
     },
     "mikolajczak-antoine": {
@@ -256,11 +256,11 @@
   },
   "arbitrages": {
     "en_attente": 0,
-    "rendus": 233
+    "rendus": 241
   },
   "controle_humain": {
-    "tires_au_sort": 104,
-    "effectues": 43,
-    "corrections": 17
+    "tires_au_sort": 114,
+    "effectues": 58,
+    "corrections": 20
   }
 }
