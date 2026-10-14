@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "73be7c0506b1a7a8869d9447a0036a9a7f528489623af583e3dfe1a5562aceca",
+  "empreinte_donnees": "d1076b6ecb631c88cfa3ef02b9bcd6bfa5c1abd5b35f54382dde761e4d732213",
   "provisoire": true,
   "codeurs": {
     "codeur_1": [
@@ -11,24 +11,24 @@
     ]
   },
   "global": {
-    "couples_codes": 1118,
-    "accord_code_et_nature": 875,
-    "taux_accord": 0.782648,
-    "accord_code_seul": 957,
-    "taux_accord_code_seul": 0.855993,
-    "couples_pour_kappa": 1027,
-    "kappa_pondere_quadratique": 0.959201,
+    "couples_codes": 1120,
+    "accord_code_et_nature": 879,
+    "taux_accord": 0.784821,
+    "accord_code_seul": 962,
+    "taux_accord_code_seul": 0.858929,
+    "couples_pour_kappa": 1031,
+    "kappa_pondere_quadratique": 0.960259,
     "arbitrages_en_attente": 0
   },
   "par_vague": {
     "1": {
-      "couples_codes": 785,
-      "accord_code_et_nature": 611,
-      "taux_accord": 0.778344,
-      "accord_code_seul": 658,
-      "taux_accord_code_seul": 0.838217,
-      "couples_pour_kappa": 721,
-      "kappa_pondere_quadratique": 0.952485,
+      "couples_codes": 787,
+      "accord_code_et_nature": 615,
+      "taux_accord": 0.781449,
+      "accord_code_seul": 663,
+      "taux_accord_code_seul": 0.84244,
+      "couples_pour_kappa": 725,
+      "kappa_pondere_quadratique": 0.954001,
       "arbitrages_en_attente": 0
     },
     "2": {
@@ -74,13 +74,13 @@
       "arbitrages_en_attente": 0
     },
     "attal-gabriel": {
-      "couples_codes": 75,
-      "accord_code_et_nature": 56,
-      "taux_accord": 0.746667,
-      "accord_code_seul": 59,
-      "taux_accord_code_seul": 0.786667,
-      "couples_pour_kappa": 67,
-      "kappa_pondere_quadratique": 0.942496,
+      "couples_codes": 77,
+      "accord_code_et_nature": 60,
+      "taux_accord": 0.779221,
+      "accord_code_seul": 64,
+      "taux_accord_code_seul": 0.831169,
+      "couples_pour_kappa": 71,
+      "kappa_pondere_quadratique": 0.959835,
       "arbitrages_en_attente": 0
     },
     "batho-delphine": {
@@ -256,11 +256,11 @@
   },
   "arbitrages": {
     "en_attente": 0,
-    "rendus": 243
+    "rendus": 241
   },
   "controle_humain": {
     "tires_au_sort": 114,
-    "effectues": 57,
+    "effectues": 58,
     "corrections": 20
   }
 }

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "73be7c0506b1a7a8869d9447a0036a9a7f528489623af583e3dfe1a5562aceca",
+  "empreinte_donnees": "d1076b6ecb631c88cfa3ef02b9bcd6bfa5c1abd5b35f54382dde761e4d732213",
   "provisoire": true,
   "questions_actives": 207,
   "seuil_evalue": 0.4,
@@ -168,21 +168,21 @@
       "statut_evaluation": "codage_en_attente",
       "positions_disponibles": true,
       "questions_avec_position": 207,
-      "avec_extrait": 75,
-      "codes_publies": 69,
+      "avec_extrait": 77,
+      "codes_publies": 72,
       "arbitrages_en_attente": 0,
       "non_connu_apres_accord": 1,
-      "taux_couverture": 0.333333,
+      "taux_couverture": 0.347826,
       "seuil_evalue_atteint": false,
       "natures": {
         "nette": 20,
-        "nuancee": 34,
-        "imprecise": 15
+        "nuancee": 38,
+        "imprecise": 14
       },
       "parts_natures": {
-        "nette": 0.289855,
-        "nuancee": 0.492754,
-        "imprecise": 0.217391
+        "nette": 0.277778,
+        "nuancee": 0.527778,
+        "imprecise": 0.194444
       },
       "par_theme": {
         "defense": {
@@ -192,8 +192,8 @@
         },
         "ecologie-energie": {
           "questions_actives": 23,
-          "codes_publies": 8,
-          "taux_couverture": 0.347826
+          "codes_publies": 9,
+          "taux_couverture": 0.391304
         },
         "economie-dette": {
           "questions_actives": 20,
@@ -227,13 +227,13 @@
         },
         "sante": {
           "questions_actives": 19,
-          "codes_publies": 3,
-          "taux_couverture": 0.157895
+          "codes_publies": 4,
+          "taux_couverture": 0.210526
         },
         "securite": {
           "questions_actives": 20,
-          "codes_publies": 4,
-          "taux_couverture": 0.2
+          "codes_publies": 5,
+          "taux_couverture": 0.25
         },
         "union-europeenne": {
           "questions_actives": 15,
