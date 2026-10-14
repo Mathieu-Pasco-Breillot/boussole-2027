@@ -40,6 +40,19 @@ test("« Passer l'animation » affiche tout de suite le résultat", async ({ pag
   await expect(page.getByRole('heading', { name: 'Non évalués' })).toBeVisible();
 });
 
+test('résultats : la section « Non évalués » est repliée par défaut et se déplie au clic', async ({ page }) => {
+  await lancer(page, 'Express');
+  await repondreATout(page, 20);
+  await page.getByRole('button', { name: "Passer l'animation" }).click();
+  const section = page.locator('details', { has: page.getByRole('heading', { name: /^Non évalués \(\d+\)$/ }) });
+  const motif = section.getByRole('heading', { level: 3 }).first();
+  await expect(section).not.toHaveAttribute('open', /.*/);
+  await expect(motif).toBeHidden();
+  await section.locator('summary').click();
+  await expect(section).toHaveAttribute('open', '');
+  await expect(motif).toBeVisible();
+});
+
 test('résultats : le nom d’un candidat ouvre sa fiche, et le retour ramène aux résultats sans rejouer la révélation', async ({ page }) => {
   await lancer(page, 'Express');
   await repondreATout(page, 20);
