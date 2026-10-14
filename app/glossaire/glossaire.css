@@ -15,10 +15,11 @@
   padding: 0;
   background: var(--color-carte);
   color: var(--color-encre);
+  box-shadow: var(--shadow-dialogue);
 }
 
 .feuille-glossaire::backdrop {
-  background: rgb(25 42 72 / 0.38);
+  background: rgb(27 41 33 / 0.36);
 }
 
 @media (max-width: 1023.98px) {
@@ -122,5 +123,5 @@
   letter-spacing: normal;
   text-transform: none;
   text-align: left;
-  box-shadow: 0 6px 20px rgb(28 55 100 / 0.2);
+  box-shadow: 0 6px 20px rgb(21 35 27 / 0.2);
 }

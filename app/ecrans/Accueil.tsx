@@ -205,7 +205,7 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
               Quels candidats pensent comme vous ? <span className="text-accent">Vérifiez à l'abri des regards.</span>
             </h1>
             <p className="max-w-xl text-lg leading-relaxed text-discret md:text-xl">
-              Mon Isoloir vous soumet des propositions concrètes, puis compare vos réponses aux positions publiques des
+              Boussole vous soumet des propositions concrètes, puis compare vos réponses aux positions publiques des
               candidats. Chaque position est sourcée, et rien ne quitte votre téléphone.
             </p>
             <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">

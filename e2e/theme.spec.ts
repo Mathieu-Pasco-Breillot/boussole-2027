@@ -19,6 +19,27 @@ for (const colorScheme of ['light', 'dark'] as const) {
   });
 }
 
+test('marque « Boussole » : titre, logo et manifeste de l’application', async ({ page }) => {
+  await page.goto('/');
+  await expect(page).toHaveTitle(/^Boussole/);
+  await expect(page.locator('meta[name="description"]')).toHaveAttribute('content', /^Boussole /);
+  await expect(page.getByRole('button', { name: /^Boussole : retour à l.accueil$/ })).toBeVisible();
+  const href = await page.locator('link[rel="manifest"]').getAttribute('href');
+  const manifeste = (await (await page.request.get(href ?? '')).json()) as { name: string; short_name: string };
+  expect(manifeste.name).toBe('Boussole 2027');
+  expect(manifeste.short_name).toBe('Boussole');
+  await expect(page.locator('body')).not.toContainText(/Mon Isoloir/i);
+});
+
+test('look V0 : bouton principal vert, titres serif, texte en pile système', async ({ page }) => {
+  await page.goto('/');
+  const style = (sel: string, prop: string) =>
+    page.evaluate(`getComputedStyle(document.querySelector(${JSON.stringify(sel)})).getPropertyValue(${JSON.stringify(prop)})`);
+  expect(await style('.btn-primaire', 'background-color')).toBe('rgb(41, 76, 61)');
+  expect(await style('h1', 'font-family')).toMatch(/^Georgia/);
+  expect(await style('body', 'font-family')).toMatch(/^Arial/);
+});
+
 test('le son est coupé par défaut, et son réglage est mémorisé', async ({ page }) => {
   await page.goto('/');
   const bouton = page.getByRole('button', { name: /Effets sonores/ });

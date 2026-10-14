@@ -74,7 +74,7 @@ export function Site({ actif, onAller, onVieprivee, onToutEffacer, children }: P
     <div className="flex min-h-dvh flex-col">
       <EnTete
         logo={
-          <button type="button" onClick={() => onAller('accueil')} className="flex min-h-11 items-center" aria-label="Mon Isoloir : retour à l'accueil">
+          <button type="button" onClick={() => onAller('accueil')} className="flex min-h-11 items-center" aria-label="Boussole : retour à l'accueil">
             <Logo />
           </button>
         }

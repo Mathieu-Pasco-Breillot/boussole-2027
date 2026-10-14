@@ -57,7 +57,7 @@ test('la carte de résultat se télécharge sans requête externe', async ({ pag
     page.waitForEvent('download'),
     page.getByRole('button', { name: /Partager ou télécharger/ }).click(),
   ]);
-  expect(telechargement.suggestedFilename()).toBe('mon-isoloir.png');
+  expect(telechargement.suggestedFilename()).toBe('boussole-2027.png');
   expect(externes).toEqual([]);
 });
 

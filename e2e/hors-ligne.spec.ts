@@ -41,8 +41,8 @@ test('le précache contient tous les fichiers du site, paquet de données et pag
   const dist = join(import.meta.dirname, '..', 'dist');
   const attendus = fichiers(dist)
     .map((f) => '/' + relative(dist, f).split('\\').join('/'))
-    // Exclus volontairement (vite.config.ts) : le service worker lui-même et les polices non latines.
-    .filter((f) => !/^\/(sw\.js|workbox-[\w-]+\.js)$/.test(f) && !/-(cyrillic|cyrillic-ext|greek|greek-ext|vietnamese)-.*\.woff2$/.test(f));
+    // Exclu volontairement : le service worker lui-même.
+    .filter((f) => !/^\/(sw\.js|workbox-[\w-]+\.js)$/.test(f));
   const manquants = attendus.filter((f) => !precache.includes(f));
   expect(manquants).toEqual([]);
 });

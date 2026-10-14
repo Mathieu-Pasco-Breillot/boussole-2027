@@ -1,4 +1,4 @@
-# Mon Isoloir
+# Boussole
 
 *Comparez les candidats à la présidentielle 2027, à l'abri des regards : vos réponses ne quittent jamais votre téléphone.*
 

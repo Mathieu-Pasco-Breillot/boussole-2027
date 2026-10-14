@@ -261,7 +261,7 @@ export function Resultats({ partie, dejaRevele, onRevele, onFiche, onNouvelle, o
 
       <header>
         <p className="surtitre surtitre-point">Vos résultats</p>
-        <h1 className="titre-page mt-3">Mon Isoloir</h1>
+        <h1 className="titre-page mt-3">Boussole</h1>
         <p className="mt-3 text-discret">
           Mode {MODES[partie.mode].nom} · {r.repondues} réponses sur {total} questions · graine du tirage {partie.graine}
         </p>

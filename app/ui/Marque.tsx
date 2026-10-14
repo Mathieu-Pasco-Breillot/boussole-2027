@@ -1,17 +1,12 @@
 import { cx } from './cx.ts';
 
-/** Marque : l'urne et son bulletin sur une pastille d'accent. Décorative : le nom accessible vient du lien ou du bouton autour. */
+/** Marque : une boussole sur une pastille d'accent. Décorative : le nom accessible vient du lien ou du bouton autour. */
 export function Marque({ petite = false }: { petite?: boolean }) {
   return (
     <span className={cx('marque', petite && 'marque-petite')} aria-hidden="true">
-      <svg viewBox="0 0 32 32" focusable="false">
-        <rect x="11" y="2.5" width="10" height="8" rx="1.2" className="fill-papier stroke-soleil" strokeWidth="1.6" />
-        <rect x="5" y="12" width="22" height="17" rx="4" className="fill-carte stroke-soleil" strokeWidth="2.2" />
-        <rect x="3" y="9" width="26" height="5.5" rx="2.5" className="fill-soleil" />
-        <rect x="11" y="10.8" width="10" height="1.9" rx="0.95" className="fill-accent-fonce" />
-        <circle cx="12.5" cy="20" r="1.7" className="fill-encre" />
-        <circle cx="19.5" cy="20" r="1.7" className="fill-encre" />
-        <path d="M13 24.3q3 2 6 0" fill="none" className="stroke-encre" strokeWidth="1.5" strokeLinecap="round" />
+      <svg viewBox="0 0 24 24" focusable="false" fill="none" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="9.5" className="stroke-carte" />
+        <path d="m15.8 8.2-1.9 5.7-5.7 1.9 1.9-5.7z" className="stroke-carte" />
       </svg>
     </span>
   );
@@ -23,7 +18,7 @@ export function Logo({ petit = false }: { petit?: boolean }) {
     <span className={cx('logo', petit && 'logo-petit')}>
       <Marque petite={petit} />
       <span>
-        Mon Isoloir <span className="logo-annee">2027</span>
+        Boussole <span className="logo-annee">2027</span>
       </span>
     </span>
   );
