@@ -3934,7 +3934,7 @@
         "resultat": "corrige",
         "code_avant": -1,
         "nature_avant": "nuancee",
-        "motif": "Corrigé par Mathieu lors de la revue du 14 octobre 2026 : abroger la hausse des franchises de 2024 va dans le sens de leur suppression, sans aller jusqu'au bout ; il retient +1 nuancée plutôt que −1 (R5, autre mesure plus douce)."
+        "motif": "Corrigé par Mathieu lors de la revue du 14 octobre 2026 : abroger la hausse des franchises de 2024 va dans le sens de leur suppression, sans aller jusqu'au bout ; il retient +1 nuancée plutôt que −1 (R5, autre mesure plus douce). Exception propre à ce cas, décidée par Mathieu : la règle R5 de la grille v1.4 reste inchangée."
       },
       "code": 1,
       "nature": "nuancee",
