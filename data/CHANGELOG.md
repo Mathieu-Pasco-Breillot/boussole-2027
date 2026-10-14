@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/compare/donnees-v1.0.0...donnees-v1.1.0) (2026-10-14)
+
+
+### Ajouts (candidats, questions, codages)
+
+* **donnees:** recoder Marine Tondelier sur son programme définitif ([a5067dc](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/commit/a5067dc5c5aca1b7fd760976c6d8e353a0c75c78))
+
 ## 1.0.0 (2026-10-13)
 
 
