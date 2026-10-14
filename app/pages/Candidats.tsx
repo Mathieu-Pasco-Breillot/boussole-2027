@@ -8,6 +8,7 @@ import { chargerPages } from './donnees.ts';
 import { Carte } from '../ui/Carte.tsx';
 import { EntetePage } from '../ui/EntetePage.tsx';
 import { PastilleCandidat } from '../ui/PastilleCandidat.tsx';
+import { SectionNonEvalues } from '../ui/SectionNonEvalues.tsx';
 
 const actives = paquet.questions.length;
 
@@ -29,10 +30,10 @@ function Ligne({ c, detail, onFiche }: { c: CandidatPaquet; detail: string; onFi
   );
 }
 
-function Groupe({ titre, explication, children }: { titre: string; explication: string; children: React.ReactNode }) {
+function Groupe({ titre, explication, sous, children }: { titre: string; explication: string; sous?: boolean; children: React.ReactNode }) {
   return (
     <section>
-      <h2 className="titre-section">{titre}</h2>
+      {sous ? <h3 className="font-titre text-lg font-semibold text-marine">{titre}</h3> : <h2 className="titre-section">{titre}</h2>}
       <p className="mt-1 text-sm leading-relaxed text-discret">{explication}</p>
       <ul className="mt-4 grid gap-2 sm:grid-cols-2">{children}</ul>
     </section>
@@ -91,17 +92,24 @@ export function Candidats({ onRetour, onFiche }: { onRetour: () => void; onFiche
         </Groupe>
       )}
 
-      {g.nonEvalues.map(([motif, liste]) => (
-        <Groupe
-          key={motif}
-          titre={`Non évalués : ${(MOTIFS_NON_EVALUATION[motif] ?? motif).toLowerCase()} (${liste.length})`}
-          explication={EXPLICATIONS_MOTIFS[motif] ?? motif}
-        >
-          {liste.map((c) => (
-            <Ligne key={c.id} c={c} onFiche={onFiche} detail={MOTIFS_NON_EVALUATION[motif] ?? motif} />
-          ))}
-        </Groupe>
-      ))}
+      {g.nombreNonEvalues > 0 && (
+        <SectionNonEvalues nombre={g.nombreNonEvalues}>
+          <div className="flex flex-col gap-8">
+            {g.nonEvalues.map(([motif, liste]) => (
+              <Groupe
+                key={motif}
+                sous
+                titre={`${MOTIFS_NON_EVALUATION[motif] ?? motif} (${liste.length})`}
+                explication={EXPLICATIONS_MOTIFS[motif] ?? motif}
+              >
+                {liste.map((c) => (
+                  <Ligne key={c.id} c={c} onFiche={onFiche} detail={MOTIFS_NON_EVALUATION[motif] ?? motif} />
+                ))}
+              </Groupe>
+            ))}
+          </div>
+        </SectionNonEvalues>
+      )}
     </main>
   );
 }

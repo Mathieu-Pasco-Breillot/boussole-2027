@@ -13,6 +13,7 @@ import { ChoixMode } from '../ui/ChoixMode.tsx';
 import { IconeBalance, IconeCoche, IconeDuel, IconeFleche, IconeQuestion, IconeQuiz } from '../ui/Icones.tsx';
 import { NoteConfiance } from '../ui/NoteConfiance.tsx';
 import { idOnglet, idPanneau } from '../ui/onglets.ts';
+import { SectionNonEvalues } from '../ui/SectionNonEvalues.tsx';
 import { SelecteurFormat } from '../ui/SelecteurFormat.tsx';
 import type { OptionFormat } from '../ui/SelecteurFormat.tsx';
 
@@ -379,15 +380,23 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
               <dd className="mt-1 leading-relaxed text-discret">{groupes.enAttente.map(nomComplet).join(', ')}</dd>
             </div>
           )}
-          {groupes.nonEvalues.map(([motif, liste]) => (
-            <div key={motif}>
-              <dt className="font-semibold">
-                Non évalués : {(MOTIFS_NON_EVALUATION[motif] ?? motif).toLowerCase()} ({liste.length})
-              </dt>
-              <dd className="mt-1 leading-relaxed text-discret">{liste.map(nomComplet).join(', ')}</dd>
-            </div>
-          ))}
         </dl>
+        {groupes.nombreNonEvalues > 0 && (
+          <div className="mt-6">
+            <SectionNonEvalues nombre={groupes.nombreNonEvalues} niveau="h3" classeTitre="font-titre text-lg font-semibold text-marine">
+              <dl className="flex flex-col gap-4">
+                {groupes.nonEvalues.map(([motif, liste]) => (
+                  <div key={motif}>
+                    <dt className="font-semibold">
+                      {MOTIFS_NON_EVALUATION[motif] ?? motif} ({liste.length})
+                    </dt>
+                    <dd className="mt-1 leading-relaxed text-discret">{liste.map(nomComplet).join(', ')}</dd>
+                  </div>
+                ))}
+              </dl>
+            </SectionNonEvalues>
+          </div>
+        )}
         <Bouton variante="secondaire" onClick={() => onNaviguer('candidats')} className="mt-8">
           Fiches et critère d'inclusion
         </Bouton>

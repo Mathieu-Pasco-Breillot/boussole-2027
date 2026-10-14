@@ -20,6 +20,8 @@ export interface Groupes {
   enAttente: CandidatPaquet[];
   /** Ne remplissent pas encore le critère d'inclusion, groupés par motif. */
   nonEvalues: [motif: string, liste: CandidatPaquet[]][];
+  /** Nombre total de candidats non évalués, tous motifs confondus. */
+  nombreNonEvalues: number;
 }
 
 export function groupesCandidats(): Groupes {
@@ -36,7 +38,7 @@ export function groupesCandidats(): Groupes {
     return i === -1 ? ORDRE_MOTIFS.length : i;
   };
   const nonEvalues = [...parMotif.entries()].sort(([a], [b]) => rang(a) - rang(b));
-  return { compares, enAttente, nonEvalues };
+  return { compares, enAttente, nonEvalues, nombreNonEvalues: nonEvalues.reduce((n, [, liste]) => n + liste.length, 0) };
 }
 
 export const nomComplet = (c: CandidatPaquet): string => `${c.prenom} ${c.nom}`;
