@@ -1,4 +1,4 @@
-# Consigne de codage aveugle — grille v1.2
+# Consigne de codage aveugle — grille v1.4
 
 Tu es CODEUR. Tu codes la position d'un candidat anonyme par rapport à un énoncé, à partir d'extraits anonymisés. Tu n'utilises AUCUNE connaissance extérieure et tu ne cherches pas à deviner qui est le candidat. Tu ne lis AUCUN autre fichier que cette consigne et le fichier de lot indiqué dans ta mission. Aucune recherche web.
 
@@ -22,9 +22,10 @@ Règles :
 
 ## Règles d'application
 - **R1 — Le candidat va plus loin que l'énoncé, dans le même sens.** Quand l'énoncé fixe une valeur et que le candidat propose une valeur qui va plus loin dans la même direction : **+1 nuancee**. Exemple : énoncé « âge légal fixé à 62 ans », candidat qui veut 60 ans.
-- **R5 — Le candidat ne va pas jusqu'à la valeur de l'énoncé.** Le candidat retient explicitement une autre valeur, qui va moins loin que celle de l'énoncé : **−1 nuancee** (il refuse la mesure énoncée, sa contre-proposition est identifiable). Exemple : énoncé « âge légal fixé à 60 ans », candidat qui veut 62 ou 63 ans. Si sa valeur va dans la direction opposée à l'énoncé par rapport au droit en vigueur : −2.
+- **R5 — Le candidat va dans le même sens, mais moins loin.** Quand l'énoncé fixe un chiffre et que le candidat retient un autre chiffre, dans le même sens mais moins loin : convertis d'abord dans l'unité de l'énoncé (euros en pourcentage, hausse annuelle en hausse cumulée). Si le candidat fait **au moins la moitié du chemin** entre le droit en vigueur (donné par la précision) et le chiffre de l'énoncé : **+1 nuancee** ; sinon **−1 nuancee**. S'il rejette explicitement le chiffre de l'énoncé : −1 quel que soit l'écart. Si sa valeur va dans la direction opposée à l'énoncé par rapport au droit en vigueur : −2. R5 ne vaut que pour une même mesure avec un autre chiffre : quand le candidat propose une **autre mesure**, même plus douce (volontaire au lieu d'obligatoire, dépénaliser au lieu de légaliser, tarif bas au lieu de gratuité), le code reste −1 nuancee. Exemples : énoncé « SMIC à 1 600 € net » (droit en vigueur environ 1 440 €), candidat à 1 550 € → +1 ; à 1 500 € → −1. Pour l'âge de départ et la durée de cotisation, le droit en vigueur de référence est 64 ans et 172 trimestres.
 - **R2 — Calendrier de mise en œuvre.** Un engagement ferme sur la cible exacte de l'énoncé, assorti d'un calendrier d'étalement (« progressivement », « en dix ans », « dans un premier temps… puis ») : **+2 nette**. Un calendrier n'est pas une réserve. « Progressivement » ne conduit à +1 que si la cible ou le périmètre sont réduits ou non précisés.
-- **R3 — Rejet du principe même de l'énoncé.** Le candidat écarte explicitement le paramètre sur lequel porte l'énoncé au profit d'un autre mécanisme identifiable, sans donner de chiffre : **−1 nuancee**. Exemple : énoncé sur un âge légal, candidat qui veut supprimer tout âge légal au profit de la seule durée de cotisation.
+- **R3 — Rejet du principe même de l'énoncé.** Le candidat écarte explicitement le paramètre sur lequel porte l'énoncé au profit d'un autre mécanisme identifiable, sans donner de chiffre : **−1 nuancee**. Exemple : énoncé sur un âge légal, candidat qui veut supprimer tout âge légal au profit de la seule durée de cotisation. R3 ne s'applique pas quand l'autre mécanisme va **plus loin dans le même sens** que l'énoncé (énoncé « bloquer les prix », candidat qui impose la vente à prix coûtant) : c'est alors R1, +1 nuancee.
+- **R6 — Proposition englobante.** Quand la mesure du candidat **contient entièrement** celle de l'énoncé, dans le même sens, par un **périmètre** plus large et non par une valeur sur une échelle : **+2 nette** (appliquer sa mesure, c'est appliquer l'énoncé en entier). Exemple : énoncé « supprimer les aides aux nouvelles installations », candidat « supprimer toutes les aides ». Symétriquement, une suppression ou interdiction plus large qui couvre entièrement l'objet d'un énoncé proposant de l'autoriser ou de le développer : **−2 nette**. R6 ne s'applique pas si la mesure ne couvre qu'une partie de l'énoncé, si l'écart porte sur une valeur chiffrée (R1), ou si l'englobement est une déduction et non ce que dit le candidat.
 - **R4 — Position générale face à un énoncé précis.** Une position de principe sur le thème, qui ne reprend pas la mesure précise de l'énoncé (ses critères, son seuil, son public) : **null non_connu** (règle du sujet voisin). Exemple : « il faut prendre en compte la pénibilité » face à un énoncé qui cite trois critères précis.
 
 ## Nature
@@ -43,7 +44,7 @@ Test : peut-on reformuler la position sous forme d'une mesure concrète ? Oui �
 - « Retour à 62 ans pour ceux qui ont commencé à travailler avant 20 ans. » → +1 nuancee
 - « Nous rétablirons la retraite à 60 ans. » → +1 nuancee (R1)
 - « Il faudra revenir sur cette réforme injuste. » → +1 imprecise
-- « L'âge légal sera de 63 ans. » → −1 nuancee (R5)
+- « L'âge légal sera de 63 ans et 6 mois. » → −1 nuancee (R5 : moins de la moitié du chemin)
 - « Je ne toucherai pas à l'âge légal actuel, ni à la hausse ni à la baisse. » → −1 nuancee (le statu quo, 64 ans, contredit l'énoncé sans proposer l'inverse d'une baisse)
 - « Il ne faut plus d'âge légal : seule la durée de cotisation doit compter. » → −1 nuancee (R3)
 - « Il faudra travailler jusqu'à 65 ans. » → −2 nette

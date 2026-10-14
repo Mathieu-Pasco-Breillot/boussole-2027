@@ -537,6 +537,23 @@
       "description": "Création du glossaire des sigles : 104 entrées (forme développée et explication neutre d’une phrase), proposées en bulle, en panneau ou en feuille partout où un sigle apparaît. Rédaction puis relecture aveugle par un second agent ; trace dans docs/glossaire/relecture.json.",
       "auteur": "Claude, à la demande de Mathieu",
       "reference": "création du glossaire des sigles (issue #7)"
+    },
+    {
+      "date": "2026-10-14",
+      "type": "recodage",
+      "objets": [
+        "data/positions/tondelier-marine.json",
+        "schemas/positions.schema.json",
+        "docs/protocole/consigne-codage-aveugle.md",
+        "docs/protocole/consigne-arbitrage-provisoire.md",
+        "data/glossaire.json",
+        "data/candidats.json",
+        "derive/*.json",
+        "scripts/derive.test.ts"
+      ],
+      "description": "Recodage de Marine Tondelier sur la version définitive du programme des Écologistes (« Pour une prospérité écologique », juillet 2026, modifiée le 25 août 2026), lu en entier : 151 questions actives sur 207 ont au moins un extrait du programme (243 extraits, citations vérifiées mot à mot). Double codage aveugle en grille v1.4 (Opus 5.5, Sonnet 5.5) : 119 accords sur 151, 32 désaccords arbitrés provisoirement par Fable 5.1. Questions codées : 51 avant, 141 après ; 12 codes existants modifiés. Les extraits de l'ancienne version du programme (marinetondelier.fr) sont remplacés ; les extraits de presse sont conservés. 14 codes tirés pour le contrôle humain (graine 20261014). Vérification indépendante contre la source non encore faite. Ajout du champ facultatif date_derniere_maj_codage aux fichiers de positions. Consignes de codage et d'arbitrage alignées sur la grille v1.4 (R3, R5 révisée, R6). Marine Tondelier passe au statut « évalué » (seuil de couverture atteint). Onze sigles des nouveaux extraits ajoutés au glossaire (ASPA, CAUE, CEREMA, CMR, CNAM, ENR, MACF, ONF, OPEX, PUMA, TSN). Conséquence sur les fichiers dérivés : DEF-008 et INS-001 passent au-dessus du seuil de 80 % des candidats évalués, la liste d'ancrage publiée passe de 5 à 7 questions (RET-003, IMM-001, DEF-008, FIS-001, ENV-002, INS-001, EDU-007).",
+      "auteur": "Claude, à la demande de Mathieu",
+      "reference": "recodage Tondelier sur le programme définitif (14 octobre 2026)"
     }
   ]
 }

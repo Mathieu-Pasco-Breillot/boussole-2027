@@ -397,6 +397,10 @@ export namespace Positions {
     candidat_id: Identifiant;
     _statut: string;
     grille_version: string;
+    /**
+     * Date de la dernière mise à jour des codages de ce candidat (recodage, ajout ou correction de codes). Facultative, renseignée depuis le 14 octobre 2026.
+     */
+    date_derniere_maj_codage?: string;
     programme: {
       officiel_disponible: boolean;
       date_publication: DateIso | null;

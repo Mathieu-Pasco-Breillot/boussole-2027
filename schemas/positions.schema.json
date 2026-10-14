@@ -9,6 +9,10 @@
     "candidat_id": { "$ref": "#/$defs/identifiant" },
     "_statut": { "type": "string", "minLength": 1 },
     "grille_version": { "type": "string", "pattern": "^\\d+\\.\\d+$" },
+    "date_derniere_maj_codage": {
+      "description": "Date de la dernière mise à jour des codages de ce candidat (recodage, ajout ou correction de codes). Facultative, renseignée depuis le 14 octobre 2026.",
+      "$ref": "#/$defs/dateIso"
+    },
     "programme": {
       "type": "object",
       "additionalProperties": false,

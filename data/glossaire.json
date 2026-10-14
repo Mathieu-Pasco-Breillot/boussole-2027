@@ -45,6 +45,11 @@
     "explication": "Établissement public qui pilote l'organisation de la santé et des soins dans chaque région."
   },
   {
+    "sigle": "ASPA",
+    "developpe": "Allocation de solidarité aux personnes âgées",
+    "explication": "Prestation qui complète les ressources des retraités les plus modestes jusqu'à un montant minimum, souvent appelée « minimum vieillesse »."
+  },
+  {
     "sigle": "BFM",
     "developpe": "BFM (à l'origine Business FM)",
     "explication": "Marque de médias d'information (télévision, radio, sites), dont la chaîne BFMTV."
@@ -80,6 +85,11 @@
     "explication": "Diplôme de l'enseignement professionnel qui prépare à un métier précis, en général en deux ans après la classe de troisième."
   },
   {
+    "sigle": "CAUE",
+    "developpe": "Conseil d'architecture, d'urbanisme et de l'environnement",
+    "explication": "Organisme départemental qui conseille gratuitement les particuliers et les collectivités sur leurs projets de construction et d'aménagement."
+  },
+  {
     "sigle": "CDI",
     "developpe": "Contrat à durée indéterminée",
     "explication": "Contrat de travail conclu sans date de fin."
@@ -103,6 +113,11 @@
     "sigle": "CEE",
     "developpe": "Certificats d'économies d'énergie",
     "explication": "Dispositif qui oblige les fournisseurs d'énergie, dont les vendeurs de carburants, à financer des économies d'énergie."
+  },
+  {
+    "sigle": "CEREMA",
+    "developpe": "Centre d'études et d'expertise sur les risques, l'environnement, la mobilité et l'aménagement",
+    "explication": "Établissement public qui apporte une expertise technique à l'État et aux collectivités sur les routes, les bâtiments, les risques et l'aménagement."
   },
   {
     "sigle": "CESE",
@@ -133,6 +148,16 @@
     "sigle": "CM2",
     "developpe": "Cours moyen deuxième année",
     "explication": "Cinquième et dernière année de l'école élémentaire, suivie en général vers 10 ans."
+  },
+  {
+    "sigle": "CMR",
+    "developpe": "Cancérogène, mutagène ou reprotoxique",
+    "explication": "Classement des substances chimiques pouvant provoquer un cancer, altérer l'ADN ou nuire à la reproduction."
+  },
+  {
+    "sigle": "CNAM",
+    "developpe": "Caisse nationale de l'Assurance maladie",
+    "explication": "Organisme qui gère la branche maladie de la Sécurité sociale et rembourse les soins des assurés."
   },
   {
     "sigle": "CO2",
@@ -198,6 +223,11 @@
     "sigle": "EDIP",
     "developpe": "European Defence Industry Programme (programme européen pour l'industrie de la défense)",
     "explication": "Programme de l'Union européenne qui finance le renforcement de l'industrie de défense européenne."
+  },
+  {
+    "sigle": "ENR",
+    "developpe": "Énergies renouvelables",
+    "explication": "Sources d'énergie qui se renouvellent naturellement, comme le soleil, le vent, l'eau, la biomasse ou la géothermie."
   },
   {
     "sigle": "EPR",
@@ -301,6 +331,11 @@
     "explication": "Mouvement politique."
   },
   {
+    "sigle": "MACF",
+    "developpe": "Mécanisme d'ajustement carbone aux frontières",
+    "explication": "Dispositif européen qui fait payer aux importateurs de certains produits (acier, ciment, engrais…) le coût du carbone émis pour les fabriquer."
+  },
+  {
     "sigle": "NFP",
     "developpe": "Nouveau Front populaire",
     "explication": "Mouvement politique."
@@ -321,6 +356,11 @@
     "explication": "Agence des Nations unies qui élabore les normes internationales du travail."
   },
   {
+    "sigle": "ONF",
+    "developpe": "Office national des forêts",
+    "explication": "Établissement public qui gère les forêts appartenant à l'État et aux collectivités."
+  },
+  {
     "sigle": "ONG",
     "developpe": "Organisation non gouvernementale",
     "explication": "Organisation à but non lucratif, indépendante des États, qui agit pour des causes humanitaires, sociales ou environnementales."
@@ -329,6 +369,11 @@
     "sigle": "ONU",
     "developpe": "Organisation des Nations unies",
     "explication": "Organisation internationale créée en 1945, qui réunit presque tous les États du monde pour la paix et la coopération."
+  },
+  {
+    "sigle": "OPEX",
+    "developpe": "Opération extérieure",
+    "explication": "Intervention des forces armées françaises hors du territoire national."
   },
   {
     "sigle": "OQTF",
@@ -389,6 +434,11 @@
     "sigle": "PS",
     "developpe": "Parti socialiste",
     "explication": "Parti politique."
+  },
+  {
+    "sigle": "PUMA",
+    "developpe": "Protection universelle maladie",
+    "explication": "Droit à la prise en charge des frais de santé pour toute personne qui travaille ou réside en France de manière stable et régulière."
   },
   {
     "sigle": "RATP",
@@ -494,6 +544,11 @@
     "sigle": "TPE",
     "developpe": "Très petite entreprise",
     "explication": "Entreprise de moins de 10 salariés, dont le chiffre d'affaires annuel ou le bilan ne dépasse pas 2 millions d'euros."
+  },
+  {
+    "sigle": "TSN",
+    "developpe": "Taxe sur les services numériques",
+    "explication": "Taxe française sur le chiffre d'affaires de certaines grandes entreprises du numérique (publicité en ligne, plateformes), dite « taxe GAFA »."
   },
   {
     "sigle": "TTC",

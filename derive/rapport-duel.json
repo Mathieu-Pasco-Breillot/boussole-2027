@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "e91e5c4de409e3069c65d4d9f877517c914c8b6fd6e9b0b6c95f5e73b8f4688b",
+  "empreinte_donnees": "aef40608dc4bd8d8504583c374951404c516db583b5fc1b0db4ec3a76569d2d3",
   "proposition_min": 8,
   "questions_actives": 207,
   "candidats": [
@@ -429,27 +429,28 @@
     },
     {
       "candidat": "tondelier-marine",
-      "propositions": 51,
-      "couverture_banque": 0.246377,
+      "propositions": 141,
+      "couverture_banque": 0.681159,
       "duel_disponible": true,
       "par_theme": {
-        "defense": 1,
-        "ecologie-energie": 16,
-        "economie-dette": 7,
-        "education": 5,
-        "fiscalite": 8,
-        "immigration": 2,
-        "institutions": 2,
-        "retraites": 3,
-        "securite": 6,
-        "union-europeenne": 1
+        "defense": 7,
+        "ecologie-energie": 22,
+        "economie-dette": 11,
+        "education": 13,
+        "fiscalite": 14,
+        "immigration": 14,
+        "institutions": 12,
+        "retraites": 12,
+        "sante": 12,
+        "securite": 15,
+        "union-europeenne": 9
       },
       "par_sens": {
-        "plus": 42,
-        "moins": 9
+        "plus": 95,
+        "moins": 46
       },
-      "positions_imprecises": 5,
-      "part_imprecise": 0.098039
+      "positions_imprecises": 23,
+      "part_imprecise": 0.163121
     }
   ]
 }

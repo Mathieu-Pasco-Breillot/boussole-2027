@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "e91e5c4de409e3069c65d4d9f877517c914c8b6fd6e9b0b6c95f5e73b8f4688b",
+  "empreinte_donnees": "aef40608dc4bd8d8504583c374951404c516db583b5fc1b0db4ec3a76569d2d3",
   "provisoire": true,
   "codeurs": {
     "codeur_1": [
@@ -11,13 +11,13 @@
     ]
   },
   "global": {
-    "couples_codes": 971,
-    "accord_code_et_nature": 757,
-    "taux_accord": 0.779609,
-    "accord_code_seul": 824,
-    "taux_accord_code_seul": 0.84861,
-    "couples_pour_kappa": 887,
-    "kappa_pondere_quadratique": 0.952924,
+    "couples_codes": 1072,
+    "accord_code_et_nature": 836,
+    "taux_accord": 0.779851,
+    "accord_code_seul": 913,
+    "taux_accord_code_seul": 0.851679,
+    "couples_pour_kappa": 977,
+    "kappa_pondere_quadratique": 0.953461,
     "arbitrages_en_attente": 0
   },
   "par_vague": {
@@ -32,13 +32,13 @@
       "arbitrages_en_attente": 0
     },
     "2": {
-      "couples_codes": 168,
-      "accord_code_et_nature": 128,
-      "taux_accord": 0.761905,
-      "accord_code_seul": 148,
-      "taux_accord_code_seul": 0.880952,
-      "couples_pour_kappa": 156,
-      "kappa_pondere_quadratique": 0.979517,
+      "couples_codes": 269,
+      "accord_code_et_nature": 207,
+      "taux_accord": 0.769517,
+      "accord_code_seul": 237,
+      "taux_accord_code_seul": 0.881041,
+      "couples_pour_kappa": 246,
+      "kappa_pondere_quadratique": 0.970734,
       "arbitrages_en_attente": 0
     },
     "3": {
@@ -244,22 +244,22 @@
       "arbitrages_en_attente": 0
     },
     "tondelier-marine": {
-      "couples_codes": 52,
-      "accord_code_et_nature": 42,
-      "taux_accord": 0.807692,
-      "accord_code_seul": 45,
-      "taux_accord_code_seul": 0.865385,
-      "couples_pour_kappa": 49,
-      "kappa_pondere_quadratique": 0.971568,
+      "couples_codes": 153,
+      "accord_code_et_nature": 121,
+      "taux_accord": 0.79085,
+      "accord_code_seul": 134,
+      "taux_accord_code_seul": 0.875817,
+      "couples_pour_kappa": 139,
+      "kappa_pondere_quadratique": 0.963055,
       "arbitrages_en_attente": 0
     }
   },
   "arbitrages": {
     "en_attente": 0,
-    "rendus": 214
+    "rendus": 236
   },
   "controle_humain": {
-    "tires_au_sort": 91,
+    "tires_au_sort": 104,
     "effectues": 42,
     "corrections": 17
   }

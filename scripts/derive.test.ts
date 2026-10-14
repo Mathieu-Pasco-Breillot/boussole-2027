@@ -59,11 +59,11 @@ describe('désaccord non arbitré = « non connu » (D8)', () => {
     expect(estPublie({ ...(position('candidat-a', 'RET-001', 1) as object), code: 1 } as never)).toBe(true);
   });
 
-  it('sur les données réelles (phase 4, vagues 1 à 3 et Glucksmann, 20 candidats, recodage EDU-001, ajout EDU-020, ECO-003 passé à null par Mathieu) : 905 codes publiés, aucun arbitrage en attente', () => {
+  it('sur les données réelles (phase 4, vagues 1 à 3 et Glucksmann, 20 candidats, recodage EDU-001, ajout EDU-020, ECO-003 passé à null par Mathieu, recodage Tondelier sur son programme définitif le 14 octobre 2026) : 995 codes publiés, aucun arbitrage en attente', () => {
     const couverture = calculerCouverture(reel) as { candidats: Record<string, { codes_publies: number; arbitrages_en_attente: number }> };
     const total = Object.values(couverture.candidats).reduce((s, c) => s + c.codes_publies, 0);
     const attente = Object.values(couverture.candidats).reduce((s, c) => s + c.arbitrages_en_attente, 0);
-    expect(total).toBe(905);
+    expect(total).toBe(995);
     expect(attente).toBe(0);
   });
 });
@@ -93,18 +93,19 @@ describe('kappa pondéré quadratique', () => {
 describe('reproduit les chiffres publiés de la phase 4 (vagues 1 à 3, 11 thèmes, 4 octobre 2026)', () => {
   const accord = calculerAccordCodeurs(reel);
 
-  it('accord global : 971 couples, 757 accords (78,0 %), code seul 84,9 %, kappa 0,95', () => {
-    expect(accord.global.couples_codes).toBe(971);
-    expect(accord.global.accord_code_et_nature).toBe(757);
+  it('accord global : 1 072 couples, 836 accords (78,0 %), code seul 85,2 %, kappa 0,95', () => {
+    expect(accord.global.couples_codes).toBe(1072);
+    expect(accord.global.accord_code_et_nature).toBe(836);
     expect(arrondi3(accord.global.taux_accord)).toBe(0.78);
-    expect(arrondi3(accord.global.taux_accord_code_seul)).toBe(0.849);
+    expect(arrondi3(accord.global.taux_accord_code_seul)).toBe(0.852);
     expect(arrondi3(accord.global.kappa_pondere_quadratique)).toBe(0.953);
     // 12 arbitrages du pilote + 121 (vague 1) + 18 (vague 2) + 17 (vague 3) arbitrages provisoires par un troisième modèle, validation humaine en attente ;
     // un arbitrage disparaît le 4 octobre 2026 avec son extrait, retiré par la vérification indépendante (agrégateur) ;
-    // + 6 arbitrages et 6 contrôles tirés pour Glucksmann, puis 3 arbitrages et 1 contrôle tiré pour EDU-020 (12 octobre 2026).
+    // + 6 arbitrages et 6 contrôles tirés pour Glucksmann, puis 3 arbitrages et 1 contrôle tiré pour EDU-020 (12 octobre 2026) ;
+    // recodage Tondelier sur le programme définitif (14 octobre 2026) : 10 anciens arbitrages et 1 ancien tirage remplacés par 32 arbitrages et 14 tirages.
     expect(accord.arbitrages.en_attente).toBe(0);
-    expect(accord.arbitrages.rendus).toBe(214);
-    expect(accord.controle_humain.tires_au_sort).toBe(91);
+    expect(accord.arbitrages.rendus).toBe(236);
+    expect(accord.controle_humain.tires_au_sort).toBe(104);
     // + 10 revues humaines de Mathieu sur Glucksmann le 12 octobre 2026 (6 contrôles tirés, 4 autres décisions).
     expect(accord.controle_humain.effectues).toBe(42); // + 4 corrections Arthaud (R1 au lieu de R3), 7 recodages R5 v1.4 le 12 octobre et 4 sur les âges le 13 octobre 2026 ; // + Ruffin × EDU-020, puis 7 autres revues de Mathieu sur Glucksmann
   });
@@ -198,12 +199,13 @@ describe('ancrage', () => {
     expect(a.ancres_completes).toBe(false);
     expect(a.ancres.length).toBeLessThan(10);
     // Phase 4 : peu de questions sont codées pour au moins 80 % des candidats évalués, d'où 5 ancres seulement
-    // (6 avant l'entrée de Glucksmann, non codé sur INS-009, dans la population de référence le 12 octobre 2026).
-    expect(a.ancres).toEqual(['RET-002', 'IMM-001', 'ENV-011', 'FIS-002', 'EDU-007']);
+    // (6 avant l'entrée de Glucksmann, non codé sur INS-009, dans la population de référence le 12 octobre 2026) ;
+    // 7 depuis le recodage de Tondelier sur son programme définitif (14 octobre 2026), qui fait passer DEF-008 et INS-001 au-dessus de 80 %.
+    expect(a.ancres).toEqual(['RET-002', 'ENV-011', 'IMM-001', 'DEF-008', 'FIS-002', 'INS-001', 'EDU-007']);
     // Règle de stabilité : les ancres déjà publiées qui restent dans les 20 premières sont conservées
     // (c'est la liste publiée dans derive/ancrage.json après la vague 3).
     expect(calculerAncrage(reel, ['RET-003', 'IMM-001', 'FIS-001', 'INS-009', 'EDU-007', 'ENV-002']).ancres).toEqual([
-      'RET-003', 'IMM-001', 'FIS-001', 'ENV-002', 'EDU-007',
+      'RET-003', 'IMM-001', 'DEF-008', 'FIS-001', 'ENV-002', 'INS-009', 'EDU-007',
     ]);
   });
 
@@ -292,6 +294,6 @@ describe('discriminance sur données réelles', () => {
       expect(l.D === null).toBe(l.candidats_codes < 4);
       if (l.D !== null) expect(l.D, id).toBeLessThanOrEqual(4);
     }
-    expect(d.questions['RET-003']!.candidats_codes).toBe(10);
+    expect(d.questions['RET-003']!.candidats_codes).toBe(11);
   });
 });
