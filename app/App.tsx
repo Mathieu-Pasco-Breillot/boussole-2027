@@ -15,6 +15,7 @@ import { PreparationDuel } from './ecrans/PreparationDuel.tsx';
 import { QuizDuel } from './ecrans/QuizDuel.tsx';
 import { ResultatsDuel } from './ecrans/ResultatsDuel.tsx';
 import { Accueil } from './ecrans/Accueil.tsx';
+import type { ModeAccueil } from './ecrans/Accueil.tsx';
 import { Vieprivee } from './ecrans/Vieprivee.tsx';
 import { Defi } from './ecrans/Defi.tsx';
 import { Chargement } from './ecrans/Chargement.tsx';
@@ -77,9 +78,12 @@ export function App() {
     else window.scrollTo({ top: 0, behavior: 'instant' });
   }, [ecran]);
 
+  // Onglet du sélecteur de mode de l'accueil : « Le quiz » de l'en-tête le remet sur le quiz.
+  const [modeAccueil, setModeAccueil] = useState<ModeAccueil>('quiz');
   const aller = (r: Rubrique) => {
     if (r === 'duel') setEcran('preparationDuel');
     else if (r === 'jouer') {
+      setModeAccueil('quiz');
       if (ecran === 'accueil') document.getElementById('jouer')?.scrollIntoView({ block: 'start' });
       else cible.current = 'jouer';
       setEcran('accueil');
@@ -246,6 +250,8 @@ export function App() {
             onDuel={() => setEcran('preparationDuel')}
             onReprendreDuel={() => setEcran('duel')}
             onVoirResultatsDuel={() => setEcran('resultatsDuel')}
+            mode={modeAccueil}
+            onMode={setModeAccueil}
           />,
           true,
         )

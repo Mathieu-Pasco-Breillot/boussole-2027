@@ -128,6 +128,43 @@ test('rubriques : « Le duel » ouvre le choix du candidat, « Notre méthode »
   await expect(page.getByRole('button', { name: /^Express ·/ })).toBeInViewport();
 });
 
+test('« Le quiz » de l\'en-tête rouvre l\'onglet du quiz, même si le duel était affiché', async ({ page }) => {
+  await page.goto('/');
+  const onglets = page.getByRole('tablist', { name: 'Choisir un mode de jeu' });
+  await onglets.getByRole('tab', { name: 'Duel avec un candidat' }).click();
+  await expect(onglets.getByRole('tab', { name: 'Duel avec un candidat' })).toHaveAttribute('aria-selected', 'true');
+  await navigation(page).getByRole('button', { name: 'Le quiz', exact: true }).click();
+  await expect(onglets.getByRole('tab', { name: 'Le quiz' })).toHaveAttribute('aria-selected', 'true');
+  await expect(page.getByRole('tabpanel', { name: 'Le quiz' })).toBeVisible();
+  await expect(page.getByRole('button', { name: /^Express ·/ })).toBeInViewport();
+});
+
+test('dialogue « À propos » : un glisser parti du contenu et fini sur le fond ne le ferme pas ; un clic sur le fond, si', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'À propos', exact: true }).click();
+  const dialogue = page.getByRole('dialog', { name: 'Vos idées, pas notre avis.' });
+  await expect(dialogue).toBeVisible();
+  const titre = await dialogue.getByRole('heading').boundingBox();
+  if (!titre) throw new Error('titre du dialogue introuvable');
+  // Le coin de la fenêtre est sur le fond (::backdrop), hors du dialogue.
+  await page.mouse.move(titre.x + 10, titre.y + titre.height / 2);
+  await page.mouse.down();
+  await page.mouse.move(2, 2);
+  await page.mouse.up();
+  await expect(dialogue).toBeVisible();
+  await page.mouse.click(2, 2);
+  await expect(dialogue).toHaveCount(0);
+});
+
+test('« Choisir un format » (bandeau final) garde un anneau de focus lisible sur le fond d\'accent', async ({ page }) => {
+  await page.goto('/');
+  const bouton = page.getByRole('button', { name: 'Choisir un format', exact: true });
+  await bouton.focus();
+  // L'anneau est tracé hors du bouton, donc sur le vert : il reprend le blanc du bouton (--color-carte, #fffefa),
+  // contraste d'environ 9,5:1 avec #294c3d, au lieu du bleu des liens (environ 1,2:1).
+  expect(await page.evaluate(`getComputedStyle(document.activeElement).outlineColor`)).toBe('rgb(255, 254, 250)');
+});
+
 test('rubriques secondaires dans le pied de page : candidats, questions, vie privée, versions, réglages', async ({ page }) => {
   await page.goto('/');
   const pied = page.getByRole('contentinfo');

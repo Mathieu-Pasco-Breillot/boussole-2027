@@ -116,6 +116,12 @@ body::before {
   outline-offset: 2px;
 }
 
+/* Hors de @layer comme la règle ci-dessus (sinon elle l'emporte) : sur le bandeau vert (.btn-inverse), l'anneau bleu
+   des liens ne se voit presque pas (environ 1,2:1) ; il reprend le blanc du bouton (environ 9,5:1). */
+.btn-inverse:focus-visible {
+  outline-color: var(--color-carte);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;

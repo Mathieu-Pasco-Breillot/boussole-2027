@@ -41,6 +41,8 @@ export function APropos({ onFermer }: { onFermer: () => void }) {
     const dialogue = ref.current;
     if (dialogue && !dialogue.open) dialogue.showModal();
   }, []);
+  // Cible du dernier appui : un glisser parti du contenu (sélection de texte) et fini sur le fond ne doit pas fermer.
+  const appui = useRef<EventTarget | null>(null);
   // close() d'abord : le fond n'est plus inerte quand l'appelant rend le focus (événement close → onFermer).
   const fermer = () => ref.current?.close();
 
@@ -51,9 +53,13 @@ export function APropos({ onFermer }: { onFermer: () => void }) {
       className="a-propos"
       onClose={onFermer}
       onKeyDown={boucler}
+      onPointerDown={(e) => {
+        appui.current = e.target;
+      }}
       onClick={(e) => {
         // Un clic sur le fond (::backdrop) cible le <dialog> lui-même ; un clic dans le contenu cible ses enfants.
-        if (e.target === e.currentTarget) fermer();
+        // Il faut que l'appui et le relâchement aient eu lieu sur le fond.
+        if (e.target === e.currentTarget && appui.current === e.currentTarget) fermer();
       }}
     >
       <div className="a-propos-contenu">

@@ -56,15 +56,22 @@ test('« Passer la question » avance, efface la réponse donnée et compte la q
   // « Sans avis » (une réponse) et « Passer la question » (aucune réponse) sont deux boutons distincts.
   await expect(page.getByRole('button', { name: 'Sans avis' })).toBeVisible();
   await expect(passer).toBeVisible();
-  const premiere = await page.getByRole('heading', { level: 1 }).first().innerText();
+  const titre = page.getByRole('heading', { level: 1 }).first();
+  const premiere = await titre.innerText();
   await repondreQuelques(page, 1);
+  // L'ancienne carte met 0,2 s à partir : on attend la suivante avant chaque clic, sinon il viserait la carte sortante.
+  await expect(page.getByText('2 / 20')).toBeVisible();
+  await expect(titre).not.toHaveText(premiere);
   await page.getByRole('button', { name: '← Proposition précédente' }).click();
+  await expect(page.getByText('1 / 20')).toBeVisible();
   await expect(page.getByRole('heading', { level: 1 }).first()).toHaveText(premiere);
   await expect(page.getByRole('button', { name: "Plutôt d'accord" })).toHaveAttribute('aria-pressed', 'true');
   await passer.click();
   await expect(page.getByText('2 / 20')).toBeVisible();
+  await expect(titre).not.toHaveText(premiere);
   // De retour sur la question passée : plus aucune réponse n'est cochée.
   await page.getByRole('button', { name: '← Proposition précédente' }).click();
+  await expect(page.getByText('1 / 20')).toBeVisible();
   await expect(page.getByRole('heading', { level: 1 }).first()).toHaveText(premiere);
   await expect(page.getByRole('group', { name: 'Votre réponse' }).locator('[aria-pressed="true"]')).toHaveCount(0);
   await passer.click();

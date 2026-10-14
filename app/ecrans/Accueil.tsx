@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import type { ReactNode } from 'react';
 import { MODES, MOTIFS_NON_EVALUATION, THEMES } from '../libelles.ts';
 import type { ModeJeu } from '../jeu.ts';
@@ -42,7 +41,7 @@ const FORMATS: readonly OptionFormat[] = ORDRE_MODES.map((m, i) => ({
 }));
 const TAILLES = ORDRE_MODES.map((m) => MODES[m].questions);
 
-type ModeAccueil = 'quiz' | 'duel';
+export type ModeAccueil = 'quiz' | 'duel';
 const BASE_JOUER = 'jouer';
 
 interface Props {
@@ -59,6 +58,9 @@ interface Props {
   onDuel: () => void;
   onReprendreDuel: () => void;
   onVoirResultatsDuel: () => void;
+  /** Onglet du sélecteur de mode, tenu par l'appelant : l'en-tête (« Le quiz ») peut aussi le commander. */
+  mode: ModeAccueil;
+  onMode: (mode: ModeAccueil) => void;
 }
 
 const allerA = (id: string) => document.getElementById(id)?.scrollIntoView({ block: 'start' });
@@ -188,12 +190,11 @@ const QUESTIONS_FREQUENTES: readonly { question: string; reponse: string }[] = [
   },
 ];
 
-export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, onReprendre, onVoirResultats, duelEnCours, duelTermine, onDuel, onReprendreDuel, onVoirResultatsDuel }: Props) {
+export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, onReprendre, onVoirResultats, duelEnCours, duelTermine, onDuel, onReprendreDuel, onVoirResultatsDuel, mode, onMode }: Props) {
   const reprises = enCours || terminee || duelEnCours || duelTermine;
-  const [mode, setMode] = useState<ModeAccueil>('quiz');
   /** Vers le choix du format : onglet du quiz ouvert, section « Jouer » en haut de l'écran. */
   const allerAuQuiz = () => {
-    setMode('quiz');
+    onMode('quiz');
     allerA('jouer');
   };
 
@@ -324,7 +325,7 @@ export function Accueil({ enCours, terminee, onCommencer, onDefi, onNaviguer, on
                 { id: 'duel', libelle: 'Duel avec un candidat', icone: <IconeDuel /> },
               ]}
               valeur={mode}
-              onChange={setMode}
+              onChange={onMode}
             />
             <div role="tabpanel" id={idPanneau(BASE_JOUER, 'quiz')} aria-labelledby={idOnglet(BASE_JOUER, 'quiz')} hidden={mode !== 'quiz'} className="panneau-mode">
               <SelecteurFormat legende="Choisissez votre format" options={FORMATS} onChoisir={(id) => onCommencer(id as ModeJeu)} />
