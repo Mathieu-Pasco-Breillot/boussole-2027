@@ -1,3 +1,4 @@
+import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Page } from '@playwright/test';
 import { surveillerErreurs, surveillerReseau } from './outils.ts';
 
@@ -49,4 +50,25 @@ test('duel : reprise après rechargement, puis « tout effacer » supprime la pa
   await page.reload();
   await page.getByRole('button', { name: /Tout effacer/ }).click();
   expect(await page.evaluate(() => localStorage.getItem('isoloir:duel'))).toBeNull();
+});
+
+test('duel : la barre « SUJET » affiche la position réelle et progresse, sans violation d\'accessibilité', async ({ page }) => {
+  await lancerDuel(page);
+  const barre = page.getByRole('progressbar', { name: 'Progression du duel' });
+  await expect(page.getByText('SUJET 01 / 20')).toBeVisible();
+  await expect(barre).toHaveAttribute('max', '20');
+  await expect(barre).toHaveAttribute('value', '0');
+  // Pas de bouton « Passer » dans le duel.
+  await expect(page.getByRole('button', { name: 'Passer la question' })).toHaveCount(0);
+  const axe = async (nom: string) => {
+    const r = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa']).analyze();
+    expect(r.violations.map((v) => `${nom} : ${v.id} (${v.nodes.length})`), nom).toEqual([]);
+  };
+  await axe('duel (question)');
+  await repondreEtVoir(page);
+  await expect(barre).toHaveAttribute('value', '1');
+  await axe('duel (révélation)');
+  await page.getByRole('button', { name: 'Proposition suivante →' }).click();
+  await expect(page.getByText('SUJET 02 / 20')).toBeVisible();
+  await expect(barre).toHaveAttribute('value', '1');
 });

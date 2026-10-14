@@ -5,7 +5,7 @@ import { Site } from './cadre/Site.tsx';
 import type { Rubrique } from './cadre/Site.tsx';
 import type { Valeur } from '../core/score/types.ts';
 import type { ModeJeu, Partie, Preparation as PreparationChoisie } from './jeu.ts';
-import { estTerminee, marquerVues, nouvelleGraine, nouvellePartie, reculer, repondre } from './jeu.ts';
+import { estTerminee, marquerVues, nouvelleGraine, nouvellePartie, passer, reculer, repondre } from './jeu.ts';
 import { apresPartie } from './badges.ts';
 import { ecrireDuel, ecrirePartie, ecrireVues, lireDuel, lirePartie, lireVues, majBadges, toutEffacer } from './stockage.ts';
 import type { TailleDuel } from '../core/duel/index.ts';
@@ -131,15 +131,22 @@ export function App() {
     setEcran('defi');
   };
 
-  const repondreEtAvancer = (valeur: Valeur | 'sans_avis', tresImportant: boolean) => {
-    if (!partie) return;
-    const suivante = repondre(partie, { valeur, tresImportant });
+  /** Enregistre la partie après une réponse ou une question passée ; à la dernière question, ouvre les résultats. */
+  const avancer = (suivante: Partie) => {
     changer(suivante);
     if (estTerminee(suivante)) {
       ecrireVues(marquerVues(lireVues(), suivante, aujourdhui()));
       majBadges((b) => apresPartie(b, suivante));
       setEcran('resultats');
     }
+  };
+
+  const repondreEtAvancer = (valeur: Valeur | 'sans_avis', tresImportant: boolean) => {
+    if (partie) avancer(repondre(partie, { valeur, tresImportant }));
+  };
+
+  const passerEtAvancer = () => {
+    if (partie) avancer(passer(partie));
   };
 
   const effacer = () => {
@@ -177,6 +184,7 @@ export function App() {
         <Quiz
           partie={partie}
           onRepondre={repondreEtAvancer}
+          onPasser={passerEtAvancer}
           onReculer={() => changer(reculer(partie))}
           onQuitter={() => setEcran('accueil')}
         />

@@ -49,6 +49,35 @@ test("une partie interrompue est reprise là où elle s'est arrêtée", async ({
   await expect(page.getByRole('heading', { level: 1 }).first()).toHaveText(avant);
 });
 
+test('« Passer la question » avance, efface la réponse donnée et compte la question comme sans réponse', async ({ page }) => {
+  const erreurs = surveillerErreurs(page);
+  await lancer(page, 'Express');
+  const passer = page.getByRole('button', { name: 'Passer la question' });
+  // « Sans avis » (une réponse) et « Passer la question » (aucune réponse) sont deux boutons distincts.
+  await expect(page.getByRole('button', { name: 'Sans avis' })).toBeVisible();
+  await expect(passer).toBeVisible();
+  const premiere = await page.getByRole('heading', { level: 1 }).first().innerText();
+  await repondreQuelques(page, 1);
+  await page.getByRole('button', { name: '← Proposition précédente' }).click();
+  await expect(page.getByRole('heading', { level: 1 }).first()).toHaveText(premiere);
+  await expect(page.getByRole('button', { name: "Plutôt d'accord" })).toHaveAttribute('aria-pressed', 'true');
+  await passer.click();
+  await expect(page.getByText('2 / 20')).toBeVisible();
+  // De retour sur la question passée : plus aucune réponse n'est cochée.
+  await page.getByRole('button', { name: '← Proposition précédente' }).click();
+  await expect(page.getByRole('heading', { level: 1 }).first()).toHaveText(premiere);
+  await expect(page.getByRole('group', { name: 'Votre réponse' }).locator('[aria-pressed="true"]')).toHaveCount(0);
+  await passer.click();
+  await expect(page.getByText('2 / 20')).toBeVisible();
+  await repondreQuelques(page, 18);
+  await expect(page.getByText('20 / 20')).toBeVisible();
+  // Passer la dernière question termine la partie, comme une réponse.
+  await passer.click();
+  await expect(page.getByText('Vos résultats')).toBeVisible();
+  await expect(page.getByText(/18 réponses sur 20 questions/)).toBeVisible();
+  expect(erreurs).toEqual([]);
+});
+
 test('la carte de résultat se télécharge sans requête externe', async ({ page }) => {
   const externes = surveillerReseau(page);
   await lancer(page, 'Campagne');

@@ -37,13 +37,13 @@ export function Depliants({ question }: { question: QuestionPaquet }) {
       {ouvert === 'impact' && question.impact && (
         <div className="carte carte-douce mt-2 space-y-3 p-4 text-[0.95rem] leading-relaxed">
           <section>
-            <h2 className="font-titre font-semibold text-marine">Ce que ça changerait</h2>
+            <h2 className="font-titre font-normal text-marine">Ce que ça changerait</h2>
             <p>
               <Texte>{question.impact.changement}</Texte>
             </p>
           </section>
           <section>
-            <h2 className="font-titre font-semibold text-marine">Ce qui fait débat</h2>
+            <h2 className="font-titre font-normal text-marine">Ce qui fait débat</h2>
             <p className="mt-1">
               <strong>Pour : </strong>
               <Texte>{question.impact.pour}</Texte>

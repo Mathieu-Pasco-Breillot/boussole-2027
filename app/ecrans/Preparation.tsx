@@ -48,7 +48,7 @@ export function Preparation({ mode, onLancer, onRetour }: Props) {
       </header>
 
       <section aria-labelledby="titre-affinites">
-        <h2 id="titre-affinites" className="font-titre text-2xl font-semibold tracking-tight text-marine">
+        <h2 id="titre-affinites" className="font-titre text-2xl font-normal tracking-tight text-marine">
           Vos affinités (facultatif)
         </h2>
         <p className="mt-1 text-sm leading-relaxed text-discret">

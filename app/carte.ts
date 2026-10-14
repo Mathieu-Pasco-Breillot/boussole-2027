@@ -74,7 +74,7 @@ export function dessinerCarte(canvas: HTMLCanvasElement, d: DonneesCarte): void 
   const sans = 'Arial, Helvetica, system-ui, sans-serif';
   ctx.fillStyle = COULEURS.fond;
   ctx.fillRect(0, 0, LARGEUR_CARTE, HAUTEUR_CARTE);
-  // Bandeau tricolore du haut, comme sur le site.
+  // Filet tricolore du haut : celui de la page (body::before, --degrade-tricolore), épaissi à l'échelle de la carte.
   const tiers = LARGEUR_CARTE / 3;
   [COULEURS.bleu, COULEURS.blanc, COULEURS.rouge].forEach((c, i) => {
     ctx.fillStyle = c;
