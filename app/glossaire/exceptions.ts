@@ -10,6 +10,7 @@ export const EXCEPTIONS_GLOSSAIRE: ReadonlyMap<string, string> = new Map([
   ['CANDIDAT', MARQUEUR],
   ['PARTI', MARQUEUR],
   ['SLOGAN', MARQUEUR],
+  ['PROGRAMME', MARQUEUR],
   ['DEF', IDENTIFIANT],
   ['ECO', IDENTIFIANT],
   ['EDU', IDENTIFIANT],

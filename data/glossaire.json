@@ -50,6 +50,16 @@
     "explication": "Prestation qui complète les ressources des retraités les plus modestes jusqu'à un montant minimum, souvent appelée « minimum vieillesse »."
   },
   {
+    "sigle": "ASS",
+    "developpe": "Allocation de solidarité spécifique",
+    "explication": "Allocation versée par France Travail aux chômeurs de longue durée qui ont épuisé leurs droits à l'assurance chômage, sous conditions de ressources."
+  },
+  {
+    "sigle": "BAC",
+    "developpe": "Brigade anticriminalité",
+    "explication": "Unité de police spécialisée dans les interventions en flagrant délit, surtout la nuit et dans les quartiers urbains."
+  },
+  {
     "sigle": "BFM",
     "developpe": "BFM (à l'origine Business FM)",
     "explication": "Marque de médias d'information (télévision, radio, sites), dont la chaîne BFMTV."
@@ -361,6 +371,11 @@
     "explication": "Agence des Nations unies qui élabore les normes internationales du travail."
   },
   {
+    "sigle": "ONDAM",
+    "developpe": "Objectif national de dépenses d'assurance maladie",
+    "explication": "Plafond de dépenses de l'assurance maladie voté chaque année par le Parlement dans la loi de financement de la sécurité sociale."
+  },
+  {
     "sigle": "ONF",
     "developpe": "Office national des forêts",
     "explication": "Établissement public qui gère les forêts appartenant à l'État et aux collectivités."
@@ -519,6 +534,11 @@
     "sigle": "SP95",
     "developpe": "Sans plomb 95",
     "explication": "Essence sans plomb d'indice d'octane 95 ; le SP95-E10 contient jusqu'à 10 % d'éthanol."
+  },
+  {
+    "sigle": "SUV",
+    "developpe": "Sport utility vehicle (véhicule utilitaire sport)",
+    "explication": "Voiture haute et lourde, inspirée des tout-terrains, plus gourmande en énergie qu'une berline de même gamme."
   },
   {
     "sigle": "T2A",
