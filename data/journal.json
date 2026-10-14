@@ -578,6 +578,16 @@
       "description": "Passe « programme » sur Gabriel Attal demandée par Mathieu le 14 octobre 2026 : site attalpresident.fr aspiré en entier (6 pages « chantiers capitaux » du programme — École, Travail et salaires, Frontières, Intelligence artificielle, Dette de l'État, Dette écologique —, non datées ; page biographique ; 82 actualités de campagne du 17 avril au 10 octobre 2026, dont le meeting de Lyon ; discours de Reims « Bâtir les États-Unis d'Europe » du 17 septembre 2026). Le contenu des pages chargé en différé par le site a été vérifié : rien n'y manquait. Extraction thème par thème sur ce corpus local (11 agents, sans web) : 37 nouveaux extraits sur 30 questions, toutes les citations retrouvées mot à mot ; les pages programme n'apportent du nouveau que sur DEF-008 et EUR-006, le reste vient des actualités. Rien de plus récent ni de plus précis sur les thèmes fiscalité et institutions. 30 questions recodées en grille v1.4 : double codage aveugle (accord 22/30), 8 arbitrages provisoires (claude-fable-5-1), vérification indépendante des 30 codes contre les pages sources (30 confirmés ; aucun second arbitrage nécessaire, R6 appliquée et confirmée sur SEC-006 et SEC-013). 17 codes inchangés, 13 changés dont 3 nouveaux : ECO-012 +2 nette → +1 nuancee ; ECO-014 +1 nuancee → +1 imprecise ; ENV-023 null → +2 nette ; EUR-006 +2 nette → +1 nuancee ; IMM-001 +1 nuancee → -1 nuancee ; RET-005 0 nuancee → +1 imprecise ; RET-006 -2 nette → -1 imprecise ; RET-007 +1 imprecise → +1 nuancee ; RET-009 +1 imprecise → +1 nuancee ; RET-012 +1 imprecise → +1 nuancee ; SAN-001 null → -1 nuancee ; SEC-006 null → -2 nette ; SEC-013 +1 imprecise → +2 nette. Couverture : 69 → 72 questions codées (34,8 %), sous le seuil de 40 % : statut d'évaluation inchangé. Métadonnées : tribune du Grand Continent (17 septembre 2026) retypée texte_signe sur DEF-008, comme sur EUR-006 ; note du programme réécrite. Contrôle humain : 3 nouveaux codes tirés au sort (graine 20261014 : EDU-017, RET-005, SAN-015) ; les tirages en attente ou confirmés sur des questions recodées dont le code a changé sont remplacés (RET-009, confirmé le 3 octobre 2026, change de nature). Champ date_derniere_maj_codage renseigné au 14 octobre 2026.",
       "auteur": "Claude, à la demande de Mathieu",
       "reference": "passe programme Attal du 14 octobre 2026"
+    },
+    {
+      "date": "2026-10-14",
+      "type": "arbitrage",
+      "objets": [
+        "data/positions/attal-gabriel.json"
+      ],
+      "description": "Revue humaine de Mathieu sur deux points de la passe programme Attal. IMM-001 : -1 nuancee validé (la régularisation sélective par système à points, avec refus des régularisations massives, est une autre mesure que l'énoncé ; l'ancien code +1 nuancee n'est pas rétabli). RET-001 : -1 nuancee validé et extrait du 27 août 2026 conservé ; un résumé publié sur le site de campagne qui attribue clairement une position au candidat est une source recevable, même sans citation directe.",
+      "auteur": "Mathieu, avec Claude",
+      "reference": "revue passe programme Attal du 14 octobre 2026"
     }
   ]
 }

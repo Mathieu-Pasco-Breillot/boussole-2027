@@ -110,7 +110,8 @@ describe('reproduit les chiffres publiés de la phase 4 (vagues 1 à 3, 11 thèm
     expect(accord.controle_humain.tires_au_sort).toBe(104);
     // + 10 revues humaines de Mathieu sur Glucksmann le 12 octobre 2026 (6 contrôles tirés, 4 autres décisions).
     // − Attal × RET-009 (confirmé le 3 octobre 2026), dont la nature change à la passe programme du 14 octobre 2026.
-    expect(accord.controle_humain.effectues).toBe(41); // + 4 corrections Arthaud (R1 au lieu de R3), 7 recodages R5 v1.4 le 12 octobre et 4 sur les âges le 13 octobre 2026 ; // + Ruffin × EDU-020, puis 7 autres revues de Mathieu sur Glucksmann
+    // + 2 revues de Mathieu sur la passe Attal (IMM-001, RET-001), 14 octobre 2026.
+    expect(accord.controle_humain.effectues).toBe(43); // + 4 corrections Arthaud (R1 au lieu de R3), 7 recodages R5 v1.4 le 12 octobre et 4 sur les âges le 13 octobre 2026 ; // + Ruffin × EDU-020, puis 7 autres revues de Mathieu sur Glucksmann
   });
 
   it.each([

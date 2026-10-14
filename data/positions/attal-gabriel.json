@@ -67,7 +67,10 @@
       },
       "arbitrage": null,
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-14",
+        "resultat": "valide par Mathieu (-1 nuancee)",
+        "motif": "Revue du 14 octobre 2026 : le résumé du débat du 27 août publié sur le site de campagne, sans citation directe, est retenu comme source recevable (propos clairement attribués au candidat par son site officiel)."
       },
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
@@ -3163,7 +3166,10 @@
       "contestations": [],
       "version": 2,
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": false,
+        "date": "2026-10-14",
+        "resultat": "valide par Mathieu (-1 nuancee)",
+        "motif": "Revue du 14 octobre 2026 : la régularisation sélective par système à points, avec refus des régularisations massives, est une autre mesure que la régularisation des travailleurs ; -1 nuancee maintenu (ancien code +1 nuancee)."
       },
       "code": -1,
       "nature": "nuancee",
