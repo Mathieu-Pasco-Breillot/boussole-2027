@@ -8,7 +8,8 @@ const rendre = (maintenant: string) => renderToStaticMarkup(createElement(Compte
 describe('CompteARebours', () => {
   it('affiche le titre du 1er tour et la phrase statique avec la date', () => {
     const html = rendre('2027-04-18T05:59:50Z');
-    expect(html).toContain("1er tour de l'élection présidentielle de 2027");
+    expect(html).toContain("1<sup>er</sup> tour de l'élection présidentielle de 2027");
+    expect(html).toContain('<sup>er</sup>');
     expect(html).toContain('Premier tour le dimanche 18 avril 2027');
     expect(html).toContain("jusqu'à l'ouverture des bureaux de vote, à 8 h (heure de Paris)");
   });
@@ -22,7 +23,7 @@ describe('CompteARebours', () => {
   });
   it('après le 1er tour, le titre et le décompte visent le 2nd tour', () => {
     const html = rendre('2027-04-18T06:00:01Z');
-    expect(html).toContain("2nd tour de l'élection présidentielle de 2027");
+    expect(html).toContain("2<sup>nd</sup> tour de l'élection présidentielle de 2027");
     expect(html).toContain('Second tour le dimanche 2 mai 2027');
     expect(html).not.toContain('1er tour de');
   });

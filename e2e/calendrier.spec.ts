@@ -12,6 +12,7 @@ test('le compte à rebours est tout en haut, avant le h1, et avance', async ({ p
   const widget = page.getByTestId('compte-a-rebours');
   await expect(widget).toBeVisible();
   await expect(widget.getByText(TITRE_PREMIER_TOUR, { exact: true })).toBeVisible();
+  await expect(widget.locator('sup', { hasText: 'er' })).toHaveText('er');
   await expect(widget).toContainText('Premier tour le dimanche 18 avril 2027');
   await expect(widget).toContainText("jusqu'à l'ouverture des bureaux de vote, à 8 h (heure de Paris)");
   await expect(widget.getByRole('heading')).toHaveCount(0);

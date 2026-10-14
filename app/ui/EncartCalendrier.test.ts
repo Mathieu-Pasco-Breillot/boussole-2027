@@ -13,6 +13,8 @@ describe('EncartCalendrier', () => {
     expect(html).toContain('12 mars 2027, 18 h');
     expect(html).toContain('Liste officielle des candidats');
     expect(html).toContain('au plus tard le 26 mars 2027');
+    expect(html).toContain('1<sup>er</sup> tour');
+    expect(html).toContain('2<sup>nd</sup> tour');
     expect(html).toContain('dimanche 18 avril 2027');
     expect(html).toContain('dimanche 2 mai 2027');
     expect(html.match(/<li/g)).toHaveLength(4);

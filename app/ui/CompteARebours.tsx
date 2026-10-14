@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { decompte, prochainTour } from '../calendrier.ts';
 import { Carte } from './Carte.tsx';
+import { ExposantOrdinal } from './ExposantOrdinal.tsx';
 
 const UNITES: readonly { cle: 'mois' | 'jours' | 'heures' | 'minutes' | 'secondes'; singulier: string; pluriel: string }[] = [
   { cle: 'mois', singulier: 'mois', pluriel: 'mois' },
@@ -32,7 +33,7 @@ export function CompteARebours({ maintenant }: { maintenant?: Date }) {
   return (
     <section aria-label="Compte à rebours de l'élection" className="conteneur pt-4 md:pt-6" data-testid="compte-a-rebours">
       <Carte className="p-4 text-center md:p-6">
-        <p className="font-titre text-xl font-semibold text-marine md:text-3xl">{tour.titre} de l'élection présidentielle de 2027</p>
+        <p className="font-titre text-xl font-semibold text-marine md:text-3xl"><ExposantOrdinal texte={tour.titre} /> de l'élection présidentielle de 2027</p>
         <p className="mt-1 text-discret">
           {tour.nomLong} le {tour.quand}
         </p>

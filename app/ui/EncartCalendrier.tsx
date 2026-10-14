@@ -2,6 +2,7 @@ import { JALONS, prochainTour } from '../calendrier.ts';
 import type { Jalon } from '../calendrier.ts';
 import { cx } from './cx.ts';
 import { Carte } from './Carte.tsx';
+import { ExposantOrdinal } from './ExposantOrdinal.tsx';
 
 function Etiquette({ statut }: { statut: Jalon['statut'] }) {
   return (
@@ -28,7 +29,7 @@ export function EncartCalendrier({ maintenant }: { maintenant?: Date }) {
         <ol className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-x-8">
           {JALONS.map((j) => (
             <li key={j.id} className="flex flex-col items-start gap-1">
-              <span className="font-semibold text-marine">{j.titre}</span>
+              <span className="font-semibold text-marine"><ExposantOrdinal texte={j.titre} /></span>
               <span className="text-discret">{j.quand}</span>
               <Etiquette statut={j.statut} />
             </li>
