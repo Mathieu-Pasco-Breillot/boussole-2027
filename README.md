@@ -42,10 +42,10 @@ npm run build           # valide, vérifie les types, compile
 ## Contribuer
 
 Les données sont publiques et contestables. **Toute contribution touchant une position, un code ou une question
-doit citer une source** (URL, de préférence primaire : programme, déclaration, vote) et, pour une position,
+doit citer une source** (URL publique, de préférence primaire : programme, texte signé, déclaration ; les votes ne servent pas au codage) et, pour une position,
 le passage qui la fonde (reformulation, ou citation de 14 mots maximum). Une contribution sans source est refusée.
 
-- Contester une position : ouvrir une issue avec le modèle « Contester ou corriger une position ».
+- Contester une position codée, ou une règle de codage : ouvrir une issue avec le formulaire « Contester une position codée » ou « Contester une règle de codage ». Les deux exigent une source publique ; les listes de candidats et de questions du premier sont générées depuis `data/` (`npm run forms:generate`).
 - Les règles de codage sont dans `docs/grille-codage.md`, le calcul dans `docs/methodologie.md`.
 - Avant toute proposition : `npm run data:validate` et `npm test` doivent passer. La CI les exécute.
 - Chaque modification de `data/` est tracée dans `data/journal.json`.

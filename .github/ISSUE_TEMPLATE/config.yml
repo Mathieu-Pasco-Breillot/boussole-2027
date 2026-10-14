@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Méthode de calcul (docs/methodologie.md)
+    url: https://github.com/Mathieu-Pasco-Breillot/boussole-2027/blob/develop/docs/methodologie.md
+    about: Calcul des scores, mises à jour des données et numéros de version. À lire avant de contester une règle.
+  - name: Grille de codage (docs/grille-codage.md)
+    url: https://github.com/Mathieu-Pasco-Breillot/boussole-2027/blob/develop/docs/grille-codage.md
+    about: Échelle de −2 à +2, règles R1 à R6, sources admises et procédure de contestation. À lire avant de contester une position.

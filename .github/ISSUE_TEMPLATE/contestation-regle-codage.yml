@@ -1,0 +1,118 @@
+name: Contester une règle de codage
+description: Une règle de la grille de codage ou de la méthode paraît erronée, ambiguë ou injuste dans ses effets. Des cas concrets et des sources sont obligatoires.
+title: "[Règle] <règle concernée>"
+labels: ["contestation", "regle-codage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Avant de commencer
+
+        Les règles de codage et de calcul sont publiques et contestables. La [grille de codage](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/blob/develop/docs/grille-codage.md) et la [méthodologie](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/blob/develop/docs/methodologie.md) font foi. Pour contester un code précis plutôt qu'une règle, utiliser le formulaire « Contester une position codée ».
+
+        **Exigences**
+
+        - **La règle ciblée est référencée précisément** : fichier et paragraphe (§) ou ligne, par exemple `docs/grille-codage.md`, § 2, règle R5.
+        - **Le problème est décrit** avec la rédaction actuelle de la règle et la rédaction proposée.
+        - **Au moins deux cas concrets** (candidat × question, avec les identifiants) montrent l'effet de la règle actuelle et celui de la règle proposée.
+        - **Des sources** appuient la contestation. Une contestation sans source est refusée.
+        - **Neutralité** : la règle proposée ne favorise aucun camp, aucun candidat et aucun axe.
+        - **Impact estimé** : un changement de méthode qui rend les résultats non comparables avec les versions précédentes est une version **majeure** des données (méthodologie, § 9). Une correction de codage est une version corrective ; un ajout (candidats, questions, codages) est une version mineure.
+
+        ## Critères d'acceptation
+
+        **Pour être recevable**, l'issue référence précisément la règle, donne la rédaction actuelle et la rédaction proposée, présente au moins deux cas concrets avec leurs identifiants, cite ses sources et confirme la neutralité de la règle proposée.
+
+        **Si la contestation est recevable**, elle est examinée selon la méthode. Si elle est retenue :
+
+        1. `docs/grille-codage.md` ou `docs/methodologie.md` est modifié, et le numéro de version du document augmente ;
+        2. les positions concernées sont recodées, et le recodage est consigné dans `data/journal.json` ;
+        3. le message de commit est `fix(donnees)` pour une correction de codage ;
+        4. le message de commit est `feat(donnees)!` avec un pied `BREAKING CHANGE:` **uniquement** pour un changement de méthode qui rend les résultats non comparables.
+
+        **Sinon**, l'issue est close avec le motif : règle maintenue, ou contestation irrecevable.
+  - type: dropdown
+    id: type_regle
+    attributes:
+      label: Type de règle
+      options:
+        - "Grille de codage"
+        - "Méthode"
+        - "Critère d'inclusion"
+        - "Formulation d'une question"
+        - "Score ou pondération"
+        - "Autre"
+    validations:
+      required: true
+  - type: input
+    id: reference
+    attributes:
+      label: Règle concernée
+      description: Fichier et paragraphe ou ligne, par exemple « docs/grille-codage.md, § 2, règle R5 ».
+    validations:
+      required: true
+  - type: textarea
+    id: probleme
+    attributes:
+      label: Problème
+      description: Ce que la règle actuelle produit de contestable, et pourquoi.
+    validations:
+      required: true
+  - type: textarea
+    id: redaction_actuelle
+    attributes:
+      label: Rédaction actuelle
+      description: Le texte de la règle, recopié depuis le document.
+    validations:
+      required: true
+  - type: textarea
+    id: redaction_proposee
+    attributes:
+      label: Rédaction proposée
+      description: Le texte qui remplacerait la règle actuelle.
+    validations:
+      required: true
+  - type: textarea
+    id: cas_concrets
+    attributes:
+      label: Cas concrets
+      description: "Au moins deux cas, un par ligne, au format « identifiant du candidat × identifiant de la question : code actuel, code qui résulterait de la règle proposée »."
+      placeholder: "identifiant-du-candidat × ABC-001 : code actuel, code proposé"
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impact estimé sur les données publiées
+      options:
+        - "Correction de codage (version corrective)"
+        - "Ajout ou précision (version mineure)"
+        - "Changement de méthode rendant les résultats non comparables (version majeure)"
+        - "Impact inconnu, à évaluer"
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Liens (URL) vers les textes ou les travaux qui appuient la contestation.
+    validations:
+      required: true
+  - type: checkboxes
+    id: neutralite
+    attributes:
+      label: Neutralité
+      options:
+        - label: "La règle proposée ne favorise aucun camp, aucun candidat et aucun axe."
+          required: true
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: "La règle ciblée est référencée avec son fichier et son paragraphe."
+          required: true
+        - label: "Au moins deux cas concrets sont donnés, avec leurs identifiants."
+          required: true
+        - label: "Les sources sont publiques."
+          required: true
