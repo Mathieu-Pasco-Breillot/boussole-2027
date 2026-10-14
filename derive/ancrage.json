@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "b65c020649d42c88bbf909b6c7bb945f93a97b50d82d894d7a613d0b6bb2f72b",
+  "empreinte_donnees": "e75c1793214aaf01c82eea5da81156b7dde860a7f48496b9bb7a39d6829bdef6",
   "provisoire": true,
   "parametres": {
     "nombre_ancres": 10,
@@ -15,6 +15,16 @@
   "classement": [
     {
       "rang": 1,
+      "question_id": "IMM-001",
+      "theme": "immigration",
+      "axe": "frontieres",
+      "sens": 1,
+      "D": 2.1875,
+      "couverture": 1,
+      "candidats_codes": 12
+    },
+    {
+      "rang": 2,
       "question_id": "RET-002",
       "theme": "retraites",
       "axe": "economie",
@@ -24,7 +34,7 @@
       "candidats_codes": 12
     },
     {
-      "rang": 2,
+      "rang": 3,
       "question_id": "RET-003",
       "theme": "retraites",
       "axe": "economie",
@@ -32,16 +42,6 @@
       "D": 2.136364,
       "couverture": 0.916667,
       "candidats_codes": 11
-    },
-    {
-      "rang": 3,
-      "question_id": "IMM-001",
-      "theme": "immigration",
-      "axe": "frontieres",
-      "sens": 1,
-      "D": 2.076389,
-      "couverture": 1,
-      "candidats_codes": 12
     },
     {
       "rang": 4,
@@ -135,8 +135,8 @@
     }
   ],
   "ancres": [
-    "RET-003",
     "IMM-001",
+    "RET-003",
     "DEF-008",
     "FIS-001",
     "ENV-002",
@@ -144,8 +144,8 @@
     "EDU-007"
   ],
   "ancres_express": [
-    "RET-003",
     "IMM-001",
+    "RET-003",
     "DEF-008",
     "FIS-001"
   ],

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "b65c020649d42c88bbf909b6c7bb945f93a97b50d82d894d7a613d0b6bb2f72b",
+  "empreinte_donnees": "e75c1793214aaf01c82eea5da81156b7dde860a7f48496b9bb7a39d6829bdef6",
   "provisoire": true,
   "population": [
     "arthaud-nathalie",
@@ -251,8 +251,8 @@
       "sens": -1,
       "candidats_codes": 5,
       "couverture": 0.416667,
-      "variance": 2.4,
-      "D": 1
+      "variance": 1.36,
+      "D": 0.566667
     },
     "ECO-013": {
       "theme": "economie-dette",
@@ -672,10 +672,10 @@
       "theme": "ecologie-energie",
       "axe": "ecologie",
       "sens": -1,
-      "candidats_codes": 7,
-      "couverture": 0.583333,
-      "variance": 1.265306,
-      "D": 0.738095
+      "candidats_codes": 8,
+      "couverture": 0.666667,
+      "variance": 1.484375,
+      "D": 0.989583
     },
     "ENV-024": {
       "theme": "ecologie-energie",
@@ -755,8 +755,8 @@
       "sens": 1,
       "candidats_codes": 7,
       "couverture": 0.583333,
-      "variance": 0.244898,
-      "D": 0.142857
+      "variance": 0.204082,
+      "D": 0.119048
     },
     "EUR-007": {
       "theme": "union-europeenne",
@@ -1016,8 +1016,8 @@
       "sens": 1,
       "candidats_codes": 12,
       "couverture": 1,
-      "variance": 2.076389,
-      "D": 2.076389
+      "variance": 2.1875,
+      "D": 2.1875
     },
     "IMM-002": {
       "theme": "immigration",
@@ -1394,8 +1394,8 @@
       "sens": -1,
       "candidats_codes": 8,
       "couverture": 0.666667,
-      "variance": 1.859375,
-      "D": 1.239583
+      "variance": 2.25,
+      "D": 1.5
     },
     "RET-006": {
       "theme": "retraites",
@@ -1403,8 +1403,8 @@
       "sens": 1,
       "candidats_codes": 8,
       "couverture": 0.666667,
-      "variance": 2.734375,
-      "D": 1.822917
+      "variance": 2.25,
+      "D": 1.5
     },
     "RET-007": {
       "theme": "retraites",
@@ -1536,10 +1536,10 @@
       "theme": "sante",
       "axe": "economie",
       "sens": 1,
-      "candidats_codes": 4,
-      "couverture": 0.333333,
-      "variance": 2.1875,
-      "D": 0.729167
+      "candidats_codes": 5,
+      "couverture": 0.416667,
+      "variance": 2,
+      "D": 0.833333
     },
     "SAN-002": {
       "theme": "sante",
@@ -1752,10 +1752,10 @@
       "theme": "securite",
       "axe": "securite",
       "sens": 1,
-      "candidats_codes": 4,
-      "couverture": 0.333333,
-      "variance": 1.1875,
-      "D": 0.395833
+      "candidats_codes": 5,
+      "couverture": 0.416667,
+      "variance": 1.2,
+      "D": 0.5
     },
     "SEC-008": {
       "theme": "securite",
@@ -1808,8 +1808,8 @@
       "sens": -1,
       "candidats_codes": 5,
       "couverture": 0.416667,
-      "variance": 0.16,
-      "D": 0.066667
+      "variance": 0,
+      "D": 0
     },
     "SEC-014": {
       "theme": "securite",

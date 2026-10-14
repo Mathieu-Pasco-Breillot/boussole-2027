@@ -1,12 +1,13 @@
 {
   "candidat_id": "attal-gabriel",
-  "_statut": "POC — codage vague 1, 11 thèmes. Retraites : arbitrages acceptés en bloc par Mathieu. Autres thèmes : désaccords arbitrés provisoirement par un 3e modèle, contrôle humain de 10 % à faire. À revoir avant publication. Vague 2 (4 octobre 2026) : recherche complémentaire sur les questions sans code publié, même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, contrôle humain de 10 % à faire). Vague 3 (4 octobre 2026) : nouvelle recherche sur les questions sans code publié, même protocole.",
-  "grille_version": "1.3",
+  "_statut": "POC — codage vague 1, 11 thèmes. Retraites : arbitrages acceptés en bloc par Mathieu. Autres thèmes : désaccords arbitrés provisoirement par un 3e modèle, contrôle humain de 10 % à faire. À revoir avant publication. Vague 2 (4 octobre 2026) : recherche complémentaire sur les questions sans code publié, même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, contrôle humain de 10 % à faire). Vague 3 (4 octobre 2026) : nouvelle recherche sur les questions sans code publié, même protocole. Passe « programme » du 14 octobre 2026 : site attalpresident.fr aspiré en entier (6 pages « chantiers capitaux » du programme, biographie, 82 actualités de campagne de mai à octobre 2026 dont le meeting de Lyon du 10 octobre, discours de Reims du 17 septembre 2026) ; 30 questions recodées en grille v1.4 avec le même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, vérification indépendante de tous les codes recodés). Contrôle humain de 10 % à faire.",
+  "grille_version": "1.4",
+  "date_derniere_maj_codage": "2026-10-14",
   "programme": {
     "officiel_disponible": true,
     "date_publication": null,
     "url": "https://attalpresident.fr/programme",
-    "note": "Programme officiel partiel signalé par l'extracteur sur au moins un thème. Détail par thème dans programmes-par-theme.json (phase 4)."
+    "note": "Programme publié sur le site de campagne attalpresident.fr : quatre « chantiers capitaux » (École, Travail et salaires, Frontières, Intelligence artificielle) et deux « dettes à résorber » (dette de l'État, dette écologique), pages non datées consultées le 14 octobre 2026. Complété par les actualités de campagne (entretiens, discours, déplacements, mai à octobre 2026) et le discours de Reims « Bâtir les États-Unis d'Europe » (17 septembre 2026). Pages programme typées programme_officiel."
   },
   "positions": [
     {
@@ -14,8 +15,22 @@
       "code": -1,
       "nature": "nuancee",
       "statut": "accord",
-      "item_aveugle": "2164cd1e",
+      "item_aveugle": "cbf44650",
       "extraits": [
+        {
+          "reformulation": "Lors du débat du 27 août 2026, le candidat s'oppose à la suspension de la réforme de 2023 et souhaite que celle-ci reprenne son calendrier s'il est élu ; il veut par ailleurs un système sans âge légal, fondé sur la durée de cotisation (résumé de la campagne, sans citation directe sur ce point).",
+          "citation_courte": "il souhaite que celle-ci reprenne son calendrier",
+          "reformulation_anonymisee": "Lors d'un débat entre candidats, [CANDIDAT] s'oppose à la suspension de la réforme de 2023 et souhaite que celle-ci reprenne son calendrier s'il est élu ; il veut par ailleurs un système sans âge légal, fondé sur la durée de cotisation (résumé de campagne, sans citation directe sur ce point).",
+          "citation_anonymisee": "[CANDIDAT] souhaite que celle-ci reprenne son calendrier",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/a-la-ref-gabriel-attal-grand-gagnant-du-premier-debat-de-la-presidentielle-2027",
+            "titre": "Gabriel Attal, gagnant du premier débat de la présidentielle",
+            "date_publication": "2026-08-27",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Gabriel Attal ne veut plus réguler le système par l'âge légal : il propose de retenir la seule durée de cotisation, avec une vraie décote en cas de départ précoce et une vraie surcote en cas de départ tardif. Il estime qu'il ne s'agit plus de bouger les paramètres d'un système qui, selon lui, ne tient plus. Aucun âge ni aucune durée chiffrés ne sont donnés.",
           "citation_courte": "Je propose qu'on prenne la durée de cotisation.",
@@ -36,16 +51,16 @@
           "modele": "claude-opus-5-5",
           "code": -1,
           "nature": "nuancee",
-          "justification": "Écarte l'âge légal au profit de la seule durée de cotisation (R3).",
-          "date": "2026-10-03",
+          "justification": "Veut supprimer l'âge légal au profit de la seule durée de cotisation (R3).",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": -1,
           "nature": "nuancee",
-          "justification": "R3 : il écarte l'âge légal au profit de la durée de cotisation seule.",
-          "date": "2026-10-03",
+          "justification": "Supprime l'âge légal au profit de la seule durée de cotisation (R3).",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "accord": true
@@ -56,12 +71,12 @@
       },
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "Il écarte l'âge légal au profit de la durée de cotisation avec décote et surcote, sans chiffre : R3, −1 nuancée."
+        "motif": "Il écarte l'âge légal au profit de la seule durée de cotisation (R3) et veut que la réforme de 2023 reprenne son calendrier vers 64 ans, soit le droit en vigueur sans mouvement vers 62 : −1 nuancee."
       },
       "contestations": [],
-      "version": 1
+      "version": 2
     },
     {
       "question_id": "RET-002",
@@ -173,10 +188,24 @@
     },
     {
       "question_id": "RET-005",
-      "code": 0,
-      "nature": "nuancee",
-      "statut": "arbitre",
+      "code": 1,
+      "nature": "imprecise",
+      "statut": "accord",
       "extraits": [
+        {
+          "reformulation": "Le 5 octobre 2026 (déplacement à Blois et Bourges), le candidat propose de supprimer l'âge légal au profit d'une durée de cotisation décidée par les partenaires sociaux, avec pour règle impérative l'équilibre financier du système. Aucun nombre d'années ou de trimestres n'est indiqué.",
+          "citation_courte": "une durée de cotisation décidée par les partenaires sociaux",
+          "reformulation_anonymisee": "Lors d'un déplacement, [CANDIDAT] propose de supprimer l'âge légal au profit d'une durée de cotisation décidée par les partenaires sociaux, avec pour règle impérative l'équilibre financier du système. Aucun nombre d'années ou de trimestres n'est indiqué.",
+          "citation_anonymisee": "une durée de cotisation décidée par les partenaires sociaux",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-debat-avec-les-francais-a-blois-et-a-bourges",
+            "titre": "Gabriel Attal débat avec les Français à Blois et à Bourges",
+            "date_publication": "2026-10-05",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Il propose un système sans âge légal, fondé sur la seule durée de cotisation, avec décote en cas de départ avant cette durée. Il note que la durée actuelle pour le taux plein est de 43 ans et que, si l'espérance de vie continue d'augmenter, elle devra continuer à augmenter ; il ne donne aucun chiffre cible (ni 45 ans).",
           "citation_courte": "évidemment que la durée devra continuer à augmenter",
@@ -211,27 +240,21 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "imprecise",
-          "justification": "Juge que la durée de cotisation devra augmenter, sans chiffre ; elle serait ensuite fixée par les partenaires sociaux.",
-          "date": "2026-10-04",
+          "justification": "Estime que la durée devra continuer à augmenter et la confie aux partenaires sociaux, sans chiffre de 45 ans.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
-          "code": 0,
-          "nature": "nuancee",
-          "justification": "Pas de chiffre fixé, durée laissée aux partenaires sociaux.",
-          "date": "2026-10-04",
+          "code": 1,
+          "nature": "imprecise",
+          "justification": "Dit que la durée devra continuer à augmenter, sans chiffre, en la confiant aux partenaires sociaux.",
+          "date": "2026-10-14",
           "aveugle": true
         },
-        "accord": false
+        "accord": true
       },
-      "arbitrage": {
-        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-04",
-        "code_retenu": 0,
-        "nature_retenue": "nuancee",
-        "motif": "La source la plus récente refuse explicitement de fixer la durée dans le texte et la renvoie aux partenaires sociaux : refus argumenté de trancher ; hésitation 0/+1 tranchée vers 0. (code retenu : celui du codeur A)"
-      },
+      "arbitrage": null,
       "controle_humain": {
         "tire_au_sort": true,
         "date": null,
@@ -239,20 +262,34 @@
       },
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "La source la plus récente renvoie explicitement la durée aux partenaires sociaux, sans cible : refus argumenté de trancher ; l'hésitation entre 0 et +1 est tranchée vers 0."
+        "motif": "Il dit que la durée « devra continuer à augmenter » et la confie aux partenaires sociaux, sans chiffre de 45 ans : direction perceptible, ampleur non spécifiée, +1 imprecise."
       },
       "contestations": [],
-      "version": 1,
-      "item_aveugle": "f2d9f6ae"
+      "version": 2,
+      "item_aveugle": "26ff3d69"
     },
     {
       "question_id": "RET-006",
-      "code": -2,
-      "nature": "nette",
+      "code": -1,
+      "nature": "imprecise",
       "statut": "accord",
       "extraits": [
+        {
+          "reformulation": "Le 5 octobre 2026 (déplacement à Blois et Bourges), le candidat propose de supprimer l'âge légal au profit d'une durée de cotisation décidée par les partenaires sociaux, avec pour règle impérative l'équilibre financier du système. Aucun nombre d'années ou de trimestres n'est indiqué.",
+          "citation_courte": "une durée de cotisation décidée par les partenaires sociaux",
+          "reformulation_anonymisee": "Lors d'un déplacement, [CANDIDAT] propose de supprimer l'âge légal au profit d'une durée de cotisation décidée par les partenaires sociaux, avec pour règle impérative l'équilibre financier du système. Aucun nombre d'années ou de trimestres n'est indiqué.",
+          "citation_anonymisee": "une durée de cotisation décidée par les partenaires sociaux",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-debat-avec-les-francais-a-blois-et-a-bourges",
+            "titre": "Gabriel Attal débat avec les Français à Blois et à Bourges",
+            "date_publication": "2026-10-05",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Il propose un système sans âge légal, fondé sur la seule durée de cotisation. Il note que la durée actuelle pour le taux plein est de 43 ans et que, si l'espérance de vie continue d'augmenter, elle devra continuer à augmenter ; il n'évoque pas de réduction à 40 ans.",
           "citation_courte": "évidemment que la durée devra continuer à augmenter",
@@ -271,18 +308,18 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": -2,
-          "nature": "nette",
-          "justification": "Estime que la durée de cotisation devra continuer à augmenter.",
-          "date": "2026-10-04",
+          "code": -1,
+          "nature": "imprecise",
+          "justification": "Estime que la durée devra continuer à augmenter, sens opposé, sans chiffre.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
-          "code": -2,
-          "nature": "nette",
-          "justification": "Durée devra continuer à augmenter, contraire d'une baisse.",
-          "date": "2026-10-04",
+          "code": -1,
+          "nature": "imprecise",
+          "justification": "Dit que la durée devra continuer à augmenter, direction opposée à 40 ans, sans chiffre.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "accord": true
@@ -293,21 +330,49 @@
       },
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "Il envisage une durée de cotisation qui continue d'augmenter au-delà de 43 ans, direction opposée à un retour à 40 ans par rapport au droit en vigueur ; la condition liée à l'espérance de vie n'atténue pas le sens."
+        "motif": "Il juge que la durée « devra continuer à augmenter » et la confie aux partenaires sociaux sous contrainte d'équilibre : direction contraire à 40 ans, sans chiffre ni engagement, −1 imprecise défendable."
       },
       "contestations": [],
-      "version": 1,
-      "item_aveugle": "cb79f624"
+      "version": 2,
+      "item_aveugle": "ef24ae2f"
     },
     {
       "question_id": "RET-007",
       "code": 1,
-      "nature": "imprecise",
+      "nature": "nuancee",
       "statut": "accord",
-      "item_aveugle": "ddf8f543",
+      "item_aveugle": "8b9af76a",
       "extraits": [
+        {
+          "reformulation": "Le 29 septembre 2026, le candidat défend un développement progressif de la capitalisation en complément de la répartition : un plan d'épargne retraite de 1000 € ouvert par l'État pour chaque enfant, que parents et grands-parents pourraient abonder jusqu'à ses 18 ans, et 50 % de l'intéressement et de la participation orientés vers des plans d'épargne retraite pour les actifs. La source ne dit pas si une part de capitalisation serait obligatoire dans le régime des salariés du privé.",
+          "citation_courte": "l’ouverture d’un plan d’épargne retraite de 1000€ par l’État",
+          "reformulation_anonymisee": "Lors d'un discours devant des acteurs de l'épargne, [CANDIDAT] défend un développement progressif de la capitalisation en complément de la répartition : un plan d'épargne retraite de 1000 € ouvert par l'État pour chaque enfant, que parents et grands-parents pourraient abonder jusqu'à ses 18 ans, et 50 % de l'intéressement et de la participation orientés vers des plans d'épargne retraite pour les actifs. La source ne dit pas si une part de capitalisation serait obligatoire dans le régime des salariés du privé.",
+          "citation_anonymisee": "l’ouverture d’un plan d’épargne retraite de 1000€ par l’État",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/aux-assises-de-l-afer-gabriel-attal-defend-une-epargne-qui-finance-l-economie-francaise",
+            "titre": "Aux Assises de l’AFER, Gabriel Attal défend une épargne qui finance l’économie française",
+            "date_publication": "2026-09-29",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Dans un entretien aux Échos (17 juin 2026), le candidat défend l'introduction de la retraite par capitalisation pour lever des fonds privés de long terme, et demande le fléchage obligatoire de 50 % de l'intéressement et de la participation des salariés vers des plans d'épargne retraite.",
+          "citation_courte": "fléchage obligatoire de 50 % de l’intéressement et de la participation",
+          "reformulation_anonymisee": "Dans un entretien de presse, [CANDIDAT] défend l'introduction de la retraite par capitalisation pour lever des fonds privés de long terme, et demande le fléchage obligatoire de 50 % de l'intéressement et de la participation des salariés vers des plans d'épargne retraite.",
+          "citation_anonymisee": "fléchage obligatoire de 50 % de l’intéressement et de la participation",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-appelle-a-une-rupture-economique-dans-les-echos",
+            "titre": "Gabriel Attal son plan de rupture économique dans Les Echos",
+            "date_publication": "2026-06-17",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Gabriel Attal assortit ses propositions sur les retraites d'un « vrai pilier de capitalisation ». Selon l'article, les contours de ce pilier restent à préciser ; son caractère obligatoire ou facultatif n'est pas indiqué.",
           "citation_courte": "vrai pilier de capitalisation",
@@ -327,17 +392,17 @@
         "codeur_1": {
           "modele": "claude-opus-5-5",
           "code": 1,
-          "nature": "imprecise",
-          "justification": "« Vrai pilier de capitalisation » sans préciser s'il est obligatoire.",
-          "date": "2026-10-03",
+          "nature": "nuancee",
+          "justification": "Défend un pilier de capitalisation avec fléchage obligatoire de 50 % de l'intéressement et de la participation, version partielle.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
-          "nature": "imprecise",
-          "justification": "Il veut un pilier de capitalisation mais son caractère obligatoire et ses contours ne sont pas précisés.",
-          "date": "2026-10-03",
+          "nature": "nuancee",
+          "justification": "Capitalisation en complément avec fléchage obligatoire de 50 % de l'intéressement, version partielle.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "accord": true
@@ -348,12 +413,12 @@
       },
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "L'article indique que ses propositions « se doublent […] d'un « vrai pilier de capitalisation », dont le contours reste encore à préciser » : direction favorable, caractère obligatoire et public non précisés."
+        "motif": "Il défend l'introduction de la capitalisation avec un « fléchage obligatoire » de 50 % de l'intéressement et de la participation vers des PER : une part obligatoire, mais limitée à ces revenus et non à l'ensemble des cotisations des salariés du privé ; version partielle, +1 nuancee."
       },
       "contestations": [],
-      "version": 1
+      "version": 2
     },
     {
       "question_id": "RET-008",
@@ -372,10 +437,38 @@
     {
       "question_id": "RET-009",
       "code": 1,
-      "nature": "imprecise",
+      "nature": "nuancee",
       "statut": "accord",
-      "item_aveugle": "6f2bbb11",
+      "item_aveugle": "6fa53cf6",
       "extraits": [
+        {
+          "reformulation": "Dans Le Parisien (3 juillet 2026), le candidat annonce que dès le budget 2028 une « année blanche » gèlera temporairement les prestations sociales, en protégeant les petites retraites.",
+          "citation_courte": "gèlera temporairement les prestations sociales, tout en protégeant les petites retraites",
+          "reformulation_anonymisee": "Dans un entretien de presse, [CANDIDAT] annonce que dès le budget 2028 une « année blanche » gèlera temporairement les prestations sociales, en protégeant les petites retraites.",
+          "citation_anonymisee": "gèlera temporairement les prestations sociales, tout en protégeant les petites retraites",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/dans-le-parisien-gabriel-attal-vise-le-zero-deficit-en-2037",
+            "titre": "Interview de Gabriel Attal dans Le Parisien sur les FIPU",
+            "date_publication": "2026-07-03",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Dans un entretien aux Échos (17 juin 2026), le candidat propose de financer les investissements d'avenir par des économies, notamment en gelant les prestations sociales, y compris une partie des retraites. Durée et périmètre exacts non précisés.",
+          "citation_courte": "en gelant les prestations sociales, y compris une partie des retraites",
+          "reformulation_anonymisee": "Dans un entretien de presse, [CANDIDAT] propose de financer les investissements d'avenir par des économies, notamment en gelant les prestations sociales, y compris une partie des retraites. Durée et périmètre exacts non précisés.",
+          "citation_anonymisee": "en gelant les prestations sociales, y compris une partie des retraites",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-appelle-a-une-rupture-economique-dans-les-echos",
+            "titre": "Gabriel Attal son plan de rupture économique dans Les Echos",
+            "date_publication": "2026-06-17",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Dans un entretien aux Échos repris par l'article, Gabriel Attal affirme que l'indexation automatique et pleine de l'ensemble des pensions sur l'inflation n'est pas intangible, en rappelant qu'elle a coûté 15 milliards d'euros en 2024. Il ouvre ainsi la porte à une revalorisation non intégrale, sans annoncer de gel ni en préciser la durée ou le périmètre.",
           "citation_courte": "L'indexation automatique et pleine de l'ensemble des pensions n'est pas intangible",
@@ -395,35 +488,33 @@
         "codeur_1": {
           "modele": "claude-opus-5-5",
           "code": 1,
-          "nature": "imprecise",
-          "justification": "Ouvre la porte à une revalorisation non intégrale sans annoncer de gel ni sa durée.",
-          "date": "2026-10-03",
+          "nature": "nuancee",
+          "justification": "Année blanche gelant les prestations y compris une partie des retraites, petites retraites protégées.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
-          "nature": "imprecise",
-          "justification": "Il juge l'indexation pleine non intangible, ce qui ouvre la porte à une revalorisation réduite sans annoncer de gel ni de durée.",
-          "date": "2026-10-03",
+          "nature": "nuancee",
+          "justification": "Gel temporaire des prestations avec protection des petites retraites, version partielle.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "accord": true
       },
       "arbitrage": null,
       "controle_humain": {
-        "tire_au_sort": true,
-        "date": "2026-10-03",
-        "resultat": "confirme"
+        "tire_au_sort": false
       },
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "Il propose de désindexer certaines pensions, sans gel général ni durée : direction conforme, mesure partielle et floue ; +1 imprecise défendable."
+        "motif": "Il annonce une « année blanche » gelant temporairement les prestations dès le budget 2028, petites retraites exclues : gel d'un an d'une partie seulement des pensions, version partielle, +1 nuancee."
       },
       "contestations": [],
-      "version": 1
+      "version": 2
     },
     {
       "question_id": "RET-010",
@@ -510,10 +601,24 @@
     {
       "question_id": "RET-012",
       "code": 1,
-      "nature": "imprecise",
-      "statut": "accord",
-      "item_aveugle": "ded1b0be",
+      "nature": "nuancee",
+      "statut": "arbitre",
+      "item_aveugle": "cf6de88e",
       "extraits": [
+        {
+          "reformulation": "Le 5 octobre 2026, le candidat propose un système universel aux mêmes règles pour tous, organisé en trois régimes (fonctionnaires, salariés, indépendants), sans âge légal et avec une durée de cotisation fixée par les partenaires sociaux sous contrainte d'équilibre financier. La source ne parle pas de points.",
+          "citation_courte": "un système universel reposant sur les mêmes règles pour tous",
+          "reformulation_anonymisee": "Lors d'un déplacement, [CANDIDAT] propose un système universel aux mêmes règles pour tous, organisé en trois régimes (fonctionnaires, salariés, indépendants), sans âge légal et avec une durée de cotisation fixée par les partenaires sociaux sous contrainte d'équilibre financier. La source ne parle pas de points.",
+          "citation_anonymisee": "un système universel reposant sur les mêmes règles pour tous",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-debat-avec-les-francais-a-blois-et-a-bourges",
+            "titre": "Gabriel Attal débat avec les Français à Blois et à Bourges",
+            "date_publication": "2026-10-05",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Lors du débat entre candidats du 27 août 2026 à l'université d'été du Medef, Gabriel Attal a évoqué un « nouveau système universel », à points selon l'article, présenté comme une incitation à travailler davantage. L'article précise que les modalités restent floues.",
           "citation_courte": "nouveau système universel",
@@ -534,32 +639,38 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "imprecise",
-          "justification": "Évoque un « nouveau système universel », à points selon la source, aux modalités floues.",
-          "date": "2026-10-03",
+          "justification": "Système universel aux mêmes règles mais en trois régimes, caractère à points incertain et modalités floues.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
-          "nature": "imprecise",
-          "justification": "Il évoque un nouveau système universel à points mais les modalités restent floues et le remplacement des régimes n'est pas indiqué.",
-          "date": "2026-10-03",
+          "nature": "nuancee",
+          "justification": "Système universel aux mêmes règles mais en trois régimes et sans mention de points.",
+          "date": "2026-10-14",
           "aveugle": true
         },
-        "accord": true
+        "accord": false
       },
-      "arbitrage": null,
+      "arbitrage": {
+        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
+        "date": "2026-10-14",
+        "code_retenu": 1,
+        "nature_retenue": "nuancee",
+        "motif": "Système universel aux mêmes règles mais organisé en trois régimes, points non repris dans la source la plus récente : position reformulable en mesure concrète, limites identifiables, donc +1 nuancee."
+      },
       "controle_humain": {
         "tire_au_sort": false
       },
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "Seule l'expression « nouveau système universel » est de lui, le caractère « à points » est rapporté par le journaliste et l'article juge les modalités floues : +1 imprecise défendable."
+        "motif": "Le plus récent : système universel aux mêmes règles mais en trois régimes (fonctionnaires, salariés, indépendants), sans points : version partielle de l'énoncé, +1 nuancee défendable."
       },
       "contestations": [],
-      "version": 1
+      "version": 2
     },
     {
       "question_id": "RET-013",
@@ -1039,17 +1150,45 @@
       "question_id": "ECO-012",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "Une année blanche sur l'ensemble des dépenses sociales équivaut au gel des prestations pendant un an."
+        "motif": "Le candidat porte une « année blanche » qui « gèlera temporairement les prestations sociales, tout en protégeant les petites retraites » (juillet 2026), reprise en septembre comme « frein d'urgence » sur les dépenses sociales : gel d'un an avec exception, +1 défendable."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "0d0ddf8b",
+      "item_aveugle": "2cc29134",
       "extraits": [
+        {
+          "reformulation": "Dans un entretien au Parisien (résumé par la campagne), il annonce que dès le budget 2028 une « année blanche » gèlera temporairement les prestations sociales, en protégeant les petites retraites. Ce gel est présenté comme accompagné de réformes de fond (assurance chômage, retraites, arrêts maladie).",
+          "citation_courte": "une « année blanche » gèlera temporairement les prestations sociales",
+          "reformulation_anonymisee": "Dans un entretien de presse, [CANDIDAT] annonce que dès le budget 2028 une « année blanche » gèlera temporairement les prestations sociales, en protégeant les petites retraites. Ce gel est présenté comme accompagné de réformes de fond (assurance chômage, retraites, arrêts maladie).",
+          "citation_anonymisee": "une « année blanche » gèlera temporairement les prestations sociales",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/dans-le-parisien-gabriel-attal-vise-le-zero-deficit-en-2037",
+            "titre": "Interview de Gabriel Attal dans Le Parisien sur les FIPU",
+            "date_publication": "2026-07-03",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Dans Les Echos (résumé par la campagne), il propose de financer les investissements d'avenir par des économies structurelles, en s'attaquant aux arrêts maladie et en gelant les prestations sociales, y compris une partie des retraites. Aucune durée ni calendrier n'est donné dans ce passage.",
+          "citation_courte": "en gelant les prestations sociales, y compris une partie des retraites",
+          "reformulation_anonymisee": "Dans un entretien de presse, [CANDIDAT] propose de financer les investissements d'avenir par des économies structurelles, en s'attaquant aux arrêts maladie et en gelant les prestations sociales, y compris une partie des retraites. Aucune durée ni calendrier n'est donné dans ce passage.",
+          "citation_anonymisee": "en gelant les prestations sociales, y compris une partie des retraites",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-appelle-a-une-rupture-economique-dans-les-echos",
+            "titre": "Gabriel Attal son plan de rupture économique dans Les Echos",
+            "date_publication": "2026-06-17",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Veut mettre en place un « frein d'urgence » sur l'ensemble des dépenses sociales, avec une année blanche, pour le prochain budget.",
           "citation_courte": "frein d’urgence",
@@ -1068,42 +1207,62 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": 2,
-          "nature": "nette",
-          "justification": "Veut une année blanche sur l'ensemble des dépenses sociales dès le prochain budget.",
-          "date": "2026-10-03",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "Année blanche gelant les prestations sociales, mais en protégeant les petites retraites.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Il veut un frein d'urgence sur les dépenses sociales avec une année blanche pour le prochain budget.",
-          "date": "2026-10-03",
+          "justification": "Année blanche sur l'ensemble des dépenses sociales pour le prochain budget.",
+          "date": "2026-10-14",
           "aveugle": true
         },
-        "accord": true
+        "accord": false
       },
-      "code": 2,
-      "nature": "nette",
-      "statut": "accord",
-      "arbitrage": null
+      "code": 1,
+      "nature": "nuancee",
+      "statut": "arbitre",
+      "arbitrage": {
+        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
+        "date": "2026-10-14",
+        "code_retenu": 1,
+        "nature_retenue": "nuancee",
+        "motif": "Année blanche d'un an sur les prestations sociales clairement portée, mais avec protection des petites retraites (source 2026-07 complétant celle de 2026-09) : version partielle, et doute +2/+1 tranché vers 0."
+      }
     },
     {
       "question_id": "ECO-013",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "Engagement explicite d'inscrire une règle d'or dans la Constitution avec un retour à l'équilibre daté (2037) ; le contenu exact de la règle n'est pas détaillé, mais +2 nette reste défendable."
+        "motif": "Il propose « d'inscrire par référendum une « règle d'or » d'équilibre budgétaire dans la Constitution » (juillet 2026), repris le 23/09/2026 : mesure de l'énoncé, +2."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "ac776924",
+      "item_aveugle": "ad7140d9",
       "extraits": [
+        {
+          "reformulation": "Dans Le Parisien (résumé par la campagne), il propose d'inscrire par référendum dans la Constitution une « règle d'or » d'équilibre budgétaire, inspirée directement du modèle allemand, avec une démission automatique du gouvernement si la trajectoire budgétaire dérive trois années de suite sans crise majeure.",
+          "citation_courte": "inscrire par référendum une « règle d'or » d'équilibre budgétaire dans la Constitution",
+          "reformulation_anonymisee": "Dans un entretien de presse, [CANDIDAT] propose d'inscrire par référendum dans la Constitution une « règle d'or » d'équilibre budgétaire, inspirée directement du modèle allemand, avec une démission automatique du gouvernement si la trajectoire budgétaire dérive trois années de suite sans crise majeure.",
+          "citation_anonymisee": "inscrire par référendum une « règle d'or » d'équilibre budgétaire dans la Constitution",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/dans-le-parisien-gabriel-attal-vise-le-zero-deficit-en-2037",
+            "titre": "Interview de Gabriel Attal dans Le Parisien sur les FIPU",
+            "date_publication": "2026-07-03",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Propose l'inscription dans la Constitution d'une règle d'or destinée à encadrer les finances publiques, avec une loi de programmation sur dix ans et un retour à l'équilibre de l'ensemble des finances publiques en 2037.",
           "citation_courte": "inscription dans la Constitution d’une règle d’or",
@@ -1124,16 +1283,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Propose d'inscrire une règle d'or dans la Constitution, avec un retour à l'équilibre programmé en 2037.",
-          "date": "2026-10-03",
+          "justification": "Propose d'inscrire une règle d'or d'équilibre budgétaire dans la Constitution.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Il propose l'inscription d'une règle d'or dans la Constitution, avec une loi de programmation sur dix ans et un retour à l'équilibre en 2037.",
-          "date": "2026-10-03",
+          "justification": "Propose l'inscription d'une règle d'or dans la Constitution.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "accord": true
@@ -1147,17 +1306,31 @@
       "question_id": "ECO-014",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "Public Sénat rapporte « la suppression de 100 000 postes de fonctionnaires d'État » et cite « assumer le non-remplacement de certains départs à la retraite » : même sens que l'énoncé sans reprendre la règle d'un sur trois."
+        "motif": "Il veut « assumer le non-remplacement de certains départs à la retraite » avec un objectif de 100 000 postes, sans proportion de remplacement ni calendrier : direction claire, ampleur non convertible en « un sur trois », +1 imprecise."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "f6282424",
+      "item_aveugle": "c4a7ce3a",
       "extraits": [
+        {
+          "reformulation": "Dans Le Parisien (résumé par la campagne), il annonce un plan de départs volontaires combiné au non-remplacement d'une partie des fonctionnaires partant à la retraite, avec un objectif de 100 000 postes supprimés dans l'État et les collectivités ; l'Éducation nationale, les Armées, la Justice et l'Intérieur sont sanctuarisés. Aucune proportion de remplacement (un sur trois) n'est donnée.",
+          "citation_courte": "non-remplacement d'une partie des fonctionnaires partant à la retraite",
+          "reformulation_anonymisee": "Dans un entretien de presse, [CANDIDAT] annonce un plan de départs volontaires combiné au non-remplacement d'une partie des fonctionnaires partant à la retraite, avec un objectif de 100 000 postes supprimés dans l'État et les collectivités ; l'Éducation nationale, les Armées, la Justice et l'Intérieur sont sanctuarisés. Aucune proportion de remplacement (un sur trois) n'est donnée.",
+          "citation_anonymisee": "non-remplacement d'une partie des fonctionnaires partant à la retraite",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/dans-le-parisien-gabriel-attal-vise-le-zero-deficit-en-2037",
+            "titre": "Interview de Gabriel Attal dans Le Parisien sur les FIPU",
+            "date_publication": "2026-07-03",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Propose la suppression de 100 000 postes de fonctionnaires d'État (sept milliards d'euros d'économies annoncés) et dit qu'il faut assumer le non-remplacement de certains départs à la retraite, en plus d'un plan de départs volontaires. L'Éducation nationale, les Armées, la Justice et l'Intérieur seraient préservés des suppressions de postes.",
           "citation_courte": "assumer le non-remplacement de certains départs à la retraite",
@@ -1177,23 +1350,23 @@
         "codeur_1": {
           "modele": "claude-opus-5-5",
           "code": 1,
-          "nature": "nuancee",
-          "justification": "Le candidat accepte le non-remplacement de certains départs à la retraite, avec 100 000 suppressions de postes et des ministères préservés, sans reprendre la règle d'un départ sur trois.",
-          "date": "2026-10-03",
+          "nature": "imprecise",
+          "justification": "Non-remplacement d'une partie des départs à la retraite (100 000 postes, certains ministères sanctuarisés), sans proportion d'un sur trois.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
-          "nature": "nuancee",
-          "justification": "Supprime 100 000 postes par non-remplacement de certains départs et plan de départs volontaires, avec quatre ministères préservés, sans la règle d'un sur trois.",
-          "date": "2026-10-03",
+          "nature": "imprecise",
+          "justification": "Non-remplacement partiel annoncé, sans la proportion d'un sur trois.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "accord": true
       },
       "code": 1,
-      "nature": "nuancee",
+      "nature": "imprecise",
       "statut": "accord",
       "arbitrage": null
     },
@@ -2341,17 +2514,33 @@
       "question_id": "EDU-017",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "Il veut généraliser les groupes de niveau mais admet de laisser de la souplesse aux établissements plutôt qu'une prescription nationale rigide : soutien avec réserve."
+        "motif": "Il veut la généralisation des groupes de niveau mais se dit prêt à laisser « davantage de souplesse aux établissements » : obligation nationale assouplie, +1 nuancee."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": true,
+        "date": null,
+        "resultat": null
       },
-      "item_aveugle": "2e7e0802",
+      "item_aveugle": "26479f2f",
       "extraits": [
+        {
+          "reformulation": "Il veut reprendre des mesures du « choc des savoirs » abandonnées par ses successeurs, notamment les groupes de niveau en français et en mathématiques au collège (compte rendu de la campagne d'un entretien sur franceinfo).",
+          "citation_courte": "les groupes de niveau en français et en mathématiques au collège",
+          "reformulation_anonymisee": "Il veut reprendre des mesures d'une réforme scolaire abandonnées par ses successeurs, notamment les groupes de niveau en français et en mathématiques au collège (compte rendu d'un entretien radiophonique).",
+          "citation_anonymisee": "les groupes de niveau en français et en mathématiques au collège",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-veut-remettre-l-exigence-au-coeur-de-l-ecole-et-transformer-le-modele-francais-sur-france-info",
+            "titre": "Gabriel Attal veut remettre l’exigence au cœur de l’École",
+            "date_publication": "2026-09-09",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Il défend un « collège plus individualisé » avec une généralisation des groupes de niveau en français et en mathématiques.",
           "citation_courte": "une généralisation des groupes de niveau en français et en mathématiques",
@@ -2386,16 +2575,16 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Veut généraliser les groupes de niveau, mais se dit prêt à laisser de la souplesse aux établissements plutôt qu'une obligation nationale rigide.",
-          "date": "2026-10-03",
+          "justification": "Veut généraliser les groupes de niveau mais accepte plus de souplesse pour les établissements.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Il défend la généralisation des groupes de niveau en français et en mathématiques, mais accepte de laisser de la souplesse aux établissements au lieu d'une prescription nationale rigide.",
-          "date": "2026-10-03",
+          "justification": "Veut réinstaurer les groupes de niveau mais accepte plus de souplesse pour les établissements.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "accord": true
@@ -2421,8 +2610,22 @@
     },
     {
       "question_id": "EDU-020",
-      "item_aveugle": "47ce57e9",
+      "item_aveugle": "ceae8290",
       "extraits": [
+        {
+          "reformulation": "Lors du meeting du 10 octobre, selon le résumé de la campagne, il veut réduire le nombre d'élèves par classe grâce à la baisse démographique et au maintien du nombre de postes de professeurs dans les années à venir. Aucun chiffre de postes n'est donné.",
+          "citation_courte": "au maintien du nombre de postes de professeurs dans les années à venir",
+          "reformulation_anonymisee": "Lors d'un meeting, selon le résumé de la campagne, [CANDIDAT] veut réduire le nombre d'élèves par classe grâce à la baisse démographique et au maintien du nombre de postes de professeurs dans les années à venir. Aucun chiffre de postes n'est donné.",
+          "citation_anonymisee": "au maintien du nombre de postes de professeurs dans les années à venir",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-en-meeting-a-lyon-un-pacte-pour-la-jeunesse",
+            "titre": "Gabriel Attal en meeting à Lyon : Un pacte pour la jeunesse",
+            "date_publication": "2026-10-10",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Dans son meeting de Lyon, selon le compte rendu de Lyon Mag, il s'oppose à la suppression annoncée de 1 600 postes d'enseignants dans le projet de budget de l'année suivante. Il promet une hausse du budget de l'Éducation nationale et veut profiter de la baisse démographique pour réduire les effectifs par classe, sans fermer de classes. Propos rapportés par le journaliste, sans citation directe.",
           "citation_courte": null,
@@ -2443,16 +2646,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Le candidat s'oppose à la suppression des 1 600 postes et veut profiter de la baisse démographique pour réduire les effectifs par classe sans fermer de classes.",
-          "date": "2026-10-12",
+          "justification": "Veut maintenir le nombre de postes de professeurs malgré la baisse démographique.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "S'oppose aux suppressions de postes et veut profiter de la baisse démographique pour réduire les effectifs sans fermer de classes, donc maintien malgré la baisse.",
-          "date": "2026-10-12",
+          "justification": "Veut le maintien du nombre de postes de professeurs malgré la baisse démographique.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "accord": true
@@ -2461,31 +2664,77 @@
         "tire_au_sort": false
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "code": 2,
       "nature": "nette",
       "statut": "accord",
       "arbitrage": null,
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-12",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "Selon Lyon Mag, Attal s'oppose à la suppression de 1 600 postes et veut profiter de la baisse démographique pour réduire les effectifs par classe : c'est le maintien des postes malgré la baisse d'élèves, sans réserve exprimée."
+        "motif": "La campagne rapporte qu'il veut réduire les effectifs « grâce à la baisse démographique et au maintien du nombre de postes de professeurs dans les années à venir » ; Lyon Mag : il s'oppose à la suppression annoncée de 1 600 postes : +2."
       }
     },
     {
       "question_id": "SAN-001",
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": -1,
+      "nature": "nuancee",
+      "statut": "arbitre",
+      "extraits": [
+        {
+          "reformulation": "Lors d'un débat avec des habitants (5 octobre 2026), il juge qu'imposer aux généralistes leur lieu d'installation serait contre-productif : on ne couvrirait pas tous les besoins et les jeunes pourraient choisir des spécialités garantissant la liberté d'installation. Pour lui, le sujet est avant tout le nombre de médecins ; il préfère agir sur le nombre de patients par médecin et sur le temps médical.",
+          "citation_courte": "Imposer aux généralistes leur lieu d'installation serait contre-productif",
+          "reformulation_anonymisee": "Lors d'un débat avec des habitants, [CANDIDAT] juge qu'imposer aux généralistes leur lieu d'installation serait contre-productif : on ne couvrirait pas tous les besoins et les jeunes pourraient choisir des spécialités garantissant la liberté d'installation. Pour [CANDIDAT], le sujet est avant tout le nombre de médecins ; il préfère agir sur le nombre de patients par médecin et sur le temps médical.",
+          "citation_anonymisee": "Imposer aux généralistes leur lieu d'installation serait contre-productif",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-debat-avec-les-francais-a-blois-et-a-bourges",
+            "titre": "Gabriel Attal débat avec les Français à Blois et à Bourges",
+            "date_publication": "2026-10-05",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": -1,
+          "nature": "nuancee",
+          "justification": "Juge contre-productif d'imposer le lieu d'installation et préfère d'autres leviers.",
+          "date": "2026-10-14",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": -2,
+          "nature": "nette",
+          "justification": "Juge contre-productif d'imposer aux généralistes leur lieu d'installation.",
+          "date": "2026-10-14",
+          "aveugle": true
+        },
+        "accord": false
+      },
+      "arbitrage": {
+        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
+        "date": "2026-10-14",
+        "code_retenu": -1,
+        "nature_retenue": "nuancee",
+        "motif": "Rejette comme contre-productif le fait d'imposer le lieu d'installation et préfère d'autres leviers (nombre de médecins, temps médical), sans viser explicitement le régime d'autorisation en zone dotée : doute −2/−1 tranché vers 0."
+      },
+      "item_aveugle": "4f7efe09",
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-10-14",
+        "verdict": "confirme",
+        "motif": "Il juge qu'« imposer aux généralistes leur lieu d'installation serait contre-productif » et préfère agir sur le nombre de médecins et le temps médical ; il ne vise pas expressément l'autorisation en zone dotée : −1 nuancee défendable."
+      }
     },
     {
       "question_id": "SAN-002",
@@ -2707,17 +2956,33 @@
       "question_id": "SAN-015",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "Il annonce une sanction de 5 euros pour les rendez-vous non honorés, mais laissée à l'appréciation du médecin selon les raisons du patient : condition identifiable, +1 nuancee défendable."
+        "motif": "En 2024 il a porté une sanction de 5 € laissée à l'appréciation du médecin ; en octobre 2026 il veut toujours « responsabiliser les patients » sans montant : sources concordantes, +1 nuancee défendable (la source la plus récente seule donnerait +1 imprecise)."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": true,
+        "date": null,
+        "resultat": null
       },
-      "item_aveugle": "66ffe85b",
+      "item_aveugle": "e4ec67bd",
       "extraits": [
+        {
+          "reformulation": "Lors du même débat (5 octobre 2026), il dit qu'on doit responsabiliser les patients sur les rendez-vous qui ne sont pas honorés. Aucun montant, pénalité ni modalité n'est précisé dans la source (pas de mention des 5 euros).",
+          "citation_courte": "On doit aussi responsabiliser les patients sur les rendez-vous qui ne sont pas honorés",
+          "reformulation_anonymisee": "Lors d'un débat avec des habitants, [CANDIDAT] dit qu'on doit responsabiliser les patients sur les rendez-vous qui ne sont pas honorés. Aucun montant, pénalité ni modalité n'est précisé dans la source.",
+          "citation_anonymisee": "On doit aussi responsabiliser les patients sur les rendez-vous qui ne sont pas honorés",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-debat-avec-les-francais-a-blois-et-a-bourges",
+            "titre": "Gabriel Attal débat avec les Français à Blois et à Bourges",
+            "date_publication": "2026-10-05",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "A annoncé le 6 avril 2024 (entretien à la presse quotidienne régionale) une sanction de 5 euros pour les patients qui n'honorent pas un rendez-vous et l'annulent moins de 24 heures à l'avance ; la somme irait au médecin, qui pourrait ne pas l'appliquer si les raisons du patient sont valables. La mesure nécessite une loi, visée pour 2025.",
           "citation_courte": "une sanction de cinq euros pour les rendez-vous médicaux non honorés",
@@ -2738,16 +3003,16 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Annonce une sanction de 5 euros, mais le médecin pourrait ne pas l'appliquer si les raisons du patient sont valables (condition).",
-          "date": "2026-10-03",
+          "justification": "A porté une sanction de 5 euros que le médecin peut ne pas appliquer ; veut toujours responsabiliser les patients.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
-          "code": 2,
-          "nature": "nette",
-          "justification": "Il annonce une sanction de 5 euros pour les rendez-vous non honorés et annulés moins de 24 heures avant, avec une loi visée pour 2025.",
-          "date": "2026-10-03",
+          "code": 1,
+          "nature": "imprecise",
+          "justification": "Veut responsabiliser les patients ; la sanction de 5 euros annoncée en 2024 n'est pas reprise récemment.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "accord": false
@@ -2757,10 +3022,10 @@
       "statut": "arbitre",
       "arbitrage": {
         "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-03",
+        "date": "2026-10-14",
         "code_retenu": 1,
         "nature_retenue": "nuancee",
-        "motif": "Sanction de 5 euros annoncée, mais que le médecin pourrait ne pas appliquer selon les raisons du patient : condition identifiable. (code retenu : celui du codeur A)"
+        "motif": "Sources concordantes : sanction de 5 € portée en 2024 (avec faculté du médecin de ne pas l'appliquer) et volonté récente de responsabiliser les patients sans chiffre : mesure identifiable avec limites, +1 nuancee."
       }
     },
     {
@@ -2795,17 +3060,31 @@
       "question_id": "SAN-018",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "Il revendique la loi sur la fin de vie comme une cause qu'il porte, position opposée à son abrogation."
+        "motif": "Il salue l'adoption de la loi comme la consécration d'un droit nouveau et une « promesse tenue » : soutien explicite au texte, contraire à son abrogation, −2 nette."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "00ad8cb9",
+      "item_aveugle": "7161a1ad",
       "extraits": [
+        {
+          "reformulation": "Le 15 juillet 2026, après l'adoption définitive du texte, il salue la consécration d'un droit nouveau et d'une liberté nouvelle, strictement encadré (majeurs, affection grave et incurable, demande réitérée, décision collective, clause de conscience des soignants, soins palliatifs d'abord proposés), et se dit fier de cette promesse tenue. Il annonce un investissement massif dans les soins palliatifs. Aucune volonté d'abroger la loi n'est exprimée.",
+          "citation_courte": "C’est la consécration d’un droit nouveau et d’une liberté nouvelle pour les Français",
+          "reformulation_anonymisee": "Après l'adoption définitive du texte, [CANDIDAT] salue la consécration d'un droit nouveau et d'une liberté nouvelle, strictement encadré (majeurs, affection grave et incurable, demande réitérée, décision collective, clause de conscience des soignants, soins palliatifs d'abord proposés), et se dit fier de cette promesse tenue. Il annonce un investissement massif dans les soins palliatifs. Aucune volonté d'abroger la loi n'est exprimée.",
+          "citation_anonymisee": "C’est la consécration d’un droit nouveau et d’une liberté nouvelle pour les Français",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-fin-de-vie-l-aboutissement-d-un-long-chemin-et-la-consecration-d-un-droit-nouveau",
+            "titre": "Loi fin de vie : la consécration d&#x27;un droit nouveau",
+            "date_publication": "2026-07-15",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le 15 juillet 2026, après l'adoption définitive par le Parlement du texte sur la fin de vie (« après 4 ans de débats, 8 lectures et 9 votes »), s'en félicite et affirme que ce texte n'a jamais cessé d'être au cœur des causes que lui et ses soutiens (« nous ») portent. Position contraire à son abrogation.",
           "citation_courte": "n’a jamais cessé d’être au cœur des causes que nous portons",
@@ -2826,16 +3105,16 @@
           "modele": "claude-opus-5-5",
           "code": -2,
           "nature": "nette",
-          "justification": "Le candidat se félicite de l'adoption de la loi sur l'aide à mourir, ce qui va à l'opposé de son abrogation.",
-          "date": "2026-10-03",
+          "justification": "Salue la loi comme un droit nouveau et une promesse tenue.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": -2,
           "nature": "nette",
-          "justification": "Se félicite de l'adoption de la loi sur la fin de vie, position contraire à son abrogation.",
-          "date": "2026-10-03",
+          "justification": "Salue la loi et s'en félicite, position contraire à l'abrogation.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "accord": true
@@ -2877,19 +3156,33 @@
       "question_id": "IMM-001",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "Il refuse le plan espagnol de régularisation massive mais veut importer le permis à points canadien : une personne remplissant assez de critères « peut bénéficier d'une régularisation ». Régularisation conditionnelle, +1 défendable (proche du cas par cas actuel)."
+        "motif": "Il dit ne pas avoir « les mêmes propositions que le gouvernement espagnol » (régularisation de 500 000 sans-papiers) et veut une régularisation par système canadien à points, au cas par cas selon des critères : autre mécanisme, −1 nuancee."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": 1,
+      "code": -1,
       "nature": "nuancee",
       "statut": "accord",
       "extraits": [
+        {
+          "reformulation": "Lors d'un entretien télévisé, il souhaite renforcer la coordination dans l'espace Schengen pour qu'un État membre ne puisse pas décider seul de régularisations massives affectant ses voisins. Aucun critère ni seuil de régularisation des travailleurs en situation irrégulière n'est donné dans ce passage.",
+          "citation_courte": "régularisations massives ayant des conséquences pour ses voisins",
+          "reformulation_anonymisee": "Lors d'un entretien télévisé, [CANDIDAT] souhaite renforcer la coordination dans l'espace Schengen pour qu'un État membre ne puisse pas décider seul de régularisations massives affectant ses voisins. Aucun critère ni seuil de régularisation des travailleurs en situation irrégulière n'est donné dans ce passage.",
+          "citation_anonymisee": "régularisations massives ayant des conséquences pour ses voisins",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/lci-gabriel-attal-defend-un-projet-de-rupture-pour-repondre-aux-grands-defis-du-pays",
+            "titre": "Gabriel Attal : un projet de rupture pour la France",
+            "date_publication": "2026-08-25",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Interrogé sur le plan espagnol de régularisation d'environ 500 000 sans-papiers, il dit ne pas avoir les mêmes propositions. Il préconise de s'inspirer du système canadien à points : une personne qui demande une régularisation doit remplir des critères qui donnent des points, et seule celle qui atteint le total suffisant peut être régularisée.",
           "citation_courte": "Je n'ai pas les mêmes propositions que le gouvernement espagnol",
@@ -2908,24 +3201,24 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": 1,
+          "code": -1,
           "nature": "nuancee",
-          "justification": "Admet la régularisation sous conditions d'un système à points, non une régularisation de masse.",
-          "date": "2026-10-04",
+          "justification": "Rejette les régularisations massives et propose une régularisation au cas par cas selon un système à points.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
-          "code": 1,
+          "code": -1,
           "nature": "nuancee",
-          "justification": "Régularisation possible par système à points, pas de plan de masse.",
-          "date": "2026-10-04",
+          "justification": "Refuse les régularisations massives, propose une régularisation à points sélective.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "accord": true
       },
       "arbitrage": null,
-      "item_aveugle": "79db88a9"
+      "item_aveugle": "86b7f3a8"
     },
     {
       "question_id": "IMM-002",
@@ -3127,19 +3420,33 @@
       "question_id": "IMM-016",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "Il propose des quotas limitatifs votés par le Parlement, mais tous les deux ans et ventilés par métier, secteur et origine, et non un plafond global annuel : même sens avec modalités différentes, +1 nuancee défendable."
+        "motif": "Quotas limitatifs votés par le Parlement, mais tous les deux ans et par catégories plutôt qu'un plafond annuel global : même mécanisme avec une modalité différente, +1 nuancee."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
       "code": 1,
       "nature": "nuancee",
-      "statut": "arbitre",
+      "statut": "accord",
       "extraits": [
+        {
+          "reformulation": "Il propose de modifier la Constitution pour instaurer une « préférence travail » et de faire voter tous les deux ans par le Parlement des quotas limitatifs, définis notamment par métier, origine géographique et nationalité. Il ne chiffre pas ces quotas dans ce passage.",
+          "citation_courte": "des quotas limitatifs, définis notamment par métier, origine géographique et nationalité",
+          "reformulation_anonymisee": "[CANDIDAT] propose de modifier la Constitution pour instaurer une « préférence travail » et de faire voter tous les deux ans par le Parlement des quotas limitatifs, définis notamment par métier, origine géographique et nationalité. Il ne chiffre pas ces quotas dans ce passage.",
+          "citation_anonymisee": "des quotas limitatifs, définis notamment par métier, origine géographique et nationalité",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/lci-gabriel-attal-defend-un-projet-de-rupture-pour-repondre-aux-grands-defis-du-pays",
+            "titre": "Gabriel Attal : un projet de rupture pour la France",
+            "date_publication": "2026-08-25",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Il propose que, tous les deux ans, les partenaires sociaux identifient les besoins économiques en matière d'immigration, que ces besoins soient transmis au Parlement, et que celui-ci vote des quotas limitatifs par métier, par secteur et par origine géographique. Il exclut en revanche une immigration zéro. Engagement de campagne annoncé comme proposition.",
           "citation_courte": "le Parlement vote des quotas limitatifs en matière d'immigration",
@@ -3160,28 +3467,22 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Le Parlement voterait des quotas limitatifs, mais tous les deux ans et par métier/secteur.",
-          "date": "2026-10-04",
+          "justification": "Quotas limitatifs votés par le Parlement, mais tous les deux ans et non chaque année.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
-          "code": 2,
-          "nature": "nette",
-          "justification": "Quotas limitatifs votés par le Parlement.",
-          "date": "2026-10-04",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "Quotas limitatifs votés par le Parlement, mais tous les deux ans et non chaque année.",
+          "date": "2026-10-14",
           "aveugle": true
         },
-        "accord": false
+        "accord": true
       },
-      "arbitrage": {
-        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-04",
-        "code_retenu": 1,
-        "nature_retenue": "nuancee",
-        "motif": "Quotas limitatifs votés par le Parlement mais tous les deux ans et par métier/secteur/origine : même sens, modalités différentes de l'énoncé (annuel, nombre global) ; doute entre adjacents → +1. (code retenu : celui du codeur A)"
-      },
-      "item_aveugle": "25154b6e"
+      "arbitrage": null,
+      "item_aveugle": "5ac11006"
     },
     {
       "question_id": "IMM-017",
@@ -3381,17 +3682,31 @@
       "question_id": "DEF-007",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "Le candidat défend explicitement la saisie et l'utilisation des avoirs russes pour financer le soutien à l'Ukraine et s'engage à le porter s'il est élu."
+        "motif": "« Nous devons faire payer à la Russie le coût de sa guerre contre l'Ukraine en saisissant les avoirs russes gelés. Cet argent servira à financer le soutien et la reconstruction de l'Ukraine » ; confirmé dans Le Figaro : « Si les Français me font confiance, c'est ce que je défendrai »."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "da4b08de",
+      "item_aveugle": "ba3dede2",
       "extraits": [
+        {
+          "reformulation": "Lors d'un entretien sur RTL le 25 septembre 2026, il défend la saisie des avoirs russes gelés pour faire payer à la Russie le coût de sa guerre ; selon la page, cet argent servirait à financer le soutien à l'Ukraine et sa reconstruction. Aucun montant ni calendrier n'est donné.",
+          "citation_courte": "Nous devons faire payer à la Russie le coût de sa guerre contre l’Ukraine",
+          "reformulation_anonymisee": "Lors d'un entretien radiophonique, [CANDIDAT] défend la saisie des avoirs russes gelés pour faire payer à la Russie le coût de sa guerre ; selon la page, cet argent servirait à financer le soutien à l'Ukraine et sa reconstruction. Aucun montant ni calendrier n'est donné.",
+          "citation_anonymisee": "Nous devons faire payer à la Russie le coût de sa guerre contre l’Ukraine",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-sur-rtl-je-suis-candidat-pour-gagner-cette-election-presidentielle",
+            "titre": "Gabriel Attal sur RTL : « Je suis candidat pour gagner cette élection présidentielle »",
+            "date_publication": "2026-09-25",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Il dit défendre depuis plusieurs années, sans succès à ce stade, l'idée que ce soient les Russes et non les Européens qui paient le soutien à l'Ukraine, en saisissant et utilisant les avoirs russes détenus dans des comptes bancaires européens. Il juge que la position, rejetée par une grande partie des pays de l'UE, peut évoluer, et assure que c'est ce qu'il défendra si les Français lui font confiance.",
           "citation_courte": "ce soient les Russes qui payent le soutien aux Ukrainiens",
@@ -3412,16 +3727,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Le candidat défend la saisie et l'utilisation des avoirs russes pour financer le soutien à l'Ukraine, et s'engage à le défendre s'il est élu.",
-          "date": "2026-10-03",
+          "justification": "Défend la saisie et l'utilisation des avoirs russes gelés pour financer le soutien à l'Ukraine.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Défend la saisie et l'utilisation des avoirs russes pour financer l'Ukraine et le fera s'il est élu.",
-          "date": "2026-10-03",
+          "justification": "Défend la saisie et l'usage des avoirs russes pour financer l'Ukraine.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "accord": true
@@ -3435,17 +3750,31 @@
       "question_id": "DEF-008",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "Le candidat s'engage à faire de la France « le nouveau parapluie nucléaire européen », la dissuasion restant française : extension de la protection aux partenaires, sans réserve."
+        "motif": "Dans son discours du 17/09/2026 il dit que la France renforcera son rôle « en devenant le nouveau parapluie nucléaire européen », ce qui étend la protection de la dissuasion aux partenaires ; le programme soutient la dissuasion avancée."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "4dda97d3",
+      "item_aveugle": "8bae6b90",
       "extraits": [
+        {
+          "reformulation": "Dans la page « Frontières » de son programme, il écrit que la dissuasion nucléaire doit être un outil de puissance, notamment à travers la doctrine de dissuasion nucléaire avancée proposée par le président de la République. Il ajoute que la France doit pouvoir dissuader, se projeter avec ses alliés et commander, et que la défense de l'Europe repose en partie sur ses épaules.",
+          "citation_courte": "la doctrine de dissuasion nucléaire avancée proposée par le président de la République",
+          "reformulation_anonymisee": "Dans son programme, [CANDIDAT] écrit que la dissuasion nucléaire doit être un outil de puissance, notamment à travers la doctrine de dissuasion nucléaire avancée proposée par le chef de l'État. Il ajoute que la France doit pouvoir dissuader, se projeter avec ses alliés et commander, et que la défense de l'Europe repose en partie sur ses épaules.",
+          "citation_anonymisee": "la doctrine de dissuasion nucléaire avancée proposée par le chef de l'État",
+          "source": {
+            "url": "https://attalpresident.fr/programme/frontieres",
+            "titre": "Frontières : le programme de Gabriel Attal | attalpresident.fr",
+            "date_publication": null,
+            "type": "programme_officiel"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Dans un discours sur l'Europe, il affirme que la dissuasion française restera française (le commandement des armées et la décision d'engager les forces restant aux États) et que la France renforcerait son rôle en devenant le parapluie nucléaire européen, le parapluie américain s'étant selon lui révélé peu fiable.",
           "citation_courte": "nous renforcerons même notre rôle en devenant le nouveau parapluie nucléaire européen",
@@ -3455,7 +3784,7 @@
             "url": "https://legrandcontinent.eu/fr/2026/09/17/le-moment-des-etats-unis-deurope-est-venu/",
             "titre": "Le moment des États-Unis d'Europe est venu (discours du 17 septembre 2026 publié par Le Grand Continent)",
             "date_publication": "2026-09-17",
-            "type": "declaration_publique"
+            "type": "texte_signe"
           },
           "date_consultation": "2026-10-03",
           "citation_verifiee_mot_a_mot": true
@@ -3480,16 +3809,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Il s'engage à faire de la France le parapluie nucléaire européen, la décision restant française.",
-          "date": "2026-10-03",
+          "justification": "Veut faire de la France le parapluie nucléaire européen et soutient la dissuasion avancée.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Veut que la France devienne le parapluie nucléaire européen avec décision restant française.",
-          "date": "2026-10-03",
+          "justification": "Veut que la France devienne le parapluie nucléaire européen et soutient la dissuasion avancée.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "accord": true
@@ -3674,12 +4003,26 @@
     {
       "question_id": "EUR-002",
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "a71f0a34",
+      "item_aveugle": "54aba6bd",
       "extraits": [
+        {
+          "reformulation": "Dans une tribune au Figaro, il propose de briser le dogme de l'unanimité dans l'UE et de bâtir une « Europe des coalitions » : les États volontaires avanceraient ensemble, thème par thème, sans être bloqués par ceux qui ne veulent pas participer immédiatement, les autres pouvant les rejoindre ensuite. Il ne propose pas, dans ce passage, le vote à la majorité ni ne vise spécifiquement la politique étrangère.",
+          "citation_courte": "briser le dogme de l'unanimité",
+          "reformulation_anonymisee": "Dans une tribune de presse, [CANDIDAT] propose de briser le dogme de l'unanimité dans l'UE et de bâtir une Europe où les États volontaires avancent ensemble, thème par thème, sans être bloqués par ceux qui ne veulent pas participer immédiatement, les autres pouvant les rejoindre ensuite. Il ne propose pas, dans ce passage, le vote à la majorité ni ne vise spécifiquement la politique étrangère.",
+          "citation_anonymisee": "briser le dogme de l'unanimité",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-pour-le-retour-du-royaume-uni-dans-l-union-europeenne-dans-le-figaro",
+            "titre": "Gabriel Attal : « Pour le retour du Royaume-Uni dans l’UE",
+            "date_publication": "2026-06-24",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Il critique la règle de l'unanimité de l'UE à vingt-sept sur les « décisions essentielles » : elle permet à un seul gouvernement de retenir tous les autres et laisse le Conseil « pris au piège de l'unanimité ». Il ne vise pas explicitement la seule politique étrangère.",
           "citation_courte": "la règle de l'unanimité permet à un seul gouvernement de retenir tous les autres",
@@ -3714,16 +4057,16 @@
           "modele": "claude-opus-5-5",
           "code": null,
           "nature": "non_connu",
-          "justification": "Critique générale de l'unanimité sans viser la politique étrangère, et diplomatie laissée aux États dans un autre cadre : sujet voisin, rien ne permet de coder.",
-          "date": "2026-10-03",
+          "justification": "Critique générale de l'unanimité sans proposition de vote à la majorité en politique étrangère.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": -1,
           "nature": "imprecise",
-          "justification": "Il critique l'unanimité en général mais laisse la diplomatie aux États dans son projet de fédération ; les deux sources de même date divergent et la politique étrangère n'est pas visée explicitement.",
-          "date": "2026-10-03",
+          "justification": "Critique l'unanimité mais préfère des coalitions volontaires et laisse la diplomatie aux États.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "accord": false
@@ -3733,10 +4076,16 @@
       "statut": "arbitre",
       "arbitrage": {
         "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-03",
+        "date": "2026-10-14",
         "code_retenu": null,
         "nature_retenue": "non_connu",
-        "motif": "Critique générale de l'unanimité d'un côté, diplomatie laissée aux États de l'autre, politique étrangère jamais visée : aucune direction nette. (code retenu : celui du codeur A)"
+        "motif": "Critique générale de l'unanimité sans proposition de vote à la majorité, et maintien des compétences régaliennes aux États dans un autre cadre : signaux divergents sur un sujet voisin, aucun ne porte sur la mesure précise, donc null (R4)."
+      },
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-10-14",
+        "verdict": "confirme",
+        "motif": "Il critique l'unanimité en général mais propose des coalitions de volontaires et laisse la diplomatie aux États dans sa fédération ; aucun extrait ne porte sur le vote à la majorité en politique étrangère, null (R4) défendable (un −1 imprecise aurait aussi été soutenable)."
       }
     },
     {
@@ -3811,19 +4160,33 @@
       "question_id": "EUR-005",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "Adhésion immédiate mais partielle de la seule Ukraine, sans échéance ni autres pays : même sens, version partielle, +1 défendable. À noter : le motif d'arbitrage indique « code du codeur B » alors que la nature publiée (nuancee) est celle du codeur A."
+        "motif": "Il défend une adhésion « immédiate » mais partielle de l'Ukraine et une future réadhésion britannique : même sens qu'un élargissement rapide, mais adhésion partielle, un seul pays et sans échéance 2030 explicite ; +1 nuancee défendable."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
       "code": 1,
       "nature": "nuancee",
-      "statut": "arbitre",
+      "statut": "accord",
       "extraits": [
+        {
+          "reformulation": "Dans une tribune au Figaro, il veut préparer les conditions d'une future réadhésion du Royaume-Uni à l'UE, qui devra être voulue par les Britanniques eux-mêmes et respecter les règles de l'Union. Aucune échéance (2030) ni autre pays candidat n'est mentionné dans ce passage.",
+          "citation_courte": "préparer les conditions d'une future réadhésion",
+          "reformulation_anonymisee": "Dans une tribune de presse, [CANDIDAT] veut préparer les conditions d'une future réadhésion d'un État ayant quitté l'UE, qui devra être voulue par ses citoyens eux-mêmes et respecter les règles de l'Union. Aucune échéance ni autre pays candidat n'est mentionné dans ce passage.",
+          "citation_anonymisee": "préparer les conditions d'une future réadhésion",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-pour-le-retour-du-royaume-uni-dans-l-union-europeenne-dans-le-figaro",
+            "titre": "Gabriel Attal : « Pour le retour du Royaume-Uni dans l’UE",
+            "date_publication": "2026-06-24",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Lors d'un forum à Kiev, il défend une adhésion « immédiate » mais partielle de l'Ukraine à l'UE : plutôt que d'attendre que toutes les questions soient négociées, il estime qu'il faut faire l'inverse. Le passage accessible ne donne ni date ni échéance (2030) ni la liste des autres pays concernés.",
           "citation_courte": "Plutôt que de devoir attendre que toutes les problématiques soient négociées",
@@ -3844,44 +4207,52 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Défend une adhésion immédiate mais partielle de l'Ukraine, sans échéance ni autres pays.",
-          "date": "2026-10-04",
+          "justification": "Défend une adhésion immédiate mais partielle de l'Ukraine, sans échéance 2030 explicite.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
-          "nature": "imprecise",
-          "justification": "Adhésion immédiate partielle de l'Ukraine, sans échéance.",
-          "date": "2026-10-04",
+          "nature": "nuancee",
+          "justification": "Adhésion immédiate mais partielle de l'Ukraine, sans échéance ni autres pays.",
+          "date": "2026-10-14",
           "aveugle": true
         },
-        "accord": false
+        "accord": true
       },
-      "arbitrage": {
-        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-04",
-        "code_retenu": 1,
-        "nature_retenue": "nuancee",
-        "motif": "Adhésion immédiate mais partielle de la seule Ukraine : même sens, version partielle identifiable, sans échéance. (code retenu : celui du codeur B)"
-      },
-      "item_aveugle": "64be4ff0"
+      "arbitrage": null,
+      "item_aveugle": "a21107d4"
     },
     {
       "question_id": "EUR-006",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "La tribune signée énumère « commandes publiques capables de faire grandir nos entreprises, préférence européenne assumée — appliquée en priorité à l'industrie de défense » ; franceinfo rapporte son soutien à la préférence européenne en matière de marchés publics proposée par S. Séjourné. La priorité défense est un ordre d'application, pas une restriction."
+        "motif": "Il soutient « la préférence européenne dans les marchés publics » (programme IA), la proposition Séjourné de préférence européenne en matière de marchés publics (franceinfo) et une « préférence européenne assumée » appliquée en priorité à la défense : +1 nuancee défendable."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "f1457b70",
+      "item_aveugle": "5ba1164f",
       "extraits": [
+        {
+          "reformulation": "Dans sa page programme sur l'intelligence artificielle, il inscrit la préférence européenne dans les marchés publics parmi les éléments d'une stratégie globale de souveraineté sur toute la chaîne de l'IA. Le passage ne donne ni seuil ni modalité et ne vise pas les marchés publics en général.",
+          "citation_courte": "la préférence européenne dans les marchés publics",
+          "reformulation_anonymisee": "Dans sa page programme sur l'intelligence artificielle, [CANDIDAT] inscrit la préférence européenne dans les marchés publics parmi les éléments d'une stratégie globale de souveraineté sur toute la chaîne de l'IA. Le passage ne donne ni seuil ni modalité et ne vise pas les marchés publics en général.",
+          "citation_anonymisee": "la préférence européenne dans les marchés publics",
+          "source": {
+            "url": "https://attalpresident.fr/programme/intelligence-artificielle",
+            "titre": "Gabriel Attal et l&#x27;IA : souveraineté et formation | attalpresident.fr",
+            "date_publication": null,
+            "type": "programme_officiel"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Dans son projet de fédération économique entre un noyau dur de pays, il prévoit une politique industrielle unique avec des commandes publiques capables de faire grandir les entreprises et une « préférence européenne assumée », appliquée en priorité à l'industrie de défense.",
           "citation_courte": "préférence européenne assumée",
@@ -3914,32 +4285,26 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": 2,
-          "nature": "nette",
-          "justification": "Soutient une préférence européenne dans les marchés publics et la qualifie d'« assumée ».",
-          "date": "2026-10-03",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "Soutient la préférence européenne dans les marchés publics, appliquée en priorité à la défense.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Il soutient une préférence européenne dans les marchés publics, mais la source la plus récente l'applique en priorité à l'industrie de défense.",
-          "date": "2026-10-03",
+          "justification": "Soutient la préférence européenne dans les marchés publics, appliquée en priorité à la défense.",
+          "date": "2026-10-14",
           "aveugle": true
         },
-        "accord": false
+        "accord": true
       },
-      "code": 2,
-      "nature": "nette",
-      "statut": "arbitre",
-      "arbitrage": {
-        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-03",
-        "code_retenu": 2,
-        "nature_retenue": "nette",
-        "motif": "Soutien explicite à la préférence européenne dans les marchés publics, qualifiée d'« assumée » ; la priorité donnée à la défense est un ordre de mise en œuvre, pas une réserve (R2). (code retenu : celui du codeur A)"
-      }
+      "code": 1,
+      "nature": "nuancee",
+      "statut": "accord",
+      "arbitrage": null
     },
     {
       "question_id": "EUR-007",
@@ -4183,25 +4548,45 @@
       "question_id": "EUR-016",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "corrige",
-        "motif": "Vérificateur : La source porte sur la signature de l'accord en 2024, pas sur un refus de l'appliquer une fois en vigueur (désobéissance) : sujet voisin, null non_connu. Par ailleurs le motif d'arbitrage dit retenir le code du codeur B (null) alors que le code publié est celui du codeur A (+1 imprecise). Second arbitre : BFM, 25/11/2024 : « Nous ne sommes pas favorables à la signature du Mercosur en l'état », « faire bloc pour empêcher sa signature par l'Union européenne ». Il s'oppose à la signature, sous réserve (« en l'état »), avant l'application provisoire ; refuser d'appliquer un accord entré en vigueur est une autre mesure : sujet voisin, null.",
-        "code_avant": 1,
-        "nature_avant": "imprecise",
-        "second_arbitrage": {
-          "par": "second arbitrage aveugle quant à l'origine des options, sur la page source (claude-fable-5-1), non validé par un humain (mode POC)",
-          "code_retenu": null,
-          "nature_retenue": "non_connu",
-          "motif": "BFM, 25/11/2024 : « Nous ne sommes pas favorables à la signature du Mercosur en l'état », « faire bloc pour empêcher sa signature par l'Union européenne ». Il s'oppose à la signature, sous réserve (« en l'état »), avant l'application provisoire ; refuser d'appliquer un accord entré en vigueur est une autre mesure : sujet voisin, null."
-        }
+        "date": "2026-10-14",
+        "verdict": "confirme",
+        "motif": "Les trois sources expriment une opposition à l'accord (« opposition ferme au traité Mercosur », « s'était opposé au MERCOSUR », refus de la signature en 2024) sans rien dire d'un refus d'appliquer l'accord en vigueur : null défendable."
       },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "61ead5f7",
+      "item_aveugle": "51c972bc",
       "extraits": [
+        {
+          "reformulation": "Lors d'un débat à Blois et Bourges, il défend des garde-fous dans les accords de libre-échange pour protéger les producteurs français ; le site de campagne ajoute qu'il s'était opposé au Mercosur. Le passage ne dit pas qu'il refuserait d'appliquer l'accord déjà en vigueur à titre provisoire.",
+          "citation_courte": "il s’était opposé au MERCOSUR",
+          "reformulation_anonymisee": "Lors d'un débat public, [CANDIDAT] défend des garde-fous dans les accords de libre-échange pour protéger les producteurs français ; le site de campagne ajoute qu'il s'était opposé à l'accord avec les pays du Mercosur. Le passage ne dit pas qu'il refuserait d'appliquer l'accord déjà en vigueur à titre provisoire.",
+          "citation_anonymisee": "il s’était opposé au traité en cause",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-debat-avec-les-francais-a-blois-et-a-bourges",
+            "titre": "Gabriel Attal débat avec les Français à Blois et à Bourges",
+            "date_publication": "2026-10-05",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Lors du congrès des Jeunes Agriculteurs, il a réaffirmé son opposition ferme au traité Mercosur et promis d'intégrer systématiquement des clauses miroir dans les accords commerciaux signés. Il ne se prononce pas, dans ce passage, sur un refus d'appliquer l'accord.",
+          "citation_courte": "opposition ferme au traité Mercosur",
+          "reformulation_anonymisee": "Lors d'un congrès professionnel agricole, [CANDIDAT] a réaffirmé son opposition ferme à l'accord commercial avec les pays du Mercosur et promis d'intégrer systématiquement des clauses miroir dans les accords commerciaux signés. Il ne se prononce pas, dans ce passage, sur un refus d'appliquer l'accord.",
+          "citation_anonymisee": "opposition ferme à l'accord commercial en cause",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-dans-l-ain-et-la-saone-et-loire",
+            "titre": "Gabriel Attal en déplacement dans l’Ain et la Saône-et-Loire",
+            "date_publication": "2026-06-04",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "En novembre 2024, il dit que son camp n'est « pas favorable à la signature du Mercosur en l'état » et qu'il faut continuer à travailler et « faire bloc » pour empêcher sa signature par l'UE. Position antérieure à l'application provisoire de 2026 ; il ne se prononce pas dans cette source sur un refus d'appliquer l'accord.",
           "citation_courte": "Nous ne sommes pas favorables à la signature du Mercosur en l'état",
@@ -4220,18 +4605,18 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": 1,
-          "nature": "imprecise",
-          "justification": "Avant l'application provisoire, le candidat voulait empêcher la signature du Mercosur « en l'état », sans se prononcer sur un refus de l'appliquer : seule la direction est perceptible.",
-          "date": "2026-10-03",
+          "code": null,
+          "nature": "non_connu",
+          "justification": "Opposé à l'accord mais ne dit pas refuser de l'appliquer : sujet voisin.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
-          "code": null,
-          "nature": "non_connu",
-          "justification": "Se prononce sur la signature en l'état, avant l'application provisoire, et non sur un refus d'appliquer l'accord : sujet voisin.",
-          "date": "2026-10-03",
+          "code": 1,
+          "nature": "imprecise",
+          "justification": "Opposition ferme à l'accord, y compris après application provisoire, sans se prononcer sur un refus d'application.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "accord": false
@@ -4241,10 +4626,10 @@
       "statut": "arbitre",
       "arbitrage": {
         "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-03",
-        "code_retenu": 1,
-        "nature_retenue": "imprecise",
-        "motif": "Opposition à la signature « en l'état » avant l'application provisoire : direction favorable, sans position sur un refus d'appliquer. (code retenu : celui du codeur B)"
+        "date": "2026-10-14",
+        "code_retenu": null,
+        "nature_retenue": "non_connu",
+        "motif": "L'opposition à l'accord (y compris après l'application provisoire) ne dit rien d'un refus d'appliquer l'accord en vigueur : sujet voisin, les trois extraits le soulignent, donc null (R4)."
       }
     },
     {
@@ -5087,19 +5472,31 @@
       "question_id": "ENV-002",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "Il veut accélérer le nucléaire (plan « Messmer II », objectif de 75 €/MWh pour le nouveau nucléaire) et s'inscrit dans la PPE : propose le contraire d'une sortie, -2 nette."
+        "motif": "Il veut « sécuriser la construction des 14 EPR » et un réacteur par an, et accélérer le nucléaire : contraire d'une sortie du nucléaire, −2."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
-        "tire_au_sort": true,
-        "date": null,
-        "resultat": null
+        "tire_au_sort": false
       },
-      "item_aveugle": "8005a3a7",
+      "item_aveugle": "7b48b9a9",
       "extraits": [
+        {
+          "reformulation": "Lors d'une conférence de presse le 23 septembre 2026, le candidat dit vouloir sécuriser la construction des 14 EPR et retrouver une capacité de construction en série, avec pour objectif un réacteur par an, dans un plan visant aussi la neutralité carbone en 2050. Il ne prévoit donc pas de sortie du nucléaire.",
+          "citation_courte": "sécuriser la construction des 14 EPR",
+          "reformulation_anonymisee": "Lors d'une conférence de presse, [CANDIDAT] dit vouloir sécuriser la construction des 14 EPR et retrouver une capacité de construction en série, avec pour objectif un réacteur par an, dans un plan visant aussi la neutralité carbone en 2050. Aucune sortie du nucléaire n'est prévue.",
+          "citation_anonymisee": "sécuriser la construction des 14 EPR",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-presente-un-plan-de-desendettement-et-un-messmer-ii-pour-sortir-des-dependances-francaises",
+            "titre": "Gabriel Attal : un plan de désendettement et un Messmer II",
+            "date_publication": "2026-09-23",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Présente un plan énergétique « Messmer II », dont le but est, selon le média, d'accélérer simultanément nucléaire, renouvelables et électrification des usages ; fixe un objectif de 75 euros le mégawattheure pour le nouveau nucléaire. Dit s'inscrire dans la trajectoire de la programmation pluriannuelle de l'énergie pour la sortie du fossile.",
           "citation_courte": "accélérer simultanément nucléaire, renouvelables et électrification des usages",
@@ -5120,16 +5517,16 @@
           "modele": "claude-opus-5-5",
           "code": -2,
           "nature": "nette",
-          "justification": "Veut accélérer le nucléaire et fixe un objectif de prix pour le nouveau nucléaire : à l'opposé d'une sortie.",
-          "date": "2026-10-03",
+          "justification": "Veut construire 14 EPR et un réacteur par an, contraire d'une sortie du nucléaire.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": -2,
           "nature": "nette",
-          "justification": "Plan d'accélération du nucléaire avec objectif de prix du nouveau nucléaire, contraire à une sortie.",
-          "date": "2026-10-03",
+          "justification": "Veut construire 14 EPR et accélérer le nucléaire, aucune sortie prévue.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "accord": true
@@ -5211,17 +5608,45 @@
       "question_id": "ENV-005",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "source_inaccessible",
-        "motif": "D'après le titre, il confirme l'autorisation de centaines de projets de retenues : cela va contre une suspension, et la reformulation justifie −1 imprecise."
+        "date": "2026-10-14",
+        "verdict": "confirme",
+        "motif": "Il veut « sortir du dogmatisme sur les projets de retenues d'eau » en soutenant « les ouvrages petits, intégrés au paysage » et simplifier les normes de stockage : direction opposée à un moratoire, sans position sur les grandes retenues, −1 imprecise défendable."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "dafe1396",
+      "item_aveugle": "974e4f8a",
       "extraits": [
+        {
+          "reformulation": "Lors de ses débats à Blois et Bourges (5 octobre 2026), le candidat appelle à accélérer l'adaptation de l'agriculture au changement climatique, notamment en simplifiant les normes relatives au stockage de l'eau, avec prêts à taux zéro ou étalements de charges. Il ne parle pas de suspension de retenues ni ne donne de durée ou de taille.",
+          "citation_courte": "simplifiant les normes relatives au stockage de l’eau",
+          "reformulation_anonymisee": "Lors de débats avec des habitants, [CANDIDAT] appelle à accélérer l'adaptation de l'agriculture au changement climatique, notamment en simplifiant les normes relatives au stockage de l'eau, avec prêts à taux zéro ou étalements de charges. Il ne parle pas de suspension de retenues ni ne donne de durée ou de taille.",
+          "citation_anonymisee": "simplifiant les normes relatives au stockage de l’eau",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-debat-avec-les-francais-a-blois-et-a-bourges",
+            "titre": "Gabriel Attal débat avec les Français à Blois et à Bourges",
+            "date_publication": "2026-10-05",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "En déplacement auprès d'agriculteurs le 10 août 2026, le candidat propose de sortir du dogmatisme sur les projets de retenues d'eau et de revenir au bon sens en soutenant les ouvrages petits, intégrés au paysage. Il ne mentionne pas de moratoire.",
+          "citation_courte": "sortir du dogmatisme sur les projets de retenues d’eau",
+          "reformulation_anonymisee": "En déplacement auprès d'agriculteurs, [CANDIDAT] propose de sortir du dogmatisme sur les projets de retenues d'eau et de revenir au bon sens en soutenant les ouvrages petits, intégrés au paysage. Il ne mentionne pas de moratoire.",
+          "citation_anonymisee": "sortir du dogmatisme sur les projets de retenues d’eau",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-plan-eau-argeles-sur-mer",
+            "titre": "Gabriel Attal fait de l’eau une priorité nationale",
+            "date_publication": "2026-08-10",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "En mai 2024, alors à la tête du gouvernement, confirme que des centaines de projets de retenues d'eau (méga-bassines) vont être autorisés (d'après le titre de l'article, texte non consulté).",
           "citation_courte": null,
@@ -5242,24 +5667,30 @@
           "modele": "claude-opus-5-5",
           "code": -1,
           "nature": "imprecise",
-          "justification": "Le candidat confirme l'autorisation de centaines de projets de retenues, ce qui va contre une suspension, mais la source se limite au titre d'un article.",
-          "date": "2026-10-03",
+          "justification": "Veut simplifier les normes de stockage de l'eau et sortir du dogmatisme sur les retenues, sans parler de moratoire.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
-          "code": -1,
-          "nature": "imprecise",
-          "justification": "Confirme que des centaines de projets de retenues vont être autorisés, ce qui va contre une suspension, source limitée à un titre.",
-          "date": "2026-10-03",
+          "code": -2,
+          "nature": "nette",
+          "justification": "Veut simplifier le stockage de l'eau et soutient les retenues, contraire à un moratoire.",
+          "date": "2026-10-14",
           "aveugle": true
         },
-        "accord": true
+        "accord": false
       },
       "code": -1,
       "nature": "imprecise",
-      "statut": "accord",
-      "arbitrage": null
+      "statut": "arbitre",
+      "arbitrage": {
+        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
+        "date": "2026-10-14",
+        "code_retenu": -1,
+        "nature_retenue": "imprecise",
+        "motif": "Direction opposée au moratoire (simplifier les normes de stockage, sortir du dogmatisme) mais soutien exprimé pour les petits ouvrages et aucune position sur les grandes retenues ni sur une suspension : −1 imprecise."
+      }
     },
     {
       "question_id": "ENV-006",
@@ -5627,35 +6058,61 @@
       "question_id": "ENV-023",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "corrige",
-        "motif": "Vérificateur : La consigne exclut les agrégateurs ; la seule source est une reprise IA d'une dépêche AFP sans propos cités du candidat. Sur le fond, 14 EPR = 6 + 8 justifierait +2 nette si une source recevable (AFP directe, site du candidat) était retrouvée. Second arbitre : La page upday est un agrégateur (« Source : AFP. Note : Cet article a été créé avec l'Intelligence Artificielle ») et la « confirmation de la construction de 14 réacteurs nucléaires EPR » est une paraphrase sans propos cité du candidat : l'écart par le vérificateur est fondé. Sans extrait recevable → null non_connu.",
-        "code_avant": 2,
-        "nature_avant": "nette",
-        "extraits_ecartes": [
-          {
-            "url": "https://www.upday.com/fr/actualite/attal-devoile-deux-plans-chocs-pour-2027-150-milliards-deconomies-et-sortie-des/n1dxme7",
-            "motif": "La page upday est un agrégateur reprenant une dépêche AFP, avec la mention « Cet article a été créé avec l'Intelligence Artificielle » ; la « confirmation de la construction de 14 réacteurs nucléaires EPR » est une paraphrase sans citation du candidat."
-          }
-        ],
-        "second_arbitrage": {
-          "par": "second arbitrage aveugle quant à l'origine des options, sur la page source (claude-fable-5-1), non validé par un humain (mode POC)",
-          "code_retenu": null,
-          "nature_retenue": "non_connu",
-          "motif": "La page upday est un agrégateur (« Source : AFP. Note : Cet article a été créé avec l'Intelligence Artificielle ») et la « confirmation de la construction de 14 réacteurs nucléaires EPR » est une paraphrase sans propos cité du candidat : l'écart par le vérificateur est fondé. Sans extrait recevable → null non_connu."
-        }
+        "date": "2026-10-14",
+        "verdict": "confirme",
+        "motif": "La page de campagne du 23/09/2026 attribue au candidat la volonté de « sécuriser la construction des 14 EPR » avec un réacteur par an ; 14 = 6 décidés + 8 en option selon la précision, soit la cible de l'énoncé."
       },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": 2,
+      "nature": "nette",
+      "statut": "arbitre",
+      "extraits": [
+        {
+          "reformulation": "Le 23 septembre 2026, le candidat dit vouloir sécuriser la construction des 14 EPR et atteindre un réacteur construit par an. La source ne précise pas la répartition entre réacteurs décidés et réacteurs supplémentaires ni le statut « en option » des huit derniers.",
+          "citation_courte": "sécuriser la construction des 14 EPR",
+          "reformulation_anonymisee": "Le candidat [CANDIDAT] dit vouloir sécuriser la construction des 14 EPR et atteindre un réacteur construit par an. La source ne précise pas la répartition entre réacteurs décidés et réacteurs supplémentaires.",
+          "citation_anonymisee": "sécuriser la construction des 14 EPR",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-presente-un-plan-de-desendettement-et-un-messmer-ii-pour-sortir-des-dependances-francaises",
+            "titre": "Gabriel Attal : un plan de désendettement et un Messmer II",
+            "date_publication": "2026-09-23",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": 2,
+          "nature": "nette",
+          "justification": "Veut sécuriser la construction des 14 EPR, soit les six décidés plus huit.",
+          "date": "2026-10-14",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "Veut sécuriser la construction de 14 EPR, mais la répartition entre décidés et supplémentaires n'est pas dite.",
+          "date": "2026-10-14",
+          "aveugle": true
+        },
+        "accord": false
+      },
+      "arbitrage": {
+        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
+        "date": "2026-10-14",
+        "code_retenu": 2,
+        "nature_retenue": "nette",
+        "motif": "Sécuriser la construction des 14 EPR correspond exactement aux six décidés plus les huit en option donnés par la précision : engagement sur la cible de l'énoncé, +2 nette."
+      },
+      "item_aveugle": "82073a29"
     },
     {
       "question_id": "ENV-024",
@@ -5826,12 +6283,26 @@
     {
       "question_id": "SEC-006",
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "bac36858",
+      "item_aveugle": "6eb3db34",
       "extraits": [
+        {
+          "reformulation": "Dans un entretien au Figaro, il propose de supprimer les aménagements automatiques de peine, en citant expressément la libération sous contrainte, au nom du principe qu'une peine n'a de sens que si elle est exécutée. Le passage ne mentionne ni seuil d'occupation des prisons ni mécanisme de libération pour réguler la surpopulation.",
+          "citation_courte": "suppression des aménagements automatiques (comme la libération sous contrainte)",
+          "reformulation_anonymisee": "[CANDIDAT] propose de supprimer les aménagements automatiques de peine, en citant expressément la libération sous contrainte, au nom du principe qu'une peine n'a de sens que si elle est exécutée. Le passage ne mentionne ni seuil d'occupation des prisons ni mécanisme de libération pour réguler la surpopulation.",
+          "citation_anonymisee": "suppression des aménagements automatiques (comme la libération sous contrainte)",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-dans-le-figaro-appelle-a-une-nouvelle-justice",
+            "titre": "Gabriel Attal appelle à une « Nouvelle Justice » - Le Figaro",
+            "date_publication": "2026-06-12",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Il affirme qu'une peine prononcée doit être une peine exécutée et dit proposer de supprimer le juge de l'application des peines ainsi que les remises automatiques de peine. Il le présente comme une des composantes d'une réforme profonde du système judiciaire.",
           "citation_courte": "une peine prononcée doit être une peine exécutée",
@@ -5850,31 +6321,31 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": null,
-          "nature": "non_connu",
-          "justification": "Parle de l'exécution des peines en général, sans aborder les libérations liées à la surpopulation carcérale (sujet voisin).",
-          "date": "2026-10-03",
+          "code": -2,
+          "nature": "nette",
+          "justification": "Veut supprimer les aménagements automatiques dont la libération sous contrainte (R6 symétrique).",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
-          "code": -1,
-          "nature": "imprecise",
-          "justification": "Il veut que toute peine prononcée soit exécutée et propose de supprimer le juge de l'application des peines et les remises automatiques, ce qui va à l'encontre des libérations anticipées, mais il ne traite pas la surpopulation.",
-          "date": "2026-10-03",
+          "code": -2,
+          "nature": "nette",
+          "justification": "Supprime expressément la libération sous contrainte et les aménagements automatiques (R6).",
+          "date": "2026-10-14",
           "aveugle": true
         },
-        "accord": false
+        "accord": true
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "arbitre",
-      "arbitrage": {
-        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-03",
-        "code_retenu": null,
-        "nature_retenue": "non_connu",
-        "motif": "Principe général d'exécution des peines et suppression du JAP, sans rien sur les libérations liées à la surpopulation : sujet voisin, null. (code retenu : celui du codeur A)"
+      "code": -2,
+      "nature": "nette",
+      "statut": "accord",
+      "arbitrage": null,
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-10-14",
+        "verdict": "confirme",
+        "motif": "La source propose la « suppression des aménagements automatiques (comme la libération sous contrainte) » et la construction de places de prison : c'est la suppression du mécanisme même que l'énoncé veut utiliser pour revenir à 100 %, donc −2 nette (R6 symétrique ou contraire direct)."
       }
     },
     {
@@ -5937,17 +6408,59 @@
       "question_id": "SEC-012",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "Son texte rend l'atténuation exceptionnelle (et non supprimée) pour les récidivistes de 16 ans et plus punis d'au moins cinq ans, version partielle de l'alignement sur les peines des majeurs ; la déclaration de 2026 concorde."
+        "motif": "Sa loi fait de l'atténuation l'exception « motivée par le juge » à partir de 16 ans pour les récidives punies d'au moins cinq ans, et il veut aller plus loin en 2026 : même sens, mais le juge garde la faculté d'atténuer et le périmètre est restreint, donc +1 nuancee."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "555b68b3",
+      "item_aveugle": "45345430",
       "extraits": [
+        {
+          "reformulation": "Il déclare que la justice pénale des mineurs doit évoluer pour des sanctions fortes et dit vouloir aller plus loin, notamment avec une comparution immédiate pour les mineurs et une évolution de l'excuse de minorité. Le passage ne précise ni l'âge, ni la récidive, ni l'alignement sur les peines des majeurs.",
+          "citation_courte": "Si on veut des sanctions fortes, la justice pénale des mineurs doit évoluer.",
+          "reformulation_anonymisee": "Il déclare que la justice pénale des mineurs doit évoluer pour des sanctions fortes et dit vouloir aller plus loin, notamment avec une comparution immédiate pour les mineurs et une évolution de l'excuse de minorité. Le passage ne précise ni l'âge, ni la récidive, ni l'alignement sur les peines des majeurs.",
+          "citation_anonymisee": "Si on veut des sanctions fortes, la justice pénale des mineurs doit évoluer.",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-sur-cnews-et-europe-1-il-faut-proposer-aux-francais-un-projet-d-espoir",
+            "titre": "Gabriel Attal sur CNEWS : « Il faut proposer aux Français un projet d’espoir »",
+            "date_publication": "2026-09-30",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Il propose d'atténuer l'excuse de minorité pour les actes les plus graves, d'instaurer une comparution immédiate pour les mineurs et de retenir la responsabilité directe des parents. Le passage ne vise ni l'âge de 16 ans ni la récidive et ne parle pas d'alignement sur les peines des majeurs.",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Il propose d'atténuer l'excuse de minorité pour les actes les plus graves, d'instaurer une comparution immédiate pour les mineurs et de retenir la responsabilité directe des parents. Le passage ne vise ni l'âge de 16 ans ni la récidive et ne parle pas d'alignement sur les peines des majeurs.",
+          "citation_anonymisee": null,
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-sur-bfm-tv-sa-strategie-de-rupture-pour-rebatir-la-justice-et-proteger-les-enfants",
+            "titre": "Gabriel Attal sur BFM TV : son plan pour la justice",
+            "date_publication": "2026-06-10",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": null
+        },
+        {
+          "reformulation": "Il rappelle sa loi sur la justice des mineurs, qui prévoit une comparution immédiate pour les mineurs récidivistes et la remise en cause de l'excuse de minorité, et n'exclut pas une évolution de la Constitution après les censures du Conseil constitutionnel. Il appelle à un durcissement assumé de la réponse pénale.",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Il rappelle sa loi sur la justice des mineurs, qui prévoit une comparution immédiate pour les mineurs récidivistes et la remise en cause de l'excuse de minorité, et n'exclut pas une évolution de la Constitution après les censures du Conseil constitutionnel. Il appelle à un durcissement assumé de la réponse pénale.",
+          "citation_anonymisee": null,
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-rtl-autorite-ecole-retraites-rassemblement-campagne",
+            "titre": "Gabriel Attal sur RTL : espoir, école et rassemblement",
+            "date_publication": "2026-06-01",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": null
+        },
         {
           "reformulation": "Interrogé sur les mineurs délinquants, il dit que c'est son combat et qu'il porte un « tournant » dans son projet présidentiel. Il juge que le cadre constitutionnel actuel empêche d'aller suffisamment loin face à la délinquance des mineurs et qu'il faudra le changer. Le passage ne détaille pas la mesure.",
           "citation_courte": "notre cadre constitutionnel empêche d’aller suffisamment loin",
@@ -5982,16 +6495,16 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Le texte du candidat inverse l'excuse de minorité dès 16 ans pour les récidives punies d'au moins cinq ans, le juge pouvant encore atténuer : même sens, version partielle ; la déclaration plus récente concorde sans rien préciser.",
-          "date": "2026-10-03",
+          "justification": "Son texte inverse l'excuse de minorité dès 16 ans pour les récidives punies d'au moins cinq ans, le juge pouvant encore atténuer.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Texte inversant le principe de l'excuse de minorité dès 16 ans pour les récidives graves (atténuation exceptionnelle motivée par le juge), confirmé en 2026 par la volonté de changer le cadre constitutionnel.",
-          "date": "2026-10-03",
+          "justification": "Veut renverser l'excuse de minorité dès 16 ans pour les récidives graves, sans alignement explicite.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "accord": true
@@ -6005,17 +6518,31 @@
       "question_id": "SEC-013",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "La suppression du juge de l'application des peines va dans le sens de l'énoncé mais l'aménagement des courtes peines n'est pas visé explicitement : +1 imprecise."
+        "motif": "Il propose « la suppression des aménagements automatiques (comme la libération sous contrainte) », sans seuil de durée : mesure plus large qui englobe celle de l'énoncé (R6). Le JDD, consulté par WebFetch, parle de remises automatiques de peine, objet voisin, sans affecter le code."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "4781d179",
+      "item_aveugle": "3c8b3e5e",
       "extraits": [
+        {
+          "reformulation": "Il propose de supprimer les aménagements automatiques de peine (la libération sous contrainte est citée en exemple), parallèlement à la suppression du juge de l'application des peines. Le passage ne distingue pas les peines de moins d'un an et ne donne aucun seuil de durée.",
+          "citation_courte": "suppression des aménagements automatiques (comme la libération sous contrainte)",
+          "reformulation_anonymisee": "[CANDIDAT] propose de supprimer les aménagements automatiques de peine (la libération sous contrainte est citée en exemple), parallèlement à la suppression du juge de l'application des peines. Le passage ne distingue pas les peines de moins d'un an et ne donne aucun seuil de durée.",
+          "citation_anonymisee": "suppression des aménagements automatiques (comme la libération sous contrainte)",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-dans-le-figaro-appelle-a-une-nouvelle-justice",
+            "titre": "Gabriel Attal appelle à une « Nouvelle Justice » - Le Figaro",
+            "date_publication": "2026-06-12",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Il affirme qu'une peine prononcée doit être une peine exécutée et dit proposer de supprimer le juge de l'application des peines ainsi que les remises automatiques de peine. Il le présente comme une des composantes d'une réforme profonde du système judiciaire.",
           "citation_courte": "une peine prononcée doit être une peine exécutée",
@@ -6034,24 +6561,24 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": 1,
-          "nature": "imprecise",
-          "justification": "Supprimer le juge de l'application des peines et faire exécuter toute peine prononcée indique une direction, mais l'aménagement des courtes peines n'est pas visé explicitement.",
-          "date": "2026-10-03",
+          "code": 2,
+          "nature": "nette",
+          "justification": "Supprime tous les aménagements automatiques de peine, ce qui englobe les peines de moins d'un an (R6).",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
-          "code": 1,
-          "nature": "imprecise",
-          "justification": "Veut qu'une peine prononcée soit exécutée et supprimer le JAP et les remises automatiques, sans viser explicitement l'aménagement des peines de moins d'un an.",
-          "date": "2026-10-03",
+          "code": 2,
+          "nature": "nette",
+          "justification": "Supprime les aménagements automatiques de peine sans seuil, ce qui englobe l'énoncé (R6).",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "accord": true
       },
-      "code": 1,
-      "nature": "imprecise",
+      "code": 2,
+      "nature": "nette",
       "statut": "accord",
       "arbitrage": null
     },
@@ -6059,17 +6586,31 @@
       "question_id": "SEC-014",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "Le candidat se prononce sur la mesure elle-même (accroître le nombre de places) sans en donner l'ampleur : direction perceptible, +1 imprecise défendable (null via R4 aurait aussi été soutenable)."
+        "motif": "Il veut « construire davantage de places de prison » (JDD, vérifié par WebFetch) et une loi d'exception pour de nouvelles places (Figaro), sans chiffre : direction de l'énoncé sans la cible de 85 000, +1 imprecise défendable."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "6d2a1464",
+      "item_aveugle": "0f585d4e",
       "extraits": [
+        {
+          "reformulation": "Il propose de construire de nouvelles places de prison par une loi d'exception inspirée du modèle de reconstruction d'une cathédrale célèbre, avec des incitations renforcées pour les communes qui accueillent un établissement et la possibilité pour l'État de lever des blocages locaux au nom de l'intérêt national. Aucun chiffre de places n'est donné.",
+          "citation_courte": "construction de nouvelles places de prison grâce à une loi d’exception",
+          "reformulation_anonymisee": "Il propose de construire de nouvelles places de prison par une loi d'exception, avec des incitations renforcées pour les communes qui accueillent un établissement et la possibilité pour l'État de lever des blocages locaux au nom de l'intérêt national. Aucun chiffre de places n'est donné.",
+          "citation_anonymisee": "construction de nouvelles places de prison grâce à une loi d’exception",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-dans-le-figaro-appelle-a-une-nouvelle-justice",
+            "titre": "Gabriel Attal appelle à une « Nouvelle Justice » - Le Figaro",
+            "date_publication": "2026-06-12",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Il estime qu'il faut construire davantage de places de prison, constate que trop peu de communes acceptent d'en accueillir et veut que ces constructions relèvent d'opérations d'intérêt national, l'État décidant des implantations. Aucun chiffre de places n'est donné dans ce passage.",
           "citation_courte": "Il faut construire davantage de places de prison.",
@@ -6088,32 +6629,26 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": null,
-          "nature": "non_connu",
-          "justification": "« Construire davantage de places » sans chiffre est une position de principe qui ne reprend pas le seuil de 85 000 places (R4).",
-          "date": "2026-10-03",
+          "code": 1,
+          "nature": "imprecise",
+          "justification": "Veut construire davantage de places de prison sans chiffre.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "imprecise",
-          "justification": "Veut construire davantage de places de prison, sans aucun chiffre : direction de l'énoncé, ampleur non précisée.",
-          "date": "2026-10-03",
+          "justification": "Veut davantage de places de prison, sans chiffre.",
+          "date": "2026-10-14",
           "aveugle": true
         },
-        "accord": false
+        "accord": true
       },
       "code": 1,
       "nature": "imprecise",
-      "statut": "arbitre",
-      "arbitrage": {
-        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-03",
-        "code_retenu": 1,
-        "nature_retenue": "imprecise",
-        "motif": "Il se prononce sur la mesure elle-même (construire davantage de places) sans en donner l'ampleur : direction perceptible, comme « revenir sur cette réforme » dans l'exemple de la grille. (code retenu : celui du codeur A)"
-      }
+      "statut": "accord",
+      "arbitrage": null
     },
     {
       "question_id": "SEC-015",
@@ -6161,17 +6696,31 @@
       "question_id": "SEC-018",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-10-14",
         "verdict": "confirme",
-        "motif": "Franceinfo rapporte sa proposition d'« interdiction du voile aux mineures de moins de 15 ans dans l'espace public » : même sens que l'énoncé sur un public restreint. +1 nuancee (version partielle) est défendable ; une lecture R5 (seuil d'âge moins étendu, −1) était aussi possible, d'où confiance moyenne."
+        "motif": "En mai 2025 il défend l'interdiction du voile dans l'espace public pour les mineures de moins de 15 ans ; en septembre 2026 il refuse une interdiction pour les adultes et défend une « protection renforcée des mineurs », sans contredire la mesure : version partielle, +1 nuancee."
       },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "9849f393",
+      "item_aveugle": "b30d774d",
       "extraits": [
+        {
+          "reformulation": "Interrogé sur le voile, il écarte une interdiction générale pour les femmes adultes et défend une protection renforcée des mineurs, tout en rappelant son attachement à la loi de 2004 sur les signes religieux ostensibles à l'école. La source ne précise ni la forme de cette protection ni une éventuelle interdiction dans l'espace public pour les mineures.",
+          "citation_courte": "sans instaurer d’interdiction générale du voile pour les femmes adultes",
+          "reformulation_anonymisee": "Interrogé sur le voile, il écarte une interdiction générale pour les femmes adultes et défend une protection renforcée des mineurs, tout en rappelant son attachement à la loi de 2004 sur les signes religieux ostensibles à l'école. La source ne précise ni la forme de cette protection ni une éventuelle interdiction dans l'espace public pour les mineures.",
+          "citation_anonymisee": "sans instaurer d’interdiction générale du voile pour les femmes adultes",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/bfm-tv-gabriel-attal-veut-changer-de-modele-pour-redonner-de-la-puissance-a-la-france",
+            "titre": "Gabriel Attal veut changer de modèle pour redonner de la puissance à la France",
+            "date_publication": "2026-09-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Il persiste à défendre l'interdiction du port du voile dans l'espace public pour les mineures de moins de 15 ans, qu'il présente comme une mesure de protection de l'enfance travaillée avec des juristes et des constitutionnalistes. Il précise que ce ne sont pas les fillettes qui seraient verbalisées ou poursuivies.",
           "citation_courte": "c'est la protection de l'enfance",
@@ -6190,32 +6739,26 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": -1,
+          "code": 1,
           "nature": "nuancee",
-          "justification": "R5 : le candidat veut interdire le voile dans l'espace public aux mineures de moins de 15 ans, une valeur qui va moins loin que l'ensemble des mineures.",
-          "date": "2026-10-03",
+          "justification": "Défend l'interdiction pour les mineures de moins de 15 ans seulement, protection des mineurs réaffirmée ensuite.",
+          "date": "2026-10-14",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Défend l'interdiction du voile dans l'espace public pour les mineures de moins de 15 ans seulement, version partielle.",
-          "date": "2026-10-03",
+          "justification": "Défend l'interdiction pour les mineures de moins de 15 ans (2025), protection renforcée sans précision en 2026.",
+          "date": "2026-10-14",
           "aveugle": true
         },
-        "accord": false
+        "accord": true
       },
       "code": 1,
       "nature": "nuancee",
-      "statut": "arbitre",
-      "arbitrage": {
-        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-03",
-        "code_retenu": 1,
-        "nature_retenue": "nuancee",
-        "motif": "Interdiction défendue pour les seules mineures de moins de 15 ans : version partielle sur un public restreint, comme l'exemple du retour à 62 ans pour certains de la grille, +1 nuancee. (code retenu : celui du codeur B)"
-      }
+      "statut": "accord",
+      "arbitrage": null
     },
     {
       "question_id": "SEC-019",
