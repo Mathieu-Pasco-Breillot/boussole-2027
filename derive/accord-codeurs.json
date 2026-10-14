@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "aef40608dc4bd8d8504583c374951404c516db583b5fc1b0db4ec3a76569d2d3",
+  "empreinte_donnees": "b65c020649d42c88bbf909b6c7bb945f93a97b50d82d894d7a613d0b6bb2f72b",
   "provisoire": true,
   "codeurs": {
     "codeur_1": [
@@ -11,24 +11,24 @@
     ]
   },
   "global": {
-    "couples_codes": 1072,
-    "accord_code_et_nature": 836,
-    "taux_accord": 0.779851,
-    "accord_code_seul": 913,
-    "taux_accord_code_seul": 0.851679,
-    "couples_pour_kappa": 977,
-    "kappa_pondere_quadratique": 0.953461,
+    "couples_codes": 1078,
+    "accord_code_et_nature": 843,
+    "taux_accord": 0.782004,
+    "accord_code_seul": 923,
+    "taux_accord_code_seul": 0.856215,
+    "couples_pour_kappa": 985,
+    "kappa_pondere_quadratique": 0.959091,
     "arbitrages_en_attente": 0
   },
   "par_vague": {
     "1": {
-      "couples_codes": 739,
-      "accord_code_et_nature": 572,
-      "taux_accord": 0.774019,
-      "accord_code_seul": 614,
-      "taux_accord_code_seul": 0.830853,
-      "couples_pour_kappa": 671,
-      "kappa_pondere_quadratique": 0.943371,
+      "couples_codes": 745,
+      "accord_code_et_nature": 579,
+      "taux_accord": 0.777181,
+      "accord_code_seul": 624,
+      "taux_accord_code_seul": 0.837584,
+      "couples_pour_kappa": 679,
+      "kappa_pondere_quadratique": 0.951695,
       "arbitrages_en_attente": 0
     },
     "2": {
@@ -164,13 +164,13 @@
       "arbitrages_en_attente": 0
     },
     "lisnard-david": {
-      "couples_codes": 88,
-      "accord_code_et_nature": 69,
-      "taux_accord": 0.784091,
-      "accord_code_seul": 71,
-      "taux_accord_code_seul": 0.806818,
-      "couples_pour_kappa": 78,
-      "kappa_pondere_quadratique": 0.899459,
+      "couples_codes": 94,
+      "accord_code_et_nature": 76,
+      "taux_accord": 0.808511,
+      "accord_code_seul": 81,
+      "taux_accord_code_seul": 0.861702,
+      "couples_pour_kappa": 86,
+      "kappa_pondere_quadratique": 0.973793,
       "arbitrages_en_attente": 0
     },
     "melenchon-jean-luc": {
@@ -256,7 +256,7 @@
   },
   "arbitrages": {
     "en_attente": 0,
-    "rendus": 236
+    "rendus": 235
   },
   "controle_humain": {
     "tires_au_sort": 104,

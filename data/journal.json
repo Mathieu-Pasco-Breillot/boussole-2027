@@ -554,6 +554,20 @@
       "description": "Recodage de Marine Tondelier sur la version définitive du programme des Écologistes (« Pour une prospérité écologique », juillet 2026, modifiée le 25 août 2026), lu en entier : 151 questions actives sur 207 ont au moins un extrait du programme (243 extraits, citations vérifiées mot à mot). Double codage aveugle en grille v1.4 (Opus 5.5, Sonnet 5.5) : 119 accords sur 151, 32 désaccords arbitrés provisoirement par Fable 5.1. Questions codées : 51 avant, 141 après ; 12 codes existants modifiés. Les extraits de l'ancienne version du programme (marinetondelier.fr) sont remplacés ; les extraits de presse sont conservés. 14 codes tirés pour le contrôle humain (graine 20261014). Vérification indépendante contre la source non encore faite. Ajout du champ facultatif date_derniere_maj_codage aux fichiers de positions. Consignes de codage et d'arbitrage alignées sur la grille v1.4 (R3, R5 révisée, R6). Marine Tondelier passe au statut « évalué » (seuil de couverture atteint). Onze sigles des nouveaux extraits ajoutés au glossaire (ASPA, CAUE, CEREMA, CMR, CNAM, ENR, MACF, ONF, OPEX, PUMA, TSN). Conséquence sur les fichiers dérivés : DEF-008 et INS-001 passent au-dessus du seuil de 80 % des candidats évalués, la liste d'ancrage publiée passe de 5 à 7 questions (RET-003, IMM-001, DEF-008, FIS-001, ENV-002, INS-001, EDU-007).",
       "auteur": "Claude, à la demande de Mathieu",
       "reference": "recodage Tondelier sur le programme définitif (14 octobre 2026)"
+    },
+    {
+      "date": "2026-10-14",
+      "type": "recodage",
+      "objets": [
+        "data/positions/lisnard-david.json",
+        "docs/protocole/consigne-verification-independante.md",
+        "docs/protocole/consigne-second-arbitrage.md",
+        "data/candidats.json",
+        "data/glossaire.json"
+      ],
+      "description": "Passe « programme » sur David Lisnard demandée par Mathieu le 14 octobre 2026 : site unenouvelleenergie.fr aspiré en entier (pages « Notre programme » mises à jour le 31 juillet 2026, livrets santé et agriculture, discours de Bayeux, Livre noir de la bureaucratie, 62 pages « Questions », 1 750 actualités), extraction thème par thème sur ce corpus local (11 agents), contrôle mécanique (toutes les citations retrouvées mot à mot ; tribune collective du 13 août 2025 écartée, Lisnard n'en étant pas premier signataire). 54 questions recodées en grille v1.4 : double codage aveugle (accord 42/54), 12 arbitrages provisoires (claude-fable-5-1), vérification indépendante des 54 codes (51 confirmés), second arbitrage de 5 items : FIS-019 corrigé, 3 propositions R6 non retenues, un extrait du Parisien écarté (INS-011). 37 codes inchangés, 17 changés dont 8 nouveaux : FIS-015 0 nuancee → +1 imprecise ; FIS-016 null → +1 imprecise ; FIS-019 null → -2 nette ; FIS-020 null → -1 nuancee ; SAN-001 -1 nuancee → -2 nette ; EUR-010 +1 imprecise → +1 nuancee ; EUR-015 null → -1 nuancee ; ENV-017 +2 nette → +1 nuancee ; ENV-018 null → +1 imprecise ; ENV-023 -1 imprecise → +1 imprecise ; EDU-001 -1 nuancee → +2 nette ; EDU-012 null → +1 imprecise ; IMM-001 null → -1 nuancee ; IMM-008 -1 imprecise → -2 nette ; IMM-018 +1 imprecise → +2 nette ; SEC-006 null → -1 imprecise ; SEC-014 +1 imprecise → +1 nuancee. Métadonnées : 29 extraits des pages programme datés du 31 juillet 2026 (au lieu de null), 32 extraits de ces pages typés programme_parti (types auparavant mêlés), 4 reformulations corrigées par le vérificateur. Champ date_derniere_maj_codage renseigné au 14 octobre 2026 ; consignes de vérification et de second arbitrage alignées sur la grille v1.4 (R3, R5). Contrôle humain : 5 nouveaux codes tirés au sort ; la confirmation humaine de RET-007 (3 octobre 2026) est conservée, le code étant inchangé ; les 5 tirages encore en attente sur des questions recodées sont remplacés par le nouveau tirage. Lisnard dépasse désormais le seuil de couverture de 40 % (42,5 %) : statut d'évaluation passé à « evalue ». Glossaire : entrée ETS2 ajoutée (sigle cité dans une justification de codeur).",
+      "auteur": "Claude, à la demande de Mathieu",
+      "reference": "passe programme Lisnard du 14 octobre 2026"
     }
   ]
 }

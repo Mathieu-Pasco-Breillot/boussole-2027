@@ -245,6 +245,11 @@
     "explication": "Entreprise de moins de 5 000 salariés, hors PME, avec un chiffre d'affaires d'au plus 1,5 milliard d'euros ou un bilan d'au plus 2 milliards."
   },
   {
+    "sigle": "ETS2",
+    "developpe": "Second système d'échange de quotas d'émission de l'Union européenne",
+    "explication": "Marché carbone européen qui fait payer le CO2 émis par le chauffage des bâtiments et le carburant routier, prévu à partir de 2028."
+  },
+  {
     "sigle": "FNSEA",
     "developpe": "Fédération nationale des syndicats d'exploitants agricoles",
     "explication": "Syndicat professionnel d'exploitants agricoles."

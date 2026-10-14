@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "aef40608dc4bd8d8504583c374951404c516db583b5fc1b0db4ec3a76569d2d3",
+  "empreinte_donnees": "b65c020649d42c88bbf909b6c7bb945f93a97b50d82d894d7a613d0b6bb2f72b",
   "proposition_min": 8,
   "questions_actives": 207,
   "candidats": [
@@ -240,28 +240,28 @@
     },
     {
       "candidat": "lisnard-david",
-      "propositions": 80,
-      "couverture_banque": 0.386473,
+      "propositions": 88,
+      "couverture_banque": 0.425121,
       "duel_disponible": true,
       "par_theme": {
         "defense": 5,
-        "ecologie-energie": 10,
+        "ecologie-energie": 11,
         "economie-dette": 4,
-        "education": 8,
-        "fiscalite": 10,
-        "immigration": 10,
+        "education": 9,
+        "fiscalite": 13,
+        "immigration": 11,
         "institutions": 8,
         "retraites": 6,
         "sante": 7,
-        "securite": 8,
-        "union-europeenne": 4
+        "securite": 9,
+        "union-europeenne": 5
       },
       "par_sens": {
-        "plus": 26,
-        "moins": 54
+        "plus": 28,
+        "moins": 60
       },
-      "positions_imprecises": 17,
-      "part_imprecise": 0.2125
+      "positions_imprecises": 18,
+      "part_imprecise": 0.204545
     },
     {
       "candidat": "melenchon-jean-luc",

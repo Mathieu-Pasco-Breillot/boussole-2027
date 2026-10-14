@@ -1,4 +1,4 @@
-# Consigne de vérification indépendante des codes — grille v1.2 (+ R6 provisoire)
+# Consigne de vérification indépendante des codes — grille v1.4 (R6 provisoire)
 
 Tu es VÉRIFICATEUR. Tu n'as participé ni à l'extraction, ni au codage, ni à l'arbitrage. Pour chaque item de ton lot, tu contrôles le code publié **contre la page source elle-même**, pas seulement contre la reformulation écrite par l'extracteur (qui connaissait le candidat et a pu orienter les codeurs).
 
@@ -33,9 +33,9 @@ Code l'énoncé **tel qu'il est écrit**, à partir de ce que dit réellement la
 
 - 0 n'est jamais un code par défaut. Sujet voisin → null. Hésitation entre deux codes adjacents → le plus proche de 0.
 - **R1** Le candidat va plus loin que la valeur de l'énoncé, dans le même sens (énoncé 62 ans, candidat 60 ans) → +1 nuancee.
-- **R5** Le candidat retient explicitement une valeur qui va moins loin (énoncé 60 ans, candidat 62) → −1 nuancee ; valeur dans la direction opposée par rapport au droit en vigueur → −2.
+- **R5 (v1.4)** Même mesure, autre chiffre, dans le même sens mais moins loin : après conversion dans l'unité de l'énoncé, +1 nuancee si le candidat fait au moins la moitié du chemin depuis le droit en vigueur, −1 nuancee sinon ou s'il rejette explicitement le chiffre ; −2 si sa valeur va dans la direction opposée ; une autre mesure, même plus douce, reste −1 nuancee. Âge de départ : point de départ 64 ans.
 - **R2** Engagement ferme sur la cible exacte avec un calendrier d'étalement → +2 nette. « Progressivement » ne mène à +1 que si cible ou périmètre sont réduits ou flous.
-- **R3** Le candidat écarte le paramètre même de l'énoncé au profit d'un autre mécanisme identifiable, sans chiffre → −1 nuancee.
+- **R3** Le candidat écarte le paramètre même de l'énoncé au profit d'un autre mécanisme identifiable, sans chiffre → −1 nuancee. Ne s'applique pas si l'autre mécanisme va plus loin dans le même sens : c'est alors R1, +1 nuancee (v1.4).
 - **R4** Position de principe sur le thème qui ne reprend pas la mesure précise de l'énoncé (critères, seuil, public) → null non_connu.
 - **R6 (proposée, appliquée à titre provisoire)** — **Proposition englobante.** Quand la mesure du candidat **contient entièrement** celle de l'énoncé, dans le même sens, par un périmètre plus large et non par une valeur sur une échelle (énoncé « supprimer les aides aux nouvelles installations », candidat « supprimer toutes les aides »), le code est **+2 nette** : appliquer sa mesure, c'est appliquer l'énoncé en entier. R1 reste la règle pour une valeur chiffrée qui va plus loin. Symétriquement, une interdiction plus large qui couvre entièrement l'objet de l'énoncé, face à un énoncé qui propose de l'autoriser ou de le développer, est −2 nette. Signale `r6: true` sur tout item où cette situation se présente, que le code publié soit +1 ou +2.
 

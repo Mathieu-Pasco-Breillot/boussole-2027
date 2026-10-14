@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "aef40608dc4bd8d8504583c374951404c516db583b5fc1b0db4ec3a76569d2d3",
+  "empreinte_donnees": "b65c020649d42c88bbf909b6c7bb945f93a97b50d82d894d7a613d0b6bb2f72b",
   "provisoire": true,
   "parametres": {
     "tirages_par_mode": 10000,
@@ -44,7 +44,7 @@
     "glucksmann-raphael": 0.289855,
     "lalanne-francis": 0.019324,
     "le-pen-marine": 0.454106,
-    "lisnard-david": 0.386473,
+    "lisnard-david": 0.425121,
     "melenchon-jean-luc": 0.468599,
     "mikolajczak-antoine": 0.038647,
     "philippe-edouard": 0.227053,
@@ -60,142 +60,142 @@
       "questions_tirees_moyenne": 20,
       "candidats": {
         "arthaud-nathalie": {
-          "part_atteint_seuils": 0.7279,
-          "couverture_moyenne": 0.434845,
-          "questions_codees_moyenne": 8.6969,
+          "part_atteint_seuils": 0.7298,
+          "couverture_moyenne": 0.435875,
+          "questions_codees_moyenne": 8.7175,
           "questions_codees_min": 2,
           "questions_codees_max": 17
         },
         "asselineau-francois": {
           "part_atteint_seuils": 0.0003,
-          "couverture_moyenne": 0.14095,
-          "questions_codees_moyenne": 2.819,
+          "couverture_moyenne": 0.140455,
+          "questions_codees_moyenne": 2.8091,
           "questions_codees_min": 0,
           "questions_codees_max": 8
         },
         "attal-gabriel": {
-          "part_atteint_seuils": 0.9121,
-          "couverture_moyenne": 0.5024,
-          "questions_codees_moyenne": 10.048,
+          "part_atteint_seuils": 0.9132,
+          "couverture_moyenne": 0.500835,
+          "questions_codees_moyenne": 10.0167,
           "questions_codees_min": 4,
           "questions_codees_max": 18
         },
         "batho-delphine": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.04002,
-          "questions_codees_moyenne": 0.8004,
+          "couverture_moyenne": 0.040935,
+          "questions_codees_moyenne": 0.8187,
           "questions_codees_min": 0,
           "questions_codees_max": 4
         },
         "becht-olivier": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.022015,
-          "questions_codees_moyenne": 0.4403,
+          "couverture_moyenne": 0.02134,
+          "questions_codees_moyenne": 0.4268,
           "questions_codees_min": 0,
           "questions_codees_max": 2
         },
         "bouamrane-karim": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.035225,
-          "questions_codees_moyenne": 0.7045,
+          "couverture_moyenne": 0.035185,
+          "questions_codees_moyenne": 0.7037,
           "questions_codees_min": 0,
           "questions_codees_max": 4
         },
         "dupont-aignan-nicolas": {
-          "part_atteint_seuils": 0.9928,
-          "couverture_moyenne": 0.601095,
-          "questions_codees_moyenne": 12.0219,
+          "part_atteint_seuils": 0.9922,
+          "couverture_moyenne": 0.601155,
+          "questions_codees_moyenne": 12.0231,
           "questions_codees_min": 4,
-          "questions_codees_max": 19
+          "questions_codees_max": 18
         },
         "egger-clara": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.01696,
-          "questions_codees_moyenne": 0.3392,
+          "couverture_moyenne": 0.016985,
+          "questions_codees_moyenne": 0.3397,
           "questions_codees_min": 0,
           "questions_codees_max": 2
         },
         "glucksmann-raphael": {
-          "part_atteint_seuils": 0.6619,
-          "couverture_moyenne": 0.412665,
-          "questions_codees_moyenne": 8.2533,
+          "part_atteint_seuils": 0.6545,
+          "couverture_moyenne": 0.41028,
+          "questions_codees_moyenne": 8.2056,
           "questions_codees_min": 3,
           "questions_codees_max": 15
         },
         "lalanne-francis": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.017645,
-          "questions_codees_moyenne": 0.3529,
+          "couverture_moyenne": 0.017635,
+          "questions_codees_moyenne": 0.3527,
           "questions_codees_min": 0,
           "questions_codees_max": 3
         },
         "le-pen-marine": {
-          "part_atteint_seuils": 0.9976,
-          "couverture_moyenne": 0.629705,
-          "questions_codees_moyenne": 12.5941,
+          "part_atteint_seuils": 0.9973,
+          "couverture_moyenne": 0.629065,
+          "questions_codees_moyenne": 12.5813,
           "questions_codees_min": 6,
           "questions_codees_max": 19
         },
         "lisnard-david": {
-          "part_atteint_seuils": 0.9262,
-          "couverture_moyenne": 0.503155,
-          "questions_codees_moyenne": 10.0631,
-          "questions_codees_min": 4,
-          "questions_codees_max": 17
+          "part_atteint_seuils": 0.9887,
+          "couverture_moyenne": 0.57806,
+          "questions_codees_moyenne": 11.5612,
+          "questions_codees_min": 5,
+          "questions_codees_max": 18
         },
         "melenchon-jean-luc": {
-          "part_atteint_seuils": 0.9922,
-          "couverture_moyenne": 0.5868,
-          "questions_codees_moyenne": 11.736,
+          "part_atteint_seuils": 0.9927,
+          "couverture_moyenne": 0.58532,
+          "questions_codees_moyenne": 11.7064,
           "questions_codees_min": 5,
           "questions_codees_max": 18
         },
         "mikolajczak-antoine": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.060955,
-          "questions_codees_moyenne": 1.2191,
+          "couverture_moyenne": 0.06113,
+          "questions_codees_moyenne": 1.2226,
           "questions_codees_min": 0,
           "questions_codees_max": 5
         },
         "philippe-edouard": {
-          "part_atteint_seuils": 0.5778,
-          "couverture_moyenne": 0.39424,
-          "questions_codees_moyenne": 7.8848,
+          "part_atteint_seuils": 0.5762,
+          "couverture_moyenne": 0.394425,
+          "questions_codees_moyenne": 7.8885,
           "questions_codees_min": 2,
           "questions_codees_max": 15
         },
         "philippot-florian": {
-          "part_atteint_seuils": 0.0018,
-          "couverture_moyenne": 0.161155,
-          "questions_codees_moyenne": 3.2231,
+          "part_atteint_seuils": 0.0016,
+          "couverture_moyenne": 0.16089,
+          "questions_codees_moyenne": 3.2178,
           "questions_codees_min": 0,
           "questions_codees_max": 10
         },
         "retailleau-bruno": {
-          "part_atteint_seuils": 0.9345,
-          "couverture_moyenne": 0.50952,
-          "questions_codees_moyenne": 10.1904,
+          "part_atteint_seuils": 0.9316,
+          "couverture_moyenne": 0.50876,
+          "questions_codees_moyenne": 10.1752,
           "questions_codees_min": 4,
-          "questions_codees_max": 18
+          "questions_codees_max": 17
         },
         "roussel-fabien": {
-          "part_atteint_seuils": 0.7288,
-          "couverture_moyenne": 0.432015,
-          "questions_codees_moyenne": 8.6403,
+          "part_atteint_seuils": 0.7347,
+          "couverture_moyenne": 0.43359,
+          "questions_codees_moyenne": 8.6718,
           "questions_codees_min": 2,
           "questions_codees_max": 17
         },
         "ruffin-francois": {
-          "part_atteint_seuils": 0.2231,
-          "couverture_moyenne": 0.32041,
-          "questions_codees_moyenne": 6.4082,
+          "part_atteint_seuils": 0.2187,
+          "couverture_moyenne": 0.31921,
+          "questions_codees_moyenne": 6.3842,
           "questions_codees_min": 1,
           "questions_codees_max": 12
         },
         "tondelier-marine": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.72301,
-          "questions_codees_moyenne": 14.4602,
+          "couverture_moyenne": 0.724105,
+          "questions_codees_moyenne": 14.4821,
           "questions_codees_min": 8,
           "questions_codees_max": 20
         }
@@ -207,142 +207,142 @@
       "questions_tirees_moyenne": 39.9978,
       "candidats": {
         "arthaud-nathalie": {
-          "part_atteint_seuils": 0.9992,
-          "couverture_moyenne": 0.421429,
-          "questions_codees_moyenne": 16.8569,
+          "part_atteint_seuils": 0.999,
+          "couverture_moyenne": 0.422671,
+          "questions_codees_moyenne": 16.9066,
           "questions_codees_min": 2,
           "questions_codees_max": 28
         },
         "asselineau-francois": {
-          "part_atteint_seuils": 0.0779,
-          "couverture_moyenne": 0.128052,
-          "questions_codees_moyenne": 5.1216,
+          "part_atteint_seuils": 0.0783,
+          "couverture_moyenne": 0.127727,
+          "questions_codees_moyenne": 5.1086,
           "questions_codees_min": 0,
           "questions_codees_max": 11
         },
         "attal-gabriel": {
           "part_atteint_seuils": 0.9999,
-          "couverture_moyenne": 0.459283,
-          "questions_codees_moyenne": 18.3707,
+          "couverture_moyenne": 0.457313,
+          "questions_codees_moyenne": 18.2919,
           "questions_codees_min": 5,
           "questions_codees_max": 28
         },
         "batho-delphine": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.038213,
-          "questions_codees_moyenne": 1.5284,
+          "couverture_moyenne": 0.039091,
+          "questions_codees_moyenne": 1.5635,
           "questions_codees_min": 0,
           "questions_codees_max": 5
         },
         "becht-olivier": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.014345,
-          "questions_codees_moyenne": 0.5738,
+          "couverture_moyenne": 0.013945,
+          "questions_codees_moyenne": 0.5578,
           "questions_codees_min": 0,
           "questions_codees_max": 2
         },
         "bouamrane-karim": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.05615,
-          "questions_codees_moyenne": 2.246,
+          "couverture_moyenne": 0.05612,
+          "questions_codees_moyenne": 2.2448,
           "questions_codees_min": 0,
           "questions_codees_max": 5
         },
         "dupont-aignan-nicolas": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.569719,
-          "questions_codees_moyenne": 22.7873,
-          "questions_codees_min": 12,
+          "couverture_moyenne": 0.570254,
+          "questions_codees_moyenne": 22.8087,
+          "questions_codees_min": 11,
           "questions_codees_max": 33
         },
         "egger-clara": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.017086,
-          "questions_codees_moyenne": 0.6832,
+          "couverture_moyenne": 0.017079,
+          "questions_codees_moyenne": 0.6829,
           "questions_codees_min": 0,
           "questions_codees_max": 2
         },
         "glucksmann-raphael": {
-          "part_atteint_seuils": 0.9996,
-          "couverture_moyenne": 0.383601,
-          "questions_codees_moyenne": 15.3433,
+          "part_atteint_seuils": 0.9992,
+          "couverture_moyenne": 0.381473,
+          "questions_codees_moyenne": 15.2582,
           "questions_codees_min": 6,
           "questions_codees_max": 24
         },
         "lalanne-francis": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.019041,
-          "questions_codees_moyenne": 0.7615,
+          "couverture_moyenne": 0.019036,
+          "questions_codees_moyenne": 0.7613,
           "questions_codees_min": 0,
           "questions_codees_max": 4
         },
         "le-pen-marine": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.608845,
-          "questions_codees_moyenne": 24.3527,
+          "couverture_moyenne": 0.608828,
+          "questions_codees_moyenne": 24.352,
           "questions_codees_min": 9,
           "questions_codees_max": 34
         },
         "lisnard-david": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.480429,
-          "questions_codees_moyenne": 19.2162,
+          "couverture_moyenne": 0.548372,
+          "questions_codees_moyenne": 21.9339,
           "questions_codees_min": 8,
-          "questions_codees_max": 29
+          "questions_codees_max": 31
         },
         "melenchon-jean-luc": {
           "part_atteint_seuils": 0.9999,
-          "couverture_moyenne": 0.568886,
-          "questions_codees_moyenne": 22.7547,
+          "couverture_moyenne": 0.567931,
+          "questions_codees_moyenne": 22.7165,
           "questions_codees_min": 6,
-          "questions_codees_max": 32
+          "questions_codees_max": 31
         },
         "mikolajczak-antoine": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.066865,
-          "questions_codees_moyenne": 2.6746,
+          "couverture_moyenne": 0.066925,
+          "questions_codees_moyenne": 2.677,
           "questions_codees_min": 0,
           "questions_codees_max": 7
         },
         "philippe-edouard": {
-          "part_atteint_seuils": 0.9985,
-          "couverture_moyenne": 0.364953,
-          "questions_codees_moyenne": 14.5975,
+          "part_atteint_seuils": 0.9984,
+          "couverture_moyenne": 0.365298,
+          "questions_codees_moyenne": 14.6113,
           "questions_codees_min": 5,
           "questions_codees_max": 23
         },
         "philippot-florian": {
-          "part_atteint_seuils": 0.2531,
-          "couverture_moyenne": 0.155472,
-          "questions_codees_moyenne": 6.2189,
+          "part_atteint_seuils": 0.2514,
+          "couverture_moyenne": 0.155148,
+          "questions_codees_moyenne": 6.2059,
           "questions_codees_min": 0,
           "questions_codees_max": 14
         },
         "retailleau-bruno": {
           "part_atteint_seuils": 0.9999,
-          "couverture_moyenne": 0.500628,
-          "questions_codees_moyenne": 20.0244,
+          "couverture_moyenne": 0.500081,
+          "questions_codees_moyenne": 20.0025,
           "questions_codees_min": 6,
           "questions_codees_max": 30
         },
         "roussel-fabien": {
           "part_atteint_seuils": 0.9999,
-          "couverture_moyenne": 0.424429,
-          "questions_codees_moyenne": 16.9768,
+          "couverture_moyenne": 0.426034,
+          "questions_codees_moyenne": 17.041,
           "questions_codees_min": 3,
           "questions_codees_max": 27
         },
         "ruffin-francois": {
-          "part_atteint_seuils": 0.9778,
-          "couverture_moyenne": 0.29486,
-          "questions_codees_moyenne": 11.7938,
+          "part_atteint_seuils": 0.977,
+          "couverture_moyenne": 0.293903,
+          "questions_codees_moyenne": 11.7555,
           "questions_codees_min": 4,
           "questions_codees_max": 19
         },
         "tondelier-marine": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.688469,
-          "questions_codees_moyenne": 27.5373,
+          "couverture_moyenne": 0.690047,
+          "questions_codees_moyenne": 27.6004,
           "questions_codees_min": 12,
           "questions_codees_max": 36
         }
@@ -355,50 +355,50 @@
       "candidats": {
         "arthaud-nathalie": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.381088,
-          "questions_codees_moyenne": 22.8645,
+          "couverture_moyenne": 0.382193,
+          "questions_codees_moyenne": 22.9308,
           "questions_codees_min": 8,
           "questions_codees_max": 36
         },
         "asselineau-francois": {
-          "part_atteint_seuils": 0.4466,
-          "couverture_moyenne": 0.120697,
-          "questions_codees_moyenne": 7.2415,
+          "part_atteint_seuils": 0.444,
+          "couverture_moyenne": 0.120462,
+          "questions_codees_moyenne": 7.2274,
           "questions_codees_min": 1,
           "questions_codees_max": 15
         },
         "attal-gabriel": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.42032,
-          "questions_codees_moyenne": 25.2183,
+          "couverture_moyenne": 0.41911,
+          "questions_codees_moyenne": 25.1457,
           "questions_codees_min": 10,
           "questions_codees_max": 37
         },
         "batho-delphine": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.033417,
-          "questions_codees_moyenne": 2.0049,
+          "couverture_moyenne": 0.034185,
+          "questions_codees_moyenne": 2.051,
           "questions_codees_min": 0,
           "questions_codees_max": 5
         },
         "becht-olivier": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.01504,
-          "questions_codees_moyenne": 0.9024,
+          "couverture_moyenne": 0.014695,
+          "questions_codees_moyenne": 0.8817,
           "questions_codees_min": 0,
           "questions_codees_max": 2
         },
         "bouamrane-karim": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.042897,
-          "questions_codees_moyenne": 2.5738,
+          "couverture_moyenne": 0.042866,
+          "questions_codees_moyenne": 2.5719,
           "questions_codees_min": 0,
           "questions_codees_max": 5
         },
         "dupont-aignan-nicolas": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.519388,
-          "questions_codees_moyenne": 31.1619,
+          "couverture_moyenne": 0.519693,
+          "questions_codees_moyenne": 31.1802,
           "questions_codees_min": 14,
           "questions_codees_max": 44
         },
@@ -411,85 +411,85 @@
         },
         "glucksmann-raphael": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.344309,
-          "questions_codees_moyenne": 20.6576,
+          "couverture_moyenne": 0.342464,
+          "questions_codees_moyenne": 20.5469,
           "questions_codees_min": 9,
-          "questions_codees_max": 32
+          "questions_codees_max": 31
         },
         "lalanne-francis": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.0219,
-          "questions_codees_moyenne": 1.3139,
+          "couverture_moyenne": 0.021908,
+          "questions_codees_moyenne": 1.3144,
           "questions_codees_min": 0,
           "questions_codees_max": 4
         },
         "le-pen-marine": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.565705,
-          "questions_codees_moyenne": 33.9409,
+          "couverture_moyenne": 0.565711,
+          "questions_codees_moyenne": 33.9413,
           "questions_codees_min": 18,
           "questions_codees_max": 44
         },
         "lisnard-david": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.450014,
-          "questions_codees_moyenne": 26.9996,
-          "questions_codees_min": 16,
-          "questions_codees_max": 38
+          "couverture_moyenne": 0.507953,
+          "questions_codees_moyenne": 30.4758,
+          "questions_codees_min": 18,
+          "questions_codees_max": 42
         },
         "melenchon-jean-luc": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.542008,
-          "questions_codees_moyenne": 32.519,
+          "couverture_moyenne": 0.541194,
+          "questions_codees_moyenne": 32.4702,
           "questions_codees_min": 20,
-          "questions_codees_max": 44
+          "questions_codees_max": 42
         },
         "mikolajczak-antoine": {
           "part_atteint_seuils": 0.0013,
-          "couverture_moyenne": 0.057544,
-          "questions_codees_moyenne": 3.4526,
+          "couverture_moyenne": 0.057559,
+          "questions_codees_moyenne": 3.4535,
           "questions_codees_min": 0,
           "questions_codees_max": 8
         },
         "philippe-edouard": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.315438,
-          "questions_codees_moyenne": 18.9256,
+          "couverture_moyenne": 0.315888,
+          "questions_codees_moyenne": 18.9526,
           "questions_codees_min": 8,
           "questions_codees_max": 28
         },
         "philippot-florian": {
-          "part_atteint_seuils": 0.5887,
-          "couverture_moyenne": 0.133752,
-          "questions_codees_moyenne": 8.0248,
+          "part_atteint_seuils": 0.5866,
+          "couverture_moyenne": 0.133597,
+          "questions_codees_moyenne": 8.0155,
           "questions_codees_min": 0,
           "questions_codees_max": 17
         },
         "retailleau-bruno": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.466536,
-          "questions_codees_moyenne": 27.991,
+          "couverture_moyenne": 0.466181,
+          "questions_codees_moyenne": 27.9697,
           "questions_codees_min": 17,
-          "questions_codees_max": 40
+          "questions_codees_max": 39
         },
         "roussel-fabien": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.400975,
-          "questions_codees_moyenne": 24.0575,
-          "questions_codees_min": 12,
+          "couverture_moyenne": 0.402515,
+          "questions_codees_moyenne": 24.1499,
+          "questions_codees_min": 13,
           "questions_codees_max": 35
         },
         "ruffin-francois": {
           "part_atteint_seuils": 0.9998,
-          "couverture_moyenne": 0.266752,
-          "questions_codees_moyenne": 16.0045,
+          "couverture_moyenne": 0.265781,
+          "questions_codees_moyenne": 15.9462,
           "questions_codees_min": 6,
           "questions_codees_max": 25
         },
         "tondelier-marine": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.685926,
-          "questions_codees_moyenne": 41.1535,
+          "couverture_moyenne": 0.687184,
+          "questions_codees_moyenne": 41.229,
           "questions_codees_min": 32,
           "questions_codees_max": 50
         }
@@ -502,50 +502,50 @@
       "candidats": {
         "arthaud-nathalie": {
           "part_atteint_seuils": 0.9999,
-          "couverture_moyenne": 0.331993,
-          "questions_codees_moyenne": 33.0859,
+          "couverture_moyenne": 0.332613,
+          "questions_codees_moyenne": 33.1479,
           "questions_codees_min": 7,
           "questions_codees_max": 49
         },
         "asselineau-francois": {
-          "part_atteint_seuils": 0.9023,
-          "couverture_moyenne": 0.108612,
-          "questions_codees_moyenne": 10.8229,
+          "part_atteint_seuils": 0.9012,
+          "couverture_moyenne": 0.108505,
+          "questions_codees_moyenne": 10.8122,
           "questions_codees_min": 2,
-          "questions_codees_max": 18
+          "questions_codees_max": 19
         },
         "attal-gabriel": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.375078,
-          "questions_codees_moyenne": 37.3825,
+          "couverture_moyenne": 0.374284,
+          "questions_codees_moyenne": 37.3031,
           "questions_codees_min": 8,
           "questions_codees_max": 53
         },
         "batho-delphine": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.029154,
-          "questions_codees_moyenne": 2.9046,
+          "couverture_moyenne": 0.029538,
+          "questions_codees_moyenne": 2.943,
           "questions_codees_min": 0,
           "questions_codees_max": 6
         },
         "becht-olivier": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.012548,
-          "questions_codees_moyenne": 1.2515,
+          "couverture_moyenne": 0.012393,
+          "questions_codees_moyenne": 1.236,
           "questions_codees_min": 0,
           "questions_codees_max": 2
         },
         "bouamrane-karim": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.031342,
-          "questions_codees_moyenne": 3.1256,
+          "couverture_moyenne": 0.031351,
+          "questions_codees_moyenne": 3.1265,
           "questions_codees_min": 0,
           "questions_codees_max": 5
         },
         "dupont-aignan-nicolas": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.453536,
-          "questions_codees_moyenne": 45.1992,
+          "couverture_moyenne": 0.453845,
+          "questions_codees_moyenne": 45.2301,
           "questions_codees_min": 16,
           "questions_codees_max": 64
         },
@@ -558,85 +558,85 @@
         },
         "glucksmann-raphael": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.306581,
-          "questions_codees_moyenne": 30.551,
+          "couverture_moyenne": 0.30584,
+          "questions_codees_moyenne": 30.4769,
           "questions_codees_min": 12,
           "questions_codees_max": 43
         },
         "lalanne-francis": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.021583,
-          "questions_codees_moyenne": 2.1495,
+          "couverture_moyenne": 0.021581,
+          "questions_codees_moyenne": 2.1493,
           "questions_codees_min": 0,
           "questions_codees_max": 4
         },
         "le-pen-marine": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.507584,
-          "questions_codees_moyenne": 50.5894,
+          "couverture_moyenne": 0.50781,
+          "questions_codees_moyenne": 50.612,
           "questions_codees_min": 17,
-          "questions_codees_max": 66
+          "questions_codees_max": 64
         },
         "lisnard-david": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.414602,
-          "questions_codees_moyenne": 41.3162,
-          "questions_codees_min": 16,
-          "questions_codees_max": 54
+          "couverture_moyenne": 0.461787,
+          "questions_codees_moyenne": 46.021,
+          "questions_codees_min": 17,
+          "questions_codees_max": 59
         },
         "melenchon-jean-luc": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.50281,
-          "questions_codees_moyenne": 50.1038,
+          "couverture_moyenne": 0.502569,
+          "questions_codees_moyenne": 50.0797,
           "questions_codees_min": 23,
           "questions_codees_max": 62
         },
         "mikolajczak-antoine": {
-          "part_atteint_seuils": 0.0347,
-          "couverture_moyenne": 0.046973,
-          "questions_codees_moyenne": 4.6834,
+          "part_atteint_seuils": 0.0353,
+          "couverture_moyenne": 0.047022,
+          "questions_codees_moyenne": 4.6883,
           "questions_codees_min": 0,
           "questions_codees_max": 8
         },
         "philippe-edouard": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.264415,
-          "questions_codees_moyenne": 26.3538,
+          "couverture_moyenne": 0.264652,
+          "questions_codees_moyenne": 26.3775,
           "questions_codees_min": 10,
           "questions_codees_max": 37
         },
         "philippot-florian": {
-          "part_atteint_seuils": 0.9008,
-          "couverture_moyenne": 0.114113,
-          "questions_codees_moyenne": 11.3728,
+          "part_atteint_seuils": 0.9009,
+          "couverture_moyenne": 0.114042,
+          "questions_codees_moyenne": 11.3657,
           "questions_codees_min": 1,
           "questions_codees_max": 20
         },
         "retailleau-bruno": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.429523,
-          "questions_codees_moyenne": 42.8059,
+          "couverture_moyenne": 0.429402,
+          "questions_codees_moyenne": 42.7938,
           "questions_codees_min": 13,
-          "questions_codees_max": 55
+          "questions_codees_max": 56
         },
         "roussel-fabien": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.369108,
-          "questions_codees_moyenne": 36.7784,
+          "couverture_moyenne": 0.369974,
+          "questions_codees_moyenne": 36.865,
           "questions_codees_min": 11,
           "questions_codees_max": 50
         },
         "ruffin-francois": {
           "part_atteint_seuils": 0.9999,
-          "couverture_moyenne": 0.231589,
-          "questions_codees_moyenne": 23.0817,
+          "couverture_moyenne": 0.231095,
+          "questions_codees_moyenne": 23.0323,
           "questions_codees_min": 6,
-          "questions_codees_max": 32
+          "questions_codees_max": 33
         },
         "tondelier-marine": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.680256,
-          "questions_codees_moyenne": 67.7735,
+          "couverture_moyenne": 0.681038,
+          "questions_codees_moyenne": 67.8517,
           "questions_codees_min": 28,
           "questions_codees_max": 81
         }
@@ -649,50 +649,50 @@
       "candidats": {
         "arthaud-nathalie": {
           "part_atteint_seuils": 0.9999,
-          "couverture_moyenne": 0.301154,
-          "questions_codees_moyenne": 42.625,
+          "couverture_moyenne": 0.301284,
+          "questions_codees_moyenne": 42.6445,
           "questions_codees_min": 7,
           "questions_codees_max": 57
         },
         "asselineau-francois": {
           "part_atteint_seuils": 0.9748,
-          "couverture_moyenne": 0.099492,
-          "questions_codees_moyenne": 14.0523,
+          "couverture_moyenne": 0.099455,
+          "questions_codees_moyenne": 14.0468,
           "questions_codees_min": 2,
           "questions_codees_max": 20
         },
         "attal-gabriel": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.341567,
-          "questions_codees_moyenne": 48.3488,
+          "couverture_moyenne": 0.341403,
+          "questions_codees_moyenne": 48.3241,
           "questions_codees_min": 13,
-          "questions_codees_max": 63
+          "questions_codees_max": 62
         },
         "batho-delphine": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.029042,
-          "questions_codees_moyenne": 4.1079,
+          "couverture_moyenne": 0.029125,
+          "questions_codees_moyenne": 4.1204,
           "questions_codees_min": 0,
           "questions_codees_max": 6
         },
         "becht-olivier": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.010295,
-          "questions_codees_moyenne": 1.4648,
+          "couverture_moyenne": 0.010261,
+          "questions_codees_moyenne": 1.4597,
           "questions_codees_min": 0,
           "questions_codees_max": 2
         },
         "bouamrane-karim": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.025293,
-          "questions_codees_moyenne": 3.5888,
+          "couverture_moyenne": 0.025296,
+          "questions_codees_moyenne": 3.5892,
           "questions_codees_min": 0,
           "questions_codees_max": 5
         },
         "dupont-aignan-nicolas": {
           "part_atteint_seuils": 0.9999,
-          "couverture_moyenne": 0.408326,
-          "questions_codees_moyenne": 57.7578,
+          "couverture_moyenne": 0.408399,
+          "questions_codees_moyenne": 57.7687,
           "questions_codees_min": 7,
           "questions_codees_max": 76
         },
@@ -705,85 +705,85 @@
         },
         "glucksmann-raphael": {
           "part_atteint_seuils": 0.9999,
-          "couverture_moyenne": 0.292183,
-          "questions_codees_moyenne": 41.3148,
+          "couverture_moyenne": 0.292016,
+          "questions_codees_moyenne": 41.2898,
           "questions_codees_min": 7,
           "questions_codees_max": 56
         },
         "lalanne-francis": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.020046,
-          "questions_codees_moyenne": 2.8237,
+          "couverture_moyenne": 0.020048,
+          "questions_codees_moyenne": 2.824,
           "questions_codees_min": 0,
           "questions_codees_max": 4
         },
         "le-pen-marine": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.465074,
-          "questions_codees_moyenne": 65.8258,
+          "couverture_moyenne": 0.465093,
+          "questions_codees_moyenne": 65.8287,
           "questions_codees_min": 14,
-          "questions_codees_max": 85
+          "questions_codees_max": 83
         },
         "lisnard-david": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.392563,
-          "questions_codees_moyenne": 55.5485,
-          "questions_codees_min": 14,
-          "questions_codees_max": 70
+          "couverture_moyenne": 0.432815,
+          "questions_codees_moyenne": 61.256,
+          "questions_codees_min": 17,
+          "questions_codees_max": 76
         },
         "melenchon-jean-luc": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.475009,
-          "questions_codees_moyenne": 67.1845,
+          "couverture_moyenne": 0.474937,
+          "questions_codees_moyenne": 67.1737,
           "questions_codees_min": 22,
           "questions_codees_max": 83
         },
         "mikolajczak-antoine": {
-          "part_atteint_seuils": 0.1864,
-          "couverture_moyenne": 0.040029,
-          "questions_codees_moyenne": 5.673,
+          "part_atteint_seuils": 0.186,
+          "couverture_moyenne": 0.040031,
+          "questions_codees_moyenne": 5.6733,
           "questions_codees_min": 0,
           "questions_codees_max": 8
         },
         "philippe-edouard": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.23402,
-          "questions_codees_moyenne": 33.1238,
+          "couverture_moyenne": 0.234074,
+          "questions_codees_moyenne": 33.1319,
           "questions_codees_min": 8,
           "questions_codees_max": 43
         },
         "philippot-florian": {
           "part_atteint_seuils": 0.9693,
-          "couverture_moyenne": 0.103786,
-          "questions_codees_moyenne": 14.6707,
+          "couverture_moyenne": 0.103766,
+          "questions_codees_moyenne": 14.6677,
           "questions_codees_min": 0,
           "questions_codees_max": 21
         },
         "retailleau-bruno": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.406798,
-          "questions_codees_moyenne": 57.5795,
+          "couverture_moyenne": 0.406802,
+          "questions_codees_moyenne": 57.5801,
           "questions_codees_min": 16,
           "questions_codees_max": 72
         },
         "roussel-fabien": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.347909,
-          "questions_codees_moyenne": 49.2105,
+          "couverture_moyenne": 0.348047,
+          "questions_codees_moyenne": 49.2311,
           "questions_codees_min": 14,
           "questions_codees_max": 62
         },
         "ruffin-francois": {
           "part_atteint_seuils": 0.9999,
-          "couverture_moyenne": 0.208802,
-          "questions_codees_moyenne": 29.5406,
+          "couverture_moyenne": 0.208709,
+          "questions_codees_moyenne": 29.5267,
           "questions_codees_min": 7,
           "questions_codees_max": 40
         },
         "tondelier-marine": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.680594,
-          "questions_codees_moyenne": 96.215,
+          "couverture_moyenne": 0.680758,
+          "questions_codees_moyenne": 96.2396,
           "questions_codees_min": 25,
           "questions_codees_max": 113
         }
@@ -796,36 +796,36 @@
       "candidats": {
         "arthaud-nathalie": {
           "part_atteint_seuils": 0.9999,
-          "couverture_moyenne": 0.295203,
-          "questions_codees_moyenne": 45.7997,
+          "couverture_moyenne": 0.295204,
+          "questions_codees_moyenne": 45.7999,
           "questions_codees_min": 7,
           "questions_codees_max": 61
         },
         "asselineau-francois": {
           "part_atteint_seuils": 0.979,
           "couverture_moyenne": 0.096961,
-          "questions_codees_moyenne": 15.0093,
+          "questions_codees_moyenne": 15.0094,
           "questions_codees_min": 2,
           "questions_codees_max": 20
         },
         "attal-gabriel": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.33291,
-          "questions_codees_moyenne": 51.6962,
+          "couverture_moyenne": 0.332906,
+          "questions_codees_moyenne": 51.6955,
           "questions_codees_min": 10,
           "questions_codees_max": 69
         },
         "batho-delphine": {
           "part_atteint_seuils": 0,
           "couverture_moyenne": 0.029017,
-          "questions_codees_moyenne": 4.5031,
+          "questions_codees_moyenne": 4.5032,
           "questions_codees_min": 0,
           "questions_codees_max": 6
         },
         "becht-olivier": {
           "part_atteint_seuils": 0,
-          "couverture_moyenne": 0.009598,
-          "questions_codees_moyenne": 1.4968,
+          "couverture_moyenne": 0.009597,
+          "questions_codees_moyenne": 1.4967,
           "questions_codees_min": 0,
           "questions_codees_max": 2
         },
@@ -852,8 +852,8 @@
         },
         "glucksmann-raphael": {
           "part_atteint_seuils": 0.9999,
-          "couverture_moyenne": 0.289575,
-          "questions_codees_moyenne": 44.9507,
+          "couverture_moyenne": 0.289571,
+          "questions_codees_moyenne": 44.9499,
           "questions_codees_min": 6,
           "questions_codees_max": 60
         },
@@ -866,71 +866,71 @@
         },
         "le-pen-marine": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.454364,
-          "questions_codees_moyenne": 70.5275,
+          "couverture_moyenne": 0.454366,
+          "questions_codees_moyenne": 70.5279,
           "questions_codees_min": 9,
           "questions_codees_max": 94
         },
         "lisnard-david": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.386317,
-          "questions_codees_moyenne": 59.9806,
+          "couverture_moyenne": 0.424761,
+          "questions_codees_moyenne": 65.9601,
           "questions_codees_min": 9,
-          "questions_codees_max": 80
+          "questions_codees_max": 88
         },
         "melenchon-jean-luc": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.468646,
-          "questions_codees_moyenne": 72.7283,
+          "couverture_moyenne": 0.468648,
+          "questions_codees_moyenne": 72.7286,
           "questions_codees_min": 16,
           "questions_codees_max": 97
         },
         "mikolajczak-antoine": {
-          "part_atteint_seuils": 0.3094,
-          "couverture_moyenne": 0.038715,
-          "questions_codees_moyenne": 6.0156,
+          "part_atteint_seuils": 0.3091,
+          "couverture_moyenne": 0.038713,
+          "questions_codees_moyenne": 6.0153,
           "questions_codees_min": 0,
           "questions_codees_max": 8
         },
         "philippe-edouard": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.227592,
-          "questions_codees_moyenne": 35.3019,
+          "couverture_moyenne": 0.22759,
+          "questions_codees_moyenne": 35.3016,
           "questions_codees_min": 9,
           "questions_codees_max": 47
         },
         "philippot-florian": {
           "part_atteint_seuils": 0.9678,
-          "couverture_moyenne": 0.101596,
-          "questions_codees_moyenne": 15.7556,
+          "couverture_moyenne": 0.101597,
+          "questions_codees_moyenne": 15.7559,
           "questions_codees_min": 1,
           "questions_codees_max": 21
         },
         "retailleau-bruno": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.4006,
-          "questions_codees_moyenne": 62.2334,
+          "couverture_moyenne": 0.400601,
+          "questions_codees_moyenne": 62.2337,
           "questions_codees_min": 9,
           "questions_codees_max": 83
         },
         "roussel-fabien": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.343461,
-          "questions_codees_moyenne": 53.2877,
+          "couverture_moyenne": 0.34346,
+          "questions_codees_moyenne": 53.2875,
           "questions_codees_min": 11,
           "questions_codees_max": 71
         },
         "ruffin-francois": {
           "part_atteint_seuils": 0.9997,
-          "couverture_moyenne": 0.203165,
-          "questions_codees_moyenne": 31.5177,
+          "couverture_moyenne": 0.203166,
+          "questions_codees_moyenne": 31.5178,
           "questions_codees_min": 5,
           "questions_codees_max": 42
         },
         "tondelier-marine": {
           "part_atteint_seuils": 1,
-          "couverture_moyenne": 0.680449,
-          "questions_codees_moyenne": 105.6565,
+          "couverture_moyenne": 0.680455,
+          "questions_codees_moyenne": 105.6577,
           "questions_codees_min": 18,
           "questions_codees_max": 139
         }
