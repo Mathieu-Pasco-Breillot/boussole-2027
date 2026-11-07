@@ -12,14 +12,14 @@ async function ouvrirFiche(page: Page, nom: string) {
 test('un candidat codé sur au moins 40 % des questions est « Évalué », avec sa part codée', async ({ page }) => {
   await ouvrirFiche(page, 'Jean-Luc Mélenchon');
   await expect(page.getByText('Statut :')).toContainText('Évalué');
-  await expect(page.getByTestId('couverture')).toContainText(/66,7\s%/); // 138 sur 207 après la passe programme et la revue humaine du 14 octobre 2026
+  await expect(page.getByTestId('couverture')).toContainText(/68,6\s%/); // 142 sur 207 après la vague du 7 novembre 2026 sur les programmes
   await expect(page.getByTestId('couverture')).toContainText(/40,0\s%/);
 });
 
 test('un candidat sous le seuil reste comparé, codage en cours, avec sa part codée', async ({ page }) => {
   await ouvrirFiche(page, 'Édouard Philippe');
   await expect(page.getByText('Statut :')).toContainText('Comparé dans les résultats, codage en cours');
-  await expect(page.getByTestId('couverture')).toContainText(/22,7\s%/);
+  await expect(page.getByTestId('couverture')).toContainText(/26,1\s%/); // 54 sur 207 après la vague du 7 novembre 2026
 });
 
 test('l’accueil n’affiche plus de mascotte', async ({ page }) => {
