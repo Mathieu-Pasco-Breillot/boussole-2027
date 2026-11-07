@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/compare/application-v1.4.0...application-v1.5.0) (2026-11-07)
+
+
+### Nouveautés
+
+* **donnees:** vague du 7 novembre 2026 sur les programmes publiés depuis le 4 octobre ([fb656df](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/commit/fb656dfd25185b9f20aeefd11ef772cfb95192d8))
+
 ## [1.4.0](https://github.com/Mathieu-Pasco-Breillot/boussole-2027/compare/application-v1.3.0...application-v1.4.0) (2026-10-14)
 
 
