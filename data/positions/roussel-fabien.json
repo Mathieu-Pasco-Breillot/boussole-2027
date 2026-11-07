@@ -1,12 +1,12 @@
 {
   "candidat_id": "roussel-fabien",
-  "_statut": "POC — codage vague 1, 11 thèmes. Retraites : arbitrages acceptés en bloc par Mathieu. Autres thèmes : désaccords arbitrés provisoirement par un 3e modèle, contrôle humain de 10 % à faire. À revoir avant publication. Vague 2 (4 octobre 2026) : recherche complémentaire sur les questions sans code publié, même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, contrôle humain de 10 % à faire). Vague 3 (4 octobre 2026) : nouvelle recherche sur les questions sans code publié, même protocole.",
+  "_statut": "POC — codage vague 1, 11 thèmes. Retraites : arbitrages acceptés en bloc par Mathieu. Autres thèmes : désaccords arbitrés provisoirement par un 3e modèle, contrôle humain de 10 % à faire. À revoir avant publication. Vague 2 (4 octobre 2026) : recherche complémentaire sur les questions sans code publié, même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, contrôle humain de 10 % à faire). Vague 3 (4 octobre 2026) : nouvelle recherche sur les questions sans code publié, même protocole. Vague 4 (7 novembre 2026, programmes publiés depuis le 4 octobre) : nouveau document de programme (Plan Jeunesse du 6 octobre 2026 (document introuvable en ligne)) : toutes les questions des thèmes qu'il couvre recherchées, les autres seulement sur les questions sans code ; 3 question(s) recodée(s) ou codée(s) à l'aveugle, dont 0 nouveau(x) code(s) ; même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, vérification indépendante de 30 % des codes, contrôle humain de 10 % à faire).",
   "grille_version": "1.3",
   "programme": {
     "officiel_disponible": false,
     "date_publication": null,
     "url": null,
-    "note": "Aucun programme officiel 2027 complet trouvé au 3 octobre 2026. Détail par thème dans programmes-par-theme.json (phase 4)."
+    "note": "Aucun programme officiel 2027 complet trouvé au 3 octobre 2026. Détail par thème dans programmes-par-theme.json (phase 4). Au 7 novembre 2026 : Plan Jeunesse du 6 octobre 2026 (document introuvable en ligne), détaillé par la presse ; pas encore de programme complet."
   },
   "positions": [
     {
@@ -1772,12 +1772,56 @@
     {
       "question_id": "EDU-001",
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": true,
+        "date": null,
+        "resultat": null
       },
-      "item_aveugle": "b180d344",
+      "item_aveugle": "ea6ca3dc",
       "extraits": [
+        {
+          "reformulation": "Selon LCP, le candidat se dit favorable à l'abrogation de Parcoursup, dans le but d'ouvrir les études à toutes et à tous.",
+          "citation_courte": "d'ouvrir les études à toutes et à tous",
+          "reformulation_anonymisee": "Selon le média, [CANDIDAT] se dit favorable à l'abrogation de Parcoursup, dans le but d'ouvrir les études à toutes et à tous.",
+          "citation_anonymisee": "d'ouvrir les études à toutes et à tous",
+          "source": {
+            "url": "https://lcp.fr/actualites/parcoursup-suppression-remplacement-reforme-ce-que-proposent-les-candidats-a-la",
+            "titre": "Parcoursup: suppression, remplacement, réforme... Ce que proposent les candidats à la présidentielle",
+            "date_publication": "2026-10-26",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Dans un entretien, le candidat range l'abrogation de Parcoursup parmi les propositions des lycéens et étudiants sans impact budgétaire, qui selon lui peuvent être annoncées par le gouvernement dès maintenant.",
+          "citation_courte": "l'abrogation de Parcoursup",
+          "reformulation_anonymisee": "Dans un entretien, [CANDIDAT] range l'abrogation de Parcoursup parmi les propositions des lycéens et étudiants sans impact budgétaire, qui selon lui peuvent être annoncées par le gouvernement dès maintenant.",
+          "citation_anonymisee": "l'abrogation de Parcoursup",
+          "source": {
+            "url": "https://www.lamarseillaise.fr/politique/entretien-fabien-roussel-nous-appelons-a-se-mobiliser-ou-c-est-possible-DJ20833819",
+            "titre": "[Entretien] Fabien Roussel : « Nous appelons à se mobiliser où c'est possible »",
+            "date_publication": "2026-10-23",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Selon TF1 Info, le candidat a rappelé sa volonté de supprimer Parcoursup et MonMaster, afin que le baccalauréat redevienne le premier diplôme de l'enseignement supérieur.",
+          "citation_courte": "le premier diplôme de l'enseignement supérieur",
+          "reformulation_anonymisee": "Selon le média, [CANDIDAT] a rappelé sa volonté de supprimer Parcoursup et MonMaster, afin que le baccalauréat redevienne le premier diplôme de l'enseignement supérieur.",
+          "citation_anonymisee": "le premier diplôme de l'enseignement supérieur",
+          "source": {
+            "url": "https://www.tf1info.fr/politique/elections/presidentielle/parcoursup-rythmes-scolaires-que-proposent-les-candidats-a-la-presidentielle-pour-les-lyceens-2470328.html",
+            "titre": "Parcoursup, rythmes scolaires... Que proposent les candidats à la présidentielle pour les lycéens",
+            "date_publication": "2026-10-16",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Interrogé sur la mixité sociale dans l'enseignement supérieur, le candidat répond qu'il faut supprimer Parcoursup ainsi que le numerus clausus (numerus apertus), et créer des places dans l'enseignement supérieur et la recherche. Engagement de programme présenté comme une mesure à mettre en œuvre s'il est élu.",
           "citation_courte": "Supprimer Parcoursup et le numerus clausus",
@@ -1812,16 +1856,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Engagement de programme à supprimer Parcoursup, confirmé par deux sources concordantes.",
-          "date": "2026-10-12",
+          "justification": "Abrogation de Parcoursup, position constante.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Engagement de supprimer Parcoursup, répété dans les deux sources.",
-          "date": "2026-10-12",
+          "justification": "abrogation de Parcoursup",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -1829,13 +1873,7 @@
       "code": 2,
       "nature": "nette",
       "statut": "accord",
-      "arbitrage": null,
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Interrogé par L'Etudiant, il répond « Supprimer Parcoursup et le numerus clausus » ; Le Parisien rapporte que son programme prévoit de « supprimer Parcoursup ». Engagement net (campagne 2022, date recevable)."
-      }
+      "arbitrage": null
     },
     {
       "question_id": "EDU-002",
@@ -1853,19 +1891,27 @@
     },
     {
       "question_id": "EDU-003",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Il retient explicitement des plafonds (24, ou 20 et 25) qui, comme moyennes, vont moins loin que 19 élèves en moyenne : R5 défendable, bien que l'indicateur (plafond vs moyenne) diffère."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "882c1831",
+      "item_aveugle": "b81c2139",
       "extraits": [
+        {
+          "reformulation": "Selon TF1 Info, le Plan Jeunesse du candidat prévoit de réduire les effectifs d'environ 21 élèves à 18-19 au primaire, d'environ 26 à 22-23 au collège et de 30,3 à 26-27 au lycée. Il s'agit de cibles par niveau, pas d'une moyenne unique de 19.",
+          "citation_courte": "d'environ 21 élèves à 18-19 au primaire",
+          "reformulation_anonymisee": "Selon le média, le plan du programme de [CANDIDAT] prévoit de réduire les effectifs d'environ 21 élèves à 18-19 au primaire, d'environ 26 à 22-23 au collège et de 30,3 à 26-27 au lycée. Il s'agit de cibles par niveau, pas d'une moyenne unique de 19.",
+          "citation_anonymisee": "d'environ 21 élèves à 18-19 au primaire",
+          "source": {
+            "url": "https://www.tf1info.fr/politique/elections/presidentielle/parcoursup-rythmes-scolaires-que-proposent-les-candidats-a-la-presidentielle-pour-les-lyceens-2470328.html",
+            "titre": "Parcoursup, rythmes scolaires... Que proposent les candidats à la présidentielle pour les lycéens",
+            "date_publication": "2026-10-16",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le candidat se donne pour ambition qu'en cinq ans il n'y ait pas plus de 24 élèves par classe, jusqu'au baccalauréat (plafond, et non moyenne de 19).",
           "citation_courte": "pas plus de 24 élèves par classe",
@@ -1900,30 +1946,24 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Veut réduire les effectifs avec un plafond de 24 élèves par classe, autre indicateur que la moyenne de 19.",
-          "date": "2026-10-03",
+          "justification": "Cibles par niveau (18-19 au primaire, plus au collège et lycée) : réduction dans le même sens mais version partielle de la moyenne de 19.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
-          "code": -1,
+          "code": 1,
           "nature": "nuancee",
-          "justification": "Il retient des plafonds (24 par classe, ou 20 en primaire et 25 dans le secondaire) qui vont moins loin qu'une moyenne de 19 : R5.",
-          "date": "2026-10-03",
+          "justification": "cibles par niveau (18-19 primaire) proches de l'énoncé mais pas une moyenne unique de 19",
+          "date": "2026-11-07",
           "aveugle": true
         },
-        "accord": false
+        "accord": true
       },
-      "code": -1,
+      "code": 1,
       "nature": "nuancee",
-      "statut": "arbitre",
-      "arbitrage": {
-        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-03",
-        "code_retenu": -1,
-        "nature_retenue": "nuancee",
-        "motif": "Il retient explicitement d'autres valeurs (plafond de 24, ou 20 et 25) moins ambitieuses qu'une moyenne de 19 : R5, -1 nuancee. (code retenu : celui du codeur B)"
-      }
+      "statut": "accord",
+      "arbitrage": null
     },
     {
       "question_id": "EDU-004",
@@ -2136,25 +2176,27 @@
     },
     {
       "question_id": "EDU-009",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "maintenu",
-        "motif": "Vérificateur : Le total de 180 000 recrutements retenu à l'arbitrage repose sur « 90 000 AESH » absents de la source ; celle-ci ne donne que 90 000 enseignants plus des psyEN non chiffrés, donc l'ampleur totale reste non spécifiée : R1 inapplicable, +1 imprecise (−1 par R5 n'est pas fondé car 90 000 ne vise que les enseignants). Second arbitre : La source dit seulement « je souhaite recruter 90.000 enseignants en plus dans les cinq prochaines années » et des psyEN « au moins un dans chaque établissement » sans chiffre ; aucune mention d'AESH, donc l'argument des 180 000 (R1) est infondé. Le candidat va dans le sens d'un recrutement massif dans l'Éducation nationale avec une mesure concrète mais partielle (90 000 enseignants, sous-ensemble non comparable au total de 160 000, donc R5 inapplicable) : +1 nuancee.",
-        "second_arbitrage": {
-          "par": "second arbitrage aveugle quant à l'origine des options, sur la page source (claude-fable-5-1), non validé par un humain (mode POC)",
-          "code_retenu": 1,
-          "nature_retenue": "nuancee",
-          "motif": "La source dit seulement « je souhaite recruter 90.000 enseignants en plus dans les cinq prochaines années » et des psyEN « au moins un dans chaque établissement » sans chiffre ; aucune mention d'AESH, donc l'argument des 180 000 (R1) est infondé. Le candidat va dans le sens d'un recrutement massif dans l'Éducation nationale avec une mesure concrète mais partielle (90 000 enseignants, sous-ensemble non comparable au total de 160 000, donc R5 inapplicable) : +1 nuancee."
-        }
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "1cf43212",
+      "item_aveugle": "04b5cba2",
       "extraits": [
+        {
+          "reformulation": "Selon L'Humanité, lors de la présentation de son Plan Jeunesse le 6 octobre 2026, le candidat veut consacrer 3,5 milliards d'euros à l'embauche de 90 000 enseignants, pour réduire les effectifs par classe, et à assurer le remplacement de chaque professeur sous 24 heures. Le chiffre avancé est de 90 000 enseignants ; aucun total de 160 000 personnes n'est mentionné.",
+          "citation_courte": "les 90 000 enseignants nécessaires à la réduction du nombre d'élèves par classe",
+          "reformulation_anonymisee": "Selon le média, lors de la présentation de son plan, [CANDIDAT] veut consacrer 3,5 milliards d'euros à l'embauche de 90 000 enseignants, pour réduire les effectifs par classe, et à assurer le remplacement de chaque professeur sous 24 heures. Le chiffre avancé est de 90 000 enseignants ; aucun total de 160 000 personnes n'est mentionné.",
+          "citation_anonymisee": "les 90 000 enseignants nécessaires à la réduction du nombre d'élèves par classe",
+          "source": {
+            "url": "https://www.humanite.fr/politique/defense/fabien-roussel-presente-son-plan-pour-que-permettre-a-chaque-jeune-de-se-cultiver-de-se-former-detre-libre",
+            "titre": "Fabien Roussel présente son plan pour permettre à chaque jeune « de se cultiver, de se former, d'être libre »",
+            "date_publication": "2026-10-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le candidat souhaite recruter 90 000 enseignants supplémentaires en cinq ans, avec une réduction des effectifs par classe, ainsi que des psychologues de l'Éducation nationale dans chaque établissement, sans chiffre global de recrutements.",
           "citation_courte": "recruter 90.000 enseignants en plus dans les cinq prochaines années",
@@ -2174,30 +2216,30 @@
         "codeur_1": {
           "modele": "claude-opus-5-5",
           "code": 1,
-          "nature": "imprecise",
-          "justification": "Il veut recruter massivement (90 000 enseignants, et il annonce aussi 90 000 AESH), mais l'ampleur totale des recrutements n'est pas clairement établie.",
-          "date": "2026-10-03",
+          "nature": "nuancee",
+          "justification": "90 000 enseignants recrutés, plus de la moitié des 160 000 de l'énoncé (R5).",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Propose 90 000 enseignants et 90 000 AESH, soit 180 000 recrutements, au-delà de 160 000 dans le même sens (R1).",
-          "date": "2026-10-03",
+          "justification": "90 000 enseignants, plus de la moitié de 160 000, sans total global",
+          "date": "2026-11-07",
           "aveugle": true
         },
-        "accord": false
+        "accord": true
       },
       "code": 1,
       "nature": "nuancee",
-      "statut": "arbitre",
-      "arbitrage": {
-        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-03",
-        "code_retenu": 1,
-        "nature_retenue": "nuancee",
-        "motif": "90 000 enseignants et 90 000 AESH, soit 180 000 recrutements explicites, au-delà des 160 000 (R1). (code retenu : celui du codeur B)"
+      "statut": "accord",
+      "arbitrage": null,
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "L'Humanité (6/10/2026) : 3,5 milliards pour « embaucher les 90 000 enseignants nécessaires à la réduction du nombre d'élèves par classe » ; 90 000 recrutements depuis 0 font plus de la moitié du chemin vers 160 000 : +1 nuancee (R5)."
       }
     },
     {
@@ -6338,5 +6380,6 @@
       "codage": null,
       "arbitrage": null
     }
-  ]
+  ],
+  "date_derniere_maj_codage": "2026-11-07"
 }

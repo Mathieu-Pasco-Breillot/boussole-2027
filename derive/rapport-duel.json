@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "d1076b6ecb631c88cfa3ef02b9bcd6bfa5c1abd5b35f54382dde761e4d732213",
+  "empreinte_donnees": "844d78ae7d68793e574293ea396991401ae8307c0389d79c059e8e8e9b4b8e8c",
   "proposition_min": 8,
   "questions_actives": 207,
   "candidats": [
@@ -133,13 +133,13 @@
     },
     {
       "candidat": "dupont-aignan-nicolas",
-      "propositions": 82,
-      "couverture_banque": 0.396135,
+      "propositions": 83,
+      "couverture_banque": 0.400966,
       "duel_disponible": true,
       "par_theme": {
         "defense": 9,
         "ecologie-energie": 6,
-        "economie-dette": 4,
+        "economie-dette": 5,
         "education": 4,
         "fiscalite": 3,
         "immigration": 14,
@@ -150,11 +150,11 @@
         "union-europeenne": 11
       },
       "par_sens": {
-        "plus": 32,
+        "plus": 33,
         "moins": 50
       },
       "positions_imprecises": 11,
-      "part_imprecise": 0.134146
+      "part_imprecise": 0.13253
     },
     {
       "candidat": "egger-clara",
@@ -215,13 +215,13 @@
     },
     {
       "candidat": "le-pen-marine",
-      "propositions": 94,
-      "couverture_banque": 0.454106,
+      "propositions": 98,
+      "couverture_banque": 0.47343,
       "duel_disponible": true,
       "par_theme": {
         "defense": 5,
-        "ecologie-energie": 10,
-        "economie-dette": 4,
+        "ecologie-energie": 11,
+        "economie-dette": 6,
         "education": 9,
         "fiscalite": 10,
         "immigration": 14,
@@ -229,64 +229,64 @@
         "retraites": 12,
         "sante": 4,
         "securite": 9,
-        "union-europeenne": 8
+        "union-europeenne": 9
       },
       "par_sens": {
-        "plus": 34,
-        "moins": 60
+        "plus": 35,
+        "moins": 63
       },
       "positions_imprecises": 13,
-      "part_imprecise": 0.138298
+      "part_imprecise": 0.132653
     },
     {
       "candidat": "lisnard-david",
-      "propositions": 88,
-      "couverture_banque": 0.425121,
+      "propositions": 91,
+      "couverture_banque": 0.439614,
       "duel_disponible": true,
       "par_theme": {
         "defense": 5,
         "ecologie-energie": 11,
         "economie-dette": 4,
-        "education": 9,
-        "fiscalite": 13,
+        "education": 10,
+        "fiscalite": 14,
         "immigration": 11,
         "institutions": 8,
-        "retraites": 6,
+        "retraites": 7,
         "sante": 7,
         "securite": 9,
         "union-europeenne": 5
       },
       "par_sens": {
-        "plus": 28,
-        "moins": 60
+        "plus": 29,
+        "moins": 62
       },
-      "positions_imprecises": 18,
-      "part_imprecise": 0.204545
+      "positions_imprecises": 19,
+      "part_imprecise": 0.208791
     },
     {
       "candidat": "melenchon-jean-luc",
-      "propositions": 138,
-      "couverture_banque": 0.666667,
+      "propositions": 142,
+      "couverture_banque": 0.68599,
       "duel_disponible": true,
       "par_theme": {
         "defense": 11,
-        "ecologie-energie": 18,
+        "ecologie-energie": 19,
         "economie-dette": 10,
         "education": 14,
         "fiscalite": 16,
         "immigration": 10,
         "institutions": 13,
-        "retraites": 12,
-        "sante": 11,
+        "retraites": 13,
+        "sante": 13,
         "securite": 13,
         "union-europeenne": 10
       },
       "par_sens": {
-        "plus": 90,
-        "moins": 48
+        "plus": 93,
+        "moins": 49
       },
-      "positions_imprecises": 21,
-      "part_imprecise": 0.152174
+      "positions_imprecises": 22,
+      "part_imprecise": 0.15493
     },
     {
       "candidat": "mikolajczak-antoine",
@@ -308,28 +308,28 @@
     },
     {
       "candidat": "philippe-edouard",
-      "propositions": 47,
-      "couverture_banque": 0.227053,
+      "propositions": 54,
+      "couverture_banque": 0.26087,
       "duel_disponible": true,
       "par_theme": {
-        "defense": 5,
-        "ecologie-energie": 3,
-        "economie-dette": 4,
-        "education": 4,
-        "fiscalite": 4,
+        "defense": 6,
+        "ecologie-energie": 5,
+        "economie-dette": 5,
+        "education": 5,
+        "fiscalite": 5,
         "immigration": 6,
         "institutions": 5,
         "retraites": 7,
         "sante": 3,
         "securite": 4,
-        "union-europeenne": 2
+        "union-europeenne": 3
       },
       "par_sens": {
-        "plus": 22,
-        "moins": 25
+        "plus": 25,
+        "moins": 29
       },
-      "positions_imprecises": 15,
-      "part_imprecise": 0.319149
+      "positions_imprecises": 18,
+      "part_imprecise": 0.333333
     },
     {
       "candidat": "philippot-florian",
@@ -354,28 +354,28 @@
     },
     {
       "candidat": "retailleau-bruno",
-      "propositions": 83,
-      "couverture_banque": 0.400966,
+      "propositions": 94,
+      "couverture_banque": 0.454106,
       "duel_disponible": true,
       "par_theme": {
-        "defense": 3,
+        "defense": 4,
         "ecologie-energie": 12,
-        "economie-dette": 6,
-        "education": 8,
+        "economie-dette": 9,
+        "education": 9,
         "fiscalite": 10,
-        "immigration": 11,
+        "immigration": 12,
         "institutions": 6,
-        "retraites": 9,
-        "sante": 6,
+        "retraites": 12,
+        "sante": 8,
         "securite": 8,
         "union-europeenne": 4
       },
       "par_sens": {
-        "plus": 31,
-        "moins": 52
+        "plus": 36,
+        "moins": 58
       },
-      "positions_imprecises": 16,
-      "part_imprecise": 0.192771
+      "positions_imprecises": 17,
+      "part_imprecise": 0.180851
     },
     {
       "candidat": "roussel-fabien",

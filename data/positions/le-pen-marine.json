@@ -1,33 +1,33 @@
 {
   "candidat_id": "le-pen-marine",
-  "_statut": "POC — codage vague 1, 11 thèmes. Retraites : arbitrages acceptés en bloc par Mathieu. Autres thèmes : désaccords arbitrés provisoirement par un 3e modèle, contrôle humain de 10 % à faire. À revoir avant publication. Vague 2 (4 octobre 2026) : recherche complémentaire sur les questions sans code publié, même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, contrôle humain de 10 % à faire). Vague 3 (4 octobre 2026) : nouvelle recherche sur les questions sans code publié, même protocole.",
+  "_statut": "POC — codage vague 1, 11 thèmes. Retraites : arbitrages acceptés en bloc par Mathieu. Autres thèmes : désaccords arbitrés provisoirement par un 3e modèle, contrôle humain de 10 % à faire. À revoir avant publication. Vague 2 (4 octobre 2026) : recherche complémentaire sur les questions sans code publié, même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, contrôle humain de 10 % à faire). Vague 3 (4 octobre 2026) : nouvelle recherche sur les questions sans code publié, même protocole. Vague 4 (7 novembre 2026, programmes publiés depuis le 4 octobre) : nouveau document de programme (contre-budget du 6 octobre 2026) : toutes les questions des thèmes qu'il couvre recherchées, les autres seulement sur les questions sans code ; 20 question(s) recodée(s) ou codée(s) à l'aveugle, dont 4 nouveau(x) code(s) ; même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, vérification indépendante de 30 % des codes, contrôle humain de 10 % à faire).",
   "grille_version": "1.3",
   "programme": {
     "officiel_disponible": false,
     "date_publication": null,
     "url": null,
-    "note": "Aucun programme officiel 2027 complet trouvé au 3 octobre 2026. Détail par thème dans programmes-par-theme.json (phase 4)."
+    "note": "Aucun programme officiel 2027 complet trouvé au 3 octobre 2026. Détail par thème dans programmes-par-theme.json (phase 4). Au 7 novembre 2026 : contre-budget du 6 octobre 2026, détaillé par la presse ; pas encore de programme complet."
   },
   "positions": [
     {
       "question_id": "RET-001",
-      "code": 2,
-      "nature": "nette",
-      "statut": "arbitre",
-      "item_aveugle": "391ade2f",
+      "code": 1,
+      "nature": "nuancee",
+      "statut": "accord",
+      "item_aveugle": "82f3074a",
       "extraits": [
         {
-          "reformulation": "Devant le Medef le 27 août 2026, Marine Le Pen a présenté un barème progressif : 40 ans de cotisation pour ceux qui ont commencé à travailler avant 20 ans, puis progressivement, jusqu'à une entrée dans l'emploi à 24 ans et demi, 42 ans de cotisation et un âge légal de 62 ans. Elle chiffre la réforme à 9 milliards d'euros, un déficit qu'elle dit assumer comme choix politique.",
-          "citation_courte": "on arrivera à 42 ans de cotisation et un âge légal de 62 ans",
-          "reformulation_anonymisee": "Devant une organisation patronale fin août 2026, [CANDIDAT] a présenté un barème progressif : 40 ans de cotisation pour ceux qui ont commencé à travailler avant 20 ans, puis progressivement, jusqu'à une entrée dans l'emploi à 24 ans et demi, 42 ans de cotisation et un âge légal de 62 ans. [CANDIDAT] chiffre la réforme à 9 milliards d'euros, un déficit dit assumé comme choix politique.",
-          "citation_anonymisee": "on arrivera à 42 ans de cotisation et un âge légal de 62 ans",
+          "reformulation": "Lors d'une conférence de presse à Bruxelles le 14 octobre 2026, la candidate a rappelé son intention de maintenir un âge légal entre 60 et 62 ans selon l'âge d'entrée sur le marché du travail, assorti d'une durée de cotisation de 40 à 42 annuités pour le taux plein, selon franceinfo/AFP. Le détail de la réforme est annoncée pour le 17 novembre.",
+          "citation_courte": "maintenir un âge légal entre 60 et 62 ans",
+          "reformulation_anonymisee": "Lors d'une conférence de presse, [CANDIDAT] a rappelé son intention de maintenir un âge légal entre 60 et 62 ans selon l'âge d'entrée sur le marché du travail, assorti d'une durée de cotisation de 40 à 42 annuités pour le taux plein, selon le média. Le détail de la réforme est annoncé pour plus tard.",
+          "citation_anonymisee": "maintenir un âge légal entre 60 et 62 ans",
           "source": {
-            "url": "https://www.bvoltaire.fr/devant-le-medef-marine-le-pen-defend-son-epineuse-reforme-des-retraites/",
-            "titre": "Devant le MEDEF, Marine Le Pen défend son épineuse réforme des retraites",
-            "date_publication": "2026-08-27",
+            "url": "https://www.franceinfo.fr/elections/presidentielle/marine-le-pen-presentera-de-maniere-extremement-precise-sa-reforme-des-retraites-le-17-novembre_8237821.html",
+            "titre": "Marine Le Pen présentera \"de manière extrêmement précise\" sa réforme des retraites le 17 novembre",
+            "date_publication": "2026-10-14",
             "type": "declaration_publique"
           },
-          "date_consultation": "2026-10-03",
+          "date_consultation": "2026-11-07",
           "citation_verifiee_mot_a_mot": true
         },
         {
@@ -43,45 +43,49 @@
           },
           "date_consultation": "2026-10-03",
           "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Devant le Medef le 27 août 2026, Marine Le Pen a présenté un barème progressif : 40 ans de cotisation pour ceux qui ont commencé à travailler avant 20 ans, puis progressivement, jusqu'à une entrée dans l'emploi à 24 ans et demi, 42 ans de cotisation et un âge légal de 62 ans. Elle chiffre la réforme à 9 milliards d'euros, un déficit qu'elle dit assumer comme choix politique.",
+          "citation_courte": "on arrivera à 42 ans de cotisation et un âge légal de 62 ans",
+          "reformulation_anonymisee": "Devant une organisation patronale fin août 2026, [CANDIDAT] a présenté un barème progressif : 40 ans de cotisation pour ceux qui ont commencé à travailler avant 20 ans, puis progressivement, jusqu'à une entrée dans l'emploi à 24 ans et demi, 42 ans de cotisation et un âge légal de 62 ans. [CANDIDAT] chiffre la réforme à 9 milliards d'euros, un déficit dit assumé comme choix politique.",
+          "citation_anonymisee": "on arrivera à 42 ans de cotisation et un âge légal de 62 ans",
+          "source": {
+            "url": "https://www.bvoltaire.fr/devant-le-medef-marine-le-pen-defend-son-epineuse-reforme-des-retraites/",
+            "titre": "Devant le MEDEF, Marine Le Pen défend son épineuse réforme des retraites",
+            "date_publication": "2026-08-27",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-03",
+          "citation_verifiee_mot_a_mot": true
         }
       ],
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": 2,
-          "nature": "nette",
-          "justification": "Veut ramener l'âge légal à 62 ans.",
-          "date": "2026-10-03",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "Âge légal entre 60 et 62 ans selon l'âge d'entrée : 62 au plus, plus bas pour certains (R1).",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Il retient 62 ans avec 42 annuités, avec 60 ans pour ceux qui ont commencé avant 20 ans, ce qui fait une exception à un âge unique.",
-          "date": "2026-10-03",
+          "justification": "60 à 62 ans selon l'âge d'entrée, jusqu'à 62 ans au plus",
+          "date": "2026-11-07",
           "aveugle": true
         },
-        "accord": false
+        "accord": true
       },
-      "arbitrage": {
-        "par": "Mathieu, sur proposition de l'assistant, acceptée en bloc le 2026-10-03 sans examen individuel (mode POC)",
-        "date": "2026-10-03",
-        "code_retenu": 2,
-        "nature_retenue": "nette",
-        "motif": "âge légal de 62 ans ; l'exception pour carrières longues ne change pas l'âge légal"
-      },
+      "arbitrage": null,
       "controle_humain": {
-        "tire_au_sort": false
-      },
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "La candidate dit « on arrivera à 42 ans de cotisation et un âge légal de 62 ans » ; le départ à 60 ans pour carrières longues est un dispositif dérogatoire qui ne change pas l'âge légal."
+        "tire_au_sort": true,
+        "date": null,
+        "resultat": null
       },
       "contestations": [],
-      "version": 1
+      "version": 2
     },
     {
       "question_id": "RET-002",
@@ -175,8 +179,22 @@
       "code": -2,
       "nature": "nette",
       "statut": "accord",
-      "item_aveugle": "74b26f51",
+      "item_aveugle": "813942ee",
       "extraits": [
+        {
+          "reformulation": "Lors de son meeting de lancement de campagne le 25 octobre 2026, la candidate a déclaré ne pas proposer de repousser indéfiniment l'âge de départ à 65, 67 voire 70 ans, mais de faire entrer plus tôt les jeunes sur le marché du travail. Selon l'article, son programme prévoit d'abroger le report à 64 ans et de maintenir un âge légal entre 60 et 62 ans.",
+          "citation_courte": "repousser indéfiniment l'âge de départ à 65, 67 voire 70 ans",
+          "reformulation_anonymisee": "Lors de son meeting de lancement de campagne, [CANDIDAT] a déclaré ne pas proposer de repousser indéfiniment l'âge de départ à 65, 67 voire 70 ans, mais de faire entrer plus tôt les jeunes sur le marché du travail. Selon l'article, son programme prévoit d'abroger le report à 64 ans et de maintenir un âge légal entre 60 et 62 ans.",
+          "citation_anonymisee": "repousser indéfiniment l'âge de départ à 65, 67 voire 70 ans",
+          "source": {
+            "url": "https://www.capital.fr/economie-politique/retraite-a-65-67-voire-70-ans-marine-le-pen-sy-refuse-et-prefere-faire-travailler-les-jeunes-plus-tot-1531259",
+            "titre": "Retraite à 65, 67 voire 70 ans, Marine Le Pen s'y refuse et préfère faire travailler les jeunes plus tôt",
+            "date_publication": "2026-10-25",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Devant le Medef le 27 août 2026, Marine Le Pen a présenté un barème progressif : 40 ans de cotisation pour ceux qui ont commencé à travailler avant 20 ans, puis progressivement, jusqu'à une entrée dans l'emploi à 24 ans et demi, 42 ans de cotisation et un âge légal de 62 ans. Elle chiffre la réforme à 9 milliards d'euros, un déficit qu'elle dit assumer comme choix politique.",
           "citation_courte": "on arrivera à 42 ans de cotisation et un âge légal de 62 ans",
@@ -197,16 +215,16 @@
           "modele": "claude-opus-5-5",
           "code": -2,
           "nature": "nette",
-          "justification": "Propose un âge légal de 62 ans, contraire de 65 ans.",
-          "date": "2026-10-03",
+          "justification": "Âge légal entre 60 et 62 ans, refus de repousser l'âge à 65 ans.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": -2,
           "nature": "nette",
-          "justification": "Il propose un âge légal de 62 ans, contre 65 ans.",
-          "date": "2026-10-03",
+          "justification": "refuse de repousser l'âge à 65 ans",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -215,22 +233,30 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Elle retient un âge légal de 62 ans, soit une baisse par rapport au droit en vigueur, direction opposée à un relèvement à 65 ans : -2 nette (R5)."
-      },
       "contestations": [],
-      "version": 1
+      "version": 2
     },
     {
       "question_id": "RET-005",
       "code": -2,
       "nature": "nette",
       "statut": "accord",
-      "item_aveugle": "148d7e45",
+      "item_aveugle": "c2a78073",
       "extraits": [
+        {
+          "reformulation": "Le 14 octobre 2026, la candidate a rappelé le maintien d'une durée de cotisation de 40 à 42 annuités pour bénéficier d'une pension à taux plein, selon franceinfo/AFP (paraphrase, hors citation directe).",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Le 14 octobre 2026, [CANDIDAT] a rappelé le maintien d'une durée de cotisation de 40 à 42 annuités pour bénéficier d'une pension à taux plein, selon le média (paraphrase, hors citation directe).",
+          "citation_anonymisee": null,
+          "source": {
+            "url": "https://www.franceinfo.fr/elections/presidentielle/marine-le-pen-presentera-de-maniere-extremement-precise-sa-reforme-des-retraites-le-17-novembre_8237821.html",
+            "titre": "Marine Le Pen présentera \"de manière extrêmement précise\" sa réforme des retraites le 17 novembre",
+            "date_publication": "2026-10-14",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": null
+        },
         {
           "reformulation": "Devant le Medef le 27 août 2026, Marine Le Pen a présenté un barème progressif : 40 ans de cotisation pour ceux qui ont commencé à travailler avant 20 ans, puis progressivement, jusqu'à une entrée dans l'emploi à 24 ans et demi, 42 ans de cotisation et un âge légal de 62 ans. Elle chiffre la réforme à 9 milliards d'euros, un déficit qu'elle dit assumer comme choix politique.",
           "citation_courte": "on arrivera à 42 ans de cotisation et un âge légal de 62 ans",
@@ -251,16 +277,16 @@
           "modele": "claude-opus-5-5",
           "code": -2,
           "nature": "nette",
-          "justification": "Propose 40 à 42 ans de cotisation, contraire de 45 ans.",
-          "date": "2026-10-03",
+          "justification": "Durée de cotisation de 40 à 42 annuités : direction opposée aux 45 ans.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": -2,
           "nature": "nette",
-          "justification": "Il propose 40 à 42 ans de cotisation, contre 45 ans.",
-          "date": "2026-10-03",
+          "justification": "vise 40 à 42 annuités, sens opposé à 45 ans",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -269,14 +295,14 @@
       "controle_humain": {
         "tire_au_sort": false
       },
+      "contestations": [],
+      "version": 2,
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-11-07",
         "verdict": "confirme",
-        "motif": "Devant le Medef, elle annonce 40 ans de cotisation pour les entrées précoces puis « on arrivera à 42 ans de cotisation et un âge légal de 62 ans » : valeur inférieure au droit en vigueur (43 ans), direction opposée à 45 ans."
-      },
-      "contestations": [],
-      "version": 1
+        "motif": "Franceinfo (14/10/2026) rapporte une durée « de 40 à 42 annuités pour pouvoir bénéficier d'une pension à taux plein », et devant le Medef elle dit « on arrivera à 42 ans de cotisation » au maximum ; c'est moins que le droit en vigueur (43 ans), donc la direction opposée aux 45 ans : −2 nette (R5)."
+      }
     },
     {
       "question_id": "RET-006",
@@ -352,9 +378,23 @@
       "question_id": "RET-007",
       "code": -1,
       "nature": "nuancee",
-      "statut": "arbitre",
-      "item_aveugle": "43c601de",
+      "statut": "accord",
+      "item_aveugle": "9e9fb93b",
       "extraits": [
+        {
+          "reformulation": "Le 6 octobre 2026, en présentant son programme budgétaire, la candidate a annoncé qu'elle présenterait une grande réforme de la capitalisation individuelle et collective et proposerait bientôt la création d'un pilier de capitalisation. La source ne précise ni le caractère obligatoire ou volontaire, ni le public visé.",
+          "citation_courte": "un véritable pilier de capitalisation",
+          "reformulation_anonymisee": "Le jour de la présentation de son programme budgétaire, [CANDIDAT] a annoncé qu'elle présenterait une grande réforme de la capitalisation individuelle et collective et proposerait bientôt la création d'un pilier de capitalisation. La source ne précise ni le caractère obligatoire ou volontaire, ni le public visé.",
+          "citation_anonymisee": "un véritable pilier de capitalisation",
+          "source": {
+            "url": "https://www.sudouest.fr/politique/marine-le-pen/presidentielle-2027-140-milliards-d-economie-d-ici-2032-pilier-de-capitalisation-pour-les-retraites-marine-le-pen-a-devoile-son-programme-economique-30939552.php",
+            "titre": "Présidentielle 2027 : « 140 milliards d'économie » d'ici 2032, « pilier de capitalisation » pour les retraites",
+            "date_publication": "2026-10-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Sur France 3 le 14 juin 2026, Marine Le Pen s'est dite favorable à une part de capitalisation volontaire : donner à ceux qui le veulent et le peuvent les moyens de se constituer une retraite complémentaire par capitalisation. Elle juge impossible de passer d'un système par répartition déficitaire à un système par capitalisation et insiste sur la protection de ceux qui n'ont pas les moyens de capitaliser.",
           "citation_courte": "donner les moyens à ceux qui le veulent et qui le peuvent",
@@ -387,40 +427,34 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": 1,
+          "code": -1,
           "nature": "nuancee",
-          "justification": "Favorable à une part de capitalisation, mais volontaire et non obligatoire.",
-          "date": "2026-10-03",
+          "justification": "Part de capitalisation volontaire, pas obligatoire : autre mesure plus douce.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": -1,
           "nature": "nuancee",
-          "justification": "Il est favorable à une capitalisation seulement volontaire et rejette le passage à la capitalisation, ce qui contredit le caractère obligatoire.",
-          "date": "2026-10-03",
+          "justification": "capitalisation volontaire et non obligatoire",
+          "date": "2026-11-07",
           "aveugle": true
         },
-        "accord": false
+        "accord": true
       },
-      "arbitrage": {
-        "par": "Mathieu, sur proposition de l'assistant, acceptée en bloc le 2026-10-03 sans examen individuel (mode POC)",
-        "date": "2026-10-03",
-        "code_retenu": -1,
-        "nature_retenue": "nuancee",
-        "motif": "l'énoncé porte sur l'obligation, explicitement refusée au profit du volontariat"
-      },
+      "arbitrage": null,
       "controle_humain": {
         "tire_au_sort": false
       },
+      "contestations": [],
+      "version": 2,
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Elle retient explicitement une capitalisation volontaire au lieu d'une part obligatoire : le paramètre de l'énoncé (l'obligation) est écarté au profit d'un autre mécanisme, -1 nuancee."
-      },
-      "contestations": [],
-      "version": 1
+        "date": "2026-11-07",
+        "verdict": "source_inaccessible",
+        "motif": "Sud Ouest (6 octobre 2026) confirme seulement l'annonce d'un « véritable pilier de capitalisation » sans dire s'il serait obligatoire ; les extraits du JDD et d'Europe 1 (capitalisation « volontaire », 14 juin 2026), qui portent le code, n'ont pu être consultés (pages bloquées, WebFetch non autorisé). Sur leurs reformulations, une capitalisation volontaire est une autre mesure plus douce : −1 nuancee justifié."
+      }
     },
     {
       "question_id": "RET-008",
@@ -481,8 +515,22 @@
       "code": -2,
       "nature": "nette",
       "statut": "accord",
-      "item_aveugle": "cd8ef00a",
+      "item_aveugle": "280f6dfc",
       "extraits": [
+        {
+          "reformulation": "Selon Capital, le contre-budget présenté le 6 octobre 2026 par la candidate et ses équipes prévoit 140 milliards d'euros d'économies d'ici 2032 sans désindexer les pensions de retraite, qui ne servent pas d'outil de redressement. L'article rapporte ce refus dans le cadre du document budgétaire.",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Selon le média, le projet budgétaire présenté par [CANDIDAT] et ses équipes prévoit 140 milliards d'euros d'économies d'ici 2032 sans désindexer les pensions de retraite, qui ne servent pas d'outil de redressement. L'article rapporte ce refus dans le cadre du document budgétaire.",
+          "citation_anonymisee": null,
+          "source": {
+            "url": "https://www.capital.fr/economie-politique/contre-budget-rn-140-milliards-deconomies-dici-2032-pour-un-choc-budgetaire-1530773",
+            "titre": "140 milliards d'économies d'ici 2032 sans désindexer les retraites, comment le RN compte financer son contre-budget",
+            "date_publication": "2026-10-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": null
+        },
         {
           "reformulation": "LCP rappelle qu'en décembre 2025, lors du débat budgétaire à l'Assemblée nationale, Marine Le Pen s'est opposée à toute désindexation des pensions de retraite, la qualifiant de violation de la loi.",
           "citation_courte": "la désindexation, c'est la violation de la loi !",
@@ -503,16 +551,16 @@
           "modele": "claude-opus-5-5",
           "code": -2,
           "nature": "nette",
-          "justification": "S'oppose à toute désindexation des pensions.",
-          "date": "2026-10-03",
+          "justification": "Refuse toute désindexation des pensions.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": -2,
           "nature": "nette",
-          "justification": "Il s'oppose à toute désindexation des pensions, qu'il juge contraire à la loi.",
-          "date": "2026-10-03",
+          "justification": "refuse toute désindexation des pensions",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -521,14 +569,14 @@
       "controle_humain": {
         "tire_au_sort": false
       },
+      "contestations": [],
+      "version": 2,
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-11-07",
         "verdict": "confirme",
-        "motif": "Elle qualifie la désindexation (dont le gel est une forme) de violation de la loi, rejet catégorique : −2 nette ; la reformulation « toute désindexation » généralise un peu une phrase isolée mais n'en change pas le sens."
-      },
-      "contestations": [],
-      "version": 1
+        "motif": "En décembre 2025, à l'Assemblée, elle a déclaré que « la désindexation, c'est la violation de la loi ! » (LCP), et le contre-budget RN qu'elle a présenté le 6/10/2026 prévoit 140 milliards d'économies « sans désindexer les pensions » ; un gel des pensions est une désindexation, rejetée sans réserve : −2 nette."
+      }
     },
     {
       "question_id": "RET-010",
@@ -651,8 +699,36 @@
       "code": 2,
       "nature": "nette",
       "statut": "accord",
-      "item_aveugle": "96c7b244",
+      "item_aveugle": "42160a73",
       "extraits": [
+        {
+          "reformulation": "Lors d'une conférence de presse à Bruxelles le 14 octobre 2026, la candidate a rappelé son intention de maintenir un âge légal entre 60 et 62 ans selon l'âge d'entrée sur le marché du travail. Un départ à 60 ans est donc prévu pour ceux entrés tôt, la candidate citant l'exemple d'un plâtrier ou d'un carreleur ayant commencé avant 20 ans. Le seuil de 20 ans ne figure pas dans la formule citée, mais dans ses propos rapportés.",
+          "citation_courte": "maintenir un âge légal entre 60 et 62 ans",
+          "reformulation_anonymisee": "Lors d'une conférence de presse, [CANDIDAT] a rappelé son intention de maintenir un âge légal entre 60 et 62 ans selon l'âge d'entrée sur le marché du travail. Un départ à 60 ans est donc prévu pour ceux entrés tôt, [CANDIDAT] citant l'exemple de métiers manuels ayant commencé avant 20 ans. Le seuil de 20 ans ne figure pas dans la formule citée, mais dans ses propos rapportés.",
+          "citation_anonymisee": "maintenir un âge légal entre 60 et 62 ans",
+          "source": {
+            "url": "https://www.franceinfo.fr/elections/presidentielle/marine-le-pen-presentera-de-maniere-extremement-precise-sa-reforme-des-retraites-le-17-novembre_8237821.html",
+            "titre": "Marine Le Pen présentera \"de manière extrêmement précise\" sa réforme des retraites le 17 novembre",
+            "date_publication": "2026-10-14",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Selon Public Sénat, Marine Le Pen veut ramener l'âge légal à 62 ans avec 42 annuités, et à 60 ans avec 40 ans de cotisation pour ceux qui ont eu un emploi effectif avant 20 ans ; elle a dit sur RTL le 13 mai 2026 que cette mesure « reste d'actualité ».",
+          "citation_courte": "reste d'actualité",
+          "reformulation_anonymisee": "Selon un média national, [CANDIDAT] veut ramener l'âge légal à 62 ans avec 42 annuités, et à 60 ans avec 40 ans de cotisation pour ceux qui ont eu un emploi effectif avant 20 ans ; [CANDIDAT] a dit à la radio en mai 2026 que cette mesure « reste d'actualité ».",
+          "citation_anonymisee": "reste d'actualité",
+          "source": {
+            "url": "https://www.publicsenat.fr/actualites/politique/reculer-ou-avancer-lage-legal-avec-ou-sans-capitalisation-ce-que-proposent-les-principaux-candidats-a-lelection-presidentielle-sur-les-retraites",
+            "titre": "Reculer ou avancer l’âge légal, avec ou sans capitalisation : ce que proposent les principaux candidats à l’élection présidentielle sur les retraites",
+            "date_publication": "2026-09-30",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-03",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Devant le Medef le 27 août 2026, Marine Le Pen a présenté un barème progressif : 40 ans de cotisation pour ceux qui ont commencé à travailler avant 20 ans, puis progressivement, jusqu'à une entrée dans l'emploi à 24 ans et demi, 42 ans de cotisation et un âge légal de 62 ans. Elle chiffre la réforme à 9 milliards d'euros, un déficit qu'elle dit assumer comme choix politique.",
           "citation_courte": "on arrivera à 42 ans de cotisation et un âge légal de 62 ans",
@@ -680,20 +756,6 @@
           },
           "date_consultation": "2026-10-03",
           "citation_verifiee_mot_a_mot": true
-        },
-        {
-          "reformulation": "Selon Public Sénat, Marine Le Pen veut ramener l'âge légal à 62 ans avec 42 annuités, et à 60 ans avec 40 ans de cotisation pour ceux qui ont eu un emploi effectif avant 20 ans ; elle a dit sur RTL le 13 mai 2026 que cette mesure « reste d'actualité ».",
-          "citation_courte": "reste d'actualité",
-          "reformulation_anonymisee": "Selon un média national, [CANDIDAT] veut ramener l'âge légal à 62 ans avec 42 annuités, et à 60 ans avec 40 ans de cotisation pour ceux qui ont eu un emploi effectif avant 20 ans ; [CANDIDAT] a dit à la radio en mai 2026 que cette mesure « reste d'actualité ».",
-          "citation_anonymisee": "reste d'actualité",
-          "source": {
-            "url": "https://www.publicsenat.fr/actualites/politique/reculer-ou-avancer-lage-legal-avec-ou-sans-capitalisation-ce-que-proposent-les-principaux-candidats-a-lelection-presidentielle-sur-les-retraites",
-            "titre": "Reculer ou avancer l’âge légal, avec ou sans capitalisation : ce que proposent les principaux candidats à l’élection présidentielle sur les retraites",
-            "date_publication": "2026-09-30",
-            "type": "declaration_publique"
-          },
-          "date_consultation": "2026-10-03",
-          "citation_verifiee_mot_a_mot": true
         }
       ],
       "codage": {
@@ -701,16 +763,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Départ à 60 ans avec 40 annuités pour ceux entrés dans l'emploi avant 20 ans, mesure toujours d'actualité.",
-          "date": "2026-10-03",
+          "justification": "Départ à 60 ans avec 40 annuités pour ceux entrés dans l'emploi avant 20 ans, position constante et récente.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Il propose 60 ans avec 40 annuités pour ceux qui ont eu un emploi avant 20 ans, mesure confirmée comme d'actualité.",
-          "date": "2026-10-03",
+          "justification": "départ à 60 ans pour les entrés avant 20 ans",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -719,14 +781,8 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Trois sources concordantes de 2026 : départ à 60 ans avec 40 annuités pour ceux ayant commencé avant 20 ans ; la condition de 40 annuités est cohérente avec un début avant 20 ans, +2 défendable."
-      },
       "contestations": [],
-      "version": 1
+      "version": 2
     },
     {
       "question_id": "RET-016",
@@ -891,12 +947,46 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": -1,
+      "nature": "nuancee",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Le 5 novembre 2026, la candidate refuse d'imposer de manière autoritaire aux entreprises une hausse de 10 % du Smic, jugeant la situation trop fragile et redoutant une vague de licenciements. Elle se dit favorable à une exonération de charges pour les entreprises qui augmenteraient volontairement les salaires de 10 %. Le chiffre de 1 600 euros net n'est pas évoqué.",
+          "citation_courte": "on va assister à une vague de licenciements",
+          "reformulation_anonymisee": "Le 5 novembre 2026, [CANDIDAT] refuse d'imposer de manière autoritaire aux entreprises une hausse de 10 % du Smic, jugeant la situation trop fragile et redoutant une vague de licenciements. [CANDIDAT] se dit favorable à une exonération de charges pour les entreprises qui augmenteraient volontairement les salaires de 10 %. Le chiffre de 1 600 euros net n'est pas évoqué.",
+          "citation_anonymisee": "on va assister à une vague de licenciements",
+          "source": {
+            "url": "https://www.bfmtv.com/economie/economie-social/on-entre-dans-l-urss-la-cgt-veut-augmenter-le-smic-de-10-mais-pour-marine-le-pen-cela-revient-a-changer-de-regime_AD-202611050565.html",
+            "titre": "BFM Business : « On entre dans l'URSS » : la CGT veut augmenter le Smic de 10 %, mais pour Marine Le Pen, cela revient à « changer de régime »",
+            "date_publication": "2026-11-05",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": -1,
+          "nature": "nuancee",
+          "justification": "Refuse une hausse imposée du SMIC et préfère des hausses volontaires exonérées : autre mesure plus douce.",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": -1,
+          "nature": "nuancee",
+          "justification": "refuse d'imposer la hausse, préfère l'incitation volontaire",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "arbitrage": null,
+      "item_aveugle": "b06e7cd5"
     },
     {
       "question_id": "ECO-002",
@@ -1174,19 +1264,27 @@
     },
     {
       "question_id": "ECO-013",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Elle veut une règle d'or constitutionnelle mais fixée sur un plafond de déficit (4,9 % puis 2,4 % du PIB), non sur l'équilibre : valeur explicite moins exigeante, R5. Note : le motif d'arbitrage indique « codeur B » alors que -1 est le code du codeur A."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "9ae1f203",
+      "item_aveugle": "070954f8",
       "extraits": [
+        {
+          "reformulation": "Lors de la présentation de son contre-budget le 6 octobre 2026, la candidate a rappelé sa proposition d'inscrire une règle d'or dans la Constitution par référendum, qui pourrait être organisé dans les douze mois suivant l'élection. Cette règle fixerait un plafond de déficit au niveau sous lequel la dette se stabilise.",
+          "citation_courte": "une règle d’or",
+          "reformulation_anonymisee": "Lors de la présentation d'un contre-budget en octobre 2026, [CANDIDAT] a rappelé sa proposition d'inscrire une règle d'or dans la Constitution par référendum, qui pourrait être organisé dans les douze mois suivant l'élection. Cette règle fixerait un plafond de déficit au niveau sous lequel la dette se stabilise.",
+          "citation_anonymisee": "une règle d’or",
+          "source": {
+            "url": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f",
+            "titre": "Public Sénat : 140 milliards d'euros d'économies d'ici 2032 : « l'effort radical » proposé par Marine Le Pen",
+            "date_publication": "2026-10-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Dans une tribune publiée le 1er octobre 2026, elle propose d'inscrire une « règle d'or budgétaire » dans la Constitution, qu'elle soumettrait aux Français par référendum si elle est élue. La règle imposerait un déficit systématiquement inférieur au seuil qui stabilise la dette, avec selon LCP des plafonds visés de 4,9 % du PIB en 2027, 4,4 % en 2028, 3,9 % en 2030, 3,4 % en 2031, 2,9 % en 2032 et 2,4 % en 2033, jusqu'à ce que la dette repasse durablement sous 60 % du PIB. Des exceptions (tensions géopolitiques, crise énergétique, risque de récession) exigeraient un vote des trois cinquièmes des parlementaires, et une exception ne pourrait être reconduite deux années de suite qu'après référendum.",
           "citation_courte": "Notre règle d'or imposera un déficit systématiquement inférieur au seuil stabilisant de la dette",
@@ -1221,29 +1319,35 @@
           "modele": "claude-opus-5-5",
           "code": -1,
           "nature": "nuancee",
-          "justification": "Veut une règle d'or constitutionnelle autorisant un déficit plafonné (4,9 % à 2,4 % du PIB), valeur moins exigeante que l'équilibre (R5).",
-          "date": "2026-10-03",
+          "justification": "Règle d'or plafonnant le déficit sous le seuil stabilisant la dette, pas d'équilibre strict : autre mesure plus douce.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Il veut une règle d'or constitutionnelle, mais sous forme de plafond de déficit avec exceptions votées aux trois cinquièmes, et non d'équilibre strict.",
-          "date": "2026-10-03",
+          "justification": "règle d'or constitutionnelle fixant un plafond de déficit et non un équilibre strict",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": false
       },
-      "code": -1,
+      "code": 1,
       "nature": "nuancee",
       "statut": "arbitre",
       "arbitrage": {
         "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-03",
-        "code_retenu": -1,
+        "date": "2026-11-07",
+        "code_retenu": 1,
         "nature_retenue": "nuancee",
-        "motif": "Règle d'or constitutionnelle, mais avec un déficit plafonné (4,9 % puis 2,4 %) et non l'équilibre : valeur explicite moins exigeante que l'énoncé (R5). (code retenu : celui du codeur B)"
+        "motif": "Règle d'or constitutionnelle avec plafond de déficit sous le seuil stabilisant la dette (4,9 % → 2,4 %) : même mesure (règle budgétaire dans la Constitution) avec une cible moins exigeante que l'équilibre, au moins à mi-chemin depuis le déficit actuel (R5), +1 nuancee."
+      },
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "La règle d'or est constitutionnelle, mais elle plafonne le déficit au seuil qui stabilise la dette (2,4 % en 2033, contre environ 5 % prévus pour 2027) au lieu d'imposer l'équilibre. Lue comme la même mesure avec un chiffre moins exigeant, environ à mi-chemin, elle donne +1 nuancee par R5. C'est défendable, même si une lecture « autre mesure » donnerait −1."
       }
     },
     {
@@ -1253,12 +1357,52 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": 1,
+      "nature": "imprecise",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Présentant son contre-budget le 6 octobre 2026, la candidate annonce que la rationalisation de l'État diminuera le nombre d'agents publics nécessaires : certains seront réaffectés, d'autres ne seront pas remplacés à leur départ en retraite. Aucune proportion (un sur trois) n'est donnée dans cet extrait.",
+          "citation_courte": "d'autres ne seront pas remplacés lors de leur départ en retraite",
+          "reformulation_anonymisee": "Présentant son contre-budget le 6 octobre 2026, [CANDIDAT] annonce que la rationalisation de l'État diminuera le nombre d'agents publics nécessaires : certains seront réaffectés, d'autres ne seront pas remplacés à leur départ en retraite. Aucune proportion (un sur trois) n'est donnée dans cet extrait.",
+          "citation_anonymisee": "d'autres ne seront pas remplacés lors de leur départ en retraite",
+          "source": {
+            "url": "https://acteurspublics.fr/articles/la-reforme-de-letat-et-des-collectivites-au-coeur-des-economies-programmees-par-le-rn/",
+            "titre": "Acteurs publics : La réforme de l'État et des collectivités au cœur des économies programmées par le RN",
+            "date_publication": "2026-10-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": 1,
+          "nature": "imprecise",
+          "justification": "Certains départs non remplacés, sans proportion indiquée.",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": 1,
+          "nature": "imprecise",
+          "justification": "non-remplacement de certains départs, proportion non donnée",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "arbitrage": null,
+      "item_aveugle": "1b34e2f0",
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "Acteurs publics (6 octobre 2026) cite Marine Le Pen : la rationalisation réduira le nombre d'agents, certains réaffectés, « d'autres ne seront pas remplacés lors de leur départ en retraite », sans proportion ni périmètre ; même mécanisme que l'énoncé, ampleur non spécifiée, +1 imprecise défendable."
+      }
     },
     {
       "question_id": "ECO-015",
@@ -1332,19 +1476,27 @@
     },
     {
       "question_id": "ECO-020",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Elle dit vouloir taper « dans les agences qui ne servent à rien ou qui font doublon ou qui devraient être à l'intérieur des ministères », sans aucune proportion : direction perceptible, ampleur non spécifiée."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "5d155206",
+      "item_aveugle": "a04a1b6e",
       "extraits": [
+        {
+          "reformulation": "Dans son contre-budget présenté le 6 octobre 2026, la candidate prévoit la fin de la quasi-totalité des agences et autres organismes de l'État, qu'elle qualifie de parasites, pour 3,4 milliards d'euros d'économies dès 2027 selon l'article. Le périmètre est donc plus large qu'un tiers ; les universités ne sont pas mentionnées.",
+          "citation_courte": "la fin de la quasi-totalité des agences et autres organismes parasites",
+          "reformulation_anonymisee": "Dans son contre-budget présenté le 6 octobre 2026, [CANDIDAT] prévoit la fin de la quasi-totalité des agences et autres organismes de l'État, qualifiés de parasites, pour 3,4 milliards d'euros d'économies dès 2027 selon l'article. Le périmètre est donc plus large qu'un tiers ; les universités ne sont pas mentionnées.",
+          "citation_anonymisee": "la fin de la quasi-totalité des agences et autres organismes parasites",
+          "source": {
+            "url": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f",
+            "titre": "Public Sénat : 140 milliards d'euros d'économies d'ici 2032 : « l'effort radical » proposé par Marine Le Pen",
+            "date_publication": "2026-10-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Invitée de LCI le 16 septembre 2026, elle affirme que son plan d'économies peut être réalisé en s'attaquant au « gras » des administrations, notamment les agences qui ne servent à rien, font doublon ou devraient être à l'intérieur des ministères plutôt qu'à l'extérieur. Elle ne précise pas la part des agences concernée ; le détail du plan est annoncé pour début octobre.",
           "citation_courte": "en tapant dans les agences qui ne servent à rien ou qui font doublon",
@@ -1364,23 +1516,23 @@
         "codeur_1": {
           "modele": "claude-opus-5-5",
           "code": 1,
-          "nature": "imprecise",
-          "justification": "Veut s'attaquer aux agences inutiles ou en doublon, sans indiquer quelle part serait concernée.",
-          "date": "2026-10-03",
+          "nature": "nuancee",
+          "justification": "Fin de la quasi-totalité des agences, au-delà d'un tiers (R1).",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
-          "nature": "imprecise",
-          "justification": "Il veut s'attaquer aux agences inutiles ou en doublon, sans proportion précise.",
-          "date": "2026-10-03",
+          "nature": "nuancee",
+          "justification": "fin de la quasi-totalité des agences, plus loin qu'un tiers (R1)",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
       },
       "code": 1,
-      "nature": "imprecise",
+      "nature": "nuancee",
       "statut": "accord",
       "arbitrage": null
     },
@@ -3665,19 +3817,27 @@
     },
     {
       "question_id": "IMM-014",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Réserver les APL aux Français va plus loin qu'une condition de deux ans dans le même sens, mais ne couvre que les aides au logement, sans les allocations familiales : +1 nuancee."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "6859eb86",
+      "item_aveugle": "7db1d7ab",
       "extraits": [
+        {
+          "reformulation": "Selon Challenges, qui décrit son contre-budget d'octobre 2026, le programme prévoit la suppression des allocations familiales aux foyers étrangers. L'article ne mentionne ni durée de résidence de deux ans ni les aides au logement pour cette mesure.",
+          "citation_courte": "la suppression des allocations familiales aux foyers étrangers",
+          "reformulation_anonymisee": "Selon la presse, qui décrit le contre-budget de [CANDIDAT], le programme prévoit la suppression des allocations familiales aux foyers étrangers. L'article ne mentionne ni durée de résidence de deux ans ni les aides au logement pour cette mesure.",
+          "citation_anonymisee": "la suppression des allocations familiales aux foyers étrangers",
+          "source": {
+            "url": "https://www.challenges.fr/politique/economiser-29-milliards-sur-limmigration-un-raisonnement-farfelu-les-fausses-economies-de-marine-le-pen_646591",
+            "titre": "Économiser 29 milliards sur l’immigration, un raisonnement « farfelu » : les fausses économies de Marine Le Pen",
+            "date_publication": "2026-10-27",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Dans son discours de rentrée du 13 septembre 2026 (dépêche AFP), elle a dit vouloir « réserver » aux Français les aides personnelles au logement (APL), en plus de leur donner la priorité d'accès au logement social. Le passage ne mentionne pas les allocations familiales ni une condition de durée de résidence.",
           "citation_courte": null,
@@ -3698,16 +3858,16 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Réserver les APL aux seuls Français va plus loin que la condition de deux ans de résidence, dans le même sens (R1), sans mention des allocations familiales.",
-          "date": "2026-10-03",
+          "justification": "Veut supprimer les allocations familiales aux étrangers et réserver les APL aux Français : va plus loin que la condition de deux ans (R1).",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Veut réserver les APL aux Français, ce qui va plus loin que la condition de deux ans dans le même sens (R1), mais sans mention des allocations familiales.",
-          "date": "2026-10-03",
+          "justification": "supprime les allocations familiales aux étrangers et réserve les APL aux Français, plus loin que 2 ans de résidence (R1)",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -3715,7 +3875,13 @@
       "code": 1,
       "nature": "nuancee",
       "statut": "accord",
-      "arbitrage": null
+      "arbitrage": null,
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "Challenges (27 octobre 2026) attribue à la candidate « la suppression des allocations familiales aux foyers étrangers » et l'AFP (13 septembre 2026) rapporte qu'elle veut « réserver » les APL aux Français : exclusion totale plutôt qu'une durée de résidence, donc plus loin sur l'échelle de la condition (R1). R6 non retenue : l'énoncé ouvre les aides après deux ans, ce que la mesure du candidat ne fait pas, elle ne le contient donc pas entièrement."
+      }
     },
     {
       "question_id": "IMM-015",
@@ -3985,14 +4151,8 @@
     },
     {
       "question_id": "IMM-021",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Réserver les APL (et potentiellement les prestations non assurancielles) aux nationaux va plus loin dans le même sens qu'une condition de cinq ans, sur un périmètre partiel des aides : +1 nuancee conforme à R1."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
@@ -4000,6 +4160,34 @@
       "nature": "nuancee",
       "statut": "arbitre",
       "extraits": [
+        {
+          "reformulation": "Selon Challenges, le programme (contre-budget d'octobre 2026) réserve les prestations de solidarité aux seuls étrangers ayant travaillé cinq ans à temps plein. L'article ne précise pas la condition de résidence.",
+          "citation_courte": "aux seuls étrangers ayant travaillé cinq ans à temps plein",
+          "reformulation_anonymisee": "Selon la presse, le programme de [CANDIDAT] réserve les prestations de solidarité aux seuls étrangers ayant travaillé cinq ans à temps plein. L'article ne précise pas la condition de résidence.",
+          "citation_anonymisee": "aux seuls étrangers ayant travaillé cinq ans à temps plein",
+          "source": {
+            "url": "https://www.challenges.fr/politique/economiser-29-milliards-sur-limmigration-un-raisonnement-farfelu-les-fausses-economies-de-marine-le-pen_646591",
+            "titre": "Économiser 29 milliards sur l’immigration, un raisonnement « farfelu » : les fausses économies de Marine Le Pen",
+            "date_publication": "2026-10-27",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Selon franceinfo, le contre-budget présenté le 6 octobre 2026 prévoit de réserver notamment les prestations de solidarité aux étrangers ayant travaillé cinq ans sur le territoire, dans le cadre de la « priorité nationale ».",
+          "citation_courte": "les prestations de solidarité aux étrangers ayant travaillé cinq ans sur le territoire",
+          "reformulation_anonymisee": "Selon la presse, le contre-budget présenté par [CANDIDAT] prévoit de réserver notamment les prestations de solidarité aux étrangers ayant travaillé cinq ans sur le territoire, dans le cadre de la [SLOGAN].",
+          "citation_anonymisee": "les prestations de solidarité aux étrangers ayant travaillé cinq ans sur le territoire",
+          "source": {
+            "url": "https://www.franceinfo.fr/politique/front-national/ce-n-est-pas-du-tout-credible-le-budget-de-marine-le-pen-et-ses-140-milliards-d-economies-sous-le-feu-des-critiques_8227204.html",
+            "titre": "\"Ce n'est pas du tout crédible\" : le budget de Marine Le Pen et ses 140 milliards d'économies sous le feu des critiques",
+            "date_publication": "2026-10-08",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Lors d'un discours de campagne, la candidate dit qu'il faut donner la priorité d'accès aux logements sociaux aux Français et leur réserver le bénéfice des APL. Elle ne mentionne pas de condition de durée de résidence ou de travail.",
           "citation_courte": "nous devons leur réserver le bénéfice des APL",
@@ -4032,30 +4220,30 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": 1,
-          "nature": "nuancee",
-          "justification": "Veut réserver certaines aides aux Français : va plus loin que la condition de cinq ans (R1).",
-          "date": "2026-10-04",
+          "code": 2,
+          "nature": "nette",
+          "justification": "Prestations de solidarité réservées aux étrangers ayant travaillé cinq ans sur le territoire.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
-          "nature": "imprecise",
-          "justification": "Aides réservées aux Français, sans durée précise.",
-          "date": "2026-10-04",
+          "nature": "nuancee",
+          "justification": "prestations réservées aux étrangers ayant travaillé cinq ans à temps plein",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": false
       },
       "arbitrage": {
         "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-11-07",
         "code_retenu": 1,
         "nature_retenue": "nuancee",
-        "motif": "Réserver APL et prestations non assurancielles aux nationaux va plus loin dans le même sens qu'une condition de cinq ans (R1), mesure identifiable mais périmètre partiel. (code retenu : celui du codeur A)"
+        "motif": "Prestations de solidarité réservées aux étrangers ayant travaillé cinq ans à temps plein : même sens que l'énoncé mais critère plus strict (temps plein) et périmètre non identique (prestations de solidarité, condition de résidence non précisée) ; hésitation entre +2 et +1, on retient +1 nuancee."
       },
-      "item_aveugle": "42d265a4"
+      "item_aveugle": "457b773d"
     },
     {
       "question_id": "DEF-001",
@@ -4876,12 +5064,40 @@
     {
       "question_id": "EUR-011",
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "231baba3",
+      "item_aveugle": "86e4f4a3",
       "extraits": [
+        {
+          "reformulation": "Selon Le Parisien, qui rapporte son entretien au Financial Times, elle veut réduire la contribution française au budget de l'UE de 11 milliards d'euros dès la première année, puis de dizaines de milliards les années suivantes. Elle reconnaît que cela passera par un débat difficile, voire une épreuve de force avec les autres États membres, et se dit convaincue d'y parvenir. L'article ne donne pas le chiffre de 23,1 milliards d'euros par an.",
+          "citation_courte": "débat difficile, voire une épreuve de force",
+          "reformulation_anonymisee": "Selon la presse, qui rapporte un entretien accordé à un journal étranger, [CANDIDAT] veut réduire la contribution française au budget de l'UE de 11 milliards d'euros dès la première année, puis de dizaines de milliards les années suivantes. [CANDIDAT] reconnaît que cela passera par un débat difficile, voire une épreuve de force avec les autres États membres, et se dit convaincu(e) d'y parvenir. La source ne donne pas le chiffre de 23,1 milliards d'euros par an.",
+          "citation_anonymisee": "débat difficile, voire une épreuve de force",
+          "source": {
+            "url": "https://www.leparisien.fr/politique/une-epreuve-de-force-face-a-la-dette-francaise-marine-le-pen-veut-retirer-11-milliards-deuros-de-contributions-a-lue-14-10-2026-SMA5XPBF5FCZ3JDCT7LB75QA5E.php",
+            "titre": "« Une épreuve de force » : face à la dette française, Marine Le Pen veut retirer 11 milliards d'euros de contributions à l'UE",
+            "date_publication": "2026-10-14",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Lors de son déplacement à Bruxelles le 14 octobre 2026, elle exige, selon Le Figaro, un plafonnement strict de la contribution française nette au budget de l'UE à 5 milliards d'euros par an. Seul le chapeau de l'article est accessible (abonnés) ; le chiffre de 23,1 milliards d'euros n'y figure pas.",
+          "citation_courte": "plafonnement strict",
+          "reformulation_anonymisee": "Lors d'un déplacement dans la capitale européenne, [CANDIDAT] exige, selon la presse, un plafonnement strict de la contribution française nette au budget de l'UE à 5 milliards d'euros par an. Seul le chapeau de l'article est accessible ; le chiffre de 23,1 milliards d'euros n'y figure pas.",
+          "citation_anonymisee": "plafonnement strict",
+          "source": {
+            "url": "https://www.lefigaro.fr/international/a-bruxelles-marine-le-pen-denonce-le-scandale-democratique-du-budget-europeen-20261014",
+            "titre": "À Bruxelles, Marine Le Pen dénonce le «scandale démocratique» du budget européen",
+            "date_publication": "2026-10-14",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Invitée de LCI le 16 septembre 2026, à l'appui de son plan de 125 milliards d'euros d'économies, elle relève que la France verse 26 milliards d'euros à l'UE dont 10 milliards de contributions nettes. Selon Capital, elle avait déjà cité la contribution au budget de l'UE parmi les pistes d'économies lors du débat du Medef fin août. Aucun montant cible de contribution (23,1 milliards ou autre) n'est donné dans les propos rapportés.",
           "citation_courte": "On verse 26 milliards d'euros à l'UE dont 10 milliards de contributions nettes",
@@ -4900,32 +5116,26 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": null,
-          "nature": "non_connu",
-          "justification": "Le candidat cite la contribution à l'UE comme piste d'économies mais ne donne aucun montant cible : position générale qui ne reprend pas le seuil de l'énoncé (R4).",
-          "date": "2026-10-03",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "Veut réduire la contribution de 11 Md€ dès la première année puis davantage, au-delà de l'énoncé (R1).",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
-          "nature": "imprecise",
-          "justification": "Cite la contribution de 26 milliards à l'UE à l'appui d'un plan d'économies, ce qui indique une volonté de la réduire, sans montant cible.",
-          "date": "2026-10-03",
+          "nature": "nuancee",
+          "justification": "baisse de 11 Md€ dès la première année, plus loin que les 5,7 Md€ (R1)",
+          "date": "2026-11-07",
           "aveugle": true
         },
-        "accord": false
+        "accord": true
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "arbitre",
-      "arbitrage": {
-        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-03",
-        "code_retenu": null,
-        "nature_retenue": "non_connu",
-        "motif": "La contribution est citée comme piste d'économies sans aucun montant cible : position générale face à un seuil précis (R4). (code retenu : celui du codeur A)"
-      }
+      "code": 1,
+      "nature": "nuancee",
+      "statut": "accord",
+      "arbitrage": null
     },
     {
       "question_id": "EUR-012",
@@ -5065,19 +5275,27 @@
     },
     {
       "question_id": "FIS-001",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Elle privilégie la transformation de l'IFI « pour un impôt sur la fortune financière, sans la résidence principale [...] sans les biens professionnels, et avec 75% des parts [...] exemptés » : impôt sur la fortune partiel, distinct d'un rétablissement de l'ISF ; +1 nuancee défendable."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "e9723572",
+      "item_aveugle": "cc2719c7",
       "extraits": [
+        {
+          "reformulation": "Selon Capital, qui rapporte le programme de la candidate, l'impôt sur la fortune immobilière serait remplacé par un impôt sur la fortune financière (IFF) : la résidence principale et les actifs nécessaires à l'activité professionnelle seraient exclus, et les parts de TPE, PME et ETI bénéficieraient d'une exonération de 75 %. Invitée de CNews le 15 octobre 2026, la candidate le défend en disant qu'il est juste que tout le monde fasse un effort. L'article ne donne pas de seuil ni de taux.",
+          "citation_courte": "tout le monde fasse un effort",
+          "reformulation_anonymisee": "Selon le média, qui rapporte le programme de [CANDIDAT], l'impôt sur la fortune immobilière serait remplacé par un impôt sur la fortune financière : la résidence principale et les actifs nécessaires à l'activité professionnelle seraient exclus, et les parts de TPE, PME et ETI bénéficieraient d'une exonération de 75 %. [CANDIDAT] le défend dans un entretien télévisé en disant qu'il est juste que tout le monde fasse un effort. L'article ne donne pas de seuil ni de taux.",
+          "citation_anonymisee": "tout le monde fasse un effort",
+          "source": {
+            "url": "https://www.capital.fr/economie-politique/tout-le-monde-doit-faire-un-effort-marine-le-pen-defend-son-impot-sur-la-fortune-financiere-1531033",
+            "titre": "« Tout le monde doit faire un effort », Marine Le Pen défend son impôt sur la fortune financière (Capital)",
+            "date_publication": "2026-10-16",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Invitée de LCI le 25 septembre 2025, elle dit privilégier la transformation de l'impôt sur la fortune immobilière, qu'elle juge absurde, en un impôt sur la fortune financière : sans la résidence principale ou unique, sans les biens professionnels, et avec 75 % des parts détenues dans les TPE et ETI exemptées. Elle le présente comme un impôt admissible, non toxique pour l'économie, qui répond à une demande de justice.",
           "citation_courte": "un impôt sur la fortune financière, sans la résidence principale",
@@ -5096,26 +5314,32 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": 1,
+          "code": -1,
           "nature": "nuancee",
-          "justification": "Le candidat veut transformer l'IFI en impôt sur la fortune financière, avec de larges exemptions : version partielle d'un impôt sur la fortune, et non le rétablissement de l'ISF.",
-          "date": "2026-10-03",
+          "justification": "Préfère un impôt sur la fortune financière avec exclusions plutôt qu'un rétablissement de l'ISF : autre mesure.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Préfère transformer l'IFI en impôt sur la fortune financière avec exclusions, version partielle d'un impôt sur la fortune plutôt que le rétablissement de l'ISF.",
-          "date": "2026-10-03",
+          "justification": "impôt sur la fortune financière avec exonérations, pas un rétablissement de l'ISF à l'identique",
+          "date": "2026-11-07",
           "aveugle": true
         },
-        "accord": true
+        "accord": false
       },
-      "code": 1,
+      "code": -1,
       "nature": "nuancee",
-      "statut": "accord",
-      "arbitrage": null
+      "statut": "arbitre",
+      "arbitrage": {
+        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
+        "date": "2026-11-07",
+        "code_retenu": -1,
+        "nature_retenue": "nuancee",
+        "motif": "Transformer l'IFI en impôt sur la fortune financière (résidence principale et biens professionnels exclus, 75 % des parts de TPE-ETI exonérées) est une autre mesure, plus douce, et non le rétablissement de l'ISF : −1 nuancee."
+      }
     },
     {
       "question_id": "FIS-002",
@@ -5339,32 +5563,26 @@
     },
     {
       "question_id": "FIS-011",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Elle propose la suppression de la CVAE mais aucune source ne dit quand ; le « sans attendre 2030 » n'est pas repris : direction perceptible, calendrier non spécifié, +1 imprecise."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "589a6d43",
+      "item_aveugle": "ca52a36c",
       "extraits": [
         {
-          "reformulation": "Rapportant le débat des candidats organisé par le Medef le 27 août 2026, un magazine économique indique qu'elle a proposé la suppression de taxes comme la CVAE ou la C3S, parmi des mesures qualifiées de libérales. L'article ne précise ni calendrier ni date d'application.",
-          "citation_courte": "la suppression de taxes comme la CVAE ou la C3S",
-          "reformulation_anonymisee": "Rapportant un débat économique entre candidats, un magazine indique que [CANDIDAT] a proposé la suppression de taxes comme la CVAE ou la C3S, parmi des mesures qualifiées de libérales. L'article ne précise ni calendrier ni date d'application.",
-          "citation_anonymisee": "la suppression de taxes comme la CVAE ou la C3S",
+          "reformulation": "Selon Capital, qui détaille le contre-budget présenté le 6 octobre 2026, le programme budgétaire prévoit la suppression de la CFE, de la CVAE et de la C3S. L'article ne donne pas de calendrier de suppression de la CVAE.",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Selon le média, qui détaille le contre-budget présenté par [CANDIDAT] le 6 octobre 2026, le programme budgétaire prévoit la suppression de la CFE, de la CVAE et de la C3S. L'article ne donne pas de calendrier de suppression de la CVAE.",
+          "citation_anonymisee": null,
           "source": {
-            "url": "https://www.decideurs-magazine.com/politique-societe/65078-ref-2026-les-gagnants-et-les-perdants-du-debat-presidentiel-sont.html",
-            "titre": "REF 2026 : les gagnants et les perdants du débat présidentiel sont... (Décideurs Magazine)",
-            "date_publication": "2026-08-28",
+            "url": "https://www.capital.fr/economie-politique/contre-budget-rn-140-milliards-deconomies-dici-2032-pour-un-choc-budgetaire-1530773",
+            "titre": "Contre-budget RN : 140 milliards d'économies d'ici 2032 pour un « choc » budgétaire (Capital)",
+            "date_publication": "2026-10-06",
             "type": "declaration_publique"
           },
-          "date_consultation": "2026-10-03",
-          "citation_verifiee_mot_a_mot": true
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": null
         },
         {
           "reformulation": "Dans la synthèse du débat des candidats du 27 août 2026 (reprise de LCI), il est indiqué que, face à la hausse du coût de l'énergie, elle souhaite supprimer plusieurs impôts de production, dont la CVAE et la CFE. Aucun calendrier n'est mentionné.",
@@ -5379,31 +5597,51 @@
           },
           "date_consultation": "2026-10-03",
           "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Rapportant le débat des candidats organisé par le Medef le 27 août 2026, un magazine économique indique qu'elle a proposé la suppression de taxes comme la CVAE ou la C3S, parmi des mesures qualifiées de libérales. L'article ne précise ni calendrier ni date d'application.",
+          "citation_courte": "la suppression de taxes comme la CVAE ou la C3S",
+          "reformulation_anonymisee": "Rapportant un débat économique entre candidats, un magazine indique que [CANDIDAT] a proposé la suppression de taxes comme la CVAE ou la C3S, parmi des mesures qualifiées de libérales. L'article ne précise ni calendrier ni date d'application.",
+          "citation_anonymisee": "la suppression de taxes comme la CVAE ou la C3S",
+          "source": {
+            "url": "https://www.decideurs-magazine.com/politique-societe/65078-ref-2026-les-gagnants-et-les-perdants-du-debat-presidentiel-sont.html",
+            "titre": "REF 2026 : les gagnants et les perdants du débat présidentiel sont... (Décideurs Magazine)",
+            "date_publication": "2026-08-28",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-03",
+          "citation_verifiee_mot_a_mot": true
         }
       ],
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
           "code": 1,
-          "nature": "imprecise",
-          "justification": "Il veut supprimer la CVAE sans donner de calendrier, donc sans dire si ce serait avant 2030.",
-          "date": "2026-10-03",
+          "nature": "nuancee",
+          "justification": "Suppression de la CVAE sans calendrier précisé par rapport à 2030.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "imprecise",
-          "justification": "Veut supprimer la CVAE mais aucun calendrier n'est donné, donc rien sur le « sans attendre 2030 ».",
-          "date": "2026-10-03",
+          "justification": "suppression de la CVAE sans calendrier",
+          "date": "2026-11-07",
           "aveugle": true
         },
-        "accord": true
+        "accord": false
       },
       "code": 1,
       "nature": "imprecise",
-      "statut": "accord",
-      "arbitrage": null
+      "statut": "arbitre",
+      "arbitrage": {
+        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
+        "date": "2026-11-07",
+        "code_retenu": 1,
+        "nature_retenue": "imprecise",
+        "motif": "Suppression de la CVAE annoncée, mais aucune des trois sources ne donne de calendrier alors que l'énoncé porte précisément sur une suppression avant 2030 : direction perceptible, modalité non spécifiée, +1 imprecise."
+      }
     },
     {
       "question_id": "FIS-013",
@@ -5549,19 +5787,41 @@
     },
     {
       "question_id": "FIS-017",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Engagement explicite d'exonérer d'IR les moins de 30 ans : +2 nette. La source date de 2022 et la mesure est limitée à cinq ans."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "3f0e9e4c",
+      "item_aveugle": "5127ad34",
       "extraits": [
+        {
+          "reformulation": "Dans l'émission Objectif Elysée 2027 (CNews, 15 octobre 2026), la candidate défend l'exonération d'impôt sur le revenu des moins de 30 ans pour qu'ils restent en France et créent de la richesse dans le pays. Capital rapporte la proposition sans en détailler le plafond.",
+          "citation_courte": "Nous voulons qu’ils restent en France",
+          "reformulation_anonymisee": "Dans un entretien télévisé, [CANDIDAT] défend l'exonération d'impôt sur le revenu des moins de 30 ans pour qu'ils restent en France et créent de la richesse dans le pays. Le média rapporte la proposition sans en détailler le plafond.",
+          "citation_anonymisee": "Nous voulons qu’ils restent en France",
+          "source": {
+            "url": "https://www.capital.fr/economie-politique/marine-le-pen-veut-exonerer-d-impot-sur-le-revenu-les-salaries-de-moins-de-30-ans-1531055",
+            "titre": "Marine Le Pen veut exonérer d'impôt sur le revenu les salariés de moins de 30 ans (Capital)",
+            "date_publication": "2026-10-16",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Présentant son contre-budget le 6 octobre 2026, la candidate propose, selon LCP, d'exonérer d'impôt sur le revenu les moins de 30 ans, jusqu'à quatre fois le Smic, pour un coût annoncé de 2 milliards d'euros par an. Reprise de sa proposition de 2022.",
+          "citation_courte": "exonérer les jeunes de moins de 30 ans d’impôt sur le revenu",
+          "reformulation_anonymisee": "Présentant son contre-budget, [CANDIDAT] propose, selon le média, d'exonérer d'impôt sur le revenu les moins de 30 ans, jusqu'à quatre fois le Smic, pour un coût annoncé de 2 milliards d'euros par an. Reprise d'une proposition antérieure.",
+          "citation_anonymisee": "exonérer les jeunes de moins de 30 ans d’impôt sur le revenu",
+          "source": {
+            "url": "https://lcp.fr/actualites/permis-de-conduire-gratuit-exoneration-d-impot-jusqu-a-30-ans-comment-le-rn-veut",
+            "titre": "Permis de conduire gratuit, exonération d'impôt jusqu'à 30 ans... Comment le RN veut convaincre les jeunes (LCP)",
+            "date_publication": "2026-10-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Selon MoneyVox (13 avril 2022), la candidate veut exonérer d'impôt sur le revenu, sans condition de revenus, tous les Français de moins de 30 ans, et cela pendant cinq ans, pour qu'ils restent en France. L'article doute que la mesure soit constitutionnelle.",
           "citation_courte": "veut exonérer d'impôt sur le revenu les jeunes de moins de 30 ans",
@@ -5580,24 +5840,24 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": 2,
-          "nature": "nette",
-          "justification": "Engagement de campagne d'exonérer d'impôt sur le revenu les moins de 30 ans.",
-          "date": "2026-10-03",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "Exonération d'impôt des moins de 30 ans jusqu'à quatre fois le SMIC : condition de plafond.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
-          "code": 2,
-          "nature": "nette",
-          "justification": "Engagement de campagne rapporté d'exonérer d'impôt sur le revenu les moins de 30 ans.",
-          "date": "2026-10-03",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "exonération des moins de 30 ans plafonnée à quatre fois le SMIC",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
       },
-      "code": 2,
-      "nature": "nette",
+      "code": 1,
+      "nature": "nuancee",
       "statut": "accord",
       "arbitrage": null
     },
@@ -5671,14 +5931,8 @@
     },
     {
       "question_id": "FIS-019",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Elle reprend exactement la mesure de l'énoncé (TVA à 0 % sur 100 produits de première nécessité)."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
@@ -5686,6 +5940,20 @@
       "nature": "nette",
       "statut": "accord",
       "extraits": [
+        {
+          "reformulation": "Selon CNews, la candidate a annoncé le 6 octobre 2026, dans son programme budgétaire, la suppression de la TVA sur les produits de première nécessité. L'article ne précise ni le nombre de produits ni le taux (0 %).",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Selon le média, [CANDIDAT] a annoncé le 6 octobre 2026, dans son programme budgétaire, la suppression de la TVA sur les produits de première nécessité. L'article ne précise ni le nombre de produits ni le taux.",
+          "citation_anonymisee": null,
+          "source": {
+            "url": "https://www.cnews.fr/france/2026-10-06/baisse-de-la-tva-preference-nationale-simplification-administrative-que-contient",
+            "titre": "Baisse de la TVA, préférence nationale, simplification administrative... Ce que contient le contre-budget du RN (CNews)",
+            "date_publication": "2026-10-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": null
+        },
         {
           "reformulation": "Selon BFM, la candidate veut instaurer une TVA à 0 % sur un panier de 100 produits de première nécessité, en plus d'une baisse de la TVA de 20 à 5,5 % sur les produits énergétiques.",
           "citation_courte": "instaurer une TVA à 0% sur un panier de 100 produits de première nécessité",
@@ -5706,51 +5974,45 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Veut instaurer une TVA à 0 % sur un panier de 100 produits de première nécessité.",
-          "date": "2026-10-04",
+          "justification": "Suppression de la TVA sur un panier de 100 produits de première nécessité, sources concordantes.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Veut une TVA à 0 % sur un panier de 100 produits.",
-          "date": "2026-10-04",
+          "justification": "suppression de la TVA sur les produits de première nécessité (panier de 100 produits)",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
       },
       "arbitrage": null,
-      "item_aveugle": "23c6d573"
+      "item_aveugle": "a9e30d24"
     },
     {
       "question_id": "FIS-020",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "L'extrait 2, consulté, établit la proposition de TVA à 5,5 % sur carburants, électricité et gaz, appuyée par sa propre déclaration sur « les énergies » : mesure exacte de l'énoncé."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "e590f92a",
+      "item_aveugle": "65bcd358",
       "extraits": [
         {
-          "reformulation": "Interrogée le 18 septembre 2026 sur ICI Gironde, elle affirme qu'il n'y a qu'une seule méthode face à la flambée des carburants : baisser la TVA et la TICPE sur le litre de carburant, la TVA passant de 20 % à 5,5 % sur les carburants. Elle dit qu'il n'y a pas d'autres solutions. Le propos cité ne mentionne que les carburants.",
-          "citation_courte": "Baisser de 20% à 5,5 % la TVA sur les carburants",
-          "reformulation_anonymisee": "Interrogé sur une radio locale, [CANDIDAT] affirme qu'il n'y a qu'une seule méthode face à la flambée des carburants : baisser la TVA et la TICPE sur le litre de carburant, la TVA passant de 20 % à 5,5 % sur les carburants. [CANDIDAT] dit qu'il n'y a pas d'autres solutions. Le propos cité ne mentionne que les carburants.",
-          "citation_anonymisee": "Baisser de 20% à 5,5 % la TVA sur les carburants",
+          "reformulation": "Selon CNews, la candidate a annoncé le 6 octobre 2026, dans son programme budgétaire, une baisse de la TVA sur le gaz, l'électricité, les carburants, le bois et le fioul. L'article ne donne pas le taux visé (5,5 %).",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Selon le média, [CANDIDAT] a annoncé le 6 octobre 2026, dans son programme budgétaire, une baisse de la TVA sur le gaz, l'électricité, les carburants, le bois et le fioul. L'article ne donne pas le taux visé.",
+          "citation_anonymisee": null,
           "source": {
-            "url": "https://actu.orange.fr/politique/il-n-y-a-que-ca-a-faire-face-a-la-flambee-des-prix-marine-le-pen-plaide-pour-une-baisse-des-taxes-sur-le-carburant-magic-CNT000002rXN3t.html",
-            "titre": "\"Il n'y a que ça à faire\" : face à la flambée des prix, Marine Le Pen plaide pour une baisse des \"taxes sur le carburant\" (Orange Actualités)",
-            "date_publication": "2026-09-18",
+            "url": "https://www.cnews.fr/france/2026-10-06/baisse-de-la-tva-preference-nationale-simplification-administrative-que-contient",
+            "titre": "Baisse de la TVA, préférence nationale, simplification administrative... Ce que contient le contre-budget du RN (CNews)",
+            "date_publication": "2026-10-06",
             "type": "declaration_publique"
           },
-          "date_consultation": "2026-10-03",
-          "citation_verifiee_mot_a_mot": true
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": null
         },
         {
           "reformulation": "Un article d'Orange (6Medias, 21 septembre 2026) indique qu'elle propose, une fois au pouvoir, de baisser de 20 % à 5,5 % la TVA sur l'essence, le diesel, l'électricité et le gaz. Il rapporte qu'en Ardèche, le 6 mars 2026, elle disait réclamer depuis 2022 que la TVA sur les énergies soit à 5,5 %, fioul, gaz, électricité et carburant étant pour elle des biens de première nécessité.",
@@ -5765,6 +6027,20 @@
           },
           "date_consultation": "2026-10-03",
           "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Interrogée le 18 septembre 2026 sur ICI Gironde, elle affirme qu'il n'y a qu'une seule méthode face à la flambée des carburants : baisser la TVA et la TICPE sur le litre de carburant, la TVA passant de 20 % à 5,5 % sur les carburants. Elle dit qu'il n'y a pas d'autres solutions. Le propos cité ne mentionne que les carburants.",
+          "citation_courte": "Baisser de 20% à 5,5 % la TVA sur les carburants",
+          "reformulation_anonymisee": "Interrogé sur une radio locale, [CANDIDAT] affirme qu'il n'y a qu'une seule méthode face à la flambée des carburants : baisser la TVA et la TICPE sur le litre de carburant, la TVA passant de 20 % à 5,5 % sur les carburants. [CANDIDAT] dit qu'il n'y a pas d'autres solutions. Le propos cité ne mentionne que les carburants.",
+          "citation_anonymisee": "Baisser de 20% à 5,5 % la TVA sur les carburants",
+          "source": {
+            "url": "https://actu.orange.fr/politique/il-n-y-a-que-ca-a-faire-face-a-la-flambee-des-prix-marine-le-pen-plaide-pour-une-baisse-des-taxes-sur-le-carburant-magic-CNT000002rXN3t.html",
+            "titre": "\"Il n'y a que ça à faire\" : face à la flambée des prix, Marine Le Pen plaide pour une baisse des \"taxes sur le carburant\" (Orange Actualités)",
+            "date_publication": "2026-09-18",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-03",
+          "citation_verifiee_mot_a_mot": true
         }
       ],
       "codage": {
@@ -5772,16 +6048,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Les sources récentes concordent : le candidat propose de passer de 20 % à 5,5 % la TVA sur l'essence, le diesel, l'électricité et le gaz.",
-          "date": "2026-10-03",
+          "justification": "Baisse de la TVA de 20 % à 5,5 % sur carburants, électricité et gaz, confirmée sans taux contraire dans la source la plus récente.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Propose de baisser de 20 % à 5,5 % la TVA sur carburants, électricité et gaz, mesure exacte de l'énoncé.",
-          "date": "2026-10-03",
+          "justification": "TVA énergie et carburants à 5,5 %",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -6186,12 +6462,46 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": 2,
+      "nature": "nette",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Lors de son meeting d'Orléans le 25 octobre 2026, elle a promis, si elle arrive au pouvoir, d'abolir la loi interdisant la recherche (et l'exploitation) d'hydrocarbures sur le sol français, qu'elle qualifie de stupide. L'engagement vise l'ensemble du territoire national ; l'outre-mer n'est pas nommé dans ses propos rapportés (l'article l'évoque à propos des demandes d'élus guyanais et mahorais).",
+          "citation_courte": "abolirons, par exemple, la stupide loi Hulot",
+          "reformulation_anonymisee": "Lors de son premier meeting de campagne le 25 octobre 2026, [CANDIDAT] a promis, si [CANDIDAT] arrive au pouvoir, d'abolir la loi interdisant la recherche (et l'exploitation) d'hydrocarbures sur le sol français, qu'elle qualifie de stupide. L'engagement vise l'ensemble du territoire national ; l'outre-mer n'est pas nommé dans ses propos rapportés.",
+          "citation_anonymisee": "abolirons, par exemple, la stupide loi",
+          "source": {
+            "url": "https://la1ere.franceinfo.fr/marine-le-pen-souhaite-abolir-la-loi-hulot-sur-la-fin-de-l-exploitation-des-hydrocarbures-en-france-un-debat-relance-regulierement-en-guyane-et-a-mayotte-1751706.html",
+            "titre": "Marine Le Pen souhaite abolir la loi Hulot sur la fin de l'exploitation des hydrocarbures en France - Outre-mer La 1ère (AFP)",
+            "date_publication": "2026-10-26",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": 2,
+          "nature": "nette",
+          "justification": "Abolir l'interdiction de rechercher et exploiter des hydrocarbures sur tout le territoire, ce qui englobe l'outre-mer (R6).",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": 2,
+          "nature": "nette",
+          "justification": "abroge l'interdiction sur tout le territoire, ce qui englobe l'outre-mer (R6)",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "arbitrage": null,
+      "item_aveugle": "9b6e77ef"
     },
     {
       "question_id": "ENV-015",
@@ -6277,31 +6587,25 @@
     },
     {
       "question_id": "ENV-018",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "En 2022 elle proposait « la sortie du marché européen libéralisé » ; en 2026 elle critique seulement l'indexation sur le gaz, sans reprendre la sortie : direction perceptible, mesure actuelle non spécifiée."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "7097b669",
+      "item_aveugle": "8b204123",
       "extraits": [
         {
-          "reformulation": "Dans son plan énergie de mars 2022, la candidate inclut la sortie du marché européen libéralisé de l'énergie, avec rétablissement de prix régulés compétitifs pour les professionnels et les industries. Source de 2022 ; la source ne précise pas les modalités de fixation du prix de l'électricité.",
-          "citation_courte": "la sortie du marché européen libéralisé",
-          "reformulation_anonymisee": "Dans son plan énergie de 2022, [CANDIDAT] inclut la sortie du marché européen libéralisé de l'énergie, avec rétablissement de prix régulés compétitifs pour les professionnels et les industries. Modalités de fixation du prix non précisées.",
-          "citation_anonymisee": "la sortie du marché européen libéralisé",
+          "reformulation": "Selon Alternatives économiques, le contre-budget présenté le 6 octobre 2026 prévoit la création d'un prix national de l'électricité, avec 5 à 9 milliards d'euros d'économies par an annoncées. Le journal précise que le mécanisme n'est pas détaillé ; la source ne mentionne pas de sortie des règles du marché européen.",
+          "citation_courte": "création d'un prix national de l'électricité",
+          "reformulation_anonymisee": "Selon un article, le contre-budget présenté le 6 octobre 2026 par [CANDIDAT] prévoit la création d'un prix national de l'électricité, avec 5 à 9 milliards d'euros d'économies par an annoncées. Le mécanisme n'est pas détaillé ; la source ne mentionne pas de sortie des règles du marché européen.",
+          "citation_anonymisee": "création d'un prix national de l'électricité",
           "source": {
-            "url": "https://www.publicsenat.fr/article/politique/energies-plein-pot-sur-le-nucleaire-et-haro-sur-les-eoliennes-pour-marine-le-pen",
-            "titre": "Energie : plein pot sur le nucléaire et haro sur les éoliennes pour Marine Le Pen",
-            "date_publication": "2022-03-14",
+            "url": "https://www.alternatives-economiques.fr/node/54801",
+            "titre": "Tout comprendre en trois minutes au volet (anti) écologique du budget du RN - Alternatives économiques",
+            "date_publication": "2026-10-19",
             "type": "declaration_publique"
           },
-          "date_consultation": "2026-10-04",
+          "date_consultation": "2026-11-07",
           "citation_verifiee_mot_a_mot": true
         },
         {
@@ -6317,6 +6621,20 @@
           },
           "date_consultation": "2026-10-03",
           "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Dans son plan énergie de mars 2022, la candidate inclut la sortie du marché européen libéralisé de l'énergie, avec rétablissement de prix régulés compétitifs pour les professionnels et les industries. Source de 2022 ; la source ne précise pas les modalités de fixation du prix de l'électricité.",
+          "citation_courte": "la sortie du marché européen libéralisé",
+          "reformulation_anonymisee": "Dans son plan énergie de 2022, [CANDIDAT] inclut la sortie du marché européen libéralisé de l'énergie, avec rétablissement de prix régulés compétitifs pour les professionnels et les industries. Modalités de fixation du prix non précisées.",
+          "citation_anonymisee": "la sortie du marché européen libéralisé",
+          "source": {
+            "url": "https://www.publicsenat.fr/article/politique/energies-plein-pot-sur-le-nucleaire-et-haro-sur-les-eoliennes-pour-marine-le-pen",
+            "titre": "Energie : plein pot sur le nucléaire et haro sur les éoliennes pour Marine Le Pen",
+            "date_publication": "2022-03-14",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-04",
+          "citation_verifiee_mot_a_mot": true
         }
       ],
       "codage": {
@@ -6324,16 +6642,16 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "imprecise",
-          "justification": "Source récente critique l'indexation sur le gaz sans évoquer de sortie du marché ; la sortie n'apparaît qu'en 2022.",
-          "date": "2026-10-04",
+          "justification": "Création d'un prix national de l'électricité sans mention de sortie des règles du marché européen, que seule une source de 2022 évoquait.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "imprecise",
-          "justification": "Critique le marché européen de l'électricité, sortie évoquée en 2022 mais pas récemment ni modalités.",
-          "date": "2026-10-04",
+          "justification": "prix national de l'électricité, mécanisme et sortie du marché non détaillés",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -7263,5 +7581,6 @@
       "codage": null,
       "arbitrage": null
     }
-  ]
+  ],
+  "date_derniere_maj_codage": "2026-11-07"
 }

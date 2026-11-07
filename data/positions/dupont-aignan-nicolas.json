@@ -1,6 +1,6 @@
 {
   "candidat_id": "dupont-aignan-nicolas",
-  "_statut": "POC — codage vague 1, 11 thèmes. Retraites : arbitrages acceptés en bloc par Mathieu. Autres thèmes : désaccords arbitrés provisoirement par un 3e modèle, contrôle humain de 10 % à faire. À revoir avant publication.",
+  "_statut": "POC — codage vague 1, 11 thèmes. Retraites : arbitrages acceptés en bloc par Mathieu. Autres thèmes : désaccords arbitrés provisoirement par un 3e modèle, contrôle humain de 10 % à faire. À revoir avant publication. Vague 4 (7 novembre 2026, programmes publiés depuis le 4 octobre) : aucun nouveau programme : recherche sur les questions sans code, sources postérieures au 4 octobre ; 1 question(s) recodée(s) ou codée(s) à l'aveugle, dont 1 nouveau(x) code(s) ; même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, vérification indépendante de 30 % des codes, contrôle humain de 10 % à faire).",
   "grille_version": "1.3",
   "programme": {
     "officiel_disponible": true,
@@ -573,14 +573,56 @@
       "contestations": [],
       "version": 1,
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": true,
+        "date": null,
+        "resultat": null
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": 2,
+      "nature": "nette",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Interrogé sur France 2 le 6 novembre 2026, le candidat propose de porter le SMIC net à 1 600 euros, en passant par une baisse des charges salariales plutôt que par une hausse du coût pour les entreprises. Il chiffre l'opération à 5 milliards d'euros pour 4 millions de salariés à bas salaire.",
+          "citation_courte": "Il faut mettre le SMIC net à 1 600 euros.",
+          "reformulation_anonymisee": "Interrogé à la télévision, [CANDIDAT] propose de porter le SMIC net à 1 600 euros, en passant par une baisse des charges salariales plutôt que par une hausse du coût pour les entreprises. Il chiffre l'opération à 5 milliards d'euros pour 4 millions de salariés à bas salaire.",
+          "citation_anonymisee": "Il faut mettre le SMIC net à 1 600 euros.",
+          "source": {
+            "url": "https://www.franceinfo.fr/politique/il-faut-mettre-le-smic-net-a-1-600-euros-propose-nicolas-dupont-aignan-au-lendemain-de-la-mobilisation-contre-la-vie-chere_8270444.html",
+            "titre": "\"Il faut mettre le smic net à 1 600 euros\", propose Nicolas Dupont-Aignan, candidat Debout la France à la présidentielle",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": 2,
+          "nature": "nette",
+          "justification": "Propose de porter le SMIC net à 1 600 €.",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": 2,
+          "nature": "nette",
+          "justification": "SMIC net à 1 600 € via baisse de charges",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "arbitrage": null,
+      "item_aveugle": "ec9f3dad",
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "Engagement explicite sur la valeur exacte de l'énoncé (SMIC net à 1 600 €) ; le moyen de financement (baisse des charges salariales) n'est pas une réserve sur la mesure."
+      }
     },
     {
       "question_id": "ECO-002",
@@ -6895,5 +6937,6 @@
       "codage": null,
       "arbitrage": null
     }
-  ]
+  ],
+  "date_derniere_maj_codage": "2026-11-07"
 }

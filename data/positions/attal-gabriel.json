@@ -1,13 +1,13 @@
 {
   "candidat_id": "attal-gabriel",
-  "_statut": "POC — codage vague 1, 11 thèmes. Retraites : arbitrages acceptés en bloc par Mathieu. Autres thèmes : désaccords arbitrés provisoirement par un 3e modèle, contrôle humain de 10 % à faire. À revoir avant publication. Vague 2 (4 octobre 2026) : recherche complémentaire sur les questions sans code publié, même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, contrôle humain de 10 % à faire). Vague 3 (4 octobre 2026) : nouvelle recherche sur les questions sans code publié, même protocole. Passe « programme » du 14 octobre 2026 : site attalpresident.fr aspiré en entier (6 pages « chantiers capitaux » du programme, biographie, 82 actualités de campagne de mai à octobre 2026 dont le meeting de Lyon du 10 octobre, discours de Reims du 17 septembre 2026) ; 30 questions recodées en grille v1.4 avec le même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, vérification indépendante de tous les codes recodés). Contrôle humain de 10 % à faire.",
+  "_statut": "POC — codage vague 1, 11 thèmes. Retraites : arbitrages acceptés en bloc par Mathieu. Autres thèmes : désaccords arbitrés provisoirement par un 3e modèle, contrôle humain de 10 % à faire. À revoir avant publication. Vague 2 (4 octobre 2026) : recherche complémentaire sur les questions sans code publié, même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, contrôle humain de 10 % à faire). Vague 3 (4 octobre 2026) : nouvelle recherche sur les questions sans code publié, même protocole. Passe « programme » du 14 octobre 2026 : site attalpresident.fr aspiré en entier (6 pages « chantiers capitaux » du programme, biographie, 82 actualités de campagne de mai à octobre 2026 dont le meeting de Lyon du 10 octobre, discours de Reims du 17 septembre 2026) ; 30 questions recodées en grille v1.4 avec le même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, vérification indépendante de tous les codes recodés). Contrôle humain de 10 % à faire. Vague 4 (7 novembre 2026, programmes publiés depuis le 4 octobre) : nouveau document de programme (vision économique du 28 octobre 2026) : toutes les questions des thèmes qu'il couvre recherchées, les autres seulement sur les questions sans code ; 9 question(s) recodée(s) ou codée(s) à l'aveugle, dont 0 nouveau(x) code(s) ; même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, vérification indépendante de 30 % des codes, contrôle humain de 10 % à faire).",
   "grille_version": "1.4",
-  "date_derniere_maj_codage": "2026-10-14",
+  "date_derniere_maj_codage": "2026-11-07",
   "programme": {
     "officiel_disponible": true,
     "date_publication": null,
     "url": "https://attalpresident.fr/programme",
-    "note": "Programme publié sur le site de campagne attalpresident.fr : quatre « chantiers capitaux » (École, Travail et salaires, Frontières, Intelligence artificielle) et deux « dettes à résorber » (dette de l'État, dette écologique), pages non datées consultées le 14 octobre 2026. Complété par les actualités de campagne (entretiens, discours, déplacements, mai à octobre 2026) et le discours de Reims « Bâtir les États-Unis d'Europe » (17 septembre 2026). Pages programme typées programme_officiel."
+    "note": "Programme publié sur le site de campagne attalpresident.fr : quatre « chantiers capitaux » (École, Travail et salaires, Frontières, Intelligence artificielle) et deux « dettes à résorber » (dette de l'État, dette écologique), pages non datées consultées le 14 octobre 2026. Complété par les actualités de campagne (entretiens, discours, déplacements, mai à octobre 2026) et le discours de Reims « Bâtir les États-Unis d'Europe » (17 septembre 2026). Pages programme typées programme_officiel. Au 7 novembre 2026 : vision économique du 28 octobre 2026, détaillé par la presse ; pas encore de programme complet."
   },
   "positions": [
     {
@@ -835,14 +835,8 @@
     },
     {
       "question_id": "ECO-001",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Il s'oppose explicitement au Smic à 1 600 euros net, mesure qui « paraît belle mais n'est pas la solution »."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": true,
         "date": null,
@@ -850,8 +844,22 @@
       },
       "code": -2,
       "nature": "nette",
-      "statut": "accord",
+      "statut": "arbitre",
       "extraits": [
+        {
+          "reformulation": "Invité sur TF1 le 2 novembre 2026, il dit que le problème n'est pas tant le niveau du Smic, qu'il juge plutôt supérieur à celui de la plupart des voisins de la France, que le fait que beaucoup de salariés restent bloqués au Smic toute leur vie. Il privilégie une baisse des charges sur les salaires (« droit au brut ») plutôt qu'une revalorisation du salaire minimum ; aucun montant de Smic n'est cité.",
+          "citation_courte": "le niveau du Smic, qui est plutôt supérieur à la plupart de nos voisins",
+          "reformulation_anonymisee": "Invité à la télévision le 2 novembre 2026, [CANDIDAT] dit que le problème n'est pas tant le niveau du Smic, qu'il juge plutôt supérieur à celui de la plupart des voisins de la France, que le fait que beaucoup de salariés restent bloqués au Smic toute leur vie. Il privilégie une baisse des charges sur les salaires plutôt qu'une revalorisation du salaire minimum ; aucun montant de Smic n'est cité.",
+          "citation_anonymisee": "le niveau du Smic, qui est plutôt supérieur à la plupart de nos voisins",
+          "source": {
+            "url": "https://www.capital.fr/votre-carriere/augmenter-de-100-euros-un-salarie-au-smic-coute-473-euros-au-patron-il-faut-revoir-ce-systeme-lance-gabriel-attal-1531486",
+            "titre": "Augmenter de 100 euros un salarié au Smic coûte 473 euros au patron : « Il faut revoir ce système », lance Gabriel Attal",
+            "date_publication": "2026-11-02",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "S'opposant à la proposition d'une alliance de gauche de porter le Smic à 1 600 euros net, il affirme que la mesure « paraît belle » mais n'est pas la solution et qu'elle détruirait des emplois (il avance le chiffre de 500 000). Il défend plutôt une baisse des cotisations sociales sur les salaires au-dessus du Smic.",
           "citation_courte": "détruirait des emplois",
@@ -872,22 +880,28 @@
           "modele": "claude-opus-5-5",
           "code": -2,
           "nature": "nette",
-          "justification": "Rejette le Smic à 1 600 euros, qu'il juge destructeur d'emplois.",
-          "date": "2026-10-04",
+          "justification": "A rejeté le SMIC à 1 600 € net et privilégie une baisse des charges.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
-          "code": -2,
-          "nature": "nette",
-          "justification": "Rejette le SMIC à 1 600 euros net.",
-          "date": "2026-10-04",
+          "code": -1,
+          "nature": "nuancee",
+          "justification": "préfère la baisse des charges à une revalorisation du SMIC, sans montant",
+          "date": "2026-11-07",
           "aveugle": true
         },
-        "accord": true
+        "accord": false
       },
-      "arbitrage": null,
-      "item_aveugle": "be466ae1"
+      "arbitrage": {
+        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
+        "date": "2026-11-07",
+        "code_retenu": -2,
+        "nature_retenue": "nette",
+        "motif": "Rejet explicite et sans réserve du Smic à 1 600 € net (« détruirait 500 000 emplois »), confirmé par la source la plus récente qui juge le niveau du Smic suffisant et préfère une baisse des charges : sources concordantes, −2 nette."
+      },
+      "item_aveugle": "fe3a9a8a"
     },
     {
       "question_id": "ECO-002",
@@ -1239,31 +1253,25 @@
     },
     {
       "question_id": "ECO-013",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Il propose « d'inscrire par référendum une « règle d'or » d'équilibre budgétaire dans la Constitution » (juillet 2026), repris le 23/09/2026 : mesure de l'énoncé, +2."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "ad7140d9",
+      "item_aveugle": "913dfeb2",
       "extraits": [
         {
-          "reformulation": "Dans Le Parisien (résumé par la campagne), il propose d'inscrire par référendum dans la Constitution une « règle d'or » d'équilibre budgétaire, inspirée directement du modèle allemand, avec une démission automatique du gouvernement si la trajectoire budgétaire dérive trois années de suite sans crise majeure.",
-          "citation_courte": "inscrire par référendum une « règle d'or » d'équilibre budgétaire dans la Constitution",
-          "reformulation_anonymisee": "Dans un entretien de presse, [CANDIDAT] propose d'inscrire par référendum dans la Constitution une « règle d'or » d'équilibre budgétaire, inspirée directement du modèle allemand, avec une démission automatique du gouvernement si la trajectoire budgétaire dérive trois années de suite sans crise majeure.",
-          "citation_anonymisee": "inscrire par référendum une « règle d'or » d'équilibre budgétaire dans la Constitution",
+          "reformulation": "Dans sa vision économique présentée le 28 octobre 2026, la campagne indique que le candidat propose d'inscrire une règle d'or budgétaire dans la Constitution, avec 150 milliards d'euros d'économies sur cinq ans et une stabilité fiscale garantie aux entreprises pendant dix ans. Le texte ne détaille pas le contenu de la règle.",
+          "citation_courte": "l’inscription d’une règle d’or budgétaire dans la Constitution",
+          "reformulation_anonymisee": "Dans sa vision économique présentée le 28 octobre 2026, la campagne indique que [CANDIDAT] propose d'inscrire une règle d'or budgétaire dans la Constitution, avec 150 milliards d'euros d'économies sur cinq ans et une stabilité fiscale garantie aux entreprises pendant dix ans. Le texte ne détaille pas le contenu de la règle.",
+          "citation_anonymisee": "l’inscription d’une règle d’or budgétaire dans la Constitution",
           "source": {
-            "url": "https://attalpresident.fr/actualites/dans-le-parisien-gabriel-attal-vise-le-zero-deficit-en-2037",
-            "titre": "Interview de Gabriel Attal dans Le Parisien sur les FIPU",
-            "date_publication": "2026-07-03",
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-vision-economique-liberer-innover-independance-france",
+            "titre": "Gabriel Attal présente sa vision économique pour libérer, innover et renforcer l'indépendance de la France",
+            "date_publication": "2026-10-28",
             "type": "declaration_publique"
           },
-          "date_consultation": "2026-10-14",
+          "date_consultation": "2026-11-07",
           "citation_verifiee_mot_a_mot": true
         },
         {
@@ -1279,6 +1287,20 @@
           },
           "date_consultation": "2026-10-03",
           "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Dans Le Parisien (résumé par la campagne), il propose d'inscrire par référendum dans la Constitution une « règle d'or » d'équilibre budgétaire, inspirée directement du modèle allemand, avec une démission automatique du gouvernement si la trajectoire budgétaire dérive trois années de suite sans crise majeure.",
+          "citation_courte": "inscrire par référendum une « règle d'or » d'équilibre budgétaire dans la Constitution",
+          "reformulation_anonymisee": "Dans un entretien de presse, [CANDIDAT] propose d'inscrire par référendum dans la Constitution une « règle d'or » d'équilibre budgétaire, inspirée directement du modèle allemand, avec une démission automatique du gouvernement si la trajectoire budgétaire dérive trois années de suite sans crise majeure.",
+          "citation_anonymisee": "inscrire par référendum une « règle d'or » d'équilibre budgétaire dans la Constitution",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/dans-le-parisien-gabriel-attal-vise-le-zero-deficit-en-2037",
+            "titre": "Interview de Gabriel Attal dans Le Parisien sur les FIPU",
+            "date_publication": "2026-07-03",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
         }
       ],
       "codage": {
@@ -1286,16 +1308,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Propose d'inscrire une règle d'or d'équilibre budgétaire dans la Constitution.",
-          "date": "2026-10-14",
+          "justification": "Propose d'inscrire par référendum une règle d'or d'équilibre budgétaire dans la Constitution, confirmée dans le programme récent.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Propose l'inscription d'une règle d'or dans la Constitution.",
-          "date": "2026-10-14",
+          "justification": "règle d'or inscrite dans la Constitution, avec trajectoire datée",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -1303,7 +1325,13 @@
       "code": 2,
       "nature": "nette",
       "statut": "accord",
-      "arbitrage": null
+      "arbitrage": null,
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "Il propose « d'inscrire par référendum une « règle d'or » d'équilibre budgétaire dans la Constitution » (Le Parisien, résumé de campagne), confirmé le 28/10/2026 (« l'inscription d'une règle d'or budgétaire dans la Constitution ») : +2 nette."
+      }
     },
     {
       "question_id": "ECO-014",
@@ -1960,7 +1988,7 @@
     {
       "question_id": "EDU-001",
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
@@ -1969,17 +1997,31 @@
       "statut": "accord",
       "extraits": [
         {
-          "reformulation": "Il ne veut pas supprimer Parcoursup : il dit qu'il serait le premier à le demander si cela suffisait à faire disparaître le malaise de la jeunesse. Il souhaite en revanche « faire évoluer » le dispositif : moins de poids du contrôle continu, davantage d'épreuves terminales pour fonder les dossiers et la sélection dans le supérieur, et un parcours d'orientation avec mentorat, tutorat et stages. Il ne propose donc pas de refonte complète de la plateforme.",
-          "citation_courte": "je serai le premier à le demander",
-          "reformulation_anonymisee": "[CANDIDAT] ne veut pas supprimer la plateforme : il dit qu'il serait le premier à le demander si cela suffisait à faire disparaître le malaise de la jeunesse. Il souhaite en revanche la « faire évoluer » : moins de poids du contrôle continu, davantage d'épreuves terminales pour fonder les dossiers et la sélection dans le supérieur, et un parcours d'orientation avec mentorat, tutorat et stages. Il ne propose donc pas de refonte complète de la plateforme.",
-          "citation_anonymisee": "je serai le premier à le demander",
+          "reformulation": "Selon ce compte rendu publié par la campagne, sur Parcoursup il refuse le retour au tirage au sort et veut agir sur l'orientation et sur la pression du contrôle continu. Le texte ne parle ni de suppression ni de refonte complète de la plateforme.",
+          "citation_courte": "Sur Parcoursup, il refuse le retour au tirage au sort",
+          "reformulation_anonymisee": "Selon ce compte rendu publié par la campagne, sur la plateforme d'admission post-bac [CANDIDAT] refuse le retour au tirage au sort et veut agir sur l'orientation et sur la pression du contrôle continu. Le texte ne parle ni de suppression ni de refonte complète de la plateforme.",
+          "citation_anonymisee": "Sur la plateforme d'admission post-bac, [CANDIDAT] refuse le retour au tirage au sort",
           "source": {
-            "url": "https://www.bfmtv.com/politique/la-republique-en-marche/presidentielle-gabriel-attal-presente-son-pacte-pour-la-jeunesse-lors-d-un-meeting-et-vise-le-rn-et-lfi_AD-202610100323.html",
-            "titre": "Présidentielle: Gabriel Attal présente son \"pacte pour la jeunesse\" lors d'un meeting et vise le RN et LFI (BFM, AFP)",
-            "date_publication": "2026-10-10",
-            "type": "declaration_publique"
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-france-info-ecouter-la-jeunesse",
+            "titre": "Gabriel Attal sur France Info : « Il faut écouter la jeunesse et lui donner les moyens de réussir »",
+            "date_publication": "2026-10-15",
+            "type": "programme_officiel"
           },
-          "date_consultation": "2026-10-12",
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "La liste des mesures annoncées par la campagne inclut une « réforme de Parcoursup » avec mentorat, tutorat et stages ; aucun détail supplémentaire ni mention d'une suppression.",
+          "citation_courte": "Réforme de Parcoursup avec mentorat, tutorat et stages",
+          "reformulation_anonymisee": "La liste des mesures annoncées par la campagne inclut une réforme de la plateforme d'admission post-bac avec mentorat, tutorat et stages ; aucun détail supplémentaire ni mention d'une suppression.",
+          "citation_anonymisee": "Réforme de la plateforme d'admission post-bac avec mentorat, tutorat et stages",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-presente-ses-mesures-pour-la-jeunesse-et-l-avenir-de-la-france",
+            "titre": "Gabriel Attal présente ses mesures pour la jeunesse et l'avenir de la France",
+            "date_publication": "2026-10-11",
+            "type": "programme_officiel"
+          },
+          "date_consultation": "2026-11-07",
           "citation_verifiee_mot_a_mot": true
         },
         {
@@ -1995,6 +2037,20 @@
           },
           "date_consultation": "2026-10-12",
           "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Il ne veut pas supprimer Parcoursup : il dit qu'il serait le premier à le demander si cela suffisait à faire disparaître le malaise de la jeunesse. Il souhaite en revanche « faire évoluer » le dispositif : moins de poids du contrôle continu, davantage d'épreuves terminales pour fonder les dossiers et la sélection dans le supérieur, et un parcours d'orientation avec mentorat, tutorat et stages. Il ne propose donc pas de refonte complète de la plateforme.",
+          "citation_courte": "je serai le premier à le demander",
+          "reformulation_anonymisee": "[CANDIDAT] ne veut pas supprimer la plateforme : il dit qu'il serait le premier à le demander si cela suffisait à faire disparaître le malaise de la jeunesse. Il souhaite en revanche la « faire évoluer » : moins de poids du contrôle continu, davantage d'épreuves terminales pour fonder les dossiers et la sélection dans le supérieur, et un parcours d'orientation avec mentorat, tutorat et stages. Il ne propose donc pas de refonte complète de la plateforme.",
+          "citation_anonymisee": "je serai le premier à le demander",
+          "source": {
+            "url": "https://www.bfmtv.com/politique/la-republique-en-marche/presidentielle-gabriel-attal-presente-son-pacte-pour-la-jeunesse-lors-d-un-meeting-et-vise-le-rn-et-lfi_AD-202610100323.html",
+            "titre": "Présidentielle: Gabriel Attal présente son \"pacte pour la jeunesse\" lors d'un meeting et vise le RN et LFI (BFM, AFP)",
+            "date_publication": "2026-10-10",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-12",
+          "citation_verifiee_mot_a_mot": true
         }
       ],
       "codage": {
@@ -2002,22 +2058,22 @@
           "modele": "claude-opus-5-5",
           "code": -1,
           "nature": "nuancee",
-          "justification": "Rejette la suppression et défend la plateforme tout en voulant la faire évoluer (épreuves terminales, orientation), sans refonte complète : contre-proposition identifiable.",
-          "date": "2026-10-12",
+          "justification": "Rejette la suppression de la plateforme et propose seulement de la faire évoluer.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": -1,
           "nature": "nuancee",
-          "justification": "Rejette la suppression et ne propose qu'une évolution (contrôle continu, épreuves terminales), pas une refonte complète.",
-          "date": "2026-10-12",
+          "justification": "refuse la suppression et se limite à faire évoluer la plateforme",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
       },
       "arbitrage": null,
-      "item_aveugle": "6e03ef6f"
+      "item_aveugle": "abe75a3f"
     },
     {
       "question_id": "EDU-002",
@@ -2337,19 +2393,27 @@
     },
     {
       "question_id": "EDU-012",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Les deux sources rapportent une différenciation d'un quart du temps en 4e-3e (enseignements pro/techno pour certains élèves), sans orientation complète vers une autre voie ni ciblage explicite des élèves en difficulté : version partielle de l'énoncé, +1 nuancee défendable."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "59c149f9",
+      "item_aveugle": "c3dbd426",
       "extraits": [
+        {
+          "reformulation": "Selon ce compte rendu de la campagne, il propose de différencier un quart du temps scolaire en 4e et en 3e, pour approfondir certaines matières et mieux découvrir des métiers. Le texte ne parle pas d'orienter les élèves en difficulté vers une voie professionnelle ou technologique.",
+          "citation_courte": "différencier un quart du temps scolaire en 4e et en 3e",
+          "reformulation_anonymisee": "Selon ce compte rendu de la campagne, [CANDIDAT] propose de différencier un quart du temps scolaire en 4e et en 3e, pour approfondir certaines matières et mieux découvrir des métiers. Le texte ne parle pas d'orienter les élèves en difficulté vers une voie professionnelle ou technologique.",
+          "citation_anonymisee": "différencier un quart du temps scolaire en 4e et en 3e",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-face-aux-lyceens-il-faut-un-president-qui-comprenne-la-jeunesse",
+            "titre": "Gabriel Attal face aux lycéens : « Il faut un président qui comprenne la jeunesse »",
+            "date_publication": "2026-10-06",
+            "type": "programme_officiel"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Selon le compte rendu de son entretien, il veut qu'en quatrième et en troisième un quart du temps scolaire puisse être différencié : enseignements professionnels ou technologiques pour certains élèves, approfondissement académique pour d'autres. Le texte parle de parcours différenciés, pas explicitement d'élèves « en difficulté » ni d'une orientation vers une autre voie.",
           "citation_courte": null,
@@ -2382,42 +2446,70 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": 1,
+          "code": -1,
           "nature": "nuancee",
-          "justification": "Le candidat veut différencier un quart du temps en 4e-3e avec des enseignements professionnels ou technologiques pour certains élèves : c'est une version partielle de l'énoncé, sans ciblage explicite des élèves en difficulté ni orientation complète.",
-          "date": "2026-10-03",
+          "justification": "Différenciation d'un quart du temps en 4e-3e plutôt qu'une orientation des élèves en difficulté : autre mesure plus douce.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
-          "nature": "nuancee",
-          "justification": "Parcours différenciés (pro/techno) en 4e et 3e sur un quart du temps seulement, sans cibler les élèves en difficulté ni orienter vers une autre voie : version partielle de l'énoncé.",
-          "date": "2026-10-03",
+          "nature": "imprecise",
+          "justification": "différenciation d'un quart du temps scolaire dès la 4e avec parcours professionnels, sans orientation des élèves en difficulté",
+          "date": "2026-11-07",
           "aveugle": true
         },
-        "accord": true
+        "accord": false
       },
-      "code": 1,
+      "code": -1,
       "nature": "nuancee",
-      "statut": "accord",
-      "arbitrage": null
+      "statut": "arbitre",
+      "arbitrage": {
+        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
+        "date": "2026-11-07",
+        "code_retenu": -1,
+        "nature_retenue": "nuancee",
+        "motif": "Différencier un quart du temps scolaire en 4e-3e au sein du collège, sans orienter les élèves en difficulté vers une autre voie : autre mesure, plus douce que l'énoncé (clause R5), donc −1 nuancee."
+      }
     },
     {
       "question_id": "EDU-013",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Le certificat d'études détermine le passage au collège, les élèves sans le niveau allant en classe passerelle ; il dit ailleurs (BFMTV) ne pas vouloir interdire l'accès au collège : conditionnement avec aménagement, +1 nuancee défendable."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "dc1387d5",
+      "item_aveugle": "5a42e768",
       "extraits": [
+        {
+          "reformulation": "Selon ce compte rendu de la campagne, il propose de rétablir le certificat d'études à la fin du CM2 et de rendre le brevet obligatoire pour entrer au lycée, avec des classes passerelles de remise à niveau pour les élèves qui en ont besoin.",
+          "citation_courte": "rétablir le certificat d'études à la fin du CM2",
+          "reformulation_anonymisee": "Selon ce compte rendu de la campagne, [CANDIDAT] propose de rétablir le certificat d'études à la fin du CM2 et de rendre le brevet obligatoire pour entrer au lycée, avec des classes passerelles de remise à niveau pour les élèves qui en ont besoin.",
+          "citation_anonymisee": "rétablir le certificat d'études à la fin du CM2",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-france-info-ecouter-la-jeunesse",
+            "titre": "Gabriel Attal sur France Info : « Il faut écouter la jeunesse et lui donner les moyens de réussir »",
+            "date_publication": "2026-10-15",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Selon ce compte rendu de la campagne, il veut rétablir le certificat d'études à la fin de la primaire tout en accompagnant les élèves qui échouent par une année passerelle pour entrer en sixième ou en seconde.",
+          "citation_courte": "rétablir le certificat d'études à la fin de la primaire",
+          "reformulation_anonymisee": "Selon ce compte rendu de la campagne, [CANDIDAT] veut rétablir le certificat d'études à la fin de la primaire tout en accompagnant les élèves qui échouent par une année passerelle pour entrer en sixième ou en seconde.",
+          "citation_anonymisee": "rétablir le certificat d'études à la fin de la primaire",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-en-meeting-a-lyon-un-pacte-pour-la-jeunesse",
+            "titre": "Gabriel Attal en meeting à Lyon : Un pacte pour la jeunesse",
+            "date_publication": "2026-10-10",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Il propose de rétablir le certificat d'études à l'entrée en sixième pour garantir que les élèves ont le bagage nécessaire : ceux qui entrent au collège devront avoir le niveau, une année passerelle étant proposée aux autres.",
           "citation_courte": "à l'entrée en 6e pour garantir que les élèves ont le bagage nécessaire",
@@ -2450,26 +2542,38 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": 1,
-          "nature": "nuancee",
-          "justification": "Un certificat d'études à l'entrée en sixième orienterait les élèves sans le niveau vers une année passerelle, mais le candidat refuse d'interdire l'accès au collège : il soutient l'examen avec une réserve.",
-          "date": "2026-10-03",
+          "code": 2,
+          "nature": "nette",
+          "justification": "Certificat d'études conditionnant l'entrée en sixième, avec année passerelle sinon.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Rétablit un certificat d'études à l'entrée en sixième avec année passerelle, mais sans interdire l'accès au collège : conditionnement atténué.",
-          "date": "2026-10-03",
+          "justification": "certificat d'études en fin de CM2 avec année passerelle pour les échecs",
+          "date": "2026-11-07",
           "aveugle": true
         },
-        "accord": true
+        "accord": false
       },
-      "code": 1,
-      "nature": "nuancee",
-      "statut": "accord",
-      "arbitrage": null
+      "code": 2,
+      "nature": "nette",
+      "statut": "arbitre",
+      "arbitrage": {
+        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
+        "date": "2026-11-07",
+        "code_retenu": 2,
+        "nature_retenue": "nette",
+        "motif": "Le certificat d'études rétabli conditionne bien l'entrée en sixième (« ceux qui entrent au collège devront avoir le niveau ») ; l'année passerelle est la conséquence de l'échec, pas une réserve : +2 nette."
+      },
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "Le candidat veut que seuls les élèves qui ont le niveau, établi par le certificat d'études, entrent au collège, les autres faisant une année passerelle : l'examen conditionne l'entrée en sixième ; +2 nette défendable. Les extraits 1 et 2 sont des comptes rendus du site de campagne plutôt que le programme."
+      }
     },
     {
       "question_id": "EDU-014",
@@ -2515,21 +2619,29 @@
     },
     {
       "question_id": "EDU-017",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Il veut la généralisation des groupes de niveau mais se dit prêt à laisser « davantage de souplesse aux établissements » : obligation nationale assouplie, +1 nuancee."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": true,
         "date": null,
         "resultat": null
       },
-      "item_aveugle": "26479f2f",
+      "item_aveugle": "c2111365",
       "extraits": [
+        {
+          "reformulation": "Selon ce compte rendu de la campagne, il défend la mise en place des groupes de niveau ; la liste des mesures annoncées mentionne « rétablir les groupes de niveau au collège ». Le texte ne précise ni les matières ni le caractère obligatoire.",
+          "citation_courte": "Rétablir les groupes de niveau au collège",
+          "reformulation_anonymisee": "Selon ce compte rendu de la campagne, [CANDIDAT] défend la mise en place des groupes de niveau ; la liste des mesures annoncées mentionne le rétablissement des groupes de niveau au collège. Le texte ne précise ni les matières ni le caractère obligatoire.",
+          "citation_anonymisee": "Rétablir les groupes de niveau au collège",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-face-aux-lyceens-il-faut-un-president-qui-comprenne-la-jeunesse",
+            "titre": "Gabriel Attal face aux lycéens : « Il faut un président qui comprenne la jeunesse »",
+            "date_publication": "2026-10-06",
+            "type": "programme_officiel"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Il veut reprendre des mesures du « choc des savoirs » abandonnées par ses successeurs, notamment les groupes de niveau en français et en mathématiques au collège (compte rendu de la campagne d'un entretien sur franceinfo).",
           "citation_courte": "les groupes de niveau en français et en mathématiques au collège",
@@ -2578,16 +2690,16 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Veut généraliser les groupes de niveau mais accepte plus de souplesse pour les établissements.",
-          "date": "2026-10-14",
+          "justification": "Rétablir et généraliser les groupes de niveau en français et en maths, avec de la souplesse pour les établissements.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Veut réinstaurer les groupes de niveau mais accepte plus de souplesse pour les établissements.",
-          "date": "2026-10-14",
+          "justification": "rétablit les groupes de niveau, obligation nationale non précisée",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -2613,8 +2725,50 @@
     },
     {
       "question_id": "EDU-020",
-      "item_aveugle": "ceae8290",
+      "item_aveugle": "6850daaa",
       "extraits": [
+        {
+          "reformulation": "Selon ce compte rendu de la campagne, il a réaffirmé son opposition aux suppressions de postes dans l'Éducation nationale prévues par le Gouvernement, et veut notamment moins d'élèves par classe.",
+          "citation_courte": "aux suppressions de postes dans l'Éducation nationale prévues par le Gouvernement",
+          "reformulation_anonymisee": "Selon ce compte rendu de la campagne, [CANDIDAT] a réaffirmé son opposition aux suppressions de postes dans l'Éducation nationale prévues par le Gouvernement, et veut notamment moins d'élèves par classe.",
+          "citation_anonymisee": "aux suppressions de postes dans l'Éducation nationale prévues par le Gouvernement",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-rassemblement-eviter-second-tour-rn-lfi-hausse-salaires",
+            "titre": "Attal : une primaire pour éviter un second tour RN/LFI",
+            "date_publication": "2026-11-02",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Selon ce compte rendu de la campagne, parmi les mesures immédiates de son pacte pour la jeunesse figure le retour sur les suppressions de postes dans l'Éducation nationale prévues dans le budget.",
+          "citation_courte": "le retour sur les suppressions de postes dans l'Éducation nationale prévues dans le budget",
+          "reformulation_anonymisee": "Selon ce compte rendu de la campagne, parmi les mesures immédiates du pacte pour la jeunesse figure le retour sur les suppressions de postes dans l'Éducation nationale prévues dans le budget.",
+          "citation_anonymisee": "le retour sur les suppressions de postes dans l'Éducation nationale prévues dans le budget",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-retablir-ordre-pacte-avenir-jeunesse",
+            "titre": "Gabriel Attal : rétablir l'ordre, bâtir un pacte jeunesse",
+            "date_publication": "2026-10-23",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Selon ce compte rendu de la campagne, il s'oppose fermement à la suppression de 1 600 postes dans l'Éducation nationale et voit dans la baisse démographique une opportunité : moins d'élèves par classe, davantage de remplaçants.",
+          "citation_courte": "s'oppose fermement à la suppression de 1 600 postes dans l'Éducation nationale",
+          "reformulation_anonymisee": "Selon ce compte rendu de la campagne, [CANDIDAT] s'oppose fermement à la suppression de 1 600 postes dans l'Éducation nationale et voit dans la baisse démographique une opportunité : moins d'élèves par classe, davantage de remplaçants.",
+          "citation_anonymisee": "s'oppose fermement à la suppression de 1 600 postes dans l'Éducation nationale",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-france-info-ecouter-la-jeunesse",
+            "titre": "Gabriel Attal sur France Info : « Il faut écouter la jeunesse et lui donner les moyens de réussir »",
+            "date_publication": "2026-10-15",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Lors du meeting du 10 octobre, selon le résumé de la campagne, il veut réduire le nombre d'élèves par classe grâce à la baisse démographique et au maintien du nombre de postes de professeurs dans les années à venir. Aucun chiffre de postes n'est donné.",
           "citation_courte": "au maintien du nombre de postes de professeurs dans les années à venir",
@@ -2649,16 +2803,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Veut maintenir le nombre de postes de professeurs malgré la baisse démographique.",
-          "date": "2026-10-14",
+          "justification": "Opposé aux suppressions de postes, veut maintenir le nombre de postes de professeurs malgré la baisse démographique.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Veut le maintien du nombre de postes de professeurs malgré la baisse démographique.",
-          "date": "2026-10-14",
+          "justification": "refuse les suppressions de postes et maintient les postes",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -2667,16 +2821,16 @@
         "tire_au_sort": false
       },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "code": 2,
       "nature": "nette",
       "statut": "accord",
       "arbitrage": null,
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
+        "date": "2026-11-07",
         "verdict": "confirme",
-        "motif": "La campagne rapporte qu'il veut réduire les effectifs « grâce à la baisse démographique et au maintien du nombre de postes de professeurs dans les années à venir » ; Lyon Mag : il s'oppose à la suppression annoncée de 1 600 postes : +2."
+        "motif": "Le résumé du meeting de Lyon indique qu'il veut réduire les effectifs « grâce à la baisse démographique et au maintien du nombre de postes de professeurs dans les années à venir », et plusieurs sources le montrent opposé aux suppressions de postes prévues au budget : soutien sans réserve à l'énoncé, +2 nette."
       }
     },
     {
@@ -5170,28 +5324,50 @@
     },
     {
       "question_id": "FIS-015",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "La hausse de TVA n'est qu'une piste à l'étude, restreinte aux charges salariales, absente de la source la plus récente : direction perceptible sans engagement, +1 imprecise."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "71927fe0",
+      "item_aveugle": "e10b0a1a",
       "extraits": [
         {
-          "reformulation": "Interrogé sur la TVA sociale (hausse de la TVA au profit d'une augmentation de salaires), il écarte cette réforme si elle sert à baisser les charges patronales ; la seule piste qu'il juge examinable serait d'y recourir pour baisser les charges salariales et donc augmenter les salaires.",
-          "citation_courte": "Si c’est pour baisser les charges patronales, je l’écarte",
-          "reformulation_anonymisee": "Interrogé sur la TVA sociale (hausse de la TVA au profit d'une augmentation de salaires), [CANDIDAT] écarte cette réforme si elle sert à baisser les charges patronales ; la seule piste qu'il juge examinable serait d'y recourir pour baisser les charges salariales et donc augmenter les salaires.",
-          "citation_anonymisee": "Si c’est pour baisser les charges patronales, je l’écarte",
+          "reformulation": "Selon La Dépêche (3 novembre 2026), pour financer la baisse de cotisations de 40 milliards d'euros par an, le candidat évoque notamment une TVA sociale dont les recettes seraient entièrement consacrées au financement des rémunérations, ainsi que des économies sur l'assurance chômage. Il s'agit d'une piste évoquée, sans taux ni calendrier.",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Selon le média, pour financer la baisse de cotisations de 40 milliards d'euros par an, [CANDIDAT] évoque notamment une TVA sociale dont les recettes seraient entièrement consacrées au financement des rémunérations, ainsi que des économies sur l'assurance chômage. Il s'agit d'une piste évoquée, sans taux ni calendrier.",
+          "citation_anonymisee": null,
           "source": {
-            "url": "https://ambitionfrance.org/index.php/fr/?view=article&id=3274:annee-blanche-100-000-fonctionnaires-en-moins-big-bang-territorial-gabriel-attal-vise-le-zero-deficit-en-2037&catid=66",
-            "titre": "Année blanche, 100 000 fonctionnaires en moins, big bang territorial… Gabriel Attal vise le « zéro déficit en 2037 » (entretien Le Parisien du 2 juillet 2026, reprise intégrale sur ambitionfrance.org)",
-            "date_publication": "2026-07-02",
+            "url": "https://www.ladepeche.fr/2026/11/03/decryptage-presidentielle-2027-gabriel-attal-veut-augmenter-le-salaire-median-de-2-200-a-3-300-euros-en-dix-ans-sa-promesse-est-elle-realiste-13632424.php",
+            "titre": "Présidentielle 2027 : Gabriel Attal veut augmenter le salaire médian de 2200 à 3300 euros en dix ans, sa promesse est-elle réaliste",
+            "date_publication": "2026-11-03",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": null
+        },
+        {
+          "reformulation": "Selon RMC, pour financer sa baisse de cotisations salariales (40 milliards d'euros par an, dispositif « droit au brut »), le candidat évoque d'abord l'instauration d'une TVA sociale, c'est-à-dire une hausse de la TVA dont le produit serait consacré à 100 % au financement des hausses de rémunération. C'est une piste de financement parmi d'autres (économies sur l'assurance chômage, gains de productivité) ; l'article ne donne ni taux de TVA ni calendrier.",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Selon le média, pour financer sa baisse de cotisations salariales (40 milliards d'euros par an), [CANDIDAT] évoque d'abord l'instauration d'une TVA sociale, c'est-à-dire une hausse de la TVA dont le produit serait consacré à 100 % au financement des hausses de rémunération. C'est une piste de financement parmi d'autres (économies sur l'assurance chômage, gains de productivité) ; l'article ne donne ni taux de TVA ni calendrier.",
+          "citation_anonymisee": null,
+          "source": {
+            "url": "https://rmc.bfmtv.com/actualites/politique/presidentielle-gabriel-attal-veut-aller-droit-au-brut-pour-baisser-le-cout-des-cotisations-et-booster-les-salaires-nets_AV-202610060670.html",
+            "titre": "Présidentielle: Gabriel Attal veut \"aller droit au brut\" pour baisser le coût des cotisations et booster les salaires nets",
+            "date_publication": "2026-10-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": null
+        },
+        {
+          "reformulation": "Lors du débat de la Rencontre des entrepreneurs de France (27 août 2026), il dit vouloir aller « droit au brut » en réduisant les charges salariales pour que le net augmente ; selon Capital, le financement passerait par des économies sur la sphère sociale. Capital ne rapporte pas de hausse de la TVA dans sa position.",
+          "citation_courte": "pour que les Français voient leurs salaires augmenter parce que leur net augmente",
+          "reformulation_anonymisee": "Lors d'un débat entre candidats devant des chefs d'entreprise, [CANDIDAT] dit vouloir réduire les charges salariales pour que le net augmente ; selon le compte rendu de presse, le financement passerait par des économies sur la sphère sociale. Le compte rendu ne rapporte pas de hausse de la TVA dans sa position.",
+          "citation_anonymisee": "pour que les Français voient leurs salaires augmenter parce que leur net augmente",
+          "source": {
+            "url": "https://www.capital.fr/economie-politique/quelles-baisses-de-charges-salariales-promettent-les-candidats-lors-du-premier-debat-a-la-presidentielle-2027-1529625",
+            "titre": "Quelles baisses de charges salariales promettent les candidats lors du premier débat à la présidentielle 2027 (Capital)",
+            "date_publication": "2026-08-27",
             "type": "declaration_publique"
           },
           "date_consultation": "2026-10-03",
@@ -5212,14 +5388,14 @@
           "citation_verifiee_mot_a_mot": true
         },
         {
-          "reformulation": "Lors du débat de la Rencontre des entrepreneurs de France (27 août 2026), il dit vouloir aller « droit au brut » en réduisant les charges salariales pour que le net augmente ; selon Capital, le financement passerait par des économies sur la sphère sociale. Capital ne rapporte pas de hausse de la TVA dans sa position.",
-          "citation_courte": "pour que les Français voient leurs salaires augmenter parce que leur net augmente",
-          "reformulation_anonymisee": "Lors d'un débat entre candidats devant des chefs d'entreprise, [CANDIDAT] dit vouloir réduire les charges salariales pour que le net augmente ; selon le compte rendu de presse, le financement passerait par des économies sur la sphère sociale. Le compte rendu ne rapporte pas de hausse de la TVA dans sa position.",
-          "citation_anonymisee": "pour que les Français voient leurs salaires augmenter parce que leur net augmente",
+          "reformulation": "Interrogé sur la TVA sociale (hausse de la TVA au profit d'une augmentation de salaires), il écarte cette réforme si elle sert à baisser les charges patronales ; la seule piste qu'il juge examinable serait d'y recourir pour baisser les charges salariales et donc augmenter les salaires.",
+          "citation_courte": "Si c’est pour baisser les charges patronales, je l’écarte",
+          "reformulation_anonymisee": "Interrogé sur la TVA sociale (hausse de la TVA au profit d'une augmentation de salaires), [CANDIDAT] écarte cette réforme si elle sert à baisser les charges patronales ; la seule piste qu'il juge examinable serait d'y recourir pour baisser les charges salariales et donc augmenter les salaires.",
+          "citation_anonymisee": "Si c’est pour baisser les charges patronales, je l’écarte",
           "source": {
-            "url": "https://www.capital.fr/economie-politique/quelles-baisses-de-charges-salariales-promettent-les-candidats-lors-du-premier-debat-a-la-presidentielle-2027-1529625",
-            "titre": "Quelles baisses de charges salariales promettent les candidats lors du premier débat à la présidentielle 2027 (Capital)",
-            "date_publication": "2026-08-27",
+            "url": "https://ambitionfrance.org/index.php/fr/?view=article&id=3274:annee-blanche-100-000-fonctionnaires-en-moins-big-bang-territorial-gabriel-attal-vise-le-zero-deficit-en-2037&catid=66",
+            "titre": "Année blanche, 100 000 fonctionnaires en moins, big bang territorial… Gabriel Attal vise le « zéro déficit en 2037 » (entretien Le Parisien du 2 juillet 2026, reprise intégrale sur ambitionfrance.org)",
+            "date_publication": "2026-07-02",
             "type": "declaration_publique"
           },
           "date_consultation": "2026-10-03",
@@ -5231,16 +5407,16 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "imprecise",
-          "justification": "Hausse de la TVA seulement envisagée comme piste, et uniquement pour baisser les charges salariales ; la source la plus récente n'en parle plus.",
-          "date": "2026-10-03",
+          "justification": "Évoque une TVA sociale comme piste de financement de la baisse des cotisations salariales, sans taux ni engagement ferme.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "imprecise",
-          "justification": "Il n'écarte pas une hausse de la TVA pour baisser les charges salariales mais ne l'évoque que comme une piste parmi des scénarios, sans engagement.",
-          "date": "2026-10-03",
+          "justification": "TVA sociale évoquée comme piste de financement, sans taux ni calendrier",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -6062,21 +6238,29 @@
     },
     {
       "question_id": "ENV-023",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "La page de campagne du 23/09/2026 attribue au candidat la volonté de « sécuriser la construction des 14 EPR » avec un réacteur par an ; 14 = 6 décidés + 8 en option selon la précision, soit la cible de l'énoncé."
-      },
       "contestations": [],
-      "version": 3,
+      "version": 4,
       "controle_humain": {
         "tire_au_sort": false
       },
       "code": 2,
       "nature": "nette",
-      "statut": "arbitre",
+      "statut": "accord",
       "extraits": [
+        {
+          "reformulation": "Dans le récapitulatif de son meeting du 10 octobre 2026, le candidat inscrit au volet écologie et énergie de ses mesures la construction de 14 nouveaux réacteurs nucléaires. Le texte ne détaille pas la répartition entre réacteurs déjà décidés et réacteurs supplémentaires, ni de calendrier.",
+          "citation_courte": "Construction de 14 nouveaux réacteurs nucléaires",
+          "reformulation_anonymisee": "Dans le récapitulatif d'un meeting d'octobre, [CANDIDAT] inscrit au volet écologie et énergie de ses mesures la construction de 14 nouveaux réacteurs nucléaires. Le texte ne détaille pas la répartition entre réacteurs déjà décidés et réacteurs supplémentaires, ni de calendrier.",
+          "citation_anonymisee": "Construction de 14 nouveaux réacteurs nucléaires",
+          "source": {
+            "url": "https://attalpresident.fr/actualites/gabriel-attal-presente-ses-mesures-pour-la-jeunesse-et-l-avenir-de-la-france",
+            "titre": "Gabriel Attal présente ses mesures pour la jeunesse et l'avenir de la France.",
+            "date_publication": "2026-10-11",
+            "type": "programme_officiel"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le 23 septembre 2026, le candidat dit vouloir sécuriser la construction des 14 EPR et atteindre un réacteur construit par an. La source ne précise pas la répartition entre réacteurs décidés et réacteurs supplémentaires ni le statut « en option » des huit derniers.",
           "citation_courte": "sécuriser la construction des 14 EPR",
@@ -6097,28 +6281,22 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Veut sécuriser la construction des 14 EPR, soit les six décidés plus huit.",
-          "date": "2026-10-14",
+          "justification": "Construction de 14 nouveaux réacteurs, soit 6 + 8.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
-          "code": 1,
-          "nature": "nuancee",
-          "justification": "Veut sécuriser la construction de 14 EPR, mais la répartition entre décidés et supplémentaires n'est pas dite.",
-          "date": "2026-10-14",
+          "code": 2,
+          "nature": "nette",
+          "justification": "14 réacteurs, soit 6 plus 8",
+          "date": "2026-11-07",
           "aveugle": true
         },
-        "accord": false
+        "accord": true
       },
-      "arbitrage": {
-        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-14",
-        "code_retenu": 2,
-        "nature_retenue": "nette",
-        "motif": "Sécuriser la construction des 14 EPR correspond exactement aux six décidés plus les huit en option donnés par la précision : engagement sur la cible de l'énoncé, +2 nette."
-      },
-      "item_aveugle": "82073a29"
+      "arbitrage": null,
+      "item_aveugle": "f6a20894"
     },
     {
       "question_id": "ENV-024",

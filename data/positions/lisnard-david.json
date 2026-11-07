@@ -1,8 +1,8 @@
 {
   "candidat_id": "lisnard-david",
-  "_statut": "POC — codage vague 1, 11 thèmes. Retraites : arbitrages acceptés en bloc par Mathieu. Autres thèmes : désaccords arbitrés provisoirement par un 3e modèle, contrôle humain de 10 % à faire. À revoir avant publication. Vague 2 (4 octobre 2026) : recherche complémentaire sur les questions sans code publié, même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, contrôle humain de 10 % à faire). Vague 3 (4 octobre 2026) : nouvelle recherche sur les questions sans code publié, même protocole. Passe « programme » du 14 octobre 2026 : site unenouvelleenergie.fr aspiré en entier (pages « Notre programme » mises à jour le 31 juillet 2026, livrets santé et agriculture, discours de Bayeux, Livre noir de la bureaucratie, espace « Questions », actualités) ; 54 questions recodées en grille v1.4 avec le même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, vérification indépendante de tous les codes recodés, second arbitrage). Contrôle humain de 10 % à faire.",
+  "_statut": "POC — codage vague 1, 11 thèmes. Retraites : arbitrages acceptés en bloc par Mathieu. Autres thèmes : désaccords arbitrés provisoirement par un 3e modèle, contrôle humain de 10 % à faire. À revoir avant publication. Vague 2 (4 octobre 2026) : recherche complémentaire sur les questions sans code publié, même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, contrôle humain de 10 % à faire). Vague 3 (4 octobre 2026) : nouvelle recherche sur les questions sans code publié, même protocole. Passe « programme » du 14 octobre 2026 : site unenouvelleenergie.fr aspiré en entier (pages « Notre programme » mises à jour le 31 juillet 2026, livrets santé et agriculture, discours de Bayeux, Livre noir de la bureaucratie, espace « Questions », actualités) ; 54 questions recodées en grille v1.4 avec le même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, vérification indépendante de tous les codes recodés, second arbitrage). Contrôle humain de 10 % à faire. Vague 4 (7 novembre 2026, programmes publiés depuis le 4 octobre) : aucun nouveau programme : recherche sur les questions sans code, sources postérieures au 4 octobre ; 3 question(s) recodée(s) ou codée(s) à l'aveugle, dont 3 nouveau(x) code(s) ; même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, vérification indépendante de 30 % des codes, contrôle humain de 10 % à faire).",
   "grille_version": "1.4",
-  "date_derniere_maj_codage": "2026-10-14",
+  "date_derniere_maj_codage": "2026-11-07",
   "programme": {
     "officiel_disponible": true,
     "date_publication": "2026-07-31",
@@ -558,17 +558,51 @@
     },
     {
       "question_id": "RET-011",
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
+      "code": 1,
+      "nature": "imprecise",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Selon Capital, qui présente le programme présidentiel de Nouvelle Energie, le candidat prévoit de supprimer l'ensemble des caisses actuelles (CNAV, Agirc-Arrco, régimes spéciaux restants) au profit d'une entité unique, l'Agence Centrale Publique de Retraite. L'article ne précise pas le sort des salariés déjà en poste ni le calendrier.",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Selon un article de presse présentant le programme présidentiel du [PARTI], le candidat prévoit de supprimer l'ensemble des caisses actuelles (caisses de base, complémentaires, régimes spéciaux restants) au profit d'une entité publique unique. L'article ne précise pas le sort des salariés déjà en poste ni le calendrier.",
+          "citation_anonymisee": null,
+          "source": {
+            "url": "https://www.capital.fr/votre-retraite/votre-retraite-depasse-2-200-euros-david-lisnard-propose-de-la-geler-1531322",
+            "titre": "Votre retraite dépasse 2 200 euros, David Lisnard propose de la geler",
+            "date_publication": "2026-10-28",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": null
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": 1,
+          "nature": "imprecise",
+          "justification": "Supprimer toutes les caisses dont les régimes spéciaux restants, sans préciser le sort des salariés en poste.",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": 1,
+          "nature": "imprecise",
+          "justification": "suppression de tous les régimes spéciaux, sort des salariés en poste non précisé",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
       "arbitrage": null,
       "controle_humain": {
         "tire_au_sort": false
       },
       "contestations": [],
-      "version": 1
+      "version": 1,
+      "item_aveugle": "c58b59a0"
     },
     {
       "question_id": "RET-012",
@@ -2377,14 +2411,56 @@
       "contestations": [],
       "version": 1,
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": true,
+        "date": null,
+        "resultat": null
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": -1,
+      "nature": "nuancee",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Selon Capital, qui rapporte les propos du candidat (exprimés cet été, sans date précise), le port de l'uniforme relèverait du chef d'établissement, qui rendrait ensuite des comptes à l'autorité de l'État. Un établissement qui souhaite tester l'uniforme doit pouvoir le faire. Aucune obligation nationale n'est évoquée ; l'article ne cite pas de phrase du candidat sur ce point.",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Selon un média, qui rapporte les propos du candidat (exprimés cet été, sans date précise), le port de l'uniforme relèverait du chef d'établissement, qui rendrait ensuite des comptes à l'autorité de l'État. Un établissement qui souhaite tester l'uniforme doit pouvoir le faire. Aucune obligation nationale n'est évoquée ; l'article ne cite pas de phrase du candidat sur ce point.",
+          "citation_anonymisee": null,
+          "source": {
+            "url": "https://www.capital.fr/votre-carriere/ca-na-plus-aucun-sens-quils-soient-fonctionnaires-david-lisnard-veut-des-profs-contractuels-1531365",
+            "titre": "«Ça n'a plus aucun sens qu'ils soient fonctionnaires», David Lisnard veut des profs contractuels",
+            "date_publication": "2026-10-28",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": null
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": -1,
+          "nature": "nuancee",
+          "justification": "Uniforme laissé au choix du chef d'établissement, sans obligation nationale : autre mesure plus douce.",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": -1,
+          "nature": "nuancee",
+          "justification": "uniforme laissé au choix des établissements, pas d'obligation",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "arbitrage": null,
+      "item_aveugle": "8d27ed55",
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "Le candidat laisse l'uniforme au choix du chef d'établissement au lieu d'une obligation nationale : c'est une autre mesure, plus douce, qui va contre l'énoncé ; −1 nuancee."
+      }
     },
     {
       "question_id": "EDU-011",
@@ -5873,14 +5949,28 @@
     {
       "question_id": "FIS-010",
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": null,
-      "nature": "non_connu",
+      "code": 1,
+      "nature": "nuancee",
       "statut": "arbitre",
       "extraits": [
+        {
+          "reformulation": "Interrogé sur Europe 1 et CNEWS le 27 octobre 2026, le candidat veut supprimer l'abattement de 10 % pour frais professionnels dont bénéficient les retraités, une niche d'environ 5 milliards d'euros par an selon l'article, au motif qu'un retraité n'a plus de frais professionnels. Il ne propose pas de forfait de 2 000 euros en remplacement : la source parle d'une suppression, et cet effort est lié au financement d'une part de capitalisation.",
+          "citation_courte": "Un retraité, par définition, n'a plus de frais professionnels",
+          "reformulation_anonymisee": "Interrogé en radio et télévision fin octobre 2026, [CANDIDAT] veut supprimer l'abattement de 10 % pour frais professionnels dont bénéficient les retraités, une niche d'environ 5 milliards d'euros par an selon l'article, au motif qu'un retraité n'a plus de frais professionnels. [CANDIDAT] ne propose pas de forfait de 2 000 euros en remplacement : la source parle d'une suppression, et cet effort est lié au financement d'une part de capitalisation.",
+          "citation_anonymisee": "Un retraité, par définition, n'a plus de frais professionnels",
+          "source": {
+            "url": "https://www.capital.fr/votre-retraite/votre-retraite-depasse-2-200-euros-david-lisnard-propose-de-la-geler-1531322",
+            "titre": "Votre retraite dépasse 2 200 euros, David Lisnard propose de la geler - Capital.fr",
+            "date_publication": "2026-10-28",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Il conteste l'abattement fiscal de 10 % pour frais professionnels appliqué aux pensions, qu'il juge difficile à justifier pour des personnes qui ne travaillent plus, et le cite à propos du financement de l'amorçage de la capitalisation. Aucun forfait de 2 000 euros n'est évoqué.",
           "citation_courte": "difficile à justifier pour des personnes qui ne travaillent plus",
@@ -5899,36 +5989,30 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": null,
-          "nature": "non_connu",
-          "justification": "Conteste l'abattement de 10 % sans évoquer de forfait de 2 000 euros : sujet voisin (R4).",
-          "date": "2026-10-14",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "Veut supprimer l'abattement de 10 % sans forfait de 2 000 € : va dans le sens de l'énoncé pour une partie seulement.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
-          "code": 1,
-          "nature": "imprecise",
-          "justification": "Conteste l'abattement de 10 % sans évoquer le forfait de 2 000 euros.",
-          "date": "2026-10-14",
+          "code": -1,
+          "nature": "nuancee",
+          "justification": "supprime l'abattement sans forfait de 2 000 €, autre mesure",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": false
       },
       "arbitrage": {
         "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-14",
-        "code_retenu": null,
-        "nature_retenue": "non_connu",
-        "motif": "Contester l'abattement de 10 % (pour financer la capitalisation) ne reprend ni le remplacement ni le forfait de 2 000 euros : sujet voisin (R4)."
+        "date": "2026-11-07",
+        "code_retenu": 1,
+        "nature_retenue": "nuancee",
+        "motif": "Supprimer l'abattement de 10 % sans aucun forfait va plus loin que l'énoncé dans le même sens (forfait de 2 000 € → 0) : R1, +1 nuancee."
       },
-      "item_aveugle": "48b2bd65",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Contester l'abattement de 10 % pour financer la capitalisation ne reprend ni son remplacement ni un forfait de 2 000 € (qui allégerait les petites pensions) : sujet voisin, null."
-      }
+      "item_aveugle": "ad1c9065"
     },
     {
       "question_id": "FIS-011",

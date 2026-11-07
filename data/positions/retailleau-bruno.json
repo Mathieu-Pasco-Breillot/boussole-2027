@@ -1,12 +1,12 @@
 {
   "candidat_id": "retailleau-bruno",
-  "_statut": "POC — codage vague 1, 11 thèmes. Retraites : arbitrages acceptés en bloc par Mathieu. Autres thèmes : désaccords arbitrés provisoirement par un 3e modèle, contrôle humain de 10 % à faire. À revoir avant publication. Vague 2 (4 octobre 2026) : recherche complémentaire sur les questions sans code publié, même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, contrôle humain de 10 % à faire). Vague 3 (4 octobre 2026) : nouvelle recherche sur les questions sans code publié, même protocole.",
+  "_statut": "POC — codage vague 1, 11 thèmes. Retraites : arbitrages acceptés en bloc par Mathieu. Autres thèmes : désaccords arbitrés provisoirement par un 3e modèle, contrôle humain de 10 % à faire. À revoir avant publication. Vague 2 (4 octobre 2026) : recherche complémentaire sur les questions sans code publié, même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, contrôle humain de 10 % à faire). Vague 3 (4 octobre 2026) : nouvelle recherche sur les questions sans code publié, même protocole. Vague 4 (7 novembre 2026, programmes publiés depuis le 4 octobre) : nouveau document de programme (plan de 197 milliards d'euros d'économies du 12 octobre 2026) : toutes les questions des thèmes qu'il couvre recherchées, les autres seulement sur les questions sans code ; 21 question(s) recodée(s) ou codée(s) à l'aveugle, dont 11 nouveau(x) code(s) ; même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, vérification indépendante de 30 % des codes, contrôle humain de 10 % à faire).",
   "grille_version": "1.3",
   "programme": {
     "officiel_disponible": false,
     "date_publication": null,
     "url": null,
-    "note": "Aucun programme officiel 2027 complet trouvé au 3 octobre 2026. Détail par thème dans programmes-par-theme.json (phase 4)."
+    "note": "Aucun programme officiel 2027 complet trouvé au 3 octobre 2026. Détail par thème dans programmes-par-theme.json (phase 4). Au 7 novembre 2026 : plan de 197 milliards d'euros d'économies du 12 octobre 2026, détaillé par la presse ; pas encore de programme complet."
   },
   "positions": [
     {
@@ -78,9 +78,23 @@
       "question_id": "RET-002",
       "code": -1,
       "nature": "nuancee",
-      "statut": "arbitre",
-      "item_aveugle": "40029d02",
+      "statut": "accord",
+      "item_aveugle": "b61ca023",
       "extraits": [
+        {
+          "reformulation": "Interrogé sur BFMTV le 3 novembre 2026, le candidat décrit deux âges : à 63 ans, on est libre de partir (hors invalidité et handicap) mais avec une retraite réduite d'environ 7 %, et à 65 ans le taux plein, au lieu de 67 ans aujourd'hui. Il présente le 63 ans comme une liberté, non comme un âge obligatoire.",
+          "citation_courte": "63 ans, ce sera une liberté",
+          "reformulation_anonymisee": "Interrogé à la télévision, le candidat décrit deux âges : à 63 ans, on est libre de partir (hors invalidité et handicap) mais avec une retraite réduite d'environ 7 %, et à 65 ans le taux plein, au lieu de 67 ans aujourd'hui. Il présente le 63 ans comme une liberté, non comme un âge obligatoire.",
+          "citation_anonymisee": "63 ans, ce sera une liberté",
+          "source": {
+            "url": "https://www.capital.fr/votre-retraite/partir-a-63-ans-en-perdant-7-ou-a-65-ans-a-taux-plein-la-retraite-selon-bruno-retailleau-1531646",
+            "titre": "Partir à 63 ans en perdant 7%, ou à 65 ans à taux plein, la retraite selon Bruno Retailleau - Capital.fr",
+            "date_publication": "2026-11-05",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Sur LCI le 22 septembre 2026, Bruno Retailleau propose un âge minimal de départ à 63 ans, avec une décote de 7 % par an pour un départ avant 65 ans, âge auquel le taux plein serait acquis. Seul l'âge du taux plein (65 ans) serait lié à l'espérance de vie, pas l'âge minimal de 63 ans.",
           "citation_courte": "L'âge minimal de départ, c'est 63 ans",
@@ -99,40 +113,34 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": 1,
+          "code": -1,
           "nature": "nuancee",
-          "justification": "Propose un âge minimal de 63 ans : baisse par rapport à 64, mais version partielle par rapport à 60.",
-          "date": "2026-10-03",
+          "justification": "Âge minimal à 63 ans : moins de la moitié du chemin de 64 vers 60 (R5).",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
-          "code": -2,
-          "nature": "nette",
-          "justification": "Il propose un âge minimal de 63 ans, qui rejette les 60 ans de l'énoncé.",
-          "date": "2026-10-03",
+          "code": -1,
+          "nature": "nuancee",
+          "justification": "âge minimal 63 ans, moins de la moitié du chemin vers 60 (R5)",
+          "date": "2026-11-07",
           "aveugle": true
         },
-        "accord": false
+        "accord": true
       },
-      "arbitrage": {
-        "par": "Mathieu, sur proposition de l'assistant, acceptée en bloc le 2026-10-03 sans examen individuel (mode POC)",
-        "date": "2026-10-03",
-        "code_retenu": -1,
-        "nature_retenue": "nuancee",
-        "motif": "R5 : 63 ans ne va pas jusqu'à 60 ans"
-      },
+      "arbitrage": null,
       "controle_humain": {
         "tire_au_sort": false
       },
+      "contestations": [],
+      "version": 2,
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
+        "date": "2026-11-07",
         "verdict": "confirme",
-        "motif": "Il retient 63 ans, valeur qui va moins loin que les 60 ans de l'énoncé mais dans le même sens par rapport aux 64 ans en vigueur : R5, -1 nuancee."
-      },
-      "contestations": [],
-      "version": 1
+        "motif": "Âge minimal de 63 ans : depuis 64 ans, un an sur les quatre qui mènent à 60 ans, soit moins de la moitié du chemin ; R5 donne −1 nuancee."
+      }
     },
     {
       "question_id": "RET-003",
@@ -195,52 +203,134 @@
     },
     {
       "question_id": "RET-005",
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
+      "code": -1,
+      "nature": "nuancee",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Selon l'article, qui cite le chiffrage du plan du candidat (12 octobre 2026), la réforme des retraites maintient un âge légal de 63 ans couplé à un âge pivot à 65 ans avec 43 années de cotisation. La durée de 45 ans n'est pas mentionnée.",
+          "citation_courte": "43 années de cotisation",
+          "reformulation_anonymisee": "Selon l'article, qui cite le chiffrage du plan du candidat, la réforme des retraites maintient un âge légal de 63 ans couplé à un âge pivot à 65 ans avec 43 années de cotisation. La durée de 45 ans n'est pas mentionnée.",
+          "citation_anonymisee": "43 années de cotisation",
+          "source": {
+            "url": "https://www.lopinion.fr/economie/ce-qui-se-cache-derriere-les-42-milliards-deconomies-sur-les-retraites-de-bruno-retailleau",
+            "titre": "Ce qui se cache derrière les 42 milliards d'économies sur les retraites de Bruno Retailleau - l'Opinion",
+            "date_publication": "2026-10-15",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": -1,
+          "nature": "nuancee",
+          "justification": "Maintient 43 années de cotisation (statu quo), sans porter la durée à 45 ans.",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": -1,
+          "nature": "nuancee",
+          "justification": "maintient 43 ans de cotisation, loin des 45 ans",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
       "arbitrage": null,
       "controle_humain": {
         "tire_au_sort": false
       },
       "contestations": [],
-      "version": 1
+      "version": 1,
+      "item_aveugle": "df3e2567"
     },
     {
       "question_id": "RET-006",
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
+      "code": -1,
+      "nature": "nuancee",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Selon l'article, qui cite le chiffrage du plan du candidat (12 octobre 2026), la réforme des retraites maintient un âge légal de 63 ans couplé à un âge pivot à 65 ans avec 43 années de cotisation. Une durée de 40 ans n'est pas mentionnée.",
+          "citation_courte": "43 années de cotisation",
+          "reformulation_anonymisee": "Selon l'article, qui cite le chiffrage du plan du candidat, la réforme des retraites maintient un âge légal de 63 ans couplé à un âge pivot à 65 ans avec 43 années de cotisation. Une durée de 40 ans n'est pas mentionnée.",
+          "citation_anonymisee": "43 années de cotisation",
+          "source": {
+            "url": "https://www.lopinion.fr/economie/ce-qui-se-cache-derriere-les-42-milliards-deconomies-sur-les-retraites-de-bruno-retailleau",
+            "titre": "Ce qui se cache derrière les 42 milliards d'économies sur les retraites de Bruno Retailleau - l'Opinion",
+            "date_publication": "2026-10-15",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": -1,
+          "nature": "nuancee",
+          "justification": "Maintient 43 années de cotisation (statu quo), sans ramener à 40 ans.",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": -1,
+          "nature": "nuancee",
+          "justification": "maintient 43 ans de cotisation, contre 40 ans",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
       "arbitrage": null,
       "controle_humain": {
         "tire_au_sort": false
       },
       "contestations": [],
-      "version": 1
+      "version": 1,
+      "item_aveugle": "7df7e815"
     },
     {
       "question_id": "RET-007",
       "code": 1,
       "nature": "nuancee",
       "statut": "accord",
-      "item_aveugle": "f73b104b",
+      "item_aveugle": "11aa6e0e",
       "extraits": [
         {
-          "reformulation": "Bruno Retailleau propose une part de retraite par capitalisation pour les jeunes entrant sur le marché du travail, avec un rendement d'au moins 4 %, qui représenterait dans un premier temps 25 à 30 % de leurs retraites. Une des pistes de financement est une cotisation de 1 % du salaire brut partagée entre salarié et employeur ; elle ne concerne pas les retraités actuels.",
-          "citation_courte": "C'est fondamental pour les jeunes, mais aussi pour nos entreprises",
-          "reformulation_anonymisee": "[CANDIDAT] propose une part de retraite par capitalisation pour les jeunes entrant sur le marché du travail, avec un rendement d'au moins 4 %, qui représenterait dans un premier temps 25 à 30 % de leurs retraites. Une des pistes de financement est une cotisation de 1 % du salaire brut partagée entre salarié et employeur ; elle ne concerne pas les retraités actuels.",
-          "citation_anonymisee": "C'est fondamental pour les jeunes, mais aussi pour nos entreprises",
+          "reformulation": "Sur BFMTV le 3 novembre 2026, le candidat se dit favorable à un étage de capitalisation fondamentale à l'intérieur du régime par répartition, qu'il veut sauver ; il présente son système comme reposant sur deux piliers, la capitalisation pour les jeunes et les deux âges. Le caractère obligatoire n'est pas précisé dans l'article.",
+          "citation_courte": "étage de capitalisation fondamentale",
+          "reformulation_anonymisee": "Lors d'un entretien télévisé le 3 novembre, le candidat se dit favorable à un étage de capitalisation fondamentale à l'intérieur du régime par répartition, qu'il veut sauver ; il présente son système comme reposant sur deux piliers, la capitalisation pour les jeunes et les deux âges. Le caractère obligatoire n'est pas précisé dans l'article.",
+          "citation_anonymisee": "étage de capitalisation fondamentale",
           "source": {
-            "url": "https://lcp.fr/actualites/retraites-bruno-retailleau-veut-un-age-minimal-de-depart-a-63-ans-et-un-taux-plein-a-65",
-            "titre": "Retraites: Bruno Retailleau veut un âge minimal de départ à 63 ans et un taux plein à 65 ans",
-            "date_publication": "2026-09-23",
+            "url": "https://www.capital.fr/votre-retraite/partir-a-63-ans-en-perdant-7-ou-a-65-ans-a-taux-plein-la-retraite-selon-bruno-retailleau-1531646",
+            "titre": "Partir à 63 ans en perdant 7%, ou à 65 ans à taux plein, la retraite selon Bruno Retailleau - Capital.fr",
+            "date_publication": "2026-11-05",
             "type": "declaration_publique"
           },
-          "date_consultation": "2026-10-03",
+          "date_consultation": "2026-11-07",
           "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Selon Capital, le plan présenté par le candidat le 12 octobre 2026 prévoit de développer la capitalisation, avec une cotisation de 1 % du salaire envisagée, et des dispositifs d'intéressement ou de participation. Le texte ne précise pas ici si cette part serait obligatoire.",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Selon l'article, le plan présenté par le candidat prévoit de développer la capitalisation, avec une cotisation de 1 % du salaire envisagée, et des dispositifs d'intéressement ou de participation. Le texte ne précise pas ici si cette part serait obligatoire.",
+          "citation_anonymisee": null,
+          "source": {
+            "url": "https://www.capital.fr/economie-politique/bruno-retailleau-devoile-son-plan-de-197-milliards-deuros-deconomies-dici-2032-1530922",
+            "titre": "Bruno Retailleau dévoile son plan de 197 milliards d'euros d'économies d'ici 2032 - Capital.fr",
+            "date_publication": "2026-10-12",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": null
         },
         {
           "reformulation": "Selon Public Sénat, Bruno Retailleau souhaite développer une part de capitalisation pour les nouveaux entrants sur le marché du travail, pouvant constituer dans un premier temps 25 à 30 % de leurs retraites. Il prévoit de flécher une partie de baisses de cotisations sociales, permises par des économies, vers ces fonds de pension, à hauteur de 0,5 % pour le salarié et 0,5 % pour l'employeur.",
@@ -255,6 +345,20 @@
           },
           "date_consultation": "2026-10-03",
           "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Bruno Retailleau propose une part de retraite par capitalisation pour les jeunes entrant sur le marché du travail, avec un rendement d'au moins 4 %, qui représenterait dans un premier temps 25 à 30 % de leurs retraites. Une des pistes de financement est une cotisation de 1 % du salaire brut partagée entre salarié et employeur ; elle ne concerne pas les retraités actuels.",
+          "citation_courte": "C'est fondamental pour les jeunes, mais aussi pour nos entreprises",
+          "reformulation_anonymisee": "[CANDIDAT] propose une part de retraite par capitalisation pour les jeunes entrant sur le marché du travail, avec un rendement d'au moins 4 %, qui représenterait dans un premier temps 25 à 30 % de leurs retraites. Une des pistes de financement est une cotisation de 1 % du salaire brut partagée entre salarié et employeur ; elle ne concerne pas les retraités actuels.",
+          "citation_anonymisee": "C'est fondamental pour les jeunes, mais aussi pour nos entreprises",
+          "source": {
+            "url": "https://lcp.fr/actualites/retraites-bruno-retailleau-veut-un-age-minimal-de-depart-a-63-ans-et-un-taux-plein-a-65",
+            "titre": "Retraites: Bruno Retailleau veut un âge minimal de départ à 63 ans et un taux plein à 65 ans",
+            "date_publication": "2026-09-23",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-03",
+          "citation_verifiee_mot_a_mot": true
         }
       ],
       "codage": {
@@ -262,32 +366,34 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Capitalisation financée par cotisation, limitée aux nouveaux entrants sur le marché du travail.",
-          "date": "2026-10-03",
+          "justification": "Part de capitalisation pour les nouveaux entrants financée par 1 % du salaire : version partielle, caractère obligatoire non précisé.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Il propose une part de capitalisation financée par cotisation, mais seulement pour les nouveaux entrants.",
-          "date": "2026-10-03",
+          "justification": "capitalisation pour les nouveaux entrants, caractère obligatoire non précisé",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
       },
       "arbitrage": null,
       "controle_humain": {
-        "tire_au_sort": false
-      },
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Il propose une part de capitalisation financée par cotisation, mais limitée aux nouveaux entrants et sans que l'obligation pour tous les salariés du privé soit explicitée : version partielle de l'énoncé."
+        "tire_au_sort": true,
+        "date": null,
+        "resultat": null
       },
       "contestations": [],
-      "version": 1
+      "version": 2,
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "Le candidat propose une part de capitalisation limitée aux nouveaux entrants, financée par une cotisation de 1 % présentée comme une piste, sans dire qu'elle serait obligatoire : c'est une version partielle de l'énoncé, donc +1 nuancee."
+      }
     },
     {
       "question_id": "RET-008",
@@ -379,17 +485,51 @@
     },
     {
       "question_id": "RET-011",
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
+      "code": 1,
+      "nature": "imprecise",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Selon Public Sénat, parmi les sources des 42 milliards d'économies sur les retraites du plan présenté le 12 octobre 2026 figure l'extinction des derniers régimes spéciaux. L'article ne précise pas si les salariés déjà en poste sont concernés.",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Selon l'article, parmi les sources des 42 milliards d'économies sur les retraites du plan présenté par le candidat figure l'extinction des derniers régimes spéciaux. L'article ne précise pas si les salariés déjà en poste sont concernés.",
+          "citation_anonymisee": null,
+          "source": {
+            "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu",
+            "titre": "Présidentielle 2027 : Bruno Retailleau s'engage sur un plan d'économies de près de 200 milliards d'euros, s'il est élu - Public Sénat",
+            "date_publication": "2026-10-12",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": null
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": 1,
+          "nature": "imprecise",
+          "justification": "Extinction des derniers régimes spéciaux sans préciser le sort des salariés en poste.",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": 1,
+          "nature": "imprecise",
+          "justification": "extinction des derniers régimes spéciaux, salariés en poste non précisés",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
       "arbitrage": null,
       "controle_humain": {
         "tire_au_sort": false
       },
       "contestations": [],
-      "version": 1
+      "version": 1,
+      "item_aveugle": "92ef6823"
     },
     {
       "question_id": "RET-012",
@@ -760,14 +900,50 @@
       "contestations": [],
       "version": 1,
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": true,
+        "date": null,
+        "resultat": null
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": -2,
+      "nature": "nette",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Interrogé sur franceinfo le 5 novembre 2026, le candidat se dit défavorable à toute hausse du SMIC, même légère (pas de coup de pouce), au motif du risque de faillite pour les PME et d'une « smicardisation » de la société ; il met en avant à la place le fait de travailler un peu plus. Aucun montant de SMIC n'est évoqué.",
+          "citation_courte": "La solution, ce n’est pas l’augmentation du SMIC.",
+          "reformulation_anonymisee": "Interrogé à la radio le 5 novembre 2026, [CANDIDAT] se dit défavorable à toute hausse du SMIC, même légère (pas de coup de pouce), au motif du risque de faillite pour les PME et d'une « smicardisation » de la société ; il met en avant à la place le fait de travailler un peu plus. Aucun montant de SMIC n'est évoqué.",
+          "citation_anonymisee": "La solution, ce n’est pas l’augmentation du SMIC.",
+          "source": {
+            "url": "https://www.capital.fr/votre-carriere/pas-de-coup-de-pouce-au-smic-meme-leger-reclame-bruno-retailleau-pour-qui-cest-une-fausse-piste-1531649",
+            "titre": "Pas de coup de pouce au SMIC, même léger, réclame Bruno Retailleau, pour qui c’est une « fausse piste » (Capital, reprenant l'entretien franceinfo)",
+            "date_publication": "2026-11-05",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": -2,
+          "nature": "nette",
+          "justification": "Défavorable à toute hausse du SMIC, même légère.",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": -2,
+          "nature": "nette",
+          "justification": "défavorable à toute hausse du SMIC",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "arbitrage": null,
+      "item_aveugle": "cd941a6e"
     },
     {
       "question_id": "ECO-002",
@@ -1005,21 +1181,43 @@
     },
     {
       "question_id": "ECO-013",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Demande ferme et datée d'un référendum constitutionnel sur la règle d'or, que la précision identifie à l'énoncé ; +2 nette défendable. Note : le motif d'arbitrage dit retenir le code du codeur B alors que +2 nette est le code du codeur A."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
       "code": 2,
       "nature": "nette",
-      "statut": "arbitre",
+      "statut": "accord",
       "extraits": [
+        {
+          "reformulation": "Selon Public Sénat, dans son plan de redressement présenté le 12 octobre 2026, le candidat s'engage à soumettre par référendum le projet de loi « relatif à l'équilibre des finances publiques » adopté par les deux chambres en juillet 2011 (lois-cadres fixant une trajectoire et plafonds annuels de dépenses).",
+          "citation_courte": "relatif à l’équilibre des finances publiques",
+          "reformulation_anonymisee": "Selon le média, dans son plan de redressement présenté le 12 octobre 2026, [CANDIDAT] s'engage à soumettre par référendum le projet de loi « relatif à l'équilibre des finances publiques » adopté par les deux chambres en juillet 2011 (lois-cadres fixant une trajectoire et plafonds annuels de dépenses).",
+          "citation_anonymisee": "relatif à l’équilibre des finances publiques",
+          "source": {
+            "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu",
+            "titre": "Présidentielle 2027 : Bruno Retailleau s’engage sur un plan d’économies de près de 200 milliards d’euros, s’il est élu",
+            "date_publication": "2026-10-12",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Selon Capital, le plan prévoit, dès les cent premiers jours du mandat, un référendum sur l'inscription d'une règle d'or budgétaire dans la Constitution, et une loi-cadre pluriannuelle avec plafond annuel de dépenses (« Pas de budget sans loi-cadre »).",
+          "citation_courte": "Pas de budget sans loi-cadre",
+          "reformulation_anonymisee": "Selon le média, le plan prévoit, dès les cent premiers jours du mandat, un référendum sur l'inscription d'une règle d'or budgétaire dans la Constitution, et une loi-cadre pluriannuelle avec plafond annuel de dépenses (« Pas de budget sans loi-cadre »).",
+          "citation_anonymisee": "Pas de budget sans loi-cadre",
+          "source": {
+            "url": "https://www.capital.fr/economie-politique/bruno-retailleau-devoile-son-plan-de-197-milliards-deuros-deconomies-dici-2032-1530922",
+            "titre": "Bruno Retailleau dévoile son plan de 197 milliards d’euros d’économies d’ici 2032",
+            "date_publication": "2026-10-12",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le candidat demande l'organisation d'un référendum sur la règle d'or budgétaire « avant la fin de l'année », sur la base du projet de révision constitutionnelle voté en 2011 par l'Assemblée et le Sénat. Il y voit le seul moyen d'éviter une crise financière avant l'élection présidentielle et de calmer les marchés. La source ne détaille ni le seuil de déficit ni le contenu exact de la règle.",
           "citation_courte": "le seul bouclier, c’est le référendum, une règle d’or",
@@ -1040,28 +1238,22 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Demande un référendum pour inscrire la règle d'or dans la Constitution.",
-          "date": "2026-10-04",
+          "justification": "Référendum pour inscrire dans la Constitution une règle d'or relative à l'équilibre des finances publiques.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
-          "code": 1,
-          "nature": "imprecise",
-          "justification": "Réclame un référendum sur la règle d'or, contenu non détaillé.",
-          "date": "2026-10-04",
+          "code": 2,
+          "nature": "nette",
+          "justification": "référendum sur l'inscription d'une règle d'or dans la Constitution",
+          "date": "2026-11-07",
           "aveugle": true
         },
-        "accord": false
+        "accord": true
       },
-      "arbitrage": {
-        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-04",
-        "code_retenu": 2,
-        "nature_retenue": "nette",
-        "motif": "Demande datée d'un référendum constitutionnel sur la règle d'or budgétaire, mesure que la précision identifie à l'énoncé ; le référendum est un moyen, pas une réserve. (code retenu : celui du codeur B)"
-      },
-      "item_aveugle": "6300f09a"
+      "arbitrage": null,
+      "item_aveugle": "250b09a3"
     },
     {
       "question_id": "ECO-014",
@@ -1138,31 +1330,39 @@
     },
     {
       "question_id": "ECO-015",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "La tribune veut « sortir des 35 heures par le haut », renvoyer l'organisation du temps de travail à la négociation et exonérer de cotisations les heures « passé 1 623 heures par an » ; l'entretien évoque trente minutes de plus par jour : même sens que l'énoncé, sans reprise explicite d'un relèvement de la durée légale, +1 défendable."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "b484a578",
+      "item_aveugle": "22e97fab",
       "extraits": [
         {
-          "reformulation": "Il propose de laisser l'organisation du temps de travail à la négociation collective (entreprise ou branche), sans référence à une durée hebdomadaire de 35 heures, et de supprimer toute cotisation sociale, patronale et salariale, sur les heures supplémentaires effectuées au-delà de 1 623 heures par an.",
-          "citation_courte": "Passé 1 623 heures par an",
-          "reformulation_anonymisee": "[CANDIDAT] propose de laisser l'organisation du temps de travail à la négociation collective (entreprise ou branche), sans référence à une durée hebdomadaire de 35 heures, et de supprimer toute cotisation sociale, patronale et salariale, sur les heures supplémentaires effectuées au-delà de 1 623 heures par an.",
-          "citation_anonymisee": "Passé 1 623 heures par an",
+          "reformulation": "Selon Public Sénat, le programme prévoit un seuil « zéro cotisation » au-delà de 1 623 heures travaillées par an : les heures au-delà seraient exonérées de cotisations sociales et d'impôt sur le revenu. Il s'agit d'un seuil d'exonération, la source ne parle pas de modifier la durée légale.",
+          "citation_courte": "au-delà de 1 623 heures",
+          "reformulation_anonymisee": "Selon le média, le programme prévoit un seuil « zéro cotisation » au-delà de 1 623 heures travaillées par an : les heures au-delà seraient exonérées de cotisations sociales et d'impôt sur le revenu. Il s'agit d'un seuil d'exonération, la source ne parle pas de modifier la durée légale.",
+          "citation_anonymisee": "au-delà de 1 623 heures",
           "source": {
-            "url": "https://republicains.fr/actualites/2026/05/02/priorite-travail-france-35h-salaires-retraites/",
-            "titre": "Instaurons la priorité travail (tribune)",
-            "date_publication": "2026-05-02",
-            "type": "texte_signe"
+            "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+            "titre": "Présidentielle : que proposent les candidats pour augmenter les salaires ?",
+            "date_publication": "2026-10-30",
+            "type": "declaration_publique"
           },
-          "date_consultation": "2026-10-03",
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Pour « aligner le temps de travail du public sur celui du privé », le candidat annonce le 12 octobre 2026 de faire passer le temps de travail des fonctionnaires de 1 607 à 1 623 heures par an (16 heures de plus), engagement présenté comme ferme dans son plan.",
+          "citation_courte": "d’aligner le temps du travail du public sur celui du privé",
+          "reformulation_anonymisee": "Pour « aligner le temps de travail du public sur celui du privé », [CANDIDAT] annonce le 12 octobre 2026 de faire passer le temps de travail des fonctionnaires de 1 607 à 1 623 heures par an (16 heures de plus), engagement présenté comme ferme dans son plan.",
+          "citation_anonymisee": "d’aligner le temps du travail du public sur celui du privé",
+          "source": {
+            "url": "https://acteurspublics.fr/articles/bruno-retailleau-veut-faire-travailler-davantage-les-fonctionnaires/",
+            "titre": "Bruno Retailleau veut faire travailler davantage les fonctionnaires",
+            "date_publication": "2026-10-12",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
           "citation_verifiee_mot_a_mot": true
         },
         {
@@ -1178,6 +1378,20 @@
           },
           "date_consultation": "2026-10-03",
           "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Il propose de laisser l'organisation du temps de travail à la négociation collective (entreprise ou branche), sans référence à une durée hebdomadaire de 35 heures, et de supprimer toute cotisation sociale, patronale et salariale, sur les heures supplémentaires effectuées au-delà de 1 623 heures par an.",
+          "citation_courte": "Passé 1 623 heures par an",
+          "reformulation_anonymisee": "[CANDIDAT] propose de laisser l'organisation du temps de travail à la négociation collective (entreprise ou branche), sans référence à une durée hebdomadaire de 35 heures, et de supprimer toute cotisation sociale, patronale et salariale, sur les heures supplémentaires effectuées au-delà de 1 623 heures par an.",
+          "citation_anonymisee": "Passé 1 623 heures par an",
+          "source": {
+            "url": "https://republicains.fr/actualites/2026/05/02/priorite-travail-france-35h-salaires-retraites/",
+            "titre": "Instaurons la priorité travail (tribune)",
+            "date_publication": "2026-05-02",
+            "type": "texte_signe"
+          },
+          "date_consultation": "2026-10-03",
+          "citation_verifiee_mot_a_mot": true
         }
       ],
       "codage": {
@@ -1185,16 +1399,16 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "R1 : le candidat évoque trente minutes de travail de plus par jour, ce qui dépasse largement les 16 heures annuelles de l'énoncé, dans le même sens (une autre source cite 1 623 h comme seuil des heures supplémentaires).",
-          "date": "2026-10-03",
+          "justification": "Passage de 1 607 à 1 623 heures annoncé pour les seuls fonctionnaires : version partielle.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Veut trente minutes de travail de plus par jour, bien au-delà de 1 623 heures, dans le même sens que l'énoncé (R1).",
-          "date": "2026-10-03",
+          "justification": "1 623 h mais pour les seuls fonctionnaires (périmètre réduit)",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -1206,27 +1420,41 @@
     },
     {
       "question_id": "ECO-016",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "corrige",
-        "motif": "Vérificateur : Même seuil de 70 % du Smic appliqué à l'ensemble des aides sociales : périmètre plus large qui contient entièrement le cumul RSA + aides au logement, sans écart de valeur. L'arbitrage a appliqué R1 (réservée aux valeurs chiffrées qui vont plus loin) ; R6 provisoire donne +2 nette. Second arbitre : La source dit : financer la baisse de cotisations « notamment par le plafonnement des aides sociales à 70 % du Smic ». Même seuil que l'énoncé, périmètre plus large (toutes les aides sociales) qui contient entièrement le cumul RSA + aides au logement : R6, pas de valeur plus poussée donc pas R1.",
-        "code_avant": 1,
-        "nature_avant": "nuancee",
-        "second_arbitrage": {
-          "par": "second arbitrage aveugle quant à l'origine des options, sur la page source (claude-fable-5-1), non validé par un humain (mode POC)",
-          "code_retenu": 2,
-          "nature_retenue": "nette",
-          "motif": "La source dit : financer la baisse de cotisations « notamment par le plafonnement des aides sociales à 70 % du Smic ». Même seuil que l'énoncé, périmètre plus large (toutes les aides sociales) qui contient entièrement le cumul RSA + aides au logement : R6, pas de valeur plus poussée donc pas R1."
-        }
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "61cbf340",
+      "item_aveugle": "df03b9fa",
       "extraits": [
+        {
+          "reformulation": "Au micro de BFMTV le 3 novembre 2026, le candidat dit : il plafonnera à 70 % du SMIC la totalité des aides sociales reçues par un individu. L'énoncé ne distingue pas RSA et aides au logement : la mesure vise l'ensemble des aides.",
+          "citation_courte": "Je plafonnerai à 70% du Smic la totalité des aides sociales",
+          "reformulation_anonymisee": "À la télévision le 3 novembre 2026, [CANDIDAT] dit : il plafonnera à 70 % du SMIC la totalité des aides sociales reçues par un individu. L'énoncé ne distingue pas RSA et aides au logement : la mesure vise l'ensemble des aides.",
+          "citation_anonymisee": "Je plafonnerai à 70% du Smic la totalité des aides sociales",
+          "source": {
+            "url": "https://www.capital.fr/votre-carriere/un-13e-et-un-14e-mois-contre-une-demi-heure-de-plus-par-jour-la-promesse-de-bruno-retailleau-aux-salaries-1531580",
+            "titre": "Un 13e et un 14e mois contre une demi-heure de plus par jour, la promesse de Bruno Retailleau aux salariés (Capital, reprenant l'émission BFMTV)",
+            "date_publication": "2026-11-05",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Face à une mère seule percevant RSA (environ 650 euros) et APL (397 euros) pour 1 446 euros d'aides au total, le candidat a confirmé le 22 octobre 2026 sur LCI, selon Capital, que son plafonnement à 70 % du SMIC ramènerait ses aides à environ 1 000 euros, et dit l'assumer.",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Face à une mère seule percevant RSA (environ 650 euros) et aide au logement (397 euros) pour 1 446 euros d'aides au total, [CANDIDAT] a confirmé le 22 octobre 2026 à la télévision, selon le média, que son plafonnement à 70 % du SMIC ramènerait ses aides à environ 1 000 euros, et dit l'assumer.",
+          "citation_anonymisee": null,
+          "source": {
+            "url": "https://www.capital.fr/economie-politique/je-lassume-bruno-retailleau-confirme-face-a-une-mere-seule-que-ses-aides-passeraient-de-1-446-a-1-000-euros-1531207",
+            "titre": "« Je l’assume », Bruno Retailleau confirme face à une mère seule que ses aides passeraient de 1 446 à 1 000 euros",
+            "date_publication": "2026-10-23",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": null
+        },
         {
           "reformulation": "Il veut plafonner les aides sociales à 70 % du Smic, mesure qu'il présente comme une manière de financer la baisse des cotisations sur les salaires sans argent public supplémentaire, en mettant fin aux abus.",
           "citation_courte": "plafonnement des aides sociales à 70 % du Smic",
@@ -1245,32 +1473,26 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": 1,
-          "nature": "nuancee",
-          "justification": "Il veut plafonner les aides sociales à 70 % du SMIC : même seuil, mais un périmètre plus large et moins précis que le cumul RSA et aides au logement.",
-          "date": "2026-10-03",
+          "code": 2,
+          "nature": "nette",
+          "justification": "Plafonne à 70 % du SMIC la totalité des aides sociales, ce qui englobe RSA et aides au logement (R6).",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Veut plafonner les aides sociales à 70 % du Smic, ce qui reprend le seuil de l'énoncé.",
-          "date": "2026-10-03",
+          "justification": "plafonne la totalité des aides à 70 % du SMIC, ce qui englobe RSA et logement (R6)",
+          "date": "2026-11-07",
           "aveugle": true
         },
-        "accord": false
+        "accord": true
       },
       "code": 2,
       "nature": "nette",
-      "statut": "arbitre",
-      "arbitrage": {
-        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-03",
-        "code_retenu": 1,
-        "nature_retenue": "nuancee",
-        "motif": "Même seuil de 70 % du Smic mais appliqué à l'ensemble des aides sociales, périmètre plus large que le cumul RSA et aides au logement : va plus loin dans le même sens (R1). (code retenu : celui du codeur A)"
-      }
+      "statut": "accord",
+      "arbitrage": null
     },
     {
       "question_id": "ECO-017",
@@ -1293,12 +1515,46 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": 2,
+      "nature": "nette",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Selon Acteurs Publics, le tableau d'économies du plan présenté le 12 octobre 2026 et transmis à la presse prévoit trois jours de carence dans la fonction publique, comme dans le privé (un seul aujourd'hui), pour environ 3 milliards d'euros d'économies d'ici 2032.",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Selon le média, le tableau d'économies du plan présenté le 12 octobre 2026 et transmis à la presse prévoit trois jours de carence dans la fonction publique, comme dans le privé (un seul aujourd'hui), pour environ 3 milliards d'euros d'économies d'ici 2032.",
+          "citation_anonymisee": null,
+          "source": {
+            "url": "https://acteurspublics.fr/articles/bruno-retailleau-veut-faire-travailler-davantage-les-fonctionnaires/",
+            "titre": "Bruno Retailleau veut faire travailler davantage les fonctionnaires",
+            "date_publication": "2026-10-12",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": null
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": 2,
+          "nature": "nette",
+          "justification": "Plan prévoyant trois jours de carence dans la fonction publique comme dans le privé.",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": 2,
+          "nature": "nette",
+          "justification": "trois jours de carence dans la fonction publique",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "arbitrage": null,
+      "item_aveugle": "9bed608d"
     },
     {
       "question_id": "ECO-019",
@@ -1321,12 +1577,46 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": 1,
+      "nature": "nuancee",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Dans son plan du 12 octobre 2026, le candidat annonce la suppression de la quasi-totalité des agences et opérateurs de l'État (« la suppression sera la règle, la prolongation d'activité l'exception »), ou leur rapatriement dans l'État, pour 7,5 milliards d'euros d'économies. Pas de proportion d'un tiers ni d'exception pour les universités dans les sources.",
+          "citation_courte": "La suppression sera la règle, et la prolongation d’activité l’exception",
+          "reformulation_anonymisee": "Dans son plan du 12 octobre 2026, [CANDIDAT] annonce la suppression de la quasi-totalité des agences et opérateurs de l'État (« la suppression sera la règle, la prolongation d'activité l'exception »), ou leur rapatriement dans l'État, pour 7,5 milliards d'euros d'économies. Pas de proportion d'un tiers ni d'exception pour les universités dans les sources.",
+          "citation_anonymisee": "La suppression sera la règle, et la prolongation d’activité l’exception",
+          "source": {
+            "url": "https://acteurspublics.fr/articles/bruno-retailleau-veut-faire-travailler-davantage-les-fonctionnaires/",
+            "titre": "Bruno Retailleau veut faire travailler davantage les fonctionnaires",
+            "date_publication": "2026-10-12",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "Suppression de la quasi-totalité des agences, au-delà d'un tiers (R1).",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "supprime la quasi-totalité des agences, plus loin qu'un tiers (R1)",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "arbitrage": null,
+      "item_aveugle": "1f8ba63d"
     },
     {
       "question_id": "INS-001",
@@ -1602,19 +1892,27 @@
     },
     {
       "question_id": "INS-009",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Il s'oppose au projet de loi constitutionnelle d'autonomie de la Corse qu'il juge contraire à l'indivisibilité de la République : rejet du texte, rapporté de seconde main mais entre guillemets."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "0156a16d",
+      "item_aveugle": "01abf69b",
       "extraits": [
+        {
+          "reformulation": "Lors de l'examen du projet de loi constitutionnelle sur l'autonomie de la Corse au Sénat (26-27 octobre 2026), Bruno Retailleau a défendu la position de son groupe : on peut vouloir l'unité sans l'uniformisation, mais pas en inscrivant le « communautarisme » dans la Constitution. Selon Public Sénat, cela visait l'amendement supprimant les notions de « communauté insulaire » et de « lien singulier à la terre corse » ; le Sénat a ensuite rejeté le texte.",
+          "citation_courte": "mais pas en constitutionnalisant le communautarisme",
+          "reformulation_anonymisee": "Lors de l'examen du projet de loi constitutionnelle sur l'autonomie de la Corse au Parlement, [CANDIDAT] a défendu la position suivante : on peut vouloir l'unité sans l'uniformisation, mais pas en inscrivant le « communautarisme » dans la Constitution. Cela visait un amendement supprimant les notions de « communauté insulaire » et de « lien singulier à la terre corse » ; la chambre a ensuite rejeté le texte.",
+          "citation_anonymisee": "mais pas en constitutionnalisant le communautarisme",
+          "source": {
+            "url": "https://www.publicsenat.fr/actualites/parlementaire/autonomie-de-la-corse-apres-le-rejet-du-senat-les-soutiens-du-texte-expriment-un-sentiment-de-deception",
+            "titre": "Autonomie de la Corse : après le rejet du Sénat, les soutiens du texte expriment un « sentiment de déception »",
+            "date_publication": "2026-10-27",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Selon la presse (qui cite un entretien au Figaro), il juge que le projet de loi constitutionnelle sur l'autonomie de la Corse « percute des piliers de la République, notamment son indivisibilité ». Il s'agit d'une opposition au texte, rapportée de seconde main.",
           "citation_courte": "piliers de la République",
@@ -1633,26 +1931,32 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": -2,
-          "nature": "nette",
-          "justification": "Le candidat s'oppose au projet d'autonomie de la Corse, qu'il juge contraire à l'indivisibilité de la République.",
-          "date": "2026-10-03",
+          "code": -1,
+          "nature": "nuancee",
+          "justification": "S'oppose au texte sur l'autonomie de la Corse au nom de l'indivisibilité, en visant surtout la notion de communauté insulaire.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": -2,
           "nature": "nette",
-          "justification": "S'oppose au projet de loi constitutionnelle sur l'autonomie de la Corse, jugé contraire à l'indivisibilité de la République.",
-          "date": "2026-10-03",
+          "justification": "s'oppose à l'inscription de l'autonomie corse dans la Constitution",
+          "date": "2026-11-07",
           "aveugle": true
         },
-        "accord": true
+        "accord": false
       },
-      "code": -2,
-      "nature": "nette",
-      "statut": "accord",
-      "arbitrage": null
+      "code": -1,
+      "nature": "nuancee",
+      "statut": "arbitre",
+      "arbitrage": {
+        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
+        "date": "2026-11-07",
+        "code_retenu": -1,
+        "nature_retenue": "nuancee",
+        "motif": "Opposition au texte au nom de l'indivisibilité, mais la source la plus récente vise surtout la constitutionnalisation du « communautarisme » (notions de communauté insulaire) tout en admettant « l'unité sans l'uniformisation » : rejet avec réserve, et code le plus proche de 0 en cas d'hésitation."
+      }
     },
     {
       "question_id": "INS-010",
@@ -1740,19 +2044,27 @@
     },
     {
       "question_id": "INS-016",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Il veut une révision constitutionnelle pour que le peuple décide par référendum « de toute question législative », citant parmi les questions aujourd'hui interdites « la politique migratoire », et soumettre ce pacte à référendum dès la rentrée 2027 : mesure englobante contenant l'énoncé."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "8ee2afac",
+      "item_aveugle": "bc9e1ca4",
       "extraits": [
+        {
+          "reformulation": "Lors des Rencontres de l'avenir à Saint-Raphaël le 6 novembre 2026, Bruno Retailleau se dit favorable à un référendum sur l'immigration et déclare vouloir réviser la Constitution à cet effet. Seul le titre et le descriptif de la vidéo BFM ont pu être lus : le seuil, la procédure et le périmètre exact ne sont pas précisés.",
+          "citation_courte": "Je veux réviser la constitution",
+          "reformulation_anonymisee": "Lors d'un événement public le 6 novembre 2026, [CANDIDAT] se dit favorable à un référendum sur l'immigration et déclare vouloir réviser la Constitution à cet effet. Seul le titre et le descriptif de la vidéo ont pu être lus : le seuil, la procédure et le périmètre exact ne sont pas précisés.",
+          "citation_anonymisee": "Je veux réviser la constitution",
+          "source": {
+            "url": "https://www.bfmtv.com/politique/les-republicains/video-je-veux-reviser-la-constitution-bruno-retailleau-favorable-a-un-referendum-sur-l-immigration_VN-202611060474.html",
+            "titre": "\"Je veux réviser la constitution\": Bruno Retailleau favorable à un référendum sur l'immigration",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Il dit qu'aujourd'hui des questions sont interdites aux Français par référendum, notamment la politique pénale, la politique migratoire et les questions de société. Il veut élargir le périmètre de l'article 11 de la Constitution pour que le peuple puisse décider par référendum de toute question législative, et soumettre son pacte constitutionnel à référendum dès la rentrée 2027.",
           "citation_courte": "la politique pénale, la politique migratoire et, plus largement, les questions de société",
@@ -1773,16 +2085,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Le candidat veut élargir l'article 11 à toute question législative, en citant la politique migratoire, ce qui permettrait un référendum sur l'immigration.",
-          "date": "2026-10-03",
+          "justification": "Veut réviser la Constitution pour permettre un référendum sur l'immigration.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Il veut élargir l'article 11 pour que la politique migratoire puisse être soumise à référendum et soumettre son pacte constitutionnel à référendum dès la rentrée 2027.",
-          "date": "2026-10-03",
+          "justification": "révision de la Constitution pour un référendum sur l'immigration",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -1827,12 +2139,52 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": 2,
+      "nature": "nette",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Interrogé sur les revendications lycéennes, le candidat réclame une nouvelle plateforme à la place de Parcoursup, qu'il juge opaque (« boîte noire ») et qui ne sélectionnerait pas au mérite. La plateforme qu'il proposerait reposerait uniquement sur le mérite, avec une sélection à l'université assumée.",
+          "citation_courte": "il faut une nouvelle plateforme, Parcoursup c'est une boîte noire",
+          "reformulation_anonymisee": "Interrogé sur les revendications lycéennes, [CANDIDAT] réclame une nouvelle plateforme à la place de la plateforme actuelle d'admission dans le supérieur, qu'il juge opaque (« boîte noire ») et qui ne sélectionnerait pas au mérite. La plateforme qu'il proposerait reposerait uniquement sur le mérite, avec une sélection à l'université assumée.",
+          "citation_anonymisee": "il faut une nouvelle plateforme, la plateforme actuelle c'est une boîte noire",
+          "source": {
+            "url": "https://www.publicsenat.fr/actualites/politique/crise-lyceenne-bruno-retailleau-veut-une-selection-a-luniversite",
+            "titre": "Crise lycéenne : Bruno Retailleau veut « une sélection à l'université »",
+            "date_publication": "2026-10-14",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": 2,
+          "nature": "nette",
+          "justification": "Réclame une nouvelle plateforme à la place de Parcoursup.",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": 2,
+          "nature": "nette",
+          "justification": "nouvelle plateforme à la place de l'actuelle",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "arbitrage": null,
+      "item_aveugle": "4251fd9d",
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "Remplacer Parcoursup par une nouvelle plateforme fondée sur d'autres principes (le mérite seul) revient à le supprimer ou à le refondre entièrement ; +2 nette défendable."
+      }
     },
     {
       "question_id": "EDU-002",
@@ -2467,12 +2819,46 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": -2,
+      "nature": "nette",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Selon cet article sur son programme, le candidat ne souhaite pas remettre en question la liberté d'installation des médecins ; il préfère favoriser leur implantation dans les zones sous-dotées par une rémunération attractive et un accompagnement de leur installation.",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Selon cet article sur son programme, [CANDIDAT] ne souhaite pas remettre en question la liberté d'installation des médecins ; il préfère favoriser leur implantation dans les zones sous-dotées par une rémunération attractive et un accompagnement de leur installation.",
+          "citation_anonymisee": null,
+          "source": {
+            "url": "https://www.lemoniteurdespharmacies.fr/profession/socio-professionnel/bruno-retailleau-reduire-les-deserts-medicaux-et-le-deficit-de-la-securite-sociale",
+            "titre": "Bruno Retailleau : réduire les déserts médicaux et le déficit de la Sécurité sociale - Le Moniteur des pharmacies",
+            "date_publication": "2026-10-27",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": null
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": -2,
+          "nature": "nette",
+          "justification": "Refuse de remettre en cause la liberté d'installation des médecins.",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": -2,
+          "nature": "nette",
+          "justification": "refuse de remettre en cause la liberté d'installation",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "arbitrage": null,
+      "item_aveugle": "36577d5d"
     },
     {
       "question_id": "SAN-002",
@@ -2682,21 +3068,29 @@
     },
     {
       "question_id": "SAN-011",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Il veut restreindre l'AME sans préciser la limitation aux soins urgents : direction perceptible, mesure non spécifiée, +1 imprecise défendable."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": true,
         "date": null,
         "resultat": null
       },
-      "item_aveugle": "161902d8",
+      "item_aveugle": "79c691dc",
       "extraits": [
+        {
+          "reformulation": "Selon cet article sur son programme, le candidat porte la réduction de l'aide médicale d'État à une aide d'urgence, afin de baisser le coût du dispositif.",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Selon cet article sur son programme, [CANDIDAT] porte la réduction de l'aide médicale d'État à une aide d'urgence, afin de baisser le coût du dispositif.",
+          "citation_anonymisee": null,
+          "source": {
+            "url": "https://www.lemoniteurdespharmacies.fr/profession/socio-professionnel/bruno-retailleau-reduire-les-deserts-medicaux-et-le-deficit-de-la-securite-sociale",
+            "titre": "Bruno Retailleau : réduire les déserts médicaux et le déficit de la Sécurité sociale - Le Moniteur des pharmacies",
+            "date_publication": "2026-10-27",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": null
+        },
         {
           "reformulation": "À propos du budget, il propose de restreindre l'accès à l'aide médicale d'État, voire d'instaurer un ticket d'entrée pour en bénéficier, et dit avoir soumis des propositions en ce sens au Premier ministre. Les propos, tenus alors qu'il était ministre de l'Intérieur, ne mentionnent pas de limitation aux seuls soins urgents.",
           "citation_courte": null,
@@ -2715,26 +3109,32 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": 1,
-          "nature": "imprecise",
-          "justification": "Veut restreindre l'accès à l'AME, voire instaurer un ticket d'entrée, sans la limiter aux soins urgents.",
-          "date": "2026-10-03",
+          "code": 2,
+          "nature": "nette",
+          "justification": "Réduction de l'AME à une aide d'urgence.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
-          "code": 1,
-          "nature": "imprecise",
-          "justification": "Il veut restreindre l'accès à l'aide médicale, voire instaurer un ticket d'entrée, sans limiter aux soins urgents.",
-          "date": "2026-10-03",
+          "code": 2,
+          "nature": "nette",
+          "justification": "réduit l'AME à une aide d'urgence",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
       },
-      "code": 1,
-      "nature": "imprecise",
+      "code": 2,
+      "nature": "nette",
       "statut": "accord",
-      "arbitrage": null
+      "arbitrage": null,
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "Le Moniteur des pharmacies (27 octobre 2026) écrit que le candidat « porte » la mesure de « réduire l'Aide médicale d'État (AME) à une aide d'urgence pour baisser le coût du dispositif » : c'est la mesure de l'énoncé, à l'indicatif, +2 nette."
+      }
     },
     {
       "question_id": "SAN-012",
@@ -2743,12 +3143,46 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": 2,
+      "nature": "nette",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Dans son plan d'économies présenté le 12 octobre 2026, le candidat prévoit d'instaurer dans le privé un jour de carence « d'ordre public » en cas d'arrêt maladie, que personne ne pourra racheter, pas même la prévoyance de l'entreprise ; il en attend une part des 4 milliards d'euros d'économies sur les arrêts maladie.",
+          "citation_courte": "que personne ne pourra racheter",
+          "reformulation_anonymisee": "Dans son plan d'économies présenté le 12 octobre 2026, [CANDIDAT] prévoit d'instaurer dans le privé un jour de carence « d'ordre public » en cas d'arrêt maladie, que personne ne pourra racheter, pas même la prévoyance de l'entreprise ; il en attend une part des 4 milliards d'euros d'économies sur les arrêts maladie.",
+          "citation_anonymisee": "que personne ne pourra racheter",
+          "source": {
+            "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu",
+            "titre": "Présidentielle 2027 : Bruno Retailleau s'engage sur un plan d'économies de près de 200 milliards d'euros, s'il est élu - Public Sénat",
+            "date_publication": "2026-10-12",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": 2,
+          "nature": "nette",
+          "justification": "Jour de carence d'ordre public dans le privé, que personne ne pourra racheter.",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": 2,
+          "nature": "nette",
+          "justification": "jour de carence d'ordre public non compensable dans le privé",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "arbitrage": null,
+      "item_aveugle": "f20a5c08"
     },
     {
       "question_id": "SAN-013",
@@ -3513,12 +3947,52 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": 1,
+      "nature": "imprecise",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Selon Public Sénat, le plan présenté le 12 octobre 2026 prévoit l'examen de l'asile en dehors des frontières. L'article précise que cette mesure suppose une révision constitutionnelle soumise à référendum et la chiffre, avec la condition de cinq ans de séjour et de travail pour les prestations, à 4,5 milliards d'euros d'économies. Il ne détaille ni le lieu ni les modalités de dépôt des demandes (ambassades, consulats).",
+          "citation_courte": "l’examen de l’asile en dehors des frontières",
+          "reformulation_anonymisee": "Selon un média, le programme du [CANDIDAT] prévoit l'examen de l'asile en dehors des frontières. L'article précise que cette mesure suppose une révision constitutionnelle soumise à référendum et la chiffre, avec la condition de cinq ans de séjour et de travail pour les prestations, à 4,5 milliards d'euros d'économies. Il ne détaille ni le lieu ni les modalités de dépôt des demandes (ambassades, consulats).",
+          "citation_anonymisee": "l’examen de l’asile en dehors des frontières",
+          "source": {
+            "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu",
+            "titre": "Présidentielle 2027 : Bruno Retailleau s’engage sur un plan d’économies de près de 200 milliards d’euros, s’il est élu",
+            "date_publication": "2026-10-12",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": 1,
+          "nature": "imprecise",
+          "justification": "Examen de l'asile hors des frontières, sans préciser le dépôt en ambassade ou consulat.",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": 1,
+          "nature": "imprecise",
+          "justification": "examen de l'asile hors des frontières, lieu de dépôt non détaillé",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "arbitrage": null,
+      "item_aveugle": "79ea44d3",
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "Public Sénat (12/10/2026) mentionne seulement « l'examen de l'asile en dehors des frontières », dans le chiffrage du programme et sous condition d'une révision constitutionnelle par référendum ; la direction (traiter l'asile hors du territoire) va dans le sens de l'énoncé, mais le lieu et les modalités de dépôt ne sont pas précisés : +1 imprecise défendable."
+      }
     },
     {
       "question_id": "IMM-018",
@@ -3696,14 +4170,8 @@
     },
     {
       "question_id": "IMM-021",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Il reprend exactement la mesure : cinq ans de résidence légale et de travail pour accéder aux aides."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
@@ -3711,6 +4179,20 @@
       "nature": "nette",
       "statut": "accord",
       "extraits": [
+        {
+          "reformulation": "Selon Public Sénat, qui rend compte du plan de redressement des finances publiques présenté par le candidat le 12 octobre 2026, le programme prévoit d'exiger cinq années de séjour et de travail pour bénéficier des prestations non contributives. La mesure est subordonnée à une révision constitutionnelle soumise à référendum et chiffrée, avec l'examen de l'asile hors des frontières, à 4,5 milliards d'euros d'économies.",
+          "citation_courte": "cinq années de séjour et de travail pour bénéficier des prestations non contributives",
+          "reformulation_anonymisee": "Selon un média, le programme du [CANDIDAT] prévoit d'exiger cinq années de séjour et de travail pour bénéficier des prestations non contributives. La mesure est subordonnée à une révision constitutionnelle soumise à référendum et chiffrée, avec l'examen de l'asile hors des frontières, à 4,5 milliards d'euros d'économies.",
+          "citation_anonymisee": "cinq années de séjour et de travail pour bénéficier des prestations non contributives",
+          "source": {
+            "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-2027-bruno-retailleau-sengage-sur-un-plan-deconomies-de-pres-de-200-milliards-deuros-sil-est-elu",
+            "titre": "Présidentielle 2027 : Bruno Retailleau s’engage sur un plan d’économies de près de 200 milliards d’euros, s’il est élu",
+            "date_publication": "2026-10-12",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Il veut conditionner l'accès des étrangers aux aides sociales à cinq ans de résidence légale et de travail, car une aide n'est pas un dû quand on n'a pas cotisé. Engagement présenté comme un projet s'il est élu.",
           "citation_courte": "conditionner l’accès aux aides sociales, pour les étrangers, à cinq ans de résidence légale",
@@ -3745,34 +4227,48 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Conditionne les aides sociales des étrangers à cinq ans de résidence légale et de travail.",
-          "date": "2026-10-04",
+          "justification": "Cinq ans de séjour et de travail exigés pour les prestations non contributives.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Cinq ans de résidence légale pour les aides.",
-          "date": "2026-10-04",
+          "justification": "cinq ans de séjour et de travail pour les prestations",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
       },
       "arbitrage": null,
-      "item_aveugle": "53e4ea29"
+      "item_aveugle": "889547f9"
     },
     {
       "question_id": "DEF-001",
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": true,
         "date": null,
         "resultat": null
       },
-      "item_aveugle": "214fe135",
+      "item_aveugle": "ce0bc26e",
       "extraits": [
+        {
+          "reformulation": "Selon Capital (AFP/reportage à Euronaval, 5 nov. 2026), Retailleau se fixe pour objectif d'atteindre 100 milliards d'euros pour la défense, soit autour de 3 % du PIB selon l'Ifrap (estimation citée par l'article, pas chiffre du candidat). L'article ne donne pas d'échéance (2030 ou autre) pour cet objectif.",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Selon un article de presse, [CANDIDAT] se fixe pour objectif d'atteindre 100 milliards d'euros pour la défense, soit autour de 3 % du PIB selon un institut cité par l'article (estimation du média, pas chiffre du candidat). L'article ne donne pas d'échéance pour cet objectif.",
+          "citation_anonymisee": null,
+          "source": {
+            "url": "https://www.capital.fr/economie-politique/euronaval-edouard-philippe-bruno-retailleau-et-marine-le-pen-jouent-leur-bataille-navale-1531617",
+            "titre": "Euronaval : Édouard Philippe, Bruno Retailleau et Marine Le Pen jouent leur bataille navale",
+            "date_publication": "2026-11-05",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": null
+        },
         {
           "reformulation": "Il s'engage, s'il est élu, à lancer dès 2027 un nouveau Livre blanc de la défense et une loi de programmation militaire dotée d'une trajectoire budgétaire « sincère et sanctuarisée », pour atteindre 100 milliards d'euros à la fin du quinquennat. Aucun objectif exprimé en pourcentage du PIB ni d'échéance 2030 dans ce texte.",
           "citation_courte": "pour atteindre 100 milliards d'euros à la fin du quinquennat",
@@ -3791,26 +4287,32 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": null,
-          "nature": "non_connu",
-          "justification": "Objectif de 100 milliards d'euros fin de quinquennat, sans pourcentage du PIB ni échéance 2030 : comparaison impossible.",
-          "date": "2026-10-03",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "Objectif de 100 Md€ (environ 3 % du PIB selon un média) à la fin du quinquennat, sans échéance 2030 : même sens, version partielle.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
-          "code": null,
-          "nature": "non_connu",
-          "justification": "Objectif de 100 milliards d'euros en fin de quinquennat, sans pourcentage du PIB ni échéance 2030 : position générale (R4).",
-          "date": "2026-10-03",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "100 Md€ (~3 %) en fin de quinquennat, sans échéance 2030",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
       },
-      "code": null,
-      "nature": "non_connu",
+      "code": 1,
+      "nature": "nuancee",
       "statut": "accord",
-      "arbitrage": null
+      "arbitrage": null,
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "L'objectif est de 100 Md€ (environ 3 % du PIB selon l'Ifrap) à la fin du quinquennat, sans engagement pour 2030 : même sens, mais sans la mesure précise. +1 nuancee est défendable. Ce niveau en 2032 reste cependant proche de la trajectoire de la loi actuelle (2,5 % en 2030, 3,5 % en 2035)."
+      }
     },
     {
       "question_id": "DEF-002",
@@ -6647,10 +7149,44 @@
       },
       "code": null,
       "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Lors d'une conférence de presse le 19 octobre 2026, il a souhaité que, lorsqu'un policier intervient dans l'exercice de sa mission, son action ne soit pas présumée fautive avant examen des faits. Le propos vise l'action policière en général et ne mentionne pas explicitement l'usage de l'arme ni une présomption de légalité du tir.",
+          "citation_courte": "ne doit pas être présumée fautive avant même que les faits aient été examinés",
+          "reformulation_anonymisee": "Lors d'une conférence de presse, [CANDIDAT] a souhaité que, lorsqu'un policier intervient dans l'exercice de sa mission, son action ne soit pas présumée fautive avant examen des faits. Le propos vise l'action policière en général et ne mentionne pas explicitement l'usage de l'arme ni une présomption de légalité du tir.",
+          "citation_anonymisee": "ne doit pas être présumée fautive avant même que les faits aient été examinés",
+          "source": {
+            "url": "https://lcp.fr/actualites/violences-du-17-octobre-qui-propose-quoi-sur-le-maintien-de-l-ordre-444073",
+            "titre": "Violences du 17 octobre: qui propose quoi sur le 'maintien de l'ordre'?",
+            "date_publication": "2026-10-19",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": null,
+          "nature": "non_connu",
+          "justification": "Principe général de non-présomption de faute des policiers, sans reprendre la présomption de légalité de l'usage de l'arme (R4).",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": null,
+          "nature": "non_connu",
+          "justification": "propos général sur l'action policière, ni arme ni présomption de légalité",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "arbitrage": null,
+      "item_aveugle": "d0883812"
     },
     {
       "question_id": "SEC-016",
@@ -6902,5 +7438,6 @@
       "codage": null,
       "arbitrage": null
     }
-  ]
+  ],
+  "date_derniere_maj_codage": "2026-11-07"
 }

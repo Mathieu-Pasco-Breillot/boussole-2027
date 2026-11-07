@@ -1,13 +1,13 @@
 {
   "candidat_id": "melenchon-jean-luc",
-  "_statut": "POC — codage vague 1, 11 thèmes. Retraites : arbitrages acceptés en bloc par Mathieu. Autres thèmes : désaccords arbitrés provisoirement par un 3e modèle, contrôle humain de 10 % à faire. À revoir avant publication. Passe « programme » du 14 octobre 2026 : L'Avenir en commun (édition 2025, PDF du site de campagne), plans thématique Ruralités (octobre 2026) et d'investissement BTP/Logement (septembre 2026), document « Comment nous allons remettre de l'ordre dans les comptes publics » (14 octobre 2026), Lettre au peuple de France (mai 2026) ; 116 questions recodées en grille v1.4 (double codage aveugle, arbitrage provisoire par un 3e modèle, vérification indépendante de tous les codes recodés, second arbitrage). Extraits d'agrégateurs (votons-2027) et des synthèses de contributions citoyennes retirés des questions recodées. Contrôle humain de 10 % à faire.",
+  "_statut": "POC — codage vague 1, 11 thèmes. Retraites : arbitrages acceptés en bloc par Mathieu. Autres thèmes : désaccords arbitrés provisoirement par un 3e modèle, contrôle humain de 10 % à faire. À revoir avant publication. Passe « programme » du 14 octobre 2026 : L'Avenir en commun (édition 2025, PDF du site de campagne), plans thématique Ruralités (octobre 2026) et d'investissement BTP/Logement (septembre 2026), document « Comment nous allons remettre de l'ordre dans les comptes publics » (14 octobre 2026), Lettre au peuple de France (mai 2026) ; 116 questions recodées en grille v1.4 (double codage aveugle, arbitrage provisoire par un 3e modèle, vérification indépendante de tous les codes recodés, second arbitrage). Extraits d'agrégateurs (votons-2027) et des synthèses de contributions citoyennes retirés des questions recodées. Contrôle humain de 10 % à faire. Vague 4 (7 novembre 2026, programmes publiés depuis le 4 octobre) : nouveau document de programme (L'Avenir en commun, 5e édition (6 novembre 2026, texte intégral non en ligne : contenu pris dans la presse) et plans thématiques santé, enseignement supérieur et recherche, automobile et pôle public bancaire (octobre 2026)) : toutes les questions des thèmes qu'il couvre recherchées, les autres seulement sur les questions sans code ; 43 question(s) recodée(s) ou codée(s) à l'aveugle, dont 4 nouveau(x) code(s) ; même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, vérification indépendante de 30 % des codes, contrôle humain de 10 % à faire).",
   "grille_version": "1.4",
-  "date_derniere_maj_codage": "2026-10-14",
+  "date_derniere_maj_codage": "2026-11-07",
   "programme": {
     "officiel_disponible": true,
-    "date_publication": "2025-02-18",
+    "date_publication": "2026-11-06",
     "url": "https://melenchon2027.fr/programme/decouvrir/",
-    "note": "Programme L'Avenir en commun, édition 2025 (PDF « A5-PROGRAMME-SITE » du site melenchon2027.fr, 18 février 2025), complété par les plans thématiques et d'investissement publiés pour 2027 (Ruralités, 9 octobre 2026 ; BTP/Logement, 28 septembre 2026) et par le document « Comment nous allons remettre de l'ordre dans les comptes publics » (14 octobre 2026). La version en ligne du livre-programme est retirée pour réactualisation ; la nouvelle édition (5e) est annoncée pour le 6 novembre 2026 : nouvelle passe à prévoir à sa sortie. Le contrat de législature du Nouveau Front populaire (juin 2024), republié sur le site, n'a pas été retenu : texte de coalition, antérieur et remplacé par L'Avenir en commun 2025."
+    "note": "L'Avenir en commun, « le programme de la Nouvelle France », 5e édition (1 069 mesures), publié en livre le 6 novembre 2026 ; le texte intégral en ligne est encore protégé par un mot de passe au 7 novembre 2026, son contenu a été pris dans les articles de presse qui le détaillent. Complété par les plans thématiques et d'investissement du site melenchon2027.fr (ruralités, 9 octobre 2026 ; automobile, 10 octobre ; enseignement supérieur et recherche, 26 octobre ; santé, 30 octobre ; BTP/logement, septembre 2026), le dossier « pôle public bancaire » (28 octobre 2026) et le document « Comment nous allons remettre de l'ordre dans les comptes publics » (14 octobre 2026). L'édition 2025 reste citée pour les mesures que la presse ne détaille pas. Nouvelle passe à prévoir quand le texte intégral sera en ligne."
   },
   "positions": [
     {
@@ -15,8 +15,22 @@
       "code": 1,
       "nature": "nuancee",
       "statut": "accord",
-      "item_aveugle": "d0ed66c8",
+      "item_aveugle": "51700994",
       "extraits": [
+        {
+          "reformulation": "Selon 20 Minutes, le programme publié le 6 novembre 2026 prévoit l'abolition de la réforme des retraites avec un retour à l'âge de départ de 62 ans, avant de restaurer la retraite à 60 ans à taux plein pour 40 années de cotisation. L'article ne donne pas d'échéance pour le passage de 62 à 60 ans.",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Selon l'article, le programme de [PARTI] publié début novembre 2026 prévoit l'abolition de la réforme des retraites avec un retour à l'âge de départ de 62 ans, avant de restaurer la retraite à 60 ans à taux plein pour 40 années de cotisation. L'article ne donne pas d'échéance pour le passage de 62 à 60 ans.",
+          "citation_anonymisee": null,
+          "source": {
+            "url": "https://www.20minutes.fr/politique/4261018-20261106-presidentielle-2027-smic-1-700-euros-net-retraite-62-ans-programme-lfi-1-069-mesures-librairie",
+            "titre": "Smic à 1.700 euros net, retraite à 62 ans… Le programme de LFI pour 2027",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": null
+        },
         {
           "reformulation": "Le document annonce l'abrogation dès l'année prochaine de la réforme Borne qui a porté la retraite à 64 ans, pour 9 milliards d'euros. Cette abrogation est présentée comme un premier pas vers la retraite à 60 ans avec 40 annuités, objectif fixé sur un mandat.",
           "citation_courte": "nous abrogerons la réforme Borne qui a porté la retraite à 64 ans",
@@ -65,16 +79,16 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "R1 : 62 ans comme étape, but 60 ans.",
-          "date": "2026-10-14",
+          "justification": "Retour à 62 ans puis objectif de 60 ans : va plus loin dans le même sens (R1).",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "62 ans comme première étape puis 60 ans (R1).",
-          "date": "2026-10-14",
+          "justification": "62 ans dans un premier temps puis 60 ans : va plus loin (R1)",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -83,22 +97,30 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Le document d'octobre 2026 présente l'abrogation de la réforme Borne comme « un premier pas vers le retour à la retraite à 60 ans avec 40 annuités, objectif sur un mandat » ; devant le Medef, il vise 62 ans « dans un premier temps » puis 60 ans « le plus vite possible ». Le candidat va plus loin que 62 ans dans le même sens : R1, +1 nuancee."
-      },
       "contestations": [],
-      "version": 2
+      "version": 3
     },
     {
       "question_id": "RET-002",
       "code": 2,
       "nature": "nette",
       "statut": "accord",
-      "item_aveugle": "0a7fb75e",
+      "item_aveugle": "cec8a245",
       "extraits": [
+        {
+          "reformulation": "Selon 20 Minutes, le programme prévoit, après un retour à 62 ans, de restaurer le droit à la retraite à 60 ans à taux plein pour 40 années de cotisation ; aucune date n'est indiquée dans l'article.",
+          "citation_courte": "restaurer le droit à la retraite à 60 ans à taux plein",
+          "reformulation_anonymisee": "Selon l'article, le programme de [PARTI] prévoit, après un retour à 62 ans, de restaurer le droit à la retraite à 60 ans à taux plein pour 40 années de cotisation ; aucune date n'est indiquée dans l'article.",
+          "citation_anonymisee": "restaurer le droit à la retraite à 60 ans à taux plein",
+          "source": {
+            "url": "https://www.20minutes.fr/politique/4261018-20261106-presidentielle-2027-smic-1-700-euros-net-retraite-62-ans-programme-lfi-1-069-mesures-librairie",
+            "titre": "Smic à 1.700 euros net, retraite à 62 ans… Le programme de LFI pour 2027",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le document sur les comptes publics présente l'abrogation immédiate de la réforme de 64 ans comme un premier pas vers le retour à la retraite à 60 ans avec 40 annuités, cet objectif étant fixé « sur un mandat ».",
           "citation_courte": "vers le retour à la retraite à 60 ans avec 40 annuités",
@@ -111,6 +133,20 @@
             "type": "programme_officiel"
           },
           "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Lors d'un meeting à Clermont-Ferrand le 11 octobre 2026, le candidat assure que la retraite sera ramenée à 60 ans (engagement affirmé à l'avenir). Le titre de la vidéo ne précise ni calendrier ni durée de cotisation.",
+          "citation_courte": "Nous ramènerons la retraite à 60 ans",
+          "reformulation_anonymisee": "Lors d'un meeting en octobre 2026, le candidat assure que la retraite sera ramenée à 60 ans (engagement affirmé à l'avenir). Le titre de la vidéo ne précise ni calendrier ni durée de cotisation.",
+          "citation_anonymisee": "Nous ramènerons la retraite à 60 ans",
+          "source": {
+            "url": "https://www.bfmtv.com/politique/elections/presidentielle/video-nous-ramenerons-la-retraite-a-60-ans-assure-jean-luc-melenchon-candidat-lfi-a-la-presidentielle_VN-202610110277.html",
+            "titre": "\"Nous ramènerons la retraite à 60 ans\", assure Jean-Luc Mélenchon, candidat LFI à la présidentielle",
+            "date_publication": "2026-10-11",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
           "citation_verifiee_mot_a_mot": true
         },
         {
@@ -161,16 +197,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Retraite à 60 ans, 62 dans un premier temps (R2).",
-          "date": "2026-10-14",
+          "justification": "Retour à la retraite à 60 ans, d'abord 62 puis 60 sur le mandat (R2).",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "60 ans sur un mandat, avec étape à 62 ans (R2).",
-          "date": "2026-10-14",
+          "justification": "retour à 60 ans sur un mandat, après 62 ans (R2)",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -179,14 +215,8 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Engagement ferme sur la cible exacte (60 ans), avec une étape à 62 ans et une échéance sur un mandat : R2, +2 nette."
-      },
       "contestations": [],
-      "version": 2
+      "version": 3
     },
     {
       "question_id": "RET-003",
@@ -263,8 +293,22 @@
       "code": -2,
       "nature": "nette",
       "statut": "accord",
-      "item_aveugle": "6ddb8312",
+      "item_aveugle": "e02402c5",
       "extraits": [
+        {
+          "reformulation": "Selon 20 Minutes, le programme prévoit de restaurer la retraite à 60 ans à taux plein pour 40 années de cotisation ; l'article ne mentionne aucun allongement à 45 ans.",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Selon l'article, le programme prévoit de restaurer la retraite à 60 ans à taux plein pour 40 années de cotisation ; l'article ne mentionne aucun allongement à 45 ans.",
+          "citation_anonymisee": null,
+          "source": {
+            "url": "https://www.20minutes.fr/politique/4261018-20261106-presidentielle-2027-smic-1-700-euros-net-retraite-62-ans-programme-lfi-1-069-mesures-librairie",
+            "titre": "Smic à 1.700 euros net, retraite à 62 ans… Le programme de LFI pour 2027",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": null
+        },
         {
           "reformulation": "Le document sur les comptes publics présente l'abrogation immédiate de la réforme de 64 ans comme un premier pas vers le retour à la retraite à 60 ans avec 40 annuités, cet objectif étant fixé « sur un mandat ».",
           "citation_courte": "vers le retour à la retraite à 60 ans avec 40 annuités",
@@ -299,16 +343,16 @@
           "modele": "claude-opus-5-5",
           "code": -2,
           "nature": "nette",
-          "justification": "Retour à 40 annuités, contraire de 45 ans.",
-          "date": "2026-10-14",
+          "justification": "Veut 40 années de cotisation : direction opposée aux 45 ans.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": -2,
           "nature": "nette",
-          "justification": "Veut 40 annuités, l'inverse d'une hausse à 45 ans.",
-          "date": "2026-10-14",
+          "justification": "vise 40 annuités, contraire à 45 ans",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -317,22 +361,30 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Le candidat veut ramener la durée de cotisation à 40 annuités, direction opposée à une hausse à 45 ans : −2 nette."
-      },
       "contestations": [],
-      "version": 2
+      "version": 3
     },
     {
       "question_id": "RET-006",
       "code": 2,
       "nature": "nette",
       "statut": "accord",
-      "item_aveugle": "184d8abb",
+      "item_aveugle": "9da0c9de",
       "extraits": [
+        {
+          "reformulation": "Selon 20 Minutes, le programme prévoit de restaurer le droit à la retraite à 60 ans à taux plein pour 40 années de cotisation, après un retour préalable à 62 ans. Aucune échéance n'est indiquée dans l'article.",
+          "citation_courte": "restaurer le droit à la retraite à 60 ans à taux plein",
+          "reformulation_anonymisee": "Selon l'article, le programme prévoit de restaurer le droit à la retraite à 60 ans à taux plein pour 40 années de cotisation, après un retour préalable à 62 ans. Aucune échéance n'est indiquée dans l'article.",
+          "citation_anonymisee": "restaurer le droit à la retraite à 60 ans à taux plein",
+          "source": {
+            "url": "https://www.20minutes.fr/politique/4261018-20261106-presidentielle-2027-smic-1-700-euros-net-retraite-62-ans-programme-lfi-1-069-mesures-librairie",
+            "titre": "Smic à 1.700 euros net, retraite à 62 ans… Le programme de LFI pour 2027",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le document sur les comptes publics présente l'abrogation immédiate de la réforme de 64 ans comme un premier pas vers le retour à la retraite à 60 ans avec 40 annuités, cet objectif étant fixé « sur un mandat ».",
           "citation_courte": "vers le retour à la retraite à 60 ans avec 40 annuités",
@@ -381,16 +433,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Retour à 40 annuités, objectif ferme sur le mandat (R2).",
-          "date": "2026-10-14",
+          "justification": "Retour à 60 ans avec 40 annuités sur le mandat, par étapes (R2).",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "40 annuités, objectif sur un mandat (R2).",
-          "date": "2026-10-14",
+          "justification": "40 annuités, après un premier retour à 62 ans (calendrier, R2)",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -399,28 +451,70 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Cible exacte de 40 annuités, avec un calendrier (« objectif sur un mandat ») : R2, +2 nette."
-      },
       "contestations": [],
-      "version": 2
+      "version": 3
     },
     {
       "question_id": "RET-007",
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
+      "code": -2,
+      "nature": "nette",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Interrogé sur TF1 sur sa propre pension, en partie issue de fonds de pension des assemblées, il se dit partisan de la retraite par répartition et déclare ne pas recommander ce système (la capitalisation) à la société.",
+          "citation_courte": "je ne recommande pas ça à la société",
+          "reformulation_anonymisee": "Interrogé à la télévision sur sa propre pension, en partie issue de fonds de pension, il se dit partisan de la retraite par répartition et déclare ne pas recommander ce système (la capitalisation) à la société.",
+          "citation_anonymisee": "je ne recommande pas ça à la société",
+          "source": {
+            "url": "https://rmc.bfmtv.com/actualites/economie/travail/un-paradoxe-melenchon-reconnait-avoir-une-retraite-confortable-par-capitalisation-mais-reste-oppose-a-sa-generalisation_AV-202610300390.html",
+            "titre": "\"Un paradoxe\": Mélenchon reconnaît avoir une retraite \"confortable\" par capitalisation mais reste opposé à sa généralisation",
+            "date_publication": "2026-10-30",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Devant des étudiants le 27 octobre 2026, il juge la capitalisation trop inégalitaire (retraite pour les pauvres d'un côté, pour ceux qui peuvent se payer la leur de l'autre) et trop exposée aux crises financières, et affirme que la répartition reste viable.",
+          "citation_courte": "retraite pour les pauvres et ceux qui peuvent se payer la leur",
+          "reformulation_anonymisee": "Devant des étudiants en octobre 2026, il juge la capitalisation trop inégalitaire (retraite pour les pauvres d'un côté, pour ceux qui peuvent se payer la leur de l'autre) et trop exposée aux crises financières, et affirme que la répartition reste viable.",
+          "citation_anonymisee": "retraite pour les pauvres et ceux qui peuvent se payer la leur",
+          "source": {
+            "url": "https://www.lefigaro.fr/conjoncture/je-vis-tres-confortablement-melenchon-admet-avoir-une-bonne-retraite-grace-a-la-capitalisation-sans-vouloir-la-recommander-a-la-societe-20261028",
+            "titre": "« Je vis très confortablement » : Mélenchon admet avoir une bonne retraite grâce à la capitalisation sans vouloir la « recommander à la société »",
+            "date_publication": "2026-10-28",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": -2,
+          "nature": "nette",
+          "justification": "Rejette la capitalisation et défend la répartition.",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": -2,
+          "nature": "nette",
+          "justification": "rejette la capitalisation",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
       "arbitrage": null,
       "controle_humain": {
         "tire_au_sort": false
       },
       "contestations": [],
-      "version": 1
+      "version": 1,
+      "item_aveugle": "70244f21"
     },
     {
       "question_id": "RET-008",
@@ -1004,19 +1098,27 @@
     },
     {
       "question_id": "ECO-001",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "La source la plus récente (octobre 2026) retient 1 700 euros net, plus loin que les 1 600 euros de l'énoncé dans le même sens : R1, +1 nuancee."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "4be51f88",
+      "item_aveugle": "3478c841",
       "extraits": [
+        {
+          "reformulation": "Selon LCP, le programme officiel publié le 6 novembre 2026 prévoit d'augmenter immédiatement le Smic à 1 700 euros nets, soit un montant supérieur aux 1 600 euros de l'énoncé.",
+          "citation_courte": "Smic à 1700 euros nets",
+          "reformulation_anonymisee": "Selon un média, le programme de [CANDIDAT] publié début novembre prévoit d'augmenter immédiatement le Smic à 1 700 euros nets, soit un montant supérieur aux 1 600 euros de l'énoncé.",
+          "citation_anonymisee": "Smic à 1700 euros nets",
+          "source": {
+            "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+            "titre": "Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le document d'octobre 2026 prévoit, en complément des mesures d'urgence sociale, une hausse du SMIC à 1 700 euros net, accompagnée d'une conférence exceptionnelle sur les salaires. Le chiffre diffère de celui du programme de 2025 (1 600 euros net) ; aucune échéance précise n'est donnée pour cette hausse.",
           "citation_courte": "hausse du SMIC à 1 700 euros net.",
@@ -1065,16 +1167,16 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "R1 : SMIC à 1 700 euros net.",
-          "date": "2026-10-14",
+          "justification": "SMIC à 1 700 € net, au-delà des 1 600 € de l'énoncé (R1).",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "SMIC à 1 700 euros net, plus loin que 1 600 (R1).",
-          "date": "2026-10-14",
+          "justification": "SMIC à 1 700 € net, plus loin que 1 600 € (R1)",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -1082,7 +1184,13 @@
       "code": 1,
       "nature": "nuancee",
       "statut": "accord",
-      "arbitrage": null
+      "arbitrage": null,
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "Le document d'octobre 2026 (p. 8) prévoit une « hausse du SMIC à 1 700 euros net », reprise par LCP (« augmenter immédiatement le Smic à 1700 euros nets ») et par le discours de Saint-Denis ; 1 700 € va plus loin que les 1 600 € de l'énoncé, dans le même sens : +1 nuancee (R1)."
+      }
     },
     {
       "question_id": "ECO-002",
@@ -1452,19 +1560,29 @@
     },
     {
       "question_id": "ECO-007",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Le programme 2025 reprend exactement la mesure : écart de 1 à 20 dans une entreprise."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": true,
+        "date": null,
+        "resultat": null
       },
-      "item_aveugle": "01aeaf12",
+      "item_aveugle": "f3fb834a",
       "extraits": [
+        {
+          "reformulation": "Selon LCP, le programme publié le 6 novembre 2026 maintient un écart maximal de salaire de 1 à 20 dans les entreprises. L'article ne détaille pas les modalités.",
+          "citation_courte": "écart maximal de salaire de 1 à 20 dans les entreprises",
+          "reformulation_anonymisee": "Selon un média, le programme de [CANDIDAT] publié début novembre maintient un écart maximal de salaire de 1 à 20 dans les entreprises. L'article ne détaille pas les modalités.",
+          "citation_anonymisee": "écart maximal de salaire de 1 à 20 dans les entreprises",
+          "source": {
+            "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+            "titre": "Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le programme de 2025 prévoit de fixer un salaire maximal autorisé afin de limiter à un rapport de 1 à 20 l'écart entre le salaire le plus bas et le salaire le plus haut dans une entreprise.",
           "citation_courte": "limiter l’écart de 1 à 20 entre le salaire le plus bas",
@@ -1499,16 +1617,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Limiter l'écart de salaires de 1 à 20.",
-          "date": "2026-10-14",
+          "justification": "Écart maximal de salaire de 1 à 20 dans les entreprises.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Écart de 1 à 20 dans l'entreprise.",
-          "date": "2026-10-14",
+          "justification": "écart maximal de 1 à 20",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -1574,19 +1692,27 @@
     },
     {
       "question_id": "ECO-009",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Hausse de 10 % des fonctionnaires via le point d'indice dans le document d'octobre 2026, et revalorisation du point d'indice de 10 % au programme 2025 : chiffre identique à l'énoncé."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "b07dea20",
+      "item_aveugle": "1e347b8b",
       "extraits": [
+        {
+          "reformulation": "Selon LCP, le programme publié le 6 novembre 2026 prévoit de revaloriser de 10 % le point d'indice des fonctionnaires (ainsi que les APL). L'article ne donne ni calendrier ni coût.",
+          "citation_courte": "revaloriser le point d'indice des fonctionnaires et les APL de 10 %",
+          "reformulation_anonymisee": "Selon un média, le programme de [CANDIDAT] publié début novembre prévoit de revaloriser de 10 % le point d'indice des fonctionnaires (ainsi que les APL). L'article ne donne ni calendrier ni coût.",
+          "citation_anonymisee": "revaloriser le point d'indice des fonctionnaires et les APL de 10 %",
+          "source": {
+            "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+            "titre": "Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le document d'octobre 2026 propose, via la loi de finances, d'augmenter de 10 % les fonctionnaires, dont le point d'indice a été gelé huit années sur dix, pour 17 milliards d'euros ; il parle plus loin de « l'augmentation du point d'indice des fonctionnaires ». Le programme de 2025 prévoyait déjà de revaloriser le point d'indice de 10 % et d'inscrire son dégel dans la loi.",
           "citation_courte": "en augmentant de 10% les fonctionnaires, dont le point d’indice a été gelé",
@@ -1621,16 +1747,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Hausse de 10 % du point d'indice.",
-          "date": "2026-10-14",
+          "justification": "Revalorisation de 10 % du point d'indice des fonctionnaires.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Hausse de 10 % du point d'indice.",
-          "date": "2026-10-14",
+          "justification": "+10 % du point d'indice",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -1904,19 +2030,27 @@
     },
     {
       "question_id": "INS-001",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Scrutin proportionnel pour l'Assemblée sans précision de l'échelle départementale : va dans le sens de l'énoncé sans reprendre la mesure précise, +1 nuancee défendable."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "72938169",
+      "item_aveugle": "50ac670f",
       "extraits": [
+        {
+          "reformulation": "Selon LCP, le programme officiel 2027 (5e édition) propose toujours d'élire l'Assemblée nationale au scrutin proportionnel. L'article ne précise pas l'échelle (département ou autre).",
+          "citation_courte": "élire l'Assemblée nationale au scrutin proportionnel",
+          "reformulation_anonymisee": "Selon la presse, le programme 2027 du [CANDIDAT] propose toujours d'élire l'Assemblée nationale au scrutin proportionnel. L'article ne précise pas l'échelle (département ou autre).",
+          "citation_anonymisee": "élire l'Assemblée nationale au scrutin proportionnel",
+          "source": {
+            "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+            "titre": "Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Parmi les mesures de la nouvelle République, le programme prévoit d'élire l'Assemblée nationale au scrutin proportionnel, par la loi. Le passage ne précise pas l'échelle (département ou autre) de ce scrutin.",
           "citation_courte": "Élire l’Assemblée nationale au scrutin proportionnel",
@@ -1950,31 +2084,25 @@
         "codeur_1": {
           "modele": "claude-opus-5-5",
           "code": 1,
-          "nature": "nuancee",
-          "justification": "Scrutin proportionnel, échelle départementale non précisée.",
-          "date": "2026-10-14",
+          "nature": "imprecise",
+          "justification": "Élection de l'Assemblée à la proportionnelle sans précision de l'échelle départementale.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "imprecise",
-          "justification": "Scrutin proportionnel pour l'Assemblée, échelle non précisée.",
-          "date": "2026-10-14",
+          "justification": "proportionnelle à l'Assemblée sans échelle départementale précisée",
+          "date": "2026-11-07",
           "aveugle": true
         },
-        "accord": false
+        "accord": true
       },
       "code": 1,
-      "nature": "nuancee",
-      "statut": "arbitre",
-      "arbitrage": {
-        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-14",
-        "code_retenu": 1,
-        "nature_retenue": "nuancee",
-        "motif": "Élire l'Assemblée au scrutin proportionnel est une mesure concrète qui ne précise pas l'échelle départementale : +1 nuancee."
-      }
+      "nature": "imprecise",
+      "statut": "accord",
+      "arbitrage": null
     },
     {
       "question_id": "INS-002",
@@ -2205,7 +2333,7 @@
     {
       "question_id": "INS-005",
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
@@ -2213,6 +2341,20 @@
       "nature": "nette",
       "statut": "accord",
       "extraits": [
+        {
+          "reformulation": "Selon LCP, le programme 2027 propose toujours de supprimer les procédures de « votes forcés » comme l'article 49.3 de la Constitution.",
+          "citation_courte": "supprimer les procédures de \"votes forcés\" comme l'article 49.3",
+          "reformulation_anonymisee": "Selon la presse, le programme 2027 propose toujours de supprimer les procédures de « votes forcés » comme l'article 49.3 de la Constitution.",
+          "citation_anonymisee": "supprimer les procédures de \"votes forcés\" comme l'article 49.3",
+          "source": {
+            "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+            "titre": "Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Parmi les mesures à mettre en oeuvre dans le cadre de l'Assemblée constituante, le programme prévoit d'abolir les procédures de « votes forcés » du Parlement, comme l'article 49.3 de la Constitution de la Ve République.",
           "citation_courte": "l’article 49.3 de la Constitution de la Ve République",
@@ -2233,33 +2375,27 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Abolir les votes forcés comme le 49.3.",
-          "date": "2026-10-14",
+          "justification": "Suppression de l'article 49.3.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Abolir le 49.3.",
-          "date": "2026-10-14",
+          "justification": "suppression de l'article 49.3",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
       },
       "arbitrage": null,
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Abolition explicite du 49.3, présentée comme mesure à porter dans la Constituante : engagement sans réserve sur la mesure."
-      },
-      "item_aveugle": "5f4ecca1"
+      "item_aveugle": "d1e062f1"
     },
     {
       "question_id": "INS-006",
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
@@ -2267,6 +2403,20 @@
       "nature": "nette",
       "statut": "accord",
       "extraits": [
+        {
+          "reformulation": "Selon Public Sénat, le programme 2027 propose d'accorder le droit de vote à 16 ans.",
+          "citation_courte": "accorder le droit de vote à 16 ans",
+          "reformulation_anonymisee": "Selon la presse, le programme 2027 propose d'accorder le droit de vote à 16 ans.",
+          "citation_anonymisee": "accorder le droit de vote à 16 ans",
+          "source": {
+            "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-avec-la-nouvelle-france-jean-luc-melenchon-fait-de-lecologie-la-cle-de-voute-de-son-programme",
+            "titre": "Présidentielle 2027 : avec la « Nouvelle France », Jean-Luc Mélenchon fait de l'écologie la clé de voûte de son programme",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le programme propose de donner le droit de vote à 16 ans.",
           "citation_courte": "Donner le droit de vote à 16 ans",
@@ -2288,32 +2438,26 @@
           "code": 2,
           "nature": "nette",
           "justification": "Droit de vote à 16 ans.",
-          "date": "2026-10-14",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Droit de vote à 16 ans.",
-          "date": "2026-10-14",
+          "justification": "vote à 16 ans",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
       },
       "arbitrage": null,
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Le programme propose de « donner le droit de vote à 16 ans », mesure identique à l'énoncé."
-      },
-      "item_aveugle": "cb174422"
+      "item_aveugle": "1c090cd3"
     },
     {
       "question_id": "INS-007",
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
@@ -2321,6 +2465,20 @@
       "nature": "imprecise",
       "statut": "accord",
       "extraits": [
+        {
+          "reformulation": "Selon Public Sénat, le programme 2027 propose de reconnaître le vote blanc. L'article ne dit pas que les bulletins blancs seraient comptés comme suffrages exprimés.",
+          "citation_courte": "reconnaître le vote blanc",
+          "reformulation_anonymisee": "Selon la presse, le programme 2027 propose de reconnaître le vote blanc. L'article ne dit pas que les bulletins blancs seraient comptés comme suffrages exprimés.",
+          "citation_anonymisee": "reconnaître le vote blanc",
+          "source": {
+            "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-avec-la-nouvelle-france-jean-luc-melenchon-fait-de-lecologie-la-cle-de-voute-de-son-programme",
+            "titre": "Présidentielle 2027 : avec la « Nouvelle France », Jean-Luc Mélenchon fait de l'écologie la clé de voûte de son programme",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le programme propose de reconnaître le vote blanc et d'instaurer un seuil de votes exprimés pour valider une élection. Le passage ne dit pas expressément que les bulletins blancs seraient comptés comme suffrages exprimés.",
           "citation_courte": "Reconnaître le vote blanc,",
@@ -2341,28 +2499,28 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "imprecise",
-          "justification": "Reconnaître le vote blanc, sans modalités.",
-          "date": "2026-10-14",
+          "justification": "Veut reconnaître le vote blanc sans dire qu'il serait compté comme suffrage exprimé.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "imprecise",
-          "justification": "Reconnaître le vote blanc, comptage non précisé.",
-          "date": "2026-10-14",
+          "justification": "reconnaissance du vote blanc sans préciser le décompte comme suffrage exprimé",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
       },
       "arbitrage": null,
+      "item_aveugle": "610cbc3e",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
+        "date": "2026-11-07",
         "verdict": "confirme",
-        "motif": "« Reconnaître le vote blanc » va dans le sens de l'énoncé sans préciser que les blancs seraient comptés comme suffrages exprimés : +1 imprecise défendable (un null R4 serait aussi soutenable, mais le code publié n'est pas contraire à la grille)."
-      },
-      "item_aveugle": "076c8481"
+        "motif": "Public Sénat (6 novembre 2026) et le programme 2025 portent « reconnaître le vote blanc » (avec, en 2025, un seuil de votes exprimés pour valider une élection), sans dire que les blancs seraient comptés comme suffrages exprimés : direction perceptible, modalité non précisée, +1 imprecise défendable."
+      }
     },
     {
       "question_id": "INS-008",
@@ -2743,7 +2901,7 @@
     {
       "question_id": "INS-018",
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
@@ -2751,6 +2909,20 @@
       "nature": "nette",
       "statut": "accord",
       "extraits": [
+        {
+          "reformulation": "Selon Public Sénat, le programme 2027 propose d'instaurer le vote obligatoire. L'article ne mentionne ni sanction ni amende.",
+          "citation_courte": "instaurer le vote obligatoire",
+          "reformulation_anonymisee": "Selon la presse, le programme 2027 propose d'instaurer le vote obligatoire. L'article ne mentionne ni sanction ni amende.",
+          "citation_anonymisee": "instaurer le vote obligatoire",
+          "source": {
+            "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-avec-la-nouvelle-france-jean-luc-melenchon-fait-de-lecologie-la-cle-de-voute-de-son-programme",
+            "titre": "Présidentielle 2027 : avec la « Nouvelle France », Jean-Luc Mélenchon fait de l'écologie la clé de voûte de son programme",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le programme propose de mettre en place le vote obligatoire, en même temps que la reconnaissance du vote blanc. Le passage ne mentionne pas de sanction ni d'amende.",
           "citation_courte": "mettre en place le vote obligatoire et",
@@ -2771,38 +2943,46 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Mettre en place le vote obligatoire.",
-          "date": "2026-10-14",
+          "justification": "Instaurer le vote obligatoire.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Mettre en place le vote obligatoire.",
-          "date": "2026-10-14",
+          "justification": "vote obligatoire",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
       },
       "arbitrage": null,
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Le programme propose de « mettre en place le vote obligatoire » ; l'énoncé ne porte que sur le caractère obligatoire du vote, l'amende relevant de la précision."
-      },
-      "item_aveugle": "28aaaabb"
+      "item_aveugle": "b64e1693"
     },
     {
       "question_id": "EDU-001",
       "contestations": [],
-      "version": 3,
+      "version": 4,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "d0bb4512",
+      "item_aveugle": "1fe65ee3",
       "extraits": [
+        {
+          "reformulation": "Le plan thématique sur l'enseignement supérieur du candidat indique que sa première tâche sera d'abolir les plateformes Parcoursup et MonMaster, afin que les lycéens accèdent aux formations de leur choix et que tous les étudiants qui le souhaitent poursuivent en master. Il prévoit de créer 250 000 places dans l'enseignement supérieur public et une plateforme nationale centralisée de candidatures fondée sur une sectorisation sans sélection.",
+          "citation_courte": "abolir les plateformes Parcoursup et MonMaster",
+          "reformulation_anonymisee": "Le plan thématique sur l'enseignement supérieur du [CANDIDAT] indique que sa première tâche sera d'abolir les plateformes Parcoursup et MonMaster, afin que les lycéens accèdent aux formations de leur choix et que tous les étudiants qui le souhaitent poursuivent en master. Il prévoit de créer 250 000 places dans l'enseignement supérieur public et une plateforme nationale centralisée de candidatures fondée sur une sectorisation sans sélection.",
+          "citation_anonymisee": "abolir les plateformes Parcoursup et MonMaster",
+          "source": {
+            "url": "https://melenchon2027.fr/programme/plans-thematiques/esr/",
+            "titre": "Comment nous allons refonder l'enseignement supérieur, la recherche et la formation continue",
+            "date_publication": "2026-10-26",
+            "type": "programme_officiel"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le document sur les comptes publics indique qu'il faut se mettre en position d'abolir Parcoursup et MonMaster, système qui adapte le nombre d'étudiants au nombre de places ; la formulation est celle d'un objectif à préparer, sans calendrier.",
           "citation_courte": "il faut aussi se mettre en position d’abolir",
@@ -2815,6 +2995,20 @@
             "type": "programme_officiel"
           },
           "date_consultation": "2026-10-14",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Lors d'un meeting à Clermont-Ferrand le 11 octobre 2026, le candidat a répété que Parcoursup doit être aboli et qu'il n'est pas pour la sélection à l'université, selon l'AFP reprise par 20 Minutes. Engagement ferme d'abolition ; l'article ne détaille pas de dispositif de remplacement.",
+          "citation_courte": "Parcoursup doit être aboli",
+          "reformulation_anonymisee": "Lors d'un meeting en région le 11 octobre 2026, le [CANDIDAT] a répété que Parcoursup doit être aboli et qu'il n'est pas pour la sélection à l'université, selon une dépêche d'agence. Engagement ferme d'abolition ; l'article ne détaille pas de dispositif de remplacement.",
+          "citation_anonymisee": "Parcoursup doit être aboli",
+          "source": {
+            "url": "https://www.20minutes.fr/politique/4253277-20261011-parcoursup-doit-etre-aboli-jean-luc-melenchon-promet-supprimer-ignominie-salle-pleine-craquer",
+            "titre": "« Parcoursup doit être aboli »… Jean-Luc Mélenchon promet de supprimer « l'ignominie » dans une salle pleine à craquer",
+            "date_publication": "2026-10-11",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
           "citation_verifiee_mot_a_mot": true
         },
         {
@@ -2865,16 +3059,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Abolition / démantèlement de Parcoursup, sans calendrier (R2).",
-          "date": "2026-10-14",
+          "justification": "Abolition de Parcoursup, engagement ferme et constant.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Abolir/démanteler Parcoursup, constant dans les sources.",
-          "date": "2026-10-14",
+          "justification": "abolition de Parcoursup",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -2885,9 +3079,9 @@
       "arbitrage": null,
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
+        "date": "2026-11-07",
         "verdict": "confirme",
-        "motif": "Toutes les sources visent l'abolition ou le démantèlement de Parcoursup, objectif repris dans le document de 2026 : soutien à la suppression, +2 nette défendable."
+        "motif": "Le plan ESR d'octobre 2026 : « Notre première tâche sera d'abolir les plateformes Parcoursup et MonMaster » (et « nous abrogerons Parcoursup »), confirmé au meeting du 11 octobre 2026 (« Parcoursup doit être aboli ») : suppression sans réserve, +2 nette."
       }
     },
     {
@@ -3118,19 +3312,27 @@
     },
     {
       "question_id": "EDU-005",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Source la plus récente (programme 2025) : garantie d'autonomie portant au-dessus du seuil de pauvreté (1 216 €) les jeunes « détachés du foyer fiscal parental » : même sens, public différent et partiel (pas tous les étudiants de 18-25 ans) → +1 nuancee défendable."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "367f73cb",
+      "item_aveugle": "9ed510f4",
       "extraits": [
+        {
+          "reformulation": "Le plan thématique sur l'enseignement supérieur prévoit de créer une garantie d'autonomie pour tous les jeunes détachés du foyer fiscal de leurs parents, afin qu'aucun ne vive sous le seuil de pauvreté, chiffré à 1 337 euros pour une personne seule. Le texte ne mentionne ni le montant de 1 078 euros ni une tranche d'âge de 18 à 25 ans ; il vise les jeunes détachés du foyer fiscal, sans condition d'études précisée dans ce passage.",
+          "citation_courte": "aucun·e ne vive en dessous du seuil de pauvreté",
+          "reformulation_anonymisee": "Le plan thématique sur l'enseignement supérieur prévoit de créer une garantie d'autonomie pour tous les jeunes détachés du foyer fiscal de leurs parents, afin qu'aucun ne vive sous le seuil de pauvreté, chiffré à 1 337 euros pour une personne seule. Le texte ne mentionne ni le montant de 1 078 euros ni une tranche d'âge de 18 à 25 ans ; il vise les jeunes détachés du foyer fiscal, sans condition d'études précisée dans ce passage.",
+          "citation_anonymisee": "aucun·e ne vive en dessous du seuil de pauvreté",
+          "source": {
+            "url": "https://melenchon2027.fr/programme/plans-thematiques/esr/",
+            "titre": "Comment nous allons refonder l'enseignement supérieur, la recherche et la formation continue",
+            "date_publication": "2026-10-26",
+            "type": "programme_officiel"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Mesure clé : financer l'autonomie des jeunes détachés du foyer fiscal parental par une garantie d'autonomie les portant au-dessus du seuil de pauvreté (1 216 euros pour une personne seule). Le montant diffère de celui de l'énoncé et le passage ne précise ni tranche d'âge ni condition d'études.",
           "citation_courte": "Financer l’autonomie des jeunes détachés du foyer fiscal parental grâce à la garantie d’autonomie",
@@ -3165,16 +3367,16 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Garantie d'autonomie au-dessus du seuil de pauvreté pour les jeunes détachés du foyer fiscal : sens de l'énoncé, montant et public différents.",
-          "date": "2026-10-14",
+          "justification": "Garantie d'autonomie au seuil de pauvreté pour les jeunes détachés du foyer fiscal : même sens, périmètre différent.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Allocation d'autonomie pour les jeunes à un montant supérieur (R1).",
-          "date": "2026-10-14",
+          "justification": "garantie d'autonomie pour les jeunes détachés du foyer fiscal, montant et public différents",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -3182,7 +3384,13 @@
       "code": 1,
       "nature": "nuancee",
       "statut": "accord",
-      "arbitrage": null
+      "arbitrage": null,
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "Le plan ESR (octobre 2026) prévoit une « garantie d'autonomie pour tous les jeunes détaché·es du foyer fiscal de leurs parents » au seuil de pauvreté (1 337 euros) : même sens, montant supérieur mais public différent (jeunes détachés du foyer fiscal, sans critère d'âge ou d'études), donc version partielle de la mesure ; +1 nuancee défendable."
+      }
     },
     {
       "question_id": "EDU-006",
@@ -3805,14 +4013,30 @@
     {
       "question_id": "SAN-001",
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": true,
+        "date": null,
+        "resultat": null
       },
       "code": 1,
       "nature": "imprecise",
       "statut": "accord",
       "extraits": [
+        {
+          "reformulation": "Le plan santé du programme prévoit de réguler l'installation des médecins et de généraliser les guichets uniques pour les démarches d'installation. Il ne précise ni critère de zone sur-dotée ni mécanisme d'autorisation.",
+          "citation_courte": "Réguler l’installation des médecins",
+          "reformulation_anonymisee": "Le plan santé du programme prévoit de réguler l'installation des médecins et de généraliser les guichets uniques pour les démarches d'installation. Il ne précise ni critère de zone sur-dotée ni mécanisme d'autorisation.",
+          "citation_anonymisee": "Réguler l’installation des médecins",
+          "source": {
+            "url": "https://melenchon2027.fr/wp-content/uploads/2026/11/plan_SANTE_lowres.pdf",
+            "titre": "Comment nous allons reconstruire notre système de santé (plan thématique santé, L'Avenir en commun)",
+            "date_publication": "2026-10-30",
+            "type": "programme_officiel"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le plan thématique ruralité (octobre 2026) cite la régulation de l'installation des médecins parmi les leviers contre les déserts médicaux, avec le recrutement de médecins publics et des centres de santé publics. Le texte ne précise ni zone « déjà bien dotée » ni mécanisme d'autorisation.",
           "citation_courte": "régulation de l’installation des médecins, recrutement de médecins publics,",
@@ -3833,28 +4057,28 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "imprecise",
-          "justification": "Régulation de l'installation des médecins, sans mécanisme ni zone.",
-          "date": "2026-10-14",
+          "justification": "Veut réguler l'installation des médecins sans préciser zone sur-dotée ni mécanisme d'autorisation.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "imprecise",
-          "justification": "Régulation de l'installation des médecins, mécanisme non précisé.",
-          "date": "2026-10-14",
+          "justification": "régulation de l'installation sans mécanisme d'autorisation précisé",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
       },
       "arbitrage": null,
+      "item_aveugle": "96293fef",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
+        "date": "2026-11-07",
         "verdict": "confirme",
-        "motif": "Le plan ruralité (09/10/2026) cite la « régulation de l'installation des médecins » parmi les leviers contre les déserts médicaux, sans préciser de mécanisme d'autorisation ni de zones : direction perceptible, mesure non spécifiée → +1 imprecise défendable."
-      },
-      "item_aveugle": "e53f3b3e"
+        "motif": "Le programme veut « réguler l'installation des médecins » sans préciser de zones ni de mécanisme d'autorisation : la direction est perceptible mais la mesure ne l'est pas ; +1 imprecise est défendable (on peut hésiter avec R4)."
+      }
     },
     {
       "question_id": "SAN-002",
@@ -3863,28 +4087,70 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": 1,
+      "nature": "nuancee",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Le plan santé prévoit de mettre fin aux dépassements d'honoraires, après revalorisation des rémunérations, dans une réforme plus profonde du financement ; il ne parle pas d'un plafonnement. Il présente aussi la suppression des dépassements comme l'une des sources de financement du 100 % Sécu.",
+          "citation_courte": "mettre fin aux dépassements d’honoraires",
+          "reformulation_anonymisee": "Le plan santé prévoit de mettre fin aux dépassements d'honoraires, après revalorisation des rémunérations, dans une réforme plus profonde du financement ; il ne parle pas d'un plafonnement. Il présente aussi la suppression des dépassements comme l'une des sources de financement du 100 % Sécu.",
+          "citation_anonymisee": "mettre fin aux dépassements d’honoraires",
+          "source": {
+            "url": "https://melenchon2027.fr/wp-content/uploads/2026/11/plan_SANTE_lowres.pdf",
+            "titre": "Comment nous allons reconstruire notre système de santé (plan thématique santé, L'Avenir en commun)",
+            "date_publication": "2026-10-30",
+            "type": "programme_officiel"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "Veut mettre fin aux dépassements d'honoraires après revalorisation : va plus loin que le plafonnement (R1).",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "mettre fin aux dépassements, plus loin que les plafonner (R1)",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "arbitrage": null,
+      "item_aveugle": "c7654235"
     },
     {
       "question_id": "SAN-003",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Reprise exacte de la mesure : +2 nette."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "3acaf33f",
+      "item_aveugle": "83d6d868",
       "extraits": [
+        {
+          "reformulation": "Le plan santé reprend l'engagement d'instaurer le « 100 % Sécu » : intégrer les complémentaires privées à la Sécurité sociale et utiliser l'argent récupéré pour rembourser à 100 % les soins prescrits, dont soins et appareils dentaires, optiques, auditifs et prothèses.",
+          "citation_courte": "rembourser à 100 % les soins de santé prescrits",
+          "reformulation_anonymisee": "Le plan santé reprend l'engagement d'instaurer le « 100 % Sécu » : intégrer les complémentaires privées à la Sécurité sociale et utiliser l'argent récupéré pour rembourser à 100 % les soins prescrits, dont soins et appareils dentaires, optiques, auditifs et prothèses.",
+          "citation_anonymisee": "rembourser à 100 % les soins de santé prescrits",
+          "source": {
+            "url": "https://melenchon2027.fr/wp-content/uploads/2026/11/plan_SANTE_lowres.pdf",
+            "titre": "Comment nous allons reconstruire notre système de santé (plan thématique santé, L'Avenir en commun)",
+            "date_publication": "2026-10-30",
+            "type": "programme_officiel"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le programme 2025 prévoit de reconstruire le service public hospitalier et d'instaurer le « 100 % Sécu » : remboursement à 100 % des soins de santé prescrits et intégration des mutuelles dans la Sécurité sociale.",
           "citation_courte": "instaurer le « 100 % Sécu » en remboursant",
@@ -3905,16 +4171,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "100 % Sécu avec intégration des mutuelles.",
-          "date": "2026-10-14",
+          "justification": "Instaurer le 100 % Sécu avec intégration des complémentaires.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "100 % Sécu avec intégration des mutuelles.",
-          "date": "2026-10-14",
+          "justification": "100 % Sécu",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -3991,19 +4257,27 @@
     },
     {
       "question_id": "SAN-005",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Pôle public du médicament chargé de la relocalisation de la production, réaffirmé en mai 2026 : correspond à la mesure (la précision assimile l'énoncé au pôle public du médicament)."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "102e1bdc",
+      "item_aveugle": "55de5496",
       "extraits": [
+        {
+          "reformulation": "Le plan santé prévoit de créer un pôle public du médicament pour développer la recherche et la production publiques, sécuriser l'approvisionnement en médicaments essentiels et contrôler les prix, avec relocalisation de la production et production publique de biomédicaments.",
+          "citation_courte": "nous créerons un pôle public du médicament",
+          "reformulation_anonymisee": "Le plan santé prévoit de créer un pôle public du médicament pour développer la recherche et la production publiques, sécuriser l'approvisionnement en médicaments essentiels et contrôler les prix, avec relocalisation de la production et production publique de biomédicaments.",
+          "citation_anonymisee": "nous créerons un pôle public du médicament",
+          "source": {
+            "url": "https://melenchon2027.fr/wp-content/uploads/2026/11/plan_SANTE_lowres.pdf",
+            "titre": "Comment nous allons reconstruire notre système de santé (plan thématique santé, L'Avenir en commun)",
+            "date_publication": "2026-10-30",
+            "type": "programme_officiel"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Dans un entretien à La Tribune Dimanche (10 mai 2026, repris sur son blog), à propos des « maladies écologiques », il annonce un secteur « défi santé » dans le programme et affirme que la France, naguère très puissante dans le domaine des médicaments, doit reconstituer un pôle public.",
           "citation_courte": "Il faut reconstituer un pôle public.",
@@ -4038,16 +4312,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Pôle public du médicament chargé de relocaliser la production.",
-          "date": "2026-10-14",
+          "justification": "Création d'un pôle public du médicament avec production publique.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Pôle public du médicament pour relocaliser la production.",
-          "date": "2026-10-14",
+          "justification": "pôle public du médicament",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -4119,19 +4393,27 @@
     },
     {
       "question_id": "SAN-007",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "La source la plus récente (2025) maintient une tarification à l'acte pour les activités techniques programmées : suppression partielle, +1 nuancee."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "7920c8ea",
+      "item_aveugle": "e29ebc64",
       "extraits": [
+        {
+          "reformulation": "Le plan santé prévoit de sortir du tout T2A : la T2A serait réservée aux actes techniques, standardisés et programmés, les spécialités traitant des maladies générales étant financées par une dotation globale, et les soins palliatifs par un retour au prix de journée.",
+          "citation_courte": "Sortir du tout T2A",
+          "reformulation_anonymisee": "Le plan santé prévoit de sortir du tout T2A : la T2A serait réservée aux actes techniques, standardisés et programmés, les spécialités traitant des maladies générales étant financées par une dotation globale, et les soins palliatifs par un retour au prix de journée.",
+          "citation_anonymisee": "Sortir du tout T2A",
+          "source": {
+            "url": "https://melenchon2027.fr/wp-content/uploads/2026/11/plan_SANTE_lowres.pdf",
+            "titre": "Comment nous allons reconstruire notre système de santé (plan thématique santé, L'Avenir en commun)",
+            "date_publication": "2026-10-30",
+            "type": "programme_officiel"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le programme 2025 prévoit de financer les hôpitaux par une dotation globale, un prix de journée et une tarification à l'acte limitée aux seules activités techniques programmées, avec un objectif national des besoins d'assurance-maladie à la place de l'ONDAM.",
           "citation_courte": "et une tarification à l’acte pour les seules activités techniques",
@@ -4166,16 +4448,16 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "T2A limitée aux seules activités techniques programmées : suppression partielle.",
-          "date": "2026-10-14",
+          "justification": "Sortir du tout T2A en la réservant aux actes techniques : suppression partielle.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Dotation globale, tarification à l'acte limitée aux actes techniques programmés.",
-          "date": "2026-10-14",
+          "justification": "sortie du tout T2A mais maintenue pour les actes techniques programmés",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -4192,12 +4474,46 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": 1,
+      "nature": "nuancee",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Le plan santé prévoit un quota horaire mensuel de permanence de soins en centre de santé en zone de désert médical, pour généralistes et spécialistes : de quatre à douze heures par mois selon les régions, organisé lors d'assises régionales. Ce n'est pas une obligation formulée en jours (deux jours par mois).",
+          "citation_courte": "un quota horaire mensuel à effectuer en zone de désert médical",
+          "reformulation_anonymisee": "Le plan santé prévoit un quota horaire mensuel de permanence de soins en centre de santé en zone de désert médical, pour généralistes et spécialistes : de quatre à douze heures par mois selon les régions, organisé lors d'assises régionales. Ce n'est pas une obligation formulée en jours (deux jours par mois).",
+          "citation_anonymisee": "un quota horaire mensuel à effectuer en zone de désert médical",
+          "source": {
+            "url": "https://melenchon2027.fr/wp-content/uploads/2026/11/plan_SANTE_lowres.pdf",
+            "titre": "Comment nous allons reconstruire notre système de santé (plan thématique santé, L'Avenir en commun)",
+            "date_publication": "2026-10-30",
+            "type": "programme_officiel"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "Quota obligatoire de 4 à 12 heures par mois en désert médical : même mesure, volume moindre.",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "quota horaire mensuel en zone sous-dotée, 4 à 12 heures et non deux jours",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "arbitrage": null,
+      "item_aveugle": "cd5693f9"
     },
     {
       "question_id": "SAN-009",
@@ -4215,19 +4531,27 @@
     },
     {
       "question_id": "SAN-010",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Légalisation explicite du cannabis récréatif (sous monopole d'État) : +2 nette."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "7fb6f423",
+      "item_aveugle": "20c94252",
       "extraits": [
+        {
+          "reformulation": "Le plan santé prévoit de légaliser le cannabis récréatif et d'en encadrer la consommation, la production et la vente par un monopole d'État, avec affectation des recettes fiscales à la lutte contre les addictions, à la prévention et à la réduction des risques.",
+          "citation_courte": "Légaliser et encadrer par un monopole d’État la consommation",
+          "reformulation_anonymisee": "Le plan santé prévoit de légaliser le cannabis récréatif et d'en encadrer la consommation, la production et la vente par un monopole d'État, avec affectation des recettes fiscales à la lutte contre les addictions, à la prévention et à la réduction des risques.",
+          "citation_anonymisee": "Légaliser et encadrer par un monopole d’État la consommation",
+          "source": {
+            "url": "https://melenchon2027.fr/wp-content/uploads/2026/11/plan_SANTE_lowres.pdf",
+            "titre": "Comment nous allons reconstruire notre système de santé (plan thématique santé, L'Avenir en commun)",
+            "date_publication": "2026-10-30",
+            "type": "programme_officiel"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le programme 2025 prévoit de légaliser le cannabis à usage récréatif, sa consommation, sa production et sa vente étant encadrées par un monopole d'État, avec affectation des recettes fiscales à la lutte contre les addictions et à la prévention.",
           "citation_courte": "Légaliser et encadrer par un monopole d’État la consommation,",
@@ -4248,16 +4572,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Légaliser le cannabis récréatif.",
-          "date": "2026-10-14",
+          "justification": "Légalisation du cannabis récréatif avec monopole d'État.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Légaliser le cannabis récréatif sous monopole d'État.",
-          "date": "2026-10-14",
+          "justification": "légalisation avec monopole d'État",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -4265,25 +4589,39 @@
       "code": 2,
       "nature": "nette",
       "statut": "accord",
-      "arbitrage": null
+      "arbitrage": null,
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "Le plan santé 2027 et le programme 2025 prévoient « Légaliser et encadrer par un monopole d'État la consommation, la production et la vente de cannabis à des fins récréatives » : engagement sans réserve, +2 nette."
+      }
     },
     {
       "question_id": "SAN-011",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Le programme s'engage à garantir l'accès à l'AME et le billet rejette sa remise en cause : rejet sans réserve d'une restriction aux soins urgents."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": true,
         "date": null,
         "resultat": null
       },
-      "item_aveugle": "0d54d2af",
+      "item_aveugle": "6064e6ee",
       "extraits": [
+        {
+          "reformulation": "Le plan santé prévoit de maintenir l'accès aux soins des personnes sans titre de séjour et de renforcer les dispositifs de droit commun accessibles à tous. Il ne prévoit pas de limiter l'aide aux soins urgents.",
+          "citation_courte": "Maintenir l’accès aux soins des personnes sans titre de séjour",
+          "reformulation_anonymisee": "Le plan santé prévoit de maintenir l'accès aux soins des personnes sans titre de séjour et de renforcer les dispositifs de droit commun accessibles à tous. Il ne prévoit pas de limiter l'aide aux soins urgents.",
+          "citation_anonymisee": "Maintenir l’accès aux soins des personnes sans titre de séjour",
+          "source": {
+            "url": "https://melenchon2027.fr/wp-content/uploads/2026/11/plan_SANTE_lowres.pdf",
+            "titre": "Comment nous allons reconstruire notre système de santé (plan thématique santé, L'Avenir en commun)",
+            "date_publication": "2026-10-30",
+            "type": "programme_officiel"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le programme 2025 prévoit de garantir l'accès à l'aide médicale d'État (AME), parmi ses mesures sur le droit d'asile et l'immigration. Aucune limitation aux soins urgents n'est prévue dans le texte.",
           "citation_courte": "Garantir l’accès à l’aide médicale d’État (AME)",
@@ -4318,16 +4656,16 @@
           "modele": "claude-opus-5-5",
           "code": -2,
           "nature": "nette",
-          "justification": "Garantir l'accès à l'AME et rejeter sa remise en cause.",
-          "date": "2026-10-14",
+          "justification": "Maintient l'accès aux soins des sans-papiers et rejette toute remise en cause de l'AME.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": -2,
           "nature": "nette",
-          "justification": "Garantir l'accès à l'AME et rejeter sa remise en cause.",
-          "date": "2026-10-14",
+          "justification": "maintient l'accès aux soins, rejette la limitation aux urgences",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -4335,7 +4673,13 @@
       "code": -2,
       "nature": "nette",
       "statut": "accord",
-      "arbitrage": null
+      "arbitrage": null,
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "Le plan santé 2026 veut « maintenir l'accès aux soins des personnes sans titre de séjour », le programme 2025 « garantir l'accès à l'aide médicale d'État (AME) » et le blog de janvier 2025 range « la remise en cause de l'Aide Médicale d'État » parmi les réformes inacceptables : rejet sans réserve de la restriction, −2 nette."
+      }
     },
     {
       "question_id": "SAN-012",
@@ -4440,19 +4784,27 @@
     },
     {
       "question_id": "SAN-017",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Il range le « doublement des franchises médicales » parmi des « privations » et veut « abroger la hausse des franchises médicales de 2024 » : sens opposé à un relèvement des plafonds, -2 défendable. Le motif d'arbitrage invoque R5 sans chiffre de plafond chez le candidat et les plafonds ne sont pas nommés : -1 serait aussi soutenable, mais -2 n'est pas contraire à la grille."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "9787887e",
+      "item_aveugle": "7979a988",
       "extraits": [
+        {
+          "reformulation": "Le plan santé prévoit de supprimer les franchises médicales et les participations forfaitaires, et déplore le passage des plafonds annuels de 50 à 70 euros chacun au 1er octobre 2026 ; aucun relèvement à 100 euros n'est envisagé.",
+          "citation_courte": "Supprimer les franchises médicales et les participations forfaitaires",
+          "reformulation_anonymisee": "Le plan santé prévoit de supprimer les franchises médicales et les participations forfaitaires, et déplore le passage des plafonds annuels de 50 à 70 euros chacun au 1er octobre 2026 ; aucun relèvement à 100 euros n'est envisagé.",
+          "citation_anonymisee": "Supprimer les franchises médicales et les participations forfaitaires",
+          "source": {
+            "url": "https://melenchon2027.fr/wp-content/uploads/2026/11/plan_SANTE_lowres.pdf",
+            "titre": "Comment nous allons reconstruire notre système de santé (plan thématique santé, L'Avenir en commun)",
+            "date_publication": "2026-10-30",
+            "type": "programme_officiel"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Dans un billet de blog (23 octobre 2025) critiquant le contre-budget du RN, il demande pourquoi ce plan retient des « privations » comme le doublement des franchises médicales (et des franchises sur lunettes, fauteuils roulants, pacemakers), en le présentant comme du mépris pour les pauvres.",
           "citation_courte": "le doublement des franchises médicales",
@@ -4487,30 +4839,24 @@
           "modele": "claude-opus-5-5",
           "code": -2,
           "nature": "nette",
-          "justification": "Abroger la hausse des franchises et rejeter leur doublement : sens opposé.",
-          "date": "2026-10-14",
+          "justification": "Veut supprimer les franchises médicales et déplore la hausse des plafonds : contraire de l'énoncé.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
-          "code": -1,
-          "nature": "imprecise",
-          "justification": "Abroge la hausse de 2024 et dénonce le doublement des franchises, plafonds non visés.",
-          "date": "2026-10-14",
+          "code": -2,
+          "nature": "nette",
+          "justification": "supprime les franchises au lieu de relever les plafonds",
+          "date": "2026-11-07",
           "aveugle": true
         },
-        "accord": false
+        "accord": true
       },
       "code": -2,
       "nature": "nette",
-      "statut": "arbitre",
-      "arbitrage": {
-        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-14",
-        "code_retenu": -2,
-        "nature_retenue": "nette",
-        "motif": "Abroger la hausse de 2024 et dénoncer le doublement des franchises, c'est proposer le contraire d'un relèvement des plafonds à 100 euros (R5 : direction opposée au droit en vigueur)."
-      }
+      "statut": "accord",
+      "arbitrage": null
     },
     {
       "question_id": "SAN-018",
@@ -5540,14 +5886,28 @@
     {
       "question_id": "DEF-003",
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": 1,
+      "code": -1,
       "nature": "nuancee",
-      "statut": "arbitre",
+      "statut": "accord",
       "extraits": [
+        {
+          "reformulation": "Selon LCP, le programme publié le 6 novembre 2026 transforme la conscription citoyenne de neuf mois pour les moins de 25 ans de 2022 en une conscription citoyenne écologique obligatoire, rémunérée au Smic, dont la tâche principale est d'aider la société à s'adapter aux crises climatiques. L'article ne mentionne pas de formation ou de service militaire.",
+          "citation_courte": "conscription citoyenne écologique",
+          "reformulation_anonymisee": "Selon le média, le programme publié le 6 novembre 2026 transforme la conscription citoyenne de neuf mois pour les moins de 25 ans de la précédente campagne en une conscription citoyenne écologique obligatoire, rémunérée au Smic, dont la tâche principale est d'aider la société à s'adapter aux crises climatiques. L'article ne mentionne pas de formation ou de service militaire.",
+          "citation_anonymisee": "conscription citoyenne écologique",
+          "source": {
+            "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+            "titre": "Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon - LCP-Assemblée nationale",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le programme prévoit d'ouvrir la possibilité d'un service militaire, mais comme composante optionnelle d'un service citoyen obligatoire ; le service militaire lui-même n'est donc pas présenté comme obligatoire.",
           "citation_courte": "Ouvrir la possibilité d’un service militaire comme composante",
@@ -5582,50 +5942,46 @@
           "modele": "claude-opus-5-5",
           "code": -1,
           "nature": "nuancee",
-          "justification": "Service militaire optionnel dans un service citoyen obligatoire : autre mesure.",
-          "date": "2026-10-14",
+          "justification": "Conscription citoyenne écologique obligatoire, sans service militaire obligatoire : autre mesure.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
-          "code": 1,
+          "code": -1,
           "nature": "nuancee",
-          "justification": "Conscription citoyenne obligatoire, service militaire seulement optionnel.",
-          "date": "2026-10-14",
+          "justification": "conscription civile écologique obligatoire, sans service militaire",
+          "date": "2026-11-07",
           "aveugle": true
         },
-        "accord": false
+        "accord": true
       },
-      "arbitrage": {
-        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-14",
-        "code_retenu": 1,
-        "nature_retenue": "nuancee",
-        "motif": "Conscription citoyenne obligatoire de neuf mois avec formation militaire initiale, le service militaire complet restant optionnel : version partielle d'un service militaire obligatoire."
-      },
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Conscription obligatoire de neuf mois avec formation militaire initiale, mais service militaire proprement dit optionnel et objection de conscience : version partielle d'un service militaire obligatoire, +1 nuancee défendable (−1 l'était aussi, l'arbitrage n'est pas contraire à la grille)."
-      },
-      "item_aveugle": "af34ccf2"
+      "arbitrage": null,
+      "item_aveugle": "e009fb64"
     },
     {
       "question_id": "DEF-004",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Mesure clé du programme : « Se retirer immédiatement du commandement intégré de l’OTAN puis, par étapes, de l’organisation elle-même » : engagement ferme et immédiat."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "74e81f50",
+      "item_aveugle": "87442d13",
       "extraits": [
+        {
+          "reformulation": "Selon LCP, le programme de 2027 prévoit, comme celui de 2022, un retrait immédiat du commandement intégré de l'Otan, puis un retrait de l'organisation elle-même par étapes.",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Selon le média, le programme de 2027 prévoit, comme celui de la précédente campagne, un retrait immédiat du commandement intégré de l'Otan, puis un retrait de l'organisation elle-même par étapes.",
+          "citation_anonymisee": null,
+          "source": {
+            "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+            "titre": "Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon - LCP-Assemblée nationale",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": null
+        },
         {
           "reformulation": "Lors d'un entretien sur LCI le 8 mai 2026, il promet une sortie de l'OTAN « par étapes » : d'abord quitter le commandement intégré, puis opérer une « mise à distance de tous les équipements communs avec l'armée américaine ».",
           "citation_courte": "mise à distance de tous les équipements communs avec l'armée américaine",
@@ -5660,16 +6016,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Sortie du commandement intégré de l'OTAN.",
-          "date": "2026-10-14",
+          "justification": "Retrait immédiat du commandement intégré de l'OTAN.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Retrait immédiat du commandement intégré.",
-          "date": "2026-10-14",
+          "justification": "retrait immédiat du commandement intégré",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -5681,19 +6037,27 @@
     },
     {
       "question_id": "DEF-005",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Le Figaro (29/06/2026) cite : « Il ne peut pas être question de rester membre de l'Otan » ; le programme 2025 prévoit de se retirer « par étapes, de l'organisation elle-même ». Engagement net de sortie."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "a10518c4",
+      "item_aveugle": "0eb8b3fb",
       "extraits": [
+        {
+          "reformulation": "Selon LCP, le programme de 2027 prévoit un retrait immédiat du commandement intégré de l'Otan puis, par étapes, un retrait de l'organisation elle-même ; BFM rapporte que le programme veut organiser un retrait de l'Otan. Aucun calendrier de la sortie complète n'est donné.",
+          "citation_courte": "par étapes, de l'organisation elle-même",
+          "reformulation_anonymisee": "Selon le média, le programme de 2027 prévoit un retrait immédiat du commandement intégré de l'Otan puis, par étapes, un retrait de l'organisation elle-même. Aucun calendrier de la sortie complète n'est donné.",
+          "citation_anonymisee": "par étapes, de l'organisation elle-même",
+          "source": {
+            "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+            "titre": "Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon - LCP-Assemblée nationale",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Lors d'un colloque de l'Institut La Boétie, il déclare qu'il ne peut être question de rester membre de l'OTAN, ni d'entrer dans de nouvelles coalitions militaires de type Asie-Pacifique. Il ne voit pas d'inconvénient au maintien d'accords de défense avec les autres pays de l'Union européenne.",
           "citation_courte": "Il ne peut pas être question de rester membre de l'Otan",
@@ -5728,16 +6092,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Sortie de l'OTAN.",
-          "date": "2026-10-14",
+          "justification": "Retrait du commandement intégré puis, par étapes, de l'OTAN elle-même (R2).",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Sortir de l'OTAN.",
-          "date": "2026-10-14",
+          "justification": "sortie de l'OTAN par étapes",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -6006,7 +6370,7 @@
     {
       "question_id": "DEF-012",
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
@@ -6014,6 +6378,20 @@
       "nature": "nette",
       "statut": "accord",
       "extraits": [
+        {
+          "reformulation": "Selon BFM, le programme publié le 6 novembre 2026 prévoit de nationaliser ArianeGroup (fusée Ariane 6 et missiles nucléaires M51, aujourd'hui détenu à 50 % par Airbus et Safran) et de créer un pôle public du satellite. L'article ne mentionne pas de pôle public de l'armement couvrant munitions et matériels complexes.",
+          "citation_courte": "un pôle public du satellite",
+          "reformulation_anonymisee": "Selon le média, le programme publié le 6 novembre 2026 prévoit de nationaliser le fabricant de la fusée Ariane 6 et des missiles nucléaires M51 (détenu à 50 % par deux groupes privés) et de créer un pôle public du satellite. L'article ne mentionne pas de pôle public de l'armement couvrant munitions et matériels complexes.",
+          "citation_anonymisee": "un pôle public du satellite",
+          "source": {
+            "url": "https://www.bfmtv.com/economie/entreprises/defense/nationaliser-la-fusee-ariane-quitter-l-otan-refuser-les-5-du-pib-pour-la-defense-construire-un-avion-spatial-le-programme-de-melenchon-pour-l-armee-francaise_AV-202611060649.html",
+            "titre": "Nationaliser la fusée Ariane, quitter l'Otan, refuser les 5% du PIB pour la défense, construire un avion spatial... Le programme de Mélenchon pour l'armée française - BFM",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le programme prévoit de créer un pôle public de l'armement, d'arrêter les privatisations des industries d'armement et des missions de défense nationale, puis de les réintroduire dans le secteur public.",
           "citation_courte": "Créer un pôle public de l’armement, stopper les privatisations",
@@ -6034,28 +6412,22 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Créer un pôle public de l'armement.",
-          "date": "2026-10-14",
+          "justification": "Création d'un pôle public de l'armement, la source récente n'y contredisant pas.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Créer un pôle public de l'armement.",
-          "date": "2026-10-14",
+          "justification": "pôle public de l'armement dans le programme, nationalisations cohérentes",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
       },
       "arbitrage": null,
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Engagement sans réserve à créer un pôle public de l'armement et à réintégrer les industries d'armement dans le public, ce qui couvre la production d'équipements."
-      },
-      "item_aveugle": "551200fa"
+      "item_aveugle": "0e4cb2bc"
     },
     {
       "question_id": "DEF-013",
@@ -6476,14 +6848,28 @@
     {
       "question_id": "EUR-007",
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
       "code": 1,
-      "nature": "imprecise",
+      "nature": "nuancee",
       "statut": "accord",
       "extraits": [
+        {
+          "reformulation": "Selon Public Sénat, le budget présenté à la presse le 14 octobre 2026 par le candidat et le président de la commission des finances de l'Assemblée prévoit de porter la taxe sur les Gafam à 15 %. Cette taxe est présentée comme une des recettes nouvelles (106,4 milliards au total). L'article ne distingue pas la taxe française sur les services numériques d'une autre taxe ; le taux annoncé (15 %) dépasse le 6 % de l'énoncé.",
+          "citation_courte": "faire grimper la taxe sur les Gafam à 15 %",
+          "reformulation_anonymisee": "Selon un article de presse, le budget présenté à la presse le 14 octobre 2026 par le candidat et un député prévoit de porter la taxe sur les grandes entreprises du numérique à 15 %. Cette taxe est présentée comme une des recettes nouvelles (106,4 milliards au total). L'article ne distingue pas la taxe française sur les services numériques d'une autre taxe ; le taux annoncé (15 %) dépasse le 6 % de l'énoncé.",
+          "citation_anonymisee": "faire grimper la taxe sur les grandes entreprises du numérique à 15 %",
+          "source": {
+            "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027",
+            "titre": "Présidentielle 2027 : Jean-Luc Mélenchon table sur 106 milliards de recettes supplémentaires et 82 milliards de dépenses nouvelles pour 2027 - Public Sénat",
+            "date_publication": "2026-10-14",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le document sur les comptes publics prévoit un renforcement de la taxe Gafam, chiffré à 3,9 milliards d'euros de recettes. Il ne précise pas le taux (3 % ou 6 %).",
           "citation_courte": "le renforcement de la taxe Gafam (3,9 milliards)",
@@ -6503,29 +6889,23 @@
         "codeur_1": {
           "modele": "claude-opus-5-5",
           "code": 1,
-          "nature": "imprecise",
-          "justification": "Renforcement de la taxe Gafam sans taux précisé.",
-          "date": "2026-10-14",
+          "nature": "nuancee",
+          "justification": "Taxe sur les grandes entreprises du numérique portée à 15 %, au-delà des 6 % (R1).",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
-          "nature": "imprecise",
-          "justification": "Renforcement de la taxe Gafam, taux non précisé.",
-          "date": "2026-10-14",
+          "nature": "nuancee",
+          "justification": "taxe à 15 %, plus loin que 6 % (R1)",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
       },
       "arbitrage": null,
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Le document prévoit « le renforcement de la taxe Gafam (3,9 milliards) » sans taux : même instrument, même sens, ampleur non convertible en taux ; +1 imprecise défendable."
-      },
-      "item_aveugle": "3df164d6"
+      "item_aveugle": "584ed07b"
     },
     {
       "question_id": "EUR-008",
@@ -6779,19 +7159,41 @@
     },
     {
       "question_id": "EUR-014",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Le programme et le discours de juin 2026 s'engagent sans réserve à ne pas appliquer les règles européennes contraires au programme : reprise exacte de l'énoncé."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "2fdb9f6e",
+      "item_aveugle": "d0c52410",
       "extraits": [
+        {
+          "reformulation": "Selon l'article sur le programme « L'Avenir en commun » publié le 6 novembre 2026, le programme propose un moratoire voté par le Parlement français sur la libre circulation sans limite des marchandises et des capitaux, les règles de concurrence appliquées aux services publics, l'Europe de la défense et les accords de libre-échange. Il prévoit d'appliquer immédiatement le programme au niveau national dans tous les cas, d'assumer la confrontation avec les institutions européennes et une désobéissance aux règles bloquantes chaque fois que nécessaire.",
+          "citation_courte": "assumer la confrontation avec les institutions européennes",
+          "reformulation_anonymisee": "Selon l'article sur le programme [SLOGAN] publié le 6 novembre 2026, le programme propose un moratoire voté par le Parlement sur la libre circulation sans limite des marchandises et des capitaux, les règles de concurrence appliquées aux services publics, l'Europe de la défense et les accords de libre-échange. Il prévoit d'appliquer immédiatement le programme au niveau national dans tous les cas, d'assumer la confrontation avec les institutions européennes et une désobéissance aux règles bloquantes chaque fois que nécessaire.",
+          "citation_anonymisee": "assumer la confrontation avec les institutions européennes",
+          "source": {
+            "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+            "titre": "Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon - LCP-Assemblée nationale",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Selon le HuffPost, le programme 2027 propose de créer un droit d'objection sur certaines politiques européennes, qui permettrait de refuser des normes de l'UE contraires à son programme social et environnemental. L'abandon de la formule de désobéissance aux traités est une lecture du journaliste.",
+          "citation_courte": "d'un droit d'objection sur certaines politiques européennes",
+          "reformulation_anonymisee": "Selon un média, le programme 2027 propose de créer un droit d'objection sur certaines politiques européennes, qui permettrait de refuser des normes de l'UE contraires à son programme social et environnemental. L'abandon de la formule de désobéissance aux traités est une lecture du journaliste.",
+          "citation_anonymisee": "d'un droit d'objection sur certaines politiques européennes",
+          "source": {
+            "url": "https://www.huffingtonpost.fr/politique/article/on-a-compare-le-programme-de-jean-luc-melenchon-avec-le-reste-de-la-gauche-voici-ce-qui-differe_352921.html",
+            "titre": "Les 4 grands thèmes qui éloignent le programme de Mélenchon du reste de la gauche - Le HuffPost",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Pour refuser l'importation de produits cultivés avec des pesticides interdits en France et regagner la souveraineté alimentaire, il juge nécessaire de désobéir aux règles européennes ; il ajoute que d'autres pays suivraient et que les règles devraient changer partout.",
           "citation_courte": "donc à désobéir aux règles européennes",
@@ -6852,26 +7254,38 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": 2,
-          "nature": "nette",
-          "justification": "Désobéir aux règles européennes incompatibles avec le programme.",
-          "date": "2026-10-14",
+          "code": 1,
+          "nature": "imprecise",
+          "justification": "Sources récentes contradictoires : désobéissance aux règles bloquantes ou droit d'objection sur certaines politiques.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
-          "code": 2,
-          "nature": "nette",
-          "justification": "Désobéir aux règles européennes incompatibles avec le programme.",
-          "date": "2026-10-14",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "droit d'objection et refus de normes européennes bloquantes",
+          "date": "2026-11-07",
           "aveugle": true
         },
-        "accord": true
+        "accord": false
       },
-      "code": 2,
-      "nature": "nette",
-      "statut": "accord",
-      "arbitrage": null
+      "code": 1,
+      "nature": "imprecise",
+      "statut": "arbitre",
+      "arbitrage": {
+        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
+        "date": "2026-11-07",
+        "code_retenu": 1,
+        "nature_retenue": "imprecise",
+        "motif": "Deux sources de 2026-11 se contredisent : l'une maintient la désobéissance aux règles bloquantes « chaque fois que nécessaire », l'autre dit que la formule de désobéissance est abandonnée au profit d'un droit d'objection sur certaines politiques ; direction favorable mais nature imprecise, +1."
+      },
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "a_revoir",
+        "motif": "Le vérificateur propose +2 nette : La contradiction retenue par l'arbitrage repose sur un commentaire du HuffPost (« exit la désobéissance ») et non sur des propos du candidat. LCP cite le programme 2027 : « désobéissance aux règles bloquantes, chaque fois que cela sera nécessaire » et application du programme « dans tous les cas ». Le droit d'objection va dans le même sens, et toutes les sources de 2025-2026 coïncident avec l'énoncé : +2 nette. Code inchangé (la vérification de la vague 3 ne modifie aucun code) ; à revoir par un humain."
+      }
     },
     {
       "question_id": "EUR-015",
@@ -6971,19 +7385,27 @@
     },
     {
       "question_id": "FIS-001",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Le document chiffré prévoit le « rétablissement d’un impôt sur la fortune renforcé (10 milliards d’euros) » : il rétablit l'ISF et va au-delà sans chiffre de barème. Une mesure plus large qui contient le rétablissement donne +2 nette (R6 provisoire)."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "4982b3a7",
+      "item_aveugle": "0bb1b7b4",
       "extraits": [
+        {
+          "reformulation": "Selon LCP, la 5e édition du programme (publiée le 6 novembre 2026) prévoit le rétablissement d'un ISF qui inclut un volet climatique. L'article ne donne ni seuil ni taux.",
+          "citation_courte": "incluant un volet climatique",
+          "reformulation_anonymisee": "Selon l'article, le programme du candidat prévoit le rétablissement d'un impôt sur la fortune qui inclut un volet climatique. L'article ne donne ni seuil ni taux.",
+          "citation_anonymisee": "incluant un volet climatique",
+          "source": {
+            "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+            "titre": "Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon (LCP)",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le document sur les comptes publics prévoit le rétablissement d'un impôt sur la fortune « renforcé », chiffré à 10 milliards d'euros de recettes. Le seuil n'est pas précisé dans ce passage.",
           "citation_courte": "rétablissement d’un impôt sur la fortune renforcé (10 milliards d’euros)",
@@ -7018,16 +7440,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Rétablissement d'un impôt sur la fortune renforcé.",
-          "date": "2026-10-14",
+          "justification": "Rétablissement d'un impôt sur la fortune renforcé, englobant l'énoncé.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Rétablir un impôt sur la fortune renforcé.",
-          "date": "2026-10-14",
+          "justification": "rétablissement d'un impôt sur la fortune renforcé",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -7039,19 +7461,29 @@
     },
     {
       "question_id": "FIS-002",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Le document le plus récent reprend la taxe Zucman au seuil exact de 100 M€, et le programme 2025 en donne le taux de 2 % : la mesure de l'énoncé est soutenue telle quelle, +2 nette défendable."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": true,
+        "date": null,
+        "resultat": null
       },
-      "item_aveugle": "65a0a317",
+      "item_aveugle": "efc1e8ff",
       "extraits": [
+        {
+          "reformulation": "Selon LCP, la taxe Zucman, absente du programme de 2022 mais présente dans son actualisation de 2025, est conservée dans la 5e édition du programme. L'article ne donne ni taux ni seuil.",
+          "citation_courte": "est conservée",
+          "reformulation_anonymisee": "Selon l'article, la taxe sur les très hauts patrimoines, absente du programme précédent mais ajoutée dans une actualisation, est conservée dans la nouvelle édition du programme. L'article ne donne ni taux ni seuil.",
+          "citation_anonymisee": "est conservée",
+          "source": {
+            "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+            "titre": "Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon (LCP)",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le document sur les comptes publics prévoit une taxe Zucman visant les personnes possédant plus de 100 millions d'euros de patrimoine, pour 15 milliards d'euros de recettes. Le taux n'est pas donné dans ce passage.",
           "citation_courte": "taxe Zucman pour les personnes possédant plus de 100 millions d’euros de patrimoine",
@@ -7100,16 +7532,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Taxe Zucman au-delà de 100 millions, 2 % dans le programme antérieur.",
-          "date": "2026-10-14",
+          "justification": "Taxe Zucman sur les patrimoines de plus de 100 M€, avec un impôt plancher de 2 %.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Taxe Zucman au-delà de 100 millions, garantie d'impôt de 2 %.",
-          "date": "2026-10-14",
+          "justification": "taxe sur les patrimoines de plus de 100 M€, garantie de 2 %",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -7121,19 +7553,27 @@
     },
     {
       "question_id": "FIS-003",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Le programme 2025 dit « Supprimer la flat tax et imposer les revenus du capital comme ceux du travail », ce qui revient au barème ; le document d'octobre 2026 confirme la suppression. +2 nette défendable."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "cbc86f1f",
+      "item_aveugle": "0af24b8a",
       "extraits": [
+        {
+          "reformulation": "Selon LCP, le programme (5e édition) maintient la suppression de la flat tax. L'article ne précise pas que les revenus du capital seraient soumis au barème de l'impôt sur le revenu.",
+          "citation_courte": "suppression de la flat tax",
+          "reformulation_anonymisee": "Selon l'article, le programme maintient la suppression de la flat tax. L'article ne précise pas que les revenus du capital seraient soumis au barème de l'impôt sur le revenu.",
+          "citation_anonymisee": "suppression de la flat tax",
+          "source": {
+            "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+            "titre": "Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon (LCP)",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le document sur les comptes publics prévoit la suppression de la flat tax, afin que le capital ne soit pas moins imposé que le travail (9 milliards d'euros). Il ne mentionne pas explicitement le barème de l'impôt sur le revenu.",
           "citation_courte": "le capital ne soit pas moins imposé que le travail",
@@ -7182,16 +7622,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Supprimer la flat tax et imposer le capital comme le travail.",
-          "date": "2026-10-14",
+          "justification": "Suppression de la flat tax et imposition des revenus du capital comme ceux du travail, sources concordantes.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Supprimer la flat tax, imposer comme le travail.",
-          "date": "2026-10-14",
+          "justification": "suppression de la flat tax et imposition comme le travail",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -7203,19 +7643,27 @@
     },
     {
       "question_id": "FIS-004",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Engagement ferme sur la cible exacte (14 tranches) ; « au cours du mandat » est un calendrier qui ne réduit ni la cible ni le périmètre (R2)."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "6ceb542f",
+      "item_aveugle": "517c02ab",
       "extraits": [
+        {
+          "reformulation": "Selon LCP, le programme (5e édition) maintient un impôt sur le revenu progressif à 14 tranches.",
+          "citation_courte": "impôt sur le revenu progressif à 14 tranches",
+          "reformulation_anonymisee": "Selon l'article, le programme maintient un impôt sur le revenu progressif à 14 tranches.",
+          "citation_anonymisee": "impôt sur le revenu progressif à 14 tranches",
+          "source": {
+            "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+            "titre": "Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon (LCP)",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le document sur les comptes publics prévoit de réformer l'impôt sur le revenu au cours du mandat pour le rendre plus progressif, avec l'instauration de 14 tranches. Le programme de 2025 retient le même nombre (14 tranches contre 5).",
           "citation_courte": "pour le rendre plus progressif avec l’instauration de 14 tranches",
@@ -7251,15 +7699,15 @@
           "code": 2,
           "nature": "nette",
           "justification": "Impôt sur le revenu à 14 tranches.",
-          "date": "2026-10-14",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Barème à 14 tranches.",
-          "date": "2026-10-14",
+          "justification": "14 tranches",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -7267,23 +7715,37 @@
       "code": 2,
       "nature": "nette",
       "statut": "accord",
-      "arbitrage": null
+      "arbitrage": null,
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "Le document programme d'octobre 2026 prévoit de réformer l'impôt sur le revenu « au cours du mandat » avec « l'instauration de 14 tranches » (le programme 2025 : « 14 tranches contre 5 aujourd'hui ») ; LCP (6 novembre 2026) confirme le maintien : engagement ferme sur la cible exacte, +2 nette."
+      }
     },
     {
       "question_id": "FIS-005",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Le programme 2025 veut « créer un héritage maximal de 12 millions d'euros » en comptabilisant dons et héritages reçus sur toute la vie : c'est la mesure de l'énoncé, sur un périmètre même plus large (dons inclus) → +2 nette."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "7dbae78e",
+      "item_aveugle": "741c5c57",
       "extraits": [
+        {
+          "reformulation": "Selon LCP, le programme (5e édition) maintient la création d'un héritage maximal de 12 millions d'euros. L'article ne détaille pas le mécanisme de prélèvement de la part excédentaire.",
+          "citation_courte": "héritage maximal de 12 millions d'euros",
+          "reformulation_anonymisee": "Selon l'article, le programme maintient la création d'un héritage maximal de 12 millions d'euros. L'article ne détaille pas le mécanisme de prélèvement de la part excédentaire.",
+          "citation_anonymisee": "héritage maximal de 12 millions d'euros",
+          "source": {
+            "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+            "titre": "Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon (LCP)",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le programme de 2025 prévoit de créer un héritage maximal de 12 millions d'euros, en comptabilisant l'ensemble des dons et héritages reçus tout au long de la vie. La formulation ne détaille pas le mécanisme de prélèvement de la part excédentaire.",
           "citation_courte": "long de la vie et créer un héritage maximal de 12 millions d’euros",
@@ -7318,16 +7780,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Héritage maximal de 12 millions d'euros, soit la mesure énoncée.",
-          "date": "2026-10-14",
+          "justification": "Création d'un héritage maximal de 12 millions d'euros.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Programme et texte 2022 : héritage maximal de 12 millions d'euros.",
-          "date": "2026-10-14",
+          "justification": "héritage maximal de 12 M€ sur la vie entière",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -7335,7 +7797,13 @@
       "code": 2,
       "nature": "nette",
       "statut": "accord",
-      "arbitrage": null
+      "arbitrage": null,
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "Un « héritage maximal » de 12 M€ suppose que l'excédent ne peut être reçu. Le plafond, calculé sur tous les dons et héritages de la vie, couvre entièrement la part d'un héritage au-delà de 12 M€ : +2 nette (situation R6)."
+      }
     },
     {
       "question_id": "FIS-006",
@@ -8069,19 +8537,27 @@
     },
     {
       "question_id": "ENV-002",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Le programme prévoit de « sortir du nucléaire » (abandon des EPR, démantèlement) et il déclare sur Blast qu'élu, « on sortira du nucléaire », sans échéance dans aucun des passages : même sens, sans la date de 2050, +1 nuancee défendable."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "e85546b1",
+      "item_aveugle": "4bc31a91",
       "extraits": [
+        {
+          "reformulation": "Selon BFM, le programme 2027 prévoit une fermeture progressive des centrales existantes, sans prolonger leur durée de vie au-delà de 60 ans, et d'arrêter le programme de nouveau nucléaire. L'objectif est 100 % d'énergies renouvelables au plus tard en 2060, la sortie des énergies fossiles étant visée avant 2050 ; l'article ne donne pas d'année précise pour la sortie du nucléaire.",
+          "citation_courte": "en ne prolongeant pas au-delà de 60 ans leur durée de vie",
+          "reformulation_anonymisee": "Selon un média, le programme [CANDIDAT] prévoit une fermeture progressive des centrales existantes, sans prolonger leur durée de vie au-delà de 60 ans, et d'arrêter le programme de nouveau nucléaire. L'objectif est 100 % d'énergies renouvelables au plus tard en 2060, la sortie des énergies fossiles étant visée avant 2050 ; l'article ne donne pas d'année précise pour la sortie du nucléaire.",
+          "citation_anonymisee": "en ne prolongeant pas au-delà de 60 ans leur durée de vie",
+          "source": {
+            "url": "https://www.bfmtv.com/economie/entreprises/energie/jean-luc-melenchon-balaie-le-programme-epr2-la-france-insoumise-veut-sortir-des-energies-fossiles-avant-2050-mais-aussi-du-nucleaire-pour-passer-au-100-renouvelables_AV-202611060653.html",
+            "titre": "Jean-Luc Mélenchon balaie le programme EPR2 : la France insoumise veut sortir des énergies fossiles avant 2050 mais aussi du nucléaire (BFM)",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Interrogé sur un éventuel référendum, il déclare que, si les gens votent pour lui et qu'il est élu président de la République, on sortira du nucléaire sans besoin de référendum, sauf s'il juge utile d'en organiser un pour accélérer le processus. Aucune échéance (2050 ou autre) n'est donnée dans le passage vu. Propos tenus sur Blast, rapportés par un média belge.",
           "citation_courte": "on sortira du nucléaire, il n'y a pas besoin de référendum",
@@ -8116,16 +8592,16 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Sortie du nucléaire sans échéance.",
-          "date": "2026-10-14",
+          "justification": "Sortie du nucléaire par fermeture progressive sans échéance 2050 précisée.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Sortie du nucléaire ferme, sans échéance.",
-          "date": "2026-10-14",
+          "justification": "fermeture progressive sans échéance 2050, 100 % renouvelables en 2060 au plus tard",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -8133,7 +8609,13 @@
       "code": 1,
       "nature": "nuancee",
       "statut": "accord",
-      "arbitrage": null
+      "arbitrage": null,
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "La sortie du nucléaire est ferme, mais aucune échéance 2050 n'est donnée : la date implicite est 2060 (100 % renouvelables au plus tard en 2060, fermeture des réacteurs à 60 ans). C'est une version partielle de l'énoncé, +1 nuancee défendable."
+      }
     },
     {
       "question_id": "ENV-003",
@@ -8456,7 +8938,7 @@
     {
       "question_id": "ENV-009",
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
@@ -8464,6 +8946,20 @@
       "nature": "nette",
       "statut": "accord",
       "extraits": [
+        {
+          "reformulation": "Selon LCP, le programme 2027 maintient la « règle verte » : on ne prélève pas davantage sur la nature que ce qu'elle est en état de reconstituer. L'extrait cité ne précise pas, dans cet article, l'inscription dans la Constitution.",
+          "citation_courte": "on ne prélève pas davantage sur la nature",
+          "reformulation_anonymisee": "Selon un média, le programme [CANDIDAT] maintient la « règle verte » : on ne prélève pas davantage sur la nature que ce qu'elle est en état de reconstituer. L'extrait cité ne précise pas, dans cet article, l'inscription dans la Constitution.",
+          "citation_anonymisee": "on ne prélève pas davantage sur la nature",
+          "source": {
+            "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+            "titre": "Présidentielle 2027 : ce qui change dans le nouveau programme de Jean-Luc Mélenchon (LCP)",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le programme prévoit d'inscrire dans la Constitution le principe de la « règle verte » : on ne prélève pas davantage à la nature que ce qu'elle est en état de reconstituer (présentée comme mesure clé).",
           "citation_courte": "Inscrire dans la Constitution le principe de la « règle verte »,",
@@ -8484,28 +8980,22 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Inscrire la règle verte dans la Constitution.",
-          "date": "2026-10-14",
+          "justification": "Inscrire la règle verte dans la Constitution, maintenue dans le programme récent.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Inscrire le principe dans la Constitution.",
-          "date": "2026-10-14",
+          "justification": "règle verte inscrite dans la Constitution (programme), maintenue",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
       },
       "arbitrage": null,
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Reprise exacte de la mesure (règle verte constitutionnelle) : +2 nette."
-      },
-      "item_aveugle": "b3cffe4a"
+      "item_aveugle": "12627483"
     },
     {
       "question_id": "ENV-010",
@@ -8618,7 +9108,7 @@
     {
       "question_id": "ENV-012",
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
@@ -8626,6 +9116,20 @@
       "nature": "nuancee",
       "statut": "accord",
       "extraits": [
+        {
+          "reformulation": "Selon BFM, le programme 2027 prévoit de décréter un moratoire sur les ZFE dans leur conception actuelle, au motif que leurs critères créent des inégalités sociales et tolèrent trop certains véhicules, notamment les SUV. Il ne prévoit pas leur suppression pure et simple selon l'article.",
+          "citation_courte": "décréter un moratoire sur les zones à faibles émissions (ZFE) dans leur conception actuelle",
+          "reformulation_anonymisee": "Selon un média, le programme [CANDIDAT] prévoit de décréter un moratoire sur les ZFE dans leur conception actuelle, au motif que leurs critères créent des inégalités sociales et tolèrent trop certains véhicules, notamment les SUV. Il ne prévoit pas leur suppression pure et simple selon l'article.",
+          "citation_anonymisee": "décréter un moratoire sur les zones à faibles émissions (ZFE) dans leur conception actuelle",
+          "source": {
+            "url": "https://www.bfmtv.com/economie/entreprises/transports/nationalisation-de-la-sncf-et-des-autoroutes-moratoire-sur-les-zfe-leasing-social-jean-luc-melenchon-devoile-son-programme-pour-les-transports-en-france_AV-202611060705.html",
+            "titre": "Nationalisation de la SNCF et des autoroutes, moratoire sur les ZFE, leasing social... Mélenchon dévoile son programme pour les transports (BFM)",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le programme prévoit de décréter un moratoire sur les ZFE « dans leur conception actuelle », jugeant leurs critères source d'inégalités sociales et trop tolérants envers certains véhicules, notamment les SUV. Le passage vise un moratoire sur la conception actuelle, non une suppression.",
           "citation_courte": "Décréter un moratoire sur les zones à faibles émissions (ZFE)",
@@ -8646,28 +9150,22 @@
           "modele": "claude-opus-5-5",
           "code": -1,
           "nature": "nuancee",
-          "justification": "Moratoire sur les ZFE dans leur conception actuelle : autre mesure plus douce que la suppression (R5).",
-          "date": "2026-10-14",
+          "justification": "Moratoire sur les ZFE dans leur conception actuelle plutôt que suppression : autre mesure plus douce.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": -1,
           "nature": "nuancee",
-          "justification": "Moratoire sur la conception actuelle, pas de suppression (autre mesure).",
-          "date": "2026-10-14",
+          "justification": "moratoire sur les ZFE actuelles, pas suppression",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
       },
       "arbitrage": null,
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Le candidat propose un moratoire sur la conception actuelle des ZFE (et leur reproche d'être trop tolérantes envers les SUV), non leur suppression : autre mesure plus douce, −1 nuancee."
-      },
-      "item_aveugle": "6453b7a0"
+      "item_aveugle": "22566d6f"
     },
     {
       "question_id": "ENV-013",
@@ -9073,19 +9571,27 @@
     },
     {
       "question_id": "ENV-023",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Le programme prévoit de « sortir du nucléaire » et d'« abandonner les projets d'EPR » : ce rejet englobe tout nouveau réacteur, donc les huit supplémentaires de l'énoncé (R6 symétrique), −2 nette."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "45beac07",
+      "item_aveugle": "528e7df5",
       "extraits": [
+        {
+          "reformulation": "Selon BFM, le programme 2027 prévoit d'arrêter le programme de nouveau nucléaire, qui comprend six nouveaux réacteurs dans les dix prochaines années plus huit tranches supplémentaires.",
+          "citation_courte": "arrêter le programme de nouveau nucléaire",
+          "reformulation_anonymisee": "Selon un média, le programme [CANDIDAT] prévoit d'arrêter le programme de nouveau nucléaire, qui comprend six nouveaux réacteurs dans les dix prochaines années plus huit tranches supplémentaires.",
+          "citation_anonymisee": "arrêter le programme de nouveau nucléaire",
+          "source": {
+            "url": "https://www.bfmtv.com/economie/entreprises/energie/jean-luc-melenchon-balaie-le-programme-epr2-la-france-insoumise-veut-sortir-des-energies-fossiles-avant-2050-mais-aussi-du-nucleaire-pour-passer-au-100-renouvelables_AV-202611060653.html",
+            "titre": "Jean-Luc Mélenchon balaie le programme EPR2 : la France insoumise veut sortir des énergies fossiles avant 2050 mais aussi du nucléaire (BFM)",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Dans un entretien, il juge que les technocrates français sont assez stupides pour croire que tout restera pareil : ils planifient de nouvelles centrales nucléaires dans leur stratégie climatique alors que le refroidissement exige de l'eau froide, de plus en plus rare, et que des centrales ont déjà dû être arrêtées à cause de la chaleur. Critique de la construction de nouvelles centrales, sans mention du chiffre de huit réacteurs.",
           "citation_courte": "Ils planifient la construction de nouvelles centrales nucléaires dans leur stratégie climatique",
@@ -9120,16 +9626,16 @@
           "modele": "claude-opus-5-5",
           "code": -2,
           "nature": "nette",
-          "justification": "Sortie du nucléaire et abandon des EPR.",
-          "date": "2026-10-14",
+          "justification": "Arrêt du programme de nouveau nucléaire et sortie du nucléaire.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": -2,
           "nature": "nette",
-          "justification": "Sortie du nucléaire et abandon des EPR.",
-          "date": "2026-10-14",
+          "justification": "arrête le programme de nouveau nucléaire",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -9142,14 +9648,28 @@
     {
       "question_id": "ENV-024",
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": 2,
-      "nature": "nette",
-      "statut": "arbitre",
+      "code": 1,
+      "nature": "nuancee",
+      "statut": "accord",
       "extraits": [
+        {
+          "reformulation": "Selon BFM, le programme 2027 prévoit de revenir sur les trois hausses mensuelles successives de 5 à 6 % du tarif réglementé du gaz intervenues depuis la rentrée, qualifiées d'abusives. L'article ne mentionne pas de mécanisme général de blocage du prix du gaz en cas de forte hausse.",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Selon un média, le programme [CANDIDAT] prévoit de revenir sur les trois hausses mensuelles successives de 5 à 6 % du tarif réglementé du gaz intervenues depuis la rentrée, qualifiées d'abusives. L'article ne mentionne pas de mécanisme général de blocage du prix du gaz en cas de forte hausse.",
+          "citation_anonymisee": null,
+          "source": {
+            "url": "https://www.bfmtv.com/economie/entreprises/energie/jean-luc-melenchon-balaie-le-programme-epr2-la-france-insoumise-veut-sortir-des-energies-fossiles-avant-2050-mais-aussi-du-nucleaire-pour-passer-au-100-renouvelables_AV-202611060653.html",
+            "titre": "Jean-Luc Mélenchon balaie le programme EPR2 : la France insoumise veut sortir des énergies fossiles avant 2050 mais aussi du nucléaire (BFM)",
+            "date_publication": "2026-11-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": null
+        },
         {
           "reformulation": "Le programme, en mesure clé, prévoit de bloquer les prix des produits de première nécessité, l'énergie figurant entre parenthèses avec l'alimentation et le carburant. Le gaz n'est pas nommé dans ce passage.",
           "citation_courte": "Bloquer les prix des produits de première nécessité",
@@ -9182,36 +9702,30 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": 2,
-          "nature": "nette",
-          "justification": "R6 : blocage des prix de l'énergie et annulation des hausses du gaz.",
-          "date": "2026-10-14",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "Revenir sur les hausses du tarif du gaz et bloquer les prix de l'énergie, sans mécanisme général nommé pour le gaz.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Blocage des prix de l'énergie et annulation des hausses du tarif du gaz.",
-          "date": "2026-10-14",
+          "justification": "annulation des hausses du gaz et blocage des prix de première nécessité, sans mécanisme général pour le gaz",
+          "date": "2026-11-07",
           "aveugle": true
         },
-        "accord": false
+        "accord": true
       },
-      "arbitrage": {
-        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-14",
-        "code_retenu": 2,
-        "nature_retenue": "nette",
-        "motif": "R6 : bloquer les prix de l'énergie englobe le gaz, et l'annulation des hausses du tarif du gaz confirme le sens ; un blocage sans condition couvre le cas de forte hausse."
-      },
+      "arbitrage": null,
+      "item_aveugle": "fd75a97c",
       "verification": {
         "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
+        "date": "2026-11-07",
         "verdict": "confirme",
-        "motif": "Un blocage des prix de l'énergie sans condition contient le blocage du prix du gaz en cas de forte hausse ; l'annulation des hausses du tarif du gaz confirme le sens. +2 nette défendable selon R6."
-      },
-      "item_aveugle": "d84325a9"
+        "motif": "Les sources de 2026 ne portent que sur l'annulation des hausses récentes du tarif réglementé du gaz (BFM) et un blocage par décret limité au carburant (PDF octobre 2026) ; le blocage des prix de « première nécessité (alimentation, énergie, carburant) » du programme 2025 couvrirait le gaz, mais sans le nommer ni prévoir de mécanisme en cas de hausse : +1 nuancee défendable. Une application stricte de R6 à l'extrait 2 donnerait +2 nette, à trancher en arbitrage."
+      }
     },
     {
       "question_id": "ENV-025",
@@ -9288,12 +9802,46 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": 1,
+      "nature": "nuancee",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Le plan automobile du site de campagne prévoit que les aides publiques soient réservées aux véhicules respectant des critères de prix, de masse, d'empreinte carbone et de provenance, la production française étant privilégiée et pas seulement européenne. Il fixe une cible d'au moins 85 % de contenu européen pour les véhicules bénéficiant d'aides publiques ; il ne limite donc pas l'aide au seul assemblage en Europe.",
+          "citation_courte": "une cible d'au moins 85 % de contenu européen",
+          "reformulation_anonymisee": "Le plan automobile de la campagne prévoit que les aides publiques soient réservées aux véhicules respectant des critères de prix, de masse, d'empreinte carbone et de provenance, la production française étant privilégiée et pas seulement européenne. Il fixe une cible d'au moins 85 % de contenu européen pour les véhicules bénéficiant d'aides publiques ; il ne limite donc pas l'aide au seul assemblage en Europe.",
+          "citation_anonymisee": "une cible d'au moins 85 % de contenu européen",
+          "source": {
+            "url": "https://melenchon2027.fr/programme/plans-investissement/automobile/",
+            "titre": "Automobile - Mélenchon 2027",
+            "date_publication": "2026-10-10",
+            "type": "programme_officiel"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "Aides réservées aux véhicules à 85 % de contenu européen et autres critères, non au seul assemblage en Europe.",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "aides réservées selon provenance et 85 % de contenu européen, pas seulement assemblage",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "arbitrage": null,
+      "item_aveugle": "9332f883"
     },
     {
       "question_id": "SEC-001",
@@ -9583,19 +10131,27 @@
     },
     {
       "question_id": "SEC-005",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Le programme reprend la mesure mot pour mot : supprimer IGPN et IGGN et les remplacer par une autorité indépendante « rattachée au Défenseur des droits »."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "3e6931c2",
+      "item_aveugle": "f3fc941e",
       "extraits": [
+        {
+          "reformulation": "Interrogé par Mediapart sur les armes et la police, il déclare qu'il est temps d'avoir une instance crédible de recours et que l'IGPN n'en est pas une. Il ne précise ni le rattachement au Défenseur des droits ni le sort de l'IGGN.",
+          "citation_courte": "L’IGPN ne l’est pas",
+          "reformulation_anonymisee": "Interrogé par un média sur les armes et la police, [CANDIDAT] déclare qu'il est temps d'avoir une instance crédible de recours et que l'inspection actuelle de la police n'en est pas une. Il ne précise ni le rattachement de cette instance ni le sort de l'inspection de la gendarmerie.",
+          "citation_anonymisee": "L’inspection de la police ne l’est pas",
+          "source": {
+            "url": "https://melenchon.fr/2026/10/25/le-pouvoir-naura-quun-seul-choix-accepter-les-revendications-ou-sen-aller-entretien-avec-mediapart/",
+            "titre": "« Le pouvoir n'aura qu'un seul choix, accepter les revendications ou s'en aller » Entretien avec Mediapart",
+            "date_publication": "2026-10-25",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le programme prévoit de supprimer l'IGPN et l'IGGN et de les remplacer par une autorité indépendante (magistrats, universitaires, citoyens), rattachée au Défenseur des droits, dotée d'un pouvoir propre de sanctions disciplinaires sur les agents fautifs.",
           "citation_courte": "rattachée au Défenseur des droits, remplaçant le service actuel",
@@ -9644,16 +10200,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Remplacer IGPN et IGGN par une autorité indépendante rattachée au Défenseur des droits.",
-          "date": "2026-10-14",
+          "justification": "Remplacement de l'IGPN et de l'IGGN par une autorité indépendante rattachée au Défenseur des droits, la source récente concordant.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Supprime IGPN/IGGN pour une autorité indépendante rattachée au Défenseur des droits.",
-          "date": "2026-10-14",
+          "justification": "remplacement de l'IGPN/IGGN par une autorité indépendante rattachée au Défenseur des droits (programme)",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -9661,7 +10217,13 @@
       "code": 2,
       "nature": "nette",
       "statut": "accord",
-      "arbitrage": null
+      "arbitrage": null,
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "Le programme 2025 prévoit de « supprimer l'IGPN et l'IGGN » et de les remplacer par une autorité indépendante « rattachée au Défenseur des droits » ; l'entretien d'octobre 2026 (« L'IGPN ne l'est pas », crédible) concorde sans contredire : +2 nette."
+      }
     },
     {
       "question_id": "SEC-006",
@@ -9719,19 +10281,27 @@
     },
     {
       "question_id": "SEC-008",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-14",
-        "verdict": "confirme",
-        "motif": "Le programme écrit mot pour mot « Rétablir la police de proximité » ; mesure identique à l'énoncé."
-      },
       "contestations": [],
-      "version": 2,
+      "version": 3,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "4abdbcbe",
+      "item_aveugle": "30e6f4f6",
       "extraits": [
+        {
+          "reformulation": "Interrogé par Mediapart (entretien publié le 23 octobre 2026), il dit qu'au pouvoir on reconstituera une force de police tranquille, de proximité, avec formation permanente, perspectives de carrière et fin des carrières à l'envers. Engagement formulé au futur.",
+          "citation_courte": "on reconstituera une force tranquille de proximité",
+          "reformulation_anonymisee": "Interrogé par un média (entretien publié en octobre 2026), [CANDIDAT] dit qu'au pouvoir on reconstituera une force de police tranquille, de proximité, avec formation permanente, perspectives de carrière et fin des carrières à l'envers. Engagement formulé au futur.",
+          "citation_anonymisee": "on reconstituera une force tranquille de proximité",
+          "source": {
+            "url": "https://melenchon.fr/2026/10/25/le-pouvoir-naura-quun-seul-choix-accepter-les-revendications-ou-sen-aller-entretien-avec-mediapart/",
+            "titre": "« Le pouvoir n'aura qu'un seul choix, accepter les revendications ou s'en aller » Entretien avec Mediapart",
+            "date_publication": "2026-10-25",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le programme prévoit de rétablir la police de proximité, érigée en pilier central de la police réformée, avec de nouveaux centres d'activités de police de proximité et l'intégration des effectifs de police municipale.",
           "citation_courte": "Rétablir la police de proximité et démanteler les BAC",
@@ -9766,16 +10336,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Rétablir la police de proximité.",
-          "date": "2026-10-14",
+          "justification": "Rétablissement de la police de proximité, engagement constant.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Rétablir la police de proximité.",
-          "date": "2026-10-14",
+          "justification": "rétablissement de la police de proximité",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true

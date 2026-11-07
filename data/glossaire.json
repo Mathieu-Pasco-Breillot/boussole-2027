@@ -170,6 +170,16 @@
     "explication": "Organisme qui gère la branche maladie de la Sécurité sociale et rembourse les soins des assurés."
   },
   {
+    "sigle": "CNAV",
+    "developpe": "Caisse nationale d'assurance vieillesse",
+    "explication": "Organisme qui verse la retraite de base des salariés du secteur privé."
+  },
+  {
+    "sigle": "CNEWS",
+    "developpe": "CNEWS",
+    "explication": "Chaîne de télévision d'information en continu."
+  },
+  {
     "sigle": "CO2",
     "developpe": "Dioxyde de carbone",
     "explication": "Gaz rejeté notamment par la combustion du charbon, du pétrole et du gaz ; principal gaz à effet de serre émis par les activités humaines."
@@ -278,6 +288,11 @@
     "sigle": "IA",
     "developpe": "Intelligence artificielle",
     "explication": "Ensemble de techniques permettant à des programmes informatiques d'accomplir des tâches associées à l'intelligence humaine."
+  },
+  {
+    "sigle": "IFF",
+    "developpe": "Impôt sur la fortune financière",
+    "explication": "Impôt proposé sur le patrimoine financier ; il n'existe pas en droit français actuel."
   },
   {
     "sigle": "IFI",

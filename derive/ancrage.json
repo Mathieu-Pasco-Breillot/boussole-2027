@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "empreinte_donnees": "d1076b6ecb631c88cfa3ef02b9bcd6bfa5c1abd5b35f54382dde761e4d732213",
+  "empreinte_donnees": "844d78ae7d68793e574293ea396991401ae8307c0389d79c059e8e8e9b4b8e8c",
   "provisoire": true,
   "parametres": {
     "nombre_ancres": 10,
@@ -55,23 +55,23 @@
     },
     {
       "rang": 5,
-      "question_id": "RET-001",
-      "theme": "retraites",
-      "axe": "economie",
-      "sens": 1,
-      "D": 1.909722,
-      "couverture": 1,
-      "candidats_codes": 12
-    },
-    {
-      "rang": 6,
       "question_id": "FIS-001",
       "theme": "fiscalite",
       "axe": "economie",
       "sens": 1,
-      "D": 1.875,
+      "D": 2.008333,
       "couverture": 0.833333,
       "candidats_codes": 10
+    },
+    {
+      "rang": 6,
+      "question_id": "ECO-001",
+      "theme": "economie-dette",
+      "axe": "economie",
+      "sens": 1,
+      "D": 1.848485,
+      "couverture": 0.916667,
+      "candidats_codes": 11
     },
     {
       "rang": 7,
@@ -95,6 +95,16 @@
     },
     {
       "rang": 9,
+      "question_id": "RET-001",
+      "theme": "retraites",
+      "axe": "economie",
+      "sens": 1,
+      "D": 1.75,
+      "couverture": 1,
+      "candidats_codes": 12
+    },
+    {
+      "rang": 10,
       "question_id": "ENV-002",
       "theme": "ecologie-energie",
       "axe": "ecologie",
@@ -104,7 +114,7 @@
       "candidats_codes": 12
     },
     {
-      "rang": 10,
+      "rang": 11,
       "question_id": "INS-001",
       "theme": "institutions",
       "axe": "institutions",
@@ -114,17 +124,27 @@
       "candidats_codes": 10
     },
     {
-      "rang": 11,
-      "question_id": "INS-009",
-      "theme": "institutions",
-      "axe": "institutions",
+      "rang": 12,
+      "question_id": "EDU-001",
+      "theme": "education",
+      "axe": "economie",
       "sens": 1,
-      "D": 1.366667,
+      "D": 1.133333,
       "couverture": 0.833333,
       "candidats_codes": 10
     },
     {
-      "rang": 12,
+      "rang": 13,
+      "question_id": "INS-009",
+      "theme": "institutions",
+      "axe": "institutions",
+      "sens": 1,
+      "D": 1.041667,
+      "couverture": 0.833333,
+      "candidats_codes": 10
+    },
+    {
+      "rang": 14,
       "question_id": "EDU-007",
       "theme": "education",
       "axe": "economie",

@@ -1,12 +1,12 @@
 {
   "candidat_id": "philippe-edouard",
-  "_statut": "POC — codage vague 1, 11 thèmes. Retraites : arbitrages acceptés en bloc par Mathieu. Autres thèmes : désaccords arbitrés provisoirement par un 3e modèle, contrôle humain de 10 % à faire. À revoir avant publication. Vague 2 (4 octobre 2026) : recherche complémentaire sur les questions sans code publié, même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, contrôle humain de 10 % à faire). Vague 3 (4 octobre 2026) : nouvelle recherche sur les questions sans code publié, même protocole.",
+  "_statut": "POC — codage vague 1, 11 thèmes. Retraites : arbitrages acceptés en bloc par Mathieu. Autres thèmes : désaccords arbitrés provisoirement par un 3e modèle, contrôle humain de 10 % à faire. À revoir avant publication. Vague 2 (4 octobre 2026) : recherche complémentaire sur les questions sans code publié, même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, contrôle humain de 10 % à faire). Vague 3 (4 octobre 2026) : nouvelle recherche sur les questions sans code publié, même protocole. Vague 4 (7 novembre 2026, programmes publiés depuis le 4 octobre) : nouveau document de programme (chapitre « Pour une France plus attentive à ses enfants » (vers le 8 octobre 2026)) : toutes les questions des thèmes qu'il couvre recherchées, les autres seulement sur les questions sans code ; 12 question(s) recodée(s) ou codée(s) à l'aveugle, dont 7 nouveau(x) code(s) ; même protocole (double codage aveugle, arbitrage provisoire par un 3e modèle, vérification indépendante de 30 % des codes, contrôle humain de 10 % à faire).",
   "grille_version": "1.3",
   "programme": {
     "officiel_disponible": true,
     "date_publication": "2026-07-05",
     "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere",
-    "note": "Programme officiel partiel signalé par l'extracteur sur au moins un thème. Détail par thème dans programmes-par-theme.json (phase 4)."
+    "note": "Programme officiel partiel signalé par l'extracteur sur au moins un thème. Détail par thème dans programmes-par-theme.json (phase 4). Au 7 novembre 2026 : chapitre « Pour une France plus attentive à ses enfants » (vers le 8 octobre 2026), détaillé par la presse ; pas encore de programme complet."
   },
   "positions": [
     {
@@ -674,12 +674,66 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": -1,
+      "nature": "nuancee",
+      "statut": "arbitre",
+      "extraits": [
+        {
+          "reformulation": "Au salon Euronaval, Philippe déclare qu'une discussion sur le Smic devrait relever des partenaires sociaux plutôt que d'une décision de l'État. Il ne se prononce pas sur un niveau chiffré de Smic.",
+          "citation_courte": "discussions entre les partenaires sociaux, davantage que par une décision de l’État",
+          "reformulation_anonymisee": "[CANDIDAT] déclare qu'une discussion sur le Smic devrait relever des partenaires sociaux plutôt que d'une décision de l'État. Il ne se prononce pas sur un niveau chiffré de Smic.",
+          "citation_anonymisee": "discussions entre les partenaires sociaux, davantage que par une décision de l’État",
+          "source": {
+            "url": "https://www.cnews.fr/france/2026-11-05/hausse-du-smic-cette-decision-devrait-relever-de-discussions-entre-les",
+            "titre": "Hausse du SMIC : «Cette décision devrait relever de discussions entre les partenaires sociaux», juge Edouard Philippe",
+            "date_publication": "2026-11-05",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Interrogé sur TF1, Philippe juge qu'augmenter le Smic alors que l'économie a un gros problème de compétitivité et que la croissance est en berne est une solution illusoire pour le pouvoir d'achat. Il ne propose aucun montant de Smic et mise plutôt sur le travail supplémentaire avec des heures supplémentaires désocialisées.",
+          "citation_courte": "ça me paraît une solution illusoire",
+          "reformulation_anonymisee": "Interrogé à la télévision, [CANDIDAT] juge qu'augmenter le Smic alors que l'économie a un gros problème de compétitivité et que la croissance est en berne est une solution illusoire pour le pouvoir d'achat. Il ne propose aucun montant de Smic et mise plutôt sur le travail supplémentaire avec des heures supplémentaires désocialisées.",
+          "citation_anonymisee": "ça me paraît une solution illusoire",
+          "source": {
+            "url": "https://www.capital.fr/economie-politique/la-crise-financiere-a-commence-edouard-philippe-dit-non-a-la-hausse-du-smic-et-demande-aux-francais-de-travailler-plus-1531484",
+            "titre": "«La crise financière a commencé» : Édouard Philippe dit non à la hausse du Smic et demande aux Français de travailler plus",
+            "date_publication": "2026-11-02",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": -1,
+          "nature": "nuancee",
+          "justification": "Juge la hausse du SMIC illusoire et renvoie aux partenaires sociaux (R3).",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": -2,
+          "nature": "nette",
+          "justification": "juge la hausse du SMIC illusoire",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": false
+      },
+      "arbitrage": {
+        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
+        "date": "2026-11-07",
+        "code_retenu": -1,
+        "nature_retenue": "nuancee",
+        "motif": "Hausse du Smic jugée illusoire et renvoi de la question aux partenaires sociaux plutôt qu'à l'État, sans rejet explicite du chiffre de 1 600 € : écarte le paramètre au profit d'un autre mécanisme (R3), −1 nuancee."
+      },
+      "item_aveugle": "6aaefec0"
     },
     {
       "question_id": "ECO-002",
@@ -1616,18 +1670,32 @@
     {
       "question_id": "EDU-003",
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "arbitre",
+      "code": 1,
+      "nature": "imprecise",
+      "statut": "accord",
       "extraits": [
         {
-          "reformulation": "Le candidat dit que la baisse attendue d'environ un million d'élèves permet de continuer à réduire les effectifs dans les classes là où c'est nécessaire, tout en payant mieux les professeurs, sans dégrader les finances publiques. Il vise une réduction ciblée, notamment en maternelle et au primaire ; aucune moyenne chiffrée (19 élèves) n'est donnée dans cette source.",
+          "reformulation": "Le programme prévoit de réduire les effectifs d'élèves par classe en maternelle et en primaire. Il ne donne aucun chiffre (pas de moyenne de 19) et ne mentionne pas le collège.",
+          "citation_courte": "Réduire les effectifs d'élèves en classe, en maternelle et en primaire",
+          "reformulation_anonymisee": "Le programme de [CANDIDAT] prévoit de réduire les effectifs d'élèves par classe en maternelle et en primaire. Il ne donne aucun chiffre (pas de moyenne de 19) et ne mentionne pas le collège.",
+          "citation_anonymisee": "Réduire les effectifs d'élèves en classe, en maternelle et en primaire",
+          "source": {
+            "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants",
+            "titre": "Pour une France plus attentive à ses enfants — Avec Édouard 2027",
+            "date_publication": "2026-10-08",
+            "type": "programme_officiel"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Selon Midi Libre, citant son entretien au Figaro, il estime que la baisse d'environ un million d'élèves permet de continuer à réduire les effectifs dans les classes là où c'est nécessaire, tout en payant mieux les professeurs. Aucune cible chiffrée ne lui est attribuée dans le corps de l'article.",
           "citation_courte": "continuer à réduire les effectifs dans les classes là où c’est nécessaire",
-          "reformulation_anonymisee": "[CANDIDAT] dit que la baisse attendue d'environ un million d'élèves permet de continuer à réduire les effectifs dans les classes là où c'est nécessaire, tout en payant mieux les professeurs, sans dégrader les finances publiques. Il vise une réduction ciblée, notamment en maternelle et au primaire ; aucune moyenne chiffrée (19 élèves) n'est donnée dans cette source.",
+          "reformulation_anonymisee": "Selon un média citant un entretien, [CANDIDAT] estime que la baisse d'environ un million d'élèves permet de continuer à réduire les effectifs dans les classes là où c'est nécessaire, tout en payant mieux les professeurs. Aucune cible chiffrée ne lui est attribuée dans le corps de l'article.",
           "citation_anonymisee": "continuer à réduire les effectifs dans les classes là où c’est nécessaire",
           "source": {
             "url": "https://www.midilibre.fr/2026/08/25/presidentielle-2027-passe-darmes-entre-edouard-philippe-et-gabriel-attal-sur-leducation-que-proposent-vraiment-les-deux-candidats-13522371.php",
@@ -1642,30 +1710,30 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": null,
-          "nature": "non_connu",
-          "justification": "Réduction ciblée des effectifs sans reprendre la moyenne de 19 élèves (R4).",
-          "date": "2026-10-04",
+          "code": 1,
+          "nature": "imprecise",
+          "justification": "Réduction des effectifs en maternelle et primaire sans chiffre.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "imprecise",
-          "justification": "Baisse ciblée des effectifs, sans moyenne chiffrée.",
-          "date": "2026-10-04",
+          "justification": "baisse des effectifs en maternelle et primaire sans chiffre",
+          "date": "2026-11-07",
           "aveugle": true
         },
-        "accord": false
+        "accord": true
       },
-      "arbitrage": {
-        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-04",
-        "code_retenu": null,
-        "nature_retenue": "non_connu",
-        "motif": "Réduction ciblée « là où c'est nécessaire » sans aucun seuil ni moyenne : position générale face à un énoncé chiffré (R4). (code retenu : celui du codeur B)"
-      },
-      "item_aveugle": "5e8e5e3c"
+      "arbitrage": null,
+      "item_aveugle": "8c8df40d",
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "Le programme prévoit de « Réduire les effectifs d'élèves en classe, en maternelle et en primaire », et dans Le Figaro (rapporté par Midi Libre) il veut « continuer à réduire les effectifs dans les classes là où c'est nécessaire », sans chiffre : même mesure, ampleur non spécifiée, +1 imprecise."
+      }
     },
     {
       "question_id": "EDU-004",
@@ -1711,19 +1779,29 @@
     },
     {
       "question_id": "EDU-007",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Cible de 20 % sur le quinquennat, qualifiée d'« indispensable » : reprend la valeur et la durée de l'énoncé, +2 nette défendable malgré le verbe « envisage »."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
-        "tire_au_sort": false
+        "tire_au_sort": true,
+        "date": null,
+        "resultat": null
       },
-      "item_aveugle": "f6940f40",
+      "item_aveugle": "8ab95719",
       "extraits": [
+        {
+          "reformulation": "Le chapitre du programme prévoit d'augmenter de 20 % la rémunération moyenne des enseignants sur le quinquennat, pour la porter au moins au niveau de la moyenne européenne, notamment en milieu de carrière. La page ne précise pas si la hausse est avant ou après inflation.",
+          "citation_courte": "Augmenter de 20 % la rémunération moyenne des enseignants sur le quinquennat",
+          "reformulation_anonymisee": "Le programme de [CANDIDAT] prévoit d'augmenter de 20 % la rémunération moyenne des enseignants sur la durée du mandat, pour la porter au moins au niveau de la moyenne européenne, notamment en milieu de carrière. Le texte ne précise pas si la hausse est avant ou après inflation.",
+          "citation_anonymisee": "Augmenter de 20 % la rémunération moyenne des enseignants sur le quinquennat",
+          "source": {
+            "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants",
+            "titre": "Pour une France plus attentive à ses enfants — Avec Édouard 2027",
+            "date_publication": "2026-10-08",
+            "type": "programme_officiel"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Le candidat dit envisager, sur le quinquennat, une augmentation de 20 % de la rémunération moyenne des enseignants, afin de la porter au moins au niveau de la moyenne européenne, notamment en milieu de carrière. Il qualifie la mesure de massive mais indispensable.",
           "citation_courte": "J'envisage donc sur le quinquennat une augmentation de 20% moyenne des enseignants",
@@ -1744,16 +1822,16 @@
           "modele": "claude-opus-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Annonce une hausse de 20 % de la rémunération moyenne des enseignants sur le quinquennat.",
-          "date": "2026-10-03",
+          "justification": "Programme : +20 % de rémunération moyenne des enseignants sur le quinquennat.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 2,
           "nature": "nette",
-          "justification": "Il propose une hausse de 20 % de la rémunération moyenne des enseignants sur le quinquennat, qu'il juge indispensable : cible chiffrée et durée identiques.",
-          "date": "2026-10-03",
+          "justification": "+20 % sur le quinquennat",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -1839,33 +1917,27 @@
     },
     {
       "question_id": "EDU-010",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Il retient le choix laissé à chaque établissement plutôt qu'une obligation générale : autre mécanisme identifiable, qui va contre l'obligation énoncée."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": true,
         "date": null,
         "resultat": null
       },
-      "item_aveugle": "0b1e4974",
+      "item_aveugle": "719e7a4c",
       "extraits": [
         {
-          "reformulation": "Dans un discours, le candidat énumère parmi les libertés à donner aux établissements celle d'imposer ou non, s'ils le souhaitent, le port d'un uniforme, ainsi que de fixer leurs règles de discipline. Il formule cela comme une proposition (« donnons de la liberté aux établissements »).",
-          "citation_courte": "Liberté d'imposer ou non s'ils le veulent, le port d'un uniforme",
-          "reformulation_anonymisee": "Dans un discours, [CANDIDAT] énumère parmi les libertés à donner aux établissements celle d'imposer ou non, s'ils le souhaitent, le port d'un uniforme, ainsi que de fixer leurs règles de discipline. [CANDIDAT] formule cela comme une proposition.",
-          "citation_anonymisee": "Liberté d'imposer ou non s'ils le veulent, le port d'un uniforme",
+          "reformulation": "Le programme veut faire des chefs d'établissement les patrons de l'école, avec la liberté d'imposer l'uniforme (ainsi que d'adapter méthodes et horaires et de fixer les règles de discipline). Il s'agit donc d'une faculté laissée à chaque établissement, non d'une obligation nationale ; le texte ne distingue pas primaire et collège.",
+          "citation_courte": "liberté d'adapter les méthodes et les horaires, d'imposer l'uniforme",
+          "reformulation_anonymisee": "Le programme de [CANDIDAT] donne aux chefs d'établissement la liberté d'imposer l'uniforme (ainsi que d'adapter méthodes et horaires et de fixer les règles de discipline). Il s'agit d'une faculté laissée à chaque établissement, non d'une obligation nationale ; le texte ne distingue pas primaire et collège.",
+          "citation_anonymisee": "liberté d'adapter les méthodes et les horaires, d'imposer l'uniforme",
           "source": {
-            "url": "https://horizonsleparti.fr/discours-dedouard-philippe-lors-de-son-grand-meeting-a-ladidas-arena-5-juillet-2026/",
-            "titre": "Discours d'Édouard Philippe lors de son grand meeting à l'Adidas Arena - 5 juillet 2026 (Horizons Le parti)",
-            "date_publication": "2026-07-06",
-            "type": "declaration_publique"
+            "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants",
+            "titre": "Pour une France plus attentive à ses enfants — Avec Édouard 2027",
+            "date_publication": "2026-10-08",
+            "type": "programme_officiel"
           },
-          "date_consultation": "2026-10-03",
+          "date_consultation": "2026-11-07",
           "citation_verifiee_mot_a_mot": true
         },
         {
@@ -1881,6 +1953,20 @@
           },
           "date_consultation": "2026-10-03",
           "citation_verifiee_mot_a_mot": null
+        },
+        {
+          "reformulation": "Dans un discours, le candidat énumère parmi les libertés à donner aux établissements celle d'imposer ou non, s'ils le souhaitent, le port d'un uniforme, ainsi que de fixer leurs règles de discipline. Il formule cela comme une proposition (« donnons de la liberté aux établissements »).",
+          "citation_courte": "Liberté d'imposer ou non s'ils le veulent, le port d'un uniforme",
+          "reformulation_anonymisee": "Dans un discours, [CANDIDAT] énumère parmi les libertés à donner aux établissements celle d'imposer ou non, s'ils le souhaitent, le port d'un uniforme, ainsi que de fixer leurs règles de discipline. [CANDIDAT] formule cela comme une proposition.",
+          "citation_anonymisee": "Liberté d'imposer ou non s'ils le veulent, le port d'un uniforme",
+          "source": {
+            "url": "https://horizonsleparti.fr/discours-dedouard-philippe-lors-de-son-grand-meeting-a-ladidas-arena-5-juillet-2026/",
+            "titre": "Discours d'Édouard Philippe lors de son grand meeting à l'Adidas Arena - 5 juillet 2026 (Horizons Le parti)",
+            "date_publication": "2026-07-06",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-10-03",
+          "citation_verifiee_mot_a_mot": true
         }
       ],
       "codage": {
@@ -1888,16 +1974,16 @@
           "modele": "claude-opus-5-5",
           "code": -1,
           "nature": "nuancee",
-          "justification": "Le candidat veut laisser chaque établissement libre d'imposer ou non l'uniforme, ce qui s'oppose à une obligation générale tout en permettant l'uniforme au niveau local.",
-          "date": "2026-10-03",
+          "justification": "Liberté laissée aux établissements d'imposer l'uniforme, sans obligation nationale.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": -1,
           "nature": "nuancee",
-          "justification": "Propose de laisser chaque établissement choisir d'imposer ou non l'uniforme, ce qui n'est pas une obligation généralisée.",
-          "date": "2026-10-03",
+          "justification": "uniforme facultatif laissé aux établissements",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -1905,7 +1991,13 @@
       "code": -1,
       "nature": "nuancee",
       "statut": "accord",
-      "arbitrage": null
+      "arbitrage": null,
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "Le programme donne aux chefs d'établissement la liberté « d'imposer l'uniforme » et le discours précise « liberté d'imposer ou non s'ils le veulent » : faculté locale, pas d'obligation nationale ; c'est une autre mesure plus douce que l'énoncé, −1 nuancee défendable."
+      }
     },
     {
       "question_id": "EDU-011",
@@ -2007,19 +2099,27 @@
     },
     {
       "question_id": "EDU-018",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Il donne aux établissements la « liberté de choisir et d'évaluer les professeurs », les directeurs devenant des « patrons d'école » : très proche de l'énoncé, mais le recrutement par le chef d'établissement n'est pas formulé tel quel ; +1 défendable (+2 aurait aussi été défendable)."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "68938922",
+      "item_aveugle": "705146c7",
       "extraits": [
+        {
+          "reformulation": "Le programme prévoit que les chefs d'établissement aient la liberté de participer au recrutement et à l'évaluation de leur équipe. Le texte parle de participation, non d'un recrutement par le chef d'établissement seul.",
+          "citation_courte": "de participer au recrutement et à l’évaluation de leur équipe",
+          "reformulation_anonymisee": "Le programme de [CANDIDAT] prévoit que les chefs d'établissement aient la liberté de participer au recrutement et à l'évaluation de leur équipe. Le texte parle de participation, non d'un recrutement par le chef d'établissement seul.",
+          "citation_anonymisee": "de participer au recrutement et à l’évaluation de leur équipe",
+          "source": {
+            "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants",
+            "titre": "Pour une France plus attentive à ses enfants — Avec Édouard 2027",
+            "date_publication": "2026-10-08",
+            "type": "programme_officiel"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
         {
           "reformulation": "Dans un discours, le candidat propose de donner aux établissements la liberté de choisir et d'évaluer les professeurs. Les directeurs doivent devenir les « nouveaux patrons d'école », avec les moyens de l'être et en rendant des comptes ; il souhaite aussi que les professeurs soient recrutés différemment, sans autre précision dans ce passage.",
           "citation_courte": "Liberté de choisir et d'évaluer les professeurs.",
@@ -2038,31 +2138,31 @@
       "codage": {
         "codeur_1": {
           "modele": "claude-opus-5-5",
-          "code": 2,
-          "nature": "nette",
-          "justification": "Il propose de donner aux établissements et à leurs directeurs la liberté de choisir leurs professeurs.",
-          "date": "2026-10-03",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "Chefs d'établissement associés au recrutement (participation), non recrutement par eux seuls : version partielle.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Veut donner aux établissements la liberté de choisir et d'évaluer les professeurs, sans reprendre explicitement le recrutement par les chefs d'établissement.",
-          "date": "2026-10-03",
+          "justification": "participation au recrutement, pas recrutement par le chef seul",
+          "date": "2026-11-07",
           "aveugle": true
         },
-        "accord": false
+        "accord": true
       },
       "code": 1,
       "nature": "nuancee",
-      "statut": "arbitre",
-      "arbitrage": {
-        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
-        "date": "2026-10-03",
-        "code_retenu": 1,
-        "nature_retenue": "nuancee",
-        "motif": "Liberté de choisir les professeurs donnée aux établissements, sans reprise explicite du recrutement par les chefs d'établissement ; doute tranché vers 0. (code retenu : celui du codeur B)"
+      "statut": "accord",
+      "arbitrage": null,
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "Le programme (le plus récent) donne aux chefs d'établissement la liberté « de participer au recrutement et à l'évaluation de leur équipe » : participation, non recrutement par le chef seul ; le discours de juillet 2026 (« liberté de choisir et d'évaluer les professeurs », au niveau de l'établissement) va dans le même sens. +1 nuancee défendable."
       }
     },
     {
@@ -3214,12 +3314,46 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": -2,
+      "nature": "nette",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Le candidat s'oppose à une sortie, même partielle, des structures de l'OTAN, défendue selon lui par d'autres candidats. Il juge que la France doit prendre toute sa place dans l'Alliance et contribuer à un pilier européen de l'OTAN, et estime que rester le pied moitié dedans, moitié dehors (en quittant le commandement intégré) est une mauvaise position.",
+          "citation_courte": "Nous avons besoin de prendre toute notre place dans l'Otan",
+          "reformulation_anonymisee": "[CANDIDAT] s'oppose à une sortie, même partielle, des structures de l'OTAN, défendue selon lui par d'autres candidats. Il juge que la France doit prendre toute sa place dans l'Alliance et contribuer à un pilier européen de l'OTAN, et estime que rester le pied moitié dedans, moitié dehors (en quittant le commandement intégré) est une mauvaise position.",
+          "citation_anonymisee": "Nous avons besoin de prendre toute notre place dans l'Otan",
+          "source": {
+            "url": "https://www.bfmtv.com/economie/entreprises/defense/la-decision-des-gouvernements-successifs-depuis-2017-d-augmenter-les-moyens-etait-bonne-edouard-philippe-ne-veut-pas-que-l-effort-de-defense-soit-relache-et-plaide-pour-un-pilier-europeen-de-l-otan_AD-202611050491.html",
+            "titre": "Édouard Philippe ne veut pas que l'effort de défense soit \"relâché\" et plaide pour \"un pilier européen de l'Otan\"",
+            "date_publication": "2026-11-05",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": -2,
+          "nature": "nette",
+          "justification": "S'oppose à toute sortie, même partielle, des structures de l'OTAN.",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": -2,
+          "nature": "nette",
+          "justification": "s'oppose à toute sortie des structures de l'OTAN",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "arbitrage": null,
+      "item_aveugle": "4bf62e62"
     },
     {
       "question_id": "DEF-005",
@@ -3768,12 +3902,60 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": -1,
+      "nature": "imprecise",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Le 13 octobre 2026, au sommet Politico, Philippe a jugé que les propositions budgétaires de Marine Le Pen sur la contribution française à l'Union européenne visent à fissurer l'Europe, sans qu'elle assume un projet de sortie (selon le compte rendu de Linternaute). Aucun chiffre de contribution n'est cité.",
+          "citation_courte": "fissurer l'Europe",
+          "reformulation_anonymisee": "Lors d'un sommet sur la compétitivité, [CANDIDAT] a jugé que les propositions budgétaires d'un adversaire sur la contribution française à l'Union européenne visent à fissurer l'Europe, sans qu'elle assume un projet de sortie (selon le compte rendu du média). Aucun chiffre de contribution n'est cité.",
+          "citation_anonymisee": "fissurer l'Europe",
+          "source": {
+            "url": "https://www.linternaute.com/actualite/politique/11308317-edouard-philippe-multiplie-les-charges-contre-marine-le-pen-sur-les-retraites-et-le-budget/",
+            "titre": "Présidentielle 2027 : Hollande ne pense pas que Glucksmann soit la (seule) solution à gauche, les 3 infos à connaître aujourd'hui",
+            "date_publication": "2026-10-13",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Réagissant au programme de Marine Le Pen, Philippe juge qu'elle veut couper très fortement dans le financement de l'Europe, mesure qui détruirait immanquablement la cohésion européenne et affaiblirait l'Europe face aux grandes puissances. Il ne donne pas de chiffre précis (ni 28,8 ni 23,1 milliards) ; il s'oppose à une forte baisse de la contribution.",
+          "citation_courte": "elle veut ensuite couper très fortement dans le financement de l'Europe",
+          "reformulation_anonymisee": "Réagissant au programme d'un adversaire, [CANDIDAT] juge que celle-ci veut couper très fortement dans le financement de l'Europe, mesure qui détruirait immanquablement la cohésion européenne et affaiblirait l'Europe face aux grandes puissances. [CANDIDAT] ne donne pas de chiffre précis (ni 28,8 ni 23,1 milliards) ; [CANDIDAT] s'oppose à une forte baisse de la contribution.",
+          "citation_anonymisee": "elle veut ensuite couper très fortement dans le financement de l'Europe",
+          "source": {
+            "url": "https://www.bfmtv.com/economie/entreprises/agriculture/elle-n-ose-pas-dire-qu-elle-veut-sortir-de-l-europe-edouard-philippe-accuse-marine-le-pen-de-formuler-des-propositions-tres-dangereuses-pour-les-agriculteurs-francais_AD-202610090624.html",
+            "titre": "\"Elle n'ose pas dire qu'elle veut sortir de l'Europe\" : Edouard Philippe accuse Marine Le Pen de formuler des propositions \"très dangereuses pour les agriculteurs français\"",
+            "date_publication": "2026-10-09",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": -1,
+          "nature": "imprecise",
+          "justification": "S'oppose à une forte baisse de la contribution à l'UE, sans se prononcer sur un chiffre.",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": -1,
+          "nature": "imprecise",
+          "justification": "s'oppose à une forte baisse de la contribution, sans chiffre",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "arbitrage": null,
+      "item_aveugle": "993f0f78"
     },
     {
       "question_id": "EUR-012",
@@ -4240,12 +4422,46 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": 1,
+      "nature": "nuancee",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Invité de « L'Heure de vérité » le 8 octobre 2026, le candidat propose que, si une entreprise décide après discussion interne de travailler plus longtemps, la totalité des heures travaillées soit progressivement dégagée des cotisations sociales et de l'impôt sur le revenu. Il chiffre l'effet à environ 1 000 euros de plus par an au SMIC pour deux heures hebdomadaires supplémentaires ; aucun plafond n'est mentionné dans l'article.",
+          "citation_courte": "soit progressivement dégagée des cotisations sociales et de l'impôt sur le revenu",
+          "reformulation_anonymisee": "Invité d'une grande émission politique télévisée, [CANDIDAT] propose que, si une entreprise décide après discussion interne de travailler plus longtemps, la totalité des heures travaillées soit progressivement dégagée des cotisations sociales et de l'impôt sur le revenu. Il chiffre l'effet à environ 1 000 euros de plus par an au SMIC pour deux heures hebdomadaires supplémentaires ; aucun plafond n'est mentionné dans l'article.",
+          "citation_anonymisee": "soit progressivement dégagée des cotisations sociales et de l'impôt sur le revenu",
+          "source": {
+            "url": "https://www.capital.fr/economie-politique/deux-heures-de-plus-par-semaine-c-est-1-000-euros-de-plus-par-an-edouard-philippe-defend-l-idee-de-travailler-plus-1530841",
+            "titre": "« Deux heures de plus par semaine, c'est 1 000 euros de plus par an », Edouard Philippe défend l'idée de « travailler plus »",
+            "date_publication": "2026-10-08",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "Exonération d'impôt et de cotisations des heures travaillées en plus, sans plafond, mais conditionnée à une décision collective d'entreprise.",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": 1,
+          "nature": "nuancee",
+          "justification": "exonération totale d'impôt sans plafond mais conditionnée à la décision de l'entreprise",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "arbitrage": null,
+      "item_aveugle": "82c44e32"
     },
     {
       "question_id": "FIS-017",
@@ -4310,12 +4526,52 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": -1,
+      "nature": "imprecise",
+      "statut": "arbitre",
+      "extraits": [
+        {
+          "reformulation": "Selon L'Opinion, qui rapporte un entretien à La Voix du Nord du 13 octobre 2026, il a jugé que l'interdiction de vendre des voitures thermiques en Europe était une « erreur ». L'article indique une échéance de 2030 (et non 2035) et ne précise pas ce qu'il propose à la place ni s'il y a des exceptions.",
+          "citation_courte": "« erreur »",
+          "reformulation_anonymisee": "Selon un média, le [CANDIDAT] a jugé que l'interdiction de vendre des voitures thermiques en Europe était une « erreur ». L'article indique une échéance de 2030 (et non 2035) et ne précise pas ce qui est proposé à la place ni s'il y a des exceptions.",
+          "citation_anonymisee": "« erreur »",
+          "source": {
+            "url": "https://www.lopinion.fr/politique/energie-defense-tech-les-plans-dattaque-de-philippe-glucksmann-et-retailleau",
+            "titre": "Énergie, défense, tech : les plans d'attaque de Philippe, Glucksmann et Retailleau",
+            "date_publication": "2026-10-13",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": -1,
+          "nature": "imprecise",
+          "justification": "Juge l'interdiction des thermiques une erreur, sans préciser ce qu'il propose à la place.",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": -2,
+          "nature": "nette",
+          "justification": "juge l'interdiction des thermiques une erreur",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": false
+      },
+      "arbitrage": {
+        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
+        "date": "2026-11-07",
+        "code_retenu": -1,
+        "nature_retenue": "imprecise",
+        "motif": "Qualifier l'interdiction d'« erreur » donne une direction contraire sans dire ce qui est proposé (report, exceptions, abrogation) : imprecise, donc −1, et code le plus proche de 0 en cas d'hésitation."
+      },
+      "item_aveugle": "2fd3f01c"
     },
     {
       "question_id": "ENV-002",
@@ -4834,12 +5090,46 @@
       "controle_humain": {
         "tire_au_sort": false
       },
-      "code": null,
-      "nature": "non_connu",
-      "statut": "sans_extrait",
-      "extraits": [],
-      "codage": null,
-      "arbitrage": null
+      "code": 2,
+      "nature": "nette",
+      "statut": "accord",
+      "extraits": [
+        {
+          "reformulation": "Le programme de campagne prévoit de relancer le nucléaire avec le lancement de 8 EPR supplémentaires, en plus des 6 déjà prévus. Engagement formulé comme une priorité du programme.",
+          "citation_courte": "lancement de 8 EPR supplémentaires en plus des 6 déjà prévus",
+          "reformulation_anonymisee": "Le programme de campagne prévoit de relancer le nucléaire avec le lancement de 8 EPR supplémentaires, en plus des 6 déjà prévus. Engagement formulé comme une priorité du programme.",
+          "citation_anonymisee": "lancement de 8 EPR supplémentaires en plus des 6 déjà prévus",
+          "source": {
+            "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-conquerante",
+            "titre": "Pour une France plus conquérante - Les priorités",
+            "date_publication": "2026-10-14",
+            "type": "programme_officiel"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        }
+      ],
+      "codage": {
+        "codeur_1": {
+          "modele": "claude-opus-5-5",
+          "code": 2,
+          "nature": "nette",
+          "justification": "Lancement de 8 EPR supplémentaires en plus des 6 prévus.",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "codeur_2": {
+          "modele": "claude-sonnet-5-5",
+          "code": 2,
+          "nature": "nette",
+          "justification": "8 EPR en plus des 6",
+          "date": "2026-11-07",
+          "aveugle": true
+        },
+        "accord": true
+      },
+      "arbitrage": null,
+      "item_aveugle": "ecad371a"
     },
     {
       "question_id": "ENV-024",
@@ -5091,25 +5381,33 @@
     },
     {
       "question_id": "SEC-011",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Le programme prévoit « des peines planchers pour les infractions les plus graves », en particulier contre les dépositaires de l'autorité publique, sans critère de récidive : même mécanisme, périmètre différent et partiel, +1 nuancee défendable."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": true,
         "date": null,
         "resultat": null
       },
-      "item_aveugle": "e4b5e8db",
+      "item_aveugle": "154d2a4c",
       "extraits": [
         {
-          "reformulation": "Le programme prévoit de mettre en place des peines planchers pour les infractions les plus graves, en particulier celles qui portent atteinte à l'intégrité physique de personnes dépositaires de l'autorité publique. Le passage ne mentionne pas la récidive comme critère.",
+          "reformulation": "Dans un entretien au Point (27 octobre 2026) rapporté par BFM, le candidat dit qu'il faut des peines planchers en cas de récidive contre les dépositaires de l'autorité publique, en plus de peines de prison ultracourtes mais effectives dès la première infraction pour les casseurs. La mesure est limitée à ce public ; aucun seuil chiffré n'est donné.",
+          "citation_courte": "des peines planchers en cas de récidive contre les dépositaires de l'autorité publique",
+          "reformulation_anonymisee": "Dans un entretien à un hebdomadaire, [CANDIDAT] dit qu'il faut des peines planchers en cas de récidive contre les dépositaires de l'autorité publique, en plus de peines de prison ultracourtes mais effectives dès la première infraction pour les casseurs. La mesure est limitée à ce public ; aucun seuil chiffré n'est donné.",
+          "citation_anonymisee": "des peines planchers en cas de récidive contre les dépositaires de l'autorité publique",
+          "source": {
+            "url": "https://www.bfmtv.com/politique/horizons/violences-du-17-octobre-edouard-philippe-estime-que-l-echec-de-l-integration-depuis-plusieurs-decennies-est-incontestable_AD-202610270924.html",
+            "titre": "Violences du 17 octobre: Édouard Philippe estime que \"l'échec de l'intégration\" depuis \"plusieurs décennies est incontestable\"",
+            "date_publication": "2026-10-28",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": true
+        },
+        {
+          "reformulation": "Le programme prévoit des peines planchers pour les infractions les plus graves, en particulier les atteintes à l'intégrité physique des personnes dépositaires de l'autorité publique et des professeurs. La récidive n'y est pas mentionnée comme critère.",
           "citation_courte": "peines planchers pour les infractions les plus graves",
-          "reformulation_anonymisee": "Le programme prévoit de mettre en place des peines planchers pour les infractions les plus graves, en particulier celles qui portent atteinte à l'intégrité physique de personnes dépositaires de l'autorité publique. Le passage ne mentionne pas la récidive comme critère.",
+          "reformulation_anonymisee": "Le programme prévoit des peines planchers pour les infractions les plus graves, en particulier les atteintes à l'intégrité physique des personnes dépositaires de l'autorité publique et des professeurs. La récidive n'y est pas mentionnée comme critère.",
           "citation_anonymisee": "peines planchers pour les infractions les plus graves",
           "source": {
             "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure",
@@ -5126,16 +5424,16 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Le candidat propose des peines planchers pour les infractions les plus graves, sans retenir la récidive comme critère : la mesure est la même, mais pour d'autres cas que ceux de l'énoncé.",
-          "date": "2026-10-03",
+          "justification": "Peines planchers limitées à la récidive contre les dépositaires de l'autorité publique : version partielle.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Prévoit des peines planchers mais seulement pour les infractions les plus graves, sans critère de récidive : version partielle.",
-          "date": "2026-10-03",
+          "justification": "peines planchers limitées à la récidive contre les dépositaires de l'autorité",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "accord": true
@@ -5143,7 +5441,13 @@
       "code": 1,
       "nature": "nuancee",
       "statut": "accord",
-      "arbitrage": null
+      "arbitrage": null,
+      "verification": {
+        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
+        "date": "2026-11-07",
+        "verdict": "confirme",
+        "motif": "Au Point (rapporté par BFM le 28/10/2026), il veut « des peines planchers en cas de récidive contre les dépositaires de l'autorité publique », et son programme en prévoit pour « les infractions les plus graves » : des peines minimales limitées à un public, donc une version partielle de l'énoncé, +1 nuancee."
+      }
     },
     {
       "question_id": "SEC-012",
@@ -5353,19 +5657,27 @@
     },
     {
       "question_id": "SEC-021",
-      "verification": {
-        "par": "vérification indépendante contre la page source par un modèle n'ayant pas participé au codage (claude-opus-5-5), non validée par un humain (mode POC)",
-        "date": "2026-10-04",
-        "verdict": "confirme",
-        "motif": "Il propose, dans un « état d'urgence narco » limité dans le temps et l'espace et sous contrôle d'un juge, « l'utilisation ciblée de la reconnaissance faciale » : version partielle (crime organisé lié à la drogue, pas le terrorisme, temps réel non précisé)."
-      },
       "contestations": [],
-      "version": 1,
+      "version": 2,
       "controle_humain": {
         "tire_au_sort": false
       },
-      "item_aveugle": "cf5b35f6",
+      "item_aveugle": "7e0f2124",
       "extraits": [
+        {
+          "reformulation": "Selon Capital, qui résume un entretien du candidat au Point (27 octobre 2026), il propose de renforcer la vidéosurveillance avec un recours à la reconnaissance faciale lors des émeutes, pour identifier les personnes impliquées dans les dégradations. Le cadre visé est celui des émeutes ; l'article ne mentionne ni le terrorisme ni la criminalité organisée, ni durée ou expérimentation.",
+          "citation_courte": null,
+          "reformulation_anonymisee": "Selon un média, qui résume un entretien du candidat à un hebdomadaire, [CANDIDAT] propose de renforcer la vidéosurveillance avec un recours à la reconnaissance faciale lors des émeutes, pour identifier les personnes impliquées dans les dégradations. Le cadre visé est celui des émeutes ; l'article ne mentionne ni le terrorisme ni la criminalité organisée, ni durée ou expérimentation.",
+          "citation_anonymisee": null,
+          "source": {
+            "url": "https://www.capital.fr/economie-politique/prison-des-la-premiere-casse-et-salaire-ponctionne-le-plan-dedouard-philippe-contre-les-casseurs-1531388",
+            "titre": "Prison dès la première casse et salaire ponctionné, le plan d'Edouard Philippe contre les casseurs",
+            "date_publication": "2026-10-29",
+            "type": "declaration_publique"
+          },
+          "date_consultation": "2026-11-07",
+          "citation_verifiee_mot_a_mot": null
+        },
         {
           "reformulation": "Lors d'un déplacement de campagne sur le narcotrafic, le candidat a proposé un régime d'exception contre le narcotrafic, sur un territoire et une durée donnés et sous contrôle d'un juge, avec des moyens technologiques hors droit commun, dont la reconnaissance faciale pour interdire l'accès d'une zone à des trafiquants. Le passage ne mentionne pas le terrorisme et ne précise pas si la reconnaissance serait en temps réel.",
           "citation_courte": "la reconnaissance faciale pour interdire l’accès d’une zone à des trafiquants",
@@ -5400,24 +5712,31 @@
           "modele": "claude-opus-5-5",
           "code": 1,
           "nature": "nuancee",
-          "justification": "Le candidat propose une reconnaissance faciale ciblée dans un régime d'exception contre le narcotrafic : version partielle, qui ne couvre pas le terrorisme et sans précision sur le temps réel.",
-          "date": "2026-10-03",
+          "justification": "Reconnaissance faciale ciblée contre le narcotrafic et lors d'émeutes, sans terrorisme ni temps réel précisés : version partielle.",
+          "date": "2026-11-07",
           "aveugle": true
         },
         "codeur_2": {
           "modele": "claude-sonnet-5-5",
           "code": 1,
-          "nature": "nuancee",
-          "justification": "Admet la reconnaissance faciale ciblée dans un régime d'exception contre le narcotrafic sous contrôle du juge, version partielle sans le terrorisme.",
-          "date": "2026-10-03",
+          "nature": "imprecise",
+          "justification": "reconnaissance faciale pour émeutes et narcotrafic, temps réel et terrorisme non précisés",
+          "date": "2026-11-07",
           "aveugle": true
         },
-        "accord": true
+        "accord": false
       },
       "code": 1,
       "nature": "nuancee",
-      "statut": "accord",
-      "arbitrage": null
+      "statut": "arbitre",
+      "arbitrage": {
+        "par": "arbitrage provisoire par un troisième modèle (claude-fable-5-1), aveugle, non validé par un humain (mode POC)",
+        "date": "2026-11-07",
+        "code_retenu": 1,
+        "nature_retenue": "nuancee",
+        "motif": "Reconnaissance faciale ciblée dans un cadre d'exception contre le narcotrafic (criminalité organisée) et lors d'émeutes, sous contrôle du juge, limitée dans le temps et l'espace : mesure concrète reformulable, version partielle de l'énoncé (terrorisme et temps réel non précisés), +1 nuancee."
+      }
     }
-  ]
+  ],
+  "date_derniere_maj_codage": "2026-11-07"
 }

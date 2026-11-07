@@ -609,6 +609,28 @@
       "description": "Revue humaine par Mathieu des contrôles tirés au sort sur Jean-Luc Mélenchon (12 tirages de la passe programme du 14 octobre 2026 et 5 tirages antérieurs en attente). Validés : RET-003 (−2 nette), RET-014 (−1 nuancée), INS-004 (+2 nette), INS-013 (−2 nette), EDU-004 (+1 nuancée), EDU-007 (+1 imprécise), IMM-003 (+2 nette), IMM-009 (+2 nette), FIS-007 (−1 nuancée), FIS-018 (−1 nuancée), FIS-011 (−2 nette), ENV-017 (−2 nette). Corrigés : SAN-004, −1 nuancée → +1 nuancée (abroger la hausse des franchises de 2024 va dans le sens de leur suppression) ; SAN-012, −1 nuancée → −2 nette (rejet clair des jours de carence non compensés) ; IMM-018, −1 imprécise → null (le communiqué ne prend pas position sur la dénonciation de l'accord de 1968). Mathieu ne s'est pas positionné sur SAN-011 et IMM-016 : leurs contrôles restent en attente. Mathieu précise que la correction de SAN-004 est une exception propre à ce cas : la règle R5 (une autre mesure, même plus douce, reste −1) n'est pas modifiée.",
       "auteur": "Mathieu, saisi par Claude",
       "reference": "revue humaine Mélenchon du 14 octobre 2026"
+    },
+    {
+      "date": "2026-11-07",
+      "type": "recodage",
+      "objets": [
+        "data/positions/attal-gabriel.json",
+        "data/positions/dupont-aignan-nicolas.json",
+        "data/positions/le-pen-marine.json",
+        "data/positions/lisnard-david.json",
+        "data/positions/melenchon-jean-luc.json",
+        "data/positions/philippe-edouard.json",
+        "data/positions/retailleau-bruno.json",
+        "data/positions/roussel-fabien.json",
+        "data/positions/arthaud-nathalie.json",
+        "data/candidats.json",
+        "data/glossaire.json",
+        "derive/*.json",
+        "scripts/derive.test.ts"
+      ],
+      "description": "Vague de codage du 7 novembre 2026, demandée par Mathieu le 4 octobre 2026 pour le lendemain de la publication du programme de Jean-Luc Mélenchon (appelée « vague 3 » dans la demande, « vague 4 » ici, une vague 3 ayant déjà eu lieu le 4 octobre). Inventaire, avec le même critère pour les 9 candidats de la vague 1, des programmes ou chapitres de programme publiés depuis le 4 octobre 2026 : Mélenchon (L'Avenir en commun, 5e édition, 6 novembre 2026, texte intégral pas encore en ligne, contenu pris dans la presse ; plans santé, enseignement supérieur et recherche, automobile, pôle public bancaire), Le Pen (contre-budget, 6 octobre), Retailleau (plan de 197 Md€, 12 octobre), Philippe (chapitre « Pour une France plus attentive à ses enfants »), Attal (vision économique, 28 octobre), Roussel (Plan Jeunesse, 6 octobre, document introuvable) ; rien de nouveau pour Lisnard, Dupont-Aignan et Arthaud. Sur les thèmes couverts par un nouveau document, toutes les questions actives ont été recherchées ; ailleurs, seulement les questions sans code, avec des sources postérieures au 4 octobre. 99 extracteurs (Sonnet 5.5), 1 450 questions cherchées : 159 extraits, 16 écartés au contrôle mécanique (2 antérieurs au 4 octobre, 1 citation invérifiable, 1 attribution au parti, 12 sites qui ne sont pas des médias d'information). Lot aveugle de 122 items (graine 20271107), double codage Opus 5.5 / Sonnet 5.5 en grille v1.4 : 109 accords, 13 désaccords arbitrés provisoirement par Fable 5.1. Les 10 positions déjà revues par un humain (contrôle tiré au sort) n'ont pas été modifiées : les nouveaux extraits et le code proposé sont listés dans le bilan. 112 positions fusionnées (81 recodages, version + 1, dont 12 changements de code ; 30 nouveaux codes : Retailleau 11, Philippe 7, Le Pen 4, Mélenchon 4, Lisnard 3, Dupont-Aignan 1). Vérification indépendante de 35 codes (Opus 5.5, 30 % par candidat) : 33 confirmés, 1 source inaccessible, 1 proposition de changement (Mélenchon EUR-014) laissée à un humain, aucun extrait écarté ; 6 types de source et 4 reformulations corrigés. Contrôle humain : 11 nouveaux codes tirés au sort. Codes publiés : 1 047 → 1 077. Dupont-Aignan passe le seuil de 40 % (83 codes, 40,1 %) et devient « évalué » (règle de la méthodologie § 6.3). Glossaire : CNAV, CNEWS, IFF.",
+      "auteur": "Claude (tâche planifiée), à la demande de Mathieu",
+      "reference": "bilan phase-4/bilan-vague-4.md (projet Présidentielle 2027)"
     }
   ]
 }
